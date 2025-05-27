@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-ps3" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps3'</visible>
+			<path>./background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="Artwork-ps3" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps3'</visible>
+			<path>./Artwork.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.502343750000 0.867129629630</pos>
+			<size>0.569270833333 0.204629629630</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="console-ps3" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps3'</visible>
+			<path>./console.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.901562500000 0.768518518519</pos>
+			<size>0.208333333333 0.411111111111</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Cartridge-ps3" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps3'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.919010416667 0.657870370370</pos>
+			<size>0.086979166667 0.152777777778</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" to="360" begin="4000" duration="5000" mode="easeIn" from="0"/>
+				<animation property="rotation" to="360" begin="9000" duration="3200" mode="linear" from="0" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" to="360" begin="4000" duration="5000" mode="easeIn" from="0"/>
+				<animation property="rotation" to="360" begin="9000" duration="3200" mode="linear" from="0" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" to="360" begin="4000" duration="5000" mode="easeIn" from="0"/>
+				<animation property="rotation" to="360" begin="9000" duration="3200" mode="linear" from="0" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="console2-ps3" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps3'</visible>
+			<path>./console2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.901562500000 0.768518518519</pos>
+			<size>0.208333333333 0.411111111111</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="boxart-ps3" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps3'</visible>
+			<path>exists({game:boxart}) ? {game:boxart} : {game:thumbnail}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.888541666667 0.306944444444</pos>
+			<maxSize>0.113541666667 0.406481481481</maxSize>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="manette-ps3" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps3'</visible>
+			<path>./manette.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.124543425325 0.882040644541</pos>
+			<size>0.156770833333 0.178703703704</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="logo-ps3" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; 
+			{game:system:theme} == 'ps3' &amp;&amp;
+			!exists("${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>
+			<path>./logo.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.104166666667 0.495059724226</pos>
+			<size>0.164583333333 0.580555555556</size>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+	    </image>
+		<image name="logo_jeu-ps3" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps3'</visible>
+			<path>"${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.104166666667 0.495059724226</pos>
+			<size>0.164583333333 0.580555555556</size>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Marquee-ps3" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps3'</visible>
+			<path>{game:marquee}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.105609668110 0.122124017957</pos>
+			<maxSize>0.169791666667 0.171296296296</maxSize>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev-ps3" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps3'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500564799784 0.420554753888</pos>
+			<maxSize>0.568229166667 0.666666666667</maxSize>
+			<zIndex>280</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.568229166667" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.568229166667" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.568229166667" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+		</video>
+		<image name="bezel-ps3" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps3'</visible>
+			<path>./bezel.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.502083333333 0.425845759179</pos>
+			<size>0.590625000000 0.590027256694</size>
+			<zIndex>290</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.590625000000" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.590625000000" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.590625000000" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<control name="Artwork-ps3, console-ps3, console2-ps3, boxart-ps3, manette-ps3, logo-ps3, Marquee-ps3, gameplayprev-ps3, bezel-ps3">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<control name="Cartridge-ps3">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

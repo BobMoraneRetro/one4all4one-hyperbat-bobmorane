@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+    <view name="detailed, coinops, hyperbat">
+	
+		<image name="GradientBlack" extra="true">
+		<tile>false</tile>
+        <maxSize>1 1</maxSize>
+		<pos>0.7 0.5</pos>
+		<origin>0.5 0.5</origin>								
+		<zIndex>999</zIndex>
+		<linearSmooth>true</linearSmooth>
+		<horizontalAlignment>left</horizontalAlignment>
+		<path>./_ViewGame/commune/Systeme/gradient_black.png</path>
+		        <storyboard>
+				<animation property="offsetY" from="0" to="-0.02" duration="390" mode="easeOut" autoreverse="true"  begin="250"/>
+				<animation property="color" from="000000" duration="500" mode="easeOut" begin="0"/>
+				<!-- <animation property="scale" from="0.2" duration="150" mode="easeOut" begin="0"/> -->
+				<animation property="opacity" from="1" to="0" duration="150" mode="linear" begin="1000"/>
+				<!-- <animation property="scale" from="1" to="0" duration="150" mode="easeOut" begin="1000"/> -->
+				<animation property="saturation" from="1" to="0" duration="150" mode="bump" begin="1000"/>
+				</storyboard>       
+    </image>
+		  
+	
+            <image name="logoTransition" extra="true">
+           	<linearSmooth>true</linearSmooth>
+            <maxSize>0.5 0.2</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<scaleOrigin>0 0.5</scaleOrigin>
+            <zIndex>999</zIndex>
+			<reflexion>0.15 0</reflexion>
+			<path>${intlogoclearpng}</path>
+			<path>${intlogoclearfrpng}</path>
+               <storyboard>
+				<animation property="offsetY" from="0" to="-0.02" duration="390" mode="easeOut" autoreverse="true"  begin="250"/>
+				<animation property="color" from="000000" duration="500" mode="easeOut" begin="0"/>
+				<animation property="scale" from="0.2" duration="150" mode="easeOut" begin="0"/>
+				<animation property="opacity" from="1" to="0" duration="150" mode="linear" begin="1000"/>
+				<animation property="scale" from="1" to="0" duration="150" mode="easeOut" begin="1000"/>
+				<!-- <animation property="w" from="10" to="20" duration="150" mode="bump" begin="1000"/> -->
+				<!-- <animation property="y" from="0" to="0.5" duration="150" mode="bump" begin="1000"/> -->
+				<animation property="saturation" from="1" to="0" duration="150" mode="bump" begin="1000"/>
+				</storyboard>       
+          </image>
+		  
+        <image name="logoTransition" extra="true">
+           	<linearSmooth>true</linearSmooth>
+            <maxSize>1 1</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+            <zIndex>999</zIndex>
+			<path>${themePath}/_ViewGame/coinops/CoinopsCollec/Nastrorobot.png</path>
+               <storyboard>
+				<animation property="opacity" from="0" to="1" duration="150" mode="linear" begin="1000"/>
+				<animation property="opacity" from="1" to="0" duration="150" mode="linear" begin="20000"/>
+				</storyboard>       
+          </image>
+		  
+	   </view>
+</theme>

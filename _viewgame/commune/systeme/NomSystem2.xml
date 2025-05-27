@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+
+        <view name="detailed, coinops, hyperbat">
+
+            <image name="logoTransition" extra="true">
+           	<linearSmooth>true</linearSmooth>
+               <maxSize>1 0.2</maxSize>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+               <zIndex>999</zIndex>
+			<reflexion>0.15 0</reflexion>
+			<path>${intlogoclearpng}</path>
+			<path>${intlogoclearfrpng}</path>
+			<storyboard>
+                <animation property="opacity" from="0" to="1" duration="150" mode="linear" begin="0"/>
+				<animation property="scale" from="0.6" duration="250" mode="easeOut" begin="0"/>
+                <animation property="opacity" from="1" to="1" duration="500" mode="linear" begin="500"/>
+                <animation property="opacity" from="1" to="0" duration="150" mode="easeOutQuint" begin="1000"/>
+                <animation property="offsetX" from="0.01" to="-0.01" duration="1150" mode="linear"/>
+                <animation property="saturation" from="0" to="1.2" duration="575" autoreverse="true" mode="bump"/>
+            </storyboard> 
+          </image>
+
+
+	   </view>
+
+</theme>

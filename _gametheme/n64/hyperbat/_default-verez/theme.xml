@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.501443001443 0.502565335899</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="logo-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; 
+            {game:system:theme} == 'n64' &amp;&amp;
+            !exists("${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>
+			<path>./logo.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.115832431457 0.478795895463</pos>
+			<size>0.195463564214 0.321388488055</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="logo_jeu-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+            <path>"${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.115832431457 0.478795895463</pos>
+			<maxSize>0.267708333333333 0.440740740740741</maxSize>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.470983270202 0.864409972743</pos>
+			<size>0.382708784271 0.189618406285</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="console-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./console.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.835379464286 0.816851050184</pos>
+			<size>0.291145833333 0.274074074074</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Cartridge-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.832465277778 0.705473384640</pos>
+			<size>0.109375000000 0.123148148148</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="66" mode="Linear"/>
+				<animation property="offsetY" from="-0.4" to="0" begin="1000" duration="1000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="66" mode="Linear"/>
+				<animation property="offsetY" from="-0.4" to="0" begin="1000" duration="1000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="66" mode="Linear"/>
+				<animation property="offsetY" from="-0.4" to="0" begin="1000" duration="1000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="console2-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./console2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.834196879509 0.818027497194</pos>
+			<size>0.293750000000 0.271296296296</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Boxart-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>exists({game:boxart}) ? {game:boxart} : {game:thumbnail}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.846721681097 0.361092857421</pos>
+			<maxSize>0.254166666667 0.237037037037</maxSize>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="450" duration="300" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="2400" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="450" duration="600" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="2400" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="450" duration="600" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="2400" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="manette-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./manette.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.106357097763 0.834591951259</pos>
+			<size>0.130729166667 0.203703703704</size>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="7.9" to="0" begin="0" duration="750" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="7.9" to="0" begin="0" duration="750" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="7.9" to="0" begin="0" duration="750" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Marquee-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>{game:marquee}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.117996933622 0.170172853152</pos>
+			<maxSize>0.156502525253 0.227470926762</maxSize>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="300" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="2400" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="600" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="2400" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="600" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="2400" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="screenshot-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.468253968254 0.416867083534</pos>
+			<size>0.468975468975 0.613115279782</size>
+			<zIndex>280</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Bezel-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./Bezel.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.468055555556 0.417318021485</pos>
+			<size>0.491666666667 0.647222222222</size>
+			<zIndex>290</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<video name="gameplayprev-n64" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.468021735209 0.415788840789</pos>
+			<maxSize>0.465625000000 0.631481481481</maxSize>
+			<zIndex>300</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+		</video>
+		<control name="Background-n64, logo-n64, Artwork1-n64, console-n64, console2-n64, Boxart-n64, manette-n64, Marquee-n64, screenshot-n64, Bezel-n64, gameplayprev-n64">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<control name="Cartridge-n64">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

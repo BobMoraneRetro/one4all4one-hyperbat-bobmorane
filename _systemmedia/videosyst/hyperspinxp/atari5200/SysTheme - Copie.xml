@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<!-- ################ Fond du theme ##################### -->
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="background" extra="true">
+			<path>./Background.png</path>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+			<!-- <storyboard event="deactivateNext"> -->
+			<!-- <animation property="opacity" from="1" to="1" duration="200" mode="linear"/> -->
+			<!-- <animation property="opacity" from="1" to="0" begin="200" duration="300" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+			<!-- <animation property="opacity" from="1" to="1" duration="200" mode="linear"/> -->
+			<!-- <animation property="opacity" from="1" to="0" begin="200" duration="300" mode="linear"/> -->
+			<!-- </storyboard> -->
+		</image>
+		<!-- <image name="background2" extra="true"> -->
+		<!-- <path>./../_fondsysteme/${system.theme}.jpg</path> -->
+		<!-- <pos>0.5 0.5</pos> -->
+		<!-- <size>1 1</size> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <zIndex>500</zIndex> -->
+		<!-- <scaleOrigin>0 -0.3</scaleOrigin> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" to="0" begin="" duration="" mode="Linear"/> -->
+		<!-- <animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/> -->
+		<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- ################ Logo Système ##################### -->
+		<!-- <image name="logocust" extra="true"> -->
+			<!-- <maxSize>0.5 0.15</maxSize> -->
+			<!-- <scaleOrigin>0 -0.3</scaleOrigin> -->
+			<!-- <pos>0.5 0.5</pos> -->
+			<!-- <origin>0.5 0.5</origin> -->
+			<!-- <zIndex>10</zIndex> -->
+			<!-- <storyboard> -->
+				<!-- <animation property="scaleOrigin" to="0 0" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="600" duration="500" mode="linear"/> -->
+				<!-- <animation property="pos" to="0.5 0.5" begin="" duration="500" mode="EasyOut"/> -->
+				<!-- <animation property="scale" from="0" to="2.5" begin="600" duration="500" mode="EasyIn"/> -->
+				<!-- <animation property="pos" from="0.5 0.5" to="0.3 0.12" begin="1250" duration="500" mode="EasyOut"/> -->
+				<!-- <animation property="scale" from="2.5" to="1" begin="1250" duration="500" mode="Linear"/> -->
+			<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true"> -->
+			<!-- <path>${intlogoclearsvg}</path> -->
+			<!-- <path>${extlogoclearsvg}</path> -->
+			<!-- <path>${intlogoclearpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="fr"> -->
+			<!-- <path>${intlogoclearfrsvg}</path> -->
+			<!-- <path>${extlogoclearfrsvg}</path> -->
+			<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="eu"> -->
+			<!-- <path>${intlogoclearfrsvg}</path> -->
+			<!-- <path>${extlogoclearfrsvg}</path> -->
+			<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="us"> -->
+			<!-- <path>${intlogoclearussvg}</path> -->
+			<!-- <path>${extlogoclearussvg}</path> -->
+			<!-- <path>${intlogoclearuspng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="jp"> -->
+			<!-- <path>${intlogoclearjpsvg}</path> -->
+			<!-- <path>${extlogoclearjpsvg}</path> -->
+			<!-- <path>${intlogoclearjppng}</path> -->
+		<!-- </image> -->
+		<!-- ################ Artwork1 ##################### -->
+		<image name="Artwork1" extra="true">
+			<path>./Artwork1.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>3</zIndex>
+			<pos>0.77265625 0.28287037037037</pos>
+			<size>0.4359375 0.434259259259259</size>
+			<!-- # Arrivee D->G Sweet # -->
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="200" duration="400" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="200" duration="650" mode="Linear"/>
+				<!-- <animation property="offsetX" from="0.05" to="-0.02" begin="600" duration="300" mode="EaseIn"/> -->
+				<!-- <animation property="offsetX" from="-0.02" to="0.005" begin="900" duration="200" mode="EaseIn"/> -->
+				<!-- <animation property="offsetX" from="0.005" to="0" begin="1100" duration="100" mode="EaseIn"/> -->
+			</storyboard>
+		</image>
+		<!-- ################ Artwork2 ##################### -->
+		<image name="Artwork2" extra="true">
+			<path>./Artwork2.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>2</zIndex>
+			<pos>0.283854166666667 0.139351851851852</pos>
+			<size>0.530208333333333 0.25462962962963</size>
+			<linearSmooth>true</linearSmooth>
+			<!-- # Arrivee : G->D # -->
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="200" duration="400" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="200" duration="650" mode="Linear"/>
+
+			</storyboard>
+		</image>
+		<!-- ################ Artwork3 ##################### -->
+		<image name="Artwork3" extra="true">
+			<path>./Artwork3.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>4</zIndex>
+<pos>0.789322916666667 0.583333333333333</pos>
+<size>0.421354166666667 0.833333333333333</size>
+
+			<!-- # Arrivee Centrale Zoom puis dezoom en position # -->
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="4000" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<!-- ################ Artwork4 ##################### -->
+		<image name="Artwork4" extra="true">
+			<path>./Artwork4.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>3</zIndex>
+			<pos>0.68046875 0.636574074074074</pos>
+			<size>0.2671875 0.578703703703704</size>
+			<!-- # Arrivee D->G Sweet # -->
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1050" duration="500" mode="Linear"/>
+				<animation property="scale" from="0" to="1" begin="1050" duration="500" mode="bump"/>
+				<animation property="scale" from="1" to="1.1" begin="1550" duration="120" autoreverse="true" mode="EasyOutCubic"/>
+				<animation property="scale" from="1" to="1.05" begin="1670" duration="120" autoreverse="true" mode="EasyOutCubic"/>
+			</storyboard>
+		</image>
+		<!-- ################ Bezel autour de la video ##################### -->
+		<image name="Videobezel" extra="true">
+			<path>./video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.283 0.633</pos>
+			<size>0.49 0.67</size>
+			<zIndex>3</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear"/>
+				<!-- <animation property="scale" from="0" to="1" begin="1500" duration="500" mode="Linear"/> -->
+				<!-- <animation property="scaleOrigin" to="0 0" begin="1500" duration="" mode="Linear"/> -->
+			</storyboard>
+		</image>
+		<!-- ################ La video ##################### -->
+		<video name="PreviewVid" extra="true">
+			<visible>true</visible>
+			<path>{random}</path>
+			<maxSize>0.51 0.60</maxSize>
+			<minSize>0.5 0.60</minSize>
+			<origin>0.5 0.5</origin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<pos>0.283854166666667 0.62</pos>
+			<zIndex>2</zIndex>
+			<!-- <shader> -->
+				<!-- <path>:/shaders/border.glsl</path> -->
+				<!-- <cornerRadius>0.1</cornerRadius> -->
+				<!-- <borderSize>0.018</borderSize> -->
+				<!-- <borderColor>000000</borderColor> -->
+				<!-- <innerShadowSize>0.01</innerShadowSize> -->
+				<!-- <innerShadowColor>00000030</innerShadowColor> -->
+				<!-- <outerShadowSize>0.020</outerShadowSize> -->
+				<!-- <outerShadowColor>00000050</outerShadowColor> -->
+			<!-- </shader> -->
+		</video>
+		<!-- ################ Animations du bezel video et de la video si identique ##################### -->
+		<!-- # Arriv饠: D->G # -->
+		<control name="PreviewVid, ">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="800" mode="Linear"/>
+				<!-- <animation property="scale" from="0" to="1" begin="1200" duration="500" mode="Linear"/> -->
+				<!-- <animation property="scaleOrigin" to="0 0" begin="1200" duration="" mode="Linear"/> -->
+			</storyboard>
+		</control>
+		<!-- ################ Animation de sortie des artworks ##################### -->
+		<!-- <control name="Artwork4"> -->
+			<!-- <storyboard> -->
+				<!-- <animation property="opacity" from="1" to="0" duration="150" mode="linear"/> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="300" mode="easyIn"/> -->
+			<!-- </storyboard> -->
+		<!-- </control> -->
+		<!-- <control name="Artwork1, Artwork2, Artwork3, PreviewVid,Videobezel"> -->
+			<!-- <storyboard> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+		<!-- </control> -->
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="md_boxart">
+			<visible>false</visible>
+		</image>
+	</view>
+	<!-- <include>./zSpec/${system.theme}.xml</include> -->
+	<!-- <include>./zSpecvideo/${system.theme}.xml</include> -->
+</theme>

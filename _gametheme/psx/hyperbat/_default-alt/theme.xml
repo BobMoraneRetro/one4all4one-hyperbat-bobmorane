@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-psx" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'psx'</visible>
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="screenshot-psx" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'psx'</visible>
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.495927865038 0.401851851852</pos>
+			<size>0.497382198953 0.642592592593</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.497382198953" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.497382198953" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.497382198953" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev-psx" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'psx'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.501018033741 0.400192400192</pos>
+			<maxSize>0.507562536358 0.631072631073</maxSize>
+			<zIndex>210</zIndex>
+			<effect>none</effect>
+			<delay>1.5</delay>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+		</video>
+		<image name="bezel-psx" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'psx'</visible>
+			<path>./bezel.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.498109365910 0.400925925926</pos>
+			<size>0.516288539849 0.672222222222</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.516288539849" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.516288539849" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.516288539849" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="Marquee-psx" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'psx'</visible>
+			<path>{game:marquee}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.104427083333 0.105305034472</pos>
+			<maxSize>0.201562500000 0.143518518519</maxSize>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="console-psx" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'psx'</visible>
+			<path>./console.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.871614583333 0.762962962963</pos>
+			<size>0.239062500000 0.312962962963</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Cartridge-psx" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'psx'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.870052083333 0.776851851852</pos>
+			<maxSize>0.14 0.14</maxSize>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" to="360" begin="4000" duration="5000" mode="easeIn" from="0"/>
+				<animation property="rotation" to="360" begin="9000" duration="3200" mode="linear" from="0" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" to="360" begin="4000" duration="5000" mode="easeIn" from="0"/>
+				<animation property="rotation" to="360" begin="9000" duration="3200" mode="linear" from="0" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" to="360" begin="4000" duration="5000" mode="easeIn" from="0"/>
+				<animation property="rotation" to="360" begin="9000" duration="3200" mode="linear" from="0" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Boxart-psx" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'psx'</visible>
+			<path>exists({game:boxart}) ? {game:boxart} : {game:thumbnail}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.882291666667 0.337500000000</pos>
+			<maxSize>0.173958333333 0.406481481481</maxSize>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="93" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="748" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="187" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="748" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="187" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="748" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Artwork-psx" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'psx'</visible>
+			<path>./Artwork.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.488802083333 0.815740740741</pos>
+			<size>0.493229166667 0.157407407407</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="manette-psx" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'psx'</visible>
+			<path>./manette.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.123958333333 0.846296296296</pos>
+			<size>0.198958333333 0.218518518519</size>
+			<zIndex>280</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="650" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="650" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="650" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="logo-psx" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; 
+            {game:system:theme} == 'psx' &amp;&amp;
+            !exists("${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>
+			<path>./logo.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.104947916667 0.474074074074</pos>
+			<size>0.177604166667 0.577777777778</size>
+			<zIndex>290</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="logo_jeu-psx" extra="true">
+			 <visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'psx'</visible>
+            <path>"${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.104947916667 0.474074074074</pos>
+			<maxSize>0.267708333333333 0.440740740740741</maxSize>
+			<zIndex>290</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<control name="Background-psx, screenshot-psx, gameplayprev-psx, bezel-psx, Marquee-psx, console-psx, Boxart-psx, Artwork-psx, manette-psx, logo-psx">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<control name="Cartridge-psx">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

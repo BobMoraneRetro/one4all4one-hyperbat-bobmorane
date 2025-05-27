@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-atari2600" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atari2600'</visible>
+			<path>./atari2600.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.503687670354 0.529501362835</pos>
+			<size>1.033349366683 1.033349366683</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="Artwork1-atari2600" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atari2600'</visible>
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.512265512266 0.315792849126</pos>
+			<size>0.730158730159 0.580278980279</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>:/shaders/wave.glsl</path>
+				<waveTime>0</waveTime>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="650" duration="2500" mode="easeOut"/>
+				<animation property="shader.waveTime" from="0" to="5" begin="1300" duration="2000" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="850" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="850" duration="2500" mode="easeOut"/>
+				<animation property="shader.waveTime" from="0" to="5" begin="1500" duration="2000" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="850" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="850" duration="2500" mode="easeOut"/>
+				<animation property="shader.waveTime" from="0" to="5" begin="1500" duration="2000" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="boxart-atari2600" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atari2600'</visible>
+			<path>exists({game:boxart}) ? {game:boxart} : {game:thumbnail}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.878188131313 0.404671717172</pos>
+			<maxSize>0.160416666667 0.486111111111</maxSize>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="console1-atari2600" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atari2600'</visible>
+			<path>./console1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.803751803752 0.849949895783</pos>
+			<size>0.349206349206 0.278703703704</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="cart-atari2600" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atari2600'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.802410263348 0.749258457592</pos>
+			<size>0.078125000000 0.138888888889</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="100" mode="Linear"/>
+				<animation property="offsetY" from="-0.4" to="0" begin="2000" duration="1500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="100" mode="Linear"/>
+				<animation property="offsetY" from="-0.4" to="0" begin="2000" duration="1500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="100" mode="Linear"/>
+				<animation property="offsetY" from="-0.4" to="0" begin="2000" duration="1500" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="console2-atari2600" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atari2600'</visible>
+			<path>./console2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.802467890565 0.849525012025</pos>
+			<size>0.352410528605 0.277853936187</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="logo-atari2600" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atari2600'</visible>
+			<path>./logo.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.555555555556 0.608251162418</pos>
+			<size>0.141414141414 0.462293570627</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="marquee-atari2600" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atari2600'</visible>
+			<path>{game:marquee}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.139831349206 0.079068462402</pos>
+			<maxSize>0.247916666667 0.122222222222</maxSize>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev-atari2600" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atari2600'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.240019240019 0.670835337502</pos>
+			<maxSize>0.425204425204 0.566939233606</maxSize>
+			<zIndex>270</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1200" duration="500" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="1200" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1200" duration="500" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="1200" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1200" duration="500" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="1200" duration="500" mode="Linear"/>
+			</storyboard>
+		</video>
+		<image name="Video-atari2600" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atari2600'</visible>
+			<path>./video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.235949834479 0.670835337502</pos>
+			<size>0.457469654528 0.613115279782</size>
+			<zIndex>280</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1200" duration="500" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="1200" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1200" duration="500" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="1200" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1200" duration="500" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="1200" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<control name="Artwork1-atari2600, boxart-atari2600, console1-atari2600, console2-atari2600, logo-atari2600, marquee-atari2600, gameplayprev-atari2600, Video-atari2600">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<control name="cart-atari2600">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

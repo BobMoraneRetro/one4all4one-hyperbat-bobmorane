@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<carousel name="systemcarousel">
+			<type ifSubset="hyperwheel:verticaldr|verticaldreb|verticalgh|verticalgheb">vertical</type>
+			<type ifSubset="hyperwheel:spingh|spindr|verticalghkk">vertical_wheel</type>
+			<size>1 1</size>
+			<pos ifSubset="hyperwheel:spingh|verticalgh">-0.35 0</pos>
+			<pos ifSubset="hyperwheel:verticaldr">0.33 0</pos>
+			<pos ifSubset="hyperwheel:verticaldreb">0.39 0</pos>
+			<pos ifSubset="hyperwheel:verticalgheb">-0.39 0</pos>
+			<pos ifSubset="hyperwheel:spindr|verticalghkk">0.33 0</pos>
+			<color>00000000</color>
+			<colorEnd>00000000</colorEnd>
+			<logoScale ifSubset="hyperwheel:spingh|verticaldr|verticalgh">1.4</logoScale>
+			<logoScale ifSubset="hyperwheel:verticaldreb|verticalgheb">1</logoScale>
+			<logoScale ifSubset="hyperwheel:verticalghkk|spindr">1.4</logoScale>
+			<logoRotation>-7</logoRotation>
+			<logoRotation ifSubset="hyperwheel:spingh">7</logoRotation>
+			<logoRotation ifSubset="hyperwheel:spindr">-7</logoRotation>
+			<logoRotationOrigin ifSubset="hyperwheel:spingh">-3.5 0.5</logoRotationOrigin>
+			<logoRotationOrigin ifSubset="hyperwheel:verticaldr|verticaldreb|verticalgh|verticalgheb|verticalghkk|spindr">4 0.5</logoRotationOrigin>
+			<logoSize>0.15 0.15</logoSize>
+			<!-- <logoSize ifSubset="hyperwheel:verticaldreb|verticalgheb">0.20 0.20</logoSize> -->
+			<logoAlignment>center</logoAlignment>
+			<maxLogoCount>8</maxLogoCount>
+			<systemInfoDelay>700</systemInfoDelay>
+			<systemInfoCountOnly>false</systemInfoCountOnly>
+			<defaultTransition>instant</defaultTransition>
+			<minLogoOpacity>1</minLogoOpacity>
+			<transitionSpeed>650</transitionSpeed>
+			<zIndex>105</zIndex>
+		</carousel>
+		<image name="logo">
+			<storyboard event="activate">
+				<animation property="opacity" to="0" begin="800" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="0" begin="800" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" begin="800" duration="150" mode="linear"/>
+			</storyboard>
+		</image>
+		<text name="logoText">
+			<storyboard event="activate">
+				<animation property="opacity" to="0" begin="800" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="0" begin="800" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" begin="800" duration="150" mode="linear"/>
+			</storyboard>
+		</text>
+		<image name="vignetage2" extra="true">
+			<path>${themePath}/hyperbat/overlaydiamonds.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<zIndex>100</zIndex>
+			<opacity>1</opacity>
+			<flipX ifSubset="hyperwheel:spingh|verticalgheb|verticalgh">true</flipX>
+			<flipX ifSubset="hyperwheel:spindr|verticaldreb|verticaldr">false</flipX>
+			<storyboard>
+				<animation property="opacity" to="0" begin="800" duration="850" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="bgmask" extra="true">
+			<path>${themePath}/hyperbat/bgmask.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<zIndex>50</zIndex>
+			<opacity>0.5</opacity>
+		</image>
+	</view>
+</theme>

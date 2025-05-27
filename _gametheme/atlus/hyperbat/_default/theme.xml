@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Backgrounddef" extra="true">
+			<visible ifSubset="hsperview:themejeux">${IfnoextGamethemeexist}</visible>
+			<path>./background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+		</image>
+		<image name="Artwork1def" extra="true">
+			<visible ifSubset="hsperview:themejeux">${IfnoextGamethemeexist}</visible>
+			<path>./art1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.267906121136 0.500384620235</pos>
+			<size>0.535812242273 1.000769240470</size>
+			<zIndex>200</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<video name="PreviewViddef" extra="true">
+			<visible ifSubset="hsperview:themejeux">${IfnoextGamethemeexist}</visible>
+			<path>{game:video}</path>
+			<pos>0.266541822722 0.568254328554</pos>
+			<maxSize>0.333333333333 0.444444444444</maxSize>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<zIndex>210</zIndex>
+		</video>
+		<image name="boxart2Ddef" extra="true">
+			<visible ifSubset="hsperview:themejeux">${IfnoextGamethemeexist}</visible>
+			<path>{game:thumbnail}</path>
+			<pos>0.7 0.45</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.32 0.70</maxSize>
+			<zIndex>351</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>FFFFFFFF</color>
+			<colorEnd>cccccc</colorEnd>
+			<verticalAlignment>bottom</verticalAlignment>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="550" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="550" duration="400" mode="EaseOut"/>
+				<!-- <animation property="offsetY" from="0" to="-0.06" begin="620" duration="350" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.038" begin="1320" duration="250" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.024" begin="1820" duration="140" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.009" begin="2100" duration="60" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.0025" begin="2220" duration="20" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="0" begin="2260" duration="2500" mode="Linear" autoReverse="true"/> -->
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="550" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="550" duration="400" mode="EaseOut"/>
+				<!-- <animation property="offsetY" from="0" to="-0.06" begin="620" duration="350" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.038" begin="1320" duration="250" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.024" begin="1820" duration="140" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.009" begin="2100" duration="60" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.0025" begin="2220" duration="20" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="0" begin="2260" duration="2500" mode="Linear" autoReverse="true"/> -->
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="550" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="550" duration="400" mode="EaseOut"/>
+				<!-- <animation property="offsetY" from="0" to="-0.06" begin="620" duration="350" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.038" begin="1320" duration="250" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.024" begin="1820" duration="140" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.009" begin="2100" duration="60" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.0025" begin="2220" duration="20" mode="EaseOutCubic" autoReverse="true"/> -->
+				<!-- <animation property="offsetY" from="0" to="0" begin="2260" duration="2500" mode="Linear" autoReverse="true"/> -->
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>220</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>220</zIndex>
+		</image>
+		<control name="PreviewViddef, Artwork1def">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="1" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="1" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

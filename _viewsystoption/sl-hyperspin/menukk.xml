@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<carousel name="systemcarousel">
+			<logoScale>1.7</logoScale>
+			<logoSize>0.11 0.11</logoSize>
+			<logoAlignment>center</logoAlignment>
+			<maxLogoCount>15</maxLogoCount>
+			<logoRotation>-6.5</logoRotation>
+			<logoRotationOrigin>5.5 0.5</logoRotationOrigin>
+			<defaultTransition>instant</defaultTransition>
+		</carousel>
+		<image name="logo">
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="" duration="" mode="linear"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="1" begin="" duration="" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="1" begin="" duration="" mode="linear"/>
+			</storyboard>
+		</image>
+		<text name="logoText">
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="" duration="" mode="linear"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="1" begin="" duration="" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="1" begin="" duration="" mode="linear"/>
+			</storyboard>
+		</text>
+		<video name="staticBackground02">
+			<path>${themePath}/_viewsystoption/sl-hyperspin/kkview/ps3blue.mp4</path>
+			<effect>none</effect>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<maxSize>1 1</maxSize>
+			<zIndex>35</zIndex>
+			<opacity>0.2</opacity>
+		</video>
+		<text name="systemInfo">
+			<pos>-0.45 0.80</pos>
+		</text>
+		<!-- <image name="superb" extra="true"> -->
+		<!-- <path>${themePath}/../_bobmedia/_systemmedia/consoles/${system.theme}.png</path> -->
+		<!-- <origin>0.5 0</origin> -->
+		<!-- <pos>0.5 0</pos> -->
+		<!-- <maxSize>0.2 0.2</maxSize> -->
+		<!-- <zIndex>41</zIndex> -->
+		<!-- </image> -->
+	</view>
+</theme>

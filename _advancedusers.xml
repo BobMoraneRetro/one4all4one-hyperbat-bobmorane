@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme defaultView="hyperbat">
+	<formatVersion>7</formatVersion>
+	<subset name="systannonce" displayName="${systannounce}" appliesTo="hyperbat">
+		<include name="classiquesyst" displayName="${classiquesyst}">${themePath}/_viewgame/commune/systeme/nomsystem.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<subset name="gwheelbackgr" displayName="${gwheelbackgr}" appliesTo="hyperbat">
+		<include name="sisaccades" displayName="${sisaccades}"/>
+		<include name="ovalcarbon" displayName="${ovalcarbon}">${themePath}/_viewgameoption/gl-common/autoovalcarbon.xml</include>
+		<include name="ovalsilver" displayName="${ovalsilver}">${themePath}/_viewgameoption/gl-common/autoovalsilver.xml</include>
+		<include name="rectcarbon" displayName="${rectcarbon}">${themePath}/_viewgameoption/gl-common/autorectcabon.xml</include>
+		<!-- <include name="hfsround" displayName="${hfsround}">${themePath}/_viewgameoption/gl-common/autoHFSround.xml</include> -->
+		<!-- <include name="logounified" displayName="${logounified}">${themePath}/_viewgameoption/gl-common/autounified.xml</include> -->
+	</subset>
+	<subset name="letternav" displayName="${letternav}" appliesTo="hyperbat">
+		<include name="navhoricoinstyle" displayName="${navhoricoinstyle}">${themePath}/_viewgameoption/gl-common/navhoricoinstyle.xml</include>
+		<include name="navvertcoinstyle" displayName="${navvertcoinstyle}">${themePath}/_viewgameoption/gl-common/navvertcoinstyle.xml</include>
+		<include name="navhsletters" displayName="${navhsletters}">${themePath}/_viewgameoption/gl-common/navhsletters.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<subset name="infosmax" displayName="${infosmax}" appliesTo="hyperbat">
+		<include name="non" displayName="${no}"/>
+		<include name="oui" displayName="${yes}">${themePath}/_viewgameoption/gl-common/infosmax.xml</include>
+	</subset>
+	<!-- ################################################################################# -->
+	<!-- ######################## VUES JEUX Hyperspin #################################### -->
+	<!-- ################################################################################# -->
+	<subset name="spacerHS01" displayName="${vide}" appliesTo="${vide}">
+		<include name=" " displayName=" "/>
+	</subset>
+	<subset name="spacerHS02" displayName="${spacerHS02}" appliesTo="${vide}">
+		<include name="desactive" displayName=" "/>
+	</subset>
+	<subset name="spacermediahs" displayName="${mediahyper}" appliesTo="${vide}">
+		<include name="desactive" displayName=" "/>
+	</subset>
+	<subset name="syststickon" displayName="${syststickon}" appliesTo="hyperbat">
+		<include name="stickon" displayName="${stickon}">${themePath}/_viewgameoption/gl-hyperbat/stickon.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<subset name="syststickcolor" displayName="${syststickcolor}" appliesTo="hyperbat">
+		<include name="ballcyan" displayName="${ballcyan}"/>
+		<include name="ballblue" displayName="${ballblue}"/>
+		<include name="balldarkviolet" displayName="${balldarkviolet}"/>
+		<include name="ballviolet" displayName="${ballviolet}"/>
+		<include name="ballgreen" displayName="${ballgreen}"/>
+		<include name="balllitegreen" displayName="${balllitegreen}"/>
+		<include name="ballpink" displayName="${ballpink}"/>
+		<include name="ballred" displayName="${ballred}"/>
+		<include name="ballyelgreen" displayName="${ballyelgreen}"/>
+		<include name="ballyellow" displayName="${ballyellow}"/>
+	</subset>
+	<subset name="pressstart" displayName="${pressstart}" appliesTo="hyperbat">
+		<include name="doigts" displayName="${doigts}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<subset name="hsperview" displayName="${hyperbatperview}" appliesTo="hyperbat">
+		<include name="themejeux" displayName="${themejeux}"/>
+		<include name="themejeuxno" displayName="${themejeuxno}"/>
+	</subset>
+	<subset name="boxorthumb" displayName="${boxorthumb}" appliesTo="hyperbat">
+		<include name="boxart" displayName="${boxart}"/>
+		<include name="thumb" displayName="${thumb}"/>
+	</subset>
+	<subset name="pointeuradroite" displayName="${pointeuradroite}" appliesTo="hyperbat">
+		<include name="actif" displayName="${actif}">${themePath}/_viewsystoption/sl-hyperspin/pointers.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+</theme>

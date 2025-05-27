@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="fanartflix" extra="true">
+			<autoFade>false</autoFade>
+			<path ifSubset="imagefondcops1:fanartfreshone">${intfanartfresh}</path>
+			<path ifSubset="imagefondcops1:fanartcustom">${intfanartfresh}</path>
+			<path ifSubset="imagefondcops1:fanartcustom">${intfanartcustom}</path>
+			<origin>0 0</origin>
+			<pos>-0.015 0</pos>
+			<pos ifSubset="hyperwheel:verticalghjp">0 0</pos>
+			<size>1.03 1.02</size>
+			<zIndex>0</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+	</view>
+</theme>

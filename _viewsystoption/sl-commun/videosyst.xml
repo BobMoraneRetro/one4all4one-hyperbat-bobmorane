@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<!-- ifSubset="VideoFondCops1:Hypermax" -->
+		<!-- Ralentit le chargement du thème -->
+		<image name="fondecransmall" ifSubset="videofondcops1:gameplayp|gameplayp1" extra="true">
+			<origin>0.5 0.5</origin>
+			<!-- <pos>0.5 0.5</pos> -->
+			<!-- <path>${themePath}/_common/images/black.png</path> -->
+			<!-- <maxSize>1 1</maxSize> -->
+			<path>${themePath}/_common/images/169v2.png</path>
+			<size>0.9 0.98</size>
+			<pos>0.478 0.4</pos>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>3</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="" mode="" begin=""/>
+				<animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="500"/>
+			</storyboard>
+		</image>
+		<image name="scanlines" ifSubset="videofondcops1:gameplay|gameplayp|gameplay1|gameplayp1" extra="true">
+			<tile>true</tile>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<path>${themePath}/_common/shaders/scanlines01.png</path>
+			<maxSize>1 1</maxSize>
+			<maxSize ifSubset="videofondcops1:gameplayp|gameplayp1">0.55 0.7</maxSize>
+			<pos ifSubset="videofondcops1:gameplayp|gameplayp1">0.5 0.4</pos>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>4</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="" mode="" begin=""/>
+				<animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="550"/>
+			</storyboard>
+		</image>
+		<image name="blablacksyt" ifSubset="videofondcops1:gameplay|gameplay1|gameplayp|gameplayp1|hyperspin|hyperspinorunified" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<path>${themePath}/_common/images/black.png</path>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>1</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="" mode="" begin=""/>
+				<animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="500"/>
+			</storyboard>
+		</image>
+		<!-- assombri le fanart -->
+		<control name="blablacksyt" ifSubset="videofondcops1:gameplayp|gameplayp1|hyperspin|hyperspinorunified">
+			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="" mode="" begin=""/>
+				<animation property="opacity" from="0" to="0.7" duration="500" mode="easeOut" begin="500"/>
+			</storyboard>
+		</control>
+		<image name="bezel" ifSubset="videofondcops1:gameplay1|gameplayp1" extra="true">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<path>${intbezelsyst}</path>
+			<maxSize>1 1</maxSize>
+			<maxSize ifSubset="videofondcops1:gameplayp1">0.7 0.7</maxSize>
+			<pos ifSubset="videofondcops1:gameplayp1">0.5 0.4</pos>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>4</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="" mode="" begin=""/>
+				<animation property="opacity" from="0" to="1" duration="500" mode="easeOut" begin="500"/>
+			</storyboard>
+		</image>
+		<video name="backgroundvideo" extra="true">
+			<!-- <default>${themePath}/_viewsyst/hypermx/defaut/scotty.mp4</default> -->
+			<path ifSubset="videofondcops1:gameplay|gameplayp|gameplay1|gameplayp1">{random}</path>
+			<path ifSubset="videofondcops1:unified">${extbouchetrou}</path>
+			<path ifSubset="videofondcops1:unified">${exthyperpie}</path>
+			<path ifSubset="videofondcops1:unified">${extunified}</path>
+			<!-- <path ifSubset="videofondcops1:hyperpie">${extbouchetrou}</path> -->
+			<!-- <path ifSubset="videofondcops1:hyperpie">${extunified}</path> -->
+			<path ifSubset="videofondcops1:hyperpie|hyperspinorder">${exthyperpie}</path>
+			<!-- <path ifSubset="videofondcops1:hypermax">${extvideofresh}</path> -->
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>1 1</maxSize>
+			<maxSize ifSubset="videofondcops1:gameplayp|gameplayp1">0.55 0.7</maxSize>
+			<pos ifSubset="videofondcops1:gameplayp|gameplayp1">0.5 0.4</pos>
+			<delay>0.2</delay>
+			<effect>none</effect>
+			<zIndex>3</zIndex>
+			<visible ifSubset="videofondcops1:hyperspinorder">${ifnoextsysthemeexist}</visible>
+		</video>
+		<video name="backgroundvideo" ifSubset="videofondcops1:hypermax|gameplayhmax" extra="true">
+			<default>${themePath}/_viewsyst/hypermx/defaut/scotty.mp4</default>
+			<path ifSubset="videofondcops1:hypermax|gameplayhmax">{random}</path>
+			<path ifSubset="videofondcops1:hypermax">${extvideofresh}</path>
+			<rotation>-4</rotation>
+			<roundCorners>0.04</roundCorners>
+			<pos>0.45 0.485</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.4860 0.682</size>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<storyboard>
+				<animation property="y" from="0.05" begin="0" duration="350" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" duration="550" mode="easeIn"/>
+				<animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+			</storyboard>
+			<zIndex>200</zIndex>
+		</video>
+	</view>
+	<include ifSubset="videofondcops1:hyperspin|hyperspinorunified">${extspinxml}</include>
+	<include ifSubset="videofondcops1:hyperspinxp|hyperspinorder|hyperspinorunified">${extspinxpxml}</include>
+	<!-- <include ifSubset="videofondcops1:videowall">${extvideowall}</include> -->
+</theme>

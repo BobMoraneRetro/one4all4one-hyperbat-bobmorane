@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<!-- <image name="catégorie" if="${system.sortedBy} == 'Console' || ${system.sortedBy} ==  'Extension' || ${system.sortedBy} ==  'Mess'  || ${system.sortedBy} ==  'Pinball' || ${system.sortedBy} ==  'Port' || ${system.sortedBy} ==  'Portable' || ${system.sortedBy} ==  'System' || ${system.sortedBy} ==  'Auto collection' || ${system.sortedBy} ==  'Custom collection' || ${system.sortedBy} ==  '' || ${system.sortedBy} ==  'Arcade' || ${system.sortedBy} ==  'Computer'" extra="static"> -->
+		<!-- Arc de cercle -->
+		<!-- <image name="grille" extra="static"> -->
+		<!-- <path>${themePath}/_common/grille2.png</path> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <pos>0.5 0.45</pos> -->
+		<!-- <size>1 1</size> -->
+		<!-- <zIndex>60</zIndex> -->
+		<!-- </image> -->
+		<!-- <image name="menutemplate" extra="static"> -->
+		<!-- <path>${themePath}/_common/menuofficiel.png</path> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <pos>0.5 0.5</pos> -->
+		<!-- <size>1 1</size> -->
+		<!-- <zIndex>60</zIndex> -->
+		<!-- </image> -->
+		<!-- ########## Si menu officiel sélectionné ############# -->
+		<image name="iconselec" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/icon.png</path>
+			<origin>1 0</origin>
+			<pos>0.273 0</pos>
+			<size>0.16 0.061</size>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<!-- <color>ffffff</color> -->
+		</image>
+		<image name="buttonlb" ifSubset="menuofficiel:menuteta" extra="true">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/LB.png</path>
+			<origin>1 0</origin>
+			<pos>0.16 0</pos>
+			<maxSize>0.16 0.061</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<!-- <storyboard repeatAt="1"> -->
+			<!-- <animation property="opacity" from="1" to="0" begin="0" duration="0" mode="linear"/> -->
+			<!-- <animation property="opacity" from="0" to="1" begin="500" duration="1000" mode="linear"/> -->
+			<!-- <animation property="opacity" from="1" to="0" begin="1500" duration="1000" mode="linear"/> -->
+			<!-- </storyboard> -->
+		</image>
+		<image name="buttonrb" ifSubset="menuofficiel:menuteta" extra="true">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/RB.png</path>
+			<origin>1 0</origin>
+			<pos>0.83 0</pos>
+			<maxSize>0.16 0.061</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<!-- <color>000000</color> -->
+			<!-- <storyboard event="open"> -->
+			<!-- <storyboard repeatAt="1"> -->
+			<!-- <animation property="opacity" from="1" to="0" begin="0" duration="0" mode="linear"/> -->
+			<!-- <animation property="opacity" from="0" to="1" begin="500" duration="1000" mode="linear"/> -->
+			<!-- <animation property="opacity" from="1" to="0" begin="1500" duration="1000" mode="linear"/> -->
+			<!-- </storyboard> -->
+		</image>
+		<text name="inconin" extra="true">
+			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<origin>0.5 0</origin>
+			<text if="{system.hardwareType} == 'arcade'">Arcade</text>
+			<text if="{system.hardwareType} == 'computer'">Ordinateur</text>
+			<text if="{system.hardwareType} == 'console'">Console</text>
+			<text if="{system.hardwareType} == 'extension'">Extension</text>
+			<text if="{system.hardwareType} == 'MESS'">MESS</text>
+			<text if="{system.hardwareType} == 'pinball'">Pinball</text>
+			<text if="{system.hardwareType} == 'port'">Portages</text>
+			<text if="{system.hardwareType} == 'portable'">Portable</text>
+			<text if="{system.hardwareType} == 'system'">System</text>
+			<text if="{system.hardwareType} == 'auto collection'">Collection auto</text>
+			<text if="{system.hardwareType} == 'custom collection'">Collection perso</text>
+			<text if="{system.hardwareType} == ''">Divers</text>
+			<fontSize>0.04</fontSize>
+			<pos>0.193 0</pos>
+			<color>ffffffff</color>
+			<zIndex>900</zIndex>
+		</text>
+		<image name="arcade" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/arcade.png</path>
+			<origin>0 0</origin>
+			<pos>0.277 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'arcade'">ffffff</color>
+		</image>
+		<!-- <text name="computer" ifSubset="menuofficiel:menutxt" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Ordinateur</text> -->
+		<!-- <pos>0.17 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.sortedBy} == 'Computer'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="computer" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/ordi.png</path>
+			<origin>0 0</origin>
+			<pos>0.314 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'computer'">ffffff</color>
+		</image>
+		<!-- <text name="console" ifSubset="menuofficiel:menutxt" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Console</text> -->
+		<!-- <pos>0.243 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.sortedBy} == 'Console'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="console" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/console.png</path>
+			<origin>0 0</origin>
+			<pos>0.3518 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'console'">ffffff</color>
+		</image>
+		<!-- <text name="extension" ifSubset="menuofficiel:menutxt" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Extension</text> -->
+		<!-- <pos>0.313 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.sortedBy} == 'Extension'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="extension" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/extension.png</path>
+			<origin>0 0</origin>
+			<pos>0.3895 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'extension'">ffffff</color>
+		</image>
+		<!-- <text name="mess" ifSubset="menuofficiel:menutxt" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Mess</text> -->
+		<!-- <pos>0.378 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.sortedBy} == 'Mess'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="mess" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/mess.png</path>
+			<origin>0 0</origin>
+			<pos>0.426 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'MESS'">ffffff</color>
+		</image>
+		<!-- <text name="pinball" ifSubset="menuofficiel:menutxt" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Pinball</text> -->
+		<!-- <pos>0.436 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.sortedBy} == 'Pinball'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="pinball" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/pinball.png</path>
+			<origin>0 0</origin>
+			<pos>0.4643 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'pinball'">ffffff</color>
+		</image>
+		<!-- <text name="port" ifSubset="menuofficiel:menutxt" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Port</text> -->
+		<!-- <pos>0.49 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.sortedBy} == 'Port'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="port" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/port.png</path>
+			<origin>0 0</origin>
+			<pos>0.501 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'port'">ffffff</color>
+		</image>
+		<!-- <text name="portable" ifSubset="menuofficiel:menutxt" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Portable</text> -->
+		<!-- <pos>0.55 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.sortedBy} == 'Portable'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="portable" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/portable.png</path>
+			<origin>0 0</origin>
+			<pos>0.539 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'portable'">ffffff</color>
+		</image>
+		<!-- <text name="system" ifSubset="menuofficiel:menutxt" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Groupe</text> -->
+		<!-- <pos>0.615 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.sortedBy} == 'System'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="system" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/system.png</path>
+			<origin>0 0</origin>
+			<pos>0.576 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'system'">ffffff</color>
+		</image>
+		<!-- <text name="autocollection" ifSubset="menuofficiel:menutxt" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Auto collection </text> -->
+		<!-- <pos>0.6985 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.sortedBy} == 'Auto collection'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="autocollection" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectionauto.png</path>
+			<origin>0 0</origin>
+			<pos>0.6135 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'auto collection'">ffffff</color>
+		</image>
+		<!-- <text name="customcollecion" ifSubset="menuofficiel:menutxt" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Custom collection </text> -->
+		<!-- <pos>0.806 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.sortedBy} == 'Custom collection'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="customcollecion" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectioncust.png</path>
+			<origin>0 0</origin>
+			<pos>0.651 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == 'custom collection'">ffffff</color>
+		</image>
+		<!-- <text name="retrobat" ifSubset="menuofficiel:menutxt" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Retrobat</text> -->
+		<!-- <pos>0.8975 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.theme} == 'retrobat'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="retrobat" ifSubset="menuofficiel:menuteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/option.png</path>
+			<origin>0 0</origin>
+			<pos>0.688 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>900</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>7d7d7d</color>
+			<color if="{system.hardwareType} == ''">ffffff</color>
+		</image>
+		<control name="iconselec, inconin, arcade, computer, console, extension, mess, pinball, port, portable, system, autocollection, customcollecion, retrobat">
+			<offsetX>0.06</offsetX>
+		</control>
+		<!-- ########################################### Si menu custom sélectionné ###############################################-->
+		<!-- <text name="retrobat" ifSubset="menuofficiel:menucust" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Retrobat</text> -->
+		<!-- <pos>0.898 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.theme} == 'retrobat'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="options" ifSubset="menuofficiel:menucustteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/option.png</path>
+			<origin>0 0</origin>
+			<pos>0.277 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.5</opacity>
+			<opacity if="{system.theme} == 'retrobat'">1</opacity>
+		</image>
+		<image name="screens" ifSubset="menuofficiel:menucustteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/screenshot.png</path>
+			<origin>0 0</origin>
+			<pos>0.314 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.5</opacity>
+			<opacity if="{system.theme} == 'imageviewer'">1</opacity>
+		</image>
+		<!-- <text name="arcade" ifSubset="menuofficiel:menucust" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Arcade</text> -->
+		<!-- <pos>0.099 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.hardwareType} == '1 - arcade'">ffffffff</color> -->
+		<!-- </text>		 -->
+		<image name="arcade" ifSubset="menuofficiel:menucustteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/arcade.png</path>
+			<origin>0 0</origin>
+			<pos>0.3518 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.5</opacity>
+			<opacity if="{system.hardwareType} == '1 - arcade'">1</opacity>
+		</image>
+		<!-- <text name="consolemoderne" ifSubset="menuofficiel:menucust" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Console 128bits et +</text> -->
+		<!-- <pos>0.188 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.hardwareType} == '2 - console moderne'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="consolemoderne" ifSubset="menuofficiel:menucustteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/console.png</path>
+			<origin>0 0</origin>
+			<pos>0.3895 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.5</opacity>
+			<opacity if="{system.hardwareType} == '2 - console moderne'">1</opacity>
+		</image>
+		<!-- <text name="consoleretro" ifSubset="menuofficiel:menucust" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Console retro</text> -->
+		<!-- <pos>0.2925 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.hardwareType} == '3 - console retro'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="consoleretro" ifSubset="menuofficiel:menucustteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/consoleretro.png</path>
+			<origin>0 0</origin>
+			<pos>0.426 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.5</opacity>
+			<opacity if="{system.hardwareType} == '3 - console retro'">1</opacity>
+		</image>
+		<!-- <text name="portable" ifSubset="menuofficiel:menucust" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Portable</text> -->
+		<!-- <pos>0.3705 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.hardwareType} == '4 - portable'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="portable" ifSubset="menuofficiel:menucustteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/portable.png</path>
+			<origin>0 0</origin>
+			<pos>0.4643 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.5</opacity>
+			<opacity if="{system.hardwareType} == '4 - portable'">1</opacity>
+		</image>
+		<!-- <text name="ordinateur" ifSubset="menuofficiel:menucust" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Ordinateur</text> -->
+		<!-- <pos>0.441 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.hardwareType} == '5 - Ordinateur'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="ordinateur" ifSubset="menuofficiel:menucustteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/ordi.png</path>
+			<origin>0 0</origin>
+			<pos>0.501 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.5</opacity>
+			<opacity if="{system.hardwareType} == '5 - Ordinateur'">1</opacity>
+		</image>
+		<!-- <text name="ordimoderne" ifSubset="menuofficiel:menucust" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Ordinateur moderne</text> -->
+		<!-- <pos>0.539 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.hardwareType} == '6 - ordinateur moderne'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="ordimoderne" ifSubset="menuofficiel:menucustteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/ordiretro.png</path>
+			<origin>0 0</origin>
+			<pos>0.539 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.5</opacity>
+			<opacity if="{system.hardwareType} == '6 - ordinateur moderne'">1</opacity>
+		</image>
+		<!-- <text name="pinball" ifSubset="menuofficiel:menucust" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Pinball</text> -->
+		<!-- <pos>0.6281 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.hardwareType} == '7 - pinball'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="pinball" ifSubset="menuofficiel:menucustteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/pinball.png</path>
+			<origin>0 0</origin>
+			<pos>0.576 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.5</opacity>
+			<opacity if="{system.hardwareType} == '7 - pinball'">1</opacity>
+		</image>
+		<!-- <image name="allgames" ifSubset="menuofficiel:menucustorb" extra="static"> -->
+		<!-- <path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/auto-allgames.png</path> -->
+		<!-- <origin>0 0</origin> -->
+		<!-- <pos>0.651 0</pos> -->
+		<!-- <maxSize>0.0342 0.07</maxSize> -->
+		<!-- <zIndex>500</zIndex> -->
+		<!-- <linearSmooth>true</linearSmooth> -->
+		<!-- <saturation>0</saturation> -->
+		<!-- <saturation if="{system.theme} == 'auto-allgames'">1</saturation> -->
+		<!-- </image> -->
+		<image name="library" ifSubset="menuofficiel:menucustteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/library.png</path>
+			<origin>0 0</origin>
+			<pos>0.6135 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.5</opacity>
+			<opacity if="{system.theme} == 'library'">1</opacity>
+		</image>
+		<!-- <text name="autocollection" ifSubset="menuofficiel:menucust" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Auto collection </text> -->
+		<!-- <pos>0.708 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.hardwareType} == 'auto collection'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="autocollection" ifSubset="menuofficiel:menucustteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collection.png</path>
+			<origin>0 0</origin>
+			<pos>0.651 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.5</opacity>
+			<opacity if="{system.hardwareType} == 'auto collection'">1</opacity>
+		</image>
+		<!-- <text name="customcollecion" ifSubset="menuofficiel:menucust" extra="true"> -->
+		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <text>Custom collection </text> -->
+		<!-- <pos>0.811 0.245</pos> -->
+		<!-- <color>7d7d7d</color> -->
+		<!-- <color if="{system.hardwareType} == 'custom collection'">ffffffff</color> -->
+		<!-- </text> -->
+		<image name="customcollecion" ifSubset="menuofficiel:menucustteta" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/tetanos/collectioncust.png</path>
+			<origin>0 0</origin>
+			<pos>0.688 0</pos>
+			<maxSize>0.0342 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.5</opacity>
+			<opacity if="{system.hardwareType} == 'custom collection'">1</opacity>
+		</image>
+	</view>
+</theme>

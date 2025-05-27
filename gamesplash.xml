@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="splash">
+		<!--Définition de l'arriere plan de la vue gamesplash-->
+		<splash name="splash">
+			<backgroundColor>000000FF</backgroundColor>
+		</splash>
+		<!--Désactivation de l'image par defaut du gamesplash-->
+		<image name="background">
+			<visible>false</visible>
+		</image>
+		<!--Désactivation du texte par defaut du gamesplash-->
+		<!-- <text name="label"> -->
+			<!-- <visible>false</visible> -->
+		<!-- </text> -->
+		<!--Définition de l'image "fanart" du gamelist de jeu avec un contour blanc en shader-->
+		<image name="background_fanart" extra="true">
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>0 1</size>
+			<path>{game:fanart}</path>
+			<roundCorners>0</roundCorners>
+			<linearSmooth>true</linearSmooth>
+			<color>FFFFFFFF</color>
+			<zIndex>1</zIndex>
+		</image>
+		<!--Définition de l'image "image" du gamelist de jeu avec un contour blanc en shader si le fanart n'existe pas-->
+		<!--image name="background_image" extra="true">
+ <pos>0.5 0.5</pos>
+ <origin>0.5 0.5</origin>
+ <size>0 1</size>
+ <path>{game:image}</path>
+ <roundCorners>0</roundCorners>
+ <linearSmooth>true</linearSmooth>
+ <color>FFFFFFFF</color>
+ <zIndex>1</zIndex>
+ <shader>
+ <path>:/shaders/border.glsl</path>
+ <cornerRadius>0</cornerRadius>
+ <innerShadowSize>0.025</innerShadowSize>
+ <innerShadowColor>ffffffff</innerShadowColor>
+ </shader>
+ </image-->
+		<!--Option pour activer le texte par defaut du gamesplash avec la police "fresh.ttf"-->
+		<text name="label">
+			<visible>true</visible>
+			<pos>0.5 0.9</pos>
+			<origin>0.5 0.5</origin>
+			<fontPath>${themePath}/art/fonts/votre_police.ttf</fontPath>
+			<color>FFFFFF</color>
+			<fontSize>0.035</fontSize>
+			<glowColor>000000</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>10</zIndex>
+		</text>
+		<!--Option pour activer la "wheel" du gamelist de jeu-->
+		<image name="splash_wheel" extra="true">
+		<path>exists({game:wheel}) ? {game:wheel} : {game:marquee}</path>
+			<tile>false</tile>
+			<linearSmooth>true</linearSmooth>
+			<!-- <path>{game:wheel}</path> -->
+			<color>FFFFFFFF</color>
+			<pos>0.025 0.025</pos>
+			<origin>0 0</origin>
+			<maxSize>0.175 0.175</maxSize>
+			<zIndex>10</zIndex>
+		</image>
+		<!--Option pour activer le "marquee" du gamelist de jeu-->
+		<!-- <image name="splash_marquee" extra="true"> -->
+			<!-- <visible>!exists({game:wheel})</visible> -->
+			<!-- <tile>false</tile> -->
+			<!-- <linearSmooth>true</linearSmooth> -->
+			<!-- <path>{game:marquee}</path> -->
+			<!-- <color>FFFFFFFF</color> -->
+			<!-- <pos>0.025 0.025</pos> -->
+			<!-- <origin>0 0</origin> -->
+			<!-- <maxSize>0.175 0.175</maxSize> -->
+			<!-- <zIndex>510</zIndex> -->
+		<!-- </image> -->
+		<!--Définition de l'image "backgroundFade" qui donne un effet noirci sur les quatres coins-->
+		<image name="backgroundFade" extra="true">
+			<tile>false</tile>
+			<linearSmooth>true</linearSmooth>
+			<path>./art/backfade.png</path>
+			<color>FFFFFFFF</color>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<minSize>1 1</minSize>
+			<zIndex>5</zIndex>
+		</image>
+	</view>
+</theme>
