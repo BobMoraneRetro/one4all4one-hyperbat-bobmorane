@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="BackgrSyst" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; !exists("${themePath}/_viewgame/hyperbat/fondsysteme/" + stem({system:theme}) + ".png")</visible>
+			<path>${intspinback}</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>1 1</size>
+			<zIndex>1</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="backgrstfresh" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; !exists("${themePath}/_viewgame/hyperbat/fondsysteme/" + stem({system:theme}) + ".png")</visible>
+			<path>${intfanartfresh}</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>1 1</size>
+			<zIndex>1</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<!-- <saturation>0</saturation> -->
+			<!-- <opacity>0.4</opacity> -->
+		</image>
+		<screenshader name="blur" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; !exists("${themePath}/_viewgame/hyperbat/fondsysteme/" + stem({system:theme}) + ".png")</visible>
+			<path>:/shaders/blur.glsl</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<blur>15</blur>
+			<zIndex>99</zIndex>
+			<blurColor>000000</blurColor>
+		</screenshader>
+		<screenshader name="blur1" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; !exists("${themePath}/_viewgame/hyperbat/fondsysteme/" + stem({system:theme}) + ".png")</visible>
+			<path>:/shaders/blur.glsl</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<blur>8</blur>
+			<zIndex>99</zIndex>
+			<blurColor>000000</blurColor>
+		</screenshader>
+		<screenshader name="blur2" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; !exists("${themePath}/_viewgame/hyperbat/fondsysteme/" + stem({system:theme}) + ".png")</visible>
+			<path>:/shaders/blur.glsl</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<blur>6</blur>
+			<zIndex>99</zIndex>
+			<blurColor>000000</blurColor>
+		</screenshader>
+		<image name="screenshotgames" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.27 0.52</pos>
+			<maxSize>0.38 0.49</maxSize>
+			<maxSize if="{system.theme} == 'ps3' 
+			|| {system.theme} == 'xbox360'
+			|| {system.theme} == 'psp'
+			|| {system.theme} == 'psvita'
+			|| {system.theme} == 'switch'
+			|| {system.theme} == 'ps4'
+			|| {system.theme} == 'ps5'
+			|| {system.theme} == 'wiiu'
+			|| {system.theme} == 'wii'
+			|| {system.theme} == 'windows'
+			|| {system.theme} == 'virtualboy'">0.5 0.49</maxSize>
+			<zIndex>500</zIndex>
+			<scaleOrigin>0.15 0.15</scaleOrigin>
+			<autoFade>false</autoFade>
+			<storyboard event="open">
+				<animation property="opacity" to="1" duration="" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" to="0" begin="625" duration="350" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" to="1" duration="" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" to="0" begin="625" duration="350" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" to="1" begin="" duration="" mode="easeIn"/>
+				<animation enabled="exists({game:video})" property="opacity" to="0" begin="625" duration="350" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="fiberback" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
+			<path>${themePath}/_viewgame/hyperbat/fondsysteme/fiber.png</path>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<pos>0.27 0.52</pos>
+			<size>0.37 0.5</size>
+			<size if="{system.theme} == 'ps3' 
+			|| {system.theme} == 'xbox360'
+			|| {system.theme} == 'psp'
+			|| {system.theme} == 'psvita'
+			|| {system.theme} == 'switch'
+			|| {system.theme} == 'ps4'
+			|| {system.theme} == 'ps5'
+									|| {system.theme} == 'wiiu'
+									|| {system.theme} == 'wii'
+			|| {system.theme} == 'windows'">0.5 0.5</size>
+			<zIndex>199</zIndex>
+		</image>
+		<image name="genericbezel" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
+			<path>./video.png</path>
+			<linearSmooth>true</linearSmooth>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<pos>0.27 0.52</pos>
+			<maxSize>0.53 0.55</maxSize>
+			<size if="{system.theme} == 'ps3' 
+			|| {system.theme} == 'xbox360'
+			|| {system.theme} == 'psp'
+			|| {system.theme} == 'psvita'
+			|| {system.theme} == 'switch'
+			|| {system.theme} == 'ps4'
+			|| {system.theme} == 'ps5'
+			|| {system.theme} == 'wiiu'
+			|| {system.theme} == 'wii'
+			|| {system.theme} == 'windows'
+			|| {system.theme} == 'virtualboy'">0.535 0.55</size>
+			<zIndex>700</zIndex>
+		</image>
+		<video name="previewvid1" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.27 0.52</pos>
+			<maxSize>0.38 0.49</maxSize>
+			<maxSize if="{system.theme} == 'ps3' 
+			|| {system.theme} == 'xbox360'
+			|| {system.theme} == 'psp'
+			|| {system.theme} == 'psvita'
+			|| {system.theme} == 'switch'
+			|| {system.theme} == 'ps4'
+			|| {system.theme} == 'ps5'
+			|| {system.theme} == 'wiiu'
+			|| {system.theme} == 'wii'
+			|| {system.theme} == 'windows'
+			|| {system.theme} == 'virtualboy'">0.5 0.49</maxSize>
+			<zIndex>201</zIndex>
+			<effect>none</effect>
+			<delay>0.3</delay>
+		</video>
+		<image name="logocustshadow" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
+			<maxSize>0.5 0.25</maxSize>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+			<pos>0.278 0.133</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>199</zIndex>
+			<color>000000</color>
+			<storyboard>
+				<animation property="x" from="-0.5" begin="0" duration="2000" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="logocustshadow" extra="true">
+			<path>${intlogoclearsvg}</path>
+			<path>${extlogoclearsvg}</path>
+			<path>${intlogoclearpng}</path>
+		</image>
+		<image name="logocustshadow" extra="true" region="fr">
+			<path>${intlogoclearfrsvg}</path>
+			<path>${extlogoclearfrsvg}</path>
+			<path>${intlogoclearfrpng}</path>
+		</image>
+		<image name="logocustshadow" extra="true" region="eu">
+			<path>${intlogoclearfrsvg}</path>
+			<path>${extlogoclearfrsvg}</path>
+			<path>${intlogoclearfrpng}</path>
+		</image>
+		<image name="logocustshadow" extra="true" region="us">
+			<path>${intlogoclearussvg}</path>
+			<path>${extlogoclearussvg}</path>
+			<path>${intlogoclearuspng}</path>
+		</image>
+		<image name="logocustshadow" extra="true" region="jp">
+			<path>${intlogoclearjpsvg}</path>
+			<path>${extlogoclearjpsvg}</path>
+			<path>${intlogoclearjppng}</path>
+		</image>
+		<image name="logocust" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
+			<maxSize>0.5 0.25</maxSize>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+			<pos>0.28 0.13</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>200</zIndex>
+			<storyboard>
+				<animation property="x" from="-0.5" begin="0" duration="2000" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="logocust" extra="true">
+			<path>${intlogoclearsvg}</path>
+			<path>${extlogoclearsvg}</path>
+			<path>${intlogoclearpng}</path>
+		</image>
+		<image name="logocust" extra="true" region="fr">
+			<path>${intlogoclearfrsvg}</path>
+			<path>${extlogoclearfrsvg}</path>
+			<path>${intlogoclearfrpng}</path>
+		</image>
+		<image name="logocust" extra="true" region="eu">
+			<path>${intlogoclearfrsvg}</path>
+			<path>${extlogoclearfrsvg}</path>
+			<path>${intlogoclearfrpng}</path>
+		</image>
+		<image name="logocust" extra="true" region="us">
+			<path>${intlogoclearussvg}</path>
+			<path>${extlogoclearussvg}</path>
+			<path>${intlogoclearuspng}</path>
+		</image>
+		<image name="logocust" extra="true" region="jp">
+			<path>${intlogoclearjpsvg}</path>
+			<path>${extlogoclearjpsvg}</path>
+			<path>${intlogoclearjppng}</path>
+		</image>
+		<image name="boxart2D" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
+			<path ifSubset="boxorthumb:thumb">firstfile({game:thumbnail},{game:boxart})</path>
+			<path ifSubset="boxorthumb:boxart">firstfile({game:boxart},{game:thumbnail})</path>
+			<pos ifSubset="boxorthumb:thumb">0.7 0.5</pos>
+			<pos ifSubset="boxorthumb:boxart">0.7 0.55</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.32 0.65</maxSize>
+			<zIndex>351</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>FFFFFFFF</color>
+			<colorEnd>cccccc</colorEnd>
+			<verticalAlignment>bottom</verticalAlignment>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="550" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="550" duration="400" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="1" to="1" begin="550" duration="" mode="Linear"/> -->
+				<!-- <animation property="offsetY" from="-1" to="0" begin="550" duration="400" mode="EaseOut"/> -->
+				<animation property="opacity" from="0" to="0" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="350" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="220" duration="400" mode="linear"/>
+				<animation property="offsetY" from="0" to="-0.06" begin="620" duration="350" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.038" begin="1320" duration="250" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.024" begin="1820" duration="140" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.009" begin="2100" duration="60" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.0025" begin="2220" duration="20" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="0" begin="2260" duration="2500" mode="Linear" autoReverse="true"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="1" to="1" begin="550" duration="" mode="Linear"/> -->
+				<!-- <animation property="offsetY" from="-1" to="0" begin="550" duration="400" mode="EaseOut"/> -->
+				<animation property="opacity" from="0" to="0" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="350" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="220" duration="400" mode="linear"/>
+				<animation property="offsetY" from="0" to="-0.06" begin="620" duration="350" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.038" begin="1320" duration="250" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.024" begin="1820" duration="140" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.009" begin="2100" duration="60" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.0025" begin="2220" duration="20" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="0" begin="2260" duration="2500" mode="Linear" autoReverse="true"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+		</image>
+		<image name="cartridge" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
+			<path>{game:cartridge}</path>
+			<linearSmooth>true</linearSmooth>
+			<pos>0.85 0.55</pos>
+			<pos if="{system.theme} == 'n64' 
+		|| {system.theme} == 'snes'">0.85 0.6</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.4 0.4</maxSize>
+			<maxSize if="{system.theme} == 'n64' 
+		|| {system.theme} == 'snes'
+		|| {system.theme} == 'mastersystem'
+		|| {system.theme} == 'actionmax'
+		|| {system.theme} == 'megadrive'
+		|| {system.theme} == 'sega32x'">0.4 0.35</maxSize>
+			<zIndex>349</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="500" mode="linear"/>
+				<animation property="x" from="1.5" begin="2000" duration="500" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="500" mode="linear"/>
+				<animation property="x" from="1.5" begin="2000" duration="500" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="500" mode="linear"/>
+				<animation property="x" from="1.5" begin="2000" duration="500" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="linear"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="linear"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+		</image>
+		<control name="cartridge" extra="true" if="{system.theme} == 'dreamcast' 
+		|| {system.theme} == 'ps2' 
+		|| {system.theme} == '3do' 
+		|| {system.theme} == 'gc' 
+		|| {system.theme} == 'wii'  
+		|| {system.theme} == 'ps3' 
+		|| {system.theme} == 'amigacd32' 
+		|| {system.theme} == 'cdi' 
+		|| {system.theme} == 'neogeocd' 
+		|| {system.theme} == 'pce-cd' 
+		|| {system.theme} == 'pcfx' 
+		|| {system.theme} == 'psx' 
+		|| {system.theme} == 'saturn' 
+		|| {system.theme} == 'segacd' 
+		|| {system.theme} == 'xbox360'
+		|| {system.theme} == 'xbox'">
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="1750" duration="500" mode="linear"/>
+				<animation property="x" from="1.5" begin="1750" duration="500" mode="linear"/>
+				<animation property="rotation" from="-360" begin="2500" duration="2000" mode="EaseIn"/>
+				<animation property="rotation" from="-360" begin="4500" duration="1000" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="1750" duration="500" mode="linear"/>
+				<animation property="x" from="1.5" begin="1750" duration="500" mode="linear"/>
+				<animation property="rotation" from="-360" begin="2500" duration="5000" mode="EaseIn"/>
+				<animation property="rotation" from="-360" begin="7500" duration="2900" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="1750" duration="500" mode="linear"/>
+				<animation property="x" from="1.5" begin="1750" duration="500" mode="linear"/>
+				<animation property="rotation" from="-360" begin="2500" duration="5000" mode="EaseIn"/>
+				<animation property="rotation" from="-360" begin="7500" duration="2900" mode="linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="linear"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="linear"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

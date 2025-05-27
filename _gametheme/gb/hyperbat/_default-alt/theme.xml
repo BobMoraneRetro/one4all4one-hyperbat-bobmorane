@@ -1,0 +1,150 @@
+<?xml version="1.0" ?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Fondo copiaDef" extra="true">
+			<path>./Fondo copia.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>200</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<video name="PreviewVidDef" extra="true">
+			<path>{game:video}</path>
+			<pos>0.293308080808 0.527735690236</pos>
+			<maxSize>0.383775252525 0.511700336700</maxSize>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<zIndex>210</zIndex>
+		</video>
+		<image name="Capa 5Def" extra="true">
+			<path>./Capa 5.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.277864583333 0.941203703704</pos>
+			<size>0.555729166667 1.812037037037</size>
+			<zIndex>220</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Capa 2Def" extra="true">
+			<path>./Capa 2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.289062500000 0.103240740741</pos>
+			<size>0.512500000000 0.160185185185</size>
+			<zIndex>230</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear"/>
+				<animation property="scale" from="0" to="1.1" begin="1500" duration="500" mode="EaseIn" autoreverse="false"/>
+				<animation property="scale" from="1.1" to="0.95" begin="2000" duration="300" mode="bump" autoreverse="false"/>
+				<animation property="scale" from="0.95" to="1.02" begin="2300" duration="200" mode="bump" autoreverse="false"/>
+				<animation property="scale" from="1.02" to="1" begin="2500" duration="100" mode="bump" autoreverse="false"/>
+				<animation property="scale" from="1" to="1.05" begin="2600" duration="1200" mode="EaseIn" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear"/>
+				<animation property="scale" from="0" to="1.1" begin="1500" duration="500" mode="EaseIn" autoreverse="false"/>
+				<animation property="scale" from="1.1" to="0.95" begin="2000" duration="300" mode="bump" autoreverse="false"/>
+				<animation property="scale" from="0.95" to="1.02" begin="2300" duration="200" mode="bump" autoreverse="false"/>
+				<animation property="scale" from="1.02" to="1" begin="2500" duration="100" mode="bump" autoreverse="false"/>
+				<animation property="scale" from="1" to="1.05" begin="2600" duration="1200" mode="EaseIn" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear"/>
+				<animation property="scale" from="0" to="1.1" begin="1500" duration="500" mode="EaseIn" autoreverse="false"/>
+				<animation property="scale" from="1.1" to="0.95" begin="2000" duration="300" mode="bump" autoreverse="false"/>
+				<animation property="scale" from="0.95" to="1.02" begin="2300" duration="200" mode="bump" autoreverse="false"/>
+				<animation property="scale" from="1.02" to="1" begin="2500" duration="100" mode="bump" autoreverse="false"/>
+				<animation property="scale" from="1" to="1.05" begin="2600" duration="1200" mode="EaseIn" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Box3d" extra="true">
+			<path>{game:boxart}</path>
+			<origin>0.544 0.544</origin>
+			<pos>0.685416666667 0.524537037037</pos>
+			<size>0.244791666667 0.571296296296</size>
+			<zIndex>240</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+				<animation property="offset" from="0" to="-0.05" begin="1150" duration="2500" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+				<animation property="offset" from="0" to="-0.05" begin="1150" duration="2500" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+				<animation property="offset" from="0" to="-0.05" begin="1150" duration="2500" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Capa 4Def" extra="true">
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.785937500000 0.689351851852</pos>
+			<size>0.122916666667 0.241666666667</size>
+			<zIndex>250</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+				<animation property="offset" from="0" to="-0.05" begin="1150" duration="2500" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+				<animation property="offset" from="0" to="-0.05" begin="1150" duration="2500" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+				<animation property="offset" from="0" to="-0.05" begin="1150" duration="2500" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridgeDef" extra="true">
+			<visible>false</visible>
+			<zIndex>260</zIndex>
+		</image>
+		<image name="md_boxartDef" extra="true">
+			<visible>false</visible>
+			<zIndex>260</zIndex>
+		</image>
+		<control name="Capa 2, Capa 3, Capa 4, Capa 5, Fondo copia, PreviewVid">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="1" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="1" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

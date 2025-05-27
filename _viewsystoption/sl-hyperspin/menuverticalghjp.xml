@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="bgmask" extra="true">
+			<visible>false</visible>
+		</image>
+		<carousel name="systemcarousel">
+			<type>vertical</type>
+			<size>0.2 1</size>
+			<pos>-0.018 0.5</pos>
+			<origin>0 0.5</origin>
+			<color>00000000</color>
+			<colorEnd>00000000</colorEnd>
+			<gradientType/>
+			<logoScale>1</logoScale>
+			<logoRotation>-4</logoRotation>
+			<logoRotationOrigin>6 0</logoRotationOrigin>
+			<logoSize>0.16 0.20</logoSize>
+			<logoSize ifSubset="systemlogocops1:hmaxrectrefl|logorectfresh">0.18 0.20</logoSize>
+			<logoAlignment>center</logoAlignment>
+			<maxLogoCount>8</maxLogoCount>
+			<systemInfoDelay>700</systemInfoDelay>
+			<systemInfoCountOnly>false</systemInfoCountOnly>
+			<defaultTransition>instant</defaultTransition>
+			<zIndex>500</zIndex>
+			<minLogoOpacity>0.4</minLogoOpacity>
+			<transitionSpeed>450</transitionSpeed>
+		</carousel>
+		<image name="fiberlefjp" extra="true">
+			<path>${themePath}/_viewsyst/hyperbat/fiber.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.065 0.5</pos>
+			<size>0.2 1</size>
+			<zIndex>40</zIndex>
+			<storyboard>
+				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="logo">
+			<path>${extlogohrect}</path>
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="" duration="" mode="linear"/>
+				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="0.4" begin="" duration="" mode="linear"/>
+				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0.4" begin="" duration="" mode="linear"/>
+				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<text name="logoText">
+			<storyboard event="activate">
+				<animation property="opacity" to="1" begin="" duration="" mode="linear"/>
+				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="scroll">
+				<animation property="opacity" to="0.4" begin="" duration="" mode="linear"/>
+				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0.4" begin="" duration="" mode="linear"/>
+				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<image name="Vignetage2" extra="true">
+			<visible>false</visible>
+		</image>
+		<text name="systemInfo">
+			<alignment>right</alignment>
+			<pos>-0.008 0.76</pos>
+			<size>1 0.35</size>
+			<color>FFFFFF</color>
+			<glowColor>000000A0</glowColor>
+			<glowSize>2</glowSize>
+			<glowOffset>0</glowOffset>
+			<fontPath>./_viewsyst/hyperbat/teko-bold.ttf</fontPath>
+			<fontSize>0.03</fontSize>
+			<zIndex>999</zIndex>
+			<storyboard>
+				<animation property="opacity" to="1" duration="" mode=""/>
+			</storyboard>
+		</text>
+		<text name="systemInfoEx" extra="true">
+			<!-- possible bindings are :
+{binding:total}, {binding:played}, {binding:favorites}, {binding:hidden}, {binding:gamesPlayed}
+{binding:mostPlayed}, {binding:lastPlayedDate}
+-->
+			<text>
+				<!-- Games : {binding:total} -->
+Favorites : {binding:favorites}
+Games played : {binding:gamesPlayed}
+Most played : {binding:mostPlayed}
+Last played : {binding:lastPlayedDate}</text>
+			<text lang="fr">
+				<!-- Nombre de jeux : {binding:total} -->
+Favoris : {binding:favorites}
+Jeux joués : {binding:gamesPlayed}
+Le plus joué : {binding:mostPlayed}
+Dernière partie : {binding:lastPlayedDate}</text>
+			<text lang="es">
+				<!-- Número de juegos : {binding:total} -->
+Favoritos : {binding:favorites}
+Jugados : {binding:gamesPlayed}
+El más jugado : {binding:mostPlayed}
+Última partida : {binding:lastPlayedDate}</text>
+			<alignment>left</alignment>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>./_viewsyst/hyperbat/teko-medium.ttf</fontPath>
+			<fontSize>0.024</fontSize>
+			<pos>0.17 0.74</pos>
+			<size>0.94 0.28</size>
+			<zIndex>100</zIndex>
+			<color>FFFFFF</color>
+			<glowColor>000000A0</glowColor>
+			<!-- <glowOffset>0.5</glowOffset> -->
+			<glowSize>2</glowSize>
+			<storyboard>
+				<animation property="offsetX" to="-0.16" begin="800" duration="150" mode="EaseIn"/>
+			</storyboard>
+		</text>
+		<text name="systemInfoEx" extra="true" if="{system.name} == 'collections'">
+			<text>Collections : {binding:subSystems}</text>
+			<text lang="fr">Nombre de collections : {binding:subSystems}</text>
+		</text>
+		<text name="systemInfoEx" extra="true" if="{system.name} == 'library' || {system.name} == 'screenshots'">
+			<text>Items : {binding:total}</text>
+			<text lang="fr">Nombre d'élements : {binding:total}</text>
+			<text lang="es">Número de elementos: {binding:total}</text>
+		</text>
+	</view>
+	<feature supported="manufacturer">
+		<view name="system">
+			<!-- <text name="manufacturerName" extra="static"> -->
+			<!-- <text>${system.sortedBy}</text> -->
+			<!-- <alignment>left</alignment> -->
+			<!-- <verticalAlignment>top</verticalAlignment> -->
+			<!-- <fontPath>./_commun/fonts/teko-bold.ttf</fontPath> -->
+			<!-- <fontSize>0.060</fontSize> -->
+			<!-- <pos>0.029 0.037</pos> -->
+			<!-- <size>0.942 0.28</size> -->
+			<!-- <color>FFFFFF</color> -->
+			<!-- <zIndex>100</zIndex> -->
+			<!-- <glowColor>00000080</glowColor> -->
+			<!-- <glowSize>2</glowSize> -->
+			<!-- <fontSize tinyScreen="true">0.065</fontSize> -->
+			<!-- <glowSize tinyScreen="true">1</glowSize> -->
+			<!-- </text> -->
+			<text name="fullName" extra="true">
+				<text>${system.fullName} | ${system.releaseYearOrNull}</text>
+				<alignment>right</alignment>
+				<verticalAlignment>bottom</verticalAlignment>
+				<fontPath>./_viewsyst/hyperbat/teko-bold.ttf</fontPath>
+				<fontSize>0.044</fontSize>
+				<pos>0.694 0.65</pos>
+				<pos verticalScreen="true">0.03 0.10</pos>
+				<size>0.3 0.28</size>
+				<zIndex>500</zIndex>
+				<!-- <color>D0D0D0FF</color> -->
+				<color>FFFFFF</color>
+				<glowColor>000000A0</glowColor>
+				<glowSize>2</glowSize>
+				<pos tinyScreen="true">0.03 0.13</pos>
+				<glowColor tinyScreen="true">00000040</glowColor>
+				<fontSize tinyScreen="true">0.035</fontSize>
+			</text>
+			<!-- <text name="releaseYyear" extra="true"> -->
+			<!-- <text>${system.releaseYearOrNull}</text> -->
+			<!-- <alignment>left</alignment> -->
+			<!-- <verticalAlignment>top</verticalAlignment> -->
+			<!-- <fontPath>./_ViewSyst/Hyperbat/teko-bold.ttf</fontPath> -->
+			<!-- <fontSize>0.044</fontSize> -->
+			<!-- <pos>0.95 0.9</pos> -->
+			<!-- <pos verticalScreen="true">0.03 0.127</pos> -->
+			<!-- <size>0.94 0.28</size> -->
+			<!-- <zIndex>100</zIndex> -->
+			<!-- <color>FFFFFF</color> -->
+			<!-- <glowColor>000000A0</glowColor> -->
+			<!-- <glowSize>2</glowSize> -->
+			<!-- <pos tinyScreen="true">0.03 0.19</pos> -->
+			<!-- <glowColor tinyScreen="true">00000040</glowColor> -->
+			<!-- <fontSize tinyScreen="true">0.035</fontSize> -->
+			<!-- </text> -->
+		</view>
+	</feature>
+</theme>

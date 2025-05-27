@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="grid" displayName="${viewbasicgrid}">
+		<imagegrid name="gamegrid">
+			<imageSource>image</imageSource>
+			<pos>0.06 0.4</pos>
+			<size>0.880 0.56</size>
+			<margin>0.005 0.006</margin>
+			<autoLayout>5 3</autoLayout>
+			<autoLayoutSelectedZoom>1.04</autoLayoutSelectedZoom>
+			<animateSelection>false</animateSelection>
+			<showVideoAtDelay>-1</showVideoAtDelay>
+			<zIndex>60</zIndex>
+			<!-- <scrollbar>false</scrollbar> -->
+			<padding>0.005 0.005</padding>
+		</imagegrid>
+		<gridtile name="default">
+			<!-- <selectionMode>image</selectionMode> -->
+			<backgroundCenterColor>40404080</backgroundCenterColor>
+			<backgroundEdgeColor>00000000</backgroundEdgeColor>
+			<padding>8</padding>
+			<imageSizeMode>minSize</imageSizeMode>
+			<backgroundCornerSize>0 0</backgroundCornerSize>
+			<backgroundColor>42424200</backgroundColor>
+			<imageColor>6d6d6dFF</imageColor>
+		</gridtile>
+		<gridtile name="selected">
+			<padding>8</padding>
+			<imageColor>ffffffff</imageColor>
+			<backgroundCornerSize>0</backgroundCornerSize>
+			<backgroundEdgeColor>909090</backgroundEdgeColor>
+			<backgroundCenterColor>0b0102</backgroundCenterColor>
+		</gridtile>
+		<image name="gridtile.favorite">
+			<path>${themePath}/_viewgame/grid/favorite.png</path>
+			<pos>0.855 0</pos>
+			<maxSize>0.25 0.25</maxSize>
+			<origin>0 0</origin>
+			<color>ffffff</color>
+		</image>
+		<image name="gridtile.favorite:selected">
+			<color>ffff00</color>
+		</image>
+		<image name="gridtile.image">
+			<roundCorners>0</roundCorners>
+		</image>
+		<image name="gridtile.marquee">
+			<color>dadadaff</color>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.60 0.60</size>
+		</image>
+		<image name="gridtile.marquee:selected">
+			<color>FFFFFFFF</color>
+			<size>0.90 0.90</size>
+		</image>
+		<video name="md_video">
+			<pos>0.5 0.2</pos>
+			<maxSize>0.4 0.4</maxSize>
+			<origin>0.5 0.5</origin>
+			<delay>0.4</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<zIndex>3</zIndex>
+			<effect>none</effect>
+			<shader>
+				<path>:/shaders/border.glsl</path>
+				<cornerRadius>0.03</cornerRadius>
+				<borderSize>0.022</borderSize>
+				<borderColor>ffffff30</borderColor>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
+		</video>
+		<image name="fanart_extra" extra="true">
+			<autoFade>false</autoFade>
+			<path ifSubset="custombuilds:standardbuilds">${standardsbuildsfanart}</path>
+			<path ifSubset="custombuilds:retrofreshbat">${freshbuildfanart}</path>
+			<pos>0.5 0.5</pos>
+			<size>0 1.07</size>
+			<origin>0.5 0.5</origin>
+			<color>F0F0F0DD</color>
+			<colorEnd>000000</colorEnd>
+			<gradientType>vertical</gradientType>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>1</zIndex>
+			<opacity>0.7</opacity>
+		</image>
+		<image name="defautfanartextra" extra="true">
+			<visible ifSubset="custombuilds:standardbuilds">${standardsbuildsfanarttest}</visible>
+			<visible ifSubset="custombuilds:retrofreshbat">${freshbuildfanarttest}</visible>
+			<path>${intfanartfresh}</path>
+			<autoFade>false</autoFade>
+			<pos>0.5 0.5</pos>
+			<size>0 1</size>
+			<opacity>0.2</opacity>
+			<saturation>0</saturation>
+			<origin>0.5 0.5</origin>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>2</zIndex>
+		</image>
+	</view>
+</theme>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: es-theme-carbon
+author: Fabrice CARUSO
+license: creative commons CC-BY-NC-SA
+originally based on: "Carbon" by Eric Hettervik (Rookervik)
+originally based on: "simple" by nils bonenberger
+-->
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="screen">
+		<text name="clock" ifHelpPrompts="false">
+			<color>777777FF</color>
+			<fontSize>0.015</fontSize>
+			<pos>0.94 0.975</pos>
+			<alignment>right</alignment>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>./_common/fonts/Digital-Serial-Bold-folder.ttf</fontPath>
+		</text>
+		<text name="clock" ifHelpPrompts="true">
+			<!-- <color>777777FF</color> -->
+			<color>FFFFFFFF</color>
+			<fontSize>0.015</fontSize>
+			<pos>0.94 0.973</pos>
+			<alignment>right</alignment>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>./_common/fonts/Digital-Serial-Bold-folder.ttf</fontPath>
+		</text>
+		<controllerActivity name="controllerActivity">
+			<pos>0.004 0.975</pos>
+			<size>0.065 0.016</size>
+			<itemSpacing>0.003</itemSpacing>
+			<color>FFFFFF90</color>
+			<!-- controllers -->
+			<imagePath>./_common/controlactivity/gamepad.svg</imagePath>
+			<gunPath>./_common/controlactivity/gun.svg</gunPath>
+			<wheelPath>./_common/controlactivity/wheel.svg</wheelPath>
+			<activityColor>A0A0FFC0</activityColor>
+			<hotkeyColor>FFA0A0C0</hotkeyColor>
+		</controllerActivity>
+		<batteryIndicator name="batteryIndicator">
+			<pos>0.01 0.01</pos>
+			<size>0.022 0.018</size>
+			<horizontalAlignment>right</horizontalAlignment>
+			<incharge>./_Common/battery/incharge.svg</incharge>
+			<full>./_common/battery/full.svg</full>
+			<at75>./_common/battery/75.svg</at75>
+			<at50>./_common/battery/50.svg</at50>
+			<at25>./_common/battery/25.svg</at25>
+			<empty>./_common/battery/empty.svg</empty>
+			<!-- <planemodeIcon>./_common/icons/planemode.png</planemodeIcon> -->
+			<color>FFFFFFFF</color>
+		</batteryIndicator>
+		<!-- Hide batteryIndicator and replace it with a stackpanel -->
+		<!-- <batteryIndicator name="batteryIndicator"> -->
+		<!-- <visible>false</visible> -->
+		<!-- </batteryIndicator> -->
+		<!-- <stackpanel name="batteryIndicatorReplacement" extra="true"> -->
+		<!-- <pos>-0.176 0.038</pos> -->
+		<!-- <size>0.28 0.0275</size> -->
+		<!-- <pos verticalScreen="true">0.7 0.04</pos> -->
+		<!-- <size verticalScreen="true">0.28 0.023</size> -->
+		<!-- <orientation>horizontal</orientation> -->
+		<!-- <separator>2</separator> -->
+		<!-- <reverse>true</reverse> -->
+		<!-- <batteryText name="ss.batterytext"> -->
+		<!-- <fontSize>0.019</fontSize> -->
+		<!-- <fontSize tinyScreen="true">0.025</fontSize> -->
+		<!-- <color>FFFFFFA0</color> -->
+		<!-- <padding>4 0</padding> -->
+		<!-- </batteryText> -->
+		<!-- <batteryIcon name="ss.battery"> -->
+		<!-- <incharge>./_Common/battery/incharge.svg</incharge> -->
+		<!-- <full>./_Common/battery/full.svg</full> -->
+		<!-- <at75>./_Common/battery/75.svg</at75> -->
+		<!-- <at50>./_Common/battery/50.svg</at50> -->
+		<!-- <at25>./_Common/battery/25.svg</at25> -->
+		<!-- <empty>./_Common/battery/empty.svg</empty> -->
+		<!-- <planemodeIcon>./_Common/icons/Planemode.png</planemodeIcon> -->
+		<!-- <maxSize>1 1</maxSize> -->
+		<!-- <linearSmooth>true</linearSmooth> -->
+		<!-- <padding>1 1</padding> -->
+		<!-- <color>FFFFFFA0</color> -->
+		<!-- </batteryIcon> -->
+		<!-- <text name="ss.separator1"> -->
+		<!-- <text>-</text> -->
+		<!-- <fontSize>0.01</fontSize> -->
+		<!-- <color>00000000</color> -->
+		<!-- </text> -->
+		<!-- <networkIcon name="ss.network"> -->
+		<!-- <networkIcon>./../art/icons/Network.png</networkIcon> -->
+		<!-- <planemodeIcon>./../art/icons/Planemode.png</planemodeIcon> -->
+		<!-- <maxSize>1 1</maxSize> -->
+		<!-- <linearSmooth>true</linearSmooth> -->
+		<!-- <padding>1 1</padding> -->
+		<!-- <color>FFFFFFA0</color> -->
+		<!-- </networkIcon> -->
+		<!-- <text name="ss.separator2"> -->
+		<!-- <text>AAAA</text> -->
+		<!-- <fontSize>0.01</fontSize> -->
+		<!-- <color>00000000</color> -->
+		<!-- </text> -->
+		<!-- <text name="ss.cheevosUser" if="${global.cheevos}" tinyScreen="false"> -->
+		<!-- <text>${global.cheevos.username}</text> -->
+		<!-- <alignment>center</alignment> -->
+		<!-- <fontSize>0.022</fontSize> -->
+		<!-- <fontSize tinyScreen="true">0.025</fontSize> -->
+		<!-- <color>FFFFFFA0</color> -->
+		<!-- </text> -->
+		<!-- <text name="ss.separator2"> -->
+		<!-- <text>AA</text> -->
+		<!-- <fontSize>0.01</fontSize> -->
+		<!-- <color>00000000</color> -->
+		<!-- </text> -->
+		<!-- <webImage name="ss.cheevosUserPic" if="${global.cheevos}" tinyScreen="false"> -->
+		<!-- <visible>{global:cheevos}</visible> -->
+		<!-- <linearSmooth>true</linearSmooth> -->
+		<!-- <path>https://media.retroachievements.org/UserPic/${global.cheevos.username}.png</path> -->
+		<!-- <maxSize>1 1</maxSize> -->
+		<!-- <color>FFFFFFFF</color> -->
+		<!-- </webImage> -->
+		<!-- </stackpanel> -->
+		<!-- <stackpanel name="batteryIndicatorReplacement" extra="true" tinyScreen="true"> -->
+		<!-- <pos>0.708 0.015</pos> -->
+		<!-- <size>0.28 0.06</size> -->
+		<!-- </stackpanel> -->
+	</view>
+</theme>

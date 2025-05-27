@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+  <view name="system">
+
+<image name="Fondecransmall" ifSubset="VideoFondCops1:HyperspinXP" extra="true">
+		<origin>0.52 0.5</origin>
+		<path>${themePath}/_common/images/169V2.png</path>
+		<size>0.66 0.72</size>
+		<pos>0.5 0.55</pos>
+		<linearSmooth>true</linearSmooth>
+		<zIndex>9</zIndex>
+		<storyboard>
+        <animation property="y" from="0.45" duration="350" mode="easeOut"/>
+        <animation property="opacity" from="0" to="1" duration="550" mode="easeIn"/>
+        <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+        </storyboard>
+	</image>
+
+<video name="HSgameplay" extra="true">
+<path>{random}</path>
+<maxSize>0.5 0.52</maxSize>
+<pos>0.5 0.55</pos>
+<origin>0.5 0.5</origin>
+<delay>0.2</delay>
+<showSnapshotNoVideo>true</showSnapshotNoVideo>
+<showSnapshotDelay>true</showSnapshotDelay>
+<zIndex>10</zIndex>
+<effect>none</effect>
+</video>
+
+	<image name="bezel" ifSubset="VideoFondCops1:Hyperspin" extra="true">
+		<origin>0.5 0.5</origin>
+		<path>./video.png</path>
+		<path>${intbezelsyst}</path>
+		<path>${extbezelsyst}</path>
+		<maxSize>0.52 0.52</maxSize>
+		<pos>0.5 0.55</pos>
+		<linearSmooth>true</linearSmooth>
+		<delay>0.2</delay>
+		<zIndex>20</zIndex>
+		<storyboard>
+        <animation property="opacity" from="0" to="1" duration="550" mode="easeIn"/>
+        <animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+        </storyboard>
+	</image>
+
+<!-- <image name="Background" extra="true"> -->
+<!-- <size>1 1</size> -->
+<!-- <path>./Background.png</path> -->
+<!-- <pos>0.5 0.5</pos> -->
+<!-- <origin>0.5 0.5</origin> -->
+<!-- <zIndex>5</zIndex> -->
+<!-- <scaleOrigin>0 -0.3</scaleOrigin> -->
+<!-- </image> -->
+
+<!-- ################ Artwork1 ##################### -->
+
+<image name="leftart" extra="true">
+<linearSmooth>true</linearSmooth>
+<size>0 0.9</size>
+<path>./leftart/${system.theme}.png</path>
+<path>./leftart/${system.theme}_right.png</path>
+<path>./leftart/${system.theme}_left.png</path>
+<scaleOrigin>0 -0.3</scaleOrigin>
+<pos>0.15 0.515</pos>
+<pos ifHelpPrompts="false">0.15 0.55</pos>
+<origin>0.5 0.5</origin>
+<zIndex>201</zIndex>
+		<storyboard>
+        		<animation property="x" from="-0.5" begin="0" duration="2000" mode="easeOut"/>
+        		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		</storyboard>
+</image>
+
+<image name="leftart2" extra="true">
+<linearSmooth>true</linearSmooth>
+<size>0 0.9</size>
+<path>./leftart2/${system.theme}.png</path>
+<path>./leftart2/${system.theme}_right2.png</path>
+<path>./leftart2/${system.theme}_left2.png</path>
+<scaleOrigin>0 -0.3</scaleOrigin>
+<pos>0.15 0.515</pos>
+<pos ifHelpPrompts="false">0.15 0.55</pos>
+<origin>0.5 0.5</origin>
+<zIndex>201</zIndex>
+		<storyboard>
+        		<animation property="x" from="-0.5" begin="0" duration="2000" mode="easeOut"/>
+        		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		</storyboard>
+</image>
+
+<image name="righttart" extra="true">
+<linearSmooth>true</linearSmooth>
+<size>0 0.9</size>
+<path>./rightart/${system.theme}.png</path>
+<path>./rightart/${system.theme}_left.png</path>
+<path>./rightart/${system.theme}_right.png</path>
+<scaleOrigin>0 -0.3</scaleOrigin>
+<!-- <pos>0.85 0.48</pos> -->
+<pos>0.85 0.515</pos>
+<pos ifHelpPrompts="false">0.85 0.55</pos>
+<origin>0.5 0.5</origin>
+<zIndex>8</zIndex>
+		<storyboard>
+        		<animation property="x" from="1.5" begin="0" duration="2000" mode="easeOut"/>
+        		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		</storyboard>
+</image>
+
+<image name="righttart2" extra="true">
+<linearSmooth>true</linearSmooth>
+<size>0 0.9</size>
+<path>./rightart2/${system.theme}.png</path>
+<path>./rightart2/${system.theme}_left2.png</path>
+<path>./rightart2/${system.theme}_right2.png</path>
+<scaleOrigin>0 -0.3</scaleOrigin>
+<pos>0.85 0.515</pos>
+<pos ifHelpPrompts="false">0.85 0.55</pos>
+<origin>0.5 0.5</origin>
+<zIndex>8</zIndex>
+		<storyboard>
+        		<animation property="x" from="1.5" begin="0" duration="2000" mode="easeOut"/>
+        		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		</storyboard>
+</image>
+
+<!-- ################ Artwork2 ##################### -->
+<image name="logocust" extra="true">
+<maxSize>0.5 0.25</maxSize>
+<scaleOrigin>0 -0.3</scaleOrigin>
+<pos>0.5 0.15</pos>
+<origin>0.5 0.5</origin>
+<zIndex>200</zIndex>
+		<storyboard>
+        		<animation property="y" from="-0.5" begin="0" duration="2000" mode="easeOut"/>
+        		<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+		</storyboard>
+</image>
+
+<image name="logocust" extra="true">
+      <path>${intlogoclearsvg}</path>
+	  <path>${extlogoclearsvg}</path>
+      <path>${intlogoclearpng}</path>
+      </image>
+    <image name="logocust" extra="true" region="fr">
+      <path>${intlogoclearfrsvg}</path>
+	  <path>${extlogoclearfrsvg}</path>
+      <path>${intlogoclearfrpng}</path>
+      </image>
+	<image name="logocust" extra="true" region="eu">
+      <path>${intlogoclearfrsvg}</path>
+	  <path>${extlogoclearfrsvg}</path>
+      <path>${intlogoclearfrpng}</path>
+      </image>
+    <image name="logocust" extra="true" region="us">
+      <path>${intlogoclearussvg}</path>
+	  <path>${extlogoclearussvg}</path>
+      <path>${intlogoclearuspng}</path>
+    </image>
+    <image name="logocust" extra="true" region="jp">
+      <path>${intlogoclearjpsvg}</path>
+	  <path>${extlogoclearjpsvg}</path>
+      <path>${intlogoclearjppng}</path>
+    </image>
+
+<!-- ################ Artwork3 ##################### -->
+<image name="Artwork3" extra="true">
+<path>./Artwork3.png</path>
+<pos>0.5176 0.8060</pos>
+<pos>0.8 0.62</pos>
+<origin>0.5 0.5</origin>
+<scaleOrigin>0 -0.3</scaleOrigin>
+<zIndex>201</zIndex>
+		<storyboard event="open">
+			<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+			<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+			<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+			<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+		</storyboard>
+		<storyboard event="activatePrev">
+			<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+			<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+			<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+			</storyboard>
+</image>
+
+<!-- ################ Artwork4 logo du jeu ##################### -->
+<image name="Artwork4" extra="true">
+<path>./Artwork4.png</path>
+<scaleOrigin>0 -0.3</scaleOrigin>
+<pos>0.5 0.25</pos>
+<origin>0.5 0.5</origin>
+<zIndex>21</zIndex>
+		<storyboard event="open">
+			<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+			<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+			<animation property="opacity" from="0" to="1" begin="1050" duration="500" mode="Linear"/>
+			<animation property="offsetX" from="-1" to="0" begin="1050" duration="500" mode="Linear"/>
+		</storyboard>
+		<storyboard event="activatePrev">
+			<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+			<animation property="opacity" from="0" to="1" begin="1050" duration="500" mode="Linear"/>
+			<animation property="offsetX" from="-1" to="0" begin="1050" duration="500" mode="Linear"/>
+			</storyboard>
+</image>
+
+<!-- ################ Bezel autour de la vidéo ##################### -->
+
+
+<!-- ################ La vidéo ##################### -->
+
+
+<!-- ################ Animations du bezel vidéo et de la vidéo si identique ##################### -->
+
+
+<!-- ################ Animations du bezel vidéo et de la vidéo si identique ##################### -->
+
+
+  </view>
+
+<include>./zSpec/${system.theme}.xml</include>
+<include>./zSpecvideo/${system.theme}.xml</include>
+
+</theme>

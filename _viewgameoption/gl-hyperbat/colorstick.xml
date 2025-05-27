@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<!-- ====================== Début des paramètres pour le stick ======================================================== -->
+		<text name="titre0" extra="true">
+			<text>Jeu Suivant</text>
+			<alignment>center</alignment>
+			<fontPath>${themePath}/_viewgame/hyperbat/impact.ttf</fontPath>
+			<pos>0.45 0.89</pos>
+			<fontSize>0.05</fontSize>
+			<color>ffff00</color>
+			<glowColor>0c002e</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>999</zIndex>
+		</text>
+		<image name="redball2" extra="true">
+			<pos>0.420 0.93</pos>
+			<origin>0.5 1</origin>
+			<size>0.03 0</size>
+			<path ifSubset="syststickcolor:ball-blue">${themePath}/_viewgame/hyperbat/stickrvb/ball-blue.png</path>
+			<path ifSubset="syststickcolor:ball-cyan">${themePath}/_viewgame/hyperbat/stickrvb/ball-cyan.png</path>
+			<path ifSubset="syststickcolor:ball-darkviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-darkviolet.png</path>
+			<path ifSubset="syststickcolor:ball-violet">${themePath}/_viewgame/hyperbat/stickrvb/ball-violet.png</path>
+			<path ifSubset="syststickcolor:ball-green">${themePath}/_viewgame/hyperbat/stickrvb/ball-green.png</path>
+			<path ifSubset="syststickcolor:ball-litegreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-litegreen.png</path>
+			<path ifSubset="syststickcolor:ball-orange">${themePath}/_viewgame/hyperbat/stickrvb/ball-orange.png</path>
+			<path ifSubset="syststickcolor:ball-pink">${themePath}/_viewgame/hyperbat/stickrvb/ball-pink.png</path>
+			<path ifSubset="syststickcolor:ball-red">${themePath}/_viewgame/hyperbat/stickrvb/ball-red.png</path>
+			<path ifSubset="syststickcolor:ball-yelgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-yelgreen.png</path>
+			<path ifSubset="syststickcolor:ball-yellow">${themePath}/_viewgame/hyperbat/stickrvb/ball-yellow.png</path>
+			<storyboard repeat="forever">
+				<animation property="offsetY" to="0.02" begin="200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="1.15" begin="200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" to="0.02" begin="2000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="1.15" begin="2000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" to="0.02" begin="4000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="1.15" begin="4000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" from="0" to="0.5" begin="5000" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="0.5" to="0" begin="20000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+			</storyboard>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="stick2" extra="true">
+			<pos>0.415 0.917</pos>
+			<origin>0 0</origin>
+			<size>0.01 0.04</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/stick.png</path>
+			<zIndex>996</zIndex>
+			<rotationOrigin>0.5 1.1</rotationOrigin>
+			<storyboard repeat="forever">
+				<animation property="scale" from="1" to="1.15" begin="200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="1.15" begin="2000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="1.15" begin="4000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" from="0" to="0.5" begin="5000" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="0.5" to="0" begin="20000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+			</storyboard>
+		</image>
+		<control name="guard2, guardmask2, titre0">
+			<storyboard repeat="forever">
+				<animation property="offsetY" from="0" to="0.5" begin="5000" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="0.5" to="0" begin="20000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+			</storyboard>
+		</control>
+		<image name="guard2" extra="true">
+			<pos>0.42 0.93</pos>
+			<origin>0.5 0</origin>
+			<size>0.03 0</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/guard.png</path>
+			<zIndex>990</zIndex>
+		</image>
+		<image name="guardmask2" extra="true">
+			<pos>0.42 0.93</pos>
+			<origin>0.5 0</origin>
+			<size>0.03 0</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/guard-mask.png</path>
+			<zIndex>997</zIndex>
+		</image>
+		<!-- ########### Stick vers l'arrière = fin ########## -->
+		<!-- ########### Stick vers l'avant ########## -->
+		<text name="titre2" extra="true">
+			<text>Jeu Précédent</text>
+			<alignment>center</alignment>
+			<fontPath>${themePath}/_viewgame/hyperbat/impact.ttf</fontPath>
+			<pos>0.45 1.89</pos>
+			<fontSize>0.05</fontSize>
+			<color>ffff00</color>
+			<glowColor>0c002e</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>999</zIndex>
+		</text>
+		<image name="redball" extra="true">
+			<pos>0.420 1.93</pos>
+			<origin>0.5 1</origin>
+			<size>0.03 0</size>
+			<path ifSubset="syststickcolor:ball-blue">${themePath}/_viewgame/hyperbat/stickrvb/ball-blue.png</path>
+			<path ifSubset="syststickcolor:ball-cyan">${themePath}/_viewgame/hyperbat/stickrvb/ball-cyan.png</path>
+			<path ifSubset="syststickcolor:ball-darkviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-darkviolet.png</path>
+			<path ifSubset="syststickcolor:ball-violet">${themePath}/_viewgame/hyperbat/stickrvb/ball-violet.png</path>
+			<path ifSubset="syststickcolor:ball-green">${themePath}/_viewgame/hyperbat/stickrvb/ball-green.png</path>
+			<path ifSubset="syststickcolor:ball-litegreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-litegreen.png</path>
+			<path ifSubset="syststickcolor:ball-orange">${themePath}/_viewgame/hyperbat/stickrvb/ball-orange.png</path>
+			<path ifSubset="syststickcolor:ball-pink">${themePath}/_viewgame/hyperbat/stickrvb/ball-pink.png</path>
+			<path ifSubset="syststickcolor:ball-red">${themePath}/_viewgame/hyperbat/stickrvb/ball-red.png</path>
+			<path ifSubset="syststickcolor:ball-yelgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-yelgreen.png</path>
+			<path ifSubset="syststickcolor:ball-yellow">${themePath}/_viewgame/hyperbat/stickrvb/ball-yellow.png</path>
+			<storyboard repeat="forever">
+				<animation property="offsetY" from="0" to="-1" begin="5000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="offsetY" to="-1.01" begin="5700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="0.85" begin="5700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" to="-1.01" begin="7500" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="0.85" begin="7500" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" to="-1.01" begin="9200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="0.85" begin="9200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" from="-1" to="0" begin="10500" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="0" to="0" begin="11000" duration="9500" mode="easeIn" autoreverse="" repeat=""/>
+			</storyboard>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="stick" extra="true">
+			<pos>0.415 1.917</pos>
+			<origin>0 0</origin>
+			<size>0.01 0.04</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/stick.png</path>
+			<zIndex>996</zIndex>
+			<storyboard repeat="forever">
+				<animation property="offsetY" from="0" to="-1" begin="5000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="scale" from="1" to="0.90" begin="5700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="0.90" begin="7500" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="0.90" begin="9300" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" from="-1" to="0" begin="10500" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="0" to="0" begin="11000" duration="9500" mode="easeIn" autoreverse="" repeat=""/>
+			</storyboard>
+		</image>
+		<control name="guard, guardmask, titre2">
+			<storyboard repeat="forever">
+				<animation property="offsetY" from="0" to="-1" begin="5000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="-1" to="0" begin="10500" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="0" to="0" begin="11000" duration="9500" mode="easeIn" autoreverse="" repeat=""/>
+			</storyboard>
+		</control>
+		<image name="stickstatic" extra="true">
+			<pos>0.4198 1.937</pos>
+			<origin>0.5 0</origin>
+			<size>0.01 0.02</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/stickstatic.png</path>
+			<zIndex>997</zIndex>
+			<storyboard repeat="forever">
+				<animation property="offsetY" from="0" to="-1" begin="5000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="scale" from="1" to="0.92" begin="5700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="0.92" begin="7500" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="0.92" begin="9300" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" from="-1" to="0" begin="10500" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="0" to="0" begin="11000" duration="9500" mode="easeIn" autoreverse="" repeat=""/>
+			</storyboard>
+		</image>
+		<image name="stickstatic2" extra="true">
+			<pos>0.4198 1.942</pos>
+			<origin>0.5 0</origin>
+			<size>0.01 0.02</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/stickstatic.png</path>
+			<zIndex>998</zIndex>
+			<storyboard repeat="forever">
+				<animation property="offsetY" from="0" to="-1" begin="5000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="scale" from="1" to="0.95" begin="5700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="0.95" begin="7500" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="scale" from="1" to="0.95" begin="9300" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" from="-1" to="0" begin="10500" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="0" to="0" begin="11000" duration="9500" mode="easeIn" autoreverse="" repeat=""/>
+			</storyboard>
+		</image>
+		<image name="guard" extra="true">
+			<pos>0.42 1.93  </pos>
+			<origin>0.5 0</origin>
+			<size>0.03 0</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/guard.png</path>
+			<zIndex>995</zIndex>
+		</image>
+		<image name="guardmask" extra="true">
+			<pos>0.42 1.93</pos>
+			<origin>0.5 0</origin>
+			<size>0.03 0</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/guard-mask.png</path>
+			<zIndex>999</zIndex>
+		</image>
+		<!-- ########### Stick vers l'avant ########## -->
+		<!-- ########### Début Stick vers la droite = OK ########## -->
+		<text name="titre3" extra="true">
+			<text>Système Suivant</text>
+			<alignment>center</alignment>
+			<fontPath>${themePath}/_viewgame/hyperbat/impact.ttf</fontPath>
+			<pos>0.45 1.89</pos>
+			<fontSize>0.05</fontSize>
+			<color>ffff00</color>
+			<glowColor>0c002e</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>999</zIndex>
+		</text>
+		<image name="redballr" extra="true">
+			<pos>0.420 1.93</pos>
+			<origin>0.5 1</origin>
+			<size>0.03 0</size>
+			<path ifSubset="syststickcolor:ball-blue">${themePath}/_viewgame/hyperbat/stickrvb/ball-blue.png</path>
+			<path ifSubset="syststickcolor:ball-cyan">${themePath}/_viewgame/hyperbat/stickrvb/ball-cyan.png</path>
+			<path ifSubset="syststickcolor:ball-darkviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-darkviolet.png</path>
+			<path ifSubset="syststickcolor:ball-violet">${themePath}/_viewgame/hyperbat/stickrvb/ball-violet.png</path>
+			<path ifSubset="syststickcolor:ball-green">${themePath}/_viewgame/hyperbat/stickrvb/ball-green.png</path>
+			<path ifSubset="syststickcolor:ball-litegreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-litegreen.png</path>
+			<path ifSubset="syststickcolor:ball-orange">${themePath}/_viewgame/hyperbat/stickrvb/ball-orange.png</path>
+			<path ifSubset="syststickcolor:ball-pink">${themePath}/_viewgame/hyperbat/stickrvb/ball-pink.png</path>
+			<path ifSubset="syststickcolor:ball-red">${themePath}/_viewgame/hyperbat/stickrvb/ball-red.png</path>
+			<path ifSubset="syststickcolor:ball-yelgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-yelgreen.png</path>
+			<path ifSubset="syststickcolor:ball-yellow">${themePath}/_viewgame/hyperbat/stickrvb/ball-yellow.png</path>
+			<storyboard repeat="forever">
+				<animation property="offsetY" from="0" to="-1" begin="10500" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="offsetX" to="0.01" begin="10700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetX" to="0.01" begin="12500" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetX" to="0.01" begin="14300" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" from="-1" to="0" begin="15000" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="0" to="0" begin="15500" duration="5000" mode="easeIn" autoreverse="" repeat=""/>
+			</storyboard>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="stickr" extra="true">
+			<pos>0.415 1.917</pos>
+			<origin>0 0</origin>
+			<size>0.01 0.04</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/stick.png</path>
+			<zIndex>996</zIndex>
+			<rotationOrigin>0.5 1.1</rotationOrigin>
+			<storyboard repeat="forever">
+				<animation property="offsetY" from="0" to="-1" begin="10500" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="rotation" from="0" to="25" begin="10700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetX" from="0" to="-0.003" begin="10700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="rotation" from="0" to="25" begin="12500" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetX" from="0" to="-0.003" begin="12500" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="rotation" from="0" to="25" begin="14300" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetX" from="0" to="-0.003" begin="14300" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" from="-1" to="0" begin="15000" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="0" to="0" begin="15500" duration="5000" mode="easeIn" autoreverse="" repeat=""/>
+			</storyboard>
+		</image>
+		<control name="guardr, guardmaskr, titre3">
+			<storyboard repeat="forever">
+				<animation property="offsetY" from="0" to="-1" begin="10500" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="-1" to="0" begin="15000" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="0" to="0" begin="15500" duration="5000" mode="easeIn" autoreverse="" repeat=""/>
+			</storyboard>
+		</control>
+		<image name="guardr" extra="true">
+			<pos>0.42 1.93  </pos>
+			<origin>0.5 0</origin>
+			<size>0.03 0</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/guard.png</path>
+			<zIndex>995</zIndex>
+		</image>
+		<image name="guardmaskr" extra="true">
+			<pos>0.42 1.93</pos>
+			<origin>0.5 0</origin>
+			<size>0.03 0</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/guard-mask.png</path>
+			<zIndex>999</zIndex>
+		</image>
+		<!-- ########### Fin Stick vers la droite = OK ########## -->
+		<!-- ########### Début Stick vers la gauche = OK ########## -->
+		<text name="titre" extra="true">
+			<text>Système Précédent</text>
+			<alignment>center</alignment>
+			<fontPath>${themePath}/_viewgame/hyperbat/impact.ttf</fontPath>
+			<pos>0.43 1.89</pos>
+			<fontSize>0.05</fontSize>
+			<color>ffff00</color>
+			<glowColor>0c002e</glowColor>
+			<glowSize>3</glowSize>
+			<zIndex>999</zIndex>
+		</text>
+		<image name="redballl" extra="true">
+			<pos>0.400 1.93</pos>
+			<origin>0.5 1</origin>
+			<size>0.03 0</size>
+			<path ifSubset="syststickcolor:ball-blue">${themePath}/_viewgame/hyperbat/stickrvb/ball-blue.png</path>
+			<path ifSubset="syststickcolor:ball-cyan">${themePath}/_viewgame/hyperbat/stickrvb/ball-cyan.png</path>
+			<path ifSubset="syststickcolor:ball-darkviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-darkviolet.png</path>
+			<path ifSubset="syststickcolor:ball-violet">${themePath}/_viewgame/hyperbat/stickrvb/ball-violet.png</path>
+			<path ifSubset="syststickcolor:ball-green">${themePath}/_viewgame/hyperbat/stickrvb/ball-green.png</path>
+			<path ifSubset="syststickcolor:ball-litegreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-litegreen.png</path>
+			<path ifSubset="syststickcolor:ball-orange">${themePath}/_viewgame/hyperbat/stickrvb/ball-orange.png</path>
+			<path ifSubset="syststickcolor:ball-pink">${themePath}/_viewgame/hyperbat/stickrvb/ball-pink.png</path>
+			<path ifSubset="syststickcolor:ball-red">${themePath}/_viewgame/hyperbat/stickrvb/ball-red.png</path>
+			<path ifSubset="syststickcolor:ball-yelgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-yelgreen.png</path>
+			<path ifSubset="syststickcolor:ball-yellow">${themePath}/_viewgame/hyperbat/stickrvb/ball-yellow.png</path>
+			<storyboard repeat="forever">
+				<animation property="offsetX" to="-0.01" begin="15200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetX" to="-0.01" begin="17000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetX" to="-0.01" begin="19000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" from="0" to="-1" begin="15000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="-1" to="0" begin="20000" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+			</storyboard>
+			<zIndex>999</zIndex>
+		</image>
+		<image name="stickL" extra="true">
+			<pos>0.395 1.917</pos>
+			<origin>0 0</origin>
+			<size>0.01 0.04</size>
+			<path>./hyperbat/stickrvb/stick.png</path>
+			<zIndex>996</zIndex>
+			<rotationOrigin>0.5 1.1</rotationOrigin>
+			<storyboard repeat="forever">
+				<animation property="rotation" from="0" to="-25" begin="15200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetX" from="0" to="0.003 " begin="15200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="rotation" from="0" to="-25" begin="17000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetX" from="0" to="0.003 " begin="17000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="rotation" from="0" to="-25" begin="19000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetX" from="0" to="0.003 " begin="19000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
+				<animation property="offsetY" from="0" to="-1" begin="15000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="-1" to="0" begin="20000" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+			</storyboard>
+		</image>
+		<control name="guardl, guardmaskl, titre">
+			<storyboard repeat="forever">
+				<animation property="offsetY" from="0" to="-1" begin="15000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
+				<animation property="offsetY" from="-1" to="0" begin="20000" duration="500" mode="easeIn" autoreverse="" repeat=""/>
+			</storyboard>
+		</control>
+		<image name="guardl" extra="true">
+			<pos>0.40 1.93</pos>
+			<origin>0.5 0</origin>
+			<size>0.03 0</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/guard.png</path>
+			<zIndex>995</zIndex>
+		</image>
+		<image name="guardmaskl" extra="true">
+			<pos>0.40 1.93</pos>
+			<origin>0.5 0</origin>
+			<size>0.03 0</size>
+			<path>${themePath}/_viewgame/hyperbat/stickrvb/guard-mask.png</path>
+			<zIndex>999</zIndex>
+		</image>
+		<!-- ########### Fin Stick vers la gauche = OK ########## -->
+	</customView>
+	<!-- Permet de charger le thème par défaut spécifique au système -->
+</theme>

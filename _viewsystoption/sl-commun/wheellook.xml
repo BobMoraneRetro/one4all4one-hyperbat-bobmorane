@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="logo" ifSubset="systemlogocops1:logosimple">
+			<linearSmooth>true</linearSmooth>
+			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.svg</path>
+			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</path>
+			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-${region}.svg</path>
+			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-${region}.png</path>
+			<!-- <path>${intlogoclearpng}</path> -->
+			<!-- <path region="fr">${intlogoclearfrpng}</path> -->
+			<!-- <path region="eu">${intlogoclearfrpng}</path> -->
+			<!-- <path region="us">${intlogoclearuspng}</path> -->
+			<!-- <path region="jp">${intlogoclearjppng}</path> -->
+		</image>
+		<image name="logo" ifSubset="systemlogocops1:logobd|logoovalcarb|logoovalcarbfresh|hmaxovalsilver|logorect|logorectfresh|hmaxrectrefl|glassnekhros">
+			<linearSmooth>true</linearSmooth>
+			<path ifSubset="systemlogocops1:logobd">${extlogobd}</path>
+			<path ifSubset="systemlogocops1:logoovalcarb">${extlogohcarbon}</path>
+			<path ifSubset="systemlogocops1:hmaxovalsilver">${exthmaxovalsilver}</path>
+			<path ifSubset="systemlogocops1:logorect">${extlogohrect}</path>
+			<path ifSubset="systemlogocops1:logoovalcarbfresh">${extlogohcarbonfresh}</path>
+			<path ifSubset="systemlogocops1:logorectfresh">${extlogohrectfresh}</path>
+			<path ifSubset="systemlogocops1:hmaxrectrefl">${exthmaxrectrefl}</path>
+			<path ifSubset="systemlogocops1:glassnekhros">${extglassnekhros}</path>
+		</image>
+	</view>
+</theme>

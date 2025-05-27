@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="BackgrSyst" extra="true">
+			<visible>${IfnoextGamethemeexist}</visible>
+			<!-- <path>"${bobmediapath}/_gametheme/" + stem({game:system:theme}) + "/hyperbat/_default/" + {game:system:theme} + "-" + {game:region} + ".png"</path> -->
+			<path>firstfile("${bobmediapath}/_gametheme/" + stem({game:system:theme}) + "/hyperbat/_default/" + {game:system:theme} + "-" + {game:region} + ".png","${bobmediapath}/_gametheme/" + stem({game:system:theme}) + "/hyperbat/_default/snes-fr.png")</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>1 1</size>
+			<zIndex>1</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+		</image>
+		<image name="Artwork2Def" extra="true">
+			<visible ifSubset="hsperview:themejeux">!exists("${bobmediapath}/_gametheme/${system.theme}/Hyperbat/" + stem({game:rom}) + "/theme.xml")</visible>
+			<visible ifSubset="hsperview:themejeux">${IfnoextGamethemeexist}</visible>
+			<path>./Artwork2.png</path>
+			<origin>0 0.5</origin>
+			<pos>0 0.5</pos>
+			<maxSize>1 1</maxSize>
+			<zIndex>500</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<autoFade>false</autoFade>
+			<!-- # Arrivee : G->D # -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<!-- ############################ Réglage de la position de l'image du hardware en fonction de la Region du jeu ################################### -->
+		<image name="Artwork3Def" extra="true">
+			<visible>{game:region} != 'us' &amp;&amp; ${IfnoextGamethemeexist}</visible>
+			<!-- <path>"${bobmediapath}/_gametheme/" + stem({game:system:theme}) + "/hyperbat/_default/Artwork3-" + {game:region} + ".png"</path> -->
+			<path>firstfile("${bobmediapath}/_gametheme/" + stem({game:system:theme}) + "/hyperbat/_default/Artwork3-" + {game:region} + ".png","${bobmediapath}/_gametheme/" + stem({game:system:theme}) + "/hyperbat/_default/Artwork3-fr.png")</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.454166666666667 0.811574074074074</pos>
+			<size>0.541666666666667 0.376851851851852</size>
+			<zIndex>500</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<autoFade>false</autoFade>
+			<!-- # Arrivee : G->D # -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="100" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="100" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="100" mode="Linear"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="ArtworkusDef" extra="true">
+			<visible>{game:region} == 'us' &amp;&amp; ${IfnoextGamethemeexist}</visible>
+			<path>"${bobmediapath}/_gametheme/" + stem({game:system:theme}) + "/hyperbat/_default/Artwork3-" + {game:region} + ".png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.444010416666667 0.805555555555556</pos>
+			<size>0.5171875 0.388888888888889</size>
+			<zIndex>500</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<autoFade>false</autoFade>
+			<!-- # Arrivee : G->D # -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="100" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="100" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="100" mode="Linear"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<!-- ################ Bezel autour de la video ##################### -->
+		<image name="VideobezelDef" extra="true">
+			<visible>${IfnoextGamethemeexist}</visible>
+			<path>./video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.390104166666667 0.377777777777778</pos>
+			<size>0.353125 0.490740740740741</size>
+			<zIndex>300</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev" extra="true">
+			<visible>${IfnoextGamethemeexist}</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.388 0.377777777777778</pos>
+			<maxSize>0.45 0.42</maxSize>
+			<zIndex>201</zIndex>
+			<effect>none</effect>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<delay>1</delay>
+		</video>
+		<image name="MarqueeHS" extra="true">
+			<visible>${IfnoextGamethemeexist}</visible>
+			<path>{game:marquee}</path>
+			<pos>0.85 0.15</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.22 0.70</maxSize>
+			<zIndex>502</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>FFFFFFFF</color>
+			<colorEnd>cccccc</colorEnd>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1500" duration="700" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="500" duration="3000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1500" duration="700" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="1500" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1500" duration="700" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="1500" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+		</image>
+		<!-- ############################# Animation et paramètres communs du logo système par région et par système groupé ################################## -->
+		<control name="logosytemgamelistall,logosytemgamelistus,logosytemgamelistfr,logosytemgamelisteur,logosytemgamelistjp,logosytgrouped1">
+			<maxSize>0.55 0.12</maxSize>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+			<pos>0.4 0.068</pos>
+			<origin>0.5 0.5</origin>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>10</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode="easeIn"/>
+			</storyboard>
+		</control>
+		<!-- ############ A partir d'ici prendre en compte les autres systèmes groupés dans le systhème ###################################		 -->
+		<image name="logosytemgamelistall" extra="true">
+			<visible>{game:region} != 'us' &amp;&amp; {game:region} != 'jp' &amp;&amp; {game:system:theme} != 'snes-msu1'</visible>
+			<path>${intlogoclearpng}</path>
+		</image>
+		<image name="logosytemgamelistus" extra="true">
+			<visible>{game:region} == 'us' &amp;&amp; {game:system:theme} != 'snes-msu1'</visible>
+			<path>${intlogoclearuspng}</path>
+		</image>
+		<image name="logosytemgamelistfr" extra="true">
+			<visible>{game:region} == 'fr' &amp;&amp; {game:system:theme} != 'snes-msu1'</visible>
+			<path>${intlogoclearfrpng}</path>
+		</image>
+		<image name="logosytemgamelistjp" extra="true">
+			<visible>{game:region} == 'jp' &amp;&amp; {game:system:theme} != 'snes-msu1'</visible>
+			<path>${intlogoclearjppng}</path>
+			<path if="{system.manufacturer} == 'Collections'">${intlogoclearpng}</path>
+		</image>
+		<!-- ##################logo des systèmes groupés ################################# -->
+		<image name="logosytgrouped1" extra="true">
+			<visible>{game:system:theme} == 'snes-msu1'</visible>
+			<path>"${bobmediapath}/_gametheme/" + stem({game:system:theme}) + "/hyperbat/_default/" + {game:system:theme} + ".png"</path>
+		</image>
+		<!-- ################## gestion des boxart et cartridge du système + des systèmes groupés ################################# -->
+		<image name="boxartthumb" extra="true">
+			<visible>!exists({game:boxart}) &amp;&amp; ${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} != 'snes-msu1'</visible>
+			<path>{game:thumbnail}</path>
+			<pos>0.779947916666667 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.335 0.6</maxSize>
+			<zIndex>351</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<shader>
+				<path>:/shaders/border.glsl</path>
+				<cornerRadius>0.03</cornerRadius>
+				<borderSize>0.012</borderSize>
+				<borderColor>000000</borderColor>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
+		</image>
+		<image name="boxart3D" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} != 'snes-msu1'</visible>
+			<path>{game:boxart}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.77734375 0.52</pos>
+			<maxSize>0.385 0.65</maxSize>
+			<zIndex>351</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<shader>
+				<path>:/shaders/border.glsl</path>
+				<cornerRadius>0.03</cornerRadius>
+				<borderSize>0.012</borderSize>
+				<borderColor>000000</borderColor>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
+		</image>
+		<image name="cartridge" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:region} != 'us' &amp;&amp; {game:system:theme} != 'snes-msu1'</visible>
+			<path>{game:cartridge}</path>
+			<pos>0.38984375 0.670833333333333</pos>
+			<size>0.184895833333333 0.223148148148148</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>349</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="linear"/>
+				<animation property="offsetY" from="-1" begin="" duration="1000" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="linear"/>
+				<animation property="offsetY" from="-1" begin="" duration="1000" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="linear"/>
+				<animation property="offsetY" from="-1" begin="" duration="1000" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="linear"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="linear"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+		</image>
+		<image name="cartridgeus" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:region} == 'us' &amp;&amp; {game:system:theme} != 'snes-msu1'</visible>
+			<path>{game:cartridge}</path>
+			<pos>0.384895833333333 0.668981481481482</pos>
+			<size>0.185416666666667 0.206481481481481</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>349</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="linear"/>
+				<animation property="offsetY" from="-1" begin="" duration="1000" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="linear"/>
+				<animation property="offsetY" from="-1" begin="" duration="1000" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="linear"/>
+				<animation property="offsetY" from="-1" begin="" duration="1000" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="linear"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="linear"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+		</image>
+		<!-- ############################### MSU if GROUPED : Specific ####################################		 -->
+		<image name="thumbgroup1" extra="true">
+			<visible>!exists({game:boxart}) &amp;&amp; ${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'snes-msu1'</visible>
+			<path>{game:thumbnail}</path>
+			<pos>0.779947916666667 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.5 0.5</maxSize>
+			<zIndex>351</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<shader>
+				<path>:/shaders/border.glsl</path>
+				<cornerRadius>0.03</cornerRadius>
+				<borderSize>0.012</borderSize>
+				<borderColor>000000</borderColor>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
+		</image>
+		<image name="boxgroup1" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'snes-msu1'</visible>
+			<path>{game:boxart}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.73 0.52</pos>
+			<maxSize>0.5 0.5</maxSize>
+			<zIndex>351</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<shader>
+				<path>:/shaders/border.glsl</path>
+				<cornerRadius>0.03</cornerRadius>
+				<borderSize>0.012</borderSize>
+				<borderColor>000000</borderColor>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
+		</image>
+		<image name="cdrotationgroup1" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'snes-msu1'</visible>
+			<path>{game:cartridge}</path>
+			<pos>0.78 0.52</pos>
+			<maxSize>0.5 0.5</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>349</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3100" duration="10" mode="linear"/>
+				<animation property="offsetX" from="0" to="0.07" begin="3000" duration="800" mode="linear"/>
+				<animation property="rotation" from="0" to="360" begin="3800" duration="5000" mode="easeIn"/>
+				<animation property="rotation" from="0" to="360" begin="8800" repeat="forever" duration="3200" mode="linear"/>
+				<animation property="w" from="0.1" to="0.1578125" begin="3000" duration="270" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3100" duration="10" mode="linear"/>
+				<animation property="offsetX" from="0" to="0.07" begin="3000" duration="800" mode="linear"/>
+				<animation property="rotation" from="0" to="360" begin="3800" duration="5000" mode="easeIn"/>
+				<animation property="rotation" from="0" to="360" begin="8800" repeat="forever" duration="3200" mode="linear"/>
+				<animation property="w" from="0.1" to="0.1578125" begin="3000" duration="270" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3100" duration="10" mode="linear"/>
+				<animation property="offsetX" from="0" to="0.07" begin="3000" duration="800" mode="linear"/>
+				<animation property="rotation" from="0" to="360" begin="3800" duration="5000" mode="easeIn"/>
+				<animation property="rotation" from="0" to="360" begin="8800" repeat="forever" duration="3200" mode="linear"/>
+				<animation property="w" from="0.1" to="0.1578125" begin="3000" duration="270" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="linear"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="50" mode="linear"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+		</image>
+	</customView>
+</theme>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Reprise d'un theme de Helmic -->
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="gamecarousel, detailed, coinops, hyperbat">
+		<!-- Console -->
+		<text name="consolesys" extra="true" zIndex="5000" fontPath=":/_common/fonts/cabin-bold.ttf" fontSize="0.024" size="1 1" alignment="right" verticalAlignment="top" padding="0.025 0.2 0.01 0.01" color="ffd13b" glowColor="000000" glowOffset="0" glowSize="4">
+			<text>
+INFO CONSOLE:
+
+{game:name}
+Genre: {game:genre}
+Family: {game:family}
+Lang: {game:lang}
+Region: {game:region}, Rating: {game:rating}
+Cheevos hash: {game:cheevosHash}, Cheevos ID: {game:cheevosId}
+
+File: {game:rom}
+CRC32: {game:crc32}
+MD5: {game:md5}
+{game:system}/{game:stem}-fanart.jpg
+{game:system}/{game:stem}-image.png
+{game:system}/{game:stem}-thumb.png
+{game:system}/{game:stem}-marquee.png
+{game:system}/{game:stem}-video.mp4
+
+			</text>
+		</text>
+		<text extra="true" name="console" zIndex="5000" fontPath=":/_common/fonts/cabin-bold.ttf" fontSize="0.022" size="1 1" alignment="left" verticalAlignment="top" padding="0.025 0.16 0.01 0.01" color="ffd13b" glowColor="000000" glowOffset="0" glowSize="4">
+			<text>
+INFO CONSOLE:
+
+GENERAL:
+${screen.ratio} ( ${screen.width}x${screen.height} ), Vertical screen: ${screen.vertical}
+Architecture: ${global.architecture}, Lang: ${global.language}
+Help: ${global.help}, Clock: ${global.clock}
+Cheevos: ${global.cheevos} ( ${global.cheevos.username} )
+Netplay: ${global.netplay} ( ${global.netplay.username} )
+
+SYSTEM:
+Full Name: ${system.fullName}
+Short Name: ${system.name}
+Theme: ( ${system.theme} ), Collection: ( ${system.collection} ), Game Systheme ( {game:system:theme} )
+Manufacturer: ${system.manufacturer}
+Sorted by: ${system.sortedBy}
+Release Date: ${system.releaseYear}
+Hardware: ${system.hardwareType}
+Group: ${system.group}
+Savestates: ${system.savestates}
+Netplay: ${system.netplay}
+Cheevos: ${system.cheevos}
+Settings: ${settings.ScrollLoadMedias}
+Game system theme: {game:system:theme}
+Theme path: ${themePath}
+			
+			</text>
+		</text>
+	</view>
+</theme>

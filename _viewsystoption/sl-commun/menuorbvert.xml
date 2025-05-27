@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="arcade" ifSubset="menuofficiel:menuorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/arcade.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.235</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == 'arcade'">1</saturation>
+		</image>
+		<image name="computer" ifSubset="menuofficiel:menuorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/ordi.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.28</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == 'computer'">1</saturation>
+		</image>
+		<image name="console" ifSubset="menuofficiel:menuorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/console.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.324</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == 'console'">1</saturation>
+		</image>
+		<image name="extension" ifSubset="menuofficiel:menuorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/consoleretro.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.368</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == 'extension'">1</saturation>
+		</image>		
+		<image name="mess" ifSubset="menuofficiel:menuorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/mess.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.413</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == 'MESS'">1</saturation>
+		</image>
+		<image name="pinball" ifSubset="menuofficiel:menuorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/pinball.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.4575</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == 'pinball'">1</saturation>
+		</image>
+		<image name="port" ifSubset="menuofficiel:menuorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/port.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.502</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == 'port'">1</saturation>
+		</image>
+		<image name="portable" ifSubset="menuofficiel:menuorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/portable.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.546</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == 'portable'">1</saturation>
+		</image>
+		<image name="system" ifSubset="menuofficiel:menuorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/mess.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.591</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.sortedBy} == 'System'">1</saturation>
+		</image>
+		<image name="autocollection" ifSubset="menuofficiel:menuorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/collection.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.6355</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == 'auto collection'">1</saturation>
+		</image>
+		<image name="customcollecion" ifSubset="menuofficiel:menuorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/collectioncust.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.68</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == 'custom collection'">1</saturation>
+		</image>
+		<image name="retrobat" ifSubset="menuofficiel:menuorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/option.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.725</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.theme} == 'retrobat'">1</saturation>
+		</image>
+<!-- ######################################## Si menu custom sélectionné ###############################################-->
+		<image name="options" ifSubset="menuofficiel:menucustorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/option.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.235</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.theme} == 'retrobat'">1</saturation>
+		</image>
+		<image name="screens" ifSubset="menuofficiel:menucustorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/screenshot.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.28</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.theme} == 'imageviewer'">1</saturation>
+		</image>
+		<image name="arcade" ifSubset="menuofficiel:menucustorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/arcade.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.324</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == '1 - arcade'">1</saturation>
+		</image>
+		<image name="consolemoderne" ifSubset="menuofficiel:menucustorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/console.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.368</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == '2 - console moderne'">1</saturation>
+		</image>
+		<image name="consoleretro" ifSubset="menuofficiel:menucustorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/consoleretro.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.413</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == '3 - console retro'">1</saturation>
+		</image>
+		<image name="portable" ifSubset="menuofficiel:menucustorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/portable.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.4575</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == '4 - portable'">1</saturation>
+		</image>
+		<image name="ordinateur" ifSubset="menuofficiel:menucustorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/ordiretro.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.502</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == '5 - Ordinateur'">1</saturation>
+		</image>
+		<image name="ordimoderne" ifSubset="menuofficiel:menucustorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/ordi.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.546</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == '6 - ordinateur moderne'">1</saturation>
+		</image>
+		<image name="pinball" ifSubset="menuofficiel:menucustorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/pinball.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.591</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == '7 - pinball'">1</saturation>
+		</image>
+		<image name="library" ifSubset="menuofficiel:menucustorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/library.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.6355</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.theme} == 'library'">1</saturation>
+		</image>
+		<image name="autocollection" ifSubset="menuofficiel:menucustorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/collection.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.68</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == 'auto collection'">1</saturation>
+		</image>
+		<image name="customcollecion" ifSubset="menuofficiel:menucustorbvert" extra="static">
+			<path>${themePath}/_viewsystoption/sl-commun/menuofficiel/orb/collectioncust.png</path>
+			<origin>0 0</origin>
+			<pos>0.008 0.725</pos>
+			<maxSize>0.023 0.07</maxSize>
+			<zIndex>500</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0</saturation>
+			<saturation if="{system.hardwareType} == 'custom collection'">1</saturation>
+		</image>
+	</view>
+</theme>

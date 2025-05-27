@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background_def" extra="true">
+			<path>./Background.png</path>
+                        <visible>${IfnoextGamethemeexist}</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.504329004329 0.494938486373</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+		</image>
+		<image name="console1_def" extra="true">
+			<path>./console1.png</path>
+                        <visible>${IfnoextGamethemeexist}</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.474029583512 0.832953312881</pos>
+			<size>0.357423861697 0.309493641848</size>
+			<zIndex>200</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="cart_def" extra="true">
+			<!-- <path>{game:cartridge}</path> -->
+			<path>"${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Cart/" + stem({game:rom}) + ".png"</path>
+                        <visible>exists({game:boxart}) &amp;&amp; ${IfnoextGamethemeexist}</visible>
+			<pos>0.365535248042 0.788150753727</pos>
+			<size>0.142152596461 0.060007145207</size>
+			<zIndex>210</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="375" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="650" duration="375" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="375" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="650" duration="375" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="375" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="650" duration="375" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="console2_def" extra="true">
+			<path>./console2.png</path>
+                        <visible>${IfnoextGamethemeexist}</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.473600232086 0.831641040518</pos>
+			<size>0.358282564549 0.312026560939</size>
+			<zIndex>220</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="marquee_def" extra="true">
+			<path>{game:marquee}</path>
+                        <visible>${IfnoextGamethemeexist}</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.883680642501 0.124316578483</pos>
+			<maxSize>0.148958333333 0.187962962963</maxSize>
+			<zIndex>230</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="box_def" extra="true">
+			<path>{game:boxart}</path>
+                        <visible>${IfnoextGamethemeexist}</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.853815544039 0.521356937898</pos>
+			<maxSize>0.185586805140 0.597177097428</maxSize>
+			<zIndex>240</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="logo2_def" extra="true">
+			<path>./logo2.png</path>
+            <visible>${IfnoextGamethemeexist} &amp;&amp; 
+            {game:system:theme} == 'nes' &amp;&amp;
+            !exists("${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.645515121845 0.871636077730</pos>
+			<size>0.130495720917 0.256106297363</size>
+			<zIndex>250</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="logo2-jeu" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'nes'</visible>
+            <path>"${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.645515121845 0.871636077730</pos>
+			<size>0.130495720917 0.256106297363</size>
+			<zIndex>250</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="voyant_def" extra="true">
+			<path>./voyant.png</path>
+                        <visible>${IfnoextGamethemeexist}</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.345532461954 0.922644285154</pos>
+			<size>0.010994838205 0.019546379031</size>
+			<zIndex>260</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="571" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="571" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="571" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="logo1_def" extra="true">
+			<path>./logo1.png</path>
+                        <visible>${IfnoextGamethemeexist}</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.132795831966 0.506768128943</pos>
+			<size>0.222120369309 0.633866544882</size>
+			<zIndex>270</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="700" duration="800" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="700" duration="1500" mode="EaseOut"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="1500" duration="3000" mode="EaseOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="700" duration="800" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="700" duration="1500" mode="EaseOut"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="1500" duration="3000" mode="EaseOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="700" duration="800" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="700" duration="1500" mode="EaseOut"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="1500" duration="3000" mode="EaseOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Artwork_def" extra="true">
+			<path>./Artwork.png</path>
+                        <visible>${IfnoextGamethemeexist}</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.465613369174 0.054895339921</pos>
+			<size>0.385416666667 0.166666666667</size>
+			<zIndex>280</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="screenshotvideo_def" extra="true">
+			<path>{game:image}</path>
+                        <visible>${IfnoextGamethemeexist}</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.459595959596 0.397627064294</pos>
+			<size>0.437229437229 0.590027256694</size>
+			<zIndex>290</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.437229437229" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.437229437229" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.437229437229" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid_def" extra="true">
+			<path>{game:video}</path>
+                        <visible>${IfnoextGamethemeexist}</visible>
+			<pos>0.458152958153 0.398105516803</pos>
+			<maxSize>0.434343434343 0.582972582973</maxSize>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<zIndex>300</zIndex>
+		</video>
+		<control name="PreviewVid_def,Videobezel-def">
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+		</control>
+		<image name="Videobezel_def" extra="true">
+			<path>./video.png</path>
+                        <visible>${IfnoextGamethemeexist}</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.460495063238 0.415852220075</pos>
+			<size>0.464291258806 0.637442784367</size>
+			<zIndex>310</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.464291258806" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.464291258806" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.464291258806" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>320</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>320</zIndex>
+		</image>
+		<control name="Artwork_def, PreviewVid_def, Videobezel_def, box_def, cart_def, console1_def, console2_def, logo1_def, logo2_def, marquee_def, screenshotvideo_def, voyant_def">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

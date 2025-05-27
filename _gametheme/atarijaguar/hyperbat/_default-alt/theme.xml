@@ -1,0 +1,241 @@
+<?xml version="1.0" ?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="logo-atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; 
+            {game:system:theme} == 'atarijaguar' &amp;&amp;
+            !exists("${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>
+			<path>./logo.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.130718990527 0.576320747154</pos>
+			<size>0.179166666667 0.547222222222</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="logo-jeu atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atarijaguar'</visible>
+            <path>"${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.130718990527 0.576320747154</pos>
+			<size>0.179166666667 0.547222222222</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="marquee-atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atarijaguar'</visible>
+			<path>{game:marquee}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.127343750000 0.188045133878</pos>
+			<maxSize>0.207812500000 0.137962962963</maxSize>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Artwork-atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atarijaguar'</visible>
+			<path>./Artwork.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.488541666667 0.925000000000</pos>
+			<size>0.394791666667 0.192592592593</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="console2-atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atarijaguar'</visible>
+			<path>./console2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.863802083333 0.846759259259</pos>
+			<size>0.238020833333 0.226851851852</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="cart-atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atarijaguar'</visible>
+			<path>./cart.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.870193001443 0.750717753882</pos>
+			<size>0.094791666667 0.116666666667</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="100" mode="Linear"/>
+				<animation property="offsetY" from="-0.4" to="0" begin="2000" duration="1500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="100" mode="Linear"/>
+				<animation property="offsetY" from="-0.4" to="0" begin="2000" duration="1500" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="100" mode="Linear"/>
+				<animation property="offsetY" from="-0.4" to="0" begin="2000" duration="1500" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="console1-atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atarijaguar'</visible>
+			<path>./console1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.867990169553 0.844656886324</pos>
+			<size>0.240625000000 0.242592592593</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="oei-atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atarijaguar'</visible>
+			<path>./oei.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.508333333333 0.093981481481</pos>
+			<size>0.489583333333 0.123148148148</size>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="screenshot-atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atarijaguar'</visible>
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.502718028499 0.489622414622</pos>
+			<size>0.448437500000 0.594444444444</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="500" mode="Linear"/>
+				<animation property="w" from="0" to="0.448437500000" begin="600" duration="500" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="500" mode="Linear"/>
+				<animation property="w" from="0" to="0.448437500000" begin="600" duration="500" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="500" mode="Linear"/>
+				<animation property="w" from="0" to="0.448437500000" begin="600" duration="500" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev-atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atarijaguar'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.502497444685 0.492115600449</pos>
+			<maxSize>0.448958333333 0.598148148148</maxSize>
+			<zIndex>280</zIndex>
+			<effect>none</effect>
+			<delay>2</delay>
+		</video>
+		<image name="Video1-atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atarijaguar'</visible>
+			<path>./Video1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.499218750000 0.500462962963</pos>
+			<size>0.528645833333 0.726851851852</size>
+			<zIndex>290</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="500" mode="Linear"/>
+				<animation property="w" from="0" to="0.528645833333" begin="600" duration="500" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="500" mode="Linear"/>
+				<animation property="w" from="0" to="0.528645833333" begin="600" duration="500" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="500" mode="Linear"/>
+				<animation property="w" from="0" to="0.528645833333" begin="600" duration="500" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="Boxart-atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atarijaguar'</visible>
+			<path>exists({game:boxart}) ? {game:boxart} : {game:thumbnail}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.850792523449 0.423593073593</pos>
+			<maxSize>0.154687500000 0.477777777778</maxSize>
+			<zIndex>300</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Background-atarijaguar" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atarijaguar'</visible>
+			<path>./Background.jpg</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.510677083333 0.572260301427</pos>
+			<size>1.021354166667 1.134259259259</size>
+			<zIndex>100</zIndex>
+		</image>
+		<control name="logo-atarijaguar, marquee-atarijaguar, Artwork-atarijaguar, console2-atarijaguar, cart-atarijaguar, console1-atarijaguar, oei-atarijaguar, screenshot-atarijaguar, gameplayprev-atarijaguar, Video1-atarijaguar, Boxart-atarijaguar">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>
+

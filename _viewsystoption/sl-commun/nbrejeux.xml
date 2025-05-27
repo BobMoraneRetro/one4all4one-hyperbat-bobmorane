@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<text name="systemInfo">
+			<visible ifSubset="nbrjeuxcops1:desactive">false</visible>
+			<reflexion>0.20 0.0</reflexion>
+			<alignment ifSubset="systemview:nesicaxlive">left</alignment>
+			<pos ifSubset="cops2menu:bas,systemview:coinopsnext2">0 0.81</pos>
+			<pos ifSubset="cops2menu:milieu,systemview:coinopsnext2">0 0.48</pos>
+			<pos ifSubset="systemview:copscurve|coinopsnext1">0 0.80</pos>
+			<pos ifSubset="systemview:hyperspin">0 0.75</pos>
+			<pos ifSubset="systemview:hypermax">0 0.75</pos>
+			<pos ifSubset="systemview:zspin">0 0.67</pos>
+			<pos ifSubset="systemview:nesicaxlive">0.87 0.16</pos>
+			<reflexion ifSubset="systemview:hyperspin|nesicaxlive">0 0</reflexion>
+			<size>1 0.25</size>
+			<backgroundColor>00000000</backgroundColor>
+			<color>DDDDDDD8</color>
+			<glowColor>000000</glowColor>
+			<glowSize>1</glowSize>
+			<glowOffset>2</glowOffset>
+			<fontPath>${themePath}/_common/fonts/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.027</fontSize>
+			<fontSize ifSubset="systemview:nesicaxlive">0.024</fontSize>
+			<scaleOrigin ifSubset="systemview:nesicaxlive">0.025 0.5</scaleOrigin>
+			<zIndex>151</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="1" duration="350" mode="easeOut"/>
+				<animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-ps2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps2'</visible>
+			<path>./background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="logo-ps2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; 
+			{game:system:theme} == 'ps2' &amp;&amp;
+			!exists("${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>
+			<path>./logo.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.108137175325 0.497819464486</pos>
+			<size>0.184375000000 0.585185185185</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="logo_jeu-ps2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps2'</visible>
+			<path>"${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.120833333333 0.502314814815</pos>
+			<maxSize>0.241145833333 0.430555555556</maxSize>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="scale" to="1.02" begin="350" duration="600" mode="bump" autoreverse="true" repeat="forever"/>
+			</storyboard> 
+		</image>
+		<image name="Artwork-ps2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps2'</visible>
+			<path>./Artwork.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.506250000000 0.915740740741</pos>
+			<size>0.469791666667 0.192592592593</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1250" duration="500" mode="Linear"/>
+				<animation property="scale" from="0" to="1" begin="1250" duration="500" mode="bump"/>
+				<animation property="scale" from="1" to="1.1" begin="1750" duration="120" mode="EasyOutCubic" autoreverse="true"/>
+				<animation property="scale" from="1" to="1.05" begin="1870" duration="120" mode="EasyOutCubic" autoreverse="true"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1250" duration="500" mode="Linear"/>
+				<animation property="scale" from="0" to="1" begin="1250" duration="500" mode="bump"/>
+				<animation property="scale" from="1" to="1.1" begin="1750" duration="120" mode="EasyOutCubic" autoreverse="true"/>
+				<animation property="scale" from="1" to="1.05" begin="1870" duration="120" mode="EasyOutCubic" autoreverse="true"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1250" duration="500" mode="Linear"/>
+				<animation property="scale" from="0" to="1" begin="1250" duration="500" mode="bump"/>
+				<animation property="scale" from="1" to="1.1" begin="1750" duration="120" mode="EasyOutCubic" autoreverse="true"/>
+				<animation property="scale" from="1" to="1.05" begin="1870" duration="120" mode="EasyOutCubic" autoreverse="true"/>
+			</storyboard>
+		</image>
+		<image name="console-ps2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps2'</visible>
+			<path>./console.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.852604166667 0.770582812249</pos>
+			<size>0.280208333333 0.361111111111</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Cartridge-ps2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps2'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.937901334776 0.701366843034</pos>
+			<maxSize>0.15 0.15</maxSize>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" to="360" begin="4000" duration="5000" mode="easeIn" from="0"/>
+				<animation property="rotation" to="360" begin="9000" duration="3200" mode="linear" from="0" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" to="360" begin="4000" duration="5000" mode="easeIn" from="0"/>
+				<animation property="rotation" to="360" begin="9000" duration="3200" mode="linear" from="0" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" to="360" begin="4000" duration="5000" mode="easeIn" from="0"/>
+				<animation property="rotation" to="360" begin="9000" duration="3200" mode="linear" from="0" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Boxart-ps2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps2'</visible>
+			<path>exists({game:boxart}) ? {game:boxart} : {game:thumbnail}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.894010416667 0.284722222222</pos>
+			<maxSize>0.140104166667 0.432407407407</maxSize>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="328" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="2626" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="656" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="2626" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="656" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="2626" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev-ps2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps2'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.501256989538 0.443350168350</pos>
+			<maxSize>0.523437500000 0.698148148148</maxSize>
+			<zIndex>250</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.523437500000" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.523437500000" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.523437500000" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+		</video>
+		<image name="bezel-ps2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps2'</visible>
+			<path>./bezel.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500781250000 0.445370370370</pos>
+			<size>0.555729166667 0.762962962963</size>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.555729166667" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.555729166667" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.555729166667" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="manette-ps2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps2'</visible>
+			<path>./manette.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.111770607864 0.889774731441</pos>
+			<size>0.174479166667 0.168518518519</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Marquee-ps2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ps2'</visible>
+			<path>{game:marquee}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.108854166667 0.097047859548</pos>
+			<maxSize>0.217708333333 0.178703703704</maxSize>
+			<zIndex>280</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<control name="logo-ps2, Artwork-ps2, console-ps2, Boxart-ps2, gameplayprev-ps2, bezel-ps2, manette-ps2, Marquee-ps2">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<control name="Cartridge-ps2">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

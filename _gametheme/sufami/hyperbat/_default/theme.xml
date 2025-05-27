@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="BackgrSyst" extra="true">
+			<visible>${IfnoextGamethemeexist}</visible>
+			<path>${firstbackgrsyst}</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>1 1</size>
+			<zIndex>1</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+		</image>
+		<image name="Artwork2-sufami" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sufami'</visible>
+			<path>./Artwork2.png</path>
+			<origin>0 0.5</origin>
+			<pos>0 0.5</pos>
+			<maxSize>1</maxSize>
+			<zIndex>500</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<autoFade>false</autoFade>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<!-- Particularisation à faire -->
+		<image name="hardware-sufami" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sufami'</visible>
+			<path>./console_sufami.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.454427083333 0.765740740741</pos>
+			<size>0.480729166667 0.468518518519</size>
+			<zIndex>501</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- ################ Bezel autour de la video ##################### -->
+		<image name="fondscreen-sufami" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sufami'</visible>
+			<path>./fiber.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.388 0.371</pos>
+			<size>0.32 0.43</size>
+			<zIndex>199</zIndex>
+			<autoFade>false</autoFade>
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+		</image>
+		<image name="screenshot-sufami" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sufami'</visible>
+            <path>{game:image}</path>
+            <origin>0.5 0.5</origin>
+            <pos>0.388 0.373</pos>
+            <size>0.315 0.428</size>
+            <autoFade>false</autoFade>
+			<zIndex>200</zIndex>
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+		</image>
+		<video name="gameplayprev-sufami" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sufami'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.388 0.37</pos>
+			<size>0.315 0.42</size>
+			<zIndex>201</zIndex>
+			<effect>none</effect>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
+				<animation property="zIndex" to="400" begin="" duration="" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
+				<animation property="zIndex" to="400" begin="" duration="" mode="linear"/>
+			</storyboard>
+			<delay>1</delay>
+		</video>
+				<image name="Videobezel-sufami" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sufami'</visible>
+			<path>./video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.390104166666667 0.377777777777778</pos>
+			<size>0.353125 0.490740740740741</size>
+			<zIndex>300</zIndex>
+			<!-- <storyboard event="open"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="activateNext"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="activatePrev"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+		</image>
+		<image name="MarqueeHS-sufami" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sufami'</visible>
+			<path>{game:marquee}</path>
+			<pos>0.85 0.15</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.22 0.70</maxSize>
+			<zIndex>502</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<color>FFFFFFFF</color>
+			<colorEnd>cccccc</colorEnd>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1500" duration="700" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="500" duration="3000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1500" duration="700" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="1500" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1500" duration="700" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="1500" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+		</image>
+		<!-- ############################# Animation et paramètres communs du logo système par région et par système groupé ################################## -->
+		<image name="logosytempergame-sufami" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sufami'</visible>
+			<path>firstfile(
+			"${themePath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + ({game:region}) + ".png",
+			"${themePath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path>
+			<maxSize>0.55 0.12</maxSize>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+			<pos>0.4 0.068</pos>
+			<origin>0.5 0.5</origin>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>499</zIndex>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode=""/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" from="1" to="1" begin="" duration="250" mode="linear"/>
+				<animation property="opacity" to="0" begin="60" duration="" mode=""/>
+			</storyboard>
+		</image>
+		<!-- ############ A partir d'ici prendre en compte les autres systèmes groupés dans le systhème ###################################		 -->
+		<image name="boxart-sufami" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sufami'</visible>
+			<path>exists({game:boxart}) ? {game:boxart} : {game:thumbnail}</path>
+			<pos>0.779947916666667 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<pos>0.82 0.55</pos>
+			<maxSize>0.3 0.65</maxSize>
+			<zIndex>351</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1000" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
+				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
+			</storyboard>
+		</image>
+	</customView>
+</theme>
