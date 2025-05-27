@@ -19,10 +19,22 @@ Description :
 # Game and system theme add-on
 You can find game or system themes to replace the generic view on discord here: https://discord.com/invite/msnaz7Kev7
 
-| Theme for systemview  | Specific theme for a game | Defaut theme for gameview  |
+Info - Priority for displaying theme in gameview is : Specific theme for a game -> if not exist -> Defaut theme for gameview -> if not exist -> Defaut generic for gameview
+
+| Theme for systemview  | Defaut theme for gameview | Specific theme for a game  |
 | ------------- | ------------- | ------------- |
 | ![systemtheme](https://github.com/user-attachments/assets/6c85069d-63a2-4ea8-8c29-d576821ec286)  | ![gametheme](https://github.com/user-attachments/assets/a6ca0762-cd94-44e7-87e5-2cec5879c0e9)  | ![defautgametheme](https://github.com/user-attachments/assets/b7cbaefb-dfc9-4073-9007-6608cf581ccb)  | 
 
+| Defaut generic for gameview  | Defaut generic theme for systemview
+| ------------- | ------------- |
+| ![genericdefaut](https://github.com/user-attachments/assets/ee95b902-d2af-4d89-9061-52a467ea8d7b)  | ![genericsystem](https://github.com/user-attachments/assets/f6023f97-7684-43e4-bf42-7feef0e6cffd)  | 
+
+# Tool to create Gameview, System-view or System-defaut view
+
+You can make your own theme for games or system with the app' we develop, like old hypertheme : just put some artwork, place the video, place boxart or what you want and choose animation to apply on each image and video and generate it automatically. Preview it in real time on your 2nd screen directly in retrobat or batocera by navigate on the game (no reboot needed)
+Yo can even import *.psd with artwork aldready in place. Explanation, tutorial and up to date app' version availlable on discord
+
+![Image](https://github.com/user-attachments/assets/29c2b596-d2cf-4d8e-b5ae-ee1d484aa2e2)
 
 ### License :
 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)  
