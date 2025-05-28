@@ -21,7 +21,7 @@ You can find game or system themes to replace the generic view on discord here: 
 
 Info - Priority for displaying theme in gameview is : Specific theme for a game -> if not exist -> Defaut theme for gameview -> if not exist -> Defaut generic for gameview
 
-| Theme for systemview  | Defaut theme for gameview | Specific theme for a game  |
+| Theme for systemview  | Specific theme for a game | Defaut theme for gameview  |
 | ------------- | ------------- | ------------- |
 | ![systemtheme](https://github.com/user-attachments/assets/6c85069d-63a2-4ea8-8c29-d576821ec286)  | ![gametheme](https://github.com/user-attachments/assets/a6ca0762-cd94-44e7-87e5-2cec5879c0e9)  | ![defautgametheme](https://github.com/user-attachments/assets/b7cbaefb-dfc9-4073-9007-6608cf581ccb)  | 
 
