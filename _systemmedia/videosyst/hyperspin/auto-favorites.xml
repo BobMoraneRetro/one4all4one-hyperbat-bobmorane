@@ -63,7 +63,10 @@
 		<!-- ################ Logo Système ##################### -->
 		<image name="logocustunified" extra="true">
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
-			<path>${intlogoclearpng}</path>
+			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.svg</path>
+			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</path>
+			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-${lang}.svg</path>
+			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-${lang}.png</path>
 			<path region="fr">${intlogoclearfrpng}</path>
 			<path region="eu">${intlogoclearfrpng}</path>
 			<path region="us">${intlogoclearuspng}</path>

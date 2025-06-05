@@ -104,7 +104,7 @@
 		<include name=" " displayName=" "/>
 	</subset>
 	<subset name="iconset" displayName="${iconset}">
-		<include name="Position seulement">${themePath}/_common/help/_iconsets/buttons.xml</include>
+		<include name="Position seulement" displayName="${iconsetposition}">${themePath}/_common/help/_iconsets/buttons.xml</include>
 		<include name="Standard">${themePath}/_common/help/_iconsets/default.xml</include>
 		<include name="ARCADE">${themePath}/_common/help/_iconsets/arcade.xml</include>
 		<include name="SNES">${themePath}/_common/help/_iconsets/snes.xml</include>
@@ -216,7 +216,16 @@
 	<!-- ################################################################################# -->
 	<!-- Affichage des animations d'aide -->
 	<subset name="sticksysteme" ifSubset="systemview:hyperspin" displayName="${sticksysteme}">
-		<include name="stickbleu" displayName="${stickbleu}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballblue" displayName="${systballblue}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballcyan" displayName="${systballcyan}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="balldarkviolet" displayName="${systballdarkviolet}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballviolet" displayName="${systballviolet}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballgreen" displayName="${systballgreen}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="balllitegreen" displayName="${systballlitegreen}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballpink" displayName="${systballpink}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballred" displayName="${systballred}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballyelgreen" displayName="${systballyelgreen}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballyellow" displayName="${systballyellow}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
 	</subset>
 	<!-- Choix d'affichage de la roue système -->

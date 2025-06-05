@@ -12,12 +12,20 @@
 			<color>ffff00</color>
 		</image>
 		<image name="staticBackground">
-			<!-- <pos>0.5 0.945</pos> -->
 			<pos>0.37 0.925</pos>
 			<origin>0.5 1</origin>
 			<size>0.03 0</size>
-			<!--	<path>./../../../../../MEDIAcommun/_Commun/Decohyperspin/cartoonish/ball-blue.png</path> -->
-			<path>${themePath}/_viewsystoption/art/hs_stick/ball-blue.png</path>
+			<path ifSubset="sticksysteme:ballblue">${themePath}/_viewgame/hyperbat/stickrvb/ball-blue.png</path>
+			<path ifSubset="sticksysteme:balldarkviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-darkviolet.png</path>
+			<path ifSubset="sticksysteme:ballviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-violet.png</path>
+			<path ifSubset="sticksysteme:ballgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-green.png</path>
+			<path ifSubset="sticksysteme:balllitegreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-litegreen.png</path>
+			<path ifSubset="sticksysteme:ballorange">${themePath}/_viewgame/hyperbat/stickrvb/ball-orange.png</path>
+			<path ifSubset="sticksysteme:ballpink">${themePath}/_viewgame/hyperbat/stickrvb/ball-pink.png</path>
+			<path ifSubset="sticksysteme:ballred">${themePath}/_viewgame/hyperbat/stickrvb/ball-red.png</path>
+			<path ifSubset="sticksysteme:ballyelgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-yelgreen.png</path>
+			<path ifSubset="sticksysteme:ballyellow">${themePath}/_viewgame/hyperbat/stickrvb/ball-yellow.png</path>
+			<path ifSubset="sticksysteme:ballcyan">${themePath}/_viewgame/hyperbat/stickrvb/ball-cyan.png</path>
 			<storyboard repeat="forever">
 				<animation property="offsetY" to="0.02" begin="200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
 				<animation property="scale" from="1" to="1.15" begin="200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
@@ -65,18 +73,6 @@
 				<animation property="offsetY" from="0.5" to="0" begin="20000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
 			</storyboard>
 		</control>
-		<text name="staticBackground25">
-			<text>Système Suivant</text>
-			<alignment>center</alignment>
-			<fontPath>./_inc/_hyperspin/HELVETICA.OTF</fontPath>
-			<pos>0.38 0.91</pos>
-			<fontSize>0.04</fontSize>
-			<color>ffff00</color>
-			<glowColor>0c002e</glowColor>
-			<glowSize>4</glowSize>
-			<glowOffset/>
-			<zIndex>8</zIndex>
-		</text>
 		<!-- ########### Stick vers l'arrière = OK ########## -->
 		<!-- ########### Stick vers l'avant ################################################################################################# -->
 		<image name="staticBackground22">
@@ -91,7 +87,17 @@
 			<pos>0.36 1.925</pos>
 			<origin>0.5 1</origin>
 			<size>0.03 0</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/ball-blue.png</path>
+			<path ifSubset="sticksysteme:ballblue">${themePath}/_viewgame/hyperbat/stickrvb/ball-blue.png</path>
+			<path ifSubset="sticksysteme:balldarkviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-darkviolet.png</path>
+			<path ifSubset="sticksysteme:ballviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-violet.png</path>
+			<path ifSubset="sticksysteme:ballgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-green.png</path>
+			<path ifSubset="sticksysteme:balllitegreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-litegreen.png</path>
+			<path ifSubset="sticksysteme:ballorange">${themePath}/_viewgame/hyperbat/stickrvb/ball-orange.png</path>
+			<path ifSubset="sticksysteme:ballpink">${themePath}/_viewgame/hyperbat/stickrvb/ball-pink.png</path>
+			<path ifSubset="sticksysteme:ballred">${themePath}/_viewgame/hyperbat/stickrvb/ball-red.png</path>
+			<path ifSubset="sticksysteme:ballyelgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-yelgreen.png</path>
+			<path ifSubset="sticksysteme:ballyellow">${themePath}/_viewgame/hyperbat/stickrvb/ball-yellow.png</path>
+			<path ifSubset="sticksysteme:ballcyan">${themePath}/_viewgame/hyperbat/stickrvb/ball-cyan.png</path>
 			<storyboard repeat="forever">
 				<animation property="offsetY" from="0" to="-1" begin="5000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
 				<animation property="offsetY" to="-1.01" begin="5700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
@@ -135,21 +141,6 @@
 				<animation property="offsetY" from="0" to="0" begin="11000" duration="9500" mode="easeIn" autoreverse="" repeat=""/>
 			</storyboard>
 		</image>
-		<!-- <image name="staticBackground8"> -->
-			<!-- <pos>0.36 1.989</pos> -->
-			<!-- <origin>0.5 0</origin> -->
-			<!-- <size>0.01 0.02</size> -->
-			<!-- <path>${themePath}/_viewsystoption/art/hs_stick/stickstatic.png</path> -->
-			<!-- <zIndex>998</zIndex> -->
-			<!-- <storyboard repeat="forever"> -->
-				<!-- <animation property="offsetY" from="0" to="-1" begin="5000" duration="500" mode="easeOut" autoreverse="" repeat=""/> -->
-				<!-- <animation property="scale" from="1" to="0.95" begin="5700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/> -->
-				<!-- <animation property="scale" from="1" to="0.95" begin="7500" duration="150" mode="easeIn" autoreverse="true" repeat="3"/> -->
-				<!-- <animation property="scale" from="1" to="0.95" begin="9300" duration="150" mode="easeIn" autoreverse="true" repeat="3"/> -->
-				<!-- <animation property="offsetY" from="-1" to="0" begin="10500" duration="500" mode="easeIn" autoreverse="" repeat=""/> -->
-				<!-- <animation property="offsetY" from="0" to="0" begin="11000" duration="9500" mode="easeIn" autoreverse="" repeat=""/> -->
-			<!-- </storyboard> -->
-		<!-- </image> -->
 		<control name="staticBackground9, staticBackground10, staticBackground22">
 			<storyboard repeat="forever">
 				<animation property="offsetY" from="0" to="-1" begin="5000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
@@ -171,18 +162,6 @@
 			<path>${themePath}/_viewsystoption/art/hs_stick/guard-mask.png</path>
 			<zIndex>999</zIndex>
 		</image>
-		<!--    	<text name="Titre2" extra="true">
- 		<text>Système Précédent</text>
-		<alignment>center</alignment>
-		<fontPath>./_inc/_hyperspin/HELVETICA.OTF</fontPath>
-		<pos>0.38 1.91</pos>
-		<fontSize>0.04</fontSize>
-		<color>ffff00</color>
-		<glowColor>0c002e</glowColor>
-		<glowSize>4</glowSize>
-		<glowOffset></glowOffset>
-		<zIndex>8</zIndex>
- 	</text> -->
 		<!-- ########### Stick vers l'avant ########## -->
 		<!-- ########### Début Stick vers la droite = OK #################################################################################### -->
 		<image name="staticBackground23">
@@ -197,7 +176,17 @@
 			<pos>0.36 1.925</pos>
 			<origin>0.5 1</origin>
 			<size>0.03 0</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/ball-blue.png</path>
+			<path ifSubset="sticksysteme:ballblue">${themePath}/_viewgame/hyperbat/stickrvb/ball-blue.png</path>
+			<path ifSubset="sticksysteme:balldarkviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-darkviolet.png</path>
+			<path ifSubset="sticksysteme:ballviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-violet.png</path>
+			<path ifSubset="sticksysteme:ballgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-green.png</path>
+			<path ifSubset="sticksysteme:balllitegreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-litegreen.png</path>
+			<path ifSubset="sticksysteme:ballorange">${themePath}/_viewgame/hyperbat/stickrvb/ball-orange.png</path>
+			<path ifSubset="sticksysteme:ballpink">${themePath}/_viewgame/hyperbat/stickrvb/ball-pink.png</path>
+			<path ifSubset="sticksysteme:ballred">${themePath}/_viewgame/hyperbat/stickrvb/ball-red.png</path>
+			<path ifSubset="sticksysteme:ballyelgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-yelgreen.png</path>
+			<path ifSubset="sticksysteme:ballyellow">${themePath}/_viewgame/hyperbat/stickrvb/ball-yellow.png</path>
+			<path ifSubset="sticksysteme:ballcyan">${themePath}/_viewgame/hyperbat/stickrvb/ball-cyan.png</path>
 			<storyboard repeat="forever">
 				<animation property="offsetY" from="0" to="-1" begin="10500" duration="500" mode="easeOut" autoreverse="" repeat=""/>
 				<animation property="offsetX" to="0.01" begin="10700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
@@ -248,18 +237,6 @@
 			<path>${themePath}/_viewsystoption/art/hs_stick/guard-mask.png</path>
 			<zIndex>999</zIndex>
 		</image>
-		<!-- <text name="Titre3" extra="true"> -->
- 		<!-- <text>Constructeur Précédent</text> -->
-		<!-- <alignment>center</alignment> -->
-		<!-- <fontPath>./_inc/_hyperspin/HELVETICA.OTF</fontPath> -->
-		<!-- <pos>0.38 1.91</pos> -->
-		<!-- <fontSize>0.04</fontSize> -->
-		<!-- <color>ffff00</color> -->
-		<!-- <glowColor>0c002e</glowColor> -->
-		<!-- <glowSize>4</glowSize> -->
-		<!-- <glowOffset></glowOffset> -->
-		<!-- <zIndex>8</zIndex> -->
- 	<!-- </text> -->
 		<!-- ########### Fin Stick vers la droite = OK ########## -->
 		<!-- ########### Début Stick vers la gauche = OK ########## -->
 		<image name="staticBackground24">
@@ -274,7 +251,17 @@
 			<pos>0.35 1.925</pos>
 			<origin>0.5 1</origin>
 			<size>0.03 0</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/ball-blue.png</path>
+			<path ifSubset="sticksysteme:ballblue">${themePath}/_viewgame/hyperbat/stickrvb/ball-blue.png</path>
+			<path ifSubset="sticksysteme:balldarkviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-darkviolet.png</path>
+			<path ifSubset="sticksysteme:ballviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-violet.png</path>
+			<path ifSubset="sticksysteme:ballgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-green.png</path>
+			<path ifSubset="sticksysteme:balllitegreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-litegreen.png</path>
+			<path ifSubset="sticksysteme:ballorange">${themePath}/_viewgame/hyperbat/stickrvb/ball-orange.png</path>
+			<path ifSubset="sticksysteme:ballpink">${themePath}/_viewgame/hyperbat/stickrvb/ball-pink.png</path>
+			<path ifSubset="sticksysteme:ballred">${themePath}/_viewgame/hyperbat/stickrvb/ball-red.png</path>
+			<path ifSubset="sticksysteme:ballyelgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-yelgreen.png</path>
+			<path ifSubset="sticksysteme:ballyellow">${themePath}/_viewgame/hyperbat/stickrvb/ball-yellow.png</path>
+			<path ifSubset="sticksysteme:ballcyan">${themePath}/_viewgame/hyperbat/stickrvb/ball-cyan.png</path>
 			<storyboard repeat="forever">
 				<animation property="offsetX" to="-0.01" begin="15200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
 				<animation property="offsetX" to="-0.01" begin="17000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
@@ -322,18 +309,6 @@
 				<animation property="offsetY" from="-1" to="0" begin="20000" duration="500" mode="easeIn" autoreverse="" repeat=""/>
 			</storyboard>
 		</control>
-		<!--    <text name="Titre" extra="true">
- 		<text>Constructeur Suivant</text>
-		<alignment>center</alignment>
-		<fontPath>./_inc/_hyperspin/HELVETICA.OTF</fontPath>
-		<pos>0.38 1.91</pos>
-		<fontSize>0.04</fontSize>
-		<color>ffff00</color>
-		<glowColor>0c002e</glowColor>
-		<glowSize>4</glowSize>
-		<glowOffset></glowOffset>
-		<zIndex>8</zIndex>
- 	</text> -->
 		<!-- ########### Fin Stick vers la gauche = OK ########## -->
 	</view>
 </theme>
