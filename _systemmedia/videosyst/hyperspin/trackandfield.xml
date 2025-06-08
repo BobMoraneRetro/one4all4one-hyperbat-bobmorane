@@ -8,8 +8,6 @@
 			<linearSmooth>true</linearSmooth>
 			<size>0 0.9</size>
 			<path>./rightart/${system.theme}.png</path>
-			<!-- <path>./rightart/${system.theme}_left.png</path> -->
-			<!-- <path>./rightart/${system.theme}_right.png</path> -->
 			<scaleOrigin>0 -0.3</scaleOrigin>
 			<pos>0.85 0.515</pos>
 			<pos ifHelpPrompts="false">0.85 0.55</pos>
@@ -51,7 +49,7 @@
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
 			<origin>0.5 0.5</origin>
 			<path>${intbezelsyst}</path>
-			<maxSize>0.52 0.52</maxSize>
+			<maxSize>0.6 0.52</maxSize>
 			<pos>0.5 0.55</pos>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>2</zIndex>
@@ -63,7 +61,8 @@
 		<!-- ################ Logo Système ##################### -->
 		<image name="logocustunified" extra="true">
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
-			<path>${intlogoclearpng}</path>
+			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.svg</path>
+			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</path>
 			<path region="fr">${intlogoclearfrpng}</path>
 			<path region="eu">${intlogoclearfrpng}</path>
 			<path region="us">${intlogoclearuspng}</path>
@@ -84,8 +83,6 @@
 			<linearSmooth>true</linearSmooth>
 			<size>0 0.9</size>
 			<path>./leftart/${system.theme}.png</path>
-			<!-- <path>./leftart/${system.theme}_right.png</path> -->
-			<!-- <path>./leftart/${system.theme}_left.png</path> -->
 			<scaleOrigin>0 -0.3</scaleOrigin>
 			<pos>0.15 0.515</pos>
 			<pos ifHelpPrompts="false">0.15 0.55</pos>
