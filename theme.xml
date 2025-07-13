@@ -7,7 +7,7 @@
 		<!-- Editer ce chemin pour déplacer les thème système et de jeux à un autre emplacement -->
 		<!-- <bobmediapath>${themePath}/../_bobmedia</bobmediapath> --> <!-- choisir ce chemin pour mettre les gametheme et systheme dans le dossier _bobmedia (par défaut) idéal pour ne rien perdre lors des maj du theme-->
 		<!-- <bobmediapath>${themePath}</bobmediapath> --> <!-- choisir ce chemin pour mettre les gametheme et systheme directement dans le dossier theme hyperbat : atention les mise à jour du thème écraseront vos gametheme et systheme -->
-		<bobmediapath>${themePath}</bobmediapath>
+		<bobmediapath>${themePath}/../_bobmedia</bobmediapath>
 		<!-- Utilisé par Hyperbat : nouveau dans standalone -->
 		<firstbackgrsyst>firstfile(
 			"${bobmediapath}/_gametheme/" + stem({game:system:theme}) + "/hyperbat/_default/" + {game:system:theme} + "-" + {game:region} + ".png",
@@ -176,7 +176,7 @@
 	<!-- Affichage du nombre de jeux -->
 	<subset name="nbrjeuxcops1" ifSubset="systemview:coinopsnext1|coinopsnext2|copscurve|hyperspin|zspin|nesicaxlive" displayName="${systviewtotal}">
 		<include name="nbrjeux" displayName="${nbrjeux}">${themePath}/_viewsystoption/sl-commun/nbrejeux.xml</include>
-		<!-- <include name="nbrjeux2" displayName="${nbrjeux2}">${themePath}/_viewsystoption/sl-commun/nbrejeux2.xml</include> -->
+		<include name="nbrjeux2" displayName="${nbrjeux2}">${themePath}/_viewsystoption/sl-commun/nbrejeux2.xml</include>
 		<include name="desactive" displayName="${no}">${themePath}/_viewsystoption/sl-commun/nbrejeux.xml</include>
 	</subset>
 	<!-- Quand MAJ remplacera le bloc en dessous  -->
