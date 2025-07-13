@@ -10,6 +10,7 @@
 		<include name="ovalcarbon" displayName="${ovalcarbon}">${themePath}/_viewgameoption/gl-common/autoovalcarbon.xml</include>
 		<include name="ovalsilver" displayName="${ovalsilver}">${themePath}/_viewgameoption/gl-common/autoovalsilver.xml</include>
 		<include name="rectcarbon" displayName="${rectcarbon}">${themePath}/_viewgameoption/gl-common/autorectcabon.xml</include>
+		<include name="rectcompose" displayName="${rectcompose}">${themePath}/_viewgameoption/gl-common/autocomposesyst.xml</include>
 		<!-- <include name="hfsround" displayName="${hfsround}">${themePath}/_viewgameoption/gl-common/autoHFSround.xml</include> -->
 		<!-- <include name="logounified" displayName="${logounified}">${themePath}/_viewgameoption/gl-common/autounified.xml</include> -->
 	</subset>
@@ -36,6 +37,11 @@
 	<subset name="spacermediahs" displayName="${mediahyper}" appliesTo="${vide}">
 		<include name="desactive" displayName=" "/>
 	</subset>
+	<subset name="gamewheelfade" displayName="${gamewheelfade}" appliesTo="hyperbat">
+		<include name="activate" displayName="${activate}"/>
+		<include name="amoitie" displayName="${amoitie}"/>
+		<include name="deactivate" displayName="${desactive}"/>
+	</subset>
 	<subset name="syststickon" displayName="${syststickon}" appliesTo="hyperbat">
 		<include name="stickon" displayName="${stickon}">${themePath}/_viewgameoption/gl-hyperbat/stickon.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
@@ -55,6 +61,11 @@
 	<subset name="pressstart" displayName="${pressstart}" appliesTo="hyperbat">
 		<include name="doigts" displayName="${doigts}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<subset name="hsmetadata" displayName="${hsmetadata}" appliesTo="hyperbat">
+		<include name="full" displayName="${full}"/>
+		<include name="lower" displayName="${lower}"/>
+		<include name="deactivate" displayName="${desactive}"/>
 	</subset>
 	<subset name="hsperview" displayName="${hyperbatperview}" appliesTo="hyperbat">
 		<include name="themejeux" displayName="${themejeux}"/>

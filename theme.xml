@@ -6,7 +6,8 @@
 		<!-- #### System ################################################################################################################################################################# -->
 		<!-- Editer ce chemin pour déplacer les thème système et de jeux à un autre emplacement -->
 		<!-- <bobmediapath>${themePath}/../_bobmedia</bobmediapath> --> <!-- choisir ce chemin pour mettre les gametheme et systheme dans le dossier _bobmedia (par défaut) idéal pour ne rien perdre lors des maj du theme-->
-		<bobmediapath>${themePath}</bobmediapath> <!-- choisir ce chemin pour mettre les gametheme et systheme directement dans le dossier theme hyperbat : atention les mise à jour du thème écraseront vos gametheme et systheme -->
+		<!-- <bobmediapath>${themePath}</bobmediapath> --> <!-- choisir ce chemin pour mettre les gametheme et systheme directement dans le dossier theme hyperbat : atention les mise à jour du thème écraseront vos gametheme et systheme -->
+		<bobmediapath>${themePath}</bobmediapath>
 		<!-- Utilisé par Hyperbat : nouveau dans standalone -->
 		<firstbackgrsyst>firstfile(
 			"${bobmediapath}/_gametheme/" + stem({game:system:theme}) + "/hyperbat/_default/" + {game:system:theme} + "-" + {game:region} + ".png",
@@ -15,20 +16,20 @@
 		<!-- Condition si aucun thème pour ce jeu n'existe -->
 		<IfnoextGamethemeexist>!exists("${bobmediapath}/_gametheme/${system.theme}/hyperbat/" + stem({game:rom}) + "/theme.xml")</IfnoextGamethemeexist>
 		<!-- System Chemin pour les logo système clear de base -->
-		<intlogoclearpng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</intlogoclearpng>
-		<intlogoclearfrpng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-fr.png</intlogoclearfrpng>
-		<intlogoclearuspng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-us.png</intlogoclearuspng>
-		<intlogoclearjppng>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}-jp.png</intlogoclearjppng>
+		<intlogoclearpng>${bobmediapath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</intlogoclearpng>
+		<intlogoclearfrpng>${bobmediapath}/_systemmedia/_logosyst/clearlogos/${system.theme}-fr.png</intlogoclearfrpng>
+		<intlogoclearuspng>${bobmediapath}/_systemmedia/_logosyst/clearlogos/${system.theme}-us.png</intlogoclearuspng>
+		<intlogoclearjppng>${bobmediapath}/_systemmedia/_logosyst/clearlogos/${system.theme}-jp.png</intlogoclearjppng>
 		<!-- System Chemin pour les logos systèmes supplémentaires -->
-		<extlogobd>${themePath}/_systemmedia/_logosyst/comic/${system.theme}.png</extlogobd>
-		<extlogohcarbon>${themePath}/_systemmedia/_logosyst/hmaxcarbon/${system.theme}.png</extlogohcarbon>
-		<exthmaxovalsilver>${themePath}/_systemmedia/_logosyst/hmaxovalsilver/${system.theme}.png</exthmaxovalsilver>
-		<extlogohrect>${themePath}/_systemmedia/_logosyst/hmaxrect/${system.theme}.png</extlogohrect>
+		<extlogobd>${bobmediapath}/_systemmedia/_logosyst/comic/${system.theme}.png</extlogobd>
+		<extlogohcarbon>${bobmediapath}/_systemmedia/_logosyst/hmaxcarbon/${system.theme}.png</extlogohcarbon>
+		<exthmaxovalsilver>${bobmediapath}/_systemmedia/_logosyst/hmaxovalsilver/${system.theme}.png</exthmaxovalsilver>
+		<extlogohrect>${bobmediapath}/_systemmedia/_logosyst/hmaxrect/${system.theme}.png</extlogohrect>
 		<!-- System Chemin pour les logos systèmes de la team Fresh -->
-		<extlogohrectfresh>${themePath}/_systemmedia/_logosyst/hmaxrectfresh/${system.theme}.png</extlogohrectfresh>
-		<exthmaxrectrefl>${themePath}/_systemmedia/_logosyst/hmaxrectrefl/${system.theme}.png</exthmaxrectrefl>
-		<extlogohcarbonfresh>${themePath}/_systemmedia/_logosyst/hmaxcarbonfresh/${system.theme}.png</extlogohcarbonfresh>
-		<extglassnekhros>${themePath}/_systemmedia/_logosyst/nekhglass/${system.theme}.png</extglassnekhros>
+		<extlogohrectfresh>${bobmediapath}/_systemmedia/_logosyst/hmaxrectfresh/${system.theme}.png</extlogohrectfresh>
+		<exthmaxrectrefl>${bobmediapath}/_systemmedia/_logosyst/hmaxrectrefl/${system.theme}.png</exthmaxrectrefl>
+		<extlogohcarbonfresh>${bobmediapath}/_systemmedia/_logosyst/hmaxcarbonfresh/${system.theme}.png</extlogohcarbonfresh>
+		<extglassnekhros>${bobmediapath}/_systemmedia/_logosyst/nekhglass/${system.theme}.png</extglassnekhros>
 		<!-- System Gestion des bezels système : videosyst.xml -->
 		<intbezelsyst>("${themePath}/_systemmedia/bezelsyst/" + ({system:theme}) + ".png")</intbezelsyst>
 		<!-- System : Vidéos de présentation système : videosyst.xml -->
@@ -39,10 +40,11 @@
 		<!-- System : Vidéos de présentation système : videosyst.xml -->
 		<extspinxml>${bobmediapath}/_systemmedia/videosyst/hyperspin/${system.theme}.xml</extspinxml>
 		<extspinxpxml>${bobmediapath}/_systemmedia/videosyst/hyperspinxp/${system.theme}/systheme.xml</extspinxpxml>
+		
 		<!-- System : Affichage des fanart système : fanartsyst.xml -->
-		<intfanartfresh>${themePath}/_systemmedia/_fanartsysteme/fresh/${system.theme}.jpg</intfanartfresh>
-		<intfanartfresh2>("${themePath}/_systemmedia/_fanartsysteme/fresh/" + {system:theme} + ".jpg")</intfanartfresh2>
-		<intfanartcustom>${themePath}/_systemmedia/_fanartsysteme/custom/${system.theme}.jpg</intfanartcustom>
+		<intfanartfresh>${bobmediapath}/_systemmedia/_fanartsysteme/fresh/${system.theme}.jpg</intfanartfresh>
+		<intfanartfresh2>("${bobmediapath}/_systemmedia/_fanartsysteme/fresh/" + {system:theme} + ".jpg")</intfanartfresh2>
+		<intfanartcustom>${bobmediapath}/_systemmedia/_fanartsysteme/custom/${system.theme}.jpg</intfanartcustom>
 		<intspinback>${themePath}/_viewgame/hyperbat/fondsysteme/${system.theme}.png</intspinback>
 		<!-- System : Actif si absence de systheme.xml dans le thème hyperbat : videosyst.xml, fanartsyst.xml -->
 		<ifnoextsysthemeexist>!exists("${bobmediapath}/_systemmedia/videosyst/hyperspinxp/" + stem({system:theme}) + "/systheme.xml")</ifnoextsysthemeexist>		
@@ -52,7 +54,7 @@
 		<pointers4syst>${themePath}/_systemmedia/pointers-r/${system.theme}.png</pointers4syst>
 		<pointers4games>"${themePath}/_systemmedia/pointers-r/" + {game:system:theme} + ".png"</pointers4games>
 		<!-- Syste & Jeux Logo Système en fonction du jeu -->
-		<extgamesyst>${themePath}/_systemmedia/_Logosyst/Clearlogos/{game:system}.png</extgamesyst>
+		<extgamesyst>${themePath}/_systemmedia/_logosyst/clearlogos/{game:system}.png</extgamesyst>
 		<!-- Jeux : gamethème Hyperbat -->
 		<extgametheme>${bobmediapath}/_gametheme/${system.theme}/hyperbat</extgametheme>
 		<extGametheme.defaut>${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/theme.xml</extGametheme.defaut>
@@ -65,7 +67,7 @@
 		<freshbuildfanarttestyes>exists({game:image})</freshbuildfanarttestyes>
 		<freshbuildfanarttest>!exists({game:image})</freshbuildfanarttest>
 		<!-- Jeux média spécifique -->
-		<extgameartpng>("${themePath}/../../../../roms/${system.theme}/@Media/wheel - Art/" + stem({game:rom}) + "-wheel.png")</extgameartpng>
+		<extgameartpng>("${themePath}/../../../../roms/${system.theme}/@media/wheel - Art/" + stem({game:rom}) + "-wheel.png")</extgameartpng>
 		<!-- Couleur de selection du menu système -->
 		<colordea>999999</colordea>
 		<coloract>ffffff</coloract>
@@ -155,12 +157,7 @@
 		<include name="fanartcustom" displayName="${fanartsystcustom}">${themePath}/_viewsystoption/sl-commun/fanartsyst.xml</include>
 	</subset>
 	<!-- Choix des types de présentation des systèmes -->
-	<include>${themePath}/_systemmedia/videosyst/hyperspinxporunified/_hyperspinorunified.xml</include>
-	<include>${themePath}/_systemmedia/videosyst/hyperpie/_hyperpie.xml</include>
-	<include>${themePath}/_systemmedia/videosyst/unified/_unified.xml</include>
-	<include>${themePath}/_systemmedia/videosyst/hyperspin/_hyperspin.xml</include>
-	<include>${themePath}/_systemmedia/videosyst/hyperspinxp/_hyperspinxp.xml</include>
-	<include>${themePath}/_systemmedia/videosyst/hyperspinxpcinematic/_hyperspinorder.xml</include>
+	<include>${bobmediapath}/_systemmedia/videosyst/hyperspinxporunified/_hyperspinorunified.xml</include>
 	<subset name="videofondcops1" ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|hyperspin|tetanos" displayName="${systviewvideo}">
 		<include name="gameplayp1" displayName="${gameplayp1}">${themePath}/_viewsystoption/sl-commun/videosyst.xml</include>
 		<include name="gameplay1" displayName="${gameplay1}">${themePath}/_viewsystoption/sl-commun/videosyst.xml</include>
@@ -169,11 +166,17 @@
 		<include name="custom" displayName="${custom}">${themePath}/_viewsystoption/sl-commun/videosyst.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
 	</subset>
+	<include>${bobmediapath}/_systemmedia/videosyst/hyperspinxpcinematic/_hyperspinorder.xml</include>
+	<include>${bobmediapath}/_systemmedia/videosyst/hyperspinxp/_hyperspinxp.xml</include>
+	<include>${bobmediapath}/_systemmedia/videosyst/unified/_unified.xml</include>
+	<include>${bobmediapath}/_systemmedia/videosyst/hyperspin/_hyperspin.xml</include>
+	<include>${bobmediapath}/_systemmedia/videosyst/hyperpie/_hyperpie.xml</include>
 	<include>${themePath}/../../videothemes/_videothemes.xml</include>
-	<include>${themePath}/../../videothemes/_Gameplayonly.xml</include>
+	<include>${themePath}/../../videothemes/_gameplayonly.xml</include>
 	<!-- Affichage du nombre de jeux -->
 	<subset name="nbrjeuxcops1" ifSubset="systemview:coinopsnext1|coinopsnext2|copscurve|hyperspin|zspin|nesicaxlive" displayName="${systviewtotal}">
-		<include name="nbrjeux" displayName="${yes}">${themePath}/_viewsystoption/sl-commun/nbrejeux.xml</include>
+		<include name="nbrjeux" displayName="${nbrjeux}">${themePath}/_viewsystoption/sl-commun/nbrejeux.xml</include>
+		<!-- <include name="nbrjeux2" displayName="${nbrjeux2}">${themePath}/_viewsystoption/sl-commun/nbrejeux2.xml</include> -->
 		<include name="desactive" displayName="${no}">${themePath}/_viewsystoption/sl-commun/nbrejeux.xml</include>
 	</subset>
 	<!-- Quand MAJ remplacera le bloc en dessous  -->

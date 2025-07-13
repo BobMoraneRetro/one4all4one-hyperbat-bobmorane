@@ -12,15 +12,27 @@
 						<path>${themePath}/_viewgameoption/gl-common/logojeux/rectfond.png</path>
 						<zIndex>98</zIndex>
 						<opacity>1</opacity>
-						<storyboard event="activate">
+						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
-						<storyboard event="scroll">
+						<storyboard event="scroll" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
-						<storyboard event="deactivate">
+						<storyboard event="deactivate" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
@@ -32,15 +44,27 @@
 						<path>{game:marquee}</path>
 						<zIndex>99</zIndex>
 						<linearSmooth>true</linearSmooth>
-						<storyboard event="activate">
+						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
-						<storyboard event="scroll">
+						<storyboard event="scroll" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
-						<storyboard event="deactivate">
+						<storyboard event="deactivate" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
@@ -52,15 +76,27 @@
 						<path>${themePath}/_viewgameoption/gl-common/logojeux/rectrefl.png</path>
 						<zIndex>100</zIndex>
 						<opacity>1</opacity>
-						<storyboard event="activate">
+						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
-						<storyboard event="scroll">
+						<storyboard event="scroll" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
-						<storyboard event="deactivate">
+						<storyboard event="deactivate" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
@@ -71,15 +107,27 @@
 						<pos>0.78 0.25</pos>
 						<zIndex>98</zIndex>
 						<maxSize>0.35 0.35</maxSize>
-						<storyboard event="activate">
+						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
-						<storyboard event="scroll">
+						<storyboard event="scroll" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
-						<storyboard event="deactivate">
+						<storyboard event="deactivate" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
@@ -98,15 +146,27 @@
 						<glowSize>2</glowSize>
 						<zIndex>400</zIndex>
 						<multiLine>true</multiLine>
-						<storyboard event="activate">
+						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
-						<storyboard event="scroll">
+						<storyboard event="scroll" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
-						<storyboard event="deactivate">
+						<storyboard event="deactivate" ifSubset="gamewheelfade:activate">
 							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
