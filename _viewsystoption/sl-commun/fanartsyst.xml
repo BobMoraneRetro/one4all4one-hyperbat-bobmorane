@@ -3,6 +3,7 @@
 	<formatVersion>7</formatVersion>
 	<view name="system">
 		<image name="fanartflix" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinorunified,systemview:hyperspin">${ifnoextsysthemeexist}</visible>
 			<autoFade>false</autoFade>
 			<path ifSubset="imagefondcops1:fanartfreshone">${intfanartfresh}</path>
 			<path ifSubset="imagefondcops1:fanartcustom">${intfanartfresh}</path>
