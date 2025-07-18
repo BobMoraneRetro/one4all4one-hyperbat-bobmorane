@@ -11,19 +11,60 @@
 			<visible>false</visible>
 		</image>
 		<!--Désactivation du texte par defaut du gamesplash-->
-		<!-- <text name="label"> -->
-			<!-- <visible>false</visible> -->
-		<!-- </text> -->
+		<text name="label">
+			<visible>false</visible>
+		</text>
 		<!--Définition de l'image "fanart" du gamelist de jeu avec un contour blanc en shader-->
 		<image name="background_fanart" extra="true">
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
 			<size>0 1</size>
-			<path>{game:fanart}</path>
+			<!-- <path>{game:fanart}</path> -->
+			<path>firstfile(
+			{game:fanart},
+			"${themePath}/_systemmedia/systgamesplash/nofanart/" + {game:system:theme} + ".png")</path>
 			<roundCorners>0</roundCorners>
 			<linearSmooth>true</linearSmooth>
 			<color>FFFFFFFF</color>
 			<zIndex>1</zIndex>
+		</image>
+		<image name="fondsplash" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<path>firstfile(
+			"${themePath}/_systemmedia/systgamesplash/fond/" + {game:system:theme} + ".png",
+			"${themePath}/_systemmedia/systgamesplash/backcommon.png")</path>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<size>0 1</size>
+			<zIndex>2</zIndex>
+		</image>
+		<image name="nowloading" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<path>firstfile(
+			"${themePath}/_systemmedia/systgamesplash/nowloading/" + {game:system:theme} + ".png",
+			"${themePath}/_systemmedia/systgamesplash/nowloading/default.png")</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500260416667 0.498611111111</pos>
+			<size>0.619270833333 0.130555555556</size>
+			<zIndex>3</zIndex>
+		</image>
+		<image name="metadata" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<path>${themePath}/_systemmedia/systgamesplash/metadata.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.897222222222</pos>
+			<size>1.000000000000 0.157407407407</size>
+			<zIndex>3</zIndex>
+		</image>
+		<image name="littleartwork" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<path>firstfile(
+			"${themePath}/_systemmedia/systgamesplash/artwork/" + {game:system:theme} + ".png",
+			"${themePath}/_systemmedia/systgamesplash/artwork/default.png")</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.942708333333 0.898611111111</pos>
+			<size>0.064583333333 0.128703703704</size>
+			<zIndex>3</zIndex>
 		</image>
 		<!--Définition de l'image "image" du gamelist de jeu avec un contour blanc en shader si le fanart n'existe pas-->
 		<!--image name="background_image" extra="true">
@@ -43,51 +84,39 @@
  </shader>
  </image-->
 		<!--Option pour activer le texte par defaut du gamesplash avec la police "fresh.ttf"-->
-		<text name="label">
-			<visible>true</visible>
-			<pos>0.5 0.9</pos>
-			<origin>0.5 0.5</origin>
-			<fontPath>${themePath}/art/fonts/votre_police.ttf</fontPath>
-			<color>FFFFFF</color>
-			<fontSize>0.035</fontSize>
-			<glowColor>000000</glowColor>
-			<glowSize>3</glowSize>
-			<zIndex>10</zIndex>
-		</text>
+		<!-- <text name="label"> -->
+		<!-- <visible>true</visible> -->
+		<!-- <pos>0.5 0.9</pos> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <fontPath>${themePath}/art/fonts/votre_police.ttf</fontPath> -->
+		<!-- <color>FFFFFF</color> -->
+		<!-- <fontSize>0.035</fontSize> -->
+		<!-- <glowColor>000000</glowColor> -->
+		<!-- <glowSize>3</glowSize> -->
+		<!-- <zIndex>10</zIndex> -->
+		<!-- </text> -->
 		<!--Option pour activer la "wheel" du gamelist de jeu-->
-		<image name="splash_wheel" extra="true">
-		<path>exists({game:wheel}) ? {game:wheel} : {game:marquee}</path>
-			<tile>false</tile>
-			<linearSmooth>true</linearSmooth>
-			<!-- <path>{game:wheel}</path> -->
-			<color>FFFFFFFF</color>
-			<pos>0.025 0.025</pos>
-			<origin>0 0</origin>
-			<maxSize>0.175 0.175</maxSize>
-			<zIndex>10</zIndex>
-		</image>
+		<!-- <image name="splash_wheel" extra="true"> -->
+		<!-- <path>exists({game:wheel}) ? {game:wheel} : {game:marquee}</path> -->
+		<!-- <tile>false</tile> -->
+		<!-- <linearSmooth>true</linearSmooth> -->
+		<!-- <color>FFFFFFFF</color> -->
+		<!-- <pos>0.025 0.025</pos> -->
+		<!-- <origin>0 0</origin> -->
+		<!-- <maxSize>0.175 0.175</maxSize> -->
+		<!-- <zIndex>10</zIndex> -->
+		<!-- </image> -->
 		<!--Option pour activer le "marquee" du gamelist de jeu-->
 		<!-- <image name="splash_marquee" extra="true"> -->
-			<!-- <visible>!exists({game:wheel})</visible> -->
-			<!-- <tile>false</tile> -->
-			<!-- <linearSmooth>true</linearSmooth> -->
-			<!-- <path>{game:marquee}</path> -->
-			<!-- <color>FFFFFFFF</color> -->
-			<!-- <pos>0.025 0.025</pos> -->
-			<!-- <origin>0 0</origin> -->
-			<!-- <maxSize>0.175 0.175</maxSize> -->
-			<!-- <zIndex>510</zIndex> -->
+		<!-- <visible>!exists({game:wheel})</visible> -->
+		<!-- <tile>false</tile> -->
+		<!-- <linearSmooth>true</linearSmooth> -->
+		<!-- <path>{game:marquee}</path> -->
+		<!-- <color>FFFFFFFF</color> -->
+		<!-- <pos>0.025 0.025</pos> -->
+		<!-- <origin>0 0</origin> -->
+		<!-- <maxSize>0.175 0.175</maxSize> -->
+		<!-- <zIndex>510</zIndex> -->
 		<!-- </image> -->
-		<!--Définition de l'image "backgroundFade" qui donne un effet noirci sur les quatres coins-->
-		<image name="backgroundFade" extra="true">
-			<tile>false</tile>
-			<linearSmooth>true</linearSmooth>
-			<path>./art/backfade.png</path>
-			<color>FFFFFFFF</color>
-			<pos>0.5 0.5</pos>
-			<origin>0.5 0.5</origin>
-			<minSize>1 1</minSize>
-			<zIndex>5</zIndex>
-		</image>
 	</view>
 </theme>

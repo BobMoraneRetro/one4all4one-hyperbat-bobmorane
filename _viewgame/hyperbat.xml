@@ -181,7 +181,7 @@
 			<zIndex>499</zIndex>
 			<opacity>1</opacity>
 		</image>
-		<text name="gamethemelabel" extra="true">
+		<text name="gamethemelabel" ifSubset="authordisplayed:activate" extra="true">
 			<text>Theme by :</text>
 			<alignment>left</alignment>
 			<fontPath>${themePath}/_viewsyst/hyperbat/teko-bold.ttf</fontPath>
@@ -193,23 +193,22 @@
 			<!-- <glowOffset>0</glowOffset> -->
 			<zIndex>999</zIndex>
 			<fontSize>0.03</fontSize>
-			<opacity>0.2</opacity>
+			<opacity>0.3</opacity>
 		</text>
-		<text name="gamethemeauthor" extra="true">
+		<text name="gamethemeauthor" ifSubset="authordisplayed:activate" extra="true">
 			<alignment>left</alignment>
 			<fontPath>${themePath}/_viewsyst/hyperbat/teko-bold.ttf</fontPath>
 			<size>0.2 0</size>
-			<pos>0.05 0.02</pos>
+			<pos>0.01 0.025</pos>
+			<size>0.2 0</size>
 			<color>ffff00</color>
-			<glowColor>0c002e</glowColor>
-			<glowSize>1.5</glowSize>
-			<glowOffset>2</glowOffset>
 			<color>f0f000</color>
-			<glowColor>3432a8</glowColor>
-			<glowSize>2</glowSize>
-			<glowOffset>0</glowOffset>
+			<!-- <glowColor>3432a8</glowColor> -->
+			<!-- <glowSize>2</glowSize> -->
+			<!-- <glowOffset>0</glowOffset> -->
 			<zIndex>999</zIndex>
-			<fontSize>0.04</fontSize>
+			<fontSize>0.03</fontSize>
+			<opacity>0.3</opacity>
 		</text>
 		<image name="Background" extra="true">
 			<storyboard ifSubset="smoothgametheme:activesmooth" event="deactivateNext">

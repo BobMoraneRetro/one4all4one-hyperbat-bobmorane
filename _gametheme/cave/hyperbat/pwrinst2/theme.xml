@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
@@ -54,7 +54,7 @@
 			<pos>0.500260416666667 0.143055555555556</pos>
 			<size>0.8015625 0.262037037037037</size>
 			<linearSmooth>true</linearSmooth>
-			<!-- # Arrivée en Dezoom # -->
+			<!-- # ArrivÃ©e en Dezoom # -->
 			<storyboard event="open">
 				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
 				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
@@ -197,5 +197,8 @@
 		<image name="md_boxart">
 			<visible>false</visible>
 		</image>
-	</customView>
+	        <text name="gamethemeauthor" extra="true">
+            <text>Dav</text>
+        </text>
+</customView>
 </theme>
