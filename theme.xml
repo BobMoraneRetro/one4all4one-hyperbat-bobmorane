@@ -7,7 +7,7 @@
 		<!-- Editer ce chemin pour déplacer les thème système et de jeux à un autre emplacement -->
 		<!-- <bobmediapath>${themePath}/../_bobmedia</bobmediapath> --> <!-- choisir ce chemin pour mettre les gametheme et systheme dans le dossier _bobmedia (par défaut) idéal pour ne rien perdre lors des maj du theme-->
 		<!-- <bobmediapath>${themePath}</bobmediapath> --> <!-- choisir ce chemin pour mettre les gametheme et systheme directement dans le dossier theme hyperbat : atention les mise à jour du thème écraseront vos gametheme et systheme -->
-		<bobmediapath>${themePath}/../_bobmedia</bobmediapath>
+		<bobmediapath>${themePath}</bobmediapath>
 		<!-- Utilisé par Hyperbat : nouveau dans standalone -->
 		<firstbackgrsyst>firstfile(
 			"${bobmediapath}/_gametheme/" + stem({game:system:theme}) + "/hyperbat/_default/" + {game:system:theme} + "-" + {game:region} + ".png",
