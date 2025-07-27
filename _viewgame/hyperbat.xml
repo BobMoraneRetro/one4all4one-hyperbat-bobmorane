@@ -249,7 +249,7 @@
 			<!-- <fontSize>0.03</fontSize> -->
 			<!-- <opacity>0.3</opacity> -->
 		<!-- </text> -->
-		<text name="gamethemeauthor" ifSubset="authordisplayed:activate" extra="true">
+		<text name="gamethemeauthor" ifSubset="authordisplayed:activate|showoff|showoffblackwhite|deactivate" extra="true">
 			<alignment>left</alignment>
 			<fontPath>${themePath}/_viewsyst/hyperbat/teko-bold.ttf</fontPath>
 			<size>0.2 0</size>
@@ -259,7 +259,18 @@
 			<!-- <color>f0f000</color> -->
 			<zIndex>999</zIndex>
 			<fontSize>0.03</fontSize>
-			<opacity>0.3</opacity>
+			<opacity ifSubset="authordisplayed:deactivate">0</opacity>
+			<opacity ifSubset="authordisplayed:showoff">1</opacity>
+			<opacity ifSubset="authordisplayed:showoffblackwhite">1</opacity>
+			<opacity ifSubset="authordisplayed:activate">0.3</opacity>
+			<color ifSubset="authordisplayed:showoffblackwhite">000000</color>
+			<glowColor ifSubset="authordisplayed:showoffblackwhite">ffffff</glowColor>
+			<glowSize ifSubset="authordisplayed:showoffblackwhite">3</glowSize>
+			<glowOffset ifSubset="authordisplayed:showoffblackwhite">0</glowOffset>
+			<color ifSubset="authordisplayed:activate">ffffff</color>
+			<glowColor ifSubset="authordisplayed:activate">ffffff</glowColor>
+			<glowSize ifSubset="authordisplayed:activate">0</glowSize>
+			<glowOffset ifSubset="authordisplayed:activate">0</glowOffset>
 		</text>
 		<image name="Background" extra="true">
 			<storyboard ifSubset="smoothgametheme:activesmooth" event="deactivateNext">
