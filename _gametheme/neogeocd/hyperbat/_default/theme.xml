@@ -20,39 +20,56 @@
 			<size>1 1</size>
 			<zIndex>1</zIndex>
 			<linearSmooth>true</linearSmooth>
-			<!-- <saturation>0</saturation> -->
-			<!-- <opacity>0.4</opacity> -->
 		</image>
-		<screenshader name="blur" extra="true">
-			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
-			<visible>!exists("${themePath}/_viewgame/hyperbat/fondsysteme/" + stem({system:theme}) + ".png")</visible>
-			<path>:/shaders/blur.glsl</path>
-			<size>1 1</size>
-			<pos>0 0</pos>
-			<blur>15</blur>
-			<zIndex>99</zIndex>
-			<blurColor>000000</blurColor>
-		</screenshader>
-		<screenshader name="blur1" extra="true">
-			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
-			<visible>!exists("${themePath}/_viewgame/hyperbat/fondsysteme/" + stem({system:theme}) + ".png")</visible>
-			<path>:/shaders/blur.glsl</path>
-			<size>1 1</size>
-			<pos>0 0</pos>
-			<blur>8</blur>
-			<zIndex>99</zIndex>
-			<blurColor>000000</blurColor>
-		</screenshader>
-		<screenshader name="blur2" extra="true">
-			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
-			<visible>!exists("${themePath}/_viewgame/hyperbat/fondsysteme/" + stem({system:theme}) + ".png")</visible>
-			<path>:/shaders/blur.glsl</path>
-			<size>1 1</size>
-			<pos>0 0</pos>
-			<blur>6</blur>
-			<zIndex>99</zIndex>
-			<blurColor>000000</blurColor>
-		</screenshader>
+		<!-- <screenshader name="blur" extra="true"> -->
+		<!-- <visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible> -->
+		<!-- <visible>!exists("${themePath}/_viewgame/hyperbat/fondsysteme/" + stem({system:theme}) + ".png")</visible> -->
+		<!-- <path>:/shaders/blur.glsl</path> -->
+		<!-- <size>1 1</size> -->
+		<!-- <pos>0 0</pos> -->
+		<!-- <blur>15</blur> -->
+		<!-- <zIndex>99</zIndex> -->
+		<!-- <blurColor>000000</blurColor> -->
+		<!-- </screenshader> -->
+		<!-- <screenshader name="blur1" extra="true"> -->
+		<!-- <visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible> -->
+		<!-- <visible>!exists("${themePath}/_viewgame/hyperbat/fondsysteme/" + stem({system:theme}) + ".png")</visible> -->
+		<!-- <path>:/shaders/blur.glsl</path> -->
+		<!-- <size>1 1</size> -->
+		<!-- <pos>0 0</pos> -->
+		<!-- <blur>8</blur> -->
+		<!-- <zIndex>99</zIndex> -->
+		<!-- <blurColor>000000</blurColor> -->
+		<!-- </screenshader> -->
+		<!-- <screenshader name="blur2" extra="true"> -->
+		<!-- <visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible> -->
+		<!-- <visible>!exists("${themePath}/_viewgame/hyperbat/fondsysteme/" + stem({system:theme}) + ".png")</visible> -->
+		<!-- <path>:/shaders/blur.glsl</path> -->
+		<!-- <size>1 1</size> -->
+		<!-- <pos>0 0</pos> -->
+		<!-- <blur>6</blur> -->
+		<!-- <zIndex>99</zIndex> -->
+		<!-- <blurColor>000000</blurColor> -->
+		<!-- </screenshader> -->
+		<image name="TVNoise" extra="true">
+			<path>./tvnoise.png</path>
+			<pos>0.2 0.2</pos>
+			<size>0.2 0.2</size>
+			<zIndex>260</zIndex>
+			<shader>
+				<path>${themePath}/_common/shaders/tvnoise.glsl</path>
+				<noiseTime>0</noiseTime>
+			</shader>
+			<storyboard event="open">
+				<animation property="shader.noiseTime" from="0" to="100" begin="0" duration="10000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="shader.noiseTime" from="0" to="100" begin="0" duration="10000" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="shader.noiseTime" from="0" to="100" begin="0" duration="10000" mode="linear"/>
+			</storyboard>
+		</image>
 		<image name="screenshotgames" extra="true">
 			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
 			<path>{game:image}</path>

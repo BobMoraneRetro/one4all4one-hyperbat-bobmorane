@@ -31,6 +31,9 @@
 		<gamecarousel name="gamecarousel">
 			<zIndex>501</zIndex>
 			<type>vertical_wheel</type>
+			<type if="{system.theme} == 'zelda' || 
+			{system.theme} == 'assasin' || 
+			{system.theme} == 'gta'">horizontal_wheel</type>
 			<pos>0.48 0</pos>
 			<size>0.8 1</size>
 			<logoScale>1.4</logoScale>
@@ -44,6 +47,12 @@
 			<defaultTransition>instant</defaultTransition>
 			<minLogoOpacity>1</minLogoOpacity>
 			<transitionSpeed>350</transitionSpeed>
+			<scrollSound ifSubset="gamewheelsound:bulle">${themePath}/_common/scrollsound/bulle.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clic">${themePath}/_common/scrollsound/clic.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clicgrave">${themePath}/_common/scrollsound/clicgrave.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:frottement">${themePath}/_common/scrollsound/frottement.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:poc">${themePath}/_common/scrollsound/poc.wav</scrollSound>	
+			<scrollSound ifSubset="gamewheelsound:wheelclic">${themePath}/_common/scrollsound/wheelclic.wav</scrollSound>
 		</gamecarousel>
 		<image name="gamecarouselLogo">
 			<linearSmooth>true</linearSmooth>
@@ -169,43 +178,85 @@
 			<offsetY ifSubset="hsmetadata:lower">0.085</offsetY>
 			<offsetY ifSubset="hsmetadata:full">0</offsetY>
 		</text>
+		<image name="pointersdroite" extra="true">
+			<!-- <visible ifSubset="hyperwheel:spingh|verticalgh|verticalgheb">false</visible> -->
+			<default >${themePath}/_systemmedia/pointers-r/default.png</default>
+			<path>${pointers4syst}</path>
+			<origin>1 0.5</origin>
+			<pos>1.003 0.5</pos>
+			<maxSize>0.15 0.15</maxSize>
+			<zIndex>999</zIndex>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0" to="-0.002" begin="" duration="100" mode="bump" autoreverse="true"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0" to="-0.002" begin="" duration="100" mode="bump" autoreverse="true"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="" duration="0" mode="Linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="" duration="0" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext" ifSubset="gamewheelfade:amoitie">
+				<animation property="offsetX" from="0" to="-0.002" begin="" duration="100" mode="bump" autoreverse="true"/>
+				<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev" ifSubset="gamewheelfade:amoitie">
+				<animation property="offsetX" from="0" to="-0.002" begin="" duration="100" mode="bump" autoreverse="true"/>
+				<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+			</storyboard>
+			<storyboard event="deactivateNext" ifSubset="gamewheelfade:amoitie">
+				<animation property="opacity" to="0" begin="" duration="0" mode="Linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev" ifSubset="gamewheelfade:amoitie">
+				<animation property="opacity" to="0" begin="" duration="0" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev" ifSubset="gamewheelfade:activate">
+				<animation property="offsetX" from="0" to="-0.002" begin="" duration="100" mode="bump" autoreverse="true"/>
+				<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext" ifSubset="gamewheelfade:activate">
+				<animation property="offsetX" from="0" to="-0.002" begin="" duration="100" autoreverse="true" mode="bump"/>
+				<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+			</storyboard>
+			<storyboard event="deactivateNext" ifSubset="gamewheelfade:activate">
+				<animation property="opacity" to="0" begin="" duration="0" mode="Linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev" ifSubset="gamewheelfade:activate">
+				<animation property="opacity" to="0" begin="" duration="0" mode="Linear"/>
+			</storyboard>
+		</image>
 		<gameextras name="gameextras" ifSubset="hsperview:themejeux">
 			<path>${extgametheme}</path>
 		</gameextras>
 		<image name="vignetagehsg" extra="true">
 			<path>${themePath}/_viewgame/hyperbat/overlay.png</path>
-			<!-- <color>FFFFFFFF</color> -->
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<zIndex>499</zIndex>
 			<opacity>1</opacity>
 		</image>
-		<text name="gamethemelabel" ifSubset="authordisplayed:activate" extra="true">
-			<text>Theme by :</text>
-			<alignment>left</alignment>
-			<fontPath>${themePath}/_viewsyst/hyperbat/teko-bold.ttf</fontPath>
-			<size>0.2 0</size>
-			<pos>0.01 0</pos>
-			<color>ffff00</color>
-			<!-- <glowColor>3432a8</glowColor> -->
-			<!-- <glowSize>2</glowSize> -->
-			<!-- <glowOffset>0</glowOffset> -->
-			<zIndex>999</zIndex>
-			<fontSize>0.03</fontSize>
-			<opacity>0.3</opacity>
-		</text>
+		<!-- <text name="gamethemelabel" ifSubset="authordisplayed:activate" extra="true"> -->
+			<!-- <text>Theme by : ${theme.author}</text> -->
+			<!-- <alignment>left</alignment> -->
+			<!-- <fontPath>${themePath}/_viewsyst/hyperbat/teko-bold.ttf</fontPath> -->
+			<!-- <size>0.2 0</size> -->
+			<!-- <pos>0.01 0</pos> -->
+			<!-- <color>ffff00</color> -->
+			<!-- <zIndex>999</zIndex> -->
+			<!-- <fontSize>0.03</fontSize> -->
+			<!-- <opacity>0.3</opacity> -->
+		<!-- </text> -->
 		<text name="gamethemeauthor" ifSubset="authordisplayed:activate" extra="true">
 			<alignment>left</alignment>
 			<fontPath>${themePath}/_viewsyst/hyperbat/teko-bold.ttf</fontPath>
 			<size>0.2 0</size>
-			<pos>0.01 0.025</pos>
+			<pos>0.01 0</pos>
 			<size>0.2 0</size>
-			<color>ffff00</color>
-			<color>f0f000</color>
-			<!-- <glowColor>3432a8</glowColor> -->
-			<!-- <glowSize>2</glowSize> -->
-			<!-- <glowOffset>0</glowOffset> -->
+			<color>ffffff</color>
+			<!-- <color>f0f000</color> -->
 			<zIndex>999</zIndex>
 			<fontSize>0.03</fontSize>
 			<opacity>0.3</opacity>

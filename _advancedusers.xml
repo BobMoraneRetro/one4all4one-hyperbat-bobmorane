@@ -38,14 +38,24 @@
 	<subset name="spacermediahs" displayName="${mediahyper}" appliesTo="${vide}">
 		<include name="desactive" displayName=" "/>
 	</subset>
-	<subset name="authordisplayed" displayName="${authordisplayed}" appliesTo="hyperbat">
+		<subset name="authordisplayed" displayName="${authordisplayed}" appliesTo="hyperbat">
 		<include name="activate" displayName="${activate}"/>
+		<include name="showoff" displayName="${showoff}"/>
+		<include name="showoffblackwhite" displayName="${showoffblackwhite}"/>
 		<include name="deactivate" displayName="${desactive}"/>
 	</subset>
 	<subset name="gamewheelfade" displayName="${gamewheelfade}" appliesTo="hyperbat">
 		<include name="activate" displayName="${activate}"/>
 		<include name="amoitie" displayName="${amoitie}"/>
 		<include name="deactivate" displayName="${desactive}"/>
+	</subset>
+	<subset name="gamewheelsound" displayName="${gamewheelsound}" appliesTo="hyperbat">
+		<include name="wheelclic" displayName="${wheelclic}"/>
+		<include name="bulle" displayName="${bulle}"/>
+		<include name="clic" displayName="${clic}"/>
+		<include name="clicgrave" displayName="${clicgrave}"/>
+		<include name="frottement" displayName="${frottement}"/>
+		<include name="poc" displayName="${poc}"/>
 	</subset>
 	<subset name="syststickon" displayName="${syststickon}" appliesTo="hyperbat">
 		<include name="stickon" displayName="${stickon}">${themePath}/_viewgameoption/gl-hyperbat/stickon.xml</include>
@@ -65,6 +75,16 @@
 	</subset>
 	<subset name="pressstart" displayName="${pressstart}" appliesTo="hyperbat">
 		<include name="doigts" displayName="${doigts}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
+		<include name="undoigt" displayName="${undoigt}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
+		<include name="undoigtr" displayName="${undoigtr}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<subset name="pressstarttxt" displayName="${pressstarttxt}" appliesTo="hyperbat">
+		<include name="presstxt" displayName="${presstxt}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
+		<include name="freeplay" displayName="${freeplay}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
+		<include name="partiegratuite" displayName="${partiegratuite}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
+		<include name="uneuro" displayName="${uneuro}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
+		<include name="sitessage" displayName="${sitessage}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
 	</subset>
 	<subset name="hsmetadata" displayName="${hsmetadata}" appliesTo="hyperbat">

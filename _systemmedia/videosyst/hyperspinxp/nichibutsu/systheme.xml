@@ -2,6 +2,9 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Roni</text>
+		</text>
 		<image name="FanartFlix" extra="true">
 			<visible>false</visible>
 		</image>
@@ -51,11 +54,24 @@
 			<zIndex>1</zIndex>
 		</image>
 		<image name="Video_Sys" extra="true">
-			<path>./video.png</path>
+			<path>./Video.png</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.513846328453 0.508959759896</pos>
 			<size>0.364884803087 0.533676338920</size>
 			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée Fade # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="Video2_Sys" extra="true">
+			<path>./Video2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.513846328453 0.508959759896</pos>
+			<size>0.364884803087 0.533676338920</size>
+			<zIndex>4</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<storyboard>
 				<!-- # Arrivée Fade # -->
@@ -83,7 +99,7 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.501645670185 0.151933392476</pos>
 			<size>0.410850073771 0.221141908220</size>
-			<zIndex>4</zIndex>
+			<zIndex>5</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<storyboard>
 				<!-- # Storyboard personnalisé (5 propriétés) # -->
@@ -99,7 +115,7 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.810768064846 0.520561419438</pos>
 			<size>0.402605247839 0.956380282223</size>
-			<zIndex>5</zIndex>
+			<zIndex>6</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<storyboard>
 				<!-- # Arrivée sweet Droite->Gauche # -->
@@ -113,7 +129,7 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.152857708352 0.284492868763</pos>
 			<size>0.258047728588 0.318793427408</size>
-			<zIndex>6</zIndex>
+			<zIndex>7</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<storyboard>
 				<!-- # Storyboard personnalisé (4 propriétés) # -->
@@ -128,7 +144,7 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.278812602740 0.815862116798</pos>
 			<size>0.360144783280 0.356550523966</size>
-			<zIndex>7</zIndex>
+			<zIndex>8</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<storyboard>
 				<!-- # Storyboard personnalisé (4 propriétés) # -->

@@ -2,6 +2,9 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Dav</text>
+		</text>
 		<!-- ################ Fond du theme ##################### -->
 		<image name="FanartFlix" extra="true">
 			<visible>false</visible>
@@ -36,59 +39,59 @@
 		<!-- </image> -->
 		<!-- ################ Logo Système ##################### -->
 		<!-- <image name="logocust" extra="true"> -->
-			<!-- <maxSize>0.55 0.20</maxSize> -->
-			<!-- <scaleOrigin>0 -0.3</scaleOrigin> -->
-			<!-- <pos>0.25859375 0.123148148148148</pos> -->
-			<!-- <origin>0.5 0.5</origin> -->
-			<!-- <zIndex>10</zIndex> -->
-			<!-- <storyboard> -->
-				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
-				<!-- <animation property="opacity" from="0" to="1" begin="200" duration="400" mode="Linear"/> -->
-				<!-- <animation property="offsetY" from="-1" to="0" begin="200" duration="650" mode="Linear"/> -->
-			<!-- </storyboard> -->
+		<!-- <maxSize>0.55 0.20</maxSize> -->
+		<!-- <scaleOrigin>0 -0.3</scaleOrigin> -->
+		<!-- <pos>0.25859375 0.123148148148148</pos> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <zIndex>10</zIndex> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+		<!-- <animation property="opacity" from="0" to="1" begin="200" duration="400" mode="Linear"/> -->
+		<!-- <animation property="offsetY" from="-1" to="0" begin="200" duration="650" mode="Linear"/> -->
+		<!-- </storyboard> -->
 		<!-- </image> -->
 		<!-- <image name="logocust" extra="true"> -->
-			<!-- <path>${intlogoclearsvg}</path> -->
-			<!-- <path>${extlogoclearsvg}</path> -->
-			<!-- <path>${intlogoclearpng}</path> -->
+		<!-- <path>${intlogoclearsvg}</path> -->
+		<!-- <path>${extlogoclearsvg}</path> -->
+		<!-- <path>${intlogoclearpng}</path> -->
 		<!-- </image> -->
 		<!-- <image name="logocust" extra="true" region="fr"> -->
-			<!-- <path>${intlogoclearfrsvg}</path> -->
-			<!-- <path>${extlogoclearfrsvg}</path> -->
-			<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
 		<!-- </image> -->
 		<!-- <image name="logocust" extra="true" region="eu"> -->
-			<!-- <path>${intlogoclearfrsvg}</path> -->
-			<!-- <path>${extlogoclearfrsvg}</path> -->
-			<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
 		<!-- </image> -->
 		<!-- <image name="logocust" extra="true" region="us"> -->
-			<!-- <path>${intlogoclearussvg}</path> -->
-			<!-- <path>${extlogoclearussvg}</path> -->
-			<!-- <path>${intlogoclearuspng}</path> -->
+		<!-- <path>${intlogoclearussvg}</path> -->
+		<!-- <path>${extlogoclearussvg}</path> -->
+		<!-- <path>${intlogoclearuspng}</path> -->
 		<!-- </image> -->
 		<!-- <image name="logocust" extra="true" region="jp"> -->
-			<!-- <path>${intlogoclearjpsvg}</path> -->
-			<!-- <path>${extlogoclearjpsvg}</path> -->
-			<!-- <path>${intlogoclearjppng}</path> -->
+		<!-- <path>${intlogoclearjpsvg}</path> -->
+		<!-- <path>${extlogoclearjpsvg}</path> -->
+		<!-- <path>${intlogoclearjppng}</path> -->
 		<!-- </image> -->
 		<!-- ################ Artwork1 ##################### -->
 		<!-- <image name="Artwork1" extra="true"> -->
-			<!-- <path>./Artwork1.png</path> -->
-			<!-- <scaleOrigin>-0.3 -0.3</scaleOrigin> -->
-			<!-- <origin>0.5 0.5</origin> -->
-			<!-- <zIndex>2</zIndex> -->
-			<!-- <pos>0.35 0.65</pos> -->
-			<!-- <size>0.816666666666667 0.914814814814815</size> -->
-			<!-- <linearSmooth>true</linearSmooth> -->
-			<!-- # Arrivee D->G Sweet # -->
-			<!-- <storyboard> -->
-				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
-				<!-- <animation property="opacity" from="0" to="1" begin="500" duration="400" mode="Linear"/> -->
-				<!-- <animation property="offsetY" from="1" to="0" begin="" duration="3000" mode="EaseOut"/> -->
-			<!-- </storyboard> -->
+		<!-- <path>./Artwork1.png</path> -->
+		<!-- <scaleOrigin>-0.3 -0.3</scaleOrigin> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <zIndex>2</zIndex> -->
+		<!-- <pos>0.35 0.65</pos> -->
+		<!-- <size>0.816666666666667 0.914814814814815</size> -->
+		<!-- <linearSmooth>true</linearSmooth> -->
+		<!-- # Arrivee D->G Sweet # -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+		<!-- <animation property="opacity" from="0" to="1" begin="500" duration="400" mode="Linear"/> -->
+		<!-- <animation property="offsetY" from="1" to="0" begin="" duration="3000" mode="EaseOut"/> -->
+		<!-- </storyboard> -->
 		<!-- </image> -->
-				<!-- ################ Artwork1 ##################### -->
+		<!-- ################ Artwork1 ##################### -->
 		<image name="Artwork1" extra="true">
 			<path>./Artwork5.png</path>
 			<scaleOrigin>-0.3 -0.3</scaleOrigin>
@@ -133,12 +136,12 @@
 			<flipX>true</flipX>
 			<linearSmooth>true</linearSmooth>
 			<scale>0.9</scale>
-		<!-- # Arrivee Centrale Zoom puis dezoom en position # -->
+			<!-- # Arrivee Centrale Zoom puis dezoom en position # -->
 			<storyboard>
 				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
 				<animation property="opacity" from="0" to="1" begin="1500" duration="400" mode="Linear"/>
 				<animation property="offsetX" from="-0.2" to="0.0" begin="1500" duration="1000" mode="linear"/>
-				<animation property="offsetY" from="0" to="-0.2" begin="1500" duration="500" autoreverse="true" mode="EaseOut"/>	
+				<animation property="offsetY" from="0" to="-0.2" begin="1500" duration="500" autoreverse="true" mode="EaseOut"/>
 				<animation property="offsetX" from="0" to="0.05" begin="3500" duration="1000" mode="linear"/>
 				<animation property="offsetY" from="0" to="-0.1" begin="3500" duration="500" autoreverse="true" mode="EaseOut"/>
 				<animation property="offsetX" from="0.05" to="0.1" begin="5000" duration="1000" mode="linear"/>
@@ -150,12 +153,12 @@
 				<animation property="offsetX" from="0.2" to="0.25" begin="9500" duration="1000" mode="linear"/>
 				<animation property="offsetY" from="0" to="-0.08" begin="9500" duration="500" autoreverse="true" mode="EaseOut"/>
 				<animation property="offsetX" from="0.25" to="0.3" begin="11000" duration="1000" mode="linear"/>
-				<animation property="offsetY" from="0" to="-0.06" begin="11000" duration="500" autoreverse="true" mode="EaseOut"/>	
+				<animation property="offsetY" from="0" to="-0.06" begin="11000" duration="500" autoreverse="true" mode="EaseOut"/>
 				<animation property="offsetX" from="0.3" to="0.37" begin="12500" duration="1000" mode="linear"/>
 				<animation property="offsetY" from="0" to="-0.1" begin="12500" duration="500" autoreverse="true" mode="EaseOut"/>
-				<animation property="offsetY" from="0" to="-0.2" begin="14000" duration="500" autoreverse="false" mode="EaseOut"/>	
-				<animation property="w" to="0.02" begin="14100" duration="400" mode="Linear"/>	
-				<animation property="opacity" from="1" to="0" begin="14500" duration="" mode="Linear"/>				
+				<animation property="offsetY" from="0" to="-0.2" begin="14000" duration="500" autoreverse="false" mode="EaseOut"/>
+				<animation property="w" to="0.02" begin="14100" duration="400" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="14500" duration="" mode="Linear"/>
 			</storyboard>
 		</image>
 		<image name="Artwork33" extra="true">
@@ -168,16 +171,15 @@
 			<flipX>false</flipX>
 			<linearSmooth>true</linearSmooth>
 			<scale>0.9</scale>
-		<!-- # Arrivee Centrale Zoom puis dezoom en position # -->
+			<!-- # Arrivee Centrale Zoom puis dezoom en position # -->
 			<storyboard>
 				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
 				<animation property="opacity" from="0" to="1" begin="14500" duration="" mode="Linear"/>
 				<animation property="offsetX" to="0.37" begin="14500" duration="" mode="Linear"/>
-				<animation property="w" from="0.02" to="0.111979166666667" begin="14500" duration="500" mode="Linear"/>	
-				<animation property="offsetY" from="-0.2" to="-0.05" begin="14500" duration="600" autoreverse="false" mode="EaseOut"/>			
+				<animation property="w" from="0.02" to="0.111979166666667" begin="14500" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-0.2" to="-0.05" begin="14500" duration="600" autoreverse="false" mode="EaseOut"/>
 			</storyboard>
 		</image>
-		
 		<!-- ################ Artwork4 ##################### -->
 		<image name="Artwork4" extra="true">
 			<path>./Artwork4.png</path>
@@ -203,7 +205,7 @@
 			<!-- <pos>0.06015625 0.183796296296296</pos> -->
 			<!-- <size>0.0755208333333333 0.339814814814815</size> -->
 			<pos>0.0822916666666667 0.286111111111111</pos>
-			<size>0.146875 0.562962962962963</size>			
+			<size>0.146875 0.562962962962963</size>
 			<!-- # Arrivee D->G Sweet # -->
 			<storyboard>
 				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
@@ -215,7 +217,6 @@
 				<animation property="rotation" from="-5" to="5" begin="3500" duration="2000" autoreverse="true" repeat="forever" mode="EaseInOut"/>
 			</storyboard>
 		</image>
-		
 		<!-- ################ Bezel autour de la video ##################### -->
 		<image name="Videobezel" extra="true">
 			<path>./video.png</path>
@@ -265,16 +266,16 @@
 		</control>
 		<!-- ################ Animation de sortie des artworks ##################### -->
 		<!-- <control name="Artwork4"> -->
-			<!-- <storyboard> -->
-				<!-- <animation property="opacity" from="1" to="0" duration="150" mode="linear"/> -->
-				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="300" mode="easyIn"/> -->
-			<!-- </storyboard> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="1" to="0" duration="150" mode="linear"/> -->
+		<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="300" mode="easyIn"/> -->
+		<!-- </storyboard> -->
 		<!-- </control> -->
 		<!-- <control name="Artwork1, Artwork2, Artwork3, PreviewVid,Videobezel"> -->
-			<!-- <storyboard> -->
-				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
-				<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
-			<!-- </storyboard> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+		<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+		<!-- </storyboard> -->
 		<!-- </control> -->
 		<image name="md_cartridge" extra="true">
 			<visible>false</visible>

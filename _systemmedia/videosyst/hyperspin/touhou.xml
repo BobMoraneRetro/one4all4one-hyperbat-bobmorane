@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<!-- ################ Artwork de droite sous vidéo ##################### -->
+		<image name="righttart" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
+			<linearSmooth>true</linearSmooth>
+			<size>0 0.9</size>
+			<path>./rightart/${system.theme}.png</path>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+			<pos>0.85 0.515</pos>
+			<pos ifHelpPrompts="false">0.85 0.55</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<storyboard>
+				<animation property="x" from="1.5" begin="0" duration="2000" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+			</storyboard>
+		</image>
+		<!-- ################ Video & bezel ##################### -->
+		<image name="fondecransmall" ifSubset="videofondcops1:hyperspin|hyperspinorunified" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
+			<origin>0.52 0.5</origin>
+			<path>${themePath}/_common/images/169v2.png</path>
+			<size>0.66 0.72</size>
+			<pos>0.5 0.55</pos>
+			<pos ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">0.5 0.45</pos>
+			<pos ifSubset="cops2menu:milieu">0.5 0.5</pos>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>1</zIndex>
+			<storyboard>
+				<animation property="y" from="0.45" duration="350" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" duration="550" mode="easeIn"/>
+				<animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<video name="hsgameplay" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
+			<path>{random}</path>
+			<maxSize>0.5 0.52</maxSize>
+			<pos>0.5 0.55</pos>
+			<pos ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">0.5 0.45</pos>
+			<pos ifSubset="cops2menu:milieu">0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<delay>0.2</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<zIndex>2</zIndex>
+			<effect>none</effect>
+		</video>
+		<image name="bezel" ifSubset="videofondcops1:hyperspin|hyperspinorunified" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
+			<origin>0.5 0.5</origin>
+			<path>${intbezelsyst}</path>
+			<maxSize>0.6 0.52</maxSize>
+			<pos>0.5 0.55</pos>
+			<pos ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">0.5 0.45</pos>
+			<pos ifSubset="cops2menu:milieu">0.5 0.5</pos>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>2</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="1" duration="550" mode="easeIn"/>
+				<animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<!-- ################ Logo Système ##################### -->
+		<image name="logocustunified" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
+			<visible ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">false</visible>
+			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.svg</path>
+			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</path>
+			<path region="fr">${intlogoclearfrpng}</path>
+			<path region="eu">${intlogoclearfrpng}</path>
+			<path region="us">${intlogoclearuspng}</path>
+			<path region="jp">${intlogoclearjppng}</path>
+			<maxSize>0.5 0.25</maxSize>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+			<pos>0.5 0.15</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>2</zIndex>
+			<storyboard>
+				<animation property="y" from="-0.5" begin="0" duration="2000" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+			</storyboard>
+		</image>
+		<!-- ################ Artwork de gauche sur vidéo et logo ##################### -->
+		<image name="leftart" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
+			<linearSmooth>true</linearSmooth>
+			<size>0 0.9</size>
+			<path>./leftart/${system.theme}.png</path>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+			<pos>0.15 0.515</pos>
+			<pos ifHelpPrompts="false">0.15 0.55</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>3</zIndex>
+			<storyboard>
+				<animation property="x" from="-0.5" begin="0" duration="2000" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
+			</storyboard>
+		</image>
+	</view>
+	<include>./zspec/${system.theme}.xml</include>
+	<include>./zspecvideo/${system.theme}.xml</include>
+</theme>

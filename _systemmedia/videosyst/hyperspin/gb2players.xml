@@ -25,6 +25,8 @@
 			<path>${themePath}/_common/images/169v2.png</path>
 			<size>0.66 0.72</size>
 			<pos>0.5 0.55</pos>
+			<pos ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">0.5 0.45</pos>
+			<pos ifSubset="cops2menu:milieu">0.5 0.5</pos>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>1</zIndex>
 			<storyboard>
@@ -36,8 +38,10 @@
 		<video name="hsgameplay" extra="true">
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
 			<path>{random}</path>
-			<maxSize>0.5 0.52</maxSize>
+			<maxSize>0.5 0.4</maxSize>
 			<pos>0.5 0.55</pos>
+			<pos ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">0.5 0.45</pos>
+			<pos ifSubset="cops2menu:milieu">0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
 			<delay>0.2</delay>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
@@ -51,6 +55,8 @@
 			<path>${intbezelsyst}</path>
 			<maxSize>0.6 0.52</maxSize>
 			<pos>0.5 0.55</pos>
+			<pos ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">0.5 0.45</pos>
+			<pos ifSubset="cops2menu:milieu">0.5 0.5</pos>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>2</zIndex>
 			<storyboard>
@@ -61,6 +67,7 @@
 		<!-- ################ Logo Système ##################### -->
 		<image name="logocustunified" extra="true">
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
+			<visible ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">false</visible>
 			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.svg</path>
 			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</path>
 			<path region="fr">${intlogoclearfrpng}</path>
@@ -94,6 +101,6 @@
 			</storyboard>
 		</image>
 	</view>
-	<include>./zSpec/${system.theme}.xml</include>
-	<include>./zSpecvideo/${system.theme}.xml</include>
+	<include>./zspec/${system.theme}.xml</include>
+	<include>./zspecvideo/${system.theme}.xml</include>
 </theme>

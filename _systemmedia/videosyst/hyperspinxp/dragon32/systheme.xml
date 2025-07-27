@@ -2,6 +2,9 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Christophe Verez et Dav</text>
+		</text>
 		<image name="FanartFlix" extra="true">
 			<visible>false</visible>
 		</image>
@@ -191,7 +194,7 @@
 				<animation property="opacity" from="0" to="1" begin="850" duration="400" mode="easeIn"/>
 				<!-- <animation property="offsetY" from="0" to="0.01" begin="1650" duration="2500" autoreverse="true" repeat="forever" mode="EaseInOut"/> -->
 				<!-- <animation property="offsetX" from="0" to="0.01" begin="1650" duration="2500" autoreverse="true" repeat="forever" mode="EaseInOut"/> -->
-		     	<animation property="scale" from="1" to="1.006" begin="4100" autoreverse="true" duration="60" repeat="20" mode="linear"/>
+				<animation property="scale" from="1" to="1.006" begin="4100" autoreverse="true" duration="60" repeat="20" mode="linear"/>
 				<animation property="opacity" from="1" to="1" begin="7500" duration="10" mode="Linear"/>
 			</storyboard>
 		</image>

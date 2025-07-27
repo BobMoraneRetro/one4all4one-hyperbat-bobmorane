@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 
 <theme defaultView="hyperbat">
@@ -141,7 +141,7 @@
 	<pos>0.51015625 0.230555555555556</pos>
 	<size>0.353645833333333 0.392592592592593</size>
 
-<!-- # Arrivée en Dezoom # -->
+<!-- # ArrivÃ©e en Dezoom # -->
 <storyboard event="open">
     <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
 	<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
@@ -187,7 +187,7 @@
 </video>
 
 <!-- ################ Animations du bezel video et de la video si identique ##################### -->
-<!-- # Arriv�e : D->G # -->
+<!-- # Arrivée : D->G # -->
 <control name="PreviewVid,Videobezel">
 <storyboard event="open">
 			<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
@@ -231,5 +231,9 @@
 <image name="md_boxart">
 <visible>false</visible>
 </image>
+        <text name="gamethemeauthor" extra="true">
+           <text>Theme by : Dav</text>
+        </text>
 </view>
 </theme>
+

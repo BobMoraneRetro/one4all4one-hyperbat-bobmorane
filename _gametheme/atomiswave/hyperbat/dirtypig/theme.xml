@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
 	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
-		<!-- ################ Placement du fond du thème ##################### -->
+		<!-- ################ Placement du fond du thÃ¨me ##################### -->
 		<image name="Background" extra="true">
 			<path>./Background.png</path>
 			<size>1 1</size>
@@ -27,8 +27,8 @@
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
 			<zIndex>8</zIndex>
-			<!-- Proviens du bas + arrivée tardive -->
-			<!-- Viens de la droite + arrivée tardive -->
+			<!-- Proviens du bas + arrivÃ©e tardive -->
+			<!-- Viens de la droite + arrivÃ©e tardive -->
 			<storyboard event="open">
 				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear"/>
 			</storyboard>
@@ -51,7 +51,7 @@
 			<pos>0.5 0.88</pos>
 			<origin>0.5 0.5</origin>
 			<zIndex>20</zIndex>
-			<!-- Viens de la droite + arrivée tardive -->
+			<!-- Viens de la droite + arrivÃ©e tardive -->
 			<storyboard event="open">
 				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear"/>
 			</storyboard>
@@ -86,7 +86,7 @@
 				<animation property="offsetY" from="0" to="0" begin="2260" duration="2500" mode="Linear" autoReverse="true"/>
 			</storyboard>
 		</image>
-		<!-- ################ Bezel autour de la vidéo ##################### -->
+		<!-- ################ Bezel autour de la vidÃ©o ##################### -->
 		<image name="Videobezel" extra="true">
 			<path>./Video.png</path>
 			<origin>0.5 0.5</origin>
@@ -94,7 +94,7 @@
 			<pos>0.5 0.58</pos>
 			<zIndex>19</zIndex>
 		</image>
-		<!-- ################ La vidéo ##################### -->
+		<!-- ################ La vidÃ©o ##################### -->
 		<video name="md_video">
 			<visible>true</visible>
 			<origin>0.5 0.5</origin>
@@ -107,7 +107,7 @@
 			<zIndex>18</zIndex>
 			<effect>none</effect>
 		</video>
-		<!-- ################ Animations du bezel vidéo et de la vidéo si identique ##################### -->
+		<!-- ################ Animations du bezel vidÃ©o et de la vidÃ©o si identique ##################### -->
 		<control name="md_video,Videobezel">
 			<storyboard event="open">
 				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear"/>
@@ -123,7 +123,7 @@
 				<animation property="offsetY" from="7.9" to="0" duration="2150" mode="EaseOutQuint"/>
 			</storyboard>
 		</control>
-		<!-- ################ Animations du bezel vidéo et de la vidéo si identique ##################### -->
+		<!-- ################ Animations du bezel vidÃ©o et de la vidÃ©o si identique ##################### -->
 		<control name="Artwork4">
 			<storyboard event="deactivateNext">
 				<animation property="opacity" from="1" to="0" duration="150" mode="linear"/>
@@ -144,5 +144,9 @@
 				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
 			</storyboard>
 		</control>
-	</customView>
+	        <text name="gamethemeauthor" extra="true">
+           <text>Theme by : Roni</text>
+        </text>
+</customView>
 </theme>
+

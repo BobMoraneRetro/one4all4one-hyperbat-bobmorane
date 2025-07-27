@@ -222,8 +222,8 @@ void main(void)
                 : borderColor3;
             sampledColor.a *= v_col.a;
         } 
-        else if (innerShadow > 0.0) {
-            float val = abs(distance + effectiveBorder + innerShadow) / innerShadow;
+        else if (innerShadow > 0.0 && distance > -(b1 + b2 + b3 + outerShadow + innerShadow)) {
+            float val = abs(b1 + b2 + b3 + outerShadow + distance) / innerShadow;
             val = clamp(val, 0.0, 1.0);
             sampledColor = mix(sampledColor, innerShadowColor, innerShadowColor.a * (1.0 - val));
         }

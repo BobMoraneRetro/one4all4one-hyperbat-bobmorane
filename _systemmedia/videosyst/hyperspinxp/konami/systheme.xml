@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Dav</text>
+		</text>
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<!-- ################ Logo Système ##################### -->
+		<!-- <image name="logocust" extra="true"> -->
+		<!-- <maxSize>0.55 0.20</maxSize> -->
+		<!-- <scaleOrigin>0 -0.3</scaleOrigin> -->
+		<!-- <pos>0.5 0.12</pos> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <zIndex>10</zIndex> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+		<!-- <animation property="opacity" from="0" to="1" begin="200" duration="400" mode="Linear"/> -->
+		<!-- <animation property="offsetY" from="-1" to="0" begin="200" duration="650" mode="Linear"/> -->
+		<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true"> -->
+		<!-- <path>${intlogoclearsvg}</path> -->
+		<!-- <path>${extlogoclearsvg}</path> -->
+		<!-- <path>${intlogoclearpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="fr"> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="eu"> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="us"> -->
+		<!-- <path>${intlogoclearussvg}</path> -->
+		<!-- <path>${extlogoclearussvg}</path> -->
+		<!-- <path>${intlogoclearuspng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="jp"> -->
+		<!-- <path>${intlogoclearjpsvg}</path> -->
+		<!-- <path>${extlogoclearjpsvg}</path> -->
+		<!-- <path>${intlogoclearjppng}</path> -->
+		<!-- </image> -->
+		<image name="Background_Sys" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="Artwork5_Sys" extra="true">
+			<path>./Artwork5.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.501078197707 0.586640436828</pos>
+			<size>0.381341504937 0.584118336927</size>
+			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée Zoom # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="500" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="500" duration="" mode="Linear"/>
+				<animation property="scale" from="0" to="1" begin="800" duration="500" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<pos>0.501929406424 0.586640436828</pos>
+			<maxSize>0.377369197594 0.574029937326</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>3</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<storyboard>
+				<!-- # Arrivée Fade # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+		</video>
+		<image name="Video_Sys" extra="true">
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.502944827488 0.590062295868</pos>
+			<size>0.414583333333 0.633333333333</size>
+			<zIndex>4</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée Zoom # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="500" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="500" duration="" mode="Linear"/>
+				<animation property="scale" from="0" to="1" begin="800" duration="500" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4_Sys" extra="true">
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.499092044036 0.138837266011</pos>
+			<size>0.511292702304 0.275656852101</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Bump logo forever # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1300" duration="2000" mode="EaseOutQuint"/>
+				<animation property="scale" to="1.02" begin="3000" duration="700" autoreverse="true" repeat="forever" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1_Sys" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.144989218023 0.594239726290</pos>
+			<size>0.296788105777 0.795791471392</size>
+			<zIndex>6</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée sweet Gauche->Droite # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2_Sys" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.845114948644 0.516141439362</pos>
+			<size>0.313541666667 1.000000000000</size>
+			<zIndex>7</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée sweet Droite->Gauche # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+	</view>
+</theme>

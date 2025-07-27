@@ -31,6 +31,12 @@
 			<minLogoOpacity>1</minLogoOpacity>
 			<transitionSpeed>650</transitionSpeed>
 			<zIndex>105</zIndex>
+			<scrollSound ifSubset="gamewheelsound:bulle">${themePath}/_common/scrollsound/bulle.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clic">${themePath}/_common/scrollsound/clic.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clicgrave">${themePath}/_common/scrollsound/clicgrave.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:frottement">${themePath}/_common/scrollsound/frottement.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:poc">${themePath}/_common/scrollsound/poc.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:wheelclic">${themePath}/_common/scrollsound/wheelclic.wav</scrollSound>
 		</carousel>
 		<image name="logo">
 			<storyboard event="activate">
@@ -75,5 +81,27 @@
 			<zIndex>50</zIndex>
 			<opacity>0.5</opacity>
 		</image>
+		<text name="systhemeauthor" ifSubset="authordisplayed:activate|showoff|showoffblackwhite|deactivate" extra="true">
+			<alignment>left</alignment>
+			<fontPath>${themePath}/_viewsyst/hyperbat/teko-bold.ttf</fontPath>
+			<size>0.2 0</size>
+			<pos>0.01 0</pos>
+			<size>0.2 0</size>
+			<zIndex>999</zIndex>
+			<fontSize>0.03</fontSize>
+			<color>ffffff</color>
+			<opacity ifSubset="authordisplayed:deactivate">0</opacity>
+			<opacity ifSubset="authordisplayed:showoff">1</opacity>
+			<opacity ifSubset="authordisplayed:showoffblackwhite">1</opacity>
+			<opacity ifSubset="authordisplayed:activate">0.3</opacity>
+			<color ifSubset="authordisplayed:showoffblackwhite">000000</color>
+			<glowColor ifSubset="authordisplayed:showoffblackwhite">ffffff</glowColor>
+			<glowSize ifSubset="authordisplayed:showoffblackwhite">3</glowSize>
+			<glowOffset ifSubset="authordisplayed:showoffblackwhite">0</glowOffset>
+			<color ifSubset="authordisplayed:activate">ffffff</color>
+			<glowColor ifSubset="authordisplayed:activate">ffffff</glowColor>
+			<glowSize ifSubset="authordisplayed:activate">0</glowSize>
+			<glowOffset ifSubset="authordisplayed:activate">0</glowOffset>
+		</text>
 	</view>
 </theme>

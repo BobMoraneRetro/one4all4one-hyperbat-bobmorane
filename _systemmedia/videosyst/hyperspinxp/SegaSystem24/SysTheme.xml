@@ -2,6 +2,9 @@
 <theme>
 	<formatVersion>7</formatVersion>
 	<view name="system">
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Roni</text>
+		</text>
 		<image name="FanartFlix" extra="true">
 			<visible>false</visible>
 		</image>
@@ -144,6 +147,7 @@
 				<animation property="scale" from="1.1" to="0.95" begin="2000" duration="300" autoreverse="false" mode="bump"/>
 				<animation property="scale" from="0.95" to="1.02" begin="2300" duration="200" autoreverse="false" mode="bump"/>
 				<animation property="scale" from="1.02" to="1" begin="2500" duration="100" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="1" to="0.98" begin="2000" duration="2000" autoreverse="true" repeat="forever" mode="EaseOut"/>
 			</storyboard>
 		</image>
 	</view>
