@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{random}</path>
+			<pos>0.259260582477 0.540184179794</pos>
+			<size>0.495604498288 0.505326720510</size>
+			<origin>0.5 0.5</origin>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>2</zIndex>
+			<shader>
+				<path>./_common/shaders/border_multi_gradient.glsl</path>
+				<cornerRadius/>
+				<innerShadowSize/>
+				<innerShadowColor/>
+				<outerShadowSize/>
+				<outerShadowColor/>
+				<gradientMode/>
+				<saturation/>
+				<borderPad>12</borderPad>
+				<borderOffset>0</borderOffset>
+				<borderLayout>0</borderLayout>
+				<borderPos1>0</borderPos1>
+				<borderPos2>0</borderPos2>
+				<borderPos3>0</borderPos3>
+				<borderSize>12</borderSize>
+				<borderColor>ecf0f1ff</borderColor>
+				<borderColorStart/>
+				<borderColorEnd/>
+				<borderSize2/>
+				<borderColor2/>
+				<borderColorStart2/>
+				<borderColorEnd2/>
+				<borderSize3/>
+				<borderColor3/>
+				<borderColorStart3/>
+				<borderColorEnd3/>
+			</shader>
+		</video>
+		<image name="Artwork1" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.262276785714 0.177248677249</pos>
+			<size>0.488244047619 0.212698412698</size>
+			<zIndex>3</zIndex>
+			<scaleOrigin>0 0</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetY" from="-0.6" to="-0.6" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-0.6" to="0" begin="1700" duration="1000" mode="EaseOut"/>
+				<animation property="scale" from="0.97 0.97" to="1.03 1.03" begin="0" duration="1000" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.709165346774 0.579770220308</pos>
+			<size>0.522011336204 0.696015114939</size>
+			<zIndex>4</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<storyboard>
+				<animation property="offsetY" from="0.89" to="0.89" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="0.89" to="0.428576" begin="216" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0.428576" to="-0.086737" begin="311" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="-0.086737" to="-0.324066" begin="405" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="-0.324066" to="-0.263426" begin="500" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="-0.263426" to="-0.071828" begin="594" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="-0.071828" to="0.078666" begin="689" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="0.078666" to="0.116075" begin="783" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0.116075" to="0.067641" begin="878" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="0.067641" to="0" begin="972" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0" to="-0.037962" begin="1067" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="-0.037962" to="-0.036561" begin="1161" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="-0.036561" to="-0.013906" begin="1256" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="-0.013906" to="0.007126" begin="1350" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0.007126" to="0.014668" begin="1445" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="0.014668" to="0.010127" begin="1539" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0.010127" to="0.001521" begin="1634" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="0.001521" to="-0.004219" begin="1728" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="-0.004219" to="-0.004917" begin="1823" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="-0.004917" to="-0.002368" begin="1917" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="-0.002368" to="0.000479" begin="2012" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="0.000479" to="0.00179" begin="2106" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0.00179" to="0.001455" begin="2201" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="0.001455" to="0.000397" begin="2295" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0.000397" to="0" begin="2390" duration="94" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3_fx1" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.709165346774 0.579770220308</pos>
+			<size>0.522011336204 0.696015114939</size>
+			<zIndex>5</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<opacity>1</opacity>
+			<shader>
+				<path>./_common/shaders/shimmer.glsl</path>
+				<shimmerTime>0</shimmerTime>
+				<shimmerMode>0</shimmerMode>
+				<shimmerDirection>1.5708</shimmerDirection>
+				<shimmerScale>1</shimmerScale>
+				<shimmerSpeed>1</shimmerSpeed>
+				<shimmerDelay>2</shimmerDelay>
+				<shimmerWidth>1</shimmerWidth>
+				<shimmerAmount>1</shimmerAmount>
+				<shimmerOffset>0</shimmerOffset>
+				<shimmerColor>1 1 1 1</shimmerColor>
+				<maskMode>0</maskMode>
+				<maskCenter>0.5 0.5</maskCenter>
+				<maskSize>0.5 0.5</maskSize>
+				<maskSoftness>0.1</maskSoftness>
+				<maskInvert>0</maskInvert>
+			</shader>
+			<storyboard>
+				<animation property="offsetY" from="0.89" to="0.89" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="0.89" to="0.428576" begin="216" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0.428576" to="-0.086737" begin="311" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="-0.086737" to="-0.324066" begin="405" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="-0.324066" to="-0.263426" begin="500" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="-0.263426" to="-0.071828" begin="594" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="-0.071828" to="0.078666" begin="689" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="0.078666" to="0.116075" begin="783" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0.116075" to="0.067641" begin="878" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="0.067641" to="0" begin="972" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0" to="-0.037962" begin="1067" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="-0.037962" to="-0.036561" begin="1161" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="-0.036561" to="-0.013906" begin="1256" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="-0.013906" to="0.007126" begin="1350" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0.007126" to="0.014668" begin="1445" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="0.014668" to="0.010127" begin="1539" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0.010127" to="0.001521" begin="1634" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="0.001521" to="-0.004219" begin="1728" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="-0.004219" to="-0.004917" begin="1823" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="-0.004917" to="-0.002368" begin="1917" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="-0.002368" to="0.000479" begin="2012" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="0.000479" to="0.00179" begin="2106" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0.00179" to="0.001455" begin="2201" duration="94" mode="Linear"/>
+				<animation property="offsetY" from="0.001455" to="0.000397" begin="2295" duration="95" mode="Linear"/>
+				<animation property="offsetY" from="0.000397" to="0" begin="2390" duration="94" mode="Linear"/>
+				<animation property="shader.shimmerTime" from="0" to="3600" begin="0" duration="3600000" mode="linear" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.241658399471 0.841666666667</pos>
+			<size>0.294791666667 0.316666666667</size>
+			<zIndex>6</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="1.22" to="0" begin="0" duration="2503" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+	</view>
+</theme>

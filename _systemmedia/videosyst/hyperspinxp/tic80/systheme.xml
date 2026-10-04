@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<!-- ################ Logo Système ##################### -->
+		<image name="Background_Sys" extra="true">
+			<path>./3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.531565656566 0.641227085672</pos>
+			<size>1.078282828283 1.333333333333</size>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="1_Sys" extra="true">
+			<path>./1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.774184553872 0.573138795361</pos>
+			<size>0.449042508418 0.766180321736</size>
+			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>:/shaders/pixelate.glsl</path>
+				<pixelSize>80</pixelSize>
+			</shader>
+			<storyboard>
+				<!-- # Pixelisation # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="1000" mode="easeIn"/>
+				<animation property="shader.pixelSize" from="80" to="0" begin="300" duration="1200" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="2_Sys" extra="true">
+			<path>./2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.516940235690 0.138421249532</pos>
+			<size>0.562500000000 0.345679012346</size>
+			<zIndex>3</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Sweet Arrival Top to Bottom # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<pos>0.321969696970 0.56</pos>
+			<maxSize>0.428451178451 0.615039281706</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>4</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+		</video>
+		<image name="Video_Sys" extra="true">
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.332912457912 0.562196034418</pos>
+			<size>0.569865319865 0.64</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+						<storyboard>
+				<!-- # Sweet Arrival Top to Bottom # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="450" duration="400" mode="Linear"/>
+			</storyboard>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Finch</text>
+		</text>
+	</view>
+</theme>

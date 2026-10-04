@@ -1,0 +1,181 @@
+<?xml version="1.0" ?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Roni</text>
+		</text>
+		<image name="Background" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{random}</path>
+			<pos>0.504536290323 0.439068100358</pos>
+			<maxSize>0.398185483871 0.496415770609</maxSize>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<zIndex>200</zIndex>
+			<shader>
+				<path>:/shaders/border.glsl</path>
+				<cornerRadius>0.05</cornerRadius>
+				<borderSize>0.025</borderSize>
+				<borderColor>008040ff</borderColor>
+				<innerShadowSize>0.010</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>ff8000ff</outerShadowColor>
+			</shader>
+		</video>
+		<control name="PreviewVid,Videobezel">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1200" duration="500" mode="Linear"/>
+				<animation property="rotation" to="360" begin="1200" duration="500" mode="Linear" from="0"/>
+			</storyboard>
+		</control>
+		<image name="Particle" extra="true">
+			<path>./Particle.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.774395161290 0.171594982079</pos>
+			<size>0.101310483871 0.180107526882</size>
+			<zIndex>210</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1.9" to="0" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="1000" duration="4000" mode="easein" autoreverse="true" repeat="forever"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="1500" duration="2500" mode="easeout" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2-1" extra="true">
+			<path>./Artwork2-1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.790735349462 0.608796296296</pos>
+			<size>0.437144892473 0.791069295102</size>
+			<zIndex>220</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4-1" extra="true">
+			<path>./Artwork4-1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.168850806452 0.684089774047</pos>
+			<size>0.337701612903 0.637794167557</size>
+			<zIndex>230</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="-1.9" to="0" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="0.05" begin="1000" duration="4000" mode="linear" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1-1" extra="true">
+			<path>./Artwork1-1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.501382205442 0.14</pos>
+			<size>0.420103120562 0.225866188769</size>
+			<zIndex>240</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1300" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1300" duration="2000" mode="EaseOutQuint"/>
+				<animation property="scale" to="1.02" begin="3000" duration="700" mode="EaseIn" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3-1" extra="true">
+			<path>./Artwork3-1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.657426075269 0.332138590203</pos>
+			<size>0.260416666667 0.370370370370</size>
+			<zIndex>250</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="0" duration="0" mode="Linear" repeat="forever"/>
+				<animation property="opacity" from="0" to="1" begin="2700" duration="350" mode="linear" repeat="forever"/>
+				<animation property="opacity" from="1" to="0.8" begin="3200" duration="100" mode="linear" autoreverse="true" repeat="5"/>
+				<animation property="opacity" from="1" to="0.8" begin="3600" duration="50" mode="linear" autoreverse="true" repeat="3"/>
+				<animation property="opacity" from="1" to="0.8" begin="4000" duration="70" mode="linear" autoreverse="true" repeat="2"/>
+				<animation property="opacity" from="1" to="0.8" begin="4300" duration="50" mode="linear" autoreverse="true" repeat="4"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3-2" extra="true">
+			<path>./Artwork3-2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.655409946237 0.331242532855</pos>
+			<size>0.260416666667 0.370370370370</size>
+			<zIndex>260</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="0" duration="0" mode="Linear" repeat="forever"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="350" mode="linear" repeat="forever"/>
+				<animation property="opacity" from="1" to="0.8" begin="3500" duration="100" mode="linear" autoreverse="true" repeat="5"/>
+				<animation property="opacity" from="1" to="0.8" begin="3800" duration="50" mode="linear" autoreverse="true" repeat="3"/>
+				<animation property="opacity" from="1" to="0.8" begin="4200" duration="70" mode="linear" autoreverse="true" repeat="2"/>
+				<animation property="opacity" from="1" to="0.8" begin="4700" duration="50" mode="linear" autoreverse="true" repeat="4"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3-3" extra="true">
+			<path>./Artwork3-3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.655913978495 0.332138590203</pos>
+			<size>0.260416666667 0.370370370370</size>
+			<zIndex>270</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="0" duration="0" mode="Linear" repeat="forever"/>
+				<animation property="opacity" from="0" to="1" begin="3500" duration="350" mode="linear" repeat="forever"/>
+				<animation property="opacity" from="1" to="0.8" begin="4000" duration="100" mode="linear" autoreverse="true" repeat="5"/>
+				<animation property="opacity" from="1" to="0.8" begin="4400" duration="50" mode="linear" autoreverse="true" repeat="3"/>
+				<animation property="opacity" from="1" to="0.8" begin="4800" duration="70" mode="linear" autoreverse="true" repeat="2"/>
+				<animation property="opacity" from="1" to="0.8" begin="5500" duration="50" mode="linear" autoreverse="true" repeat="4"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>280</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>280</zIndex>
+		</image>
+		<control name="Artwork1-1, Artwork2-1, Artwork3-1, Artwork3-2, Artwork3-3, Artwork4-1, Particle, PreviewVid">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="1" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="1" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</view>
+</theme>

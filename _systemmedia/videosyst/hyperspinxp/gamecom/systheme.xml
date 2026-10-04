@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<!-- ################ Logo Système ##################### -->
+		<!-- <image name="logocust" extra="true"> -->
+		<!-- <maxSize>0.55 0.20</maxSize> -->
+		<!-- <scaleOrigin>0 -0.3</scaleOrigin> -->
+		<!-- <pos>0.5 0.12</pos> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <zIndex>10</zIndex> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+		<!-- <animation property="opacity" from="0" to="1" begin="200" duration="400" mode="Linear"/> -->
+		<!-- <animation property="offsetY" from="-1" to="0" begin="200" duration="650" mode="Linear"/> -->
+		<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true"> -->
+		<!-- <path>${intlogoclearsvg}</path> -->
+		<!-- <path>${extlogoclearsvg}</path> -->
+		<!-- <path>${intlogoclearpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="fr"> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="eu"> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="us"> -->
+		<!-- <path>${intlogoclearussvg}</path> -->
+		<!-- <path>${extlogoclearussvg}</path> -->
+		<!-- <path>${intlogoclearuspng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="jp"> -->
+		<!-- <path>${intlogoclearjpsvg}</path> -->
+		<!-- <path>${extlogoclearjpsvg}</path> -->
+		<!-- <path>${intlogoclearjppng}</path> -->
+		<!-- </image> -->
+		<image name="Background_Sys" extra="true">
+			<path>./background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="artwork6_Sys" extra="true">
+			<path>./artwork61.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.930729166667 0.116203703704</pos>
+			<size>0.418750000000 0.743518518519</size>
+			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0.6</opacity>
+			<storyboard repeatAt="1">
+				<!-- # Arrivée rapide Haut->Bas # -->
+				<animation property="opacity" from="0.6" to="0.9" begin="1700" duration="7000" autoreverse="true" repeat="forever" mode="linear"/>
+				<animation property="rotation" from="0" to="360" begin="" duration="10000" autoreverse="" repeat="forever" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1_Sys" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.621354166667 0.605555555556</pos>
+			<size>0.666666666667 0.742592592593</size>
+			<zIndex>3</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée rapide Haut->Bas # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="7.9" to="0" begin="0" duration="750" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<pos>0.619531250000 0.500925925926</pos>
+			<maxSize>0.244270833333 0.348148148148</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>4</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<rotation>3.55</rotation>
+			<shader>
+				<path>./perspective_corners.glsl</path>
+				<offsetTL>10 8</offsetTL>
+				<offsetTR>-32 7</offsetTR>
+				<offsetBL>0 -8</offsetBL>
+				<offsetBR>-42 00</offsetBR>
+			</shader>
+			<storyboard>
+				<!-- # Arrivée rapide Haut->Bas # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="700" duration="500" mode="easeIn"/>
+			</storyboard>
+		</video>
+		<image name="video_Sys" extra="true">
+			<path>./video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.608547689909 0.504166666667</pos>
+			<size>0.327604166667 0.406481481481</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée rapide Haut->Bas # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="7.9" to="0" begin="0" duration="750" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="video2_Sys" extra="true">
+			<!-- <path>./video2.png</path> -->
+			<origin>0.5 0.5</origin>
+			<pos>0.609895833333 0.504166666667</pos>
+			<size>0.241666666667 0.365740740741</size>
+			<zIndex>6</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>5</opacity>
+			<storyboard>
+				<!-- # Arrivée rapide Haut->Bas # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="7.9" to="0" begin="0" duration="750" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4_Sys" extra="true">
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.614322916667 0.129629629630</pos>
+			<size>0.666145833333 0.209259259259</size>
+			<zIndex>7</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée rapide Haut->Bas # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="7.9" to="0" begin="0" duration="750" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2_Sys" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.880729166667 0.931018518519</pos>
+			<size>0.215625000000 0.113888888889</size>
+			<zIndex>8</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1150" duration="500" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="bg2_Sys" extra="true">
+			<path>./bg2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.248437500000 0.429629629630</pos>
+			<size>0.431250000000 0.801851851852</size>
+			<zIndex>9</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>40</opacity>
+		</image>
+		<image name="Artwork3_Sys" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.158593750000 0.545370370370</pos>
+			<size>0.303645833333 0.953703703704</size>
+			<zIndex>10</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée rapide Haut->Bas # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="350" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="-2" to="0" begin="100" duration="1500" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+			
+			
+			
+			<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Dav</text>
+		</text>
+	</view>
+</theme>

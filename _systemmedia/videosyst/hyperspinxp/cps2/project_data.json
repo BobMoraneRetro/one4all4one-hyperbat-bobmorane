@@ -1,0 +1,331 @@
+{
+    "theme_name": "",
+    "author": "",
+    "description": "",
+    "theme_size": "1920x1080",
+    "custom_width": "",
+    "custom_height": "",
+    "layers": [
+        {
+            "file_path": "Background.png",
+            "image_name": "Background.png",
+            "x": 0.0,
+            "y": 0.0,
+            "width": 1920,
+            "height": 1080,
+            "base_width": 1920,
+            "base_height": 1080,
+            "opacity": 100,
+            "rotation": 0.0,
+            "visible": true,
+            "is_background": false,
+            "type": "image",
+            "element_type": "image",
+            "image_origin_x": 0.5,
+            "image_origin_y": 0.5,
+            "rotation_origin_x": 0.5,
+            "rotation_origin_y": 0.5
+        },
+        {
+            "file_path": "logo.png",
+            "image_name": "logo.png",
+            "x": 659.6911700520137,
+            "y": -9.795918367346939,
+            "width": 502.7578095398226,
+            "height": 239.4955383626064,
+            "base_width": 550,
+            "base_height": 262,
+            "opacity": 100,
+            "rotation": 0.0,
+            "visible": true,
+            "is_background": false,
+            "type": "image",
+            "element_type": "image",
+            "image_origin_x": 0.5,
+            "image_origin_y": 0.5,
+            "rotation_origin_x": 0.5,
+            "rotation_origin_y": 0.5
+        },
+        {
+            "file_path": "rect_vid_pers.png",
+            "image_name": "rect_vid_pers.png",
+            "x": 464.76190476190476,
+            "y": 257.9794918378952,
+            "width": 875.1020408163265,
+            "height": 651.9524809512213,
+            "base_width": 640,
+            "base_height": 640,
+            "opacity": 100,
+            "rotation": 0.0,
+            "visible": true,
+            "is_background": false,
+            "type": "video_rect",
+            "element_type": "video_rect",
+            "image_origin_x": 0.5,
+            "image_origin_y": 0.5,
+            "rotation_origin_x": 0.5,
+            "rotation_origin_y": 0.5
+        },
+        {
+            "file_path": "video.png",
+            "image_name": "video.png",
+            "x": 421.1969589124178,
+            "y": 214.4217687074831,
+            "width": 970.0412889681777,
+            "height": 753.1767707480192,
+            "base_width": 1078,
+            "base_height": 837,
+            "opacity": 100,
+            "rotation": 0.0,
+            "visible": true,
+            "is_background": false,
+            "type": "image",
+            "element_type": "image",
+            "image_origin_x": 0.5,
+            "image_origin_y": 0.5,
+            "rotation_origin_x": 0.5,
+            "rotation_origin_y": 0.5
+        },
+        {
+            "file_path": "device.png",
+            "image_name": "device.png",
+            "x": 1328.56565656512,
+            "y": 45.41414141411997,
+            "width": 606,
+            "height": 1080,
+            "base_width": 606,
+            "base_height": 1080,
+            "opacity": 100,
+            "rotation": 0.0,
+            "visible": true,
+            "is_background": false,
+            "type": "image",
+            "element_type": "image",
+            "image_origin_x": 0.5,
+            "image_origin_y": 0.5,
+            "rotation_origin_x": 0.5,
+            "rotation_origin_y": 0.5
+        },
+        {
+            "file_path": "Character.png",
+            "image_name": "Character.png",
+            "x": -1.6162269811200645,
+            "y": -84.04047989172005,
+            "width": 727,
+            "height": 1165,
+            "base_width": 562,
+            "base_height": 900,
+            "opacity": 100,
+            "rotation": 0.0,
+            "visible": true,
+            "is_background": false,
+            "type": "image",
+            "element_type": "image",
+            "image_origin_x": 0.5,
+            "image_origin_y": 0.5,
+            "rotation_origin_x": 0.5,
+            "rotation_origin_y": 0.5
+        },
+        {
+            "file_path": "rect_vid_640_480.png",
+            "image_name": "rect_vid_640_480.png",
+            "x": 1511.8367346938774,
+            "y": 281.9047619047631,
+            "width": 332.6984126984066,
+            "height": 249.52380952380497,
+            "base_width": 640,
+            "base_height": 480,
+            "opacity": 100,
+            "rotation": 0,
+            "visible": true,
+            "is_background": false,
+            "type": "video_rect",
+            "element_type": "image",
+            "image_origin_x": 0.5,
+            "image_origin_y": 0.5,
+            "rotation_origin_x": 0.5,
+            "rotation_origin_y": 0.5
+        }
+    ],
+    "animations": {
+        "logo.png": [
+            {
+                "name": "XML_Import_logo_Sys",
+                "animations": [
+                    {
+                        "event": "default",
+                        "animations": [
+                            {
+                                "property": "opacity",
+                                "from": "0",
+                                "to": "0",
+                                "begin": "",
+                                "duration": "",
+                                "mode": "Linear"
+                            },
+                            {
+                                "property": "opacity",
+                                "from": "0",
+                                "to": "1",
+                                "begin": "650",
+                                "duration": "1300",
+                                "mode": "Linear"
+                            },
+                            {
+                                "property": "offsetY",
+                                "from": "-1",
+                                "to": "0",
+                                "begin": "650",
+                                "duration": "1300",
+                                "mode": "Linear"
+                            }
+                        ],
+                        "xml": "<storyboard event=\"default\"><animation property=\"opacity\" from=\"0\" to=\"0\" begin=\"\" duration=\"\" mode=\"Linear\" /><animation property=\"opacity\" from=\"0\" to=\"1\" begin=\"650\" duration=\"1300\" mode=\"Linear\" /><animation property=\"offsetY\" from=\"-1\" to=\"0\" begin=\"650\" duration=\"1300\" mode=\"Linear\" /></storyboard>"
+                    },
+                    {
+                        "event": "default",
+                        "animations": [
+                            {
+                                "property": "opacity",
+                                "from": "0",
+                                "to": "0",
+                                "begin": "",
+                                "duration": "",
+                                "mode": "Linear"
+                            },
+                            {
+                                "property": "opacity",
+                                "from": "0",
+                                "to": "1",
+                                "begin": "4499",
+                                "duration": "500",
+                                "mode": "Linear"
+                            },
+                            {
+                                "property": "opacity",
+                                "from": "1",
+                                "to": "0.8",
+                                "begin": "4500",
+                                "duration": "100",
+                                "mode": "linear",
+                                "autoreverse": "true",
+                                "repeat": "5"
+                            },
+                            {
+                                "property": "opacity",
+                                "from": "1",
+                                "to": "0.8",
+                                "begin": "4900",
+                                "duration": "50",
+                                "mode": "linear",
+                                "autoreverse": "true",
+                                "repeat": "3"
+                            },
+                            {
+                                "property": "opacity",
+                                "from": "1",
+                                "to": "0.8",
+                                "begin": "6200",
+                                "duration": "70",
+                                "mode": "linear",
+                                "autoreverse": "true",
+                                "repeat": "2"
+                            },
+                            {
+                                "property": "opacity",
+                                "from": "1",
+                                "to": "0.8",
+                                "begin": "6700",
+                                "duration": "50",
+                                "mode": "linear",
+                                "autoreverse": "true",
+                                "repeat": "4"
+                            }
+                        ],
+                        "xml": "<storyboard event=\"default\"><animation property=\"opacity\" from=\"0\" to=\"0\" begin=\"\" duration=\"\" mode=\"Linear\" /><animation property=\"opacity\" from=\"0\" to=\"1\" begin=\"4499\" duration=\"500\" mode=\"Linear\" /><animation property=\"opacity\" from=\"1\" to=\"0.8\" begin=\"4500\" duration=\"100\" autoreverse=\"true\" repeat=\"5\" mode=\"linear\" /><animation property=\"opacity\" from=\"1\" to=\"0.8\" begin=\"4900\" duration=\"50\" autoreverse=\"true\" repeat=\"3\" mode=\"linear\" /><animation property=\"opacity\" from=\"1\" to=\"0.8\" begin=\"6200\" duration=\"70\" autoreverse=\"true\" repeat=\"2\" mode=\"linear\" /><animation property=\"opacity\" from=\"1\" to=\"0.8\" begin=\"6700\" duration=\"50\" autoreverse=\"true\" repeat=\"4\" mode=\"linear\" /></storyboard>"
+                    }
+                ],
+                "variables": {},
+                "editable_properties": {}
+            }
+        ],
+        "device.png": [
+            {
+                "name": "XML_Import_device_Sys",
+                "animations": [
+                    {
+                        "event": "default",
+                        "animations": [
+                            {
+                                "property": "opacity",
+                                "from": "0",
+                                "to": "0",
+                                "begin": "",
+                                "duration": "",
+                                "mode": "Linear"
+                            },
+                            {
+                                "property": "opacity",
+                                "from": "0",
+                                "to": "1",
+                                "begin": "650",
+                                "duration": "1300",
+                                "mode": "Linear"
+                            },
+                            {
+                                "property": "offsetX",
+                                "from": "1",
+                                "to": "0",
+                                "begin": "650",
+                                "duration": "1300",
+                                "mode": "Linear"
+                            }
+                        ],
+                        "xml": "<storyboard event=\"default\"><animation property=\"opacity\" from=\"0\" to=\"0\" begin=\"\" duration=\"\" mode=\"Linear\" /><animation property=\"opacity\" from=\"0\" to=\"1\" begin=\"650\" duration=\"1300\" mode=\"Linear\" /><animation property=\"offsetX\" from=\"1\" to=\"0\" begin=\"650\" duration=\"1300\" mode=\"Linear\" /></storyboard>"
+                    }
+                ],
+                "variables": {},
+                "editable_properties": {}
+            }
+        ],
+        "Character.png": [
+            {
+                "name": "XML_Import_Character_Sys",
+                "animations": [
+                    {
+                        "event": "default",
+                        "animations": [
+                            {
+                                "property": "opacity",
+                                "from": "0",
+                                "to": "0",
+                                "begin": "",
+                                "duration": "",
+                                "mode": "Linear"
+                            },
+                            {
+                                "property": "opacity",
+                                "from": "0",
+                                "to": "1",
+                                "begin": "650",
+                                "duration": "1300",
+                                "mode": "Linear"
+                            },
+                            {
+                                "property": "offsetX",
+                                "from": "-1",
+                                "to": "0",
+                                "begin": "650",
+                                "duration": "1300",
+                                "mode": "Linear"
+                            }
+                        ],
+                        "xml": "<storyboard event=\"default\"><animation property=\"opacity\" from=\"0\" to=\"0\" begin=\"\" duration=\"\" mode=\"Linear\" /><animation property=\"opacity\" from=\"0\" to=\"1\" begin=\"650\" duration=\"1300\" mode=\"Linear\" /><animation property=\"offsetX\" from=\"-1\" to=\"0\" begin=\"650\" duration=\"1300\" mode=\"Linear\" /></storyboard>"
+                    }
+                ],
+                "variables": {},
+                "editable_properties": {}
+            }
+        ]
+    }
+}

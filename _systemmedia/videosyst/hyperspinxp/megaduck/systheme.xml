@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+		</image>
+		<image name="Artwork1_Sys" extra="true">
+			<path>./Artwork11.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.327447916667 0.599537037037</pos>
+			<size>0.563177083334 0.881018518519</size>
+			<zIndex>2</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>./_common/shaders/waterwaves.glsl</path>
+				<wavesTime>0</wavesTime>
+				<wavesSpeed>5</wavesSpeed>
+				<wavesScale>11</wavesScale>
+				<wavesExponent>1.24</wavesExponent>
+				<wavesStrength>0.1</wavesStrength>
+				<wavesDirection>0.85521</wavesDirection>
+				<dualWaves>0</dualWaves>
+				<wavesSpeed2>3</wavesSpeed2>
+				<wavesScale2>0.01</wavesScale2>
+				<wavesOffset2>0</wavesOffset2>
+				<wavesExponent2>1</wavesExponent2>
+				<wavesDirection2>0</wavesDirection2>
+				<maskMode>2</maskMode>
+				<maskCenter>0.84938 0.8332</maskCenter>
+				<maskSize>0.66 0.61</maskSize>
+				<maskSoftness>0.1</maskSoftness>
+				<maskInvert>0</maskInvert>
+			</shader>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="850" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="850" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="600" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="0" to="0.06" begin="2600" duration="4000" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+				<animation property="shader.wavesTime" from="0" to="3600" begin="0" duration="3600000" mode="linear" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Image_vid__Sys" extra="true">
+			<path>./Image_vid.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.738541666667 0.398611111111</pos>
+			<size>0.231250000000 0.380555555556</size>
+			<zIndex>3</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="750" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="750" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="1" to="-0.05" begin="750" duration="500" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.05" to="-0.05" begin="1250" duration="10" mode="Linear"/>
+				<animation property="offsetX" from="-0.05" to="0" begin="1260" duration="500" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{random}</path>
+			<pos>0.675820000000 0.230000000000</pos>
+			<size>0.181500000000 0.298000000000</size>
+			<origin>0 0</origin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>4</zIndex>
+			<rotationOrigin>0 0</rotationOrigin>
+			<rotation>15</rotation>
+			<shader>
+				<path>./paral.glsl</path>
+				<tiltX>13</tiltX>
+				<tiltY>-20</tiltY>
+				<persp>-0.5</persp>
+			</shader>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="1500" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+		</video>
+		<image name="Console_Sys" extra="true">
+			<path>./Console.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.738541666667 0.527314814815</pos>
+			<size>0.462500000000 0.945370370370</size>
+			<zIndex>5</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="750" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="750" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="1" to="-0.05" begin="750" duration="500" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.05" to="-0.05" begin="1250" duration="10" mode="Linear"/>
+				<animation property="offsetX" from="-0.05" to="0" begin="1260" duration="500" mode="EaseOut"/>
+				<animation property="shader.wavesTime" from="0" to="3600" begin="0" duration="3600000" mode="linear" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="logo_Sys" extra="true">
+			<path>./logo_bleue.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.325000000000 0.150000000000</pos>
+			<size>0.611458333333 0.275925925926</size>
+			<zIndex>6</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<rotation>5</rotation>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="300" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="700" mode="Linear"/>
+				<animation property="offsetX" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="300" duration="700" mode="Linear"/>
+				<animation property="rotation" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="rotation" from="0" to="725" begin="300" duration="700" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Dav</text>
+		</text>
+	</view>
+</theme>

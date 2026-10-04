@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<!-- ################ Logo Système ##################### -->
+		<!-- <image name="logocust" extra="true"> -->
+		<!-- <maxSize>0.55 0.20</maxSize> -->
+		<!-- <scaleOrigin>0 -0.3</scaleOrigin> -->
+		<!-- <pos>0.5 0.12</pos> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <zIndex>10</zIndex> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+		<!-- <animation property="opacity" from="0" to="1" begin="200" duration="400" mode="Linear"/> -->
+		<!-- <animation property="offsetY" from="-1" to="0" begin="200" duration="650" mode="Linear"/> -->
+		<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true"> -->
+		<!-- <path>${intlogoclearsvg}</path> -->
+		<!-- <path>${extlogoclearsvg}</path> -->
+		<!-- <path>${intlogoclearpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="fr"> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="eu"> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="us"> -->
+		<!-- <path>${intlogoclearussvg}</path> -->
+		<!-- <path>${extlogoclearussvg}</path> -->
+		<!-- <path>${intlogoclearuspng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="jp"> -->
+		<!-- <path>${intlogoclearjpsvg}</path> -->
+		<!-- <path>${extlogoclearjpsvg}</path> -->
+		<!-- <path>${intlogoclearjppng}</path> -->
+		<!-- </image> -->
+		<video name="Background_Sys" extra="true">
+			<path>./background.mp4</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+		</video>
+		<image name="Artwork3_Sys" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.779188478890 0.746004993758</pos>
+			<size>0.911458333333 1.025925925926</size>
+			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée Droite->Gauche # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="1500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="500" duration="1500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4_Sys" extra="true">
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.193377241516 0.924527421531</pos>
+			<size>0.547916666667 0.688888888889</size>
+			<zIndex>3</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée Bas->Haut # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="1500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="500" duration="1500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="-Artwork5_Sys" extra="true">
+			<path>./-Artwork5.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.242310747929 0.331403926910</pos>
+			<size>0.390421064578 0.541747058601</size>
+			<zIndex>4</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée Gauche->Droite # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1500" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="1000" duration="1500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<pos>0.244580637839 0.332412766870</pos>
+			<maxSize>0.365452275565 0.487269700753</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>5</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<storyboard>
+				<!-- # Arrivée Fade # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="800" mode="EaseIn"/>
+			</storyboard>
+		</video>
+		<image name="video_Sys" extra="true">
+			<path>./video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.254438698786 0.386788294934</pos>
+			<size>0.489583333333 0.779629629630</size>
+			<zIndex>6</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée Gauche->Droite # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1500" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="1000" duration="1500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork5_Sys" extra="true">
+			<path>./Artwork5.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.735484408694 0.258450768610</pos>
+			<size>0.518750000000 0.502777777778</size>
+			<zIndex>7</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivé DeZoom Elastic # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1500" mode="easeIn"/>
+				<animation property="scale" from="5" to="1" begin="650" duration="1500" mode="easeInQuint"/>
+				<animation property="h" from="0.502777777778" to="0.2" begin="2150" duration="100" mode="bump"/>
+				<animation property="h" from="0.2" to="0.502777777778" begin="2250" duration="100" mode="bump"/>
+				<animation property="w" from="0.518750000000" to="0.2" begin="2200" duration="100" mode="bump"/>
+				<animation property="w" from="0.2" to="0.518750000000" begin="2300" duration="100" mode="bump"/>
+				<animation property="w" from="0.518750000000" to="0.35" begin="2400" duration="100" mode="bump"/>
+				<animation property="w" from="0.35" to="0.518750000000" begin="2500" duration="100" mode="bump"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1_Sys" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.731597399557 0.604890982232</pos>
+			<size>0.428125000000 0.685185185185</size>
+			<zIndex>8</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Storyboard personnalisé (5 propriétés) # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1.9" to="0" begin="1500" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.03" begin="3000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0" to="-0.03" begin="3500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+			</storyboard>
+		</image>
+		<image name="Particle_Sys" extra="true">
+			<path>./Particle.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.863335603223 0.404918094806</pos>
+			<size>0.033333333333 0.059259259259</size>
+			<zIndex>9</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Storyboard personnalisé (6 propriétés) # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1.9" to="0" begin="1500" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.03" begin="3000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0" to="-0.03" begin="3500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+				<animation property="visible" from="0" to="1" begin="0" duration="150" autoreverse="true" repeat="forever" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Particle_1_Sys" extra="true">
+			<path>./Particle.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.910610671320 0.449617901865</pos>
+			<size>0.024199154466 0.043020719051</size>
+			<zIndex>10</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Storyboard personnalisé (6 propriétés) # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1.9" to="0" begin="1500" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.03" begin="3000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0" to="-0.03" begin="3500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+				<animation property="visible" from="0" to="1" begin="100" duration="150" autoreverse="true" repeat="forever" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Particle_2_Sys" extra="true">
+			<path>./Particle.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.945043837249 0.486620260029</pos>
+			<size>0.015484905232 0.027528720413</size>
+			<zIndex>11</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Storyboard personnalisé (6 propriétés) # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1.9" to="0" begin="1500" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.03" begin="3000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0" to="-0.03" begin="3500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+				<animation property="visible" from="0" to="1" begin="200" duration="150" autoreverse="true" repeat="forever" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Particle_3_Sys" extra="true">
+			<path>./Particle.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.653572948587 0.946015712682</pos>
+			<size>0.033333333333 0.059259259259</size>
+			<zIndex>12</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Storyboard personnalisé (6 propriétés) # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1.9" to="0" begin="1500" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.03" begin="3000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0" to="-0.03" begin="3500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+				<animation property="visible" from="0" to="1" begin="0" duration="150" autoreverse="true" repeat="forever" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Particle_4_Sys" extra="true">
+			<path>./Particle.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.708104748326 0.970324657310</pos>
+			<size>0.023958333333 0.042592592593</size>
+			<zIndex>13</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Storyboard personnalisé (6 propriétés) # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1.9" to="0" begin="1500" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.03" begin="3000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0" to="-0.03" begin="3500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+				<animation property="visible" from="0" to="1" begin="100" duration="150" autoreverse="true" repeat="forever" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Particle_5_Sys" extra="true">
+			<path>./Particle.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.751547515180 0.986017005259</pos>
+			<size>0.015104166667 0.026851851852</size>
+			<zIndex>14</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Storyboard personnalisé (6 propriétés) # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1.9" to="0" begin="1500" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.03" begin="3000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0" to="-0.03" begin="3500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+				<animation property="visible" from="0" to="1" begin="200" duration="150" autoreverse="true" repeat="forever" mode="Linear"/>
+			</storyboard>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Roni</text>
+		</text>
+	</view>
+</theme>

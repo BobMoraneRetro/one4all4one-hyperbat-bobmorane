@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : mrfomt</text>
+		</text>
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="Background_Sys" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.7109372000000 0.711111111111</pos>
+			<size>1.4218720000000 1.422222222222</size>
+			<zIndex>1</zIndex>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<!-- Initial hidden state -->
+			<pos>-10 -10</pos>
+			<!-- Move off-screen initially -->
+			<opacity>0</opacity>
+			<!-- Force initial opacity -->
+			<maxSize>0.301346801347 0.714303529118</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>2</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<shader>
+				<path>:/shaders/border.glsl</path>
+				<cornerRadius>0.01</cornerRadius>
+				<borderSize>0.020</borderSize>
+				<borderColor>000000FF</borderColor>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
+			<storyboard>
+				<!-- Initial position reset (hidden) -->
+				<animation property="pos" to="-10 -10" begin="0" duration="0" mode="Linear"/>
+				<animation property="opacity" to="0" begin="0" duration="0" mode="Linear"/>
+				<!-- # Zoom Arrival # -->
+				<animation property="pos" to="0.519360269360 0.564041651079" begin="800" duration="0" mode="Linear"/>
+				<animation property="zIndex" to="2" begin="800" duration="0" mode="Linear"/>
+				<animation property="opacity" to="1" begin="800" duration="500" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="500" duration="0" mode="Linear"/>
+				<animation property="scale" from="0" to="1" begin="800" duration="500" mode="EaseIn"/>
+			</storyboard>
+		</video>
+		<image name="Artwork3_Sys" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.777604166667 0.414814814815</pos>
+			<size>0.340833333334 0.509629629630</size>
+			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetY" from="-2.0" to="0" begin="0" duration="2000" mode="easeout"/>
+				<animation property="offsetX" from="0" to="0.05" begin="2000" duration="3000" autoreverse="true" repeat="forever" mode="easeinout"/>
+				<animation property="offsetX" from="0" to="-0.05" begin="5000" duration="4000" autoreverse="true" repeat="forever" mode="easeinout"/>
+				<animation property="offsetY" from="0" to="0.03" begin="2000" duration="2500" autoreverse="true" repeat="forever" mode="easeinout"/>
+				<animation property="offsetY" from="0" to="-0.04" begin="4500" duration="3500" autoreverse="true" repeat="forever" mode="easeinout"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2_Sys" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500260416667 0.143055555556</pos>
+			<size>0.583854166667 0.236111111111</size>
+			<zIndex>3</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="scale" from="0" to="1" begin="0" duration="1500" mode="easeout"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="1200" mode="easein"/>
+				<animation property="offsetY" from="0" to="0.02" begin="1500" duration="3000" autoreverse="true" repeat="forever" mode="easeinout"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1_Sys" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.226302083333 0.512962962963</pos>
+			<size>0.614062500000 0.868518518519</size>
+			<zIndex>4</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="-1.9" to="0" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="0.1" begin="1000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0" to="0.1" begin="1500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+			</storyboard>
+		</image>
+		<image name="3_Sys" extra="true">
+			<path>./3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.255644991582 0.648718668163</pos>
+			<size>0.157291666667 0.253703703704</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="-1.9 + 0.029343" to="0 + 0.029343" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0 + 0.029343" to="0.1 + 0.029343" begin="1000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0 + 0.135756" to="0 + 0.135756" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetY" from="0 + 0.135756" to="0.1 + 0.135756" begin="1500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="400" mode="Linear"/>
+				<animation property="visible" from="0" to="1" begin="0" duration="16.67" autoreverse="true" repeat="forever" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="5_Sys" extra="true">
+			<path>./5.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.282667824074 0.675215114104</pos>
+			<size>0.1015622000000 0.298148148148</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="1" begin="0" duration="400" mode="Linear"/>
+				<animation property="visible" from="0" to="1" begin="0" duration="16.67" autoreverse="true" repeat="forever" mode="Linear"/>
+				<animation property="offsetX" from="-1.9 + 0.0563657" to="0 + 0.0563657" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0 + 0.0563657" to="0.1 + 0.0563657" begin="1000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0 + 0.1622521" to="0 + 0.1622521" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetY" from="0 + 0.1622521" to="0.1 + 0.1622521" begin="1500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+			</storyboard>
+		</image>
+		<image name="7_Sys" extra="true">
+			<path>./7.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.262997159091 0.697222222222</pos>
+			<size>0.1453122000000 0.253703703704</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="-1.9 + 0.0366951" to="0 + 0.0366951" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0 + 0.0366951" to="0.1 + 0.0366951" begin="1000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0 + 0.1842592" to="0 + 0.1842592" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetY" from="0 + 0.1842592" to="0.1 + 0.1842592" begin="1500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+				<animation property="opacity" from="0" to="1" begin="0" duration="400" mode="Linear"/>
+				<animation property="visible" from="0" to="1" begin="0" duration="16.67" autoreverse="true" repeat="forever" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="10_Sys" extra="true">
+			<path>./10.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.902562079125 0.821113916947</pos>
+			<size>1.229166666667 0.634259259259</size>
+			<zIndex>9</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="-1.9 + 0.67626" to="0 + 0.67626" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0 + 0.67626" to="0.1 + 0.67626" begin="1000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0 + 0.308151" to="0 + 0.308151" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetY" from="0 + 0.308151" to="0.1 + 0.308151" begin="1500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="3000"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="3100" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="6000" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="6100" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="9000" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="9100" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="12000" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="12100" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="15000" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="15100" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="18000" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="18100" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="21000" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="21100" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="24000" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="24100" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="27000" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="27100" duration="200"/>
+			</storyboard>
+		</image>
+		<image name="12_Sys" extra="true">
+			<path>./12.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.867735164141 0.813309016087</pos>
+			<size>1.229166666667 0.634259259259</size>
+			<zIndex>9</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="-1.9 + 0.621433" to="0 + 0.621433" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0 + 0.621433" to="0.1 + 0.621433" begin="1000" duration="4000" autoreverse="true" repeat="forever" mode="easein"/>
+				<animation property="offsetY" from="0 + 0.330346" to="0 + 0.350346" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetY" from="0 + 0.330346" to="0.1 + 0.350346" begin="1500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="3200"/>
+				<animation property="opacity" from="0" to="1" begin="3200" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="3300" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="6200" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="6300" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="9200" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="9300" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="12200" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="12300" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="15200" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="15300" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="18200" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="18300" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="21200" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="21300" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="24200" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="24300" duration="200"/>
+				<animation property="opacity" from="0" to="1" begin="27200" duration="200"/>
+				<animation property="opacity" from="1" to="0" begin="27300" duration="200"/>
+			</storyboard>
+		</image>
+	</view>
+</theme>

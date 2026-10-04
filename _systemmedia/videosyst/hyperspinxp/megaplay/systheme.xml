@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background" extra="true">
+			<path>./background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{random}</path>
+			<pos>0.500000000000 0.564494280721</pos>
+			<size>0.435492186398 0.592230322605</size>
+			<origin>0.5 0.5</origin>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>2</zIndex>
+			<shader>
+				<path>./_common/shaders/border_multi_gradient.glsl</path>
+				<cornerRadius>10</cornerRadius>
+				<innerShadowSize/>
+				<innerShadowColor/>
+				<outerShadowSize/>
+				<outerShadowColor/>
+				<gradientMode/>
+				<saturation/>
+				<borderPad>25</borderPad>
+				<borderOffset>0</borderOffset>
+				<borderLayout>0</borderLayout>
+				<borderPos1>0</borderPos1>
+				<borderPos2>0</borderPos2>
+				<borderPos3>0</borderPos3>
+				<borderSize>5</borderSize>
+				<borderColor>e25273ff</borderColor>
+				<borderColorStart/>
+				<borderColorEnd/>
+				<borderSize2>10</borderSize2>
+				<borderColor2>d51a62ff</borderColor2>
+				<borderColorStart2/>
+				<borderColorEnd2/>
+				<borderSize3>10</borderSize3>
+				<borderColor3>690219ff</borderColor3>
+				<borderColorStart3/>
+				<borderColorEnd3/>
+			</shader>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="600" duration="13" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="613" duration="441" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1054" duration="10" mode="Linear"/>
+				<animation property="w" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="w" from="0" to="0.435492186398" begin="1054" duration="430" mode="EaseOut"/>
+			</storyboard>
+		</video>
+		<image name="Artwork3" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.188888888889</pos>
+			<size>0.483854166667 0.357407407407</size>
+			<zIndex>3</zIndex>
+			<scaleOrigin>0 0</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2679" duration="100" mode="Linear"/>
+				<animation property="scale" from="2.5" to="2.5" begin="" duration="" mode="Linear"/>
+				<animation property="scale" from="2.5" to="1.72232" begin="2679" duration="42" mode="Linear"/>
+				<animation property="scale" from="1.72232" to="0.853815" begin="2721" duration="41" mode="Linear"/>
+				<animation property="scale" from="0.853815" to="0.453822" begin="2762" duration="42" mode="Linear"/>
+				<animation property="scale" from="0.453822" to="0.556023" begin="2804" duration="42" mode="Linear"/>
+				<animation property="scale" from="0.556023" to="0.878941" begin="2846" duration="41" mode="Linear"/>
+				<animation property="scale" from="0.878941" to="1.132583" begin="2887" duration="42" mode="Linear"/>
+				<animation property="scale" from="1.132583" to="1.195631" begin="2929" duration="42" mode="Linear"/>
+				<animation property="scale" from="1.195631" to="1.114002" begin="2971" duration="41" mode="Linear"/>
+				<animation property="scale" from="1.114002" to="1" begin="3012" duration="42" mode="Linear"/>
+				<animation property="scale" from="1" to="0.936019" begin="3054" duration="42" mode="Linear"/>
+				<animation property="scale" from="0.936019" to="0.93838" begin="3096" duration="41" mode="Linear"/>
+				<animation property="scale" from="0.93838" to="0.976563" begin="3137" duration="42" mode="Linear"/>
+				<animation property="scale" from="0.976563" to="1.012011" begin="3179" duration="42" mode="Linear"/>
+				<animation property="scale" from="1.012011" to="1.024721" begin="3221" duration="41" mode="Linear"/>
+				<animation property="scale" from="1.024721" to="1.017068" begin="3262" duration="42" mode="Linear"/>
+				<animation property="scale" from="1.017068" to="1.002564" begin="3304" duration="42" mode="Linear"/>
+				<animation property="scale" from="1.002564" to="0.99289" begin="3346" duration="41" mode="Linear"/>
+				<animation property="scale" from="0.99289" to="0.991714" begin="3387" duration="42" mode="Linear"/>
+				<animation property="scale" from="0.991714" to="0.99601" begin="3429" duration="42" mode="Linear"/>
+				<animation property="scale" from="0.99601" to="1.000808" begin="3471" duration="41" mode="Linear"/>
+				<animation property="scale" from="1.000808" to="1.003017" begin="3512" duration="42" mode="Linear"/>
+				<animation property="scale" from="1.003017" to="1.002453" begin="3554" duration="42" mode="Linear"/>
+				<animation property="scale" from="1.002453" to="1.000669" begin="3596" duration="41" mode="Linear"/>
+				<animation property="scale" from="1.000669" to="1" begin="3637" duration="42" mode="Linear"/>
+				<animation property="scale" from="1" to="1" begin="3679" duration="38" mode="Linear"/>
+				<animation property="scale" from="1" to="1.06" begin="3717" duration="700" mode="EaseIn" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.168750000000 0.500000000000</pos>
+			<size>0.337500000000 1.000000000000</size>
+			<zIndex>4</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="-0.5" to="-0.5" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="-0.5" to="0" begin="1756" duration="714" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.844531250000 0.500000000000</pos>
+			<size>0.310937500000 0.838888888889</size>
+			<zIndex>5</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="0.5" to="0.5" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="0.5" to="0" begin="1764" duration="723" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>Theme by : Roni</text>
+		</text>
+	</view>
+</theme>

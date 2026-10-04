@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Dav</text>
+		</text>
+		<!-- ################ Fond du theme ##################### -->
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="background" extra="true">
+			<path>./background.png</path>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>1</zIndex>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+		</image>
+		<!-- ################ Artwork1 ##################### -->
+		<image name="Artwork1" extra="true">
+			<path>./artwork13.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<rotation>10</rotation>
+			<zIndex>2</zIndex>
+			<pos>0.72 0.734259259259259</pos>
+			<size>0.340625 1</size>
+			<!-- # Arrivee D->G Sweet # -->
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="400" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="200" duration="2000" mode="EaseOutCubic"/>
+			</storyboard>
+		</image>
+		<!-- ################ Artwork3 ##################### -->
+		<image name="Artwork3" extra="true">
+			<path>./Artwork3.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>4</zIndex>
+			<pos>0.509895833333333 0.128240740740741</pos>
+			<size>0.704166666666667 0.212037037037037</size>
+			<!-- # Arrivee Centrale Zoom puis dezoom en position # -->
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="400" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="0" duration="1000" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<!-- ################ Artwork4 ##################### -->
+		<image name="Artwork4" extra="true">
+			<path>./Artwork4.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>4</zIndex>
+			<pos>0.28 0.601851851851852</pos>
+			<size>0.534895833333333 0.9</size>
+			<!-- # Arrivee D->G Sweet # -->
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="400" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="200" duration="2000" mode="EaseOutCubic"/>
+			</storyboard>
+		</image>
+
+		<!-- ################ Bezel autour de la video ##################### -->
+		<image name="Videobezel" extra="true">
+			<path>./video2.png</path>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<rotation>10</rotation>
+			<pos>0.742 0.514</pos>
+			<size>0.1859375 0.300925925925926</size>
+			<zIndex>3</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="400" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="200" duration="2000" mode="EaseOutCubic"/>
+			</storyboard>
+		</image>
+		<image name="scanline_sys" extra="true">
+			<path>./scanlines.png</path>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<rotation>10</rotation>
+			<pos>0.742 0.514</pos>
+			<size>0.18 0.29</size>
+			<zIndex>3</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="400" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="200" duration="2000" mode="EaseOutCubic"/>
+			</storyboard>
+		</image>
+		<!-- ################ La video ##################### -->
+		<video name="PreviewVid" extra="true">
+			<visible>true</visible>
+			<path>{random}</path>
+			<maxSize>0.26 0.29</maxSize>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<rotation>10</rotation>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<pos>0.742 0.514</pos>
+			<zIndex>2</zIndex>
+			<!-- <color>85a832</color> -->
+			<color>8BAC0F</color>
+			<saturation>10</saturation>
+		</video>
+		<!-- ################ Animations du bezel video et de la video si identique ##################### -->
+		<!-- # Arriv饠: D->G # -->
+		<control name="PreviewVid, ">
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1800" duration="800" mode="EaseIn"/>
+				<!-- <animation property="scale" from="0" to="1" begin="1200" duration="800" mode="EaseOut"/> -->
+				<!-- <animation property="scaleOrigin" to="0 0" begin="1200" duration="" mode="Linear"/> -->
+			</storyboard>
+		</control>
+		<!-- ################ Animation de sortie des artworks ##################### -->
+		<!-- <control name="Artwork4"> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="1" to="0" duration="150" mode="linear"/> -->
+		<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="300" mode="easyIn"/> -->
+		<!-- </storyboard> -->
+		<!-- </control> -->
+		<!-- <control name="Artwork1, Artwork2, Artwork3, PreviewVid,Videobezel"> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+		<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+		<!-- </storyboard> -->
+		<!-- </control> -->
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="md_boxart">
+			<visible>false</visible>
+		</image>
+	</view>
+	<!-- <include>./zSpec/${system.theme}.xml</include> -->
+	<!-- <include>./zSpecvideo/${system.theme}.xml</include> -->
+</theme>
