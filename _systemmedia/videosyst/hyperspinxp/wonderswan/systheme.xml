@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="Background_Sys" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.510521885522 0.511036288814</pos>
+			<size>1.021043771044 1.025065469510</size>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="Artwork3_Sys" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.829755892256 0.594570707071</pos>
+			<size>0.351430976431 0.877880658436</size>
+			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Fade In # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<pos>0.539983164983 0.498316498316</pos>
+			<maxSize>0.209595959596 0.251402918070</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>3</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+		</video>
+		<image name="Video_Sys" extra="true">
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.541666666667 0.499378039656</pos>
+			<size>0.527777777778 0.537850729517</size>
+			<zIndex>4</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Fade In # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2_Sys" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.209175084175 0.595823980546</pos>
+			<size>0.401515151515 0.742714178825</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Fade In # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4_Sys" extra="true">
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.382996632997 0.127197904976</pos>
+			<size>0.690235690236 0.098765432099</size>
+			<zIndex>6</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Bump Arrival Alt # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear"/>
+				<animation property="scale" from="0" to="1.1" begin="1500" duration="500" autoreverse="false" mode="EaseIn"/>
+				<animation property="scale" from="1.1" to="0.95" begin="2000" duration="300" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="0.95" to="1.02" begin="2300" duration="200" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="1.02" to="1" begin="2500" duration="100" autoreverse="false" mode="bump"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1_Sys" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.793408038721 0.115226337449</pos>
+			<size>0.110385101010 0.197530864198</size>
+			<zIndex>7</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Cd rotation R->L # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" from="0" to="360" begin="4000" duration="5000" mode="easeIn"/>
+				<animation property="rotation" from="0" to="360" begin="9000" duration="3200" repeat="forever" mode="linear"/>
+			</storyboard>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Dav</text>
+		</text>
+	</view>
+</theme>

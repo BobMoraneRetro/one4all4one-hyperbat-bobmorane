@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.333333333333</size>
+			<zIndex>1</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+		</image>
+		<image name="carre_noir" extra="true">
+			<path>./carre_noir.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.398710486882 0.264829061251</pos>
+			<size>0.319295973764 0.418547011391</size>
+			<zIndex>2</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{random}</path>
+			<pos>0.400000000000 0.263888888889</pos>
+			<size>0.322395833333 0.429629629630</size>
+			<origin>0.5 0.5</origin>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>3</zIndex>
+		</video>
+		<image name="Videobezel" extra="true">
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.383333333333 0.263888888889</pos>
+			<size>0.511979166667 0.674074074074</size>
+			<zIndex>4</zIndex>
+			<scaleOrigin>0.02878942014242117 -0.009890109890109874</scaleOrigin>
+			<rotationOrigin>0.5325534079348931 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork1" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.768462792078 0.500000000000</pos>
+			<size>0.402029750822 1.088712442282</size>
+			<zIndex>5</zIndex>
+			<scaleOrigin>0 0</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="scale" from="0 0" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="scale" from="0 0" to="1 1" begin="328" duration="500" mode="EaseOut"/>
+				<animation property="offsetY" from="0.6" to="0.6" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="0.6" to="0" begin="328" duration="500" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.143750000000 0.635185185185</pos>
+			<size>0.382291666667 0.938888888889</size>
+			<zIndex>6</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="-0.6" to="-0.6" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="-0.6" to="0" begin="737" duration="1000" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="logo" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.709895833333 0.845370370370</pos>
+			<size>1.047395833333 0.311111111111</size>
+			<zIndex>7</zIndex>
+			<scaleOrigin>0 0</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="391" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="391" duration="2000" mode="EaseOutQuint"/>
+				<animation property="scale" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="scale" from="1" to="1.02" begin="2091" duration="700" mode="EaseIn" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3" extra="true">
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.933854166667 0.862962962963</pos>
+			<size>0.124479166667 0.161111111111</size>
+			<zIndex>8</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="1" begin="0" duration="800" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>Theme by : Huhe-8554</text>
+		</text>
+	</view>
+</theme>

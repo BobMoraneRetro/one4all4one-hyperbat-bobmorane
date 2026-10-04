@@ -2,43 +2,78 @@
 <theme defaultView="hyperbat">
 	<formatVersion>7</formatVersion>
 	<subset name="systannonce" displayName="${systannounce}" appliesTo="hyperbat">
-		<include name="classiquesyst" displayName="${classiquesyst}">${themePath}/_viewgame/commune/systeme/nomsystem.xml</include>
+		<include name="classiquesyst" displayName="${classiquesyst}">${path_vgame}/commune/systeme/nomsystem.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
 	</subset>
 	<subset name="gwheelbackgr" displayName="${gwheelbackgr}" appliesTo="hyperbat">
+		<include name="desactive" displayName="${desactive}">${path_vgameopt}/gl-common/autodeactivate.xml</include>
 		<include name="sisaccades" displayName="${sisaccades}"/>
-		<include name="ovalcarbon" displayName="${ovalcarbon}">${themePath}/_viewgameoption/gl-common/autoovalcarbon.xml</include>
-		<include name="ovalsilver" displayName="${ovalsilver}">${themePath}/_viewgameoption/gl-common/autoovalsilver.xml</include>
-		<include name="rectcarbon" displayName="${rectcarbon}">${themePath}/_viewgameoption/gl-common/autorectcabon.xml</include>
-		<include name="rectcompose" displayName="${rectcompose}">${themePath}/_viewgameoption/gl-common/autosystrect.xml</include>
-		<include name="ovalcompose" displayName="${ovalcompose}">${themePath}/_viewgameoption/gl-common/autosystoval.xml</include>
+		<include name="ovalcarbon" displayName="${ovalcarbon}">${path_vgameopt}/gl-common/autoovalcarbon.xml</include>
+		<include name="ovalsilver" displayName="${ovalsilver}">${path_vgameopt}/gl-common/autoovalsilver.xml</include>
+		<include name="rectcarbon" displayName="${rectcarbon}">${path_vgameopt}/gl-common/autorectcabon.xml</include>
+		<include name="rectcompose" displayName="${rectcompose}">${path_vgameopt}/gl-common/autosystrect.xml</include>
+		<include name="ovalcompose" displayName="${ovalcompose}">${path_vgameopt}/gl-common/autosystoval.xml</include>
+		<!-- <include name="whorizontalbox" displayName="${whorizontalbox}">${themePath}/_viewgameoption/gl-hyperbat/whorizontalbox.xml</include> -->
 		<!-- <include name="hfsround" displayName="${hfsround}">${themePath}/_viewgameoption/gl-common/autoHFSround.xml</include> -->
-		<!-- <include name="logounified" displayName="${logounified}">${themePath}/_viewgameoption/gl-common/autounified.xml</include> -->
+		<include name="logounified" displayName="${logounified}">${path_vgameopt}/gl-common/autounified.xml</include>
 	</subset>
 	<subset name="letternav" displayName="${letternav}" appliesTo="hyperbat">
-		<include name="navhoricoinstyle" displayName="${navhoricoinstyle}">${themePath}/_viewgameoption/gl-common/navhoricoinstyle.xml</include>
-		<include name="navvertcoinstyle" displayName="${navvertcoinstyle}">${themePath}/_viewgameoption/gl-common/navvertcoinstyle.xml</include>
-		<include name="navvertrcoinstyle" displayName="${navvertrcoinstyle}">${themePath}/_viewgameoption/gl-common/navvertrcoinstyle.xml</include>
-		<include name="navhsletters" displayName="${navhsletters}">${themePath}/_viewgameoption/gl-common/navhsletters.xml</include>
-		<include name="desactive" displayName="${desactive}"/>
+		<include name="navhoricoinstyle" displayName="${navhoricoinstyle}">${path_vgameopt}/gl-common/navhoricoinstyle.xml</include>
+		<include name="navvertcoinstyle" displayName="${navvertcoinstyle}">${path_vgameopt}/gl-common/navvertcoinstyle.xml</include>
+		<include name="navvertrcoinstyle" displayName="${navvertrcoinstyle}">${path_vgameopt}/gl-common/navvertrcoinstyle.xml</include>
+		<include name="navhsletters" displayName="${navhsletters}">${path_vgameopt}/gl-common/navhsletters.xml</include>
 	</subset>
 	<subset name="infosmax" displayName="${infosmax}" appliesTo="hyperbat">
 		<include name="non" displayName="${no}"/>
-		<include name="oui" displayName="${yes}">${themePath}/_viewgameoption/gl-common/infosmax.xml</include>
+		<include name="oui" displayName="${yes}">${path_vgameopt}/gl-common/infosmax.xml</include>
 	</subset>
 	<!-- ################################################################################# -->
 	<!-- ######################## VUES JEUX Hyperspin #################################### -->
 	<!-- ################################################################################# -->
-	<subset name="spacerHS01" displayName="${vide}" appliesTo="${vide}">
+	<subset name="spacerHS01" displayName=" " appliesTo="hyperbat">
 		<include name=" " displayName=" "/>
 	</subset>
-	<subset name="spacerHS02" displayName="${spacerHS02}" appliesTo="${vide}">
+	<subset name="spacerHS02" displayName="${spacerHS02}" appliesTo="hyperbat">
 		<include name="desactive" displayName=" "/>
 	</subset>
-	<subset name="spacermediahs" displayName="${mediahyper}" appliesTo="${vide}">
+	<subset name="spacermediahs" displayName="${mediahyper}" appliesTo="hyperbat">
 		<include name="desactive" displayName=" "/>
 	</subset>
-		<subset name="authordisplayed" displayName="${authordisplayed}" appliesTo="hyperbat">
+	<!-- <subset name="spacerscrap" displayName="${spacerscrap}" appliesTo="hyperbat"> -->
+		<!-- <include name="desactive" displayName=" "/> -->
+	<!-- </subset> -->
+		<subset name="spacerHS03" displayName=" " appliesTo="hyperbat">
+		<include name=" " displayName=" "/>
+	</subset>
+	<subset name="defaultgeneric" displayName="${defaultgeneric}" appliesTo="hyperbat">
+		<!-- <include name="genericbackbox" displayName="${genericbackbox}"/> -->
+		<include name="generic43boxback" displayName="${generic43boxback}">${path_game_theme}/_genericdefault/_default43boxback/theme.xml</include>
+		<include name="generic43coinopsstyle" displayName="${generic43coinopsstyle}">${path_game_theme}/_genericdefault/_defaultcoinopsstyle/theme.xml</include>
+		<include name="generic43noanimationfanart" displayName="${generic43noanimationfanart}">${path_game_theme}/_genericdefault/_default43noanimationfanart/theme.xml</include>
+		<include name="generic43noanimation" displayName="${generic43noanimation}">${path_game_theme}/_genericdefault/_default43noanimation/theme.xml</include>
+		<include name="generic43" displayName="${generic43}">${path_game_theme}/_genericdefault/_default43/theme.xml</include>
+		<include name="jukeboxdef" displayName="${jukeboxdef}">${path_game_theme}/_genericdefault/_jukebox/theme.xml</include>
+	</subset>
+	<include ifSubset="defaultgeneric:generic43coinopsstyle,screenratio:r43|r1610">${path_game_theme}/_genericdefault/_defaultcoinopsstyle/theme-${ratiosfx}.xml</include>
+	<subset name="videodefaut" displayName="${videodefaut}" appliesTo="hyperbat">
+		<include name="activate" displayName="${activate}"/>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<subset name="gameviewsource" displayName="${gameviewsource}" appliesTo="hyperbat">
+		<include name="mamefolder" displayName="${mamefolder}"/>
+		<!-- <include name="originsystem" displayName="${originsystem}"/> -->
+		<include name="actualsystem" displayName="${actualsystem}"/>
+		<include name="genericstyleonly" displayName="${genericstyleonly}"/>
+	</subset>
+	<subset name="boxorthumb" displayName="${boxorthumb}" appliesTo="hyperbat">
+		<include name="boxart" displayName="${boxart}"/>
+		<include name="thumb" displayName="${thumb}"/>
+	</subset>
+	<!-- <subset name="unithfold" displayName="${unithfold}" appliesTo="hyperbat"> -->
+	<!-- <include name="separatefolder" displayName="${separatefolder}"/> -->
+	<!-- <include name="mamefolder" displayName="${mamefolder}"/> -->
+	<!-- </subset> -->
+	<subset name="authordisplayed" displayName="${authordisplayed}" appliesTo="hyperbat">
 		<include name="activate" displayName="${activate}"/>
 		<include name="showoff" displayName="${showoff}"/>
 		<include name="showoffblackwhite" displayName="${showoffblackwhite}"/>
@@ -49,6 +84,11 @@
 		<include name="amoitie" displayName="${amoitie}"/>
 		<include name="deactivate" displayName="${desactive}"/>
 	</subset>
+	<!-- <subset name="gamewheeltype" displayName="${gamewheeltype}" appliesTo="hyperbat"> -->
+	<!-- <include name="wrightwheel" displayName="${wrightwheel}">${themePath}/_viewgameoption/gl-hyperbat/wrightwheel.xml</include> -->
+	<!-- <include name="whorizontalbox" displayName="${whorizontalbox}">${themePath}/_viewgameoption/gl-hyperbat/whorizontalbox.xml</include> -->
+	<!-- <include name="deactivate" displayName="${desactive}"/> -->
+	<!-- </subset> -->
 	<subset name="gamewheelsound" displayName="${gamewheelsound}" appliesTo="hyperbat">
 		<include name="wheelclic" displayName="${wheelclic}"/>
 		<include name="bulle" displayName="${bulle}"/>
@@ -57,8 +97,12 @@
 		<include name="frottement" displayName="${frottement}"/>
 		<include name="poc" displayName="${poc}"/>
 	</subset>
+	<subset name="vignettagehs" displayName="${vignettagehs}" appliesTo="hyperbat">
+		<include name="activate" displayName="${activate}"/>
+		<include name="deactivate" displayName="${desactive}"/>
+	</subset>
 	<subset name="syststickon" displayName="${syststickon}" appliesTo="hyperbat">
-		<include name="stickon" displayName="${stickon}">${themePath}/_viewgameoption/gl-hyperbat/stickon.xml</include>
+		<include name="stickon" displayName="${stickon}">${path_vgameopt}/gl-hyperbat/stickon.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
 	</subset>
 	<subset name="syststickcolor" displayName="${syststickcolor}" appliesTo="hyperbat">
@@ -74,22 +118,29 @@
 		<include name="ballyellow" displayName="${ballyellow}"/>
 	</subset>
 	<subset name="pressstart" displayName="${pressstart}" appliesTo="hyperbat">
-		<include name="doigts" displayName="${doigts}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
-		<include name="undoigt" displayName="${undoigt}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
-		<include name="undoigtr" displayName="${undoigtr}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
+		<include name="doigts" displayName="${doigts}">${path_vgameopt}/gl-hyperbat/startdoigt.xml</include>
+		<include name="undoigt" displayName="${undoigt}">${path_vgameopt}/gl-hyperbat/startdoigt.xml</include>
+		<include name="undoigtr" displayName="${undoigtr}">${path_vgameopt}/gl-hyperbat/startdoigt.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
 	</subset>
 	<subset name="pressstarttxt" displayName="${pressstarttxt}" appliesTo="hyperbat">
-		<include name="presstxt" displayName="${presstxt}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
-		<include name="freeplay" displayName="${freeplay}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
-		<include name="partiegratuite" displayName="${partiegratuite}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
-		<include name="uneuro" displayName="${uneuro}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
-		<include name="sitessage" displayName="${sitessage}">${themePath}/_viewgameoption/gl-hyperbat/startdoigt.xml</include>
+		<include name="presstxt" displayName="${presstxt}">${path_vgameopt}/gl-hyperbat/startdoigt.xml</include>
+		<include name="freeplay" displayName="${freeplay}">${path_vgameopt}/gl-hyperbat/startdoigt.xml</include>
+		<include name="partiegratuite" displayName="${partiegratuite}">${path_vgameopt}/gl-hyperbat/startdoigt.xml</include>
+		<include name="uneuro" displayName="${uneuro}">${path_vgameopt}/gl-hyperbat/startdoigt.xml</include>
+		<include name="sitessage" displayName="${sitessage}">${path_vgameopt}/gl-hyperbat/startdoigt.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
 	</subset>
 	<subset name="hsmetadata" displayName="${hsmetadata}" appliesTo="hyperbat">
 		<include name="full" displayName="${full}"/>
 		<include name="lower" displayName="${lower}"/>
+		<!-- <include name="metafichedefault" displayName="${metafichedefault}"/> -->
+		<!-- <include name="metafichebasgauche" displayName="${metafichebasgauche}"/> -->
+		<!-- <include name="metafichebasdroite" displayName="${metafichebasdroite}"/> -->
+		<!-- <include name="metafichebascentre" displayName="${metafichebascentre}"/> -->
+		<!-- <include name="metafichehautgauche" displayName="${metafichehautgauche}"/> -->
+		<!-- <include name="metafichehautdroite" displayName="${metafichehautdroite}"/> -->
+		<!-- <include name="metafichehautcentre" displayName="${metafichehautcentre}"/> -->
 		<include name="deactivate" displayName="${desactive}"/>
 	</subset>
 	<subset name="hsperview" displayName="${hyperbatperview}" appliesTo="hyperbat">
@@ -100,12 +151,99 @@
 		<include name="activesmooth" displayName="${activesmooth}"/>
 		<include name="noactivesmooth" displayName="${noactivesmooth}"/>
 	</subset>
-	<subset name="boxorthumb" displayName="${boxorthumb}" appliesTo="hyperbat">
-		<include name="boxart" displayName="${boxart}"/>
-		<include name="thumb" displayName="${thumb}"/>
-	</subset>
 	<subset name="pointeuradroite" displayName="${pointeuradroite}" appliesTo="hyperbat">
-		<include name="actif" displayName="${actif}">${themePath}/_viewsystoption/sl-hyperspin/pointers.xml</include>
+		<include name="actif" displayName="${actif}">${path_vsystopt}/sl-hyperspin/pointers.xml</include>
 		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<!-- <subset name="spacerHS03" displayName=" " appliesTo="hyperbat"> -->
+		<!-- <include name=" " displayName=" "/> -->
+	<!-- </subset> -->
+	<!-- <subset name="spacerscrap" displayName="${spacerscrap}" appliesTo="hyperbat"> -->
+		<!-- <include name="desactive" displayName=" "/> -->
+	<!-- </subset> -->
+	<subset name="spacerHS010" displayName=" " appliesTo="hyperbat">
+		<include name=" " displayName=" "/>
+	</subset>
+	<subset name="spacerextfolder" displayName="${spacerextfolder}" appliesTo="hyperbat">
+		<include name="desactive" displayName=" "/>
+	</subset>
+	<subset name="extfoldergametheme" displayName="${extfoldergametheme}" appliesTo="hyperbat">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<subset name="extfoldergamemedia" displayName="${extfoldergamemedia}" appliesTo="hyperbat">
+	<include name="intheme" displayName="${intheme}"/>
+	<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<subset name="extfoldervideosyst" displayName="${extfoldervideosyst}" appliesTo="hyperbat">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<subset name="extfolderbezelsyst" displayName="${extfolderbezelsyst}" appliesTo="hyperbat">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<subset name="extfoldermanufacturer" displayName="${extfoldermanufacturer}" appliesTo="hyperbat">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<subset name="extfolderfanart" displayName="${extfolderfanart}" appliesTo="hyperbat">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<subset name="extfolderlogosyst" displayName="${extfolderlogosyst}" appliesTo="hyperbat">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+		<subset name="extfoldercouleursinfos" displayName="${extfoldercouleursinfos}" appliesTo="hyperbat">
+		<include name="intheme" displayName="${intheme}"/>
+		<include name="extfolder" displayName="${extfolder}"/>
+	</subset>
+	<!-- ############################################# fanartstar preset boxart ##################################################################################### -->
+	<subset name="spacerHS10" displayName=" " appliesTo="hyperbat">
+		<include name=" " displayName=" "/>
+	</subset>
+	<subset name="spacerstar" displayName="${spacerstar}" appliesTo="presetstarbox">
+		<include name="desactive" displayName=" "/>
+	</subset>
+	<subset name="mediastar" displayName="${mediastar}" appliesTo="presetstarbox">
+		<include name="desactive" displayName=" "/>
+	</subset>
+	<subset name="spacebox" displayName="${spacebox}" appliesTo="presetstarbox">
+		<include name="spacenorm" displayName="${spacenorm}"/>
+		<include name="spacessssmall" displayName="${spacessssmall}"/>
+		<include name="spacesssmall" displayName="${spacesssmall}"/>
+		<include name="spacessmall" displayName="${spacessmall}"/>
+		<include name="spacesmall" displayName="${spacesmall}"/>
+		<include name="spacemore" displayName="${spacemore}"/>
+		<include name="spacemmore" displayName="${spacemmore}"/>
+		<include name="spacemmmore" displayName="${spacemmmore}"/>
+		<include name="spacemmmmore" displayName="${spacemmmmore}"/>
+	</subset>
+	<subset name="fanartstarrotated" displayName="${fanartstarrotated}" appliesTo="presetstarbox">
+		<include name="starrotate" displayName="${starrotate}">./_viewgameoption/gl-fanartstar/rotatedon.xml</include>
+		<include name="nostarrotate" displayName="${nostarrotate}">./_viewgameoption/gl-fanartstar/rotatedoff.xml</include>
+	</subset>
+	<subset name="boxstarspeed" displayName="${boxstarspeed}" appliesTo="presetstarbox">
+		<include name="stardefault" displayName="${default}"/>
+		<include name="starslow1" displayName="${speedslow1}"/>
+		<include name="starslow2" displayName="${speedslow2}"/>
+	</subset>
+	<subset name="customfanart" displayName="${customfanart}" appliesTo="presetstarbox">
+		<include name="fanartgamelist" displayName="${fanartgamelist}"/>
+		<include name="fanartcustom" displayName="${fanartcustom}"/>
+	</subset>
+	<subset name="starboxang" displayName="${starboxang}" appliesTo="presetstarbox">
+		<include name="active" displayName="${active}"/>
+		<include name="deactive" displayName="${deactive}"/>
+	</subset>
+	<subset name="starthumb" displayName="${starthumb}" appliesTo="presetstarbox">
+		<include name="starbox2d" displayName="${starbox2d}">./_viewgameoption/gl-fanartstar/2dbox.xml</include>
+		<include name="starbox3d" displayName="${starbox3d}">./_viewgameoption/gl-fanartstar/3dbox.xml</include>
+	</subset>
+	<subset name="starvideo" displayName="${starvideo}" appliesTo="presetstarbox">
+		<include name="starvideoang" displayName="${starvideoang}"/>
+		<include name="starvideodef" displayName="${starvideodef}"/>
+		<include name="starvideobig" displayName="${starvideobig}"/>
 	</subset>
 </theme>

@@ -20,7 +20,7 @@
 		<!-- </image> -->
 		<!-- ########## Si menu officiel sélectionné ############# -->
 		<text name="arcade" ifSubset="menuofficiel:menutxtzspin" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Arcade</text>
 			<pos>0.055 0.25</pos>
@@ -28,7 +28,7 @@
 			<color if="{system.sortedBy} == 'Arcade'">ffffffff</color>
 		</text>
 		<text name="computer" ifSubset="menuofficiel:menutxtzspin" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Ordinateur</text>
 			<pos>0.055 0.28</pos>
@@ -36,7 +36,7 @@
 			<color if="{system.sortedBy} == 'Computer'">ffffffff</color>
 		</text>
 		<text name="console" ifSubset="menuofficiel:menutxtzspin" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Console</text>
 			<pos>0.055 0.31</pos>
@@ -44,7 +44,7 @@
 			<color if="{system.sortedBy} == 'Console'">ffffffff</color>
 		</text>
 		<text name="extension" ifSubset="menuofficiel:menutxtzspin" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Extension</text>
 			<pos>0.055 0.34</pos>
@@ -52,7 +52,7 @@
 			<color if="{system.sortedBy} == 'Extension'">ffffffff</color>
 		</text>
 		<text name="mess" ifSubset="menuofficiel:menutxtzspin" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Mess</text>
 			<pos>0.055 0.37</pos>
@@ -60,7 +60,7 @@
 			<color if="{system.sortedBy} == 'Mess'">ffffffff</color>
 		</text>
 		<text name="pinball" ifSubset="menuofficiel:menutxtzspin" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Pinball</text>
 			<pos>0.055 0.40</pos>
@@ -68,7 +68,7 @@
 			<color if="{system.sortedBy} == 'Pinball'">ffffffff</color>
 		</text>
 		<text name="port" ifSubset="menuofficiel:menutxtzspin" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Port</text>
 			<pos>0.055 0.43</pos>
@@ -76,7 +76,7 @@
 			<color if="{system.sortedBy} == 'Port'">ffffffff</color>
 		</text>
 		<text name="portable" ifSubset="menuofficiel:menutxtzspin" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Portable</text>
 			<pos>0.055 0.46</pos>
@@ -84,7 +84,7 @@
 			<color if="{system.sortedBy} == 'Portable'">ffffffff</color>
 		</text>
 		<text name="system" ifSubset="menuofficiel:menutxtzspin" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Groupe</text>
 			<pos>0.055 0.49</pos>
@@ -92,7 +92,7 @@
 			<color if="{system.sortedBy} == 'System'">ffffffff</color>
 		</text>
 		<text name="autocollection" ifSubset="menuofficiel:menutxtzspin" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Auto collection </text>
 			<pos>0.055 0.52</pos>
@@ -100,7 +100,7 @@
 			<color if="{system.sortedBy} == 'Auto collection'">ffffffff</color>
 		</text>
 		<text name="customcollecion" ifSubset="menuofficiel:menutxtzspin" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Custom collection </text>
 			<pos>0.055 0.55</pos>
@@ -108,7 +108,7 @@
 			<color if="{system.sortedBy} == 'Custom collection'">ffffffff</color>
 		</text>
 		<text name="retrobat" ifSubset="menuofficiel:menutxtzspin" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Retrobat</text>
 			<pos>0.055 0.58</pos>
@@ -117,7 +117,7 @@
 		</text>
 		<!-- ########## Si menu custom sélectionné ############################################################################# -->
 		<text name="arcade" ifSubset="menuofficiel:menutxtzspincust" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Arcade</text>
 			<pos>0.055 0.25</pos>
@@ -125,7 +125,7 @@
 			<color if="{system.hardwareType} == '1 - arcade'">ffffffff</color>
 		</text>
 		<text name="consolemoderne" ifSubset="menuofficiel:menutxtzspincust" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Console 128bits et +</text>
 			<pos>0.055 0.28</pos>
@@ -133,7 +133,7 @@
 			<color if="{system.hardwareType} == '2 - console moderne'">ffffffff</color>
 		</text>
 		<text name="consoleretro" ifSubset="menuofficiel:menutxtzspincust" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Console retro</text>
 			<pos>0.055 0.31</pos>
@@ -141,7 +141,7 @@
 			<color if="{system.hardwareType} == '3 - console retro'">ffffffff</color>
 		</text>
 		<text name="portable" ifSubset="menuofficiel:menutxtzspincust" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Portable</text>
 			<pos>0.055 0.34</pos>
@@ -149,7 +149,7 @@
 			<color if="{system.hardwareType} == '4 - portable'">ffffffff</color>
 		</text>
 		<text name="ordinateur" ifSubset="menuofficiel:menutxtzspincust" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Ordinateur</text>
 			<pos>0.055 0.37</pos>
@@ -157,7 +157,7 @@
 			<color if="{system.hardwareType} == '5 - Ordinateur'">ffffffff</color>
 		</text>
 		<text name="ordimoderne" ifSubset="menuofficiel:menutxtzspincust" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Ordinateur moderne</text>
 			<pos>0.055 0.4</pos>
@@ -165,7 +165,7 @@
 			<color if="{system.hardwareType} == '6 - ordinateur moderne'">ffffffff</color>
 		</text>
 		<text name="pinball" ifSubset="menuofficiel:menutxtzspincust" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Pinball</text>
 			<pos>0.055 0.43</pos>
@@ -173,7 +173,7 @@
 			<color if="{system.hardwareType} == '7 - pinball'">ffffffff</color>
 		</text>
 		<text name="biblio" ifSubset="menuofficiel:menutxtzspincust" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Bibliothèque</text>
 			<pos>0.055 0.46</pos>
@@ -181,7 +181,7 @@
 			<color if="{system.hardwareType} == 'system'">ffffffff</color>
 		</text>
 		<text name="autocollection" ifSubset="menuofficiel:menutxtzspincust" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Auto collection</text>
 			<pos>0.055 0.49</pos>
@@ -189,7 +189,7 @@
 			<color if="{system.hardwareType} == 'auto collection'">ffffffff</color>
 		</text>
 		<text name="customcollecion" ifSubset="menuofficiel:menutxtzspincust" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Custom collection</text>
 			<pos>0.055 0.52</pos>
@@ -197,7 +197,7 @@
 			<color if="{system.hardwareType} == 'custom collection'">ffffffff</color>
 		</text>
 		<text name="retrobat" ifSubset="menuofficiel:menutxtzspincust" extra="true">
-			<fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath>
+			<fontPath>${fontimpact}</fontPath>
 			<origin>0.5 0.5</origin>
 			<text>Retrobat</text>
 			<pos>0.055 0.55</pos>
@@ -224,7 +224,7 @@
 		<!-- <text if="{system.theme} == 'auto-allgames'">Auto collection Tous les jeux</text> -->
 		<!-- <text if="{system.theme} == 'auto-favorites'">Auto collection Jeux favoris</text> -->
 		<!-- <text if="{system.theme} == 'auto-lastplayed'">Auto collection Joués récemment</text> -->
-		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <fontPath>${fontimpact}</fontPath> -->
 		<!-- <fontSize>0.022</fontSize> -->
 		<!-- <color>ffffffff</color> -->
 		<!-- <origin>0.5 0.5</origin> -->
@@ -261,7 +261,7 @@
 		<!-- <text if="{system.theme} == 'auto-allgames'">Auto collection Tous les jeux</text> -->
 		<!-- <text if="{system.theme} == 'auto-favorites'">Auto collection Jeux favoris</text> -->
 		<!-- <text if="{system.theme} == 'auto-lastplayed'">Auto collection Joués récemment</text> -->
-		<!-- <fontPath>${themePath}/_viewgameoption/gl-coinopsnext/fonts/impact.ttf</fontPath> -->
+		<!-- <fontPath>${fontimpact}</fontPath> -->
 		<!-- <fontSize>0.022</fontSize> -->
 		<!-- <color>ffffffff</color> -->
 		<!-- <origin>0.5 0.5</origin> -->

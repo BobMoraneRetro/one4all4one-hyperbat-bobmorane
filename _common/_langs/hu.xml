@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="hu">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Igen</yes>
+		<no>Nem</no>
+		<desactive>Kikapcsolva</desactive>
+		<activate>Bekapcsolva</activate>
+		<actif>Bekapcsolva</actif>
+		<active>Bekapcsolva</active>
+		<deactive>Kikapcsolva</deactive>
+		<vide>   </vide>
+		<default>Alapértelmezett</default>
+		<amoitie>részben</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Elérhető nyelvek:</languesdispo>
+		<nodates>Nincs dátum</nodates>
+		<playcount>játék</playcount>
+		<playcountone>játék</playcountone>
+		<players>játékos</players>
+		<playerss>játékos</playerss>
+		<player>játékos</player>
+		<nogametime>Soha nem játszott</nogametime>
+		<noplayerdata>Ismeretlen</noplayerdata>
+		<noratings>Nincs értékelés</noratings>
+		<lastgamelabel>Utoljára játszva:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Következő játék</jeusuiv>
+		<jeuprec>Előző játék</jeuprec>
+		<systsuiv>Következő rendszer</systsuiv>
+		<systprec>Előző rendszer</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Üdvözlő üzenet</lismoi>
+		<tumasbienlu>Üdvözlés és köszönetnyilvánítás</tumasbienlu>
+		<deporttheme>Hogyan helyezzem át a saját témáimat</deporttheme>
+		<customiztheme1>Hogyan szabjam testre a témáimat 1/2</customiztheme1>
+		<customiztheme2>Hogyan szabjam testre a témáimat 2/2</customiztheme2>
+		<downloadmore>Linkek további témák és artworkök letöltéséhez</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>A rendszerlista nézete</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Egyszerű rácsnézet</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart nagyon könnyű</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Teszteld a médiáidat</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>SCRAP beállítás - Fanart szerkezet?</packcustombuild>
+		<packcustombuildsno>Fanart "-fanart" utótaggal (alapértelmezett)</packcustombuildsno>
+		<packretrofreshbat>Fanart "-image" utótaggal</packretrofreshbat>
+		<scrap3dbox>Scrape beállítás - 3D doboz szerkezet?</scrap3dbox>
+		<scrapedboxart>3D doboz "-boxart" a gamelistben</scrapedboxart>
+		<scrapedthumbnail>3D doboz "-thumbnail" a gamelistben</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Súgó - A súgóikonok megjelenése</iconset>
+		<iconsetposition>Gombok helyzete</iconsetposition>
+		<colorhelp>Súgó - A súgószöveg színei</colorhelp>
+		<skyblue>égkék</skyblue>
+		<standard>Normál</standard>
+		<purple>lila</purple>
+		<red>piros</red>
+		<aqua>égkék</aqua>
+		<orange>narancs</orange>
+		<green>zöld</green>
+		<yellow>sárga</yellow>
+		<pink>rózsaszín</pink>
+		<grey>sötétszürke</grey>
+		<lightgrey>világosszürke</lightgrey>
+		<navy>kék alt</navy>
+		<violet>lila</violet>
+		<candy>candy</candy>
+		<redalt>piros alt</redalt>
+		<yellowalt>sárga alt</yellowalt>
+		<greenalt>zöld alt</greenalt>
+		<purplealt>lila alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Rendszernézet - Rendszerlogók típusa</systviewlogos>
+		<logosimple>Egyszerű logó (Teljes + Régió)</logosimple>
+		<glassnekhros>Glass logó (Teljes + Régió) (By Nekhros)</glassnekhros>
+		<logobd>Képregény stílusú logó (Helmic)</logobd>
+		<logoovalcarb>Ovális logó Carbon</logoovalcarb>
+		<hmaxovalsilver>Ovális logó Silver</hmaxovalsilver>
+		<logorectfresh>Téglalap logó Team Freshone (külső csomag)</logorectfresh>
+		<hmaxrectrefl>Tükröződő téglalap logó Team Freshone (külső csomag)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Rendszernézet - A rendszerlista elhalványulása</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Rendszernézet - A rendszer fanartjainak kiválasztása</systviewfanart>
+		<fanartfreshone>Csak a FreshOne által válogatott fanartok</fanartfreshone>
+		<fanartsystcustom>Saját fanartok, egyébként FreshOne fanart</fanartsystcustom>
+		<fanfondsystem>Rendszerháttér, egyébként FreshOne fanart</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Rendszernézet - Animált rendszerbemutató</systviewvideo>
+		<hyperspinorunified>ADDON: Dinamikus HS, egyébként egységes HS</hyperspinorunified>
+		<gameplayp1>Kis véletlenszerű játékmenet-videó bezellel, ha van</gameplayp1>
+		<gameplay1>Nagy véletlenszerű játékmenet-videó bezellel, ha van</gameplay1>
+		<gameplayp>Kis véletlenszerű játékmenet-videó</gameplayp>
+		<gameplay>Nagy véletlenszerű játékmenet-videó</gameplay>
+		<custom>Saját videó a custom mappából</custom>
+		<hyperspinxp>ADDON: Kép és játékmenet dinamikus Hyperspin stílusban</hyperspinxp>
+		<hyperspin>ADDON: Kép és játékmenet egységes Hyperspin stílusban</hyperspin>
+		<hyperspinorder>ADDON: Dinamikus HS, egyébként Hyperpie videó</hyperspinorder>
+		<hyperpie>ADDON: Hyperpie videó, egyébként Unified videó, ha van</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Rendszernézet - A rendszer játékszámának megjelenítése</systviewtotal>
+		<nbrjeux>egyszerű játékszám</nbrjeux>
+		<nbrjeux2>rendszernév és játékszám</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Navigációs útvonal megjelenítése</menuofficiel>
+		<menutxt>Hivatalos hardverrendezés: vízszintes szöveg</menutxt>
+		<menuorb>Hivatalos hardverrendezés: vízszintes gömb</menuorb>
+		<menuorbvert>Hivatalos hardverrendezés: függőleges gömb</menuorbvert>
+		<menuorbcrcl>Hivatalos hardverrendezés: félkör gömb</menuorbcrcl>
+		<menucust>Bob saját hardverrendezése: vízszintes szöveg</menucust>
+		<menucustorb>Bob saját hardverrendezése: vízszintes gömb</menucustorb>
+		<menucustorbvert>Bob saját hardverrendezése: függőleges gömb</menucustorbvert>
+		<menucustorbcrcl>Bob saját hardverrendezése: félkör gömb</menucustorbcrcl>
+		<menutxtzspin>Hivatalos hardverrendezés: függőleges szöveg</menutxtzspin>
+		<menutxtzspincust>Bob saját hardverrendezése: függőleges szöveg</menutxtzspincust>
+		<menuteta>Hivatalos hardverrendezés: Tetanos</menuteta>
+		<menucustteta>Bob saját hardverrendezése: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Hyperbat rendszernézet - Animált súgók</sticksysteme>
+		<systballblue>Kék stick</systballblue>
+		<systballcyan>Cián stick</systballcyan>
+		<systballdarkviolet>Sötétlila stick</systballdarkviolet>
+		<systballviolet>Lila stick</systballviolet>
+		<systballgreen>Zöld stick</systballgreen>
+		<systballlitegreen>Világoszöld stick</systballlitegreen>
+		<systballpink>Rózsaszín stick</systballpink>
+		<systballred>Piros stick</systballred>
+		<systballyelgreen>Sárgászöld stick</systballyelgreen>
+		<systballyellow>Sárga stick</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Hyperbat rendszernézet - Menütípus</hyperwheel>
+		<spindr>Ívelt kerék jobbra (Hyperspin)</spindr>
+		<verticaldr>Függőleges kerék jobbra (Hyperspin)</verticaldr>
+		<verticaldreb>Függőleges kerék jobbra (Emubox)</verticaldreb>
+		<spingh>Ívelt kerék balra (Hyperspin)</spingh>
+		<verticalgh>Függőleges kerék balra (Hyperspin)</verticalgh>
+		<verticalgheb>Függőleges kerék balra (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Box-árus Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Box-árus Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Box-árus Hyperspin Chris (fejlesztés alatt)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Játéknézet - Aktuális rendszer megnyitáskor?</systannounce>
+		<classiquesyst>Eltűnés kicsinyítéssel</classiquesyst>
+		<nomsystem2>Lassú belépés (áttűnés + zoom)</nomsystem2>
+		<nomsystem3>Gyors villanás (kicsinyítés)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Játéknézet - Háttér minden játéklogó mögött?</gwheelbackgr>
+		<sisaccades>Kikapcsolva</sisaccades>
+		<ovalcarbon>Carbon ovális (automatikusan generált)</ovalcarbon>
+		<ovalsilver>Silver ovális (automatikusan generált)</ovalsilver>
+		<rectcarbon>Carbon téglalap (automatikusan generált)</rectcarbon>
+		<rectcompose>Rendszerenként egyedi téglalap (automatikusan generált)</rectcompose>
+		<ovalcompose>Rendszerenként egyedi carbon ovális (automatikusan generált)</ovalcompose>
+		<logounified>Egységes méretű logó</logounified>
+		<hfsround>Kerek Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Játéknézet - Navigálás betűk szerint (játékok)?</letternav>
+		<navhoricoinstyle>Vízszintes ábécé</navhoricoinstyle>
+		<navvertcoinstyle>Függőleges ábécé balra</navvertcoinstyle>
+		<navvertrcoinstyle>Függőleges ábécé jobbra</navvertrcoinstyle>
+		<navhsletters>Rendszerenként stilizált betű</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Játéknézet - Maximális információ megjelenítése?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ A Hyperbat nézetek speciális beállításainak kezdete ↓   -------------------</spacerHS02>
+		<mediahyper>----------- A Hyperbat játéknézethez szükséges médiák = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Általános játéktéma (ha nincs téma)</defaultgeneric>
+		<videodefaut>Az általános téma alapértelmezett videója (képernyőkép és videó nélkül)</videodefaut>
+		<generic43boxback>Standard hátsó és elülső dobozmontázzsal</generic43boxback>
+		<generic43coinopsstyle>Arcade gépek gyűjteménye</generic43coinopsstyle>
+		<generic43noanimationfanart>Standard animált fanart háttérrel</generic43noanimationfanart>
+		<generic43noanimation>Standard boxart animáció nélkül</generic43noanimation>
+		<generic43>Standard</generic43>
+		<jukeboxdef>CD megjelenés (befejezetlen)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Játéktéma: Forrásrendszer</gameviewsource>
+		<mamefolder>Először a játék eredeti mappája, majd a mame mappa</mamefolder>
+		<actualsystem>Először a kiválasztott rendszer mappája</actualsystem>
+		<genericstyleonly>Csak az általános játéktéma használata</genericstyleonly>
+		<groupedsystem>Csak fejlesztői teszt: ne használd</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Játéktéma: Szerző</authordisplayed>
+		<showoff>Bekapcsolva, jól látható</showoff>
+		<showoffblackwhite>Bekapcsolva, maximálisan látható</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - A játéklista elhalványulása</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Görgetési hang</gamewheelsound>
+		<wheelclic>Hyperspin stílusú kattanás</wheelclic>
+		<bulle>Buborék</bulle>
+		<clic>Egyszerű kattanás</clic>
+		<clicgrave>Mély kattanás</clicgrave>
+		<frottement>Súrlódás</frottement>
+		<poc>Pukk</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Megjelenés - Vignettahatás</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Megjelenés - Rendszernézet vignetta</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Megjelenés - Háttér sötétítése (rendszernézet)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>MEGJELENÉS - Animált stick választása</syststickon>
+		<stickon>Klasszikus arcade</stickon>
+		<syststickcolor>MEGJELENÉS - A stick gömbjének színe</syststickcolor>
+		<ballcyan>Cián</ballcyan>
+		<ballblue>Kék</ballblue>
+		<balldarkviolet>Sötétlila</balldarkviolet>
+		<ballviolet>Lila</ballviolet>
+		<ballgreen>Zöld</ballgreen>
+		<balllitegreen>Világoszöld</balllitegreen>
+		<ballpink>Rózsaszín</ballpink>
+		<ballred>Piros</ballred>
+		<ballyelgreen>Sárgászöld</ballyelgreen>
+		<ballyellow>Sárga</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - A press start megjelenése</pressstart>
+		<doigts>Gombot nyomó animált ujj</doigts>
+		<undoigt>Gombot nyomó animált ujj csak bal oldalon</undoigt>
+		<undoigtr>Gombot nyomó animált ujj csak jobb oldalon</undoigtr>
+		<pressstarttxt>METADATA - Szöveg választása</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Ingyenes játék</partiegratuite>
+		<uneuro>1€ egy játék</uneuro>
+		<sitessage>Nyomd meg a Startot</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Metaadatok beállítása</hsmetadata>
+		<full>Teljes, alapértelmezett helyzet</full>
+		<lower>Teljes, legalsó helyzet</lower>
+		<metafichedefault>Metaadatkártya alapértelmezett helyzetben</metafichedefault>
+		<metafichebasgauche>Metaadatkártya lent balra</metafichebasgauche>
+		<metafichebasdroite>Metaadatkártya lent jobbra</metafichebasdroite>
+		<metafichebascentre>Metaadatkártya lent középen</metafichebascentre>
+		<metafichehautgauche>Metaadatkártya fent balra</metafichehautgauche>
+		<metafichehautdroite>Metaadatkártya fent jobbra</metafichehautdroite>
+		<metafichehautcentre>Metaadatkártya fent középen</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Játékonkénti témák megjelenítése?</hyperbatperview>
+		<themejeux>Játékonkénti téma elsőbbséggel, ha van</themejeux>
+		<themejeuxno>Játékonkénti téma kikapcsolása</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Megjelenés - Lágy átmenet a játéktémák között</smoothgametheme>
+		<activesmooth>Bekapcsolva (Retrobathoz ajánlott)</activesmooth>
+		<noactivesmooth>Kikapcsolva (Batocerához ajánlott)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Hyperspin stílusú rendszermutatók</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Scrap testreszabása kompatibilis témákhoz ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Megjelenítendő játékdoboz</boxorthumb>
+		<boxart>3D dobozra kalibrálva</boxart>
+		<thumb>2D dobozra kalibrálva</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Speciális beállítás: A médiák forrásmappájának módosítása --------------------------------------------------------</spacerextfolder>
+		<folder>Forrás - ne használd</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Téma mappája - Alapértelmezett</intheme>
+		<extfolder>Külső mappa</extfolder>
+		<extfoldergametheme>Forrás - Játékspecifikus téma</extfoldergametheme>
+		<extfoldergamemedia>Forrás - Játékmédiák a gamelist.xml-en kívül</extfoldergamemedia>
+		<extfoldervideosyst>Forrás - Rendszerspecifikus téma</extfoldervideosyst>
+		<extfolderbezelsyst>Forrás - Rendszer bezelek</extfolderbezelsyst>
+		<extfoldermanufacturer>Forrás - Játékkiadók logói</extfoldermanufacturer>
+		<extfolderfanart>Forrás - Rendszer fanart</extfolderfanart>
+		<extfolderlogosyst>Forrás - Rendszerlogó</extfolderlogosyst>
+		<extfoldercouleursinfos>Forrás - Játékinformációk stílusa</extfoldercouleursinfos>
+		<extfolderthumbox>Forrás - 2D/3D játékdobozok</extfolderthumbox>
+		<extfoldergamefanart>Forrás - Játék fanart</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Ajánlott médiák a Fanart Star játéknézethez = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ A FanartStar boxart nézet speciális beállításainak kezdete ↓   -------------------</mediastar>
+		<spacebox>Térköz a játékdobozok között</spacebox>
+		<spacessssmall>Térköz ----</spacessssmall>
+		<spacesssmall>Térköz ---</spacesssmall>
+		<spacessmall>Térköz --</spacessmall>
+		<spacesmall>Térköz -</spacesmall>
+		<spacenorm>Alapértelmezett</spacenorm>
+		<spacemore>Térköz +</spacemore>
+		<spacemmore>Térköz ++</spacemmore>
+		<spacemmmore>Térköz +++</spacemmmore>
+		<spacemmmmore>Térköz ++++</spacemmmmore>
+		<fanartstarrotated>SNES, N64, NGAGE, Solarus dobozok elforgatása</fanartstarrotated>
+		<starrotate>Igen</starrotate>
+		<nostarrotate>Nem</nostarrotate>
+		<boxstarspeed>A görgetési animáció sebessége</boxstarspeed>
+		<speedslow1>Lassú+</speedslow1>
+		<speedslow2>Lassú++</speedslow2>
+		<customfanart>Használandó fanartok</customfanart>
+		<fanartgamelist>Scrapelt fanart a gamelistben</fanartgamelist>
+		<fanartcustom>Saját fanart a _Gamemedia-RendszerNev-medium_artwork mappában</fanartcustom>
+		<starboxang>A játékdobozok szöge</starboxang>
+		<starthumb>2D vagy 3D borítók megjelenítése?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Előnézeti videó mérete</starvideo>
+		<starvideoang>Döntött</starvideoang>
+		<starvideodef>Standard</starvideodef>
+		<starvideobig>Nagy</starvideobig>
+		<longselect>Hosszú nyomás a "select" gombon</longselect>
+		<favuniquement>Csak kedvencek</favuniquement>
+		<tslesjeux>Összes játék</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Képernyő képaránya</screenratio>
+		<ratio1610>16/10 (kísérleti)</ratio1610>
+		<ratio43>4/3 (kísérleti)</ratio43>
+		<cadrevideosyst>Rendszervideók kerete</cadrevideosyst>
+		<cadreorigine>Eredeti (bezel)</cadreorigine>
+		<cadrebordure>Szegély</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Üdvözlés és köszönetnyilvánítás</planche00>
+		<planche01>01 - Hogyan helyezzem át a saját témáimat</planche01>
+		<planche02>02 - Hogyan szabjam testre a témáimat 1/2</planche02>
+		<planche03>03 - Rendszervideók kerete</planche03>
+		<planche04>04 - Hogyan szabjam testre a témáimat 2/2</planche04>
+		<planche05>05 - Témák letöltése</planche05>
+		<planche06>06 - Rendszertéma hozzáadása</planche06>
+		<planche07>07 - Játéktéma hozzáadása</planche07>
+		<planche08>08 - A témaszerkesztők</planche08>
+		<planche09>09 - 2D vagy 3D doboz és scraping</planche09>
+		<planche10>10 - Morzsamenü és betű szerinti navigáció</planche10>
+		<planche11>11 - Játékinformációk stílusa</planche11>
+		<planche12>12 - 4:3 vagy 16:10 képernyő</planche12>
+		<planche13>13 - Linkek további témák és artworkök letöltéséhez</planche13>
+	</variables>
+</theme>

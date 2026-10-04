@@ -7,9 +7,9 @@
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
 			<linearSmooth>true</linearSmooth>
 			<size>0 0.9</size>
-			<path>./rightart/${system.theme}.png</path>
-			<path>./rightart/${system.theme}_left.png</path>
-			<path>./rightart/${system.theme}_right.png</path>
+			<path>${path_syst_theme}/hyperspin/rightart/${system.theme}.png</path>
+			<path>${path_syst_theme}/hyperspin/rightart/${system.theme}_left.png</path>
+			<path>${path_syst_theme}/hyperspin/rightart/${system.theme}_right.png</path>
 			<scaleOrigin>0 -0.3</scaleOrigin>
 			<pos>0.85 0.515</pos>
 			<pos ifHelpPrompts="false">0.85 0.55</pos>
@@ -24,7 +24,7 @@
 		<image name="fondecransmall" ifSubset="videofondcops1:hyperspin|hyperspinorunified" extra="true">
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
 			<origin>0.52 0.5</origin>
-			<path>${themePath}/_common/images/169v2.png</path>
+			<path>${comcadre169}</path>
 			<size>0.66 0.72</size>
 			<pos>0.5 0.55</pos>
 			<linearSmooth>true</linearSmooth>
@@ -73,7 +73,7 @@
 			<scaleOrigin>0 -0.3</scaleOrigin>
 			<pos>0.5 0.15</pos>
 			<origin>0.5 0.5</origin>
-			<zIndex>1</zIndex>
+			<zIndex>3</zIndex>
 			<storyboard>
 				<animation property="y" from="-0.5" begin="0" duration="2000" mode="easeOut"/>
 				<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
@@ -84,9 +84,9 @@
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
 			<linearSmooth>true</linearSmooth>
 			<size>0 0.9</size>
-			<path>./leftart/${system.theme}.png</path>
-			<path>./leftart/${system.theme}_right.png</path>
-			<path>./leftart/${system.theme}_left.png</path>
+			<path>${path_syst_theme}/hyperspin/leftart/${system.theme}.png</path>
+			<path>${path_syst_theme}/hyperspin/leftart/${system.theme}_right.png</path>
+			<path>${path_syst_theme}/hyperspin/leftart/${system.theme}_left.png</path>
 			<scaleOrigin>0 -0.3</scaleOrigin>
 			<pos>0.15 0.515</pos>
 			<pos ifHelpPrompts="false">0.15 0.55</pos>
@@ -98,6 +98,6 @@
 			</storyboard>
 		</image>
 	</view>
-	<include>./zSpec/${system.theme}.xml</include>
-	<include>./zSpecvideo/${system.theme}.xml</include>
+	<include>${path_syst_theme}/hyperspin/zspec/${system.theme}.xml</include>
+	<include>${path_syst_theme}/hyperspin/zspecvideo/${system.theme}.xml</include>
 </theme>

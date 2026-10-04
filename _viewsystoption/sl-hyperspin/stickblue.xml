@@ -7,8 +7,8 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.499721354166667 0.930180555555556</pos>
 			<maxSize>0.204244791666667 0.0698611111111111</maxSize>
-			<path>${themePath}/_viewsystoption/art/hs_texte/système-suivant.png</path>
-			<path>${themePath}/_viewsystoption/art/hs_texte/système-suivant-${lang}.png</path>
+			<path>${path_vsystopt}/art/hs_texte/système-suivant.png</path>
+			<path>${path_vsystopt}/art/hs_texte/système-suivant-${lang}.png</path>
 			<zIndex>997</zIndex>
 			<color>ffff00</color>
 		</image>
@@ -16,17 +16,17 @@
 			<pos>0.37 0.925</pos>
 			<origin>0.5 1</origin>
 			<size>0.03 0</size>
-			<path ifSubset="sticksysteme:ballblue">${themePath}/_viewgame/hyperbat/stickrvb/ball-blue.png</path>
-			<path ifSubset="sticksysteme:balldarkviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-darkviolet.png</path>
-			<path ifSubset="sticksysteme:ballviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-violet.png</path>
-			<path ifSubset="sticksysteme:ballgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-green.png</path>
-			<path ifSubset="sticksysteme:balllitegreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-litegreen.png</path>
-			<path ifSubset="sticksysteme:ballorange">${themePath}/_viewgame/hyperbat/stickrvb/ball-orange.png</path>
-			<path ifSubset="sticksysteme:ballpink">${themePath}/_viewgame/hyperbat/stickrvb/ball-pink.png</path>
-			<path ifSubset="sticksysteme:ballred">${themePath}/_viewgame/hyperbat/stickrvb/ball-red.png</path>
-			<path ifSubset="sticksysteme:ballyelgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-yelgreen.png</path>
-			<path ifSubset="sticksysteme:ballyellow">${themePath}/_viewgame/hyperbat/stickrvb/ball-yellow.png</path>
-			<path ifSubset="sticksysteme:ballcyan">${themePath}/_viewgame/hyperbat/stickrvb/ball-cyan.png</path>
+			<path ifSubset="sticksysteme:ballblue">${path_vgame}/hyperbat/stickrvb/ball-blue.png</path>
+			<path ifSubset="sticksysteme:balldarkviolet">${path_vgame}/hyperbat/stickrvb/ball-darkviolet.png</path>
+			<path ifSubset="sticksysteme:ballviolet">${path_vgame}/hyperbat/stickrvb/ball-violet.png</path>
+			<path ifSubset="sticksysteme:ballgreen">${path_vgame}/hyperbat/stickrvb/ball-green.png</path>
+			<path ifSubset="sticksysteme:balllitegreen">${path_vgame}/hyperbat/stickrvb/ball-litegreen.png</path>
+			<path ifSubset="sticksysteme:ballorange">${path_vgame}/hyperbat/stickrvb/ball-orange.png</path>
+			<path ifSubset="sticksysteme:ballpink">${path_vgame}/hyperbat/stickrvb/ball-pink.png</path>
+			<path ifSubset="sticksysteme:ballred">${path_vgame}/hyperbat/stickrvb/ball-red.png</path>
+			<path ifSubset="sticksysteme:ballyelgreen">${path_vgame}/hyperbat/stickrvb/ball-yelgreen.png</path>
+			<path ifSubset="sticksysteme:ballyellow">${path_vgame}/hyperbat/stickrvb/ball-yellow.png</path>
+			<path ifSubset="sticksysteme:ballcyan">${path_vgame}/hyperbat/stickrvb/ball-cyan.png</path>
 			<storyboard repeat="forever">
 				<animation property="offsetY" to="0.02" begin="200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
 				<animation property="scale" from="1" to="1.15" begin="200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
@@ -43,7 +43,7 @@
 			<pos>0.365 0.912</pos>
 			<origin>0 0</origin>
 			<size>0.01 0.04</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/stick.png</path>
+			<path>${path_vsystopt}/art/hs_stick/stick.png</path>
 			<rotationOrigin>0.5 1.1</rotationOrigin>
 			<storyboard repeat="forever">
 				<animation property="scale" from="1" to="1.15" begin="200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
@@ -58,14 +58,14 @@
 			<pos>0.37 0.925  </pos>
 			<origin>0.5 0</origin>
 			<size>0.03 0</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/guard.png</path>
+			<path>${path_vsystopt}/art/hs_stick/guard.png</path>
 			<zIndex>990</zIndex>
 		</image>
 		<image name="staticBackground4">
 			<pos>0.37 0.927  </pos>
 			<origin>0.5 0</origin>
 			<size>0.03 0</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/guard-mask.png</path>
+			<path>${path_vsystopt}/art/hs_stick/guard-mask.png</path>
 			<zIndex>997</zIndex>
 		</image>
 		<control name="staticBackground3, staticBackground4, staticBackground20">
@@ -80,8 +80,8 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.499518229166667 1.930180555555556</pos>
 			<maxSize>0.237171875 0.0698611111111111</maxSize>
-			<path>${themePath}/_viewsystoption/art/hs_texte/système-précédent.png</path>
-			<path>${themePath}/_viewsystoption/art/hs_texte/système-précédent-${lang}.png</path>
+			<path>${path_vsystopt}/art/hs_texte/système-précédent.png</path>
+			<path>${path_vsystopt}/art/hs_texte/système-précédent-${lang}.png</path>
 			<zIndex>997</zIndex>
 			<color>ffff00</color>
 		</image>
@@ -89,17 +89,17 @@
 			<pos>0.36 1.925</pos>
 			<origin>0.5 1</origin>
 			<size>0.03 0</size>
-			<path ifSubset="sticksysteme:ballblue">${themePath}/_viewgame/hyperbat/stickrvb/ball-blue.png</path>
-			<path ifSubset="sticksysteme:balldarkviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-darkviolet.png</path>
-			<path ifSubset="sticksysteme:ballviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-violet.png</path>
-			<path ifSubset="sticksysteme:ballgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-green.png</path>
-			<path ifSubset="sticksysteme:balllitegreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-litegreen.png</path>
-			<path ifSubset="sticksysteme:ballorange">${themePath}/_viewgame/hyperbat/stickrvb/ball-orange.png</path>
-			<path ifSubset="sticksysteme:ballpink">${themePath}/_viewgame/hyperbat/stickrvb/ball-pink.png</path>
-			<path ifSubset="sticksysteme:ballred">${themePath}/_viewgame/hyperbat/stickrvb/ball-red.png</path>
-			<path ifSubset="sticksysteme:ballyelgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-yelgreen.png</path>
-			<path ifSubset="sticksysteme:ballyellow">${themePath}/_viewgame/hyperbat/stickrvb/ball-yellow.png</path>
-			<path ifSubset="sticksysteme:ballcyan">${themePath}/_viewgame/hyperbat/stickrvb/ball-cyan.png</path>
+			<path ifSubset="sticksysteme:ballblue">${path_vgame}/hyperbat/stickrvb/ball-blue.png</path>
+			<path ifSubset="sticksysteme:balldarkviolet">${path_vgame}/hyperbat/stickrvb/ball-darkviolet.png</path>
+			<path ifSubset="sticksysteme:ballviolet">${path_vgame}/hyperbat/stickrvb/ball-violet.png</path>
+			<path ifSubset="sticksysteme:ballgreen">${path_vgame}/hyperbat/stickrvb/ball-green.png</path>
+			<path ifSubset="sticksysteme:balllitegreen">${path_vgame}/hyperbat/stickrvb/ball-litegreen.png</path>
+			<path ifSubset="sticksysteme:ballorange">${path_vgame}/hyperbat/stickrvb/ball-orange.png</path>
+			<path ifSubset="sticksysteme:ballpink">${path_vgame}/hyperbat/stickrvb/ball-pink.png</path>
+			<path ifSubset="sticksysteme:ballred">${path_vgame}/hyperbat/stickrvb/ball-red.png</path>
+			<path ifSubset="sticksysteme:ballyelgreen">${path_vgame}/hyperbat/stickrvb/ball-yelgreen.png</path>
+			<path ifSubset="sticksysteme:ballyellow">${path_vgame}/hyperbat/stickrvb/ball-yellow.png</path>
+			<path ifSubset="sticksysteme:ballcyan">${path_vgame}/hyperbat/stickrvb/ball-cyan.png</path>
 			<storyboard repeat="forever">
 				<animation property="offsetY" from="0" to="-1" begin="5000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
 				<animation property="offsetY" to="-1.01" begin="5700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
@@ -117,7 +117,7 @@
 			<pos>0.36 1.912</pos>
 			<origin>0.5 0</origin>
 			<size>0.01 0.04</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/stick.png</path>
+			<path>${path_vsystopt}/art/hs_stick/stick.png</path>
 			<storyboard repeat="forever">
 				<animation property="offsetY" from="0" to="-1" begin="5000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
 				<animation property="scale" from="1" to="0.90" begin="5700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
@@ -132,7 +132,7 @@
 			<pos>0.36 1.932</pos>
 			<origin>0.5 0</origin>
 			<size>0.01 0.02</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/stickstatic.png</path>
+			<path>${path_vsystopt}/art/hs_stick/stickstatic.png</path>
 			<zIndex>997</zIndex>
 			<storyboard repeat="forever">
 				<animation property="offsetY" from="0" to="-1" begin="5000" duration="500" mode="easeOut" autoreverse="" repeat=""/>
@@ -154,14 +154,14 @@
 			<pos>0.36 1.925  </pos>
 			<origin>0.5 0</origin>
 			<size>0.03 0</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/guard.png</path>
+			<path>${path_vsystopt}/art/hs_stick/guard.png</path>
 			<zIndex>995</zIndex>
 		</image>
 		<image name="staticBackground10">
 			<pos>0.36 1.927</pos>
 			<origin>0.5 0</origin>
 			<size>0.03 0</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/guard-mask.png</path>
+			<path>${path_vsystopt}/art/hs_stick/guard-mask.png</path>
 			<zIndex>999</zIndex>
 		</image>
 		<!-- ########### Stick vers l'avant ########## -->
@@ -170,8 +170,8 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.499768229166667 1.930180555555556</pos>
 			<maxSize>0.232463541666667 0.0698611111111111</maxSize>
-			<path>${themePath}/_viewsystoption/art/hs_texte/catégorie-suivante.png</path>
-			<path>${themePath}/_viewsystoption/art/hs_texte/catégorie-suivante-${lang}.png</path>
+			<path>${path_vsystopt}/art/hs_texte/catégorie-suivante.png</path>
+			<path>${path_vsystopt}/art/hs_texte/catégorie-suivante-${lang}.png</path>
 			<zIndex>997</zIndex>
 			<color>ffff00</color>
 		</image>
@@ -179,17 +179,17 @@
 			<pos>0.36 1.925</pos>
 			<origin>0.5 1</origin>
 			<size>0.03 0</size>
-			<path ifSubset="sticksysteme:ballblue">${themePath}/_viewgame/hyperbat/stickrvb/ball-blue.png</path>
-			<path ifSubset="sticksysteme:balldarkviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-darkviolet.png</path>
-			<path ifSubset="sticksysteme:ballviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-violet.png</path>
-			<path ifSubset="sticksysteme:ballgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-green.png</path>
-			<path ifSubset="sticksysteme:balllitegreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-litegreen.png</path>
-			<path ifSubset="sticksysteme:ballorange">${themePath}/_viewgame/hyperbat/stickrvb/ball-orange.png</path>
-			<path ifSubset="sticksysteme:ballpink">${themePath}/_viewgame/hyperbat/stickrvb/ball-pink.png</path>
-			<path ifSubset="sticksysteme:ballred">${themePath}/_viewgame/hyperbat/stickrvb/ball-red.png</path>
-			<path ifSubset="sticksysteme:ballyelgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-yelgreen.png</path>
-			<path ifSubset="sticksysteme:ballyellow">${themePath}/_viewgame/hyperbat/stickrvb/ball-yellow.png</path>
-			<path ifSubset="sticksysteme:ballcyan">${themePath}/_viewgame/hyperbat/stickrvb/ball-cyan.png</path>
+			<path ifSubset="sticksysteme:ballblue">${path_vgame}/hyperbat/stickrvb/ball-blue.png</path>
+			<path ifSubset="sticksysteme:balldarkviolet">${path_vgame}/hyperbat/stickrvb/ball-darkviolet.png</path>
+			<path ifSubset="sticksysteme:ballviolet">${path_vgame}/hyperbat/stickrvb/ball-violet.png</path>
+			<path ifSubset="sticksysteme:ballgreen">${path_vgame}/hyperbat/stickrvb/ball-green.png</path>
+			<path ifSubset="sticksysteme:balllitegreen">${path_vgame}/hyperbat/stickrvb/ball-litegreen.png</path>
+			<path ifSubset="sticksysteme:ballorange">${path_vgame}/hyperbat/stickrvb/ball-orange.png</path>
+			<path ifSubset="sticksysteme:ballpink">${path_vgame}/hyperbat/stickrvb/ball-pink.png</path>
+			<path ifSubset="sticksysteme:ballred">${path_vgame}/hyperbat/stickrvb/ball-red.png</path>
+			<path ifSubset="sticksysteme:ballyelgreen">${path_vgame}/hyperbat/stickrvb/ball-yelgreen.png</path>
+			<path ifSubset="sticksysteme:ballyellow">${path_vgame}/hyperbat/stickrvb/ball-yellow.png</path>
+			<path ifSubset="sticksysteme:ballcyan">${path_vgame}/hyperbat/stickrvb/ball-cyan.png</path>
 			<storyboard repeat="forever">
 				<animation property="offsetY" from="0" to="-1" begin="10500" duration="500" mode="easeOut" autoreverse="" repeat=""/>
 				<animation property="offsetX" to="0.01" begin="10700" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
@@ -204,7 +204,7 @@
 			<pos>0.355 1.912</pos>
 			<origin>0 0</origin>
 			<size>0.01 0.04</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/stick.png</path>
+			<path>${path_vsystopt}/art/hs_stick/stick.png</path>
 			<zIndex>996</zIndex>
 			<rotationOrigin>0.5 1.1</rotationOrigin>
 			<storyboard repeat="forever">
@@ -230,14 +230,14 @@
 			<pos>0.36 1.925</pos>
 			<origin>0.5 0</origin>
 			<size>0.03 0</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/guard.png</path>
+			<path>${path_vsystopt}/art/hs_stick/guard.png</path>
 			<zIndex>995</zIndex>
 		</image>
 		<image name="staticBackground14">
 			<pos>0.36 1.927</pos>
 			<origin>0.5 0</origin>
 			<size>0.03 0</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/guard-mask.png</path>
+			<path>${path_vsystopt}/art/hs_stick/guard-mask.png</path>
 			<zIndex>999</zIndex>
 		</image>
 		<!-- ########### Fin Stick vers la droite = OK ########## -->
@@ -246,8 +246,8 @@
 			<origin>0.5 0.5</origin>
 			<pos>0.501265625 1.930180555555556</pos>
 			<maxSize>0.2656 0.069861</maxSize>
-			<path>${themePath}/_viewsystoption/art/hs_texte/catégorie-précédente.png</path>
-			<path>${themePath}/_viewsystoption/art/hs_texte/catégorie-précédente-${lang}.png</path>
+			<path>${path_vsystopt}/art/hs_texte/catégorie-précédente.png</path>
+			<path>${path_vsystopt}/art/hs_texte/catégorie-précédente-${lang}.png</path>
 			<zIndex>997</zIndex>
 			<color>ffff00</color>
 		</image>
@@ -255,17 +255,17 @@
 			<pos>0.35 1.925</pos>
 			<origin>0.5 1</origin>
 			<size>0.03 0</size>
-			<path ifSubset="sticksysteme:ballblue">${themePath}/_viewgame/hyperbat/stickrvb/ball-blue.png</path>
-			<path ifSubset="sticksysteme:balldarkviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-darkviolet.png</path>
-			<path ifSubset="sticksysteme:ballviolet">${themePath}/_viewgame/hyperbat/stickrvb/ball-violet.png</path>
-			<path ifSubset="sticksysteme:ballgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-green.png</path>
-			<path ifSubset="sticksysteme:balllitegreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-litegreen.png</path>
-			<path ifSubset="sticksysteme:ballorange">${themePath}/_viewgame/hyperbat/stickrvb/ball-orange.png</path>
-			<path ifSubset="sticksysteme:ballpink">${themePath}/_viewgame/hyperbat/stickrvb/ball-pink.png</path>
-			<path ifSubset="sticksysteme:ballred">${themePath}/_viewgame/hyperbat/stickrvb/ball-red.png</path>
-			<path ifSubset="sticksysteme:ballyelgreen">${themePath}/_viewgame/hyperbat/stickrvb/ball-yelgreen.png</path>
-			<path ifSubset="sticksysteme:ballyellow">${themePath}/_viewgame/hyperbat/stickrvb/ball-yellow.png</path>
-			<path ifSubset="sticksysteme:ballcyan">${themePath}/_viewgame/hyperbat/stickrvb/ball-cyan.png</path>
+			<path ifSubset="sticksysteme:ballblue">${path_vgame}/hyperbat/stickrvb/ball-blue.png</path>
+			<path ifSubset="sticksysteme:balldarkviolet">${path_vgame}/hyperbat/stickrvb/ball-darkviolet.png</path>
+			<path ifSubset="sticksysteme:ballviolet">${path_vgame}/hyperbat/stickrvb/ball-violet.png</path>
+			<path ifSubset="sticksysteme:ballgreen">${path_vgame}/hyperbat/stickrvb/ball-green.png</path>
+			<path ifSubset="sticksysteme:balllitegreen">${path_vgame}/hyperbat/stickrvb/ball-litegreen.png</path>
+			<path ifSubset="sticksysteme:ballorange">${path_vgame}/hyperbat/stickrvb/ball-orange.png</path>
+			<path ifSubset="sticksysteme:ballpink">${path_vgame}/hyperbat/stickrvb/ball-pink.png</path>
+			<path ifSubset="sticksysteme:ballred">${path_vgame}/hyperbat/stickrvb/ball-red.png</path>
+			<path ifSubset="sticksysteme:ballyelgreen">${path_vgame}/hyperbat/stickrvb/ball-yelgreen.png</path>
+			<path ifSubset="sticksysteme:ballyellow">${path_vgame}/hyperbat/stickrvb/ball-yellow.png</path>
+			<path ifSubset="sticksysteme:ballcyan">${path_vgame}/hyperbat/stickrvb/ball-cyan.png</path>
 			<storyboard repeat="forever">
 				<animation property="offsetX" to="-0.01" begin="15200" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
 				<animation property="offsetX" to="-0.01" begin="17000" duration="150" mode="easeIn" autoreverse="true" repeat="3"/>
@@ -279,7 +279,7 @@
 			<pos>0.345 1.912</pos>
 			<origin>0 0</origin>
 			<size>0.01 0.04</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/stick.png</path>
+			<path>${path_vsystopt}/art/hs_stick/stick.png</path>
 			<zIndex>996</zIndex>
 			<rotationOrigin>0.5 1.1</rotationOrigin>
 			<storyboard repeat="forever">
@@ -297,14 +297,14 @@
 			<pos>0.35 1.925</pos>
 			<origin>0.5 0</origin>
 			<size>0.03 0</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/guard.png</path>
+			<path>${path_vsystopt}/art/hs_stick/guard.png</path>
 			<zIndex>995</zIndex>
 		</image>
 		<image name="staticBackground35">
 			<pos>0.35 1.927</pos>
 			<origin>0.5 0</origin>
 			<size>0.03 0</size>
-			<path>${themePath}/_viewsystoption/art/hs_stick/guard-mask.png</path>
+			<path>${path_vsystopt}/art/hs_stick/guard-mask.png</path>
 			<zIndex>997</zIndex>
 		</image>
 		<control name="staticBackground26, staticBackground35, staticBackground24">

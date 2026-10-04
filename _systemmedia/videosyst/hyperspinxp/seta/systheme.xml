@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+		</image>
+		<image name="artwork2" extra="true">
+			<path>./machine.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>2</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="0.5" to="0" begin="0" duration="982" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{random}</path>
+			<pos>0.500000000000 0.538882674621</pos>
+			<size>0.433333333333 0.585185185185</size>
+			<origin>0.5 0.5</origin>
+			<scaleOrigin>0 0</scaleOrigin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>3</zIndex>
+			<shader>
+				<path>./_common/shaders/border_multi_gradient.glsl</path>
+				<cornerRadius/>
+				<innerShadowSize/>
+				<innerShadowColor/>
+				<outerShadowSize/>
+				<outerShadowColor/>
+				<gradientMode/>
+				<saturation/>
+				<borderPad>16</borderPad>
+				<borderOffset>0</borderOffset>
+				<borderLayout>0</borderLayout>
+				<borderPos1>0</borderPos1>
+				<borderPos2>0</borderPos2>
+				<borderPos3>0</borderPos3>
+				<borderSize>9</borderSize>
+				<borderColor>00080aff</borderColor>
+				<borderColorStart/>
+				<borderColorEnd/>
+				<borderSize2>7</borderSize2>
+				<borderColor2>eff0f1ff</borderColor2>
+				<borderColorStart2/>
+				<borderColorEnd2/>
+				<borderSize3/>
+				<borderColor3/>
+				<borderColorStart3/>
+				<borderColorEnd3/>
+			</shader>
+			<storyboard>
+				<animation property="scale" from="0 1" to="0 1" begin="" duration="" mode="Linear"/>
+				<animation property="scale" from="0 1" to="1 1.0066887372474829" begin="173" duration="1200" mode="EaseOut"/>
+			</storyboard>
+		</video>
+		<!--image name="Videobezel" extra="true">
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.552777777778</pos>
+			<size>0.447916666667 0.612962962963</size>
+			<zIndex>4</zIndex>
+			<scaleOrigin>0.036163522012578615 0.030211480362537766</scaleOrigin>
+			<rotationOrigin>0.5 0.4788519637462236</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="scale" from="0 1" to="0 1" begin="" duration="" mode="Linear"/>
+				<animation property="scale" from="0 1" to="1 1" begin="173" duration="1200" mode="EaseOut"/>
+			</storyboard>
+		</image-->
+		<image name="artwork1" extra="true">
+			<path>./mic.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.540603270257 0.540603270257</pos>
+			<size>1.081206540514 1.081206540514</size>
+			<zIndex>5</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="-0.5" to="0" begin="0" duration="1081" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="artwork3" extra="true">
+			<path>./cart.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.499500000000 0.500000000000</pos>
+			<size>0.999000000000 1.000000000000</size>
+			<zIndex>6</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="0.5" to="0.5" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="0.5" to="0" begin="164" duration="884" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="logo" extra="true">
+			<path>./logo.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.119982809725</pos>
+			<size>0.433720991411 0.514039693524</size>
+			<zIndex>7</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetY" from="-0.5" to="0" begin="0" duration="500" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>Theme by : Huhe-8554</text>
+		</text>
+	</view>
+</theme>

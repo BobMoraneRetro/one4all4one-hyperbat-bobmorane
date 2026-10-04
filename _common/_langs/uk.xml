@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="uk">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Так</yes>
+		<no>Ні</no>
+		<desactive>Вимкнено</desactive>
+		<activate>Увімкнено</activate>
+		<actif>Увімкнено</actif>
+		<active>Увімкнено</active>
+		<deactive>Вимкнено</deactive>
+		<vide>   </vide>
+		<default>Типово</default>
+		<amoitie>частково</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Доступні мови:</languesdispo>
+		<nodates>Немає дати</nodates>
+		<playcount>ігор</playcount>
+		<playcountone>гра</playcountone>
+		<players>гравець(і)</players>
+		<playerss>гравці</playerss>
+		<player>гравець</player>
+		<nogametime>Жодного разу не грали</nogametime>
+		<noplayerdata>Невідомо</noplayerdata>
+		<noratings>Немає оцінки</noratings>
+		<lastgamelabel>Остання гра:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Наступна гра</jeusuiv>
+		<jeuprec>Попередня гра</jeuprec>
+		<systsuiv>Наступна система</systsuiv>
+		<systprec>Попередня система</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Вітальне повідомлення</lismoi>
+		<tumasbienlu>Вітання та подяки</tumasbienlu>
+		<deporttheme>Як перенести мої власні теми</deporttheme>
+		<customiztheme1>Як налаштувати мої теми 1/2</customiztheme1>
+		<customiztheme2>Як налаштувати мої теми 2/2</customiztheme2>
+		<downloadmore>Посилання для завантаження нових тем і артів</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Вигляд списку систем</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Проста сітка</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart дуже легкий</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Перевір свої медіа</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>Налаштування SCRAP - Структура фанартів?</packcustombuild>
+		<packcustombuildsno>Фанарт із суфіксом "-fanart" (типово)</packcustombuildsno>
+		<packretrofreshbat>Фанарт із суфіксом "-image"</packretrofreshbat>
+		<scrap3dbox>Налаштування scrape - Структура 3D-коробки?</scrap3dbox>
+		<scrapedboxart>3D-коробка з "-boxart" у gamelist</scrapedboxart>
+		<scrapedthumbnail>3D-коробка з "-thumbnail" у gamelist</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Довідка - Вигляд значків довідки</iconset>
+		<iconsetposition>Розташування кнопок</iconsetposition>
+		<colorhelp>Довідка - Кольори тексту довідки</colorhelp>
+		<skyblue>небесно-блакитний</skyblue>
+		<standard>Стандартний</standard>
+		<purple>фіолетовий</purple>
+		<red>червоний</red>
+		<aqua>небесно-блакитний</aqua>
+		<orange>помаранчевий</orange>
+		<green>зелений</green>
+		<yellow>жовтий</yellow>
+		<pink>рожевий</pink>
+		<grey>темно-сірий</grey>
+		<lightgrey>світло-сірий</lightgrey>
+		<navy>синій alt</navy>
+		<violet>фіолетовий</violet>
+		<candy>candy</candy>
+		<redalt>червоний alt</redalt>
+		<yellowalt>жовтий alt</yellowalt>
+		<greenalt>зелений alt</greenalt>
+		<purplealt>фіолетовий alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Вигляд систем - Тип логотипів систем</systviewlogos>
+		<logosimple>Простий логотип (Повний + Регіон)</logosimple>
+		<glassnekhros>Логотип Glass (Повний + Регіон) (By Nekhros)</glassnekhros>
+		<logobd>Логотип у стилі коміксу (Helmic)</logobd>
+		<logoovalcarb>Овальний логотип Carbon</logoovalcarb>
+		<hmaxovalsilver>Овальний логотип Silver</hmaxovalsilver>
+		<logorectfresh>Прямокутний логотип Team Freshone (зовнішній пак)</logorectfresh>
+		<hmaxrectrefl>Прямокутний логотип з відблиском Team Freshone (зовнішній пак)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Вигляд систем - Зникнення списку систем</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Вигляд систем - Вибір фанартів системи</systviewfanart>
+		<fanartfreshone>Лише фанарти, відібрані FreshOne</fanartfreshone>
+		<fanartsystcustom>Власні фанарти, інакше фанарт FreshOne</fanartsystcustom>
+		<fanfondsystem>Фон системи, інакше фанарт FreshOne</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Вигляд систем - Анімована презентація системи</systviewvideo>
+		<hyperspinorunified>ADDON: Динамічний HS, інакше єдиний HS</hyperspinorunified>
+		<gameplayp1>Мале випадкове відео геймплею з рамкою (bezel), якщо є</gameplayp1>
+		<gameplay1>Велике випадкове відео геймплею з рамкою (bezel), якщо є</gameplay1>
+		<gameplayp>Мале випадкове відео геймплею</gameplayp>
+		<gameplay>Велике випадкове відео геймплею</gameplay>
+		<custom>Власне відео з теки custom</custom>
+		<hyperspinxp>ADDON: Зображення та геймплей у стилі динамічного Hyperspin</hyperspinxp>
+		<hyperspin>ADDON: Зображення та геймплей у стилі єдиного Hyperspin</hyperspin>
+		<hyperspinorder>ADDON: Динамічний HS, інакше відео Hyperpie</hyperspinorder>
+		<hyperpie>ADDON: Відео Hyperpie, інакше відео Unified, якщо є</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Вигляд систем - Показувати кількість ігор системи</systviewtotal>
+		<nbrjeux>проста кількість ігор</nbrjeux>
+		<nbrjeux2>назва системи та кількість ігор</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Відображення навігаційного ланцюжка</menuofficiel>
+		<menutxt>Офіційне сортування за залізом: горизонтальний текст</menutxt>
+		<menuorb>Офіційне сортування за залізом: горизонтальні сфери</menuorb>
+		<menuorbvert>Офіційне сортування за залізом: вертикальні сфери</menuorbvert>
+		<menuorbcrcl>Офіційне сортування за залізом: сфери півколом</menuorbcrcl>
+		<menucust>Власне сортування за залізом від Bob: горизонтальний текст</menucust>
+		<menucustorb>Власне сортування за залізом від Bob: горизонтальні сфери</menucustorb>
+		<menucustorbvert>Власне сортування за залізом від Bob: вертикальні сфери</menucustorbvert>
+		<menucustorbcrcl>Власне сортування за залізом від Bob: сфери півколом</menucustorbcrcl>
+		<menutxtzspin>Офіційне сортування за залізом: вертикальний текст</menutxtzspin>
+		<menutxtzspincust>Власне сортування за залізом від Bob: вертикальний текст</menutxtzspincust>
+		<menuteta>Офіційне сортування за залізом: Tetanos</menuteta>
+		<menucustteta>Власне сортування за залізом від Bob: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Вигляд систем Hyperbat - Анімовані підказки</sticksysteme>
+		<systballblue>Стік: Синій</systballblue>
+		<systballcyan>Стік: Блакитний</systballcyan>
+		<systballdarkviolet>Стік: Темно-фіолетовий</systballdarkviolet>
+		<systballviolet>Стік: Фіолетовий</systballviolet>
+		<systballgreen>Стік: Зелений</systballgreen>
+		<systballlitegreen>Стік: Світло-зелений</systballlitegreen>
+		<systballpink>Стік: Рожевий</systballpink>
+		<systballred>Стік: Червоний</systballred>
+		<systballyelgreen>Стік: Жовто-зелений</systballyelgreen>
+		<systballyellow>Стік: Жовтий</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Вигляд систем Hyperbat - Тип меню</hyperwheel>
+		<spindr>Вигнуте колесо праворуч (Hyperspin)</spindr>
+		<verticaldr>Вертикальне колесо праворуч (Hyperspin)</verticaldr>
+		<verticaldreb>Вертикальне колесо праворуч (Emubox)</verticaldreb>
+		<spingh>Вигнуте колесо ліворуч (Hyperspin)</spingh>
+		<verticalgh>Вертикальне колесо ліворуч (Hyperspin)</verticalgh>
+		<verticalgheb>Вертикальне колесо ліворуч (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Продавець приставок Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Продавець приставок Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Продавець приставок Hyperspin Chris (у розробці)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Вигляд ігор - Поточна система під час відкриття?</systannounce>
+		<classiquesyst>Зникнення з віддаленням</classiquesyst>
+		<nomsystem2>Повільна поява (згасання + зум)</nomsystem2>
+		<nomsystem3>Швидкий спалах (зум назовні)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Вигляд ігор - Фон під кожним логотипом гри?</gwheelbackgr>
+		<sisaccades>Вимкнено</sisaccades>
+		<ovalcarbon>Овал carbon (створюється автоматично)</ovalcarbon>
+		<ovalsilver>Овал silver (створюється автоматично)</ovalsilver>
+		<rectcarbon>Прямокутник carbon (створюється автоматично)</rectcarbon>
+		<rectcompose>Власний прямокутник для кожної системи (автоматично)</rectcompose>
+		<ovalcompose>Власний овал carbon для кожної системи (автоматично)</ovalcompose>
+		<logounified>Логотип єдиного розміру</logounified>
+		<hfsround>Круглий Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Вигляд ігор - Навігація за літерами (ігри)?</letternav>
+		<navhoricoinstyle>Горизонтальний алфавіт</navhoricoinstyle>
+		<navvertcoinstyle>Вертикальний алфавіт ліворуч</navvertcoinstyle>
+		<navvertrcoinstyle>Вертикальний алфавіт праворуч</navvertrcoinstyle>
+		<navhsletters>Літера у стилі системи</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Вигляд ігор - Показувати максимум інформації?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Початок розширених налаштувань для виглядів Hyperbat ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Медіа, потрібні для вигляду ігор Hyperbat = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Загальна тема ігор (якщо теми немає)</defaultgeneric>
+		<videodefaut>Типове відео загальної теми (без знімка екрана та відео)</videodefaut>
+		<generic43boxback>Стандарт із монтажем задньої та передньої сторони коробки</generic43boxback>
+		<generic43coinopsstyle>Колекція аркадних автоматів</generic43coinopsstyle>
+		<generic43noanimationfanart>Стандарт з анімованим фанартом на тлі</generic43noanimationfanart>
+		<generic43noanimation>Стандарт без анімації boxart</generic43noanimation>
+		<generic43>Стандарт</generic43>
+		<jukeboxdef>Вигляд компакт-диска (не завершено)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Тема ігор: Вихідна система</gameviewsource>
+		<mamefolder>Спершу вихідна тека гри, потім тека mame</mamefolder>
+		<actualsystem>Спершу тека вибраної системи</actualsystem>
+		<genericstyleonly>Використовувати лише загальну тему ігор</genericstyleonly>
+		<groupedsystem>Лише для тестів розробника: не використовувати</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Тема ігор: Автор</authordisplayed>
+		<showoff>Увімкнено, висока помітність</showoff>
+		<showoffblackwhite>Увімкнено, максимальна помітність</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Зникнення списку ігор</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Звук прокручування</gamewheelsound>
+		<wheelclic>Клацання в стилі Hyperspin</wheelclic>
+		<bulle>Бульбашка</bulle>
+		<clic>Просте клацання</clic>
+		<clicgrave>Глухе клацання</clicgrave>
+		<frottement>Тертя</frottement>
+		<poc>Хлопок</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Вигляд - Ефект віньєтки</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Вигляд - Віньєтка вигляду систем</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Вигляд - Затемнити фон (вигляд систем)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>ВИГЛЯД - Вибір анімованого стіка</syststickon>
+		<stickon>Класична аркада</stickon>
+		<syststickcolor>ВИГЛЯД - Колір кульки стіка</syststickcolor>
+		<ballcyan>Блакитний</ballcyan>
+		<ballblue>Синій</ballblue>
+		<balldarkviolet>Темно-фіолетовий</balldarkviolet>
+		<ballviolet>Фіолетовий</ballviolet>
+		<ballgreen>Зелений</ballgreen>
+		<balllitegreen>Світло-зелений</balllitegreen>
+		<ballpink>Рожевий</ballpink>
+		<ballred>Червоний</ballred>
+		<ballyelgreen>Жовто-зелений</ballyelgreen>
+		<ballyellow>Жовтий</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Вигляд напису press start</pressstart>
+		<doigts>Анімований палець натискає кнопку</doigts>
+		<undoigt>Анімований палець натискає кнопку лише ліворуч</undoigt>
+		<undoigtr>Анімований палець натискає кнопку лише праворуч</undoigtr>
+		<pressstarttxt>METADATA - Вибір тексту</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Безкоштовна гра</partiegratuite>
+		<uneuro>1€ за гру</uneuro>
+		<sitessage>Натисни Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Налаштування метаданих</hsmetadata>
+		<full>Повністю, типове розташування</full>
+		<lower>Повністю, найнижче розташування</lower>
+		<metafichedefault>Картка метаданих у типовому розташуванні</metafichedefault>
+		<metafichebasgauche>Картка метаданих унизу ліворуч</metafichebasgauche>
+		<metafichebasdroite>Картка метаданих унизу праворуч</metafichebasdroite>
+		<metafichebascentre>Картка метаданих унизу по центру</metafichebascentre>
+		<metafichehautgauche>Картка метаданих угорі ліворуч</metafichehautgauche>
+		<metafichehautdroite>Картка метаданих угорі праворуч</metafichehautdroite>
+		<metafichehautcentre>Картка метаданих угорі по центру</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Показувати теми для окремих ігор?</hyperbatperview>
+		<themejeux>Тема гри в пріоритеті, якщо є</themejeux>
+		<themejeuxno>Вимкнути теми для окремих ігор</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Вигляд - Плавний перехід між темами ігор</smoothgametheme>
+		<activesmooth>Увімкнено (рекомендовано для Retrobat)</activesmooth>
+		<noactivesmooth>Вимкнено (рекомендовано для Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Покажчики системи в стилі Hyperspin</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Налаштування scrap для сумісних тем ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Коробка гри для відображення</boxorthumb>
+		<boxart>Під 3D-коробку</boxart>
+		<thumb>Під 2D-коробку</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Розширене налаштування: Зміна вихідної теки медіа --------------------------------------------------------</spacerextfolder>
+		<folder>Джерело - не використовувати</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Тека теми - Типово</intheme>
+		<extfolder>Зовнішня тека</extfolder>
+		<extfoldergametheme>Джерело - Теми для окремих ігор</extfoldergametheme>
+		<extfoldergamemedia>Джерело - Медіа ігор поза gamelist.xml</extfoldergamemedia>
+		<extfoldervideosyst>Джерело - Теми для окремих систем</extfoldervideosyst>
+		<extfolderbezelsyst>Джерело - Рамки (bezel) систем</extfolderbezelsyst>
+		<extfoldermanufacturer>Джерело - Логотипи видавців ігор</extfoldermanufacturer>
+		<extfolderfanart>Джерело - Фанарт систем</extfolderfanart>
+		<extfolderlogosyst>Джерело - Логотип системи</extfolderlogosyst>
+		<extfoldercouleursinfos>Джерело - Стиль інформації про ігри</extfoldercouleursinfos>
+		<extfolderthumbox>Джерело - 2D/3D-коробки ігор</extfolderthumbox>
+		<extfoldergamefanart>Джерело - Фанарт ігор</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Рекомендовані медіа для вигляду ігор Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ Початок розширених налаштувань для вигляду FanartStar boxart ↓   -------------------</mediastar>
+		<spacebox>Відстань між коробками ігор</spacebox>
+		<spacessssmall>Відстань ----</spacessssmall>
+		<spacesssmall>Відстань ---</spacesssmall>
+		<spacessmall>Відстань --</spacessmall>
+		<spacesmall>Відстань -</spacesmall>
+		<spacenorm>Типово</spacenorm>
+		<spacemore>Відстань +</spacemore>
+		<spacemmore>Відстань ++</spacemmore>
+		<spacemmmore>Відстань +++</spacemmmore>
+		<spacemmmmore>Відстань ++++</spacemmmmore>
+		<fanartstarrotated>Поворот коробок SNES, N64, NGAGE, Solarus</fanartstarrotated>
+		<starrotate>Так</starrotate>
+		<nostarrotate>Ні</nostarrotate>
+		<boxstarspeed>Швидкість анімації прокручування</boxstarspeed>
+		<speedslow1>Повільно+</speedslow1>
+		<speedslow2>Повільно++</speedslow2>
+		<customfanart>Фанарти для використання</customfanart>
+		<fanartgamelist>Фанарт зі scrap у gamelist</fanartgamelist>
+		<fanartcustom>Власний фанарт у _Gamemedia-НазваСистеми-medium_artwork</fanartcustom>
+		<starboxang>Кут коробок ігор</starboxang>
+		<starthumb>Показувати 2D чи 3D обкладинки?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Розмір відео попереднього перегляду</starvideo>
+		<starvideoang>Нахилене</starvideoang>
+		<starvideodef>Стандарт</starvideodef>
+		<starvideobig>Велике</starvideobig>
+		<longselect>Довге натискання "select"</longselect>
+		<favuniquement>Лише обране</favuniquement>
+		<tslesjeux>Усі ігри</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Співвідношення сторін екрана</screenratio>
+		<ratio1610>16/10 (експериментально)</ratio1610>
+		<ratio43>4/3 (експериментально)</ratio43>
+		<cadrevideosyst>Рамка системних відео</cadrevideosyst>
+		<cadreorigine>Оригінал (bezel)</cadreorigine>
+		<cadrebordure>Обведення</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Вітання та подяки</planche00>
+		<planche01>01 - Як перенести мої власні теми</planche01>
+		<planche02>02 - Як налаштувати мої теми 1/2</planche02>
+		<planche03>03 - Рамка системних відео</planche03>
+		<planche04>04 - Як налаштувати мої теми 2/2</planche04>
+		<planche05>05 - Завантаження тем</planche05>
+		<planche06>06 - Додавання теми системи</planche06>
+		<planche07>07 - Додавання теми гри</planche07>
+		<planche08>08 - Редактори тем</planche08>
+		<planche09>09 - 2D- або 3D-коробка та скрейпінг</planche09>
+		<planche10>10 - Навігаційний ланцюжок і навігація за літерами</planche10>
+		<planche11>11 - Стиль інформації про ігри</planche11>
+		<planche12>12 - Екран 4:3 або 16:10</planche12>
+		<planche13>13 - Посилання для завантаження нових тем і артів</planche13>
+	</variables>
+</theme>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="Background_Sys" extra="true">
+			<path>./background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="Artwork1_Sys" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500260416667 0.178703703704</pos>
+			<size>0.581770833333 0.314814814815</size>
+			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivé Zoom Elastic # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1500" mode="Linear"/>
+				<animation property="scale" from="0" to="1" begin="650" duration="1500" mode="easeIn"/>
+				<animation property="h" from="0.314814814815" to="0.2" begin="2150" duration="100" mode="bump"/>
+				<animation property="h" from="0.2" to="0.314814814815" begin="2250" duration="100" mode="bump"/>
+				<animation property="w" from="0.581770833333" to="0.2" begin="2200" duration="100" mode="bump"/>
+				<animation property="w" from="0.2" to="0.581770833333" begin="2300" duration="100" mode="bump"/>
+				<animation property="w" from="0.581770833333" to="0.35" begin="2400" duration="100" mode="bump"/>
+				<animation property="w" from="0.35" to="0.581770833333" begin="2500" duration="100" mode="bump"/>
+			</storyboard>
+		</image>
+		<image name="-Artwork5_Sys" extra="true">
+			<path>./-Artwork5.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.501361933946 0.577056457206</pos>
+			<size>0.410282601294 0.544773578481</size>
+			<zIndex>3</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée en rotation # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1200" duration="500" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="1200" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<pos>0.501456512692 0.575543197266</pos>
+			<size>0.400257254190 0.533676338920</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>4</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<storyboard>
+				<!-- # Arrivée Fade # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+		</video>
+		<image name="video_Sys" extra="true">
+			<path>./video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500794461469 0.583613916947</pos>
+			<size>0.489728748156 0.660790173899</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée en rotation # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1200" duration="500" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="1200" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3_Sys" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.206805656763 0.688887312576</pos>
+			<size>0.359133955678 0.639303774323</size>
+			<zIndex>6</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée G->D Bump Retour smooth # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="450" duration="1250" mode="Linear"/>
+				<animation property="offsetX" from="-0.5" to="0.05" begin="450" duration="800" mode="easeInOut"/>
+				<animation property="offsetX" from="0.05" to="-0.03" begin="1250" duration="500" autoreverse="false" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.03" to="0.02" begin="1750" duration="500" autoreverse="false" mode="easeInOut"/>
+				<animation property="offsetX" from="0.02" to="-0.01" begin="2250" duration="500" autoreverse="false" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.01" to="0.005" begin="2750" duration="500" autoreverse="false" mode="easeInOut"/>
+				<animation property="offsetX" from="0.005" to="-0.002" begin="3250" duration="500" autoreverse="false" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.002" to="0" begin="3750" duration="500" autoreverse="false" mode="bump"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2_Sys" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.819015231568 0.773726339550</pos>
+			<size>0.350537449133 0.433693363094</size>
+			<zIndex>7</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée D->G Bump Retour smooth # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="450" duration="1250" mode="Linear"/>
+				<animation property="offsetX" from="0.5" to="-0.05" begin="450" duration="800" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.05" to="0.03" begin="1250" duration="500" autoreverse="false" mode="easeInOut"/>
+				<animation property="offsetX" from="0.03" to="-0.02" begin="1750" duration="500" autoreverse="false" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.02" to="0.01" begin="2250" duration="500" autoreverse="false" mode="easeInOut"/>
+				<animation property="offsetX" from="0.01" to="-0.005" begin="2750" duration="500" autoreverse="false" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.005" to="0.002" begin="3250" duration="500" autoreverse="false" mode="easeInOut"/>
+				<animation property="offsetX" from="0.002" to="0" begin="3750" duration="500" autoreverse="false" mode="bump"/>
+			</storyboard>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Roni</text>
+		</text>
+	</view>
+</theme>

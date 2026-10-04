@@ -188,8 +188,8 @@
 		<image name="logosytempergame-sufami" extra="true">
 			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sufami'</visible>
 			<path>firstfile(
-			"${themePath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + ({game:region}) + ".png",
-			"${themePath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path>
+			"${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + "-" + ({game:region}) + ".png",
+			"${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + ".png")</path>
 			<maxSize>0.55 0.12</maxSize>
 			<scaleOrigin>0 -0.3</scaleOrigin>
 			<pos>0.4 0.068</pos>

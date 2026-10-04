@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Option "Cadre des videos systeme" = Bordure (subset cadrevideosyst de theme.xml) -->
+	<!-- S'applique aux vues systeme generiques _systemmedia/videosyst/hyperspin/<systeme>.xml -->
+	<!-- (elements communs aux 936 fichiers : fondecransmall, bezel, hsgameplay). -->
+	<!-- Charge par videosyst.xml (juste apres les vues generiques) uniquement en mode hyperspin/hyperspinorunified : -->
+	<!-- les modes "gameplay" utilisent aussi les noms fondecransmall et bezel, il ne faut pas les toucher. -->
+	<view name="system">
+		<!-- Fond noir 16/9 (${comcadre169}) : masque -->
+		<image name="fondecransmall" extra="true">
+			<visible>false</visible>
+		</image>
+		<!-- Bezel du systeme (${intbezelsyst}) : masque -->
+		<image name="bezel" extra="true">
+			<visible>false</visible>
+		</image>
+		<!-- Video : bordure arrondie, degrade gris a l'exterieur, noir a l'interieur -->
+		<video name="hsgameplay" extra="true">
+		<offsetY>0.02</offsetY>
+			<shader>
+				<path>./_common/shaders/border_multi_gradient.glsl</path>
+				<cornerRadius>31</cornerRadius>
+				<innerShadowSize>13</innerShadowSize>
+				<innerShadowColor>00000026</innerShadowColor>
+				<outerShadowSize>10</outerShadowSize>
+				<outerShadowColor>0000003d</outerShadowColor>
+				<!-- <gradientMode/> -->
+				<!-- <saturation/> -->
+				<borderPad>42</borderPad>
+				<borderOffset>0</borderOffset>
+				<borderLayout>0</borderLayout>
+				<borderPos1>0</borderPos1>
+				<borderPos2>0</borderPos2>
+				<borderPos3>0</borderPos3>
+				<borderSize>13</borderSize>
+				<borderColor>9e9e9eff</borderColor>
+				<borderColorStart>9e9e9eff</borderColorStart>
+				<borderColorEnd>e3e3e3</borderColorEnd>
+				<borderSize2>19</borderSize2>
+				<borderColor2>212121ff</borderColor2>
+				<!-- <borderColorStart2/> -->
+				<!-- <borderColorEnd2/> -->
+				<!-- <borderSize3/> -->
+				<!-- <borderColor3/> -->
+				<!-- <borderColorStart3/> -->
+				<!-- <borderColorEnd3/> -->
+			</shader>
+		</video>
+	</view>
+</theme>

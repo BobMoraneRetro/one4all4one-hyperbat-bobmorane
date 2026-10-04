@@ -10,7 +10,7 @@
 			<pos ifSubset="hyperwheel:verticaldr">0.33 0</pos>
 			<pos ifSubset="hyperwheel:verticaldreb">0.39 0</pos>
 			<pos ifSubset="hyperwheel:verticalgheb">-0.39 0</pos>
-			<pos ifSubset="hyperwheel:spindr|verticalghkk">0.33 0</pos>
+			<pos ifSubset="hyperwheel:spindr|verticalghkk">0.31 0</pos>
 			<color>00000000</color>
 			<colorEnd>00000000</colorEnd>
 			<logoScale ifSubset="hyperwheel:spingh|verticaldr|verticalgh">1.4</logoScale>
@@ -31,37 +31,216 @@
 			<minLogoOpacity>1</minLogoOpacity>
 			<transitionSpeed>650</transitionSpeed>
 			<zIndex>105</zIndex>
-			<scrollSound ifSubset="gamewheelsound:bulle">${themePath}/_common/scrollsound/bulle.wav</scrollSound>
-			<scrollSound ifSubset="gamewheelsound:clic">${themePath}/_common/scrollsound/clic.wav</scrollSound>
-			<scrollSound ifSubset="gamewheelsound:clicgrave">${themePath}/_common/scrollsound/clicgrave.wav</scrollSound>
-			<scrollSound ifSubset="gamewheelsound:frottement">${themePath}/_common/scrollsound/frottement.wav</scrollSound>
-			<scrollSound ifSubset="gamewheelsound:poc">${themePath}/_common/scrollsound/poc.wav</scrollSound>
-			<scrollSound ifSubset="gamewheelsound:wheelclic">${themePath}/_common/scrollsound/wheelclic.wav</scrollSound>
+			<!-- <scrollSound>${themePath}/_common/scrollsound/wheelclic.wav</scrollSound> -->
+			<scrollSound ifSubset="gamewheelsound:bulle">${path_common}/scrollsound/bulle.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clic">${path_common}/scrollsound/clic.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clicgrave">${path_common}/scrollsound/clicgrave.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:frottement">${path_common}/scrollsound/frottement.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:poc">${path_common}/scrollsound/poc.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:wheelclic">${path_common}/scrollsound/wheelclic.wav</scrollSound>
+			<itemTemplate>
+				<container>
+					<image name="logo" ifSubset="systemlogocops1:logosimple" pos="0.5 0.5" origin="0.5" maxSize="1" linearSmooth="true">
+					<visible ifSubset="systemlogocops1:logobd|logoovalcarb|logoovalcarbfresh|hmaxovalsilver|logorect|logorectfresh|hmaxrectrefl|glassnekhros">false</visible>
+						<path>${intlogoclearallregion}</path>
+						<storyboard event="activate" ifSubset="systemwheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="systemwheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="systemwheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate" ifSubset="systemwheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="systemwheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="systemwheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+					</image>
+					<image name="logo" ifSubset="systemlogocops1:logobd|logoovalcarb|logoovalcarbfresh|hmaxovalsilver|logorect|logorectfresh|hmaxrectrefl|glassnekhros" pos="0.5 0.5" origin="0.5" maxSize="1" linearSmooth="true">
+						<visible ifSubset="systemlogocops1:logosimple">false</visible>
+						<path ifSubset="systemlogocops1:logobd">			${extlogobd}</path>
+						<path ifSubset="systemlogocops1:logoovalcarb">		${extlogohcarbon}</path>
+						<path ifSubset="systemlogocops1:hmaxovalsilver">	${exthmaxovalsilver}</path>
+						<path ifSubset="systemlogocops1:logorect">			${extlogohrect}</path>
+						<path ifSubset="systemlogocops1:logoovalcarbfresh">	${extlogohcarbonfresh}</path>
+						<path ifSubset="systemlogocops1:logorectfresh">		${extlogohrectfresh}</path>
+						<path ifSubset="systemlogocops1:hmaxrectrefl">		${exthmaxrectrefl}</path>
+						<path ifSubset="systemlogocops1:glassnekhros">		${extglassnekhros}</path>
+						<storyboard event="activate" ifSubset="systemwheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="systemwheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="systemwheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate" ifSubset="systemwheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="systemwheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="systemwheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+					</image>
+					<text name="logoText" pos="0.5 0.5" origin="0.5 0.5" size="0.9 0.15" alignment="center" color="FFFFFFFF" fontSize="0.05">
+						<text>{system:name}</text>
+						<visible ifSubset="systemlogocops1:logosimple">!exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")
+    </visible>
+						<visible ifSubset="systemlogocops1:logobd">!exists("${path_syst_logo}/comic/lang-${lang}/" + {system:theme} + "-${lang}.png") &amp;&amp;
+        !exists("${path_syst_logo}/comic/region-${region}/" + {system:theme} + "-${region}.png") &amp;&amp;
+        !exists("${path_syst_logo}/comic/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")
+    </visible>
+						<visible ifSubset="systemlogocops1:logoovalcarb">!exists("${path_syst_logo}/hmaxcarbon/lang-${lang}/" + {system:theme} + "-${lang}.png") &amp;&amp;
+        !exists("${path_syst_logo}/hmaxcarbon/region-${region}/" + {system:theme} + "-${region}.png") &amp;&amp;
+        !exists("${path_syst_logo}/hmaxcarbon/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")
+    </visible>
+						<visible ifSubset="systemlogocops1:hmaxovalsilver">!exists("${path_syst_logo}/hmaxovalsilver/lang-${lang}/" + {system:theme} + "-${lang}.png") &amp;&amp;
+        !exists("${path_syst_logo}/hmaxovalsilver/region-${region}/" + {system:theme} + "-${region}.png") &amp;&amp;
+        !exists("${path_syst_logo}/hmaxovalsilver/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")
+    </visible>
+						<visible ifSubset="systemlogocops1:logorect">!exists("${path_syst_logo}/hmaxrect/lang-${lang}/" + {system:theme} + "-${lang}.png") &amp;&amp;
+        !exists("${path_syst_logo}/hmaxrect/region-${region}/" + {system:theme} + "-${region}.png") &amp;&amp;
+        !exists("${path_syst_logo}/hmaxrect/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")
+    </visible>
+						<visible ifSubset="systemlogocops1:logoovalcarbfresh">!exists("${path_syst_logo}/hmaxcarbonfresh/lang-${lang}/" + {system:theme} + "-${lang}.png") &amp;&amp;
+        !exists("${path_syst_logo}/hmaxcarbonfresh/region-${region}/" + {system:theme} + "-${region}.png") &amp;&amp;
+        !exists("${path_syst_logo}/hmaxcarbonfresh/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")
+    </visible>
+						<visible ifSubset="systemlogocops1:logorectfresh">!exists("${path_syst_logo}/hmaxrectfresh/lang-${lang}/" + {system:theme} + "-${lang}.png") &amp;&amp;
+        !exists("${path_syst_logo}/hmaxrectfresh/region-${region}/" + {system:theme} + "-${region}.png") &amp;&amp;
+        !exists("${path_syst_logo}/hmaxrectfresh/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")
+    </visible>
+						<visible ifSubset="systemlogocops1:hmaxrectrefl">!exists("${path_syst_logo}/hmaxrectrefl/lang-${lang}/" + {system:theme} + "-${lang}.png") &amp;&amp;
+        !exists("${path_syst_logo}/hmaxrectrefl/region-${region}/" + {system:theme} + "-${region}.png") &amp;&amp;
+        !exists("${path_syst_logo}/hmaxrectrefl/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")
+    </visible>
+						<visible ifSubset="systemlogocops1:glassnekhros">!exists("${path_syst_logo}/nekhglass/lang-${lang}/" + {system:theme} + "-${lang}.png") &amp;&amp;
+        !exists("${path_syst_logo}/nekhglass/region-${region}/" + {system:theme} + "-${region}.png") &amp;&amp;
+        !exists("${path_syst_logo}/nekhglass/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".png") &amp;&amp;
+        !exists("${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")
+    </visible>
+					</text>
+					<!-- <extlogobd>				firstfile( -->
+					<!-- "${path_syst_logo}/comic/lang-${lang}/" + {system:theme} + "-${lang}.png", -->
+					<!-- "${path_syst_logo}/comic/region-${region}/" + {system:theme} + "-${region}.png", -->
+					<!-- "${path_syst_logo}/comic/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</extlogobd> -->
+					<!-- <extlogohcarbon>		firstfile( -->
+					<!-- "${path_syst_logo}/hmaxcarbon/lang-${lang}/" + {system:theme} + "-${lang}.png", -->
+					<!-- "${path_syst_logo}/hmaxcarbon/region-${region}/" + {system:theme} + "-${region}.png", -->
+					<!-- "${path_syst_logo}/hmaxcarbon/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</extlogohcarbon> -->
+					<!-- <exthmaxovalsilver>		firstfile( -->
+					<!-- "${path_syst_logo}/hmaxovalsilver/lang-${lang}/" + {system:theme} + "-${lang}.png", -->
+					<!-- "${path_syst_logo}/hmaxovalsilver/region-${region}/" + {system:theme} + "-${region}.png", -->
+					<!-- "${path_syst_logo}/hmaxovalsilver/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</exthmaxovalsilver> -->
+					<!-- <extlogohrect>			firstfile( -->
+					<!-- "${path_syst_logo}/hmaxrect/lang-${lang}/" + {system:theme} + "-${lang}.png", -->
+					<!-- "${path_syst_logo}/hmaxrect/region-${region}/" + {system:theme} + "-${region}.png", -->
+					<!-- "${path_syst_logo}/hmaxrect/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</extlogohrect> -->
+					<!-- <extlogohrectfresh>		firstfile( -->
+					<!-- "${path_syst_logo}/hmaxrectfresh/lang-${lang}/" + {system:theme} + "-${lang}.png", -->
+					<!-- "${path_syst_logo}/hmaxrectfresh/region-${region}/" + {system:theme} + "-${region}.png", -->
+					<!-- "${path_syst_logo}/hmaxrectfresh/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</extlogohrectfresh> -->
+					<!-- <exthmaxrectrefl>		firstfile( -->
+					<!-- "${path_syst_logo}/hmaxrectrefl/lang-${lang}/" + {system:theme} + "-${lang}.png", -->
+					<!-- "${path_syst_logo}/hmaxrectrefl/region-${region}/" + {system:theme} + "-${region}.png", -->
+					<!-- "${path_syst_logo}/hmaxrectrefl/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</exthmaxrectrefl> -->
+					<!-- <extlogohcarbonfresh>	firstfile( -->
+					<!-- "${path_syst_logo}/hmaxcarbonfresh/lang-${lang}/" + {system:theme} + "-${lang}.png", -->
+					<!-- "${path_syst_logo}/hmaxcarbonfresh/region-${region}/" + {system:theme} + "-${region}.png", -->
+					<!-- "${path_syst_logo}/hmaxcarbonfresh/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</extlogohcarbonfresh> -->
+					<!-- <extglassnekhros>		firstfile( -->
+					<!-- "${path_syst_logo}/nekhglass/lang-${lang}/" + {system:theme} + "-${lang}.png", -->
+					<!-- "${path_syst_logo}/nekhglass/region-${region}/" + {system:theme} + "-${region}.png", -->
+					<!-- "${path_syst_logo}/nekhglass/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".png", -->
+					<!-- "${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</extglassnekhros> -->
+				</container>
+			</itemTemplate>
 		</carousel>
-		<image name="logo">
-			<storyboard event="activate">
-				<animation property="opacity" to="0" begin="800" duration="150" mode="linear"/>
-			</storyboard>
-			<storyboard event="scroll">
-				<animation property="opacity" to="0" begin="800" duration="150" mode="linear"/>
-			</storyboard>
-			<storyboard event="deactivate">
-				<animation property="opacity" to="0" begin="800" duration="150" mode="linear"/>
-			</storyboard>
-		</image>
-		<text name="logoText">
-			<storyboard event="activate">
-				<animation property="opacity" to="0" begin="800" duration="150" mode="linear"/>
-			</storyboard>
-			<storyboard event="scroll">
-				<animation property="opacity" to="0" begin="800" duration="150" mode="linear"/>
-			</storyboard>
-			<storyboard event="deactivate">
-				<animation property="opacity" to="0" begin="800" duration="150" mode="linear"/>
-			</storyboard>
-		</text>
+		<!-- <image name="logo"> -->
+		<!-- <path>firstfile( -->
+		<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + ({game:region}) + ".png", -->
+		<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path> -->
+		<!-- <storyboard event="activate"> -->
+		<!-- <animation property="opacity" to="0" begin="800" duration="150" mode="linear"/> -->
+		<!-- </storyboard> -->
+		<!-- <storyboard event="scroll"> -->
+		<!-- <animation property="opacity" to="0" begin="800" duration="150" mode="linear"/> -->
+		<!-- </storyboard> -->
+		<!-- <storyboard event="deactivate"> -->
+		<!-- <animation property="opacity" to="0" begin="800" duration="150" mode="linear"/> -->
+		<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- <text name="logoText"> -->
+		<!-- <storyboard event="activate"> -->
+		<!-- <animation property="opacity" to="1" begin="0" duration="150" mode="linear"/> -->
+		<!-- </storyboard> -->
+		<!-- <storyboard event="scroll"> -->
+		<!-- <animation property="opacity" to="1" begin="0" duration="150" mode="linear"/> -->
+		<!-- </storyboard> -->
+		<!-- <storyboard event="deactivate"> -->
+		<!-- <animation property="opacity" to="0" begin="0" duration="150" mode="linear"/> -->
+		<!-- </storyboard> -->
+		<!-- </text> -->
 		<image name="vignetage2" extra="true">
-			<path>${themePath}/hyperbat/overlaydiamonds.png</path>
+			<visible ifSubset="vignettagesyst:deactivate">false</visible>
+			<visible ifSubset="vignettagesyst:activate">true</visible>
+			<path>${path_vsyst}/hyperbat/overlaydiamonds.png</path>
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
@@ -74,7 +253,9 @@
 			</storyboard>
 		</image>
 		<image name="bgmask" extra="true">
-			<path>${themePath}/hyperbat/bgmask.png</path>
+			<visible ifSubset="bgmasksyst:deactivate">false</visible>
+			<visible ifSubset="bgmasksyst:activate">true</visible>
+			<path>${path_vsyst}/hyperbat/bgmask.png</path>
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
@@ -83,7 +264,7 @@
 		</image>
 		<text name="systhemeauthor" ifSubset="authordisplayed:activate|showoff|showoffblackwhite|deactivate" extra="true">
 			<alignment>left</alignment>
-			<fontPath>${themePath}/_viewsyst/hyperbat/teko-bold.ttf</fontPath>
+			<fontPath>${fonttekobold}</fontPath>
 			<size>0.2 0</size>
 			<pos>0.01 0</pos>
 			<size>0.2 0</size>

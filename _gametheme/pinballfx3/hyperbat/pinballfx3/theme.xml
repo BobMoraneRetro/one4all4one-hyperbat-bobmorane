@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8'?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/Background.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500370896465 0.526594650206</pos>
+			<size>1.041145833333 1.086111111111</size>
+			<zIndex>100</zIndex>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>${extsubsystvideo}</path>
+			<pos>0.490838322428 0.492803030303</pos>
+			<maxSize>0.556770833333 0.554629629630</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>200</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+		</video>
+		<image name="PreviewScreen" extra="true">
+			<visible>${ifnosubsystvideo}</visible>
+			<path>${extsubsystimage}</path>
+			<pos>0.490838322428 0.492803030303</pos>
+			<maxSize>0.556770833333 0.554629629630</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>200</zIndex>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="Linear" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="Linear" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Video" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/Video.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.471583017677 0.504727833895</pos>
+			<size>0.741145833333 0.749074074074</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Artwork3" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/Artwork3.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.178267045455 0.599738121960</pos>
+			<size>0.432291666667 0.807407407407</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear" />
+				<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear" />
+				<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear" />
+				<animation property="offsetX" from="1" to="0" begin="650" duration="500" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Artwork4" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/Artwork4.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.789622790404 0.575487881927</pos>
+			<size>0.426046927609 0.881615494494</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear" />
+				<animation property="offsetX" from="-1" to="0" begin="650" duration="500" mode="Linear" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear" />
+				<animation property="offsetX" from="-1" to="0" begin="650" duration="500" mode="Linear" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear" />
+				<animation property="offsetX" from="-1" to="0" begin="650" duration="500" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Artwork2" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/Artwork2.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.507373211279 0.131219603442</pos>
+			<size>0.592187500000 0.166666666667</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1500" mode="Linear" />
+				<animation property="scale" from="0" to="1" begin="650" duration="1500" mode="easeIn" />
+				<animation property="h" from="0.166666666667" to="0.2" begin="2150" duration="100" mode="bump" />
+				<animation property="h" from="0.2" to="0.166666666667" begin="2250" duration="100" mode="bump" />
+				<animation property="w" from="0.592187500000" to="0.2" begin="2200" duration="100" mode="bump" />
+				<animation property="w" from="0.2" to="0.592187500000" begin="2300" duration="100" mode="bump" />
+				<animation property="w" from="0.592187500000" to="0.35" begin="2400" duration="100" mode="bump" />
+				<animation property="w" from="0.35" to="0.592187500000" begin="2500" duration="100" mode="bump" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1500" mode="Linear" />
+				<animation property="scale" from="0" to="1" begin="650" duration="1500" mode="easeIn" />
+				<animation property="h" from="0.166666666667" to="0.2" begin="2150" duration="100" mode="bump" />
+				<animation property="h" from="0.2" to="0.166666666667" begin="2250" duration="100" mode="bump" />
+				<animation property="w" from="0.592187500000" to="0.2" begin="2200" duration="100" mode="bump" />
+				<animation property="w" from="0.2" to="0.592187500000" begin="2300" duration="100" mode="bump" />
+				<animation property="w" from="0.592187500000" to="0.35" begin="2400" duration="100" mode="bump" />
+				<animation property="w" from="0.35" to="0.592187500000" begin="2500" duration="100" mode="bump" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1500" mode="Linear" />
+				<animation property="scale" from="0" to="1" begin="650" duration="1500" mode="easeIn" />
+				<animation property="h" from="0.166666666667" to="0.2" begin="2150" duration="100" mode="bump" />
+				<animation property="h" from="0.2" to="0.166666666667" begin="2250" duration="100" mode="bump" />
+				<animation property="w" from="0.592187500000" to="0.2" begin="2200" duration="100" mode="bump" />
+				<animation property="w" from="0.2" to="0.592187500000" begin="2300" duration="100" mode="bump" />
+				<animation property="w" from="0.592187500000" to="0.35" begin="2400" duration="100" mode="bump" />
+				<animation property="w" from="0.35" to="0.592187500000" begin="2500" duration="100" mode="bump" />
+			</storyboard>
+		</image>
+		<image name="Artwork1" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/Artwork1.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.480103114478 0.799873737374</pos>
+			<size>0.231250000000 0.199074074074</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>260</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>260</zIndex>
+		</image>
+		<control name="Artwork1, Artwork2, Artwork3, Artwork4, PreviewScreen, PreviewVid, Video, Videobezel">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn" />
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear" />
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn" />
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear" />
+			</storyboard>
+		</control>
+	</customView>
+</theme>

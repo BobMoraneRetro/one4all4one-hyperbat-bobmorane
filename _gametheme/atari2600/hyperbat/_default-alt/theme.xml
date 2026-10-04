@@ -19,7 +19,7 @@
 			<zIndex>200</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<shader>
-				<path>${bobmediapath}/_common/shaders/wave.glsl</path>
+				<path>${path_com_shaders}/wave.glsl</path>
 				<waveTime>0</waveTime>
 			</shader>
 			<storyboard event="open">
@@ -68,7 +68,7 @@
 		<image name="logo-atari2600" extra="true">
 			<visible>${IfnoextGamethemeexist} &amp;&amp; 
             {game:system:theme} == 'atari2600' &amp;&amp;
-            !exists("${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>
+            !exists("${path_game_theme}/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>
 			<path>./logo.png</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.087330779270 0.628447991666</pos>
@@ -90,7 +90,7 @@
 		</image>
 		<image name="logo_jeu-atari2600" extra="true">
 			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'atari2600'</visible>
-            <path>"${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
+            <path>"${path_game_theme}/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.087330779270 0.628447991666</pos>
 			<size>0.153615589713 0.514221193660</size>

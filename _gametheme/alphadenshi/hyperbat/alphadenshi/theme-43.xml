@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 4:3 generee le 2026-09-29 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<include>./theme.xml</include>
+	<customView name="hyperbat">
+		<image name="-Artwork5" extra="true">
+			<pos>0.720690046533 0.627446988613</pos>
+			<size>0.471002156395 0.47365036129</size>
+		</image>
+		<image name="PreviewScreen" extra="true">
+			<pos>0.721946554733 0.627292588809</pos>
+			<size>0.459895833333 0.459722222222</size>
+		</image>
+		<image name="Video" extra="true">
+			<pos>0.720877844456 0.630754643816</pos>
+			<size>0.528125 0.551388888889</size>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<pos>0.721946554733 0.627292588809</pos>
+			<maxSize>0.459895833333 0.459722222222</maxSize>
+		</video>
+		<image name="Background" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<text name="gamethemeauthor" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</text>
+		<image name="md_cartridge" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="md_boxart" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+	</customView>
+</theme>

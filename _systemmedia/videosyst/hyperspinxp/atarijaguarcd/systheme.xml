@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Finch</text>
+		</text>
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<!-- ################ Logo Système ##################### -->
+		<image name="Background_Sys" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.503787878788 0.515525626637</pos>
+			<size>1.005892255892 1.040029928919</size>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="Video-image_Sys" extra="true">
+			<path>./Video-image.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.228 0.41</pos>
+			<size>0.375 0.55</size>
+			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<pos>0.228 0.391</pos>
+			<maxSize>0.380471380471 0.668911335578</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>3</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+		</video>
+		<image name="Video_Sys" extra="true">
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.238891519360 0.47</pos>
+			<size>0.510416666667 0.836111111111</size>
+			<zIndex>4</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork1_Sys" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.670875420875 0.603067714179</pos>
+			<size>0.658249158249 0.805087916199</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrival Right to Left # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="2000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="2000" mode="Linear"/>
+			</storyboard>
+		</image>
+		<!-- <image name="Particle1_Sys" extra="true"> -->
+			<!-- <path>./Particle1.png</path> -->
+			<!-- <origin>0.5 0.5</origin> -->
+			<!-- <pos>0.860624473906 0.921656378601</pos> -->
+			<!-- <size>0.106770833333 0.197222222222</size> -->
+			<!-- <zIndex>6</zIndex> -->
+			<!-- <linearSmooth>true</linearSmooth> -->
+			<!-- <storyboard> -->
+				<!-- # Quick Appearance # -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/> -->
+				<!-- <animation property="scale" to="1" begin="650" duration="500" autoreverse="false" mode="linear"/> -->
+			<!-- </storyboard> -->
+		<!-- </image> -->
+		<image name="Artwork2_Sys" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.896885521886 0.933782267116</pos>
+			<size>0.187710437710 0.110736999626</size>
+			<zIndex>7</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Fade In # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3_Sys" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.625649726431 0.122769360269</pos>
+			<size>0.298437500000 0.191666666667</size>
+			<zIndex>8</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrival Top to Bottom # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="650" duration="1000" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4_Sys" extra="true">
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.787397411616 0.096174710064</pos>
+			<size>0.084895833333 0.105555555556</size>
+			<zIndex>9</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrival Top to Bottom # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="650" duration="1000" mode="Linear"/>
+			</storyboard>
+		</image>
+	</view>
+</theme>

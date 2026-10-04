@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="el">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Ναι</yes>
+		<no>Όχι</no>
+		<desactive>Απενεργοποιημένο</desactive>
+		<activate>Ενεργοποιημένο</activate>
+		<actif>Ενεργοποιημένο</actif>
+		<active>Ενεργοποιημένο</active>
+		<deactive>Απενεργοποιημένο</deactive>
+		<vide>   </vide>
+		<default>Προεπιλογή</default>
+		<amoitie>μερικώς</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Διαθέσιμες γλώσσες:</languesdispo>
+		<nodates>Χωρίς ημερομηνία</nodates>
+		<playcount>παιχνίδια</playcount>
+		<playcountone>παιχνίδι</playcountone>
+		<players>παίκτης(-ες)</players>
+		<playerss>παίκτες</playerss>
+		<player>παίκτης</player>
+		<nogametime>Δεν παίχτηκε ποτέ</nogametime>
+		<noplayerdata>Άγνωστο</noplayerdata>
+		<noratings>Χωρίς βαθμολογία</noratings>
+		<lastgamelabel>Τελευταίο παιχνίδι:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Επόμενο παιχνίδι</jeusuiv>
+		<jeuprec>Προηγούμενο παιχνίδι</jeuprec>
+		<systsuiv>Επόμενο σύστημα</systsuiv>
+		<systprec>Προηγούμενο σύστημα</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Μήνυμα καλωσορίσματος</lismoi>
+		<tumasbienlu>Καλωσόρισμα και ευχαριστίες</tumasbienlu>
+		<deporttheme>Πώς να μεταφέρω τα προσαρμοσμένα θέματά μου</deporttheme>
+		<customiztheme1>Πώς να προσαρμόσω τα θέματά μου 1/2</customiztheme1>
+		<customiztheme2>Πώς να προσαρμόσω τα θέματά μου 2/2</customiztheme2>
+		<downloadmore>Σύνδεσμοι για λήψη περισσότερων θεμάτων και artworks</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Προβολή για τη λίστα συστημάτων</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Βασική προβολή πλέγματος</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart πολύ ελαφρύ</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Δοκίμασε τα μέσα σου</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>Ρύθμιση SCRAP - Δομή fanart;</packcustombuild>
+		<packcustombuildsno>Fanart με κατάληξη "-fanart" (προεπιλογή)</packcustombuildsno>
+		<packretrofreshbat>Fanart με κατάληξη "-image"</packretrofreshbat>
+		<scrap3dbox>Ρύθμιση scrape - Δομή κουτιού 3D;</scrap3dbox>
+		<scrapedboxart>Κουτί 3D με "-boxart" στο gamelist</scrapedboxart>
+		<scrapedthumbnail>Κουτί 3D με "-thumbnail" στο gamelist</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Βοήθεια - Εμφάνιση εικονιδίων βοήθειας</iconset>
+		<iconsetposition>Θέση κουμπιών</iconsetposition>
+		<colorhelp>Βοήθεια - Χρώματα κειμένου βοήθειας</colorhelp>
+		<skyblue>γαλάζιο</skyblue>
+		<standard>Τυπικό</standard>
+		<purple>βιολετί</purple>
+		<red>κόκκινο</red>
+		<aqua>γαλάζιο</aqua>
+		<orange>πορτοκαλί</orange>
+		<green>πράσινο</green>
+		<yellow>κίτρινο</yellow>
+		<pink>ροζ</pink>
+		<grey>σκούρο γκρι</grey>
+		<lightgrey>ανοιχτό γκρι</lightgrey>
+		<navy>μπλε alt</navy>
+		<violet>βιολετί</violet>
+		<candy>candy</candy>
+		<redalt>κόκκινο alt</redalt>
+		<yellowalt>κίτρινο alt</yellowalt>
+		<greenalt>πράσινο alt</greenalt>
+		<purplealt>βιολετί alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Προβολή συστημάτων - Τύπος λογοτύπων συστήματος</systviewlogos>
+		<logosimple>Απλό λογότυπο (Πλήρες + Περιοχή)</logosimple>
+		<glassnekhros>Λογότυπο Glass (Πλήρες + Περιοχή) (By Nekhros)</glassnekhros>
+		<logobd>Λογότυπο σε στυλ κόμικ (Helmic)</logobd>
+		<logoovalcarb>Οβάλ λογότυπο Carbon</logoovalcarb>
+		<hmaxovalsilver>Οβάλ λογότυπο Silver</hmaxovalsilver>
+		<logorectfresh>Ορθογώνιο λογότυπο Team Freshone (εξωτερικό πακέτο)</logorectfresh>
+		<hmaxrectrefl>Ορθογώνιο λογότυπο με αντανάκλαση Team Freshone (εξωτερικό πακέτο)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Προβολή συστημάτων - Εξαφάνιση λίστας συστημάτων</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Προβολή συστημάτων - Επιλογή fanart συστήματος</systviewfanart>
+		<fanartfreshone>Μόνο fanart επιλεγμένα από το FreshOne</fanartfreshone>
+		<fanartsystcustom>Προσαρμοσμένα fanart, αλλιώς fanart FreshOne</fanartsystcustom>
+		<fanfondsystem>Φόντο συστήματος, αλλιώς fanart FreshOne</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Προβολή συστημάτων - Κινούμενη παρουσίαση συστήματος</systviewvideo>
+		<hyperspinorunified>ADDON: Δυναμικό HS, αλλιώς ενιαίο HS</hyperspinorunified>
+		<gameplayp1>Μικρό τυχαίο βίντεο gameplay με bezel αν υπάρχει</gameplayp1>
+		<gameplay1>Μεγάλο τυχαίο βίντεο gameplay με bezel αν υπάρχει</gameplay1>
+		<gameplayp>Μικρό τυχαίο βίντεο gameplay</gameplayp>
+		<gameplay>Μεγάλο τυχαίο βίντεο gameplay</gameplay>
+		<custom>Προσωπικό βίντεο από τον φάκελο custom</custom>
+		<hyperspinxp>ADDON: Εικόνα και gameplay σε στυλ δυναμικού Hyperspin</hyperspinxp>
+		<hyperspin>ADDON: Εικόνα και gameplay σε στυλ ενιαίου Hyperspin</hyperspin>
+		<hyperspinorder>ADDON: Δυναμικό HS, αλλιώς βίντεο Hyperpie</hyperspinorder>
+		<hyperpie>ADDON: Βίντεο Hyperpie, αλλιώς βίντεο Unified αν υπάρχει</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Προβολή συστημάτων - Εμφάνιση αριθμού παιχνιδιών συστήματος</systviewtotal>
+		<nbrjeux>απλός αριθμός παιχνιδιών</nbrjeux>
+		<nbrjeux2>όνομα συστήματος και αριθμός παιχνιδιών</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Εμφάνιση διαδρομής πλοήγησης</menuofficiel>
+		<menutxt>Επίσημη ταξινόμηση υλικού: οριζόντιο κείμενο</menutxt>
+		<menuorb>Επίσημη ταξινόμηση υλικού: οριζόντιες σφαίρες</menuorb>
+		<menuorbvert>Επίσημη ταξινόμηση υλικού: κάθετες σφαίρες</menuorbvert>
+		<menuorbcrcl>Επίσημη ταξινόμηση υλικού: σφαίρες σε ημικύκλιο</menuorbcrcl>
+		<menucust>Προσαρμοσμένη ταξινόμηση υλικού του Bob: οριζόντιο κείμενο</menucust>
+		<menucustorb>Προσαρμοσμένη ταξινόμηση υλικού του Bob: οριζόντιες σφαίρες</menucustorb>
+		<menucustorbvert>Προσαρμοσμένη ταξινόμηση υλικού του Bob: κάθετες σφαίρες</menucustorbvert>
+		<menucustorbcrcl>Προσαρμοσμένη ταξινόμηση υλικού του Bob: σφαίρες σε ημικύκλιο</menucustorbcrcl>
+		<menutxtzspin>Επίσημη ταξινόμηση υλικού: κάθετο κείμενο</menutxtzspin>
+		<menutxtzspincust>Προσαρμοσμένη ταξινόμηση υλικού του Bob: κάθετο κείμενο</menutxtzspincust>
+		<menuteta>Επίσημη ταξινόμηση υλικού: Tetanos</menuteta>
+		<menucustteta>Προσαρμοσμένη ταξινόμηση υλικού του Bob: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Προβολή συστημάτων Hyperbat - Κινούμενες βοήθειες</sticksysteme>
+		<systballblue>Stick Μπλε</systballblue>
+		<systballcyan>Stick Κυανό</systballcyan>
+		<systballdarkviolet>Stick Σκούρο βιολετί</systballdarkviolet>
+		<systballviolet>Stick Βιολετί</systballviolet>
+		<systballgreen>Stick Πράσινο</systballgreen>
+		<systballlitegreen>Stick Ανοιχτό πράσινο</systballlitegreen>
+		<systballpink>Stick Ροζ</systballpink>
+		<systballred>Stick Κόκκινο</systballred>
+		<systballyelgreen>Stick Κιτρινοπράσινο</systballyelgreen>
+		<systballyellow>Stick Κίτρινο</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Προβολή συστημάτων Hyperbat - Τύπος μενού</hyperwheel>
+		<spindr>Καμπύλος τροχός δεξιά (Hyperspin)</spindr>
+		<verticaldr>Κάθετος τροχός δεξιά (Hyperspin)</verticaldr>
+		<verticaldreb>Κάθετος τροχός δεξιά (Emubox)</verticaldreb>
+		<spingh>Καμπύλος τροχός αριστερά (Hyperspin)</spingh>
+		<verticalgh>Κάθετος τροχός αριστερά (Hyperspin)</verticalgh>
+		<verticalgheb>Κάθετος τροχός αριστερά (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Πωλητής box Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Πωλητής box Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Πωλητής box Hyperspin Chris (υπό κατασκευή)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Προβολή παιχνιδιών - Τρέχον σύστημα στο άνοιγμα;</systannounce>
+		<classiquesyst>Εξαφάνιση με σμίκρυνση</classiquesyst>
+		<nomsystem2>Αργή είσοδος (σβήσιμο + ζουμ)</nomsystem2>
+		<nomsystem3>Γρήγορη λάμψη (ζουμ προς τα έξω)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Προβολή παιχνιδιών - Φόντο σε κάθε λογότυπο παιχνιδιού;</gwheelbackgr>
+		<sisaccades>Απενεργοποιημένο</sisaccades>
+		<ovalcarbon>Οβάλ carbon (αυτόματη δημιουργία)</ovalcarbon>
+		<ovalsilver>Οβάλ silver (αυτόματη δημιουργία)</ovalsilver>
+		<rectcarbon>Ορθογώνιο carbon (αυτόματη δημιουργία)</rectcarbon>
+		<rectcompose>Προσαρμοσμένο ορθογώνιο ανά σύστημα (αυτόματο)</rectcompose>
+		<ovalcompose>Προσαρμοσμένο οβάλ carbon ανά σύστημα (αυτόματο)</ovalcompose>
+		<logounified>Λογότυπο ενιαίου μεγέθους</logounified>
+		<hfsround>Στρογγυλό Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Προβολή παιχνιδιών - Πλοήγηση ανά γράμμα (παιχνίδια);</letternav>
+		<navhoricoinstyle>Οριζόντιο αλφάβητο</navhoricoinstyle>
+		<navvertcoinstyle>Κάθετο αλφάβητο αριστερά</navvertcoinstyle>
+		<navvertrcoinstyle>Κάθετο αλφάβητο δεξιά</navvertrcoinstyle>
+		<navhsletters>Γράμμα με στυλ ανά σύστημα</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Προβολή παιχνιδιών - Εμφάνιση μέγιστων πληροφοριών;</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Αρχή των προχωρημένων επιλογών για τις προβολές Hyperbat ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Μέσα που χρειάζονται για την προβολή παιχνιδιών Hyperbat = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Γενικό θέμα παιχνιδιών (αν δεν υπάρχει θέμα)</defaultgeneric>
+		<videodefaut>Προεπιλεγμένο βίντεο γενικού θέματος (χωρίς στιγμιότυπο ή βίντεο)</videodefaut>
+		<generic43boxback>Τυπικό με μοντάζ πίσω και μπροστά όψης κουτιού</generic43boxback>
+		<generic43coinopsstyle>Συλλογή καμπινών arcade</generic43coinopsstyle>
+		<generic43noanimationfanart>Τυπικό με κινούμενο fanart στο φόντο</generic43noanimationfanart>
+		<generic43noanimation>Τυπικό χωρίς κίνηση boxart</generic43noanimation>
+		<generic43>Τυπικό</generic43>
+		<jukeboxdef>Εμφάνιση CD (ημιτελές)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Θέμα παιχνιδιών: Σύστημα προέλευσης</gameviewsource>
+		<mamefolder>Πρώτα ο αρχικός φάκελος του παιχνιδιού, μετά ο φάκελος mame</mamefolder>
+		<actualsystem>Πρώτα ο φάκελος του επιλεγμένου συστήματος</actualsystem>
+		<genericstyleonly>Χρήση μόνο του γενικού θέματος παιχνιδιών</genericstyleonly>
+		<groupedsystem>Μόνο για δοκιμές ανάπτυξης: μη χρησιμοποιείτε</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Θέμα παιχνιδιών: Δημιουργός</authordisplayed>
+		<showoff>Ενεργοποιημένο, υψηλή ορατότητα</showoff>
+		<showoffblackwhite>Ενεργοποιημένο, μέγιστη ορατότητα</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Εξαφάνιση λίστας παιχνιδιών</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Ήχος κύλισης</gamewheelsound>
+		<wheelclic>Κλικ σε στυλ Hyperspin</wheelclic>
+		<bulle>Φούσκα</bulle>
+		<clic>Απλό κλικ</clic>
+		<clicgrave>Βαθύ κλικ</clicgrave>
+		<frottement>Τριβή</frottement>
+		<poc>Ποπ</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Οπτικά - Εφέ βινιέτας</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Οπτικά - Βινιέτα προβολής συστημάτων</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Οπτικά - Σκούρεμα φόντου (προβολή συστημάτων)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>ΟΠΤΙΚΑ - Επιλογή κινούμενου stick</syststickon>
+		<stickon>Κλασικό arcade</stickon>
+		<syststickcolor>ΟΠΤΙΚΑ - Χρώμα μπάλας του stick</syststickcolor>
+		<ballcyan>Κυανό</ballcyan>
+		<ballblue>Μπλε</ballblue>
+		<balldarkviolet>Σκούρο βιολετί</balldarkviolet>
+		<ballviolet>Βιολετί</ballviolet>
+		<ballgreen>Πράσινο</ballgreen>
+		<balllitegreen>Ανοιχτό πράσινο</balllitegreen>
+		<ballpink>Ροζ</ballpink>
+		<ballred>Κόκκινο</ballred>
+		<ballyelgreen>Κιτρινοπράσινο</ballyelgreen>
+		<ballyellow>Κίτρινο</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Εμφάνιση press start</pressstart>
+		<doigts>Κινούμενο δάχτυλο που πατά κουμπί</doigts>
+		<undoigt>Κινούμενο δάχτυλο που πατά κουμπί μόνο αριστερά</undoigt>
+		<undoigtr>Κινούμενο δάχτυλο που πατά κουμπί μόνο δεξιά</undoigtr>
+		<pressstarttxt>METADATA - Επιλογή κειμένου</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Δωρεάν παιχνίδι</partiegratuite>
+		<uneuro>1€ το παιχνίδι</uneuro>
+		<sitessage>Πάτα Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Ρύθμιση μεταδεδομένων</hsmetadata>
+		<full>Πλήρες και προεπιλεγμένη θέση</full>
+		<lower>Πλήρες και χαμηλότερη θέση</lower>
+		<metafichedefault>Καρτέλα μεταδεδομένων σε προεπιλεγμένη θέση</metafichedefault>
+		<metafichebasgauche>Καρτέλα μεταδεδομένων κάτω αριστερά</metafichebasgauche>
+		<metafichebasdroite>Καρτέλα μεταδεδομένων κάτω δεξιά</metafichebasdroite>
+		<metafichebascentre>Καρτέλα μεταδεδομένων κάτω στο κέντρο</metafichebascentre>
+		<metafichehautgauche>Καρτέλα μεταδεδομένων πάνω αριστερά</metafichehautgauche>
+		<metafichehautdroite>Καρτέλα μεταδεδομένων πάνω δεξιά</metafichehautdroite>
+		<metafichehautcentre>Καρτέλα μεταδεδομένων πάνω στο κέντρο</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Εμφάνιση θεμάτων ανά παιχνίδι;</hyperbatperview>
+		<themejeux>Θέμα ανά παιχνίδι κατά προτεραιότητα αν υπάρχει</themejeux>
+		<themejeuxno>Απενεργοποίηση θέματος ανά παιχνίδι</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Οπτικά - Ομαλή μετάβαση μεταξύ θεμάτων παιχνιδιών</smoothgametheme>
+		<activesmooth>Ενεργοποιημένο (συνιστάται για Retrobat)</activesmooth>
+		<noactivesmooth>Απενεργοποιημένο (συνιστάται για Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Δείκτες συστήματος σε στυλ Hyperspin</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Προσαρμογή του scrap για συμβατά θέματα ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Κουτί παιχνιδιού προς εμφάνιση</boxorthumb>
+		<boxart>Βαθμονομημένο για κουτί 3D</boxart>
+		<thumb>Βαθμονομημένο για κουτί 2D</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Προχωρημένη ρύθμιση: Αλλαγή του φακέλου προέλευσης των μέσων --------------------------------------------------------</spacerextfolder>
+		<folder>Πηγή - μη χρησιμοποιείτε</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Φάκελος θέματος - Προεπιλογή</intheme>
+		<extfolder>Εξωτερικός φάκελος</extfolder>
+		<extfoldergametheme>Πηγή - Θέμα ειδικά για παιχνίδια</extfoldergametheme>
+		<extfoldergamemedia>Πηγή - Μέσα παιχνιδιών εκτός gamelist.xml</extfoldergamemedia>
+		<extfoldervideosyst>Πηγή - Θέμα ειδικά για συστήματα</extfoldervideosyst>
+		<extfolderbezelsyst>Πηγή - Bezel συστημάτων</extfolderbezelsyst>
+		<extfoldermanufacturer>Πηγή - Λογότυπα εκδοτών παιχνιδιών</extfoldermanufacturer>
+		<extfolderfanart>Πηγή - Fanart συστημάτων</extfolderfanart>
+		<extfolderlogosyst>Πηγή - Λογότυπο συστήματος</extfolderlogosyst>
+		<extfoldercouleursinfos>Πηγή - Στυλ πληροφοριών παιχνιδιών</extfoldercouleursinfos>
+		<extfolderthumbox>Πηγή - Κουτιά παιχνιδιών 2D/3D</extfolderthumbox>
+		<extfoldergamefanart>Πηγή - Fanart παιχνιδιών</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Προτεινόμενα μέσα για την προβολή παιχνιδιών Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ Αρχή των προχωρημένων επιλογών για την προβολή FanartStar boxart ↓   -------------------</mediastar>
+		<spacebox>Απόσταση μεταξύ κουτιών παιχνιδιών</spacebox>
+		<spacessssmall>Απόσταση ----</spacessssmall>
+		<spacesssmall>Απόσταση ---</spacesssmall>
+		<spacessmall>Απόσταση --</spacessmall>
+		<spacesmall>Απόσταση -</spacesmall>
+		<spacenorm>Προεπιλογή</spacenorm>
+		<spacemore>Απόσταση +</spacemore>
+		<spacemmore>Απόσταση ++</spacemmore>
+		<spacemmmore>Απόσταση +++</spacemmmore>
+		<spacemmmmore>Απόσταση ++++</spacemmmmore>
+		<fanartstarrotated>Περιστροφή κουτιών SNES, N64, NGAGE, Solarus</fanartstarrotated>
+		<starrotate>Ναι</starrotate>
+		<nostarrotate>Όχι</nostarrotate>
+		<boxstarspeed>Ταχύτητα κίνησης κύλισης</boxstarspeed>
+		<speedslow1>Αργά+</speedslow1>
+		<speedslow2>Αργά++</speedslow2>
+		<customfanart>Fanart προς χρήση</customfanart>
+		<fanartgamelist>Fanart από το scrap στο gamelist</fanartgamelist>
+		<fanartcustom>Προσαρμοσμένο fanart στο _Gamemedia-ΌνομαΣυστήματος-medium_artwork</fanartcustom>
+		<starboxang>Γωνία κουτιών παιχνιδιών</starboxang>
+		<starthumb>Εμφάνιση εξωφύλλων 2D ή 3D;</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Μέγεθος βίντεο προεπισκόπησης</starvideo>
+		<starvideoang>Κεκλιμένο</starvideoang>
+		<starvideodef>Τυπικό</starvideodef>
+		<starvideobig>Μεγάλο</starvideobig>
+		<longselect>Παρατεταμένο πάτημα "select"</longselect>
+		<favuniquement>Μόνο αγαπημένα</favuniquement>
+		<tslesjeux>Όλα τα παιχνίδια</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Αναλογία οθόνης</screenratio>
+		<ratio1610>16/10 (πειραματικό)</ratio1610>
+		<ratio43>4/3 (πειραματικό)</ratio43>
+		<cadrevideosyst>Πλαίσιο βίντεο συστήματος</cadrevideosyst>
+		<cadreorigine>Αρχικό (bezel)</cadreorigine>
+		<cadrebordure>Περίγραμμα</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Καλωσόρισμα και ευχαριστίες</planche00>
+		<planche01>01 - Πώς να μεταφέρω τα προσαρμοσμένα θέματά μου</planche01>
+		<planche02>02 - Πώς να προσαρμόσω τα θέματά μου 1/2</planche02>
+		<planche03>03 - Πλαίσιο βίντεο συστήματος</planche03>
+		<planche04>04 - Πώς να προσαρμόσω τα θέματά μου 2/2</planche04>
+		<planche05>05 - Λήψη θεμάτων</planche05>
+		<planche06>06 - Προσθήκη θέματος συστήματος</planche06>
+		<planche07>07 - Προσθήκη θέματος παιχνιδιού</planche07>
+		<planche08>08 - Οι επεξεργαστές θεμάτων</planche08>
+		<planche09>09 - Κουτί 2D ή 3D και scraping</planche09>
+		<planche10>10 - Διαδρομή πλοήγησης και πλοήγηση ανά γράμμα</planche10>
+		<planche11>11 - Στυλ πληροφοριών παιχνιδιών</planche11>
+		<planche12>12 - Οθόνη 4:3 ή 16:10</planche12>
+		<planche13>13 - Σύνδεσμοι για λήψη περισσότερων θεμάτων και artworks</planche13>
+	</variables>
+</theme>

@@ -6,11 +6,11 @@
 			<itemTemplate>
 				<container>
 					<image name="fond">
-						<visible>!exists("${bobmediapath}/_systemmedia/_logosyst/fondwheelsyst/" + stem({game:system:theme}) + ".png")</visible>
+						<visible>!exists("${path_syst_logo}/fondwheelsyst/" + stem({game:system:theme}) + ".png")</visible>
 						<pos>0.5</pos>
 						<origin>0.5</origin>
 						<maxSize>1</maxSize>
-						<path>${themePath}/_viewgameoption/gl-common/logojeux/rectfond.png</path>
+						<path>${path_vgameopt}/gl-common/logojeux/rectfond.png</path>
 						<zIndex>98</zIndex>
 						<opacity>1</opacity>
 						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
@@ -42,7 +42,9 @@
 						<pos>0.5</pos>
 						<origin>0.5</origin>
 						<maxSize>1</maxSize>
-						<path>firstfile("${themePath}/_systemmedia/_logosyst/fondwheelsyst/" + stem({game:system:theme}) + ".png","${themePath}/_viewgameoption/gl-common/logojeux/rectrefl.png")</path>
+						<path>firstfile("${path_syst_logo}/fondwheelsyst/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
+						"${path_syst_logo}/fondwheelsyst/" + stem({game:system:theme}) + ".png",
+						"${path_vgameopt}/gl-common/logojeux/rectrefl.png")</path>
 						<zIndex>98</zIndex>
 						<opacity>1</opacity>
 						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
@@ -71,11 +73,20 @@
 						</storyboard>
 					</image>
 					<image name="systemlogocomposeshadow">
-						<path>firstfile("${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".svg",
-						"${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
-						"${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".svg",
-						"${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path>
-						<pos>0.143 0.488</pos>
+						<!-- <path>firstfile( -->
+						<!-- "${themePath}/_systemmedia/_logosyst/folderlogos/" + {game:system:theme} + ".png", -->
+						<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {game:system:theme} + "-${lang}.png", -->
+						<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {game:system:theme} + "-${region}.png", -->
+						<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/" + {game:system:theme} + ".png", -->
+						<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {game:system:theme} + "-${lang}.svg", -->
+						<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {game:system:theme} + "-${region}.svg", -->
+						<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/" +{game:system:theme} + ".svg")</path> -->
+						<path>firstfile(
+						"${path_syst_logo}/folderlogos/" + {game:system:theme} + ".png",
+						"${path_syst_logo}/clearlogos/region-" + {game:region} + "/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
+						"${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + ".png")</path>
+						<!-- <pos>0.143 0.488</pos> -->
+						<pos>0.143 0.505</pos>
 						<origin>0.5</origin>
 						<zIndex>98</zIndex>
 						<color>00000090</color>
@@ -107,14 +118,20 @@
 						</storyboard>
 					</image>
 					<image name="systemlogocompose">
-						<!-- <visible>!exists("${bobmediapath}/_systemmedia/_logosyst/fondwheelsyst/" + stem({game:system:theme}) + ".png")</visible> -->
-<!-- <path>firstfile("${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png", -->
-<!-- "${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path> -->
-						<path>firstfile("${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".svg",
-						"${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
-						"${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".svg",
-						"${bobmediapath}/_systemmedia/_logosyst/clearlogos/"  + ({game:system:theme}) + ".png")</path>
-						<pos>0.14 0.49</pos>
+						<!-- <path>firstfile( -->
+						<!-- "${themePath}/_systemmedia/_logosyst/folderlogos/" + {game:system:theme} + ".png", -->
+						<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {game:system:theme} + "-${lang}.png", -->
+						<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {game:system:theme} + "-${region}.png", -->
+						<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/" + {game:system:theme} + ".png", -->
+						<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/lang-${lang}/" + {game:system:theme} + "-${lang}.svg", -->
+						<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/region-${region}/" + {game:system:theme} + "-${region}.svg", -->
+						<!-- "${themePath}/_systemmedia/_logosyst/clearlogos/" +{game:system:theme} + ".svg")</path> -->
+						<path>firstfile(
+						"${path_syst_logo}/folderlogos/" + {game:system:theme} + ".png",
+						"${path_syst_logo}/clearlogos/region-" + {game:region} + "/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
+						"${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + ".png")</path>
+						<!-- <pos>0.14 0.49</pos> -->
+						<pos>0.14 0.501</pos>
 						<origin>0.5</origin>
 						<zIndex>98</zIndex>
 						<rotation>90</rotation>
@@ -144,75 +161,145 @@
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
 					</image>
-					<!-- <image name="marqueedef"> -->
-					<!-- <visible>!exists("${themePath}/_systemmedia/_logosyst/fondwheelsyst/" + stem({game:system:theme}) + ".png")</visible> -->
-					<!-- <pos>0.5</pos> -->
-					<!-- <origin>0.5</origin> -->
-					<!-- <maxSize>0.6 0.4</maxSize> -->
-					<!-- <path>{game:marquee}</path> -->
-					<!-- <zIndex>99</zIndex> -->
-					<!-- <linearSmooth>true</linearSmooth> -->
-					<!-- <storyboard event="activate" ifSubset="gamewheelfade:activate"> -->
-					<!-- <animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/> -->
-					<!-- <animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/> -->
-					<!-- </storyboard> -->
-					<!-- <storyboard event="scroll" ifSubset="gamewheelfade:activate"> -->
-					<!-- <animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/> -->
-					<!-- <animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/> -->
-					<!-- </storyboard> -->
-					<!-- <storyboard event="deactivate" ifSubset="gamewheelfade:activate"> -->
-					<!-- <animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/> -->
-					<!-- <animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/> -->
-					<!-- </storyboard> -->
-					<!-- <storyboard event="activate" ifSubset="gamewheelfade:amoitie"> -->
-					<!-- <animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/> -->
-					<!-- <animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/> -->
-					<!-- </storyboard> -->
-					<!-- <storyboard event="scroll" ifSubset="gamewheelfade:amoitie"> -->
-					<!-- <animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/> -->
-					<!-- <animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/> -->
-					<!-- </storyboard> -->
-					<!-- <storyboard event="deactivate" ifSubset="gamewheelfade:amoitie"> -->
-					<!-- <animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/> -->
-					<!-- <animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/> -->
-					<!-- </storyboard> -->
-					<!-- </image> -->
-					<image name="marqueespec">
-						<!-- <visible>exists("${themePath}/_systemmedia/_logosyst/fondwheelsyst/" + stem({game:system:theme}) + ".png")</visible> -->
+					<image name="marquee">
+						<visible>!{game:folder} || !{game:system:collection}</visible>
 						<pos>0.55 0.5</pos>
 						<origin>0.5</origin>
 						<maxSize>0.6 0.4</maxSize>
-						<path>{game:marquee}</path>
+						<path>firstfile(
+						"${path_syst_logo}/folderlogos/" + {game:stem} + ".png",
+						"${path_syst_logo}/clearlogos/lang-${lang}/" + {game:stem} + "-${lang}.png",
+						"${path_syst_logo}/clearlogos/region-${region}/" + {game:stem} + "-${region}.png",
+						"${path_syst_logo}/clearlogos/" + {game:stem} + ".png",
+						"${path_syst_logo}/clearlogos/lang-${lang}/" + {game:stem} + "-${lang}.svg",
+						"${path_syst_logo}/clearlogos/region-${region}/" + {game:stem} + "-${region}.svg",
+						"${path_syst_logo}/clearlogos/" + {game:stem} + ".svg",
+						{game:marquee})</path>
 						<zIndex>99</zIndex>
-						<linearSmooth>true</linearSmooth>
+						<opacity>1</opacity>
 						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
-							<animation property="zIndex" to="2" begin="500" duration="" mode="Linear"/>
-							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.5" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
 						<storyboard event="scroll" ifSubset="gamewheelfade:amoitie">
-							<animation property="zIndex" to="2" begin="500" duration="" mode="Linear"/>
-							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.5" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
 						<storyboard event="deactivate" ifSubset="gamewheelfade:amoitie">
-							<animation property="zIndex" to="2" begin="500" duration="" mode="Linear"/>
-							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.5" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
 						<storyboard event="activate" ifSubset="gamewheelfade:activate">
-							<animation property="zIndex" to="2" begin="500" duration="" mode="Linear"/>
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
 						<storyboard event="scroll" ifSubset="gamewheelfade:activate">
-							<animation property="zIndex" to="2" begin="500" duration="" mode="Linear"/>
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
 						<storyboard event="deactivate" ifSubset="gamewheelfade:activate">
-							<animation property="zIndex" to="2" begin="500" duration="" mode="Linear"/>
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
 					</image>
+					<image name="marqueecollection">
+						<visible>{game:folder} &amp;&amp; {game:system:collection}</visible>
+						<pos>0.55 0.5</pos>
+						<origin>0.5</origin>
+						<maxSize>0.6 0.4</maxSize>
+						<path>firstfile(
+						"${path_syst_logo}/folderlogos/" + {game:system:theme} + ".png",
+						"${path_syst_logo}/clearlogos/lang-${lang}/" + {game:system:theme} + "-${lang}.png",
+						"${path_syst_logo}/clearlogos/region-${region}/" + {game:system:theme} + "-${region}.png",
+						"${path_syst_logo}/clearlogos/" + {game:system:theme} + ".png",
+						"${path_syst_logo}/clearlogos/lang-${lang}/" + {game:system:theme} + "-${lang}.svg",
+						"${path_syst_logo}/clearlogos/region-${region}/" + {game:system:theme} + "-${region}.svg",
+						"${path_syst_logo}/clearlogos/" + {game:system:theme} + ".svg")</path>
+						<zIndex>99</zIndex>
+						<opacity>1</opacity>
+						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.5" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.5" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.5" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+					</image>
+					<text name="gamename">
+						<visible>
+						((!{game:folder} || !{game:system:collection})
+						&amp;&amp; !exists({game:marquee})
+						&amp;&amp; !exists("${path_syst_logo}/folderlogos/" + {game:stem} + ".png")
+						&amp;&amp; !exists("${path_syst_logo}/clearlogos/lang-${lang}/" + {game:stem} + "-${lang}.png")
+						&amp;&amp; !exists("${path_syst_logo}/clearlogos/region-${region}/" + {game:stem} + "-${region}.png")
+						&amp;&amp; !exists("${path_syst_logo}/clearlogos/" + {game:stem} + ".png")
+						&amp;&amp; !exists("${path_syst_logo}/clearlogos/" + {game:stem} + ".svg"))
+						|| ({game:folder} &amp;&amp; {game:system:collection}
+						&amp;&amp; !exists("${path_syst_logo}/folderlogos/" + {game:system:theme} + ".png")
+						&amp;&amp; !exists("${path_syst_logo}/clearlogos/lang-${lang}/" + {game:system:theme} + "-${lang}.png")
+						&amp;&amp; !exists("${path_syst_logo}/clearlogos/region-${region}/" + {game:system:theme} + "-${region}.png")
+						&amp;&amp; !exists("${path_syst_logo}/clearlogos/" + {game:system:theme} + ".png")
+						&amp;&amp; !exists("${path_syst_logo}/clearlogos/lang-${lang}/" + {game:system:theme} + "-${lang}.svg")
+						&amp;&amp; !exists("${path_syst_logo}/clearlogos/region-${region}/" + {game:system:theme} + "-${region}.svg")
+						&amp;&amp; !exists("${path_syst_logo}/clearlogos/" + {game:system:theme} + ".svg"))
+						</visible>
+						<text>{game:name}</text>
+						<fontPath>${fontimpact}</fontPath>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<fontSize>0.028</fontSize>
+						<lineSpacing>1</lineSpacing>
+						<size>0.77 0.5</size>
+						<pos>0.115 0.25</pos>
+						<glowColor>00000066</glowColor>
+						<glowSize>2</glowSize>
+						<zIndex>400</zIndex>
+						<multiLine>true</multiLine>
+						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.5" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.5" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.5" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+					</text>
 					<image name="favorite">
 						<visible>{game:favorite}</visible>
-						<path>${themePath}/_viewgameoption/gl-coinopsnext/favoris/yesfull.png</path>
+						<path>${path_vgameopt}/gl-coinopsnext/favoris/yesfull.png</path>
 						<pos>0.78 0.25</pos>
 						<zIndex>98</zIndex>
 						<maxSize>0.35 0.35</maxSize>
@@ -241,45 +328,6 @@
 							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
 						</storyboard>
 					</image>
-					<text name="gamename">
-						<visible>!exists({game:marquee})</visible>
-						<text>{game:name}</text>
-						<fontPath>${themePath}/_viewgame/show/impact.ttf</fontPath>
-						<color>FFFFFF</color>
-						<alignment>center</alignment>
-						<fontSize>0.028</fontSize>
-						<lineSpacing>1</lineSpacing>
-						<size>0.77 0.5</size>
-						<pos>0.115 0.25</pos>
-						<glowColor>00000066</glowColor>
-						<glowSize>2</glowSize>
-						<zIndex>400</zIndex>
-						<multiLine>true</multiLine>
-						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
-							<animation property="zIndex" to="2" begin="500" duration="" mode="Linear"/>
-							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
-						</storyboard>
-						<storyboard event="scroll" ifSubset="gamewheelfade:amoitie">
-							<animation property="zIndex" to="2" begin="500" duration="" mode="Linear"/>
-							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
-						</storyboard>
-						<storyboard event="deactivate" ifSubset="gamewheelfade:amoitie">
-							<animation property="zIndex" to="2" begin="500" duration="" mode="Linear"/>
-							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
-						</storyboard>
-						<storyboard event="activate" ifSubset="gamewheelfade:activate">
-							<animation property="zIndex" to="2" begin="500" duration="" mode="Linear"/>
-							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
-						</storyboard>
-						<storyboard event="scroll" ifSubset="gamewheelfade:activate">
-							<animation property="zIndex" to="2" begin="500" duration="" mode="Linear"/>
-							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
-						</storyboard>
-						<storyboard event="deactivate" ifSubset="gamewheelfade:activate">
-							<animation property="zIndex" to="2" begin="500" duration="" mode="Linear"/>
-							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
-						</storyboard>
-					</text>
 				</container>
 			</itemTemplate>
 		</gamecarousel>

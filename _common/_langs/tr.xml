@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="tr">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Evet</yes>
+		<no>Hayır</no>
+		<desactive>Devre dışı</desactive>
+		<activate>Etkin</activate>
+		<actif>Etkin</actif>
+		<active>Etkin</active>
+		<deactive>Devre dışı</deactive>
+		<vide>   </vide>
+		<default>Varsayılan</default>
+		<amoitie>kısmen</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Kullanılabilir diller:</languesdispo>
+		<nodates>Tarih yok</nodates>
+		<playcount>oynama</playcount>
+		<playcountone>oynama</playcountone>
+		<players>oyuncu</players>
+		<playerss>oyuncu</playerss>
+		<player>oyuncu</player>
+		<nogametime>Hiç oynanmadı</nogametime>
+		<noplayerdata>Bilinmiyor</noplayerdata>
+		<noratings>Puan yok</noratings>
+		<lastgamelabel>Son oynama:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Sonraki oyun</jeusuiv>
+		<jeuprec>Önceki oyun</jeuprec>
+		<systsuiv>Sonraki sistem</systsuiv>
+		<systprec>Önceki sistem</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Karşılama mesajı</lismoi>
+		<tumasbienlu>Karşılama ve teşekkürler</tumasbienlu>
+		<deporttheme>Özel temalarımı nasıl taşırım</deporttheme>
+		<customiztheme1>Temalarımı nasıl özelleştiririm 1/2</customiztheme1>
+		<customiztheme2>Temalarımı nasıl özelleştiririm 2/2</customiztheme2>
+		<downloadmore>Daha fazla tema ve artwork indirme bağlantıları</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Sistem listesi görünümü</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Temel ızgara görünümü</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart çok hafif</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Medyanı test et</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>SCRAP ayarı - Fanart yapısı?</packcustombuild>
+		<packcustombuildsno>Fanart "-fanart" sonekiyle (varsayılan)</packcustombuildsno>
+		<packretrofreshbat>Fanart "-image" sonekiyle</packretrofreshbat>
+		<scrap3dbox>Scrape ayarı - 3D kutu yapısı?</scrap3dbox>
+		<scrapedboxart>gamelist'te "-boxart" ile 3D kutu</scrapedboxart>
+		<scrapedthumbnail>gamelist'te "-thumbnail" ile 3D kutu</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Yardım - Yardım simgelerinin görünümü</iconset>
+		<iconsetposition>Düğmelerin konumu</iconsetposition>
+		<colorhelp>Yardım - Yardım metni renkleri</colorhelp>
+		<skyblue>gök mavisi</skyblue>
+		<standard>Standart</standard>
+		<purple>mor</purple>
+		<red>kırmızı</red>
+		<aqua>gök mavisi</aqua>
+		<orange>turuncu</orange>
+		<green>yeşil</green>
+		<yellow>sarı</yellow>
+		<pink>pembe</pink>
+		<grey>koyu gri</grey>
+		<lightgrey>açık gri</lightgrey>
+		<navy>mavi alt</navy>
+		<violet>mor</violet>
+		<candy>candy</candy>
+		<redalt>kırmızı alt</redalt>
+		<yellowalt>sarı alt</yellowalt>
+		<greenalt>yeşil alt</greenalt>
+		<purplealt>mor alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Sistem görünümü - Sistem logosu türü</systviewlogos>
+		<logosimple>Basit logo (Tam + Bölge)</logosimple>
+		<glassnekhros>Glass logo (Tam + Bölge) (By Nekhros)</glassnekhros>
+		<logobd>Çizgi roman tarzı logo (Helmic)</logobd>
+		<logoovalcarb>Oval logo Carbon</logoovalcarb>
+		<hmaxovalsilver>Oval logo Silver</hmaxovalsilver>
+		<logorectfresh>Dikdörtgen logo Team Freshone (harici paket)</logorectfresh>
+		<hmaxrectrefl>Yansımalı dikdörtgen logo Team Freshone (harici paket)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Sistem görünümü - Sistem listesinin kaybolması</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Sistem görünümü - Sistem fanart seçimi</systviewfanart>
+		<fanartfreshone>Yalnızca FreshOne tarafından seçilen fanartlar</fanartfreshone>
+		<fanartsystcustom>Özel fanartlar, yoksa FreshOne fanart</fanartsystcustom>
+		<fanfondsystem>Sistem arka planı, yoksa FreshOne fanart</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Sistem görünümü - Animasyonlu sistem tanıtımı</systviewvideo>
+		<hyperspinorunified>ADDON: Dinamik HS, yoksa birleşik HS</hyperspinorunified>
+		<gameplayp1>Varsa bezel ile küçük rastgele oynanış videosu</gameplayp1>
+		<gameplay1>Varsa bezel ile büyük rastgele oynanış videosu</gameplay1>
+		<gameplayp>Küçük rastgele oynanış videosu</gameplayp>
+		<gameplay>Büyük rastgele oynanış videosu</gameplay>
+		<custom>custom klasöründen kişisel video</custom>
+		<hyperspinxp>ADDON: Dinamik Hyperspin tarzında görüntü ve oynanış</hyperspinxp>
+		<hyperspin>ADDON: Birleşik Hyperspin tarzında görüntü ve oynanış</hyperspin>
+		<hyperspinorder>ADDON: Dinamik HS, yoksa Hyperpie videosu</hyperspinorder>
+		<hyperpie>ADDON: Hyperpie videosu, yoksa varsa Unified videosu</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Sistem görünümü - Sistemin oyun sayısını göster</systviewtotal>
+		<nbrjeux>sade oyun sayısı</nbrjeux>
+		<nbrjeux2>sistem adı ve oyun sayısı</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Gezinme yolu gösterimi</menuofficiel>
+		<menutxt>Resmi donanım sıralaması: yatay metin</menutxt>
+		<menuorb>Resmi donanım sıralaması: yatay küre</menuorb>
+		<menuorbvert>Resmi donanım sıralaması: dikey küre</menuorbvert>
+		<menuorbcrcl>Resmi donanım sıralaması: yarım daire küre</menuorbcrcl>
+		<menucust>Bob'un özel donanım sıralaması: yatay metin</menucust>
+		<menucustorb>Bob'un özel donanım sıralaması: yatay küre</menucustorb>
+		<menucustorbvert>Bob'un özel donanım sıralaması: dikey küre</menucustorbvert>
+		<menucustorbcrcl>Bob'un özel donanım sıralaması: yarım daire küre</menucustorbcrcl>
+		<menutxtzspin>Resmi donanım sıralaması: dikey metin</menutxtzspin>
+		<menutxtzspincust>Bob'un özel donanım sıralaması: dikey metin</menutxtzspincust>
+		<menuteta>Resmi donanım sıralaması: Tetanos</menuteta>
+		<menucustteta>Bob'un özel donanım sıralaması: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Hyperbat sistem görünümü - Animasyonlu yardımlar</sticksysteme>
+		<systballblue>Mavi stick</systballblue>
+		<systballcyan>Camgöbeği stick</systballcyan>
+		<systballdarkviolet>Koyu mor stick</systballdarkviolet>
+		<systballviolet>Mor stick</systballviolet>
+		<systballgreen>Yeşil stick</systballgreen>
+		<systballlitegreen>Açık yeşil stick</systballlitegreen>
+		<systballpink>Pembe stick</systballpink>
+		<systballred>Kırmızı stick</systballred>
+		<systballyelgreen>Sarı-yeşil stick</systballyelgreen>
+		<systballyellow>Sarı stick</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Hyperbat sistem görünümü - Menü türü</hyperwheel>
+		<spindr>Sağda kavisli tekerlek (Hyperspin)</spindr>
+		<verticaldr>Sağda dikey tekerlek (Hyperspin)</verticaldr>
+		<verticaldreb>Sağda dikey tekerlek (Emubox)</verticaldreb>
+		<spingh>Solda kavisli tekerlek (Hyperspin)</spingh>
+		<verticalgh>Solda dikey tekerlek (Hyperspin)</verticalgh>
+		<verticalgheb>Solda dikey tekerlek (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Box satıcısı Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Box satıcısı Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Box satıcısı Hyperspin Chris (yapım aşamasında)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Oyun görünümü - Açılışta geçerli sistem?</systannounce>
+		<classiquesyst>Geri yakınlaştırmayla kaybolma</classiquesyst>
+		<nomsystem2>Yavaş giriş (solma + zoom)</nomsystem2>
+		<nomsystem3>Hızlı flaş (dışa zoom)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Oyun görünümü - Her oyun logosunda arka plan?</gwheelbackgr>
+		<sisaccades>Devre dışı</sisaccades>
+		<ovalcarbon>Oval carbon (otomatik oluşturulur)</ovalcarbon>
+		<ovalsilver>Oval silver (otomatik oluşturulur)</ovalsilver>
+		<rectcarbon>Dikdörtgen carbon (otomatik oluşturulur)</rectcarbon>
+		<rectcompose>Sisteme özel dikdörtgen (otomatik)</rectcompose>
+		<ovalcompose>Sisteme özel oval carbon (otomatik)</ovalcompose>
+		<logounified>Birleşik boyutlu logo</logounified>
+		<hfsround>Yuvarlak Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Oyun görünümü - Harfe göre gezinme (oyunlar)?</letternav>
+		<navhoricoinstyle>Yatay alfabe</navhoricoinstyle>
+		<navvertcoinstyle>Solda dikey alfabe</navvertcoinstyle>
+		<navvertrcoinstyle>Sağda dikey alfabe</navvertrcoinstyle>
+		<navhsletters>Sisteme göre stilize harf</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Oyun görünümü - Maksimum bilgi gösterilsin mi?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Hyperbat görünümlerine özel gelişmiş seçeneklerin başlangıcı ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Hyperbat oyun görünümü için gereken medya = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Genel oyun teması (hiç tema yoksa)</defaultgeneric>
+		<videodefaut>Genel tema varsayılan videosu (ekran görüntüsü ve video yoksa)</videodefaut>
+		<generic43boxback>Kutunun ön ve arka yüz montajlı standart</generic43boxback>
+		<generic43coinopsstyle>Arcade kabin koleksiyonu</generic43coinopsstyle>
+		<generic43noanimationfanart>Animasyonlu fanart arka planlı standart</generic43noanimationfanart>
+		<generic43noanimation>Boxart animasyonsuz standart</generic43noanimation>
+		<generic43>Standart</generic43>
+		<jukeboxdef>CD görünümü (bitmedi)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Oyun teması: Kaynak sistem</gameviewsource>
+		<mamefolder>Önce oyunun kaynak klasörü, sonra mame klasörü</mamefolder>
+		<actualsystem>Önce seçili sistemin klasörü</actualsystem>
+		<genericstyleonly>Yalnızca genel oyun temasını kullan</genericstyleonly>
+		<groupedsystem>Yalnızca geliştirici testi: kullanmayın</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Oyun teması: Yazar</authordisplayed>
+		<showoff>Etkin, yüksek görünürlük</showoff>
+		<showoffblackwhite>Etkin, maksimum görünürlük</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Oyun listesinin kaybolması</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Kaydırma sesi</gamewheelsound>
+		<wheelclic>Hyperspin tarzı tık</wheelclic>
+		<bulle>Baloncuk</bulle>
+		<clic>Basit tık</clic>
+		<clicgrave>Derin tık</clicgrave>
+		<frottement>Sürtünme</frottement>
+		<poc>Pop</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Görsel - Vinyet efekti</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Görsel - Sistem görünümü vinyeti</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Görsel - Arka planı karart (sistem görünümü)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>GÖRSEL - Animasyonlu stick seçimi</syststickon>
+		<stickon>Klasik arcade</stickon>
+		<syststickcolor>GÖRSEL - Stick topunun rengi</syststickcolor>
+		<ballcyan>Camgöbeği</ballcyan>
+		<ballblue>Mavi</ballblue>
+		<balldarkviolet>Koyu mor</balldarkviolet>
+		<ballviolet>Mor</ballviolet>
+		<ballgreen>Yeşil</ballgreen>
+		<balllitegreen>Açık yeşil</balllitegreen>
+		<ballpink>Pembe</ballpink>
+		<ballred>Kırmızı</ballred>
+		<ballyelgreen>Sarı-yeşil</ballyelgreen>
+		<ballyellow>Sarı</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Press start görünümü</pressstart>
+		<doigts>Düğmeye basan animasyonlu parmak</doigts>
+		<undoigt>Yalnızca solda düğmeye basan animasyonlu parmak</undoigt>
+		<undoigtr>Yalnızca sağda düğmeye basan animasyonlu parmak</undoigtr>
+		<pressstarttxt>METADATA - Metin seçimi</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Ücretsiz oyun</partiegratuite>
+		<uneuro>Oyun başı 1€</uneuro>
+		<sitessage>Start'a bas</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Meta veri yapılandırması</hsmetadata>
+		<full>Tam ve varsayılan konum</full>
+		<lower>Tam ve en alt konum</lower>
+		<metafichedefault>Meta veri kartı varsayılan konumda</metafichedefault>
+		<metafichebasgauche>Meta veri kartı sol altta</metafichebasgauche>
+		<metafichebasdroite>Meta veri kartı sağ altta</metafichebasdroite>
+		<metafichebascentre>Meta veri kartı alt ortada</metafichebascentre>
+		<metafichehautgauche>Meta veri kartı sol üstte</metafichehautgauche>
+		<metafichehautdroite>Meta veri kartı sağ üstte</metafichehautdroite>
+		<metafichehautcentre>Meta veri kartı üst ortada</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Oyuna özel temalar gösterilsin mi?</hyperbatperview>
+		<themejeux>Varsa oyuna özel tema öncelikli</themejeux>
+		<themejeuxno>Oyuna özel temayı devre dışı bırak</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Görsel - Oyun temaları arasında yumuşak geçiş</smoothgametheme>
+		<activesmooth>Etkin (Retrobat için önerilir)</activesmooth>
+		<noactivesmooth>Devre dışı (Batocera için önerilir)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Hyperspin tarzı sistem işaretçileri</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Uyumlu temalar için scrap özelleştirmesi ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Gösterilecek oyun kutusu</boxorthumb>
+		<boxart>3D kutu için ayarlı</boxart>
+		<thumb>2D kutu için ayarlı</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Gelişmiş yapılandırma: Medya kaynak klasörünü değiştirme --------------------------------------------------------</spacerextfolder>
+		<folder>Kaynak - kullanmayın</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Tema klasörü - Varsayılan</intheme>
+		<extfolder>Harici klasör</extfolder>
+		<extfoldergametheme>Kaynak - Oyuna özel tema</extfoldergametheme>
+		<extfoldergamemedia>Kaynak - gamelist.xml dışındaki oyun medyası</extfoldergamemedia>
+		<extfoldervideosyst>Kaynak - Sisteme özel tema</extfoldervideosyst>
+		<extfolderbezelsyst>Kaynak - Sistem bezelleri</extfolderbezelsyst>
+		<extfoldermanufacturer>Kaynak - Oyun yayıncısı logoları</extfoldermanufacturer>
+		<extfolderfanart>Kaynak - Sistem fanartı</extfolderfanart>
+		<extfolderlogosyst>Kaynak - Sistem logosu</extfolderlogosyst>
+		<extfoldercouleursinfos>Kaynak - Oyun bilgisi stili</extfoldercouleursinfos>
+		<extfolderthumbox>Kaynak - 2D/3D oyun kutuları</extfolderthumbox>
+		<extfoldergamefanart>Kaynak - Oyun fanartı</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Fanart Star oyun görünümü için önerilen medya = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ FanartStar boxart görünümüne özel gelişmiş seçeneklerin başlangıcı ↓   -------------------</mediastar>
+		<spacebox>Oyun kutuları arasındaki boşluk</spacebox>
+		<spacessssmall>Boşluk ----</spacessssmall>
+		<spacesssmall>Boşluk ---</spacesssmall>
+		<spacessmall>Boşluk --</spacessmall>
+		<spacesmall>Boşluk -</spacesmall>
+		<spacenorm>Varsayılan</spacenorm>
+		<spacemore>Boşluk +</spacemore>
+		<spacemmore>Boşluk ++</spacemmore>
+		<spacemmmore>Boşluk +++</spacemmmore>
+		<spacemmmmore>Boşluk ++++</spacemmmmore>
+		<fanartstarrotated>SNES, N64, NGAGE, Solarus kutularının döndürülmesi</fanartstarrotated>
+		<starrotate>Evet</starrotate>
+		<nostarrotate>Hayır</nostarrotate>
+		<boxstarspeed>Kaydırma animasyonu hızı</boxstarspeed>
+		<speedslow1>Yavaş+</speedslow1>
+		<speedslow2>Yavaş++</speedslow2>
+		<customfanart>Kullanılacak fanartlar</customfanart>
+		<fanartgamelist>gamelist'teki scrap fanartı</fanartgamelist>
+		<fanartcustom>_Gamemedia-SistemAdı-medium_artwork içindeki özel fanart</fanartcustom>
+		<starboxang>Oyun kutularının açısı</starboxang>
+		<starthumb>2D mi 3D kapak mı gösterilsin?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Önizleme videosu boyutu</starvideo>
+		<starvideoang>Eğik</starvideoang>
+		<starvideodef>Standart</starvideodef>
+		<starvideobig>Büyük</starvideobig>
+		<longselect>"select"e uzun basma</longselect>
+		<favuniquement>Yalnızca favoriler</favuniquement>
+		<tslesjeux>Tüm oyunlar</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Ekran oranı</screenratio>
+		<ratio1610>16/10 (deneysel)</ratio1610>
+		<ratio43>4/3 (deneysel)</ratio43>
+		<cadrevideosyst>Sistem videosu çerçevesi</cadrevideosyst>
+		<cadreorigine>Orijinal (bezel)</cadreorigine>
+		<cadrebordure>Kenarlık</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Karşılama ve teşekkürler</planche00>
+		<planche01>01 - Özel temalarımı nasıl taşırım</planche01>
+		<planche02>02 - Temalarımı nasıl özelleştiririm 1/2</planche02>
+		<planche03>03 - Sistem videosu çerçevesi</planche03>
+		<planche04>04 - Temalarımı nasıl özelleştiririm 2/2</planche04>
+		<planche05>05 - Tema indirme</planche05>
+		<planche06>06 - Sistem teması ekleme</planche06>
+		<planche07>07 - Oyun teması ekleme</planche07>
+		<planche08>08 - Tema düzenleyicileri</planche08>
+		<planche09>09 - 2D veya 3D kutu ve tarama</planche09>
+		<planche10>10 - İçerik haritası ve harfle gezinme</planche10>
+		<planche11>11 - Oyun bilgisi stili</planche11>
+		<planche12>12 - 4:3 veya 16:10 ekran</planche12>
+		<planche13>13 - Daha fazla tema ve artwork indirme bağlantıları</planche13>
+	</variables>
+</theme>

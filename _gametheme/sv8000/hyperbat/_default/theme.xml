@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="background" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.333333333333</size>
+			<zIndex>100</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+		</image>
+		<image name="Artwork1" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.515625000000 0.211111111111</pos>
+			<size>0.569270833333 0.347222222222</size>
+			<zIndex>210</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="700" duration="3000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="700" duration="3000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="700" duration="3000" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.438 0.184</pos>
+			<size>0.719791666667 0.390740740741</size>
+			<zIndex>220</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="offsetY" from="0.6" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-0.6" to="0" begin="100" duration="800" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.778645833333 0.531481481481</pos>
+			<size>0.219791666667 0.390740740741</size>
+			<zIndex>230</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<rotation>3</rotation>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" begin="0" duration="2500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" begin="0" duration="2500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" begin="0" duration="2500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4" extra="true">
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.809375000000 0.747222222222</pos>
+			<size>0.219791666667 0.390740740741</size>
+			<zIndex>240</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<rotation>3</rotation>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="offsetY" from="-0.6" to="-0.6" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-0.6" to="0" begin="1000" duration="1500" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetY" from="-0.6" to="-0.6" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-0.6" to="0" begin="1000" duration="1500" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetY" from="-0.6" to="-0.6" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-0.6" to="0" begin="1000" duration="1500" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{game:video}</path>
+			<pos>0.283 0.637</pos>
+			<size>0.387500000000 0.532407407407</size>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<zIndex>250</zIndex>
+			<shader>
+				<path>./_common/shaders/border_multi_gradient.glsl</path>
+				<cornerRadius>28</cornerRadius>
+				<innerShadowSize/>
+				<innerShadowColor/>
+				<outerShadowSize/>
+				<outerShadowColor/>
+				<gradientMode/>
+				<saturation/>
+				<borderPad>60</borderPad>
+				<borderOffset>0</borderOffset>
+				<borderLayout>0</borderLayout>
+				<borderPos1>0</borderPos1>
+				<borderPos2>0</borderPos2>
+				<borderPos3>0</borderPos3>
+				<borderSize>10</borderSize>
+				<borderColor>000000ff</borderColor>
+				<borderColorStart/>
+				<borderColorEnd/>
+				<borderSize2>20</borderSize2>
+				<borderColor2>6c706fff</borderColor2>
+				<borderColorStart2/>
+				<borderColorEnd2/>
+				<borderSize3>30</borderSize3>
+				<borderColor3>000000ff</borderColor3>
+				<borderColorStart3/>
+				<borderColorEnd3/>
+			</shader>
+			<storyboard event="open">
+				<animation property="offsetX" from="-0.6" to="-0.6" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="-0.6" to="0" begin="100" duration="1200" mode="Linear"/>
+			</storyboard>
+		</video>
+		<image name="md_cartridge" extra="true">
+			<visible>true</visible>
+			<path>{game:md_cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.84 0.68</pos>
+			<size>0.16 0.32</size>
+			<zIndex>290</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="1200" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="1200" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="1200" mode="Linear"/>
+			</storyboard>
+                </image>
+		<image name="md_boxart" extra="true">	
+		<origin>0.5 0.5</origin>
+			<pos>0.629062500000 0.631759259259</pos>
+			<size>0.220 0.553</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="offsetY" from="-0.9" to="-1.2" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-1.9" to="0" begin="611" duration="359" mode="Linear"/>
+				<animation property="offsetY" from="0" to="-0.225" begin="770" duration="180" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.225" to="0" begin="950" duration="180" mode="Linear"/>
+				<animation property="offsetY" from="0" to="-0.05625" begin="1130" duration="89" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.05625" to="0" begin="1219" duration="90" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.014062" begin="1309" duration="45" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.014062" to="0" begin="1354" duration="45" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetY" from="-0.9" to="-1.2" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-1.9" to="0" begin="611" duration="359" mode="Linear"/>
+				<animation property="offsetY" from="0" to="-0.225" begin="770" duration="180" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.225" to="0" begin="950" duration="180" mode="Linear"/>
+				<animation property="offsetY" from="0" to="-0.05625" begin="1130" duration="89" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.05625" to="0" begin="1219" duration="90" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.014062" begin="1309" duration="45" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.014062" to="0" begin="1354" duration="45" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetY" from="-0.9" to="-1.2" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-0.9" to="0" begin="611" duration="359" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.225" begin="770" duration="180" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.225" to="0" begin="950" duration="180" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.05625" begin="1130" duration="89" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.05625" to="0" begin="1219" duration="90" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.014062" begin="1309" duration="45" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.014062" to="0" begin="1354" duration="45" mode="EaseIn"/>
+			</storyboard>
+                </image>
+		<control name="Artwork1, Artwork2, Artwork3, Artwork4, PreviewVid">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="0" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="0" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<text name="defaultthemeauthor" extra="true">
+			<text></text>
+		</text>
+	</customView>
+</theme>

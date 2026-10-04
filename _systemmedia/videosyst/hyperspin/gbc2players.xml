@@ -7,7 +7,7 @@
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
 			<linearSmooth>true</linearSmooth>
 			<size>0 0.9</size>
-			<path>./rightart/${system.theme}.png</path>
+			<path>${path_syst_theme}/hyperspin/rightart/${system.theme}.png</path>
 			<scaleOrigin>0 -0.3</scaleOrigin>
 			<pos>0.85 0.515</pos>
 			<pos ifHelpPrompts="false">0.85 0.55</pos>
@@ -22,7 +22,7 @@
 		<image name="fondecransmall" ifSubset="videofondcops1:hyperspin|hyperspinorunified" extra="true">
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
 			<origin>0.52 0.5</origin>
-			<path>${themePath}/_common/images/169v2.png</path>
+			<path>${comcadre169}</path>
 			<size>0.66 0.72</size>
 			<pos>0.5 0.55</pos>
 			<pos ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">0.5 0.45</pos>
@@ -38,7 +38,7 @@
 		<video name="hsgameplay" extra="true">
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
 			<path>{random}</path>
-			<maxSize>0.5 0.4</maxSize>
+			<maxSize>0.5 0.52</maxSize>
 			<pos>0.5 0.55</pos>
 			<pos ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">0.5 0.45</pos>
 			<pos ifSubset="cops2menu:milieu">0.5 0.5</pos>
@@ -68,17 +68,24 @@
 		<image name="logocustunified" extra="true">
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
 			<visible ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">false</visible>
-			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.svg</path>
-			<path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</path>
-			<path region="fr">${intlogoclearfrpng}</path>
-			<path region="eu">${intlogoclearfrpng}</path>
-			<path region="us">${intlogoclearuspng}</path>
-			<path region="jp">${intlogoclearjppng}</path>
+			<path>firstfile(
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</path>
+			<!-- <path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.svg</path> -->
+			<!-- <path>${themePath}/_systemmedia/_logosyst/clearlogos/${system.theme}.png</path> -->
+			<!-- <path region="fr">${intlogoclearfrpng}</path> -->
+			<!-- <path region="eu">${intlogoclearfrpng}</path> -->
+			<!-- <path region="us">${intlogoclearuspng}</path> -->
+			<!-- <path region="jp">${intlogoclearjppng}</path> -->
 			<maxSize>0.5 0.25</maxSize>
 			<scaleOrigin>0 -0.3</scaleOrigin>
 			<pos>0.5 0.15</pos>
 			<origin>0.5 0.5</origin>
-			<zIndex>1</zIndex>
+			<zIndex>3</zIndex>
 			<storyboard>
 				<animation property="y" from="-0.5" begin="0" duration="2000" mode="easeOut"/>
 				<animation property="opacity" from="0" to="1" duration="350" mode="linear"/>
@@ -89,7 +96,7 @@
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
 			<linearSmooth>true</linearSmooth>
 			<size>0 0.9</size>
-			<path>./leftart/${system.theme}.png</path>
+			<path>${path_syst_theme}/hyperspin/leftart/${system.theme}.png</path>
 			<scaleOrigin>0 -0.3</scaleOrigin>
 			<pos>0.15 0.515</pos>
 			<pos ifHelpPrompts="false">0.15 0.55</pos>
@@ -101,6 +108,6 @@
 			</storyboard>
 		</image>
 	</view>
-	<include>./zspec/${system.theme}.xml</include>
-	<include>./zspecvideo/${system.theme}.xml</include>
+	<include>${path_syst_theme}/hyperspin/zspec/${system.theme}.xml</include>
+	<include>${path_syst_theme}/hyperspin/zspecvideo/${system.theme}.xml</include>
 </theme>

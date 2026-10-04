@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+		</image>
+		<image name="Artwork1" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>2</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="-0.6" to="-0.6" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="-0.6" to="0" begin="1100" duration="1100" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{random}</path>
+			<pos>0.526785714286 0.550264550265</pos>
+			<size>0.416666666667 0.555555555556</size>
+			<origin>0.5 0.5</origin>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>3</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="Linear"/>
+			</storyboard>
+		</video>
+		<image name="Videobezel" extra="true">
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.527867965368 0.552910052910</pos>
+			<size>1.055735930736 1.042328042328</size>
+			<zIndex>4</zIndex>
+			<scaleOrigin>0.175 0.06037037037037039</scaleOrigin>
+			<rotationOrigin>0.5 0.49444444444444446</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1000" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>5</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="0.6" to="0.6" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="0.6" to="0" begin="1100" duration="1100" mode="EaseOut"/>
+				<animation property="offsetX" from="0" to="0.02" begin="2167" duration="3200" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+				<animation property="offsetY" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="0" to="-0.02" begin="2167" duration="2500" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.458333333333 0.552910052910</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>6</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="-0.6" to="-0.6" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="-0.6" to="0" begin="1100" duration="1100" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4" extra="true">
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.531250000000 0.508230452675</pos>
+			<size>1.062500000000 1.090534979424</size>
+			<zIndex>7</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetY" from="-0.6" to="-0.6" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-0.6" to="0" begin="1100" duration="1100" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>Theme by : HyperBat (converti HyperSpin)</text>
+		</text>
+	</view>
+</theme>

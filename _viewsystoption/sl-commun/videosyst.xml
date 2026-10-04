@@ -6,10 +6,7 @@
 		<!-- Ralentit le chargement du thème -->
 		<image name="fondecransmall" ifSubset="videofondcops1:gameplayp|gameplayp1" extra="true">
 			<origin>0.5 0.5</origin>
-			<!-- <pos>0.5 0.5</pos> -->
-			<!-- <path>${themePath}/_common/images/black.png</path> -->
-			<!-- <maxSize>1 1</maxSize> -->
-			<path>${themePath}/_common/images/169v2.png</path>
+			<path>${comcadre169}</path>
 			<size>0.9 0.98</size>
 			<pos>0.478 0.4</pos>
 			<linearSmooth>true</linearSmooth>
@@ -23,7 +20,7 @@
 			<tile>true</tile>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
-			<path>${themePath}/_common/shaders/scanlines01.png</path>
+			<path>${path_com_shaders}/scanlines01.png</path>
 			<maxSize>1 1</maxSize>
 			<maxSize ifSubset="videofondcops1:gameplayp|gameplayp1">0.55 0.7</maxSize>
 			<pos ifSubset="videofondcops1:gameplayp|gameplayp1">0.5 0.4</pos>
@@ -38,7 +35,7 @@
 			<visible ifSubset="videofondcops1:hyperspinorunified">${ifnoextsysthemeexist}</visible>
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
-			<path>${themePath}/_common/images/black.png</path>
+			<path>${path_common}/images/black.png</path>
 			<size>1 1</size>
 			<linearSmooth>true</linearSmooth>
 			<zIndex>1</zIndex>
@@ -90,7 +87,7 @@
 			<visible ifSubset="videofondcops1:hyperspinorder">${ifnoextsysthemeexist}</visible>
 		</video>
 		<video name="backgroundvideo" ifSubset="videofondcops1:hypermax|gameplayhmax" extra="true">
-			<default>${themePath}/_viewsyst/hypermx/defaut/scotty.mp4</default>
+			<default>${path_vsyst}/hypermx/defaut/scotty.mp4</default>
 			<path ifSubset="videofondcops1:hypermax|gameplayhmax">{random}</path>
 			<path ifSubset="videofondcops1:hypermax">${extvideofresh}</path>
 			<rotation>-4</rotation>
@@ -109,12 +106,15 @@
 			<zIndex>200</zIndex>
 		</video>
 	</view>
-	<include ifSubset="videofondcops1:hyperspin|hyperspinorunified">${extspinxml}</include>
-	<include ifSubset="videofondcops1:hyperspinxp|hyperspinorder|hyperspinorunified">${extspinxpxml}</include>
-		<view name="system">
+	<view name="system">
 		<image name="logocustunified" extra="true">
 			<zIndex>2</zIndex>
 		</image>
 	</view>
+	<include ifSubset="videofondcops1:hyperspin|hyperspinorunified|hyperspinxp|hyperspinorder">${extspinxml}</include>
+	<include ifSubset="videofondcops1:hyperspinxp|hyperspinorder">${path_vsystopt}/sl-commun/hsgeneriquerepli.xml</include>
+	<include ifSubset="videofondcops1:hyperspin|hyperspinorunified|hyperspinxp|hyperspinorder,cadrevideosyst:bordure">${path_vsystopt}/sl-commun/videobordure.xml</include>
+	<include ifSubset="videofondcops1:hyperspinxp|hyperspinorder|hyperspinorunified">${extspinxpxml}</include>
+	<include ifSubset="videofondcops1:hyperspinxp|hyperspinorder|hyperspinorunified,screenratio:r43|r1610">${path_syst_theme}/hyperspinxp/${system.theme}/systheme-${ratiosfx}.xml</include>
 	<!-- <include ifSubset="videofondcops1:videowall">${extvideowall}</include> -->
 </theme>

@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<!-- ################ Logo Système ##################### -->
+		<!-- <image name="logocust" extra="true"> -->
+			<!-- <pos>0.499739583333 0.104166666667</pos> -->
+			<!-- <size>0.354687500000 0.147222222222</size> -->
+		<!-- <scaleOrigin>0 -0.3</scaleOrigin> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <zIndex>10</zIndex> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+		<!-- <animation property="opacity" from="0" to="1" begin="200" duration="400" mode="Linear"/> -->
+		<!-- <animation property="offsetY" from="-1" to="0" begin="200" duration="650" mode="Linear"/> -->
+		<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true"> -->
+		<!-- <path>${intlogoclearsvg}</path> -->
+		<!-- <path>${extlogoclearsvg}</path> -->
+		<!-- <path>${intlogoclearpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="fr"> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="eu"> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="us"> -->
+		<!-- <path>${intlogoclearussvg}</path> -->
+		<!-- <path>${extlogoclearussvg}</path> -->
+		<!-- <path>${intlogoclearuspng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="jp"> -->
+		<!-- <path>${intlogoclearjpsvg}</path> -->
+		<!-- <path>${extlogoclearjpsvg}</path> -->
+		<!-- <path>${intlogoclearjppng}</path> -->
+		<!-- </image> -->
+		<image name="Background_Sys" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.499739583333 0.499537037037</pos>
+			<size>0.999479166667 0.999074074074</size>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="Artwork2_Sys" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.97 0.058796296296</pos>
+			<size>0.048437500000 0.089814814815</size>
+			<scale>0.8</scale>
+			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard repeatAt="950">
+				<!-- # Haut->Bas à repetition # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0.8" begin="950" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-0.5" to="1.5" begin="950" duration="15000" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4_Sys" extra="true">
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.051562500000 0.85</pos>
+			<size>0.043750000000 0.063888888889</size>
+			<zIndex>3</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard repeatAt="950">
+				<!-- # Haut->Bas à repetition # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="950" duration="50" mode="Linear"/>
+				<animation property="offsetX" from="0" to="0.4" begin="950" duration="8000" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="8950" duration="50" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="17000" duration="50" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork41_Sys" extra="true">
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.051562500000 0.85</pos>
+			<size>0.043750000000 0.063888888889</size>
+			<zIndex>3</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<flipX>true</flipX>
+			<storyboard repeatAt="950">
+				<!-- # Haut->Bas à repetition # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="9000" duration="50" mode="Linear"/>
+				<animation property="offsetX" from="0.4" to="0" begin="9000" duration="8000" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="17000" duration="50" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3_Sys" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.87 0.10</pos>
+			<size>0.066145833333 0.062037037037</size>
+			<zIndex>4</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée D->G + Flotte D->G # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="0.5" to="-0.1" begin="500" duration="2000" mode="easeOut"/>
+				<animation property="offsetY" from="-0.02" to="0.02" begin="" duration="8000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetX" from="-0.1" to="0" begin="2500" duration="4000" autoreverse="true" repeat="forever" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Helicoptere_Sys" extra="true">
+			<path>./Helicoptere.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.06 0.499537037037</pos>
+			<size>0.085416666667 0.069444444444</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="700" mode="Linear"/>
+				<animation property="offsetY" from="-0.5" to="0" begin="100" duration="2000" mode="easeOut"/>
+				<animation property="offsetY" from="0" to="-0.15" begin="5000" duration="2000" mode="easeInOut"/>
+				<animation property="offsetY" from="-0.15" to="-0.12" begin="7000" duration="1500" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetX" from="0" to="1" begin="8000" duration="5000" mode="easeInQuint"/>
+				<animation property="offsetY" from="-0.15" to="-0.25" begin="11000" duration="2000" mode="easeIn"/>
+				<animation property="rotation" from="0" to="10" begin="9000" duration="2000" mode="easeInOut"/>
+				<animation property="opacity" to="0" begin="14100" duration="" mode="Linear"/>
+				<animation property="rotation" from="10" to="0" begin="18000" duration="500" mode="easeInOut"/>
+				<animation property="offsetX" from="1" to="0" begin="18000" duration="500" mode="easeInQuint"/>				
+			</storyboard>
+		</image>
+		<image name="Explo2_Sys" extra="true">
+			<!-- <path>./Explo2.png</path> -->
+			<origin>0.5 0.5</origin>
+			<pos>0.073974277211 0.473510330058</pos>
+			<size>0.061979166667 0.121296296296</size>
+			<zIndex>6</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1500" mode="Linear"/>
+				<animation property="offsetX" from="-0.2" to="0" begin="0" duration="2500" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="fantom_Sys" extra="true">
+			<path>./fantom.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.849270833333 0.746296296296</pos>
+			<size>0.056250000000 0.094444444444</size>
+			<flipX>true</flipX>
+			<zIndex>7</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="1200" mode="easeIn"/>
+				<animation property="offsetY" from="0.1" to="0" begin="1000" duration="1200" mode="easeOut"/>
+				<animation property="offsetY" from="0" to="0.005" begin="2200" autoreverse="true" duration="3000" mode="easeInOut"/>
+				<animation property="opacity" from="1" to="0" begin="10000" duration="1500" mode="easeOut"/>
+				<animation property="offsetY" from="0" to="0.1" begin="10000" duration="1500" mode="linear"/>
+				<animation property="opacity" from="0" to="0" begin="15000" duration="1500" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="lcdgames-fr_Sys" extra="true">
+			<path>${intlogoclearpng}</path>
+			<path region="fr">${intlogoclearfrpng}</path>
+			<path region="eu">${intlogoclearfrpng}</path>
+			<path region="us">${intlogoclearuspng}</path>
+			<path region="jp">${intlogoclearjppng}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.105</pos>
+			<size>0.354687500000 0.147222222222</size>
+			<zIndex>8</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="200" duration="750" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<pos>0.5 0.539178634417</pos>
+			<maxSize>0.597505668934 0.70</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>9</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<shader>
+				<path>${path_com_shaders}/border_multi_gradient.glsl</path>
+				<cornerRadius>0.05</cornerRadius>
+				<innerShadowSize></innerShadowSize>
+				<innerShadowColor></innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+				<gradientMode>4</gradientMode>
+				<saturation/>
+				<borderSize>0.005</borderSize>
+				<borderColor>000000</borderColor>
+				<borderColorStart/>
+				<borderColorEnd/>
+				<borderSize2>0.010</borderSize2>
+				<borderColor2>ffffff</borderColor2>
+				<borderColorStart2>000000</borderColorStart2>
+				<borderColorEnd2>ffffff</borderColorEnd2>
+				<borderSize3>0.005</borderSize3>
+				<borderColor3>000000FF</borderColor3>
+				<borderColorStart3/>
+				<borderColorEnd3/>
+			</shader>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="800" duration="500" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="800" duration="500" mode="Linear"/>
+			</storyboard>
+		</video>
+			
+			
+			
+			<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Dav</text>
+		</text>
+	</view>
+</theme>

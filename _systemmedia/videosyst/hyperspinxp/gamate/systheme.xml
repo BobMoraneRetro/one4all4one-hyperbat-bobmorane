@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<!-- ################ Logo Système ##################### -->
+		<!-- <image name="logocust" extra="true"> -->
+		<!-- <maxSize>0.55 0.20</maxSize> -->
+		<!-- <scaleOrigin>0 -0.3</scaleOrigin> -->
+		<!-- <pos>0.5 0.12</pos> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <zIndex>10</zIndex> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+		<!-- <animation property="opacity" from="0" to="1" begin="200" duration="400" mode="Linear"/> -->
+		<!-- <animation property="offsetY" from="-1" to="0" begin="200" duration="650" mode="Linear"/> -->
+		<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true"> -->
+		<!-- <path>${intlogoclearsvg}</path> -->
+		<!-- <path>${extlogoclearsvg}</path> -->
+		<!-- <path>${intlogoclearpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="fr"> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="eu"> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="us"> -->
+		<!-- <path>${intlogoclearussvg}</path> -->
+		<!-- <path>${extlogoclearussvg}</path> -->
+		<!-- <path>${intlogoclearuspng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="jp"> -->
+		<!-- <path>${intlogoclearjpsvg}</path> -->
+		<!-- <path>${extlogoclearjpsvg}</path> -->
+		<!-- <path>${intlogoclearjppng}</path> -->
+		<!-- </image> -->
+		<image name="Background_Sys" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.503703703704</pos>
+			<size>1.007291666667 1.014814814815</size>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="fond_Sys" extra="true">
+			<path>./fond2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<zIndex>4</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<saturation>0.6</saturation>
+		</image>
+		<image name="couleur1_Sys" extra="true">
+			<path>./couleur1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.508072916667 0.821296296296</pos>
+			<size>0.910937500000 0.379629629630</size>
+			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard repeatAt="1">
+				<!-- # Dezoom faible # -->
+				<animation property="opacity" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="4000" duration="200" mode="easeIn"/>
+				<animation property="opacity" from="0" to="1" begin="8200" duration="200" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="couleur2_Sys" extra="true">
+			<path>./couleur2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.820833333333</pos>
+			<size>1.007291666667 0.380555555556</size>
+			<zIndex>3</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard repeatAt="1">
+				<!-- # Dezoom faible # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="4000" duration="200" mode="easeIn"/>
+				<animation property="opacity" from="1" to="0" begin="8200" duration="200" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="fond tr copie_Sys" extra="true">
+			<!-- <path>./fond tr copie.png</path> -->
+			<origin>0.5 0.5</origin>
+			<pos>0.500520833333 0.503703703704</pos>
+			<size>1.007291666667 1.014814814815</size>
+			<zIndex>4</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="ombre_Sys" extra="true">
+			<path>./ombre.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.162239583333 0.964814814815</pos>
+			<size>0.031770833333 0.057407407407</size>
+			<zIndex>14</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<opacity>41</opacity>
+			<storyboard repeatAt="18800">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="3800" duration="800" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0.05" begin="3800" duration="800" autoreverse="false" mode="easeIn"/>
+				<animation property="offsetX" from="0.05" to="0" begin="4600" duration="400" autoreverse="false" mode="easeOut"/>
+				<animation property="offsetX" from="0" to="-1" begin="14700" duration="2800" autoreverse="false" mode="easeOut"/>
+				<animation property="offsetY" from="0" to="-0.2" begin="14700" duration="400" autoreverse="true" mode="easeOut"/>				
+				<animation property="offsetX" from="-1" to="0.05" begin="18800" duration="800" autoreverse="false" mode="easeIn"/>
+				<animation property="offsetX" from="0.05" to="0" begin="19600" duration="400" autoreverse="false" mode="easeOut"/>
+				<animation property="offsetX" from="0" to="-1" begin="23700" duration="2800" autoreverse="false" mode="easeOut"/>	
+				<animation property="offsetY" from="0" to="-0.2" begin="23700" duration="400" autoreverse="true" mode="easeOut"/>
+				<animation property="opacity" from="1" to="1" begin="34000" duration="100" mode="Linear"/>
+				
+			</storyboard>
+		</image>
+		<image name="gamate1_Sys" extra="true">
+			<!-- <path>./gamate1.png</path> -->
+			<origin>0.5 0.5</origin>
+			<pos>0.168229166667 0.537962962963</pos>
+			<size>0.281250000000 0.824074074074</size>
+			<zIndex>15</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard repeatAt="18800">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="3800" duration="800" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0.05" begin="3800" duration="800" autoreverse="false" mode="easeIn"/>
+				<animation property="offsetX" from="0.05" to="0" begin="4600" duration="400" autoreverse="false" mode="easeOut"/>
+				<animation property="offsetX" from="0" to="-1" begin="14500" duration="2800" autoreverse="false" mode="easeOut"/>			
+				<animation property="offsetX" from="-1" to="0.05" begin="18800" duration="800" autoreverse="false" mode="easeIn"/>
+				<animation property="offsetX" from="0.05" to="0" begin="19600" duration="400" autoreverse="false" mode="easeOut"/>
+				<animation property="offsetX" from="0" to="-1" begin="23500" duration="2800" autoreverse="false" mode="easeOut"/>	
+				<animation property="opacity" from="1" to="1" begin="34000" duration="100" mode="Linear"/>		
+			</storyboard>
+		</image>
+		<image name="gamate2_Sys" extra="true">
+			<path>./gamate2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.167968750000 0.537962962963</pos>
+			<size>0.281770833333 0.824074074074</size>
+			<zIndex>15</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard repeatAt="18800">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="3800" duration="800" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0.05" begin="3800" duration="800" autoreverse="false" mode="easeIn"/>
+				<animation property="offsetX" from="0.05" to="0" begin="4600" duration="400" autoreverse="false" mode="easeOut"/>
+				<animation property="offsetX" from="0" to="-1" begin="14700" duration="2800" autoreverse="false" mode="easeOut"/>
+				<animation property="offsetY" from="0" to="-0.2" begin="14700" duration="400" autoreverse="true" mode="easeOut"/>				
+				<animation property="offsetX" from="-1" to="0.05" begin="18800" duration="800" autoreverse="false" mode="easeIn"/>
+				<animation property="offsetX" from="0.05" to="0" begin="19600" duration="400" autoreverse="false" mode="easeOut"/>
+				<animation property="offsetX" from="0" to="-1" begin="23700" duration="2800" autoreverse="false" mode="easeOut"/>	
+				<animation property="offsetY" from="0" to="-0.2" begin="23700" duration="400" autoreverse="true" mode="easeOut"/>
+				<animation property="opacity" from="1" to="1" begin="34000" duration="100" mode="Linear"/>		
+			</storyboard>
+		</image>
+		<image name="Logo_Sys" extra="true">
+			<path>./Logo.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.509375000000 0.115277777778</pos>
+			<size>0.709375000000 0.289814814815</size>
+			<zIndex>7</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Dezoom faible # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="600" duration="1800" mode="Linear"/>
+				<animation property="scale" from="3" to="1" begin="300" duration="1800" autoreverse="false" mode="easeIn"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1_Sys" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.170773100907 0.620732552280</pos>
+			<size>0.321875000000 0.743518518519</size>
+			<zIndex>8</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard repeatAt="18800">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="0" duration="4000" mode="EaseOutQuint"/>
+				<animation property="offsetX" from="0" to="1" begin="4500" duration="500" autoreverse="false" mode="easeOut"/>
+				<animation property="offset" from="0 1" to="0 0" begin="14000" duration="1500" autoreverse="false" mode="easeIn"/>
+				<animation property="offsetX" from="0" to="1" begin="19500" duration="500" autoreverse="false" mode="easeOut"/>
+				<animation property="offset" from="0 1" to="0 0" begin="23000" duration="1500" autoreverse="false" mode="easeIn"/>
+				<animation property="opacity" from="1" to="1" begin="34000" duration="100" mode="Linear"/>	
+			</storyboard>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<pos>0.6627 0.498553791887</pos>
+			<size>0.2076 0.290249433107</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>11</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<storyboard>
+				<!-- # Arrivée D->G Bump Retour smooth_alt  # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="0.5" to="-0.04" begin="100" duration="800" mode="easeOut"/>
+				<animation property="offsetX" from="-0.04" to="0.025" begin="900" duration="800" autoreverse="false" mode="bump"/>
+				<animation property="offsetX" from="0.025" to="-0.01" begin="1700" duration="800" autoreverse="false" mode="bump"/>
+				<animation property="offsetX" from="-0.01" to="0.002" begin="2500" duration="800" autoreverse="false" mode="bump"/>
+				<animation property="offsetX" from="0.002" to="0" begin="3300" duration="800" autoreverse="false" mode="bump"/>
+			</storyboard>
+		</video>
+		<image name="imagevid_Sys" extra="true">
+			<path>./imagevid.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.666927083333 0.493240740741</pos>
+			<size>0.261979166667 0.382407407407</size>
+			<zIndex>10</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrivée D->G Bump Retour smooth_alt  # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="0.5" to="-0.04" begin="500" duration="800" mode="easeOut"/>
+				<animation property="offsetX" from="-0.04" to="0.025" begin="1300" duration="800" autoreverse="false" mode="bump"/>
+				<animation property="offsetX" from="0.025" to="-0.01" begin="2100" duration="800" autoreverse="false" mode="bump"/>
+				<animation property="offsetX" from="-0.01" to="0.002" begin="2900" duration="800" autoreverse="false" mode="bump"/>
+				<animation property="offsetX" from="0.002" to="0" begin="3700" duration="800" autoreverse="false" mode="bump"/>
+			</storyboard>
+		</image>
+		<image name="Video_Sys" extra="true">
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.664062500000 0.543703703704</pos>
+			<size>0.640625000000 0.670740740741</size>
+			<zIndex>11</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<rotation>0</rotation>
+			<storyboard>
+				<!-- # Arrivée D->G Bump Retour smooth_alt  # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="0.5" to="-0.04" begin="500" duration="800" mode="easeOut"/>
+				<animation property="offsetX" from="-0.04" to="0.025" begin="1300" duration="800" autoreverse="false" mode="bump"/>
+				<animation property="offsetX" from="0.025" to="-0.01" begin="2100" duration="800" autoreverse="false" mode="bump"/>
+				<animation property="offsetX" from="-0.01" to="0.002" begin="2900" duration="800" autoreverse="false" mode="bump"/>
+				<animation property="offsetX" from="0.002" to="0" begin="3700" duration="800" autoreverse="false" mode="bump"/>
+			</storyboard>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Dav (+ mods Pepel Souza)</text>
+		</text>
+	</view>
+</theme>

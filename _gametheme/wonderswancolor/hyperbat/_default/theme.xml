@@ -137,16 +137,16 @@
 				<animation property="scale" from="1.02" to="1" begin="2500" duration="100" mode="bump" autoreverse="false"/>
 			</storyboard>
 		</image>
-		<control name="Background-wonderswancolor, Artwork3-wonderswancolor, rect_vid_pers-wonderswancolor, Artwork4-wonderswancolor, Boxart-wonderswancolor, Marquee-wonderswancolor">
-			<storyboard event="deactivateNext">
-				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
-				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
-			</storyboard>
-			<storyboard event="deactivatePrev">
-				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
-				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
-			</storyboard>
-		</control>
+		<!-- <control name="Background-wonderswancolor, Artwork3-wonderswancolor, rect_vid_pers-wonderswancolor, Artwork4-wonderswancolor, Boxart-wonderswancolor, Marquee-wonderswancolor"> -->
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+		<!-- </control> -->
 		<control name="cartridge-wonderswancolor">
 			<storyboard event="deactivateNext">
 				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>

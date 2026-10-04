@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<!-- ################ Logo Système ##################### -->
+		<image name="Background_Sys" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.509680134680 0.496820052376</pos>
+			<size>1.024410774411 1.035540591096</size>
+			<zIndex>1</zIndex>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<pos>0.227693602694 0.639730639731</pos>
+			<maxSize>0.394781144781 0.525252525253</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>2</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<rotation>8</rotation>
+			<shader>
+				<path>${path_com_shaders}/border_multi_gradient.glsl</path>
+				<cornerRadius>0.00</cornerRadius>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>0080ffff</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>0000ffff</outerShadowColor>
+				<gradientMode>4</gradientMode>
+				<saturation/>
+				<borderSize>0.0030</borderSize>
+				<borderColor>0080ffff</borderColor>
+				<borderColorStart/>
+				<borderColorEnd/>
+				<borderSize2>0.000</borderSize2>
+				<borderColor2>0080ff00</borderColor2>
+				<borderColorStart2>000000ff</borderColorStart2>
+				<borderColorEnd2>ffffff00</borderColorEnd2>
+				<borderSize3>0.0020</borderSize3>
+				<borderColor3>0000ffff</borderColor3>
+				<borderColorStart3/>
+				<borderColorEnd3/>
+			</shader>
+			<storyboard>
+				<!-- # Ondulation Drapeau D->G # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="550" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="550" duration="1500" mode="easeOut"/>
+				<animation property="shader.waveTime" to="5" begin="1500" duration="2000" mode="easeOut"/>
+			</storyboard>
+		</video>
+		<image name="Artwork2_Sys" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.256734006734 0.074074074074</pos>
+			<size>0.151515151515 0.115226337449</size>
+			<zIndex>3</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Bump Arrival # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1250" duration="500" mode="Linear"/>
+				<animation property="scale" from="0" to="1" begin="1250" duration="500" mode="bump"/>
+				<animation property="scale" from="1" to="1.1" begin="1750" duration="120" autoreverse="true" mode="EasyOutCubic"/>
+				<animation property="scale" from="1" to="1.05" begin="1870" duration="120" autoreverse="true" mode="EasyOutCubic"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4_Sys" extra="true">
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.254103535354 0.241517022073</pos>
+			<size>0.270833333333 0.216666666667</size>
+			<zIndex>4</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Bump Arrival Alt # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear"/>
+				<animation property="scale" from="0" to="1.1" begin="1500" duration="500" autoreverse="false" mode="EaseIn"/>
+				<animation property="scale" from="1.1" to="0.95" begin="2000" duration="300" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="0.95" to="1.02" begin="2300" duration="200" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="1.02" to="1" begin="2500" duration="100" autoreverse="false" mode="bump"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3_Sys" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.615993265993 0.675201084923</pos>
+			<size>0.774074074074 0.715909090909</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Sweet Arrival Left to Right # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1_Sys" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.727146464646 0.361391694725</pos>
+			<size>0.541835016835 0.713804713805</size>
+			<zIndex>6</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Custom storyboard (4 properties) # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+				<animation property="scale" from="1" to="1.05" begin="0" duration="4000" autoreverse="true" repeat="forever" mode="EaseInCubic"/>
+			</storyboard>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Finch</text>
+		</text>
+	</view>
+</theme>

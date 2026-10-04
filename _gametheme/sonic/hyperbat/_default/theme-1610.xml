@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 16:10 generee le 2026-09-29 depuis theme.xml (hauteurs x0.9 autour de l'ancre) -->
+	<include>./theme.xml</include>
+	<customView name="hyperbat">
+		<image name="video4_3-sonic" extra="true">
+			<pos>0.479427083333 0.579490740741</pos>
+			<size>0.5109375 0.636666666666</size>
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="image_vid-sonic" extra="true">
+			<pos>0.479427083333 0.578240740741</pos>
+			<size>0.334895833333 0.4025</size>
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev-sonic" extra="true">
+			<pos>0.4785 0.578240740741</pos>
+			<maxSize>0.334895833333 0.4025</maxSize>
+		</video>
+		<image name="Background_1-sonic" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="titre-sonic" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="background" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+			<!-- copie du storyboard par defaut, rejoue au changement de jeu -->
+			<storyboard event="activate">
+				<animation property="offsetY" from="-0.5" to="-0.5" begin="" duration="" mode="Linear" />
+				<animation property="offsetY" from="-0.5" to="0" begin="400" duration="1106" mode="EaseOut" />
+				<animation property="offsetY" from="0" to="0.04" begin="1371" duration="2605" mode="EaseInOut" autoreverse="true" repeat="forever" />
+				<animation property="offsetX" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="offsetX" from="0" to="-0.04" begin="3371" duration="2004" mode="EaseInOut" autoreverse="true" repeat="forever" />
+				<animation property="rotation" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="rotation" from="0" to="3" begin="1371" duration="1352" mode="EaseInOut" autoreverse="true" repeat="forever" />
+			</storyboard>
+		</image>
+		<image name="dr robotnik-sonic" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="chaotix 2-sonic" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<text name="defaultthemeauthor" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</text>
+	</customView>
+</theme>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 16:10 generee le 2026-09-29 depuis theme.xml (hauteurs x0.9 autour de l'ancre) -->
+	<include>./theme.xml</include>
+	<customView name="hyperbat">
+		<image name="Artwork2" extra="true">
+			<pos>0.4922 0.61343</pos>
+			<size>0.7 0.63</size>
+		</image>
+		<image name="Artwork3" extra="true">
+			<pos>0.5088 0.62045</pos>
+			<size>0.6 0.72</size>
+		</image>
+		<video name="md_video" extra="true">
+			<pos>0.5 0.6146</pos>
+			<maxSize>0.4 0.603</maxSize>
+		</video>
+		<video name="transition" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="Background" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+			</storyboard>
+			<!-- copie du storyboard par defaut, rejoue au changement de jeu -->
+			<storyboard repeatAt="2550" event="activate">
+				
+				<animation property="opacity" from="0" to="1" begin="500" duration="2000" mode="Linear" />
+				<animation property="opacity" begin="2800" from="1" to="0.8" duration="40" autoreverse="true" repeat="5" mode="Linear" />
+				<animation property="opacity" begin="3500" from="1" to="0.8" duration="5" autoreverse="true" repeat="3" mode="Linear" />
+				<animation property="opacity" begin="5500" from="1" to="0.8" duration="7" autoreverse="true" repeat="2" mode="Linear" />
+				<animation property="opacity" begin="6000" from="1" to="0.8" duration="5" autoreverse="true" repeat="4" mode="Linear" />
+				<animation property="opacity" begin="11000" from="1" to="0.8" duration="40" autoreverse="true" repeat="40" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Artwork4" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+			</storyboard>
+			<!-- copie du storyboard par defaut, rejoue au changement de jeu -->
+			<storyboard repeatAt="2550" event="activate">
+				
+				<animation property="opacity" from="0" to="1" begin="500" duration="2000" mode="Linear" />
+				<animation property="opacity" begin="2800" from="1" to="0.8" duration="40" autoreverse="true" repeat="5" mode="Linear" />
+				<animation property="opacity" begin="3500" from="1" to="0.8" duration="5" autoreverse="true" repeat="3" mode="Linear" />
+				<animation property="opacity" begin="5500" from="1" to="0.8" duration="7" autoreverse="true" repeat="2" mode="Linear" />
+				<animation property="opacity" begin="6000" from="1" to="0.8" duration="5" autoreverse="true" repeat="4" mode="Linear" />
+				<animation property="opacity" begin="11000" from="1" to="0.8" duration="40" autoreverse="true" repeat="40" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Videobezel" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<text name="gamethemeauthor" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</text>
+	</customView>
+</theme>

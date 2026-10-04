@@ -1,0 +1,2051 @@
+{
+  "version": 1,
+  "project": {
+    "name": "_default",
+    "author": "",
+    "description": "",
+    "themeType": "default",
+    "width": 1920,
+    "height": 1080,
+    "filePath": null,
+    "modified": true,
+    "globalLightAngle": 30
+  },
+  "layers": [
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 960,
+      "y": 540,
+      "width": 1920,
+      "height": 1080,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": 0.5,
+      "scaleOriginY": 0.5,
+      "pivotPreset": "center",
+      "zIndex": 1,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "3472d621-ce08-4fee-8196-54b83062ea49",
+      "name": "BackgrSyst",
+      "src": "asset://local?path=A%3A%2FRetrobatwork%2Femulationstation%2F.emulationstation%2Fthemes%2FOne4All4One-Hyperbat%2F_gametheme%2Fatari5200%2Fhyperbat%2F_default%2FBackground.png",
+      "originalPath": "A:\\Retrobatwork\\emulationstation\\.emulationstation\\themes\\One4All4One-Hyperbat\\_gametheme\\atari5200\\hyperbat\\_default/Background.png",
+      "importedZIndex": 1,
+      "rawVisibles": [
+        {
+          "text": "${IfnoextGamethemeexist}",
+          "attrs": {
+            "ifSubset": "hsperview:themejeux"
+          }
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 446.0000000000007,
+      "y": 162,
+      "width": 794.0000000000006,
+      "height": 213.99999999999983,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": 0,
+      "scaleOriginY": -0.3,
+      "pivotPreset": "custom",
+      "zIndex": 10,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [
+        {
+          "event": "open",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "000",
+              "duration": "400",
+              "mode": "Linear"
+            },
+            {
+              "property": "offsetY",
+              "from": "-0.3",
+              "to": "0",
+              "begin": "000",
+              "duration": "800",
+              "mode": "Linear"
+            }
+          ]
+        },
+        {
+          "event": "deactivateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "0",
+              "begin": "100",
+              "duration": "150",
+              "mode": "Linear"
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "16c5b258-6f18-4537-a1f0-5821579b32d4",
+      "name": "logodef",
+      "src": "asset://local?path=A%3A%2FRetrobatwork%2Femulationstation%2F.emulationstation%2Fthemes%2FOne4All4One-Hyperbat%2F_gametheme%2Fatari5200%2Fhyperbat%2F_default%2FArtwork2.png",
+      "originalPath": "A:\\Retrobatwork\\emulationstation\\.emulationstation\\themes\\One4All4One-Hyperbat\\_gametheme\\atari5200\\hyperbat\\_default/Artwork2.png",
+      "importedZIndex": 10,
+      "rawVisibles": [
+        {
+          "text": "${IfnoextGamethemeexist}",
+          "attrs": {
+            "ifSubset": "hsperview:themejeux"
+          }
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 457.27977167530787,
+      "y": 575.2797716753059,
+      "width": 722.5595433506169,
+      "height": 518.5595433506157,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": 0.5,
+      "scaleOriginY": 0.5,
+      "pivotPreset": "center",
+      "zIndex": 13,
+      "originalWidth": 32,
+      "originalHeight": 32,
+      "storyboards": [],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": false,
+      "inControlGroup": false,
+      "src": "asset://local?path=A%3A%2FRetrobatwork%2Femulationstation%2F.emulationstation%2Fthemes%2FOne4All4One-Hyperbat%2F_gametheme%2Fatari5200%2Fhyperbat%2F_default%2Ffiber.png",
+      "name": "fiber",
+      "fileName": "fiber.png",
+      "originalPath": "A:\\Retrobatwork\\emulationstation\\.emulationstation\\themes\\One4All4One-Hyperbat\\_gametheme\\atari5200\\hyperbat\\_default\\fiber.png",
+      "id": "layer_1782420227682_1"
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 457,
+      "y": 574.5,
+      "width": 320,
+      "height": 240,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 2.28125,
+      "scaleY": 2.2041666666666666,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": 0.5,
+      "scaleOriginY": 0.5,
+      "pivotPreset": "center",
+      "zIndex": 14,
+      "originalWidth": 320,
+      "originalHeight": 240,
+      "storyboards": [
+        {
+          "event": "open",
+          "name": "Opacity",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "0",
+              "duration": "0",
+              "mode": "Linear"
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": false,
+      "inControlGroup": false,
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMjAiIGhlaWdodD0iMjQwIiB2aWV3Qm94PSIwIDAgMzIwIDI0MCI+CiAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiMyNDFhMmUiIHN0cm9rZT0iIzliNTliNiIgc3Ryb2tlLXdpZHRoPSI2IiBzdHJva2UtZGFzaGFycmF5PSIxNCAxMCIgLz4KICAgICAgICAgICAgPHRleHQgeD0iNTAlIiB5PSI0NSUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iYm9sZCIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzliNTliNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+U0NSRUVOU0hPVDwvdGV4dD4KICAgICAgICAgICAgPHRleHQgeD0iNTAlIiB5PSI1OCUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0LjM5OTk5OTk5OTk5OTk5OSIgZmlsbD0iIzU1NTU2NiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSI+MzIw1zI0MDwvdGV4dD4KICAgICAgICA8L3N2Zz4=",
+      "name": "md_image",
+      "fileName": "md_image_placeholder",
+      "originalPath": "",
+      "id": "layer_1782420348821_2"
+    },
+    {
+      "type": "video",
+      "visible": true,
+      "locked": false,
+      "x": 453.888,
+      "y": 577.8000000000001,
+      "width": 729.6,
+      "height": 529.2,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": 0.5,
+      "scaleOriginY": 0.5,
+      "pivotPreset": "center",
+      "zIndex": 201,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [
+        {
+          "event": "open",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "1500",
+              "duration": "500",
+              "mode": "EaseIn"
+            }
+          ]
+        },
+        {
+          "event": "activateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "1500",
+              "duration": "500",
+              "mode": "EaseIn"
+            }
+          ]
+        },
+        {
+          "event": "activatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "1500",
+              "duration": "500",
+              "mode": "EaseIn"
+            }
+          ]
+        },
+        {
+          "event": "deactivateNext",
+          "animations": [
+            {
+              "property": "scale",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "200",
+              "mode": "easyIn",
+              "autoreverse": false
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "100",
+              "duration": "150",
+              "mode": "linear"
+            }
+          ]
+        },
+        {
+          "event": "deactivatePrev",
+          "animations": [
+            {
+              "property": "scale",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "200",
+              "mode": "easyIn",
+              "autoreverse": false
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "100",
+              "duration": "150",
+              "mode": "linear"
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "3c6cc3f8-421d-46c7-8d12-18ea18e8a748",
+      "name": "gameplayprev",
+      "src": "",
+      "originalPath": "",
+      "importedZIndex": 201,
+      "dynamicPath": "{game:video}",
+      "dynamicSlot": "video",
+      "rawVisibles": [
+        {
+          "text": "${IfnoextGamethemeexist}",
+          "attrs": {}
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 453.5000000000007,
+      "y": 594,
+      "width": 779.0000000000006,
+      "height": 590.9999999999998,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": 0.5,
+      "scaleOriginY": 0.5,
+      "pivotPreset": "center",
+      "zIndex": 300,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [
+        {
+          "event": "deactivatePrev",
+          "animations": [
+            {
+              "property": "scale",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "200",
+              "mode": "easyIn",
+              "autoreverse": false
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "100",
+              "duration": "150",
+              "mode": "linear"
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "8497a3ef-4b19-40fc-94a0-f5d25d3670a9",
+      "name": "VideoDefBezel",
+      "src": "asset://local?path=A%3A%2FRetrobatwork%2Femulationstation%2F.emulationstation%2Fthemes%2FOne4All4One-Hyperbat%2F_gametheme%2Fatari5200%2Fhyperbat%2F_default%2Fvideo.png",
+      "originalPath": "A:\\Retrobatwork\\emulationstation\\.emulationstation\\themes\\One4All4One-Hyperbat\\_gametheme\\atari5200\\hyperbat\\_default/video.png",
+      "importedZIndex": 300,
+      "rawVisibles": [
+        {
+          "text": "${IfnoextGamethemeexist}",
+          "attrs": {}
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 1152,
+      "y": 419.00000000000006,
+      "width": 330.9999999999994,
+      "height": 488.00000000000017,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": -0.3,
+      "scaleOriginY": -0.3,
+      "pivotPreset": "custom",
+      "zIndex": 400,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [
+        {
+          "event": "open",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "1000",
+              "duration": "500",
+              "mode": "EaseIn"
+            }
+          ]
+        },
+        {
+          "event": "activateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "1000",
+              "duration": "500",
+              "mode": "EaseIn"
+            }
+          ]
+        },
+        {
+          "event": "activatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "1000",
+              "duration": "500",
+              "mode": "EaseIn"
+            }
+          ]
+        },
+        {
+          "event": "deactivateNext",
+          "animations": [
+            {
+              "property": "scale",
+              "from": "1",
+              "to": "1",
+              "begin": "",
+              "duration": "250",
+              "mode": "linear"
+            },
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "60",
+              "duration": "",
+              "mode": "easeIn"
+            }
+          ]
+        },
+        {
+          "event": "deactivatePrev",
+          "animations": [
+            {
+              "property": "scale",
+              "from": "1",
+              "to": "1",
+              "begin": "",
+              "duration": "250",
+              "mode": "linear"
+            },
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "60",
+              "duration": "",
+              "mode": "easeIn"
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "bfcce46a-befc-4462-b960-7b100602b4a5",
+      "name": "ArtworkDef1",
+      "src": "asset://local?path=A%3A%2FRetrobatwork%2Femulationstation%2F.emulationstation%2Fthemes%2FOne4All4One-Hyperbat%2F_gametheme%2Fatari5200%2Fhyperbat%2F_default%2FArtwork1.png",
+      "originalPath": "A:\\Retrobatwork\\emulationstation\\.emulationstation\\themes\\One4All4One-Hyperbat\\_gametheme\\atari5200\\hyperbat\\_default/Artwork1.png",
+      "importedZIndex": 400,
+      "rawVisibles": [
+        {
+          "text": "!exists(\"${path_game_theme}/${system.theme}/Hyperbat/\" + stem({game:rom}) + \"/theme.xml\")",
+          "attrs": {
+            "ifSubset": "hsperview:themejeux"
+          }
+        },
+        {
+          "text": "${IfnoextGamethemeexist}",
+          "attrs": {
+            "ifSubset": "hsperview:themejeux"
+          }
+        },
+        {
+          "text": "!exists(\"${path_game_theme}/${system.theme}/hyperbat/_default/Artwork/\" + stem({game:rom}) + \".png\")",
+          "attrs": {
+            "ifSubset": "hsperview:themejeux"
+          }
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 1160.0000000000005,
+      "y": 413.99999999999966,
+      "width": 513.9999999999993,
+      "height": 476.0000000000003,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": -0.3,
+      "scaleOriginY": -0.3,
+      "pivotPreset": "custom",
+      "zIndex": 400,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [
+        {
+          "event": "open",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "1000",
+              "duration": "500",
+              "mode": "EaseIn"
+            }
+          ]
+        },
+        {
+          "event": "activateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "1000",
+              "duration": "500",
+              "mode": "EaseIn"
+            }
+          ]
+        },
+        {
+          "event": "activatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "1000",
+              "duration": "500",
+              "mode": "EaseIn"
+            }
+          ]
+        },
+        {
+          "event": "deactivateNext",
+          "animations": [
+            {
+              "property": "scale",
+              "from": "1",
+              "to": "1",
+              "begin": "",
+              "duration": "250",
+              "mode": "linear"
+            },
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "60",
+              "duration": "",
+              "mode": "easeIn"
+            }
+          ]
+        },
+        {
+          "event": "deactivatePrev",
+          "animations": [
+            {
+              "property": "scale",
+              "from": "1",
+              "to": "1",
+              "begin": "",
+              "duration": "250",
+              "mode": "linear"
+            },
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "60",
+              "duration": "",
+              "mode": "easeIn"
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "59092051-2ac7-4147-aa04-fbaca53774a3",
+      "name": "ArtworkDef3",
+      "src": "",
+      "originalPath": "",
+      "importedZIndex": 400,
+      "dynamicPath": "\"${path_game_theme}/${system.theme}/hyperbat/_default/Artwork/\" + stem({game:rom}) + \".png\"",
+      "dynamicSlot": "artwork",
+      "rawVisibles": [
+        {
+          "text": "${IfnoextGamethemeexist}",
+          "attrs": {}
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 1285.5,
+      "y": 836.5,
+      "width": 837,
+      "height": 468.9999999999997,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": -0.3,
+      "scaleOriginY": -0.3,
+      "pivotPreset": "custom",
+      "zIndex": 500,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [
+        {
+          "event": "deactivateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "0",
+              "begin": "100",
+              "duration": "150",
+              "mode": "Linear"
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "741ed532-1118-42c7-a127-35e684941bd1",
+      "name": "console",
+      "src": "asset://local?path=A%3A%2FRetrobatwork%2Femulationstation%2F.emulationstation%2Fthemes%2FOne4All4One-Hyperbat%2F_gametheme%2Fatari5200%2Fhyperbat%2F_default%2Fconsole.png",
+      "originalPath": "A:\\Retrobatwork\\emulationstation\\.emulationstation\\themes\\One4All4One-Hyperbat\\_gametheme\\atari5200\\hyperbat\\_default/console.png",
+      "importedZIndex": 500,
+      "rawVisibles": [
+        {
+          "text": "!exists(\"${path_game_theme}/${system.theme}/Hyperbat/\" + stem({game:rom}) + \"/theme.xml\")",
+          "attrs": {
+            "ifSubset": "hsperview:themejeux"
+          }
+        },
+        {
+          "text": "${IfnoextGamethemeexist}",
+          "attrs": {
+            "ifSubset": "hsperview:themejeux"
+          }
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 1284.9999999999995,
+      "y": 697.4999999999997,
+      "width": 207.99999999999937,
+      "height": 191.00000000000017,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": 0.5,
+      "scaleOriginY": 0.5,
+      "pivotPreset": "center",
+      "zIndex": 505,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [
+        {
+          "event": "open",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "0",
+              "duration": "",
+              "mode": "linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "400",
+              "duration": "500",
+              "mode": "linear"
+            },
+            {
+              "property": "offsetY",
+              "from": "-1",
+              "to": "",
+              "begin": "",
+              "duration": "1000",
+              "mode": "easeOut"
+            }
+          ]
+        },
+        {
+          "event": "activateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "0",
+              "duration": "",
+              "mode": "linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "400",
+              "duration": "500",
+              "mode": "linear"
+            },
+            {
+              "property": "offsetY",
+              "from": "-1",
+              "to": "",
+              "begin": "",
+              "duration": "1000",
+              "mode": "easeOut"
+            }
+          ]
+        },
+        {
+          "event": "activatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "0",
+              "duration": "",
+              "mode": "linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "400",
+              "duration": "500",
+              "mode": "linear"
+            },
+            {
+              "property": "offsetY",
+              "from": "-1",
+              "to": "",
+              "begin": "",
+              "duration": "1000",
+              "mode": "easeOut"
+            }
+          ]
+        },
+        {
+          "event": "deactivateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "150",
+              "mode": "linear"
+            }
+          ]
+        },
+        {
+          "event": "deactivatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "50",
+              "mode": "linear"
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "44ec60b6-24b2-4d44-991f-9c74c0b1843d",
+      "name": "cartridge",
+      "src": "",
+      "originalPath": "",
+      "importedZIndex": 505,
+      "dynamicPath": "{game:cartridge}",
+      "dynamicSlot": "cartridge",
+      "rawVisibles": [
+        {
+          "text": "${IfnoextGamethemeexist}",
+          "attrs": {}
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 1292.0000000000007,
+      "y": 798.5000000000002,
+      "width": 333.9999999999993,
+      "height": 113.0000000000004,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": -0.3,
+      "scaleOriginY": -0.3,
+      "pivotPreset": "custom",
+      "zIndex": 510,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [
+        {
+          "event": "deactivateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "0",
+              "begin": "100",
+              "duration": "150",
+              "mode": "Linear"
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "5f29c542-f025-449e-9c15-7671c85dcef5",
+      "name": "console2",
+      "src": "asset://local?path=A%3A%2FRetrobatwork%2Femulationstation%2F.emulationstation%2Fthemes%2FOne4All4One-Hyperbat%2F_gametheme%2Fatari5200%2Fhyperbat%2F_default%2Fconsole2.png",
+      "originalPath": "A:\\Retrobatwork\\emulationstation\\.emulationstation\\themes\\One4All4One-Hyperbat\\_gametheme\\atari5200\\hyperbat\\_default/console2.png",
+      "importedZIndex": 510,
+      "rawVisibles": [
+        {
+          "text": "!exists(\"${path_game_theme}/${system.theme}/Hyperbat/\" + stem({game:rom}) + \"/theme.xml\")",
+          "attrs": {
+            "ifSubset": "hsperview:themejeux"
+          }
+        },
+        {
+          "text": "${IfnoextGamethemeexist}",
+          "attrs": {}
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 1536,
+      "y": 129.6,
+      "width": 422.4,
+      "height": 162,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": 0.5,
+      "scaleOriginY": 0.5,
+      "pivotPreset": "center",
+      "zIndex": 502,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [
+        {
+          "event": "open",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "1",
+              "begin": "1500",
+              "duration": "700",
+              "mode": "Linear"
+            },
+            {
+              "property": "offsetY",
+              "from": "-1",
+              "to": "0",
+              "begin": "100",
+              "duration": "2000",
+              "mode": "EaseOut"
+            }
+          ]
+        },
+        {
+          "event": "activateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "1",
+              "begin": "1500",
+              "duration": "700",
+              "mode": "Linear"
+            },
+            {
+              "property": "offsetY",
+              "from": "-1",
+              "to": "0",
+              "begin": "1000",
+              "duration": "2000",
+              "mode": "EaseOut"
+            }
+          ]
+        },
+        {
+          "event": "activatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "1",
+              "begin": "1500",
+              "duration": "700",
+              "mode": "Linear"
+            },
+            {
+              "property": "offsetY",
+              "from": "-1",
+              "to": "0",
+              "begin": "1000",
+              "duration": "2000",
+              "mode": "EaseOut"
+            }
+          ]
+        },
+        {
+          "event": "deactivateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "150",
+              "mode": "EaseIn"
+            },
+            {
+              "property": "scale",
+              "from": "",
+              "to": "3",
+              "begin": "",
+              "duration": "300",
+              "mode": "easyIn",
+              "autoreverse": false
+            }
+          ]
+        },
+        {
+          "event": "deactivatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "150",
+              "mode": "EaseIn"
+            },
+            {
+              "property": "scale",
+              "from": "",
+              "to": "3",
+              "begin": "",
+              "duration": "300",
+              "mode": "easyIn",
+              "autoreverse": false
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "76e0cb86-44f8-4563-9a2a-754f0fdda374",
+      "name": "MarqueeHS",
+      "src": "",
+      "originalPath": "",
+      "importedZIndex": 502,
+      "dynamicPath": "{game:marquee}",
+      "dynamicSlot": "marquee",
+      "rawVisibles": [
+        {
+          "text": "${IfnoextGamethemeexist}",
+          "attrs": {}
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 1623,
+      "y": 955.4999999999998,
+      "width": 33.999999999999936,
+      "height": 33.00000000000005,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": -0.3,
+      "scaleOriginY": -0.3,
+      "pivotPreset": "custom",
+      "zIndex": 515,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [
+        {
+          "event": "open",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "0",
+              "duration": "",
+              "mode": "linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "1200",
+              "duration": "200",
+              "mode": "linear"
+            }
+          ]
+        },
+        {
+          "event": "activateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "0",
+              "duration": "",
+              "mode": "linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "1200",
+              "duration": "200",
+              "mode": "linear"
+            }
+          ]
+        },
+        {
+          "event": "activatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "0",
+              "duration": "",
+              "mode": "linear"
+            },
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "1200",
+              "duration": "200",
+              "mode": "linear"
+            }
+          ]
+        },
+        {
+          "event": "deactivateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "linear"
+            }
+          ]
+        },
+        {
+          "event": "deactivatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "linear"
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "8fe5153e-38c5-4826-aa1f-eb5a23c4c592",
+      "name": "Console_ON",
+      "src": "asset://local?path=A%3A%2FRetrobatwork%2Femulationstation%2F.emulationstation%2Fthemes%2FOne4All4One-Hyperbat%2F_gametheme%2Fatari5200%2Fhyperbat%2F_default%2FOn.png",
+      "originalPath": "A:\\Retrobatwork\\emulationstation\\.emulationstation\\themes\\One4All4One-Hyperbat\\_gametheme\\atari5200\\hyperbat\\_default/On.png",
+      "importedZIndex": 515,
+      "rawVisibles": [
+        {
+          "text": "!exists(\"${path_game_theme}/${system.theme}/Hyperbat/\" + stem({game:rom}) + \"/theme.xml\")",
+          "attrs": {
+            "ifSubset": "hsperview:themejeux"
+          }
+        },
+        {
+          "text": "${IfnoextGamethemeexist}",
+          "attrs": {
+            "ifSubset": "hsperview:themejeux"
+          }
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 1635.9999999999993,
+      "y": 540,
+      "width": 384,
+      "height": 540,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": 0.5,
+      "scaleOriginY": 0.5,
+      "pivotPreset": "center",
+      "zIndex": 551,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [
+        {
+          "event": "open",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "1",
+              "begin": "1000",
+              "duration": "500",
+              "mode": "Linear"
+            },
+            {
+              "property": "offsetX",
+              "from": "1",
+              "to": "0",
+              "begin": "1000",
+              "duration": "2000",
+              "mode": "EaseOut"
+            }
+          ]
+        },
+        {
+          "event": "activateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "1",
+              "begin": "1000",
+              "duration": "500",
+              "mode": "Linear"
+            },
+            {
+              "property": "offsetX",
+              "from": "1",
+              "to": "0",
+              "begin": "1000",
+              "duration": "2000",
+              "mode": "EaseOut"
+            }
+          ]
+        },
+        {
+          "event": "activatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "1",
+              "begin": "1000",
+              "duration": "500",
+              "mode": "Linear"
+            },
+            {
+              "property": "offsetX",
+              "from": "1",
+              "to": "0",
+              "begin": "1000",
+              "duration": "2000",
+              "mode": "EaseOut"
+            }
+          ]
+        },
+        {
+          "event": "deactivateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "150",
+              "mode": "EaseIn"
+            }
+          ]
+        },
+        {
+          "event": "deactivatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "150",
+              "mode": "EaseIn"
+            },
+            {
+              "property": "scale",
+              "from": "",
+              "to": "3",
+              "begin": "",
+              "duration": "300",
+              "mode": "easyIn",
+              "autoreverse": false
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "979b6211-b080-490b-b59e-939bb8a946b7",
+      "name": "boxartthumb",
+      "src": "",
+      "originalPath": "",
+      "importedZIndex": 551,
+      "customShader": {
+        "path": ":/shaders/border.glsl",
+        "uniforms": {
+          "cornerRadius": "0.03",
+          "borderSize": "0.012",
+          "borderColor": "000000",
+          "innerShadowSize": "0.01",
+          "innerShadowColor": "00000030",
+          "outerShadowSize": "0.020",
+          "outerShadowColor": "00000050"
+        }
+      },
+      "dynamicPath": "{game:thumbnail}",
+      "dynamicSlot": "boxart",
+      "rawVisibles": [
+        {
+          "text": "!exists({game:boxart}) && ${IfnoextGamethemeexist}",
+          "attrs": {}
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 1604.4999999999993,
+      "y": 540.5,
+      "width": 739.2,
+      "height": 594,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "scaleOriginX": 0.5,
+      "scaleOriginY": 0.5,
+      "pivotPreset": "center",
+      "zIndex": 551,
+      "originalWidth": 200,
+      "originalHeight": 200,
+      "storyboards": [
+        {
+          "event": "open",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "1",
+              "begin": "1000",
+              "duration": "500",
+              "mode": "Linear"
+            },
+            {
+              "property": "offsetX",
+              "from": "1",
+              "to": "0",
+              "begin": "1000",
+              "duration": "2000",
+              "mode": "EaseOut"
+            }
+          ]
+        },
+        {
+          "event": "activateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "1",
+              "begin": "1000",
+              "duration": "500",
+              "mode": "Linear"
+            },
+            {
+              "property": "offsetX",
+              "from": "1",
+              "to": "0",
+              "begin": "1000",
+              "duration": "2000",
+              "mode": "EaseOut"
+            }
+          ]
+        },
+        {
+          "event": "activatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "0",
+              "begin": "",
+              "duration": "",
+              "mode": "Linear"
+            },
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "1",
+              "begin": "1000",
+              "duration": "500",
+              "mode": "Linear"
+            },
+            {
+              "property": "offsetX",
+              "from": "1",
+              "to": "0",
+              "begin": "1000",
+              "duration": "2000",
+              "mode": "EaseOut"
+            }
+          ]
+        },
+        {
+          "event": "deactivateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "150",
+              "mode": "EaseIn"
+            }
+          ]
+        },
+        {
+          "event": "deactivatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "",
+              "to": "0",
+              "begin": "",
+              "duration": "150",
+              "mode": "EaseIn"
+            },
+            {
+              "property": "scale",
+              "from": "",
+              "to": "3",
+              "begin": "",
+              "duration": "300",
+              "mode": "easyIn",
+              "autoreverse": false
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "id": "2e3c69c8-2844-49c2-b297-0088823f318b",
+      "name": "boxart3D",
+      "src": "",
+      "originalPath": "",
+      "importedZIndex": 551,
+      "customShader": {
+        "path": ":/shaders/border.glsl",
+        "uniforms": {
+          "cornerRadius": "0.03",
+          "borderSize": "0.012",
+          "borderColor": "000000",
+          "innerShadowSize": "0.01",
+          "innerShadowColor": "00000030",
+          "outerShadowSize": "0.020",
+          "outerShadowColor": "00000050"
+        }
+      },
+      "dynamicPath": "{game:boxart}",
+      "dynamicSlot": "boxart",
+      "rawVisibles": [
+        {
+          "text": "${IfnoextGamethemeexist}",
+          "attrs": {}
+        }
+      ]
+    }
+  ]
+}

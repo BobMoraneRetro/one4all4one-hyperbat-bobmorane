@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="Background_Sys" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.510521885522 0.500000000000</pos>
+			<size>1.026094276094 1.000000000000</size>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="Console_Sys" extra="true">
+			<path>./Console.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.327861952862 0.542461653573</pos>
+			<size>0.630471380471 0.525252525253</size>
+			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Quick Appearance # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="scale" to="1" begin="650" duration="500" autoreverse="false" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<pos>0.518939393939 0.587355031799</pos>
+			<size>0.379629629630 0.567153011597</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>3</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<storyboard>
+				<!-- # Rotating Arrival # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1200" duration="500" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="1200" duration="500" mode="Linear"/>
+			</storyboard>
+		</video>
+		<image name="Video_Sys" extra="true">
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.517676767677 0.606060606061</pos>
+			<size>0.405723905724 0.607557052001</size>
+			<zIndex>4</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Fade Arrival # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1600" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1600" duration="500" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="1600" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1_Sys" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.290824915825 0.680882903105</pos>
+			<size>0.214646464646 0.502805836139</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>:/shaders/pixelate.glsl</path>
+				<pixelSize>80</pixelSize>
+			</shader>
+			<storyboard>
+				<!-- # Pixelisation # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="1000" mode="easeIn"/>
+				<animation property="shader.pixelSize" from="80" to="0" begin="300" duration="1200" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2_Sys" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.834595959596 0.560606060606</pos>
+			<size>0.319023569024 0.863823419379</size>
+			<zIndex>6</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Sweet Arrival Left to Right # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Logo_Sys" extra="true">
+			<path>./Logo.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.383417508418 0.128694350917</pos>
+			<size>0.581649831650 0.161616161616</size>
+			<zIndex>7</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Sweet Arrival Top to Bottom # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Finch</text>
+		</text>
+	</view>
+</theme>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{random}</path>
+			<pos>0.731250000000 0.653703703704</pos>
+			<maxSize>0.333333333333 0.444444444444</maxSize>
+			<origin>0.5 0.5</origin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>2</zIndex>
+		</video>
+		<image name="Artwork1" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.202330941930</pos>
+			<size>1.000000000000 0.404661883861</size>
+			<zIndex>3</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork2" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.193280490824 0.677089879546</pos>
+			<size>0.386560981649 0.553227648315</size>
+			<zIndex>4</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork3" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.527898778160 0.919391833715</pos>
+			<size>0.254619110347 0.405660777014</size>
+			<zIndex>5</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<!-- <shader> -->
+				<!-- <path>./pixelate.glsl</path> -->
+				<!-- <pixelSize>1</pixelSize> -->
+			<!-- </shader> -->
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="0" duration="1229" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1179" duration="2484" mode="Linear"/>
+				<!-- <animation property="shader.filterPixelate" from="50" to="50" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="shader.filterPixelate" from="50" to="1" begin="1126" duration="2448" mode="EaseOutQuint"/> -->
+				<!-- <animation property="shader.filterPixelate" from="50" to="50" begin="2198" duration="10" mode="Linear"/> -->
+				<animation property="scale" from="3 3" to="3 3" begin="" duration="" mode="Linear"/>
+				<animation property="scale" from="3 3" to="1 1" begin="1126" duration="2448" mode="EaseOutCubic"/>
+				<animation property="scale" from="3 3" to="3 3" begin="2198" duration="10" mode="Linear"/>
+				<animation property="offsetY" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="0" to="0" begin="2198" duration="10" mode="Linear"/>
+				<animation property="offsetY" from="0" to="0" begin="2208" duration="3430" mode="Linear"/>
+				<animation property="offsetY" from="0" to="-0.02" begin="5638" duration="2452" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+				<animation property="offsetX" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="0" to="0" begin="2198" duration="10" mode="Linear"/>
+				<animation property="offsetX" from="0" to="0" begin="2208" duration="3430" mode="Linear"/>
+				<animation property="offsetX" from="0" to="0.02" begin="5638" duration="3139" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4" extra="true">
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>-0.127740573040 0.396953536003</pos>
+			<size>0.271602187253 0.569055890956</size>
+			<zIndex>6</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="0" to="1.3" begin="0" duration="5000" mode="Linear" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>6</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>6</zIndex>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>Theme by : Finch</text>
+		</text>
+	</view>
+</theme>

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
+
+	<!-- Variables utilisees dans ce fichier (definitions reprises de theme.xml) -->
+		<!-- <intlogoclearfrpng>${path_syst_logo}/clearlogos/${system.theme}-fr.png</intlogoclearfrpng> -->
+		<!-- <intlogoclearpng>${path_syst_logo}/clearlogos/${system.theme}.png</intlogoclearpng> -->
+		<!-- <intlogoclearuspng>${path_syst_logo}/clearlogos/${system.theme}-us.png</intlogoclearuspng> -->
+
 	<formatVersion>7</formatVersion>
 	<view name="detailed, coinops, hyperbat, grid, gamecarousel">
 		<image name="gradientblack" extra="true">
@@ -7,7 +13,7 @@
 			<maxSize>1 1</maxSize>
 			<pos>0.7 0.5</pos>
 			<origin>0.5 0.5</origin>
-			<zIndex>999</zIndex>
+			<zIndex>1499</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<horizontalAlignment>left</horizontalAlignment>
 			<path>./_viewgame/commune/systeme/gradient_black.png</path>
@@ -31,7 +37,7 @@
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
 			<scaleOrigin>0 0.5</scaleOrigin>
-			<zIndex>999</zIndex>
+			<zIndex>1500</zIndex>
 			<reflexion>0.15 0</reflexion>
 			<storyboard>
 				<animation property="offsetY" from="0" to="-0.02" duration="390" mode="easeOut" autoreverse="true" begin="250"/>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="fi">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Kyllä</yes>
+		<no>Ei</no>
+		<desactive>Pois käytöstä</desactive>
+		<activate>Käytössä</activate>
+		<actif>Käytössä</actif>
+		<active>Käytössä</active>
+		<deactive>Pois käytöstä</deactive>
+		<vide>   </vide>
+		<default>Oletus</default>
+		<amoitie>osittain</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Saatavilla olevat kielet:</languesdispo>
+		<nodates>Ei päivämäärää</nodates>
+		<playcount>pelikertaa</playcount>
+		<playcountone>pelikerta</playcountone>
+		<players>pelaaja(a)</players>
+		<playerss>pelaajaa</playerss>
+		<player>pelaaja</player>
+		<nogametime>Ei koskaan pelattu</nogametime>
+		<noplayerdata>Tuntematon</noplayerdata>
+		<noratings>Ei arvosanaa</noratings>
+		<lastgamelabel>Viimeksi pelattu:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Seuraava peli</jeusuiv>
+		<jeuprec>Edellinen peli</jeuprec>
+		<systsuiv>Seuraava järjestelmä</systsuiv>
+		<systprec>Edellinen järjestelmä</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Tervetuloviesti</lismoi>
+		<tumasbienlu>Tervetuloa ja kiitokset</tumasbienlu>
+		<deporttheme>Kuinka siirrän omat teemani</deporttheme>
+		<customiztheme1>Kuinka mukautan teemojani 1/2</customiztheme1>
+		<customiztheme2>Kuinka mukautan teemojani 2/2</customiztheme2>
+		<downloadmore>Linkit lisäteemojen ja artworkien lataamiseen</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Järjestelmäluettelon näkymä</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Perusruudukkonäkymä</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart erittäin kevyt</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Testaa mediasi</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>SCRAP-asetus - Fanart-rakenne?</packcustombuild>
+		<packcustombuildsno>Fanart päätteellä "-fanart" (oletus)</packcustombuildsno>
+		<packretrofreshbat>Fanart päätteellä "-image"</packretrofreshbat>
+		<scrap3dbox>Scrape-asetus - 3D-kotelon rakenne?</scrap3dbox>
+		<scrapedboxart>3D-kotelo "-boxart" gamelistissä</scrapedboxart>
+		<scrapedthumbnail>3D-kotelo "-thumbnail" gamelistissä</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Ohje - Ohjekuvakkeiden ulkoasu</iconset>
+		<iconsetposition>Painikkeiden sijainti</iconsetposition>
+		<colorhelp>Ohje - Ohjetekstin värit</colorhelp>
+		<skyblue>taivaansininen</skyblue>
+		<standard>Vakio</standard>
+		<purple>violetti</purple>
+		<red>punainen</red>
+		<aqua>taivaansininen</aqua>
+		<orange>oranssi</orange>
+		<green>vihreä</green>
+		<yellow>keltainen</yellow>
+		<pink>pinkki</pink>
+		<grey>tummanharmaa</grey>
+		<lightgrey>vaaleanharmaa</lightgrey>
+		<navy>sininen alt</navy>
+		<violet>violetti</violet>
+		<candy>candy</candy>
+		<redalt>punainen alt</redalt>
+		<yellowalt>keltainen alt</yellowalt>
+		<greenalt>vihreä alt</greenalt>
+		<purplealt>violetti alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Järjestelmänäkymä - Järjestelmälogojen tyyppi</systviewlogos>
+		<logosimple>Yksinkertainen logo (Täysi + Alue)</logosimple>
+		<glassnekhros>Glass-logo (Täysi + Alue) (By Nekhros)</glassnekhros>
+		<logobd>Sarjakuvatyylinen logo (Helmic)</logobd>
+		<logoovalcarb>Soikea logo Carbon</logoovalcarb>
+		<hmaxovalsilver>Soikea logo Silver</hmaxovalsilver>
+		<logorectfresh>Suorakulmainen logo Team Freshone (ulkoinen paketti)</logorectfresh>
+		<hmaxrectrefl>Heijastava suorakulmainen logo Team Freshone (ulkoinen paketti)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Järjestelmänäkymä - Järjestelmäluettelon häivytys</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Järjestelmänäkymä - Järjestelmän fanartien valinta</systviewfanart>
+		<fanartfreshone>Vain FreshOnen valitsemat fanartit</fanartfreshone>
+		<fanartsystcustom>Omat fanartit, muuten FreshOne-fanart</fanartsystcustom>
+		<fanfondsystem>Järjestelmän tausta, muuten FreshOne-fanart</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Järjestelmänäkymä - Animoitu järjestelmäesittely</systviewvideo>
+		<hyperspinorunified>ADDON: Dynaaminen HS, muuten yhtenäinen HS</hyperspinorunified>
+		<gameplayp1>Pieni satunnainen pelivideo bezelillä, jos saatavilla</gameplayp1>
+		<gameplay1>Suuri satunnainen pelivideo bezelillä, jos saatavilla</gameplay1>
+		<gameplayp>Pieni satunnainen pelivideo</gameplayp>
+		<gameplay>Suuri satunnainen pelivideo</gameplay>
+		<custom>Oma video custom-kansiosta</custom>
+		<hyperspinxp>ADDON: Kuva ja pelikuva dynaamisella Hyperspin-tyylillä</hyperspinxp>
+		<hyperspin>ADDON: Kuva ja pelikuva yhtenäisellä Hyperspin-tyylillä</hyperspin>
+		<hyperspinorder>ADDON: Dynaaminen HS, muuten Hyperpie-video</hyperspinorder>
+		<hyperpie>ADDON: Hyperpie-video, muuten Unified-video, jos saatavilla</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Järjestelmänäkymä - Näytä järjestelmän pelien määrä</systviewtotal>
+		<nbrjeux>pelkkä pelien määrä</nbrjeux>
+		<nbrjeux2>järjestelmän nimi ja pelien määrä</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Murupolun näyttö</menuofficiel>
+		<menutxt>Virallinen laitteistolajittelu: vaakasuora teksti</menutxt>
+		<menuorb>Virallinen laitteistolajittelu: vaakasuora pallo</menuorb>
+		<menuorbvert>Virallinen laitteistolajittelu: pystysuora pallo</menuorbvert>
+		<menuorbcrcl>Virallinen laitteistolajittelu: puoliympyräpallo</menuorbcrcl>
+		<menucust>Bobin oma laitteistolajittelu: vaakasuora teksti</menucust>
+		<menucustorb>Bobin oma laitteistolajittelu: vaakasuora pallo</menucustorb>
+		<menucustorbvert>Bobin oma laitteistolajittelu: pystysuora pallo</menucustorbvert>
+		<menucustorbcrcl>Bobin oma laitteistolajittelu: puoliympyräpallo</menucustorbcrcl>
+		<menutxtzspin>Virallinen laitteistolajittelu: pystysuora teksti</menutxtzspin>
+		<menutxtzspincust>Bobin oma laitteistolajittelu: pystysuora teksti</menutxtzspincust>
+		<menuteta>Virallinen laitteistolajittelu: Tetanos</menuteta>
+		<menucustteta>Bobin oma laitteistolajittelu: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Hyperbat-järjestelmänäkymä - Animoidut ohjeet</sticksysteme>
+		<systballblue>Sininen stick</systballblue>
+		<systballcyan>Syaani stick</systballcyan>
+		<systballdarkviolet>Tummanvioletti stick</systballdarkviolet>
+		<systballviolet>Violetti stick</systballviolet>
+		<systballgreen>Vihreä stick</systballgreen>
+		<systballlitegreen>Vaaleanvihreä stick</systballlitegreen>
+		<systballpink>Pinkki stick</systballpink>
+		<systballred>Punainen stick</systballred>
+		<systballyelgreen>Kellanvihreä stick</systballyelgreen>
+		<systballyellow>Keltainen stick</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Hyperbat-järjestelmänäkymä - Valikon tyyppi</hyperwheel>
+		<spindr>Kaareva rulla oikealla (Hyperspin)</spindr>
+		<verticaldr>Pystysuora rulla oikealla (Hyperspin)</verticaldr>
+		<verticaldreb>Pystysuora rulla oikealla (Emubox)</verticaldreb>
+		<spingh>Kaareva rulla vasemmalla (Hyperspin)</spingh>
+		<verticalgh>Pystysuora rulla vasemmalla (Hyperspin)</verticalgh>
+		<verticalgheb>Pystysuora rulla vasemmalla (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Boksimyyjä Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Boksimyyjä Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Boksimyyjä Hyperspin Chris (työn alla)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Pelinäkymä - Nykyinen järjestelmä avattaessa?</systannounce>
+		<classiquesyst>Häivytys loitontaen</classiquesyst>
+		<nomsystem2>Hidas sisääntulo (häivytys + zoom)</nomsystem2>
+		<nomsystem3>Nopea välähdys (loitonnus)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Pelinäkymä - Tausta jokaisen pelin logon alle?</gwheelbackgr>
+		<sisaccades>Pois käytöstä</sisaccades>
+		<ovalcarbon>Soikio carbon (automaattisesti luotu)</ovalcarbon>
+		<ovalsilver>Soikio silver (automaattisesti luotu)</ovalsilver>
+		<rectcarbon>Suorakulmio carbon (automaattisesti luotu)</rectcarbon>
+		<rectcompose>Oma suorakulmio järjestelmäkohtaisesti (automaattisesti luotu)</rectcompose>
+		<ovalcompose>Oma soikio carbon järjestelmäkohtaisesti (automaattisesti luotu)</ovalcompose>
+		<logounified>Yhtenäisen kokoinen logo</logounified>
+		<hfsround>Pyöreä Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Pelinäkymä - Navigointi kirjaimittain (pelit)?</letternav>
+		<navhoricoinstyle>Vaakasuora aakkosto</navhoricoinstyle>
+		<navvertcoinstyle>Pystysuora aakkosto vasemmalla</navvertcoinstyle>
+		<navvertrcoinstyle>Pystysuora aakkosto oikealla</navvertrcoinstyle>
+		<navhsletters>Järjestelmäkohtaisesti tyylitelty kirjain</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Pelinäkymä - Näytä enimmäistiedot?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Hyperbat-näkymien lisäasetusten alku ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Hyperbat-pelinäkymään tarvittavat mediat = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Yleinen peliteema (jos teemaa ei ole)</defaultgeneric>
+		<videodefaut>Yleisen teeman oletusvideo (ei kuvakaappausta eikä videota)</videodefaut>
+		<generic43boxback>Vakio, kotelon taka- ja etupuolen koosteella</generic43boxback>
+		<generic43coinopsstyle>Arcade-kaappikokoelma</generic43coinopsstyle>
+		<generic43noanimationfanart>Vakio animoidulla fanart-taustalla</generic43noanimationfanart>
+		<generic43noanimation>Vakio ilman boxart-animaatiota</generic43noanimation>
+		<generic43>Vakio</generic43>
+		<jukeboxdef>CD-levyn ulkoasu (keskeneräinen)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Peliteema: Lähdejärjestelmä</gameviewsource>
+		<mamefolder>Ensin pelin alkuperäinen kansio, sitten mame-kansio</mamefolder>
+		<actualsystem>Ensin valitun järjestelmän kansio</actualsystem>
+		<genericstyleonly>Käytä vain yleistä peliteemaa</genericstyleonly>
+		<groupedsystem>Vain kehitystestaus: älä käytä</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Peliteema: Tekijä</authordisplayed>
+		<showoff>Käytössä, hyvä näkyvyys</showoff>
+		<showoffblackwhite>Käytössä, erinomainen näkyvyys</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Peliluettelon häivytys</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Vierityksen ääni</gamewheelsound>
+		<wheelclic>Hyperspin-tyylinen napsahdus</wheelclic>
+		<bulle>Kupla</bulle>
+		<clic>Yksinkertainen napsahdus</clic>
+		<clicgrave>Syvä napsahdus</clicgrave>
+		<frottement>Hankaus</frottement>
+		<poc>Pops</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Ulkoasu - Vinjettitehoste</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Ulkoasu - Järjestelmänäkymän vinjetti</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Ulkoasu - Tummenna taustaa (järjestelmänäkymä)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>ULKOASU - Animoidun sauvan valinta</syststickon>
+		<stickon>Klassinen arcade</stickon>
+		<syststickcolor>ULKOASU - Sauvan pallon väri</syststickcolor>
+		<ballcyan>Syaani</ballcyan>
+		<ballblue>Sininen</ballblue>
+		<balldarkviolet>Tummanvioletti</balldarkviolet>
+		<ballviolet>Violetti</ballviolet>
+		<ballgreen>Vihreä</ballgreen>
+		<balllitegreen>Vaaleanvihreä</balllitegreen>
+		<ballpink>Pinkki</ballpink>
+		<ballred>Punainen</ballred>
+		<ballyelgreen>Kellanvihreä</ballyelgreen>
+		<ballyellow>Keltainen</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Press startin ulkoasu</pressstart>
+		<doigts>Animoitu sormi painaa nappia</doigts>
+		<undoigt>Animoitu sormi painaa nappia vain vasemmalla</undoigt>
+		<undoigtr>Animoitu sormi painaa nappia vain oikealla</undoigtr>
+		<pressstarttxt>METADATA - Tekstin valinta</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Ilmainen peli</partiegratuite>
+		<uneuro>1€ per peli</uneuro>
+		<sitessage>Paina Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Metatietojen asetukset</hsmetadata>
+		<full>Täysi, oletussijainti</full>
+		<lower>Täysi, alin sijainti</lower>
+		<metafichedefault>Metatietokortti oletussijainnissa</metafichedefault>
+		<metafichebasgauche>Metatietokortti alhaalla vasemmalla</metafichebasgauche>
+		<metafichebasdroite>Metatietokortti alhaalla oikealla</metafichebasdroite>
+		<metafichebascentre>Metatietokortti alhaalla keskellä</metafichebascentre>
+		<metafichehautgauche>Metatietokortti ylhäällä vasemmalla</metafichehautgauche>
+		<metafichehautdroite>Metatietokortti ylhäällä oikealla</metafichehautdroite>
+		<metafichehautcentre>Metatietokortti ylhäällä keskellä</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Näytä pelikohtaiset teemat?</hyperbatperview>
+		<themejeux>Pelikohtainen teema ensin, jos saatavilla</themejeux>
+		<themejeuxno>Poista pelikohtainen teema käytöstä</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Ulkoasu - Pehmeä siirtymä peliteemojen välillä</smoothgametheme>
+		<activesmooth>Käytössä (suositeltu Retrobatille)</activesmooth>
+		<noactivesmooth>Pois käytöstä (suositeltu Batoceralle)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Hyperspin-tyyliset järjestelmäosoittimet</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Scrapin mukautus yhteensopiville teemoille ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Näytettävä pelikotelo</boxorthumb>
+		<boxart>Kalibroitu 3D-kotelolle</boxart>
+		<thumb>Kalibroitu 2D-kotelolle</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Lisäasetukset: Medioiden lähdekansion muuttaminen --------------------------------------------------------</spacerextfolder>
+		<folder>Lähde - älä käytä</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Teeman kansio - Oletus</intheme>
+		<extfolder>Ulkoinen kansio</extfolder>
+		<extfoldergametheme>Lähde - Pelikohtainen teema</extfoldergametheme>
+		<extfoldergamemedia>Lähde - Pelien mediat gamelist.xml:n ulkopuolella</extfoldergamemedia>
+		<extfoldervideosyst>Lähde - Järjestelmäkohtainen teema</extfoldervideosyst>
+		<extfolderbezelsyst>Lähde - Järjestelmien bezelit</extfolderbezelsyst>
+		<extfoldermanufacturer>Lähde - Pelijulkaisijoiden logot</extfoldermanufacturer>
+		<extfolderfanart>Lähde - Järjestelmien fanart</extfolderfanart>
+		<extfolderlogosyst>Lähde - Järjestelmän logo</extfolderlogosyst>
+		<extfoldercouleursinfos>Lähde - Pelitietojen tyyli</extfoldercouleursinfos>
+		<extfolderthumbox>Lähde - Pelien 2D/3D-kotelot</extfolderthumbox>
+		<extfoldergamefanart>Lähde - Pelien fanart</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Suositellut mediat Fanart Star -pelinäkymälle = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ FanartStar boxart -näkymän lisäasetusten alku ↓   -------------------</mediastar>
+		<spacebox>Väli pelikoteloiden välillä</spacebox>
+		<spacessssmall>Väli ----</spacessssmall>
+		<spacesssmall>Väli ---</spacesssmall>
+		<spacessmall>Väli --</spacessmall>
+		<spacesmall>Väli -</spacesmall>
+		<spacenorm>Oletus</spacenorm>
+		<spacemore>Väli +</spacemore>
+		<spacemmore>Väli ++</spacemmore>
+		<spacemmmore>Väli +++</spacemmmore>
+		<spacemmmmore>Väli ++++</spacemmmmore>
+		<fanartstarrotated>SNES-, N64-, NGAGE-, Solarus-koteloiden kierto</fanartstarrotated>
+		<starrotate>Kyllä</starrotate>
+		<nostarrotate>Ei</nostarrotate>
+		<boxstarspeed>Vieritysanimaation nopeus</boxstarspeed>
+		<speedslow1>Hidas+</speedslow1>
+		<speedslow2>Hidas++</speedslow2>
+		<customfanart>Käytettävät fanartit</customfanart>
+		<fanartgamelist>Scrapattu fanart gamelistissä</fanartgamelist>
+		<fanartcustom>Oma fanart kansiossa _Gamemedia-Järjestelmä-medium_artwork</fanartcustom>
+		<starboxang>Pelikoteloiden kulma</starboxang>
+		<starthumb>Näytä 2D- vai 3D-kannet?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Esikatseluvideon koko</starvideo>
+		<starvideoang>Kallistettu</starvideoang>
+		<starvideodef>Vakio</starvideodef>
+		<starvideobig>Suuri</starvideobig>
+		<longselect>Pitkä painallus "select"</longselect>
+		<favuniquement>Vain suosikit</favuniquement>
+		<tslesjeux>Kaikki pelit</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Näytön kuvasuhde</screenratio>
+		<ratio1610>16/10 (kokeellinen)</ratio1610>
+		<ratio43>4/3 (kokeellinen)</ratio43>
+		<cadrevideosyst>Järjestelmävideoiden kehys</cadrevideosyst>
+		<cadreorigine>Alkuperäinen (bezel)</cadreorigine>
+		<cadrebordure>Reunus</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Tervetuloa ja kiitokset</planche00>
+		<planche01>01 - Kuinka siirrän omat teemani</planche01>
+		<planche02>02 - Kuinka mukautan teemojani 1/2</planche02>
+		<planche03>03 - Järjestelmävideoiden kehys</planche03>
+		<planche04>04 - Kuinka mukautan teemojani 2/2</planche04>
+		<planche05>05 - Teemojen lataaminen</planche05>
+		<planche06>06 - Järjestelmäteeman lisääminen</planche06>
+		<planche07>07 - Peliteeman lisääminen</planche07>
+		<planche08>08 - Teemaeditorit</planche08>
+		<planche09>09 - 2D- tai 3D-kotelo ja skrapaus</planche09>
+		<planche10>10 - Murupolku ja kirjainnavigointi</planche10>
+		<planche11>11 - Pelitietojen tyyli</planche11>
+		<planche12>12 - 4:3- tai 16:10-näyttö</planche12>
+		<planche13>13 - Linkit lisäteemojen ja artworkien lataamiseen</planche13>
+	</variables>
+</theme>

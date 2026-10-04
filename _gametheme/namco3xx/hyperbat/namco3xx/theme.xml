@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='utf-8'?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Artwork1" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/Artwork1.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+			<scaleOrigin>0 0</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="scale" from="2 2" to="1 1" begin="0" duration="2300" mode="EaseOut" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="scale" from="2 2" to="1 1" begin="0" duration="2300" mode="EaseOut" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="scale" from="2 2" to="1 1" begin="0" duration="2300" mode="EaseOut" />
+			</storyboard>
+		</image>
+		<image name="Artwork2" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/Artwork2.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.973214285714 0.417989417989</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>200</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<storyboard event="open">
+				<animation property="offsetX" from="0.6" to="0" begin="0" duration="2000" mode="EaseOut" />
+				<animation property="offsetY" from="-0.02" to="0.02" begin="0" duration="1400" mode="EaseInOut" autoreverse="true" repeat="forever" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.6" to="0" begin="0" duration="2000" mode="EaseOut" />
+				<animation property="offsetY" from="-0.02" to="0.02" begin="0" duration="1400" mode="EaseInOut" autoreverse="true" repeat="forever" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.6" to="0" begin="0" duration="2000" mode="EaseOut" />
+				<animation property="offsetY" from="-0.02" to="0.02" begin="0" duration="1400" mode="EaseInOut" autoreverse="true" repeat="forever" />
+			</storyboard>
+		</image>
+		<image name="Artwork2_fx1" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/Artwork2.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.973214285714 0.417989417989</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>210</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<opacity>1</opacity>
+			<shader>
+				<path>./_common/shaders/nitro.glsl</path>
+				<nitroTime>0</nitroTime>
+				<nitroSpeed1>-0.1 0.7</nitroSpeed1>
+				<nitroSpeed2>0.1 0.95</nitroSpeed2>
+				<nitroScales>1.06 2</nitroScales>
+				<nitroMultiply>0.32</nitroMultiply>
+				<nitroColorStart>0 0.5 1 1</nitroColorStart>
+				<nitroColorEnd>1 1 1 1</nitroColorEnd>
+				<nitroBounds>0.3 0.21</nitroBounds>
+				<nitroSmoothness>1</nitroSmoothness>
+				<nitroBlend>0</nitroBlend>
+				<nitroFullArea>0</nitroFullArea>
+				<maskMode>1</maskMode>
+				<maskCenter>0.27939 0.38942</maskCenter>
+				<maskSize>0.5 0.68</maskSize>
+				<maskSoftness>0.1</maskSoftness>
+				<maskInvert>0</maskInvert>
+			</shader>
+			<storyboard event="open">
+				<animation property="offsetX" from="0.6" to="0" begin="0" duration="2000" mode="EaseOut" />
+				<animation property="shader.nitroTime" from="0" to="3600" begin="0" duration="3600000" mode="linear" repeat="forever" />
+				<animation property="offsetY" from="-0.02" to="0.02" begin="0" duration="1400" mode="EaseInOut" autoreverse="true" repeat="forever" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.6" to="0" begin="0" duration="2000" mode="EaseOut" />
+				<animation property="shader.nitroTime" from="0" to="3600" begin="0" duration="3600000" mode="linear" repeat="forever" />
+				<animation property="offsetY" from="-0.02" to="0.02" begin="0" duration="1400" mode="EaseInOut" autoreverse="true" repeat="forever" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.6" to="0" begin="0" duration="2000" mode="EaseOut" />
+				<animation property="shader.nitroTime" from="0" to="3600" begin="0" duration="3600000" mode="linear" repeat="forever" />
+				<animation property="offsetY" from="-0.02" to="0.02" begin="0" duration="1400" mode="EaseInOut" autoreverse="true" repeat="forever" />
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>${extsubsystvideo}</path>
+			<pos>0.265430381511 0.617875228892</pos>
+			<size>0.457998373917 0.620106210487</size>
+			<origin>0.5 0.5</origin>
+			<scaleOrigin>0 0</scaleOrigin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>220</zIndex>
+			<shader>
+				<path>./_common/shaders/border_multi_gradient.glsl</path>
+				<cornerRadius>41</cornerRadius>
+				<innerShadowSize />
+				<innerShadowColor />
+				<outerShadowSize />
+				<outerShadowColor />
+				<gradientMode />
+				<saturation />
+				<borderPad>21</borderPad>
+				<borderOffset>0</borderOffset>
+				<borderLayout>0</borderLayout>
+				<borderPos1>0</borderPos1>
+				<borderPos2>0</borderPos2>
+				<borderPos3>0</borderPos3>
+				<borderSize>4</borderSize>
+				<borderColor>ffffffff</borderColor>
+				<borderColorStart />
+				<borderColorEnd />
+				<borderSize2>17</borderSize2>
+				<borderColor2>cc2229ff</borderColor2>
+				<borderColorStart2 />
+				<borderColorEnd2 />
+				<borderSize3 />
+				<borderColor3 />
+				<borderColorStart3 />
+				<borderColorEnd3 />
+			</shader>
+			<storyboard event="open">
+				<animation property="scale" from="0 0" to="1 1" begin="300" duration="2000" mode="EaseOut" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="scale" from="0 0" to="1 1" begin="300" duration="2000" mode="EaseOut" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="scale" from="0 0" to="1 1" begin="300" duration="2000" mode="EaseOut" />
+			</storyboard>
+		</video>
+		<image name="PreviewScreen" extra="true">
+			<visible>${ifnosubsystvideo}</visible>
+			<path>${extsubsystimage}</path>
+			<pos>0.265430381511 0.617875228892</pos>
+			<size>0.457998373917 0.620106210487</size>
+			<origin>0.5 0.5</origin>
+			<scaleOrigin>0 0</scaleOrigin>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>220</zIndex>
+			<shader>
+				<path>./_common/shaders/border_multi_gradient.glsl</path>
+				<cornerRadius>41</cornerRadius>
+				<innerShadowSize />
+				<innerShadowColor />
+				<outerShadowSize />
+				<outerShadowColor />
+				<gradientMode />
+				<saturation />
+				<borderPad>21</borderPad>
+				<borderOffset>0</borderOffset>
+				<borderLayout>0</borderLayout>
+				<borderPos1>0</borderPos1>
+				<borderPos2>0</borderPos2>
+				<borderPos3>0</borderPos3>
+				<borderSize>4</borderSize>
+				<borderColor>ffffffff</borderColor>
+				<borderColorStart />
+				<borderColorEnd />
+				<borderSize2>17</borderSize2>
+				<borderColor2>cc2229ff</borderColor2>
+				<borderColorStart2 />
+				<borderColorEnd2 />
+				<borderSize3 />
+				<borderColor3 />
+				<borderColorStart3 />
+				<borderColorEnd3 />
+			</shader>
+			<storyboard event="open">
+				<animation property="scale" from="0 0" to="1 1" begin="300" duration="2000" mode="EaseOut" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="scale" from="0 0" to="1 1" begin="300" duration="2000" mode="EaseOut" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="scale" from="0 0" to="1 1" begin="300" duration="2000" mode="EaseOut" />
+			</storyboard>
+		</image>
+		<image name="Artwork3" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/Artwork3.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.965773809524 0.880952380952</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>230</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="offsetY" from="0.6" to="0" begin="0" duration="2000" mode="EaseOut" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetY" from="0.6" to="0" begin="0" duration="2000" mode="EaseOut" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetY" from="0.6" to="0" begin="0" duration="2000" mode="EaseOut" />
+			</storyboard>
+		</image>
+		<image name="namco3xx" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/namco3xx.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.278273809524 0.164021164021</pos>
+			<size>0.508854166667 0.240740740741</size>
+			<zIndex>240</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<opacity>0</opacity>
+			<storyboard event="open">
+				<animation property="offsetX" from="-0.5" to="0" begin="0" duration="500" mode="EaseOut" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="-0.5" to="0" begin="0" duration="500" mode="EaseOut" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="-0.5" to="0" begin="0" duration="500" mode="EaseOut" />
+			</storyboard>
+		</image>
+		<image name="namco3xx_fx1" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/namco3xx.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.278273809524 0.164021164021</pos>
+			<size>0.508854166667 0.240740740741</size>
+			<zIndex>250</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<opacity>1</opacity>
+			<shader>
+				<path>./_common/shaders/raindrops.glsl</path>
+				<uTime>0</uTime>
+				<rainAmount>0.8</rainAmount>
+				<rainAngle>0</rainAngle>
+				<rainSpeed>0.25</rainSpeed>
+				<dropDensity>1</dropDensity>
+				<rainBlur>0.4</rainBlur>
+				<rainRefract>1</rainRefract>
+				<rainFog>0</rainFog>
+				<rainFogColor>0.55 0.6 0.7 1</rainFogColor>
+				<maskMode>0</maskMode>
+				<maskCenter>0.5 0.5</maskCenter>
+				<maskSize>0.5 0.5</maskSize>
+				<maskSoftness>0.1</maskSoftness>
+				<maskInvert>0</maskInvert>
+			</shader>
+			<storyboard event="open">
+				<animation property="offsetX" from="-0.5" to="0" begin="0" duration="500" mode="EaseOut" />
+				<animation property="shader.uTime" from="0" to="3600" begin="0" duration="3600000" mode="linear" repeat="forever" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="-0.5" to="0" begin="0" duration="500" mode="EaseOut" />
+				<animation property="shader.uTime" from="0" to="3600" begin="0" duration="3600000" mode="linear" repeat="forever" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="-0.5" to="0" begin="0" duration="500" mode="EaseOut" />
+				<animation property="shader.uTime" from="0" to="3600" begin="0" duration="3600000" mode="linear" repeat="forever" />
+			</storyboard>
+		</image>
+		<text name="gamethemeauthor" extra="true">
+			<text>Theme by : HyperBat (converti HyperSpin)</text>
+		</text>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>260</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>260</zIndex>
+		</image>
+		<control name="PreviewScreen, PreviewVid, namco3xx, namco3xx_fx1">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn" />
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear" />
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn" />
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear" />
+			</storyboard>
+		</control>
+	</customView>
+</theme>

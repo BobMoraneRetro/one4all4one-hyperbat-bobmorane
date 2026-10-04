@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<!-- ################ Logo Système ##################### -->
+		<!-- <image name="logocust" extra="true"> -->
+		<!-- <maxSize>0.55 0.20</maxSize> -->
+		<!-- <scaleOrigin>0 -0.3</scaleOrigin> -->
+		<!-- <pos>0.5 0.12</pos> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <zIndex>10</zIndex> -->
+		<!-- <storyboard> -->
+		<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+		<!-- <animation property="opacity" from="0" to="1" begin="200" duration="400" mode="Linear"/> -->
+		<!-- <animation property="offsetY" from="-1" to="0" begin="200" duration="650" mode="Linear"/> -->
+		<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true"> -->
+		<!-- <path>${intlogoclearsvg}</path> -->
+		<!-- <path>${extlogoclearsvg}</path> -->
+		<!-- <path>${intlogoclearpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="fr"> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="eu"> -->
+		<!-- <path>${intlogoclearfrsvg}</path> -->
+		<!-- <path>${extlogoclearfrsvg}</path> -->
+		<!-- <path>${intlogoclearfrpng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="us"> -->
+		<!-- <path>${intlogoclearussvg}</path> -->
+		<!-- <path>${extlogoclearussvg}</path> -->
+		<!-- <path>${intlogoclearuspng}</path> -->
+		<!-- </image> -->
+		<!-- <image name="logocust" extra="true" region="jp"> -->
+		<!-- <path>${intlogoclearjpsvg}</path> -->
+		<!-- <path>${extlogoclearjpsvg}</path> -->
+		<!-- <path>${intlogoclearjppng}</path> -->
+		<!-- </image> -->
+		<image name="frames_Sys" extra="true">
+			<path>./frames.gif</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.483083438552 0.556481481481</pos>
+			<size>1.089062500000 1.112962962963</size>
+			<zIndex>2</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork2_Sys" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.722829861111 0.592396184063</pos>
+			<size>0.556770833333 0.816666666667</size>
+			<zIndex>3</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrival Right to Left # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="1500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<path>{random}</path>
+			<pos>0.334367108586 0.626655443322</pos>
+			<maxSize>0.451562500000 0.588888888889</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>4</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+		</video>
+		<image name="Video_Sys" extra="true">
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.333278093434 0.623405349794</pos>
+			<size>0.479687500000 0.621296296296</size>
+			<zIndex>5</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Apparition en fondu # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1_Sys" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.332033880471 0.175930602319</pos>
+			<size>0.569791666667 0.184259259259</size>
+			<zIndex>6</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Arrival Zoom Elastic # -->
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="7500" mode="Linear"/>
+				<animation property="scale" from="0" to="1" begin="650" duration="7500" mode="easeIn"/>
+				<animation property="h" from="0.184259259259" to="0.2" begin="2150" duration="500" mode="bump"/>
+				<animation property="h" from="0.2" to="0.184259259259" begin="2250" duration="500" mode="bump"/>
+				<animation property="w" from="0.569791666667" to="0.2" begin="2200" duration="500" mode="bump"/>
+				<animation property="w" from="0.2" to="0.569791666667" begin="2300" duration="500" mode="bump"/>
+				<animation property="w" from="0.569791666667" to="0.35" begin="2400" duration="500" mode="bump"/>
+				<animation property="w" from="0.35" to="0.569791666667" begin="2500" duration="500" mode="bump"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3_Sys" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.960506305038 0.055663112608</pos>
+			<size>0.077604166667 0.108333333333</size>
+			<zIndex>7</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<!-- # Repeated Flame # -->
+				<animation property="opacity" from="1" to="0" begin="0" duration="0" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="2000" mode="linear"/>
+				<animation property="opacity" from="1" to="0.8" begin="2800" duration="40" autoreverse="true" repeat="5" mode="linear"/>
+				<animation property="opacity" from="1" to="0.8" begin="3500" duration="5" autoreverse="true" repeat="3" mode="linear"/>
+				<animation property="opacity" from="1" to="0.8" begin="5500" duration="7" autoreverse="true" repeat="2" mode="linear"/>
+				<animation property="opacity" from="1" to="0.8" begin="6000" duration="5" autoreverse="true" repeat="4" mode="linear"/>
+				<animation property="opacity" from="1" to="0.8" begin="11000" duration="40" autoreverse="true" repeat="40" mode="linear"/>
+			</storyboard>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : Finch</text>
+		</text>
+	</view>
+</theme>

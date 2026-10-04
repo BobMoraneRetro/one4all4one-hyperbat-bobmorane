@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background" extra="true">
+			<path>./background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+		</image>
+		<image name="Artwork1" extra="true">
+			<path>./artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.847916666667 0.584722222222</pos>
+			<size>0.302083333333 0.708333333333</size>
+			<zIndex>3</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="0.5" to="0.5" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="0.5" to="0" begin="412" duration="690" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{random}</path>
+			<pos>0.500260416667 0.601388888889</pos>
+			<size>0.413020833333 0.550925925926</size>
+			<origin>0.5 0.5</origin>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<delay>0.6</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>4</zIndex>
+		</video>
+		<image name="Videobezel" extra="true">
+			<path>./video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.600925925926</pos>
+			<size>0.420833333333 0.562962962963</size>
+			<zIndex>5</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="96" duration="704" mode="EaseOut"/>
+				<animation property="w" from="0.00001" to="0.420833333333" begin="96" duration="704" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="fiber" extra="true">
+			<path>./fond_vid.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500260416667 0.601388888889</pos>
+			<size>0.413020833333 0.550925925926</size>
+			<zIndex>3</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="96" duration="704" mode="EaseOut"/>
+				<animation property="w" from="0.00001" to="0.413020833333" begin="96" duration="704" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2" extra="true">
+			<path>./artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500260416667 0.167592592593</pos>
+			<size>0.357812500000 0.290740740741</size>
+			<zIndex>7</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetY" from="-0.5" to="-0.5" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-0.5" to="0" begin="96" duration="704" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3" extra="true">
+			<path>./artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.227604166667 0.592129629630</pos>
+			<size>0.444791666667 0.762037037037</size>
+			<zIndex>8</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="-0.5" to="-0.5" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="-0.5" to="0" begin="412" duration="690" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>Theme by : Convert HyperSpin</text>
+		</text>
+	</view>
+</theme>

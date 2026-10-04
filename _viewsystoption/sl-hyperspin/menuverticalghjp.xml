@@ -28,7 +28,7 @@
 			<transitionSpeed>450</transitionSpeed>
 		</carousel>
 		<image name="fiberlefjp" extra="true">
-			<path>${themePath}/_viewsyst/hyperbat/fiber.png</path>
+			<path>${path_vsyst}/hyperbat/fiber.png</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.065 0.5</pos>
 			<size>0.2 1</size>
@@ -37,35 +37,35 @@
 				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
 			</storyboard>
 		</image>
-		<image name="logo">
-			<path>${extlogohrect}</path>
-			<storyboard event="activate">
-				<animation property="opacity" to="1" begin="" duration="" mode="linear"/>
-				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
-			</storyboard>
-			<storyboard event="scroll">
-				<animation property="opacity" to="0.4" begin="" duration="" mode="linear"/>
-				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
-			</storyboard>
-			<storyboard event="deactivate">
-				<animation property="opacity" to="0.4" begin="" duration="" mode="linear"/>
-				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
-			</storyboard>
-		</image>
-		<text name="logoText">
-			<storyboard event="activate">
-				<animation property="opacity" to="1" begin="" duration="" mode="linear"/>
-				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
-			</storyboard>
-			<storyboard event="scroll">
-				<animation property="opacity" to="0.4" begin="" duration="" mode="linear"/>
-				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
-			</storyboard>
-			<storyboard event="deactivate">
-				<animation property="opacity" to="0.4" begin="" duration="" mode="linear"/>
-				<animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/>
-			</storyboard>
-		</text>
+		<!-- <image name="logo" ifSubset="hyperwheel:verticalghjp">> -->
+			<!-- <path>${extlogohrect}</path> -->
+			<!-- <storyboard event="activate"> -->
+				<!-- <animation property="opacity" to="1" begin="" duration="" mode="linear"/> -->
+				<!-- <animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="scroll"> -->
+				<!-- <animation property="opacity" to="0.4" begin="" duration="" mode="linear"/> -->
+				<!-- <animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivate"> -->
+				<!-- <animation property="opacity" to="0.4" begin="" duration="" mode="linear"/> -->
+				<!-- <animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+		<!-- </image> -->
+		<!-- <text name="logoText"> -->
+			<!-- <storyboard event="activate"> -->
+				<!-- <animation property="opacity" to="1" begin="" duration="" mode="linear"/> -->
+				<!-- <animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="scroll"> -->
+				<!-- <animation property="opacity" to="0.4" begin="" duration="" mode="linear"/> -->
+				<!-- <animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivate"> -->
+				<!-- <animation property="opacity" to="0.4" begin="" duration="" mode="linear"/> -->
+				<!-- <animation property="offsetX" to="-0.2" begin="800" duration="150" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+		<!-- </text> -->
 		<image name="Vignetage2" extra="true">
 			<visible>false</visible>
 		</image>
@@ -77,7 +77,7 @@
 			<glowColor>000000A0</glowColor>
 			<glowSize>2</glowSize>
 			<glowOffset>0</glowOffset>
-			<fontPath>./_viewsyst/hyperbat/teko-bold.ttf</fontPath>
+			<fontPath>${fonttekobold}</fontPath>
 			<fontSize>0.03</fontSize>
 			<zIndex>999</zIndex>
 			<storyboard>
@@ -109,7 +109,7 @@ El más jugado : {binding:mostPlayed}
 Última partida : {binding:lastPlayedDate}</text>
 			<alignment>left</alignment>
 			<verticalAlignment>center</verticalAlignment>
-			<fontPath>./_viewsyst/hyperbat/teko-medium.ttf</fontPath>
+			<fontPath>${path_vsyst}/hyperbat/teko-medium.ttf</fontPath>
 			<fontSize>0.024</fontSize>
 			<pos>0.17 0.74</pos>
 			<size>0.94 0.28</size>
@@ -138,7 +138,7 @@ El más jugado : {binding:mostPlayed}
 			<!-- <text>${system.sortedBy}</text> -->
 			<!-- <alignment>left</alignment> -->
 			<!-- <verticalAlignment>top</verticalAlignment> -->
-			<!-- <fontPath>./_commun/fonts/teko-bold.ttf</fontPath> -->
+			<!-- <fontPath>${fonttekobold}</fontPath> -->
 			<!-- <fontSize>0.060</fontSize> -->
 			<!-- <pos>0.029 0.037</pos> -->
 			<!-- <size>0.942 0.28</size> -->
@@ -153,7 +153,7 @@ El más jugado : {binding:mostPlayed}
 				<text>${system.fullName} | ${system.releaseYearOrNull}</text>
 				<alignment>right</alignment>
 				<verticalAlignment>bottom</verticalAlignment>
-				<fontPath>./_viewsyst/hyperbat/teko-bold.ttf</fontPath>
+				<fontPath>${fonttekobold}</fontPath>
 				<fontSize>0.044</fontSize>
 				<pos>0.694 0.65</pos>
 				<pos verticalScreen="true">0.03 0.10</pos>
@@ -171,7 +171,7 @@ El más jugado : {binding:mostPlayed}
 			<!-- <text>${system.releaseYearOrNull}</text> -->
 			<!-- <alignment>left</alignment> -->
 			<!-- <verticalAlignment>top</verticalAlignment> -->
-			<!-- <fontPath>./_ViewSyst/Hyperbat/teko-bold.ttf</fontPath> -->
+			<!-- <fontPath>${fonttekobold}</fontPath> -->
 			<!-- <fontSize>0.044</fontSize> -->
 			<!-- <pos>0.95 0.9</pos> -->
 			<!-- <pos verticalScreen="true">0.03 0.127</pos> -->

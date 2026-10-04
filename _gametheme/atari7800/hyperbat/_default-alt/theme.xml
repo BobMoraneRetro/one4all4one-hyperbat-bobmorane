@@ -191,7 +191,7 @@
 		<image name="logo_def" extra="true">
 			<path>./logo.png</path>
 			<visible>${IfnoextGamethemeexist}</visible>
-			<visible>!exists("${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>
+			<visible>!exists("${path_game_theme}/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>
 			<origin>0.5 0.5</origin>
 			<pos>0.616992636598 0.378721741222</pos>
 			<size>0.211325641162 0.311075036075</size>
@@ -213,7 +213,7 @@
 			</storyboard>
 		</image>
 		<image name="logo_jeu_def" extra="true">
-			<path>"${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
+			<path>"${path_game_theme}/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
 			<visible ifSubset="hsperview:themejeux">${IfnoextGamethemeexist}</visible>
 			<origin>0.5 0.5</origin>
 			<pos>0.616992636598 0.378721741222</pos>

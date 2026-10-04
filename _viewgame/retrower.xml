@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    ════════════════════════════════════════════════════════════════════
+    GUIDE DÉBUTANT — retrower.xml
+    ════════════════════════════════════════════════════════════════════
+    Ce fichier définit la VUE DE JEU "retrower" du thème HyperBat.
+    Il s'affiche quand on parcourt la liste des jeux d'une console.
+
+    CONCEPTS DE BASE :
+    ──────────────────
+    • Toutes les positions (pos) et tailles (size) sont en PROPORTIONS
+      de l'écran : 0.0 = bord gauche/haut, 1.0 = bord droit/bas.
+    • zIndex : ordre d'empilement. Plus grand = plus en avant-plan.
+    • extra="true" : élément décoratif ajouté par le thème (pas un
+      élément standard d'EmulationStation).
+    • inherits="gamecarousel" : cette vue HÉRITE d'une vue parente,
+      elle récupère tous ses éléments et peut les surcharger/ajouter.
+    • {game:xxx}  → valeur dynamique liée au JEU sélectionné.
+    • {system:xxx} → valeur dynamique liée à la CONSOLE en cours.
+    • ${mavariable} → variable définie dans le bloc <variables>.
+    • firstfile(A,B,C) → cherche le premier fichier qui existe parmi A, B, C.
+    • contains(texte,"mot") → renvoie vrai si "texte" contient "mot".
+    ════════════════════════════════════════════════════════════════════
+-->
+<theme defaultView="hyperbat">
+	<!-- Version du format de thème RetroBat/EmulationStation. Ne pas modifier. -->
+	<formatVersion>7</formatVersion>
+	<!-- ═══════════════════════════════════════════════════════════════
+	     BLOC VARIABLES
+	     ═══════════════════════════════════════════════════════════════
+	     Les variables sont des raccourcis réutilisables partout dans
+	     le fichier via la syntaxe ${nomvariable}.
+	     Elles évitent de répéter de longs chemins ou expressions.
+	     Pour créer la vôtre : <mavariable>valeur</mavariable>
+	     ═══════════════════════════════════════════════════════════════ -->
+	<variables>
+		<!-- Variables utilisees dans ce fichier (definitions reprises de theme.xml) -->
+		<!-- <bobmediapath>${themePath}/../_bobmedia</bobmediapath> -->
+		<!-- Chemin vers le screenshot du jeu dans le dossier de médias externe -->
+		<extgamescreenjpg>("${path_game_media}/"  + ({game:system:theme}) + "/screenshots/" + stem({game:rom}) + ".jpg")</extgamescreenjpg>
+		<!-- Chemin vers l'image de borne arcade (cab) du jeu -->
+		<globalgamecabs>"${path_game_media}/" + ({game:system:theme}) + "/cabs/" + stem({game:rom}) + ".png"</globalgamecabs>
+		<!-- firstfile() cherche dans l'ordre : cab du jeu > cab générique console > cab système > cab par défaut.
+		     C'est le mécanisme de FALLBACK : si l'image du jeu n'existe pas, on prend la suivante. -->
+		<intcoinopscollec>firstfile( "${path_game_media}/" + ({game:system:theme}) + "/cabs/" + stem({game:rom}) + ".png",
+					"${path_game_media}/" + ({game:system:theme}) + "/cabs/_"  + ({game:system:theme}) + ".png",
+					"${path_game_media}/_systemcoinops/"  + ({game:system:theme}) + ".png",
+					"${path_game_media}/_defaultgamemedia/cabs/default.png")
+		</intcoinopscollec>
+		<!-- Logo de borne CoinOps Next pour la console en cours -->
+		<intcoinopsnext>("${themePath}/_viewgame/coinops/coinopsnext/"  + ({game:system:theme}) + ".png")</intcoinopsnext>
+		<!-- <bobmediapath>${themePath}</bobmediapath> -->
+		<!-- firstfile() pour le personnage/mascotte associé à la console.
+		     Cherche d'abord dans ce thème, puis dans le thème Animatics-DX en fallback. -->
+		<firstscharsystem>		firstfile("${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png","${themePath}/../es-theme-Animatics-DX/art/figurines/" + {system:theme} + ".png")</firstscharsystem>
+		<firstsnapouille>		firstfile("${themePath}/../es-theme-Animatics-DX/art/figurines/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</firstsnapouille>
+		<!-- Image du hardware/console physique (photo de la machine) -->
+		<firstsystemhardware>	firstfile("${themePath}/_systemmedia/hardware/" + {system:theme} + ".png","${themePath}/_systemmedia/charsystem/" + {system:theme} + ".png")</firstsystemhardware>
+		<!-- Fanart système : cherche d'abord la version "fresh" puis "custom" -->
+		<firstsystfanart>		firstfile("${path_syst_fanart}/fresh/" + {system:theme} + ".jpg","${path_syst_fanart}/custom/" + {system:theme} + ".jpg")</firstsystfanart>
+		<!-- Image système : priorité à "custom" puis "fresh" (ordre inverse de firstsystfanart) -->
+		<firstsystemimage>		firstfile("${path_syst_fanart}/custom/" + {system:theme} + ".jpg","${path_syst_fanart}/fresh/" + {system:theme} + ".jpg")</firstsystemimage>
+		<!-- Icône de notation (étoile FontAwesome &#xf005;).
+		     Les lignes commentées ci-dessous montrent des variantes possibles :
+		     coeur (&#xf004;), gamepad (&#xf11b;), smiley (&#xf599;), etc.
+		     Décommentez-en une et commentez l'autre pour changer l'icône. -->
+		<!-- <gamerating ifSubset="rating:coeur">&#xf004;</gamerating> -->
+		<!-- <gamerating ifSubset="rating:gamepad">&#xf11b;</gamerating> -->
+		<!-- <gamerating ifSubset="rating:smiles">&#xf599;</gamerating> -->
+		<!-- <gamerating ifSubset="rating:ghost">&#xf6e2;</gamerating> -->
+		<gamerating>&#xf005;</gamerating>
+		<!-- <gamerating ifSubset="rating:skull">&#xf54c;</gamerating> -->
+		<!-- <gamerating ifSubset="rating:dollar">&#xf155;</gamerating> -->
+	</variables>
+	<!-- ═══════════════════════════════════════════════════════════════
+	     VUE PERSONNALISÉE "retrower"
+	     ═══════════════════════════════════════════════════════════════
+	     inherits="gamecarousel" : on part de la vue carrousel standard
+	     et on ajoute/remplace tous les éléments ci-dessous.
+	     ═══════════════════════════════════════════════════════════════ -->
+	<customView name="retrower" displayName="${retrower}" inherits="gamecarousel">
+		<!-- ── Masquage des éléments hérités non désirés ──────────────
+		     Ces éléments existent dans gamecarousel mais on les cache
+		     pour utiliser nos propres équivalents à la place. -->
+		<!-- Désactive les zones fanart/screenshot/vidéo standards héritées -->
+		<control name="fanart_extra,screenshot_extra,video_extra">
+			<visible>false</visible>
+		</control>
+		<!-- Cache l'image principale du jeu héritée (on utilise notre propre <image name="screenshot">) -->
+		<image name="md_image">
+			<visible>false</visible>
+		</image>
+		<!-- Cache la vignette héritée (on gère les vignettes dans l'itemTemplate du carrousel) -->
+		<image name="md_thumbnail">
+			<visible>false</visible>
+		</image>
+		<!-- ═══════════════════════════════════════════════════════════
+		     CARROUSEL DE JEUX
+		     ═══════════════════════════════════════════════════════════
+		     Le carrousel affiche les jeux sous forme de roue/liste.
+		     Chaque jeu est représenté par un "item" dont le rendu
+		     est défini dans <itemTemplate>.
+		     ═══════════════════════════════════════════════════════════ -->
+		<gamecarousel name="gamecarousel">
+			<zIndex>800</zIndex>
+			<!-- type="vertical" : défilement vertical (haut/bas).
+			     Autres valeurs possibles : horizontal, wheel, etc. -->
+			<type>vertical</type>
+			<!-- pos et size très larges : le carrousel occupe presque tout l'écran
+			     mais ses items sont repositionnés individuellement dans itemTemplate. -->
+			<pos>-0.07 0.133</pos>
+			<size>2 0.621</size>
+			<!-- logoScale : facteur de zoom sur le logo de l'item sélectionné -->
+			<logoScale>1</logoScale>
+			<logoSize>0.1 0.1</logoSize>
+			<!-- color transparent : pas de fond coloré sur le carrousel lui-même -->
+			<color>00000000</color>
+			<logoAlignment>bottom</logoAlignment>
+			<!-- minLogoOpacity=1 : les items non-sélectionnés restent opaques (pas d'estompage) -->
+			<minLogoOpacity>1</minLogoOpacity>
+			<!-- transitionSpeed : durée en ms du défilement entre deux jeux -->
+			<transitionSpeed>800</transitionSpeed>
+			<logoPos>0.15 0.25</logoPos>
+			<!-- imageSource="thumbnail" : utilise la vignette comme image des items -->
+			<imageSource>thumbnail</imageSource>
+			<!-- defaultTransition="instant" : pas d'animation lors du premier affichage -->
+			<defaultTransition>instant</defaultTransition>
+			<!-- maxLogoCount=3 : affiche 3 items visibles simultanément dans le carrousel -->
+			<maxLogoCount>3</maxLogoCount>
+			<scaledLogoSpacing>0</scaledLogoSpacing>
+			<!-- ── itemTemplate ──────────────────────────────────────
+			     Définit le rendu de CHAQUE CASE du carrousel.
+			     Tout ce qui est ici se répète pour chaque jeu affiché.
+			     Les éléments réagissent aux événements :
+			       activate   = quand ce jeu devient sélectionné
+			       deactivate = quand on passe à un autre jeu
+			       scroll     = pendant le défilement rapide
+			     ─────────────────────────────────────────────────── -->
+			<itemTemplate>
+				<container>
+					<!-- ── VIGNETTE / POCHETTE du jeu ────────────────────── -->
+					<!-- Affiche {game:image} par défaut. -->
+					<!-- ifSubset="starthumb:starbox3d" : si l'option "starbox3d" -->
+					<!-- est activée dans les réglages du thème, utilise l'art 3D -->
+					<!-- en priorité. Même logique pour "starbox2d". -->
+					<!-- pos très à droite (x=2.81) : les vignettes sont positionnées -->
+					<!-- hors écran par défaut ; c'est le carrousel qui les replace. -->
+					<image name="thumbnail">
+						<pos>2.81 0.51</pos>
+						<origin>0.5 0</origin>
+						<rotation>0</rotation>
+						<maxSize>1 1</maxSize>
+						<!-- Chemin par défaut : image principale du jeu -->
+						<path>{game:image}</path>
+						<!-- Variante 3D (boîte 3D) si l'option est activée -->
+						<path ifSubset="starthumb:starbox3d">firstfile(${core3dart},{game:boxart})</path>
+						<!-- Variante 2D (couverture frontale) si l'option est activée -->
+						<path ifSubset="starthumb:starbox2d">firstfile(${corefrontart},{game:thumbnail})</path>
+						<zIndex>800</zIndex>
+						<!-- À l'activation (jeu sélectionné) : apparition en fondu + légère remontée -->
+						<storyboard event="activate">
+							<animation property="opacity" to="1" begin="" duration="250" mode="Linear"/>
+							<animation property="offsetY" to="-0.006" begin="" duration="" mode="easeIn"/>
+						</storyboard>
+						<!-- À la désactivation : légère redescente, puis désaturation et assombrissement -->
+						<storyboard event="deactivate">
+							<!-- <animation property="opacity" to="0.18" begin="2000" duration="1000" mode="Linear"/> -->
+							<animation property="offsetY" to="0" begin="" duration="" mode="easeIn"/>
+							<animation property="saturation" to="0.3" begin="2000" duration="2000" mode="Linear"/>
+							<animation property="color" to="555555" begin="2000" duration="2000" mode="Linear"/>
+						</storyboard>
+						<!-- <storyboard event="scroll"> -->
+						<!-- <animation property="y" to="0.6" begin="" duration="" mode="Linear"/> -->
+						<!-- </storyboard> -->
+						<!-- Shader de bordure arrondie (commenté = désactivé).
+						     Pour l'activer, décommentez et ajustez cornerRadius, borderSize, etc. -->
+						<!-- <shader> -->
+						<!-- <path>:/shaders/border.glsl</path> -->
+						<!-- <cornerRadius>0.03</cornerRadius> -->
+						<!-- <borderSize>0</borderSize> -->
+						<!-- <borderColor>00000080</borderColor> -->
+						<!-- <innerShadowSize>0.02</innerShadowSize> -->
+						<!-- <innerShadowColor>00000070</innerShadowColor> -->
+						<!-- <outerShadowSize>0.02</outerShadowSize> -->
+						<!-- <outerShadowColor>00000080</outerShadowColor> -->
+						<!-- </shader> -->
+					</image>
+					<!-- ── MARQUEE (bandeau titre/logo du jeu) ──────────────
+					     Affiché en grand à droite lors de la sélection.
+					     Les animations jouent un effet d'entrée/sortie par glissement horizontal.
+					     offsetX décale horizontalement sans changer la position de base. -->
+					<image name="marquee">
+						<pos>5.3 1</pos>
+						<origin>0.5 0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>1.7 2</maxSize>
+						<path>{game:marquee}</path>
+						<!-- Activation : le marquee glisse de droite vers sa position finale -->
+						<storyboard event="activate">
+							<animation property="offsetX" to="-0.2" begin="" duration="0" mode="Linear"/>
+							<animation property="opacity" to="0" begin="0" duration="0" mode="Linear"/>
+							<animation property="offsetX" to="-0.55" begin="800" duration="850" mode="easeOut"/>
+							<animation property="opacity" to="1" begin="1050" duration="0" mode="Linear"/>
+							<animation property="offsetX" to="-0.5" begin="1650" duration="550" mode="easeIn"/>
+						</storyboard>
+						<!-- Désactivation : le marquee repart vers la droite -->
+						<storyboard event="deactivate">
+							<animation property="offsetX" to="-0.18" begin="" duration="0" mode="Linear"/>
+							<animation property="opacity" to="0" begin="0" duration="0" mode="Linear"/>
+							<animation property="offsetX" to="0.05" begin="800" duration="850" mode="easeOut"/>
+							<animation property="opacity" to="1" begin="1050" duration="0" mode="Linear"/>
+							<animation property="offsetX" to="0" begin="1650" duration="550" mode="easeIn"/>
+							<!-- <animation property="offsetX" to="0" begin="" duration="0" mode="Linear"/> -->
+						</storyboard>
+						<!-- <storyboard event="open"> -->
+						<!-- <animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/> -->
+						<!-- </storyboard> -->
+						<!-- Scroll : même effet que désactivation, pour le défilement rapide -->
+						<storyboard event="scroll">
+							<animation property="offsetX" to="-0.18" begin="" duration="0" mode="Linear"/>
+							<animation property="opacity" to="0" begin="0" duration="0" mode="Linear"/>
+							<animation property="offsetX" to="0.05" begin="800" duration="850" mode="easeOut"/>
+							<animation property="opacity" to="1" begin="1050" duration="0" mode="Linear"/>
+							<animation property="offsetX" to="0" begin="1650" duration="550" mode="easeIn"/>
+						</storyboard>
+					</image>
+					<!-- ── NOM DU JEU (texte de secours) ─────────────────────
+					     Affiché UNIQUEMENT si ni marquee ni pochette n'existent
+					     pour ce jeu. Les conditions ifSubset vérifient l'option
+					     de vignette active.
+					     storyboard ifSubset="starboxang:active/deactive" : applique
+					     des animations différentes selon l'option d'angle de boîte. -->
+					<text name="gamename">
+						<visible ifSubset="starthumb:starbox3d">!exists({game:marquee}) &amp;&amp; !exists({game:boxart}) &amp;&amp; !exists(${core3dart})</visible>
+						<visible ifSubset="starthumb:starbox2d">!exists({game:marquee}) &amp;&amp; !exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<origin>0.5</origin>
+						<text>{game:name}</text>
+						<fontPath>${fontimpact}</fontPath>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<fontSize>0.025</fontSize>
+						<lineSpacing>1</lineSpacing>
+						<size>0.3 2</size>
+						<pos>0.5 0.8</pos>
+						<glowColor>00000066</glowColor>
+						<glowSize>2</glowSize>
+						<zIndex>400</zIndex>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</text>
+				</container>
+			</itemTemplate>
+		</gamecarousel>
+		<!-- Lissage activé sur le logo du carrousel hérité -->
+		<image name="gamecarouselLogo">
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- ═══════════════════════════════════════════════════════════
+		     ICÔNES DE GENRE
+		     ═══════════════════════════════════════════════════════════
+		     Chaque <image> ci-dessous affiche une icône de genre UNIQUEMENT
+		     si le genre du jeu sélectionné correspond (via contains()).
+		     contains(lower({game:genre}),"mot") : cherche "mot" dans le
+		     genre du jeu (en minuscules pour éviter les problèmes de casse).
+		     Toutes ces images sont ensuite regroupées dans un <control>
+		     qui leur applique position, taille et animations communes.
+		     ═══════════════════════════════════════════════════════════ -->
+		<!-- Deuxième occurrence de genre_plateforme (peut coexister avec la première) -->
+		<image name="genre_plateforme" extra="true">
+			<visible>contains(lower({game:genre}),"platefor")</visible>
+			<path>${path_vgame}/retrower/genres/genre_plateforme.png</path>
+		</image>
+		<!-- Icône Action (utilise genre_arcade.png) -->
+		<image name="genre_action" extra="true">
+			<visible>contains(lower({game:genre}),"action")</visible>
+			<path>${path_vgame}/retrower/genres/genre_arcade.png</path>
+		</image>
+		<image name="genre_tir" extra="true">
+			<visible>contains(lower({game:genre}),"tir")</visible>
+			<path>${path_vgame}/retrower/genres/genre_fps_scifi.png</path>
+		</image>
+		<!-- Icône Shoot'em up / Science-fiction -->
+		<image name="genre_shmup_scifi" extra="true">
+			<visible>contains(lower({game:genre}),"shoot'em")</visible>
+			<path>${path_vgame}/retrower/genres/genre_shmup_scifi.png</path>
+		</image>
+		<!-- Icône Plateforme (première occurrence, utilisée dans le control du bas) -->
+		<image name="genre_plateforme" extra="true">
+			<visible>contains(lower({game:genre}),"platefor")</visible>
+			<path>${path_vgame}/retrower/genres/genre_plateforme.png</path>
+		</image>
+		<!-- Icône Aventure (variante pour le mot "avent") -->
+		<image name="genre_adventure2" extra="true">
+			<visible>contains(lower({game:genre}),"avent")</visible>
+			<path>${path_vgame}/retrower/genres/genre_adventure.png</path>
+		</image>
+				<!-- Icône Aventure / Rôle -->
+		<image name="genre_adventure" extra="true">
+			<visible>contains(lower({game:genre}),"rôle")</visible>
+			<path>${path_vgame}/retrower/genres/genre_rpgfantasy.png</path>
+		</image>
+		<!-- Icône Beat'em up -->
+		<image name="genre_beatemup" extra="true">
+			<visible>contains(lower({game:genre}),"beat")</visible>
+			<path>${path_vgame}/retrower/genres/genre_beatemup.png</path>
+		</image>
+		<!-- Icône Course / Racing -->
+		<image name="genre_racing" extra="true">
+			<visible>contains(lower({game:genre}),"course")</visible>
+			<path>${path_vgame}/retrower/genres/genre_racing.png</path>
+		</image>
+		<!-- Icône Sport -->
+		<image name="genre_sports" extra="true">
+			<visible>contains(lower({game:genre}),"sport")</visible>
+			<path>${path_vgame}/retrower/genres/genre_sports.png</path>
+		</image>
+		<!-- Icône Combat / Fighting -->
+		<image name="genre_fighting" extra="true">
+			<visible>contains(lower({game:genre}),"combat")</visible>
+			<path>${path_vgame}/retrower/genres/genre_fighting.png</path>
+		</image>
+		<!-- Icône RPG / Fantasy -->
+		<image name="genre_simulation" extra="true">
+			<visible>contains(lower({game:genre}),"rpg")</visible>
+			<path>${path_vgame}/retrower/genres/genre_rpgfantasy.png</path>
+		</image>
+		<!-- Icône Puzzle (image dédiée cette fois) -->
+		<image name="genre_puzzle" extra="true">
+			<visible>contains(lower({game:genre}),"puzzle")</visible>
+			<path>${path_vgame}/retrower/genres/genre_puzzle.png</path>
+		</image>
+		<image name="genre_simulation" extra="true">
+			<visible>contains(lower({game:genre}),"simu")</visible>
+			<path>${path_vgame}/retrower/genres/genre_simulation.png</path>
+		</image>
+		<image name="genre_avion" extra="true">
+			<visible>contains(lower({game:genre}),"avion")</visible>
+			<path>${path_vgame}/retrower/genres/genre_shmup_history.png</path>
+		</image>
+		<image name="genre_casual" extra="true">
+			<visible>contains(lower({game:genre}),"casual")</visible>
+			<path>${path_vgame}/retrower/genres/genre_puzzle.png</path>
+		</image>
+		<image name="genre_strategy" extra="true">
+			<visible>contains(lower({game:genre}),"strat")</visible>
+			<path>${path_vgame}/retrower/genres/genre_strategy.png</path>
+		</image>
+		<image name="genre_pinball" extra="true">
+			<visible>contains(lower({game:genre}),"flipper")</visible>
+			<path>${path_vgame}/retrower/genres/genre_pinball.png</path>
+		</image>
+		<image name="genre_horror" extra="true">
+			<visible>contains(lower({game:genre}),"horr")</visible>
+			<path>${path_vgame}/retrower/genres/genre_horror.png</path>
+		</image>
+		<image name="genre_fps" extra="true">
+			<visible>contains(lower({game:genre}),"first")</visible>
+			<path>${path_vgame}/retrower/genres/genre_fps.png</path>
+		</image>
+		<image name="genre_fps2" extra="true">
+			<visible>contains(lower({game:genre}),"1ere")</visible>
+			<path>${path_vgame}/retrower/genres/genre_fps.png</path>
+		</image>
+		<!-- ── Paramètres communs à toutes les icônes de genre ────────
+		     Ce <control> applique d'un coup position, taille, zIndex et
+		     animations identiques à toutes les icônes listées dans name="...".
+		     Animation : invisible à la sélection, puis fondu vers opaque après 1650ms. -->
+		<control name="
+		genre_shmup_scifi, 
+		genre_plateforme, 
+		genre_adventure, 
+		genre_adventure2, 
+		genre_beatemup, 
+		genre_racing, 
+		genre_sports, 
+		genre_fighting, 
+		genre_arcade, 
+		genre_action,
+		genre_simulation,
+		genre_avion,
+		genre_puzzle,
+		genre_casual,
+		genre_strategy,
+		genre_pinball,
+		genre_horror,
+		genre_fps,
+		genre_fps2,
+		genre_tir">
+			<origin>0.5 0.5</origin>
+			<!-- Zone d'affichage de l'icône de genre : centre-gauche de l'écran -->
+			<pos>0.3624 0.485</pos>
+			<size>0.394270833333 0.218518518519</size>
+			<zIndex>360</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<!-- À l'activation : invisible immédiatement, puis apparition progressive après 1.65s -->
+			<storyboard event="activate">
+				<animation property="opacity" to="0" begin="" duration="0" mode="Linear"/>
+				<animation property="opacity" to="1" begin="1650" duration="2000" mode="easeOut"/>
+			</storyboard>
+			<!-- À la désactivation : disparition immédiate -->
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" begin="" duration="0" mode="Linear"/>
+			</storyboard>
+		</control>
+		<!-- Filtres pack fixes : au premier plan de chaque chevalet, independants du boxart de la wheel. -->
+		<!-- ── FILTRES DE PACK ────────────────────────────────────────
+		     Trois bandes superposées sur les chevalets (zones d'affichage des
+		     vignettes). Leur hauteur est 0 (size Y=0) pour ne faire qu'une
+		     ligne fine horizontale sur le bord inférieur de chaque zone.
+		     zIndex=805 : juste au-dessus du carrousel (zIndex 800). -->
+		<image name="filtrepack_top" extra="true">
+			<path>${path_vgame}/retrower/filtre_pack.png</path>
+			<origin>0.5 1</origin>
+			<pos>0.36 0.327</pos>
+			<size>0.073437500000 0</size>
+			<size>0.06 0</size>
+			<zIndex>805</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="filtrepack_middle" extra="true">
+			<path>${path_vgame}/retrower/filtre_pack.png</path>
+			<origin>0.5 1</origin>
+			<!-- <pos>0.363281250000 0.5281</pos> -->
+			<pos>0.36 0.5281</pos>
+			<size>0.06 0</size>
+			<zIndex>805</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="filtrepack_bottom" extra="true">
+			<path>${path_vgame}/retrower/filtre_pack.png</path>
+			<origin>0.5 1</origin>
+			<pos>0.36 0.740740740740</pos>
+			<size>0.072916666667 0</size>
+			<size>0.06 0</size>
+			<zIndex>805</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- ── FOND D'ÉCRAN PRINCIPAL ─────────────────────────────────
+		     Légèrement plus grand que l'écran (pos négative + size > 1)
+		     pour éviter tout bord blanc sur les bords.
+		     zIndex=210 : tout en arrière-plan. -->
+		<image name="calque_28" extra="true">
+			<path>${path_vgame}/retrower/background.png</path>
+			<origin>0 0</origin>
+			<pos>-0.005208333333 -0.005555555556</pos>
+			<size>1.015625000000 1.015740740741</size>
+			<zIndex>210</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- ── PANNEAU GAUCHE (calque de fond de la zone d'info) ──────
+		     Grande zone décorative à gauche (40% x 79%) qui sert de fond
+		     au panneau d'informations du jeu. -->
+		<image name="calque_24" extra="true">
+			<path>${path_vgame}/retrower/calque_24.png</path>
+			<origin>0 0</origin>
+			<pos>0.162 0.102</pos>
+			<size>0.401562500000 0.786111111111</size>
+			<zIndex>220</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- ── VERSION VIDE DU PANNEAU GAUCHE (masque le contenu pendant la transition) ──
+		     Identique à calque_24 mais au zIndex=999 (devant tout) et avec une animation :
+		     il reste visible puis disparaît brusquement à 1600ms après l'activation.
+		     Cela masque le contenu du panneau pendant le chargement des infos du nouveau jeu. -->
+		<image name="calque_24_vide" extra="true">
+			<path>${path_vgame}/retrower/calque_24_vide.png</path>
+			<origin>0 0</origin>
+			<pos>0.162 0.102</pos>
+			<size>0.401562500000 0.786111111111</size>
+			<zIndex>999</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<!-- Disparaît instantanément après 1600ms (les infos du jeu sont alors chargées) -->
+			<storyboard event="activate">
+				<animation property="opacity" to="0" begin="1600" duration="0" mode="Linear"/>
+			</storyboard>
+		</image>
+		<!-- ── SURCADRE (cadre décoratif par-dessus les vignettes) ─────
+		     Encadrement visuel positionné au centre-gauche.
+		     zIndex=1200 : au premier plan, par-dessus les vignettes et les infos. -->
+		<!-- <image name="calque_10" extra="true"> -->
+		<!-- <path>${themePath}/_viewgame/retrower/surcadre.png</path> -->
+		<!-- <origin>0 0</origin> -->
+		<!-- <pos>0.229166666667 0.400925925926</pos> -->
+		<!-- <size>0.268750000000 0.170370370370</size> -->
+		<!-- <zIndex>1200</zIndex> -->
+		<!-- <scaleOrigin>-0.3 -0.3</scaleOrigin> -->
+		<!-- <rotationOrigin>0.5 0.5</rotationOrigin> -->
+		<!-- <linearSmooth>true</linearSmooth> -->
+		<!-- </image> -->
+		<!-- ── OMBRE DU LOGO SYSTÈME ──────────────────────────────────
+		     Copie décalée (offsetX/Y de 2px) et colorée en noir semi-transparent
+		     du logo pour créer un effet d'ombre portée.
+		     ${intlogoclearpng} et ${extlogoclear} sont des variables définies
+		     ailleurs dans le thème (theme.xml principal) pointant vers le logo
+		     de la console en cours. -->
+		<image name="system_logo_top_shadow" extra="true">
+			<!-- Logo système dynamique, repris de la logique des autres vues HyperBat : intlogoclearpng puis extlogoclear. -->
+			<path>${intlogoclearpng}</path>
+			<path>${extlogoclear}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.356 0.047</pos>
+			<maxSize>0.16 0.075</maxSize>
+			<zIndex>279</zIndex>
+			<color>000000AA</color>
+			<!-- Léger décalage pour l'effet d'ombre -->
+			<offsetX>0.002</offsetX>
+			<offsetY>0.002</offsetY>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- ── LOGO SYSTÈME (en haut du panneau gauche) ───────────────
+		     Remplace l'ancien calque_6 statique : logo dynamique selon la console.
+		     maxSize contraint le logo dans une boîte sans déformer les proportions. -->
+		<image name="system_logo_top" extra="true">
+			<!-- Remplace l'ancien calque_6 statique : le logo suit maintenant {system:theme}. -->
+			<path>${intlogoclearpng}</path>
+			<path>${extlogoclear}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.356 0.045</pos>
+			<maxSize>0.16 0.075</maxSize>
+			<zIndex>280</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- ── OMBRE DE L'IMAGE HARDWARE ─────────────────────────────
+		     Même image que systhardware mais en noir (color>000000</color>)
+		     et légèrement décalée (padding négatif) pour créer l'ombre. -->
+		<image name="shadohard" extra="true">
+			<path>${firstsystemhardware}</path>
+			<origin>0 0</origin>
+			<pos>0.494 0.792</pos>
+			<maxSize>0.210416666667 0.169444444444</maxSize>
+			<saturation>1</saturation>
+			<zIndex>999</zIndex>
+			<!-- padding : décale légèrement l'ombre (droite/bas) par rapport à l'image réelle -->
+			<padding>3 3 -3 -3</padding>
+			<color>000000</color>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>${path_com_shaders}/blur.glsl</path>
+				<size>0.11 1</size>
+				<pos>0 0</pos>
+				<blur>10</blur>
+				<zIndex>3</zIndex>
+				<blurColor>000000</blurColor>
+			</shader>
+		</image>
+		<!-- ── IMAGE DU HARDWARE / CONSOLE ───────────────────────────
+		     Photo de la console physique, affichée en bas-centre.
+		     ${firstsystemhardware} cherche l'image dans _systemmedia/hardware/
+		     avec fallback sur charsystem (défini dans les variables). -->
+		<image name="systhardware" extra="true">
+			<path>${firstsystemhardware}</path>
+			<origin>0 0</origin>
+			<pos>0.492708333333 0.787555555556</pos>
+			<maxSize>0.210416666667 0.169444444444</maxSize>
+			<zIndex>1000</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- Filtre coloré sur la console (commenté = désactivé).
+		     Décommentez pour ajouter une teinte semi-transparente sur l'image hardware. -->
+		<!-- <image name="filtre_console" extra="true"> -->
+		<!-- <path>${themePath}/_viewgame/retrower/filtre_console.png</path> -->
+		<!-- <origin>0 0</origin> -->
+		<!-- <pos>0.492708333333 0.787555555556</pos> -->
+		<!-- <maxSize>0.210416666667 0.169444444444</maxSize> -->
+		<!-- <zIndex>1001</zIndex> -->
+		<!-- <opacity>0.30</opacity> -->
+		<!-- <scaleOrigin>-0.3 -0.3</scaleOrigin> -->
+		<!-- <rotationOrigin>0.5 0.5</rotationOrigin> -->
+		<!-- <linearSmooth>true</linearSmooth> -->
+		<!-- </image> -->
+		<image name="cadre" extra="true">
+			<path>${path_vgame}/retrower/cadre.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.815187500000 0.480092592593</pos>
+			<size>0.230000000000 0.754629629630</size>
+			<zIndex>250</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- ── MARQUEE DANS LE BLOC DROIT ─────────────────────────────
+		     Affiche le logo/titre du jeu en haut à droite de l'écran.
+		     {game:marquee} = image marquee (bandeau avec le logo du jeu).
+		     origin="0.5 0" : ancré par son centre-haut. -->
+		<image name="marqueeblocdroite" extra="true">
+			<path>{game:marquee}</path>
+			<origin>0.5 0</origin>
+			<pos>0.815 0.122</pos>
+			<maxSize>0.18 0.13</maxSize>
+			<zIndex>330</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- ── SCREENSHOT DU JEU ─────────────────────────────────────
+		     Affiche une capture d'écran dans le panneau droit.
+		     {game:image} = image principale du jeu dans la base de données.
+		     Le shader commenté ci-dessous permettrait d'ajouter une bordure
+		     arrondie et des ombres intérieures/extérieures. -->
+		<image name="screenshot" extra="true">
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.815104166667 0.391203703704</pos>
+			<size>0.18 0.258</size>
+			<zIndex>260</zIndex>
+			<!-- <scaleOrigin>-0.3 -0.3</scaleOrigin> -->
+			<!-- <rotationOrigin>0.5 0.5</rotationOrigin> -->
+			<linearSmooth>true</linearSmooth>
+			<!-- Shader de bordure arrondie (commenté = désactivé) -->
+			<shader>
+				<path>${path_com_shaders}/border.glsl</path>
+				<cornerRadius>0.0300</cornerRadius>
+				<borderSize>0.01</borderSize>
+				<borderColor>000000ff</borderColor>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.010</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" to="1" duration="20" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" duration="0" mode="linear"/>
+				<animation enabled="exists({game:video})" property="opacity" from="1" to="0" begin="500" duration="300" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="50" duration="0" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="50" duration="0" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="videogameplay" extra="true">
+			<path>firstfile(${extgamevideoavi},${extgamevideomp4},{game:video})</path>
+			<delay>0.3</delay>
+			<origin>0.5 0.5</origin>
+			<pos>0.815104166667 0.391203703704</pos>
+			<size>0.18 0.258</size>
+			<zIndex>260</zIndex>
+			<effect>none</effect>
+		</video>
+		<!-- ═══════════════════════════════════════════════════════════
+		     SYSTÈME DE NOTATION PAR ÉTOILES
+		     ═══════════════════════════════════════════════════════════
+		     Deux couches :
+		     1. blank_rating : 5 icônes grises (fond vide) toujours visibles
+		     2. rating_filled_X : icônes colorées en or, visibles selon la note
+
+		     {game:rating} retourne une valeur comme "0.200000", "0.400000", etc.
+		     Chaque text ne s'affiche QUE si la valeur correspond exactement.
+		     La police FontAwesome est utilisée pour les icônes (caractères Unicode).
+		     ${gamerating} = l'icône choisie dans les variables (étoile par défaut).
+
+		     Valeurs de {game:rating} :
+		       0.20000 = 1 étoile
+		       0.40000 = 2 étoiles
+		       0.60000 = 3 étoiles
+		       0.80000 = 4 étoiles
+		       1.00000 = 5 étoiles
+		     ═══════════════════════════════════════════════════════════ -->
+		<!-- Versions commentées avec texte statique (non utilisées ici) :
+		     les étoiles étaient affichées via {game:stars} mais ce champ
+		     n'est pas standard. La solution ci-dessous via rating_filled_X est plus robuste. -->
+		<!-- <text name="rating_stars_shadow" extra="true"> -->
+		<!-- <text>{game:stars}</text> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <pos>0.827 0.802</pos> -->
+		<!-- <size>0.17 0.05</size> -->
+		<!-- <alignment>center</alignment> -->
+		<!-- <fontSize>0.036</fontSize> -->
+		<!-- <color>000000AA</color> -->
+		<!-- <zIndex>339</zIndex> -->
+		<!-- </text> -->
+		<!-- <text name="rating_stars" extra="true"> -->
+		<!-- <text>{game:stars}</text> -->
+		<!-- <origin>0.5 0.5</origin> -->
+		<!-- <pos>0.825 0.800</pos> -->
+		<!-- <size>0.17 0.05</size> -->
+		<!-- <alignment>center</alignment> -->
+		<!-- <fontSize>0.036</fontSize> -->
+		<!-- <color>FFCC00D0</color> -->
+		<!-- <zIndex>340</zIndex> -->
+		<!-- </text> -->
+		<!-- ################################ Affichage de la notation vide pour l'arriere plan ######################################## -->
+		<!-- Fond de 5 étoiles grises, toujours affiché (zIndex=289 = derrière les étoiles colorées) -->
+		<text name="blank_rating" extra="true">
+			<fontPath>${path_vgame}/retrower/fonts/fontawesome.ttf</fontPath>
+			<origin>0.5 0.5</origin>
+			<pos>0.85 0.800</pos>
+			<size>0.17 0.05</size>
+			<color>968f8f</color>
+			<fontSize>0.036</fontSize>
+			<glowOffset>0</glowOffset>
+			<glowColor>000000</glowColor>
+			<glowSize>1</glowSize>
+			<!-- Affiche toujours 5 icônes grises comme fond -->
+			<text>${gamerating}${gamerating}${gamerating}${gamerating}${gamerating}</text>
+			<zIndex>289</zIndex>
+		</text>
+		<!-- Affichage et remplissage de la notation en fonction de {game:rating} -->
+		<!-- 0.20000 un icone -->
+		<!-- 0.40000 deux icones -->
+		<!-- 0.60000 trois icones -->
+		<!-- 0.80000 quatre icones -->
+		<!-- 1.00000 cinq icones -->
+		<!-- 1 étoile or : visible uniquement si la note est exactement 0.200000 -->
+		<text name="rating_filled_1" extra="true">
+			<visible>contains({game:rating},'0.200000')</visible>
+			<text>${gamerating}</text>
+		</text>
+		<!-- 2 étoiles or -->
+		<text name="rating_filled_2" extra="true">
+			<visible>contains({game:rating},'0.400000')</visible>
+			<text>${gamerating}${gamerating}</text>
+		</text>
+		<!-- 3 étoiles or -->
+		<text name="rating_filled_3" extra="true">
+			<visible>contains({game:rating},'0.600000')</visible>
+			<text>${gamerating}${gamerating}${gamerating}</text>
+		</text>
+		<!-- 4 étoiles or -->
+		<text name="rating_filled_4" extra="true">
+			<visible>contains({game:rating},'0.800000')</visible>
+			<text>${gamerating}${gamerating}${gamerating}${gamerating}</text>
+		</text>
+		<!-- 5 étoiles or -->
+		<text name="rating_filled_5" extra="true">
+			<visible>contains({game:rating},'1.000000')</visible>
+			<text>${gamerating}${gamerating}${gamerating}${gamerating}${gamerating}</text>
+		</text>
+		<!-- Paramètres communs à tous les rating_filled_X : position, taille, police, couleur or.
+		     zIndex=290 : juste devant le fond gris (zIndex 289). -->
+		<!--Definition des parametres commun pour l'affichage des icones-->
+		<control name="rating_filled_1, rating_filled_2, rating_filled_3, rating_filled_4, rating_filled_5">
+			<origin>0.5 0.5</origin>
+			<pos>0.85 0.800</pos>
+			<size>0.17 0.05</size>
+			<fontSize>0.036</fontSize>
+			<fontPath>${path_vgame}/retrower/fonts/fontawesome.ttf</fontPath>
+			<fontSize>0.036</fontSize>
+			<!-- Couleur or semi-transparente pour les étoiles remplies -->
+			<color>FFCC00D0</color>
+			<zIndex>290</zIndex>
+		</control>
+		<!-- ############################################################################# -->
+		<!-- ── DESCRIPTION DU JEU ────────────────────────────────────
+		     md_description est un élément STANDARD d'EmulationStation.
+		     En le redéfinissant ici, on surcharge sa police, couleur et position.
+		     singleLineScroll="false" : pas de défilement automatique sur une ligne.
+		     glowColor/glowOffset/glowSize : ombre portée légère sur le texte. -->
+		<text name="md_description">
+			<fontPath>${path_vgame}/retrower/fonts/Roboto-Regular.ttf</fontPath>
+			<color>ffffffff</color>
+			<!-- Zone de texte dans le panneau bas-droit -->
+			<pos>0.728 0.537962962963</pos>
+			<size>0.178 0.155555555556</size>
+			<alignment>left</alignment>
+			<fontSize>0.018</fontSize>
+			<singleLineScroll>false</singleLineScroll>
+			<glowColor>00000040</glowColor>
+			<glowOffset>0.8</glowOffset>
+			<glowSize>2</glowSize>
+			<lineSpacing>1.2</lineSpacing>
+			<visible>true</visible>
+			<zIndex>290</zIndex>
+		</text>
+		<!-- ── BLOC BOUTONS / MÉTADONNÉES ────────────────────────────
+		     Image décorative (fond vert+bleu) qui sert de fond aux textes
+		     "nombre de joueurs" et "nombre de parties jouées" ci-dessous. -->
+		<image name="vertbleumeta" extra="true">
+			<path>${path_vgame}/retrower/buttons.png</path>
+			<origin>0 0</origin>
+			<pos>0.723958333333 0.701851851852</pos>
+			<size>0.185937500000 0.072222222222</size>
+			<zIndex>350</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- ── NOMBRE DE JOUEURS ──────────────────────────────────────
+		     Trois textes exclusifs selon la valeur de {game:players} :
+		     • binds_players    : affiché si le jeu supporte PLUS d'1 joueur
+		     • binds_player_one : affiché si exactement 1 joueur
+		     • binds_noplayers  : affiché si aucune donnée (0 joueur)
+		     Les expressions &gt; = >, &lt; = <, &amp;&amp; = && en XML. -->
+		<!-- Nombre de joueurs dynamique dans le bloc vert. -->
+		<!-- Cas : plusieurs joueurs (>1) -->
+		<text name="binds_players" extra="true">
+			<visible>{game:players} &gt; 1 ? 1 : 0</visible>
+			<visible>{game:players} == 1 ? 0 : 1 &amp;&amp; {game:players} &lt; 1 ? 0 : 1 </visible>
+			<text>{game:players} ${playerss}</text>
+			<color>FFFFFF</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.771 0.737</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${path_vgame}/retrower/fonts/Roboto-Bold.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>360</zIndex>
+		</text>
+		<!-- Cas : exactement 1 joueur -->
+		<text name="binds_player_one" extra="true">
+			<visible>{game:players} == 0 ? 0 : 1</visible>
+			<visible>{game:players} == 1 ? 1 : 0</visible>
+			<text>{game:players} ${player}</text>
+			<color>FFFFFF</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.771 0.737</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${path_vgame}/retrower/fonts/Roboto-Bold.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>360</zIndex>
+		</text>
+		<!-- Cas : aucune donnée joueurs -->
+		<text name="binds_noplayers" extra="true">
+			<visible>{game:players} &gt; 0 ? 0 : 1</visible>
+			<text>${noplayerdata}</text>
+			<color>FFFFFF</color>
+			<origin>0.5 0.5</origin>
+			<pos>0.771 0.737</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${path_vgame}/retrower/fonts/Roboto-Bold.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>360</zIndex>
+		</text>
+		<!-- ── NOMBRE DE PARTIES JOUÉES ──────────────────────────────
+		     Même logique que les joueurs, avec trois cas :
+		     • binds_playcount_one : exactement 1 partie jouée
+		     • binds_playcount     : 2 parties ou plus
+		     • binds_noplaycount   : jamais joué (0)
+		     ${playcountone}, ${playcount}, ${nogametime} = textes traduits
+		     définis dans les variables du thème principal. -->
+		<!-- Nombre de parties jouées dynamique dans le bloc bleu. -->
+		<!-- Cas : 1 partie jouée -->
+		<text name="binds_playcount_one" extra="true">
+			<visible>{game:playcount} == 1 ? 1 : 0</visible>
+			<color>FFFFFF</color>
+			<text>{game:playcount} ${playcountone}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.863 0.737</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${path_vgame}/retrower/fonts/Roboto-Bold.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>360</zIndex>
+		</text>
+		<!-- Cas : plusieurs parties jouées -->
+		<text name="binds_playcount" extra="true">
+			<visible>{game:playcount} &gt; 1 ? 1 : 0</visible>
+			<color>FFFFFF</color>
+			<text>{game:playcount} ${playcount}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.863 0.737</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${path_vgame}/retrower/fonts/Roboto-Bold.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>360</zIndex>
+		</text>
+		<!-- Cas : jamais joué -->
+		<text name="binds_noplaycount" extra="true">
+			<visible>{game:playcount} &gt; 0 ? 0 : 1</visible>
+			<color>FFFFFF</color>
+			<text>${nogametime}</text>
+			<origin>0.5 0.5</origin>
+			<pos>0.863 0.737</pos>
+			<size>0.08 0.035</size>
+			<fontPath>${path_vgame}/retrower/fonts/Roboto-Bold.ttf</fontPath>
+			<alignment>center</alignment>
+			<fontSize>0.020</fontSize>
+			<zIndex>360</zIndex>
+		</text>
+		<!-- ── EFFETS DE NUIT (vignettage haut et bas du panneau gauche) ──
+		     Deux images semi-transparentes qui créent un assombrissement
+		     progressif en haut et en bas du panneau des vignettes.
+		     Animation : apparaissent progressivement après 2s à l'activation,
+		     disparaissent instantanément à la désactivation.
+		     opacity=0.72 : partiellement transparentes pour un effet doux. -->
+		<image name="_top_night" extra="true">
+			<path>${path_vgame}/retrower/_top_night.png</path>
+			<origin>0.5 0.5</origin>
+			<!-- <pos>0.3618 0.2535</pos> -->
+			<pos>0.3618 0.2595</pos>
+			<size>0.339062500000 0.209259259259</size>
+			<zIndex>400</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<!-- Apparition progressive après 2s -->
+			<storyboard event="activate">
+				<animation property="opacity" to="0" begin="" duration="0" mode="Linear"/>
+				<animation property="opacity" to="0.72" begin="2000" duration="2000" mode="easeOut"/>
+			</storyboard>
+			<!-- Disparition instantanée lors du changement de jeu -->
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" begin="" duration="0" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="_bottom_night" extra="true">
+			<path>${path_vgame}/retrower/_bottom_night.png</path>
+			<origin>0.5 0.5</origin>
+			<!-- <pos>0.3618 0.707</pos> -->
+			<pos>0.3618 0.7045</pos>
+			<size>0.339062500000 0.209259259259</size>
+			<zIndex>390</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="activate">
+				<animation property="opacity" to="0" begin="" duration="0" mode="Linear"/>
+				<animation property="opacity" to="0.72" begin="2000" duration="2000" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" to="0" begin="" duration="0" mode="Linear"/>
+			</storyboard>
+		</image>
+		<!-- ── CHEVALET (support de présentation des vignettes) ───────
+		     Petit élément graphique très fin (5% x 0.6%) centré sur les vignettes.
+		     zIndex=1400 : tout au premier plan, par-dessus tout le reste. -->
+		<image name="chevalet" extra="true">
+			<path>${path_vgame}/retrower/chevalet.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.36 0.531427731203</pos>
+			<!-- Taille très petite : cet élément est un détail fin de présentation -->
+			<size>0.049518308710 0.006555615337</size>
+			<zIndex>1400</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- ── ÉLÉMENTS STANDARDS CACHÉS ─────────────────────────────
+		     Ces éléments existent dans gamecarousel mais sont masqués
+		     car ce thème gère ses propres images à leur place. -->
+		<!-- Cartouche du jeu (métadonnée) — cachée -->
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>380</zIndex>
+		</image>
+		<!-- Boîte/pochette du jeu (métadonnée) — cachée -->
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>380</zIndex>
+		</image>
+		<!-- ── ANCIEN BLOC D'ANIMATIONS DE TRANSITION (désactivé) ────
+		     Ce <control> gérait des animations zoom+fondu sur les calques
+		     lors des transitions entre jeux. Il a été remplacé par les
+		     storyboards individuels sur chaque élément.
+		     Conservé en commentaire comme référence. -->
+		<!-- <control name="1992___plateforme, calque_1, calque_10, calque_16, calque_17, calque_19, calque_24, calque_25, calque_26, calque_27, calque_28, calque_3, calque_5, calque_6, calque_7, mario_et_luigi_doivent_de_nouveau_sortir_leur_princesse_pr_f_r_, remplissage_g_n_ratif_2, super_mario__world"> -->
+		<!-- <storyboard event="deactivateNext"> -->
+		<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+		<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+		<!-- </storyboard> -->
+		<!-- <storyboard event="deactivatePrev"> -->
+		<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+		<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+		<!-- </storyboard> -->
+		<!-- </control> -->
+	</customView>
+</theme>

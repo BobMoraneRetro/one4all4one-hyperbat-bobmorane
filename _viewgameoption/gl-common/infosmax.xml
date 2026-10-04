@@ -10,10 +10,11 @@ INFO CONSOLE:
 
 {game:name}
 Genre: {game:genre}
+Tag: {game:tags}
 Family: {game:family}
 Lang: {game:lang}
 Region: {game:region}, Rating: {game:rating}
-Cheevos hash: {game:cheevosHash}, Cheevos ID: {game:cheevosId}
+Cheevos : {game:cheevos}, Cheevos hash: {game:cheevosHash}, Cheevos ID: {game:cheevosId}
 
 File: {game:rom}
 CRC32: {game:crc32}
@@ -23,7 +24,7 @@ MD5: {game:md5}
 {game:system}/{game:stem}-thumb.png
 {game:system}/{game:stem}-marquee.png
 {game:system}/{game:stem}-video.mp4
-
+${path_game_media}{game:system:theme}/cabs/{game:rom}
 			</text>
 		</text>
 		<text extra="true" name="console" zIndex="5000" fontPath=":/_common/fonts/cabin-bold.ttf" fontSize="0.022" size="1 1" alignment="left" verticalAlignment="top" padding="0.025 0.16 0.01 0.01" color="ffd13b" glowColor="000000" glowOffset="0" glowSize="4">
@@ -44,9 +45,9 @@ Theme: ( ${system.theme} ), Collection: ( ${system.collection} ), Game Systheme 
 Manufacturer: ${system.manufacturer}
 Sorted by: ${system.sortedBy}
 Release Date: ${system.releaseYear}
-Hardware: ${system.hardwareType}
-Group: ${system.group}
+Hardware: ${system.hardwareType}{game:stem})
 Savestates: ${system.savestates}
+Group: ${system.group} , Folder : {game:folder} , Folder : {game:directory} , directory : {game:stem}
 Netplay: ${system.netplay}
 Cheevos: ${system.cheevos}
 Settings: ${settings.ScrollLoadMedias}

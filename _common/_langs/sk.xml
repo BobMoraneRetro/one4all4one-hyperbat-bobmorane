@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="sk">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Áno</yes>
+		<no>Nie</no>
+		<desactive>Vypnuté</desactive>
+		<activate>Zapnuté</activate>
+		<actif>Zapnuté</actif>
+		<active>Zapnuté</active>
+		<deactive>Vypnuté</deactive>
+		<vide>   </vide>
+		<default>Predvolené</default>
+		<amoitie>čiastočne</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Dostupné jazyky:</languesdispo>
+		<nodates>Bez dátumu</nodates>
+		<playcount>hier</playcount>
+		<playcountone>hra</playcountone>
+		<players>hráč(i)</players>
+		<playerss>hráči</playerss>
+		<player>hráč</player>
+		<nogametime>Nikdy nehrané</nogametime>
+		<noplayerdata>Neznáme</noplayerdata>
+		<noratings>Bez hodnotenia</noratings>
+		<lastgamelabel>Naposledy hrané:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Ďalšia hra</jeusuiv>
+		<jeuprec>Predchádzajúca hra</jeuprec>
+		<systsuiv>Ďalší systém</systsuiv>
+		<systprec>Predchádzajúci systém</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Uvítacia správa</lismoi>
+		<tumasbienlu>Uvítanie a poďakovanie</tumasbienlu>
+		<deporttheme>Ako presunúť moje vlastné témy</deporttheme>
+		<customiztheme1>Ako prispôsobiť moje témy 1/2</customiztheme1>
+		<customiztheme2>Ako prispôsobiť moje témy 2/2</customiztheme2>
+		<downloadmore>Odkazy na stiahnutie ďalších tém a grafík</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Zobrazenie zoznamu systémov</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Základná mriežka</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart veľmi ľahký</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Otestuj svoje médiá</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>Nastavenie SCRAP - Štruktúra fanartov?</packcustombuild>
+		<packcustombuildsno>Fanart s príponou "-fanart" (predvolené)</packcustombuildsno>
+		<packretrofreshbat>Fanart s príponou "-image"</packretrofreshbat>
+		<scrap3dbox>Nastavenie scrape - Štruktúra 3D krabice?</scrap3dbox>
+		<scrapedboxart>3D krabica s "-boxart" v gameliste</scrapedboxart>
+		<scrapedthumbnail>3D krabica s "-thumbnail" v gameliste</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Pomocník - Vzhľad ikon pomocníka</iconset>
+		<iconsetposition>Umiestnenie tlačidiel</iconsetposition>
+		<colorhelp>Pomocník - Farby textu pomocníka</colorhelp>
+		<skyblue>blankytne modrá</skyblue>
+		<standard>Štandardný</standard>
+		<purple>fialová</purple>
+		<red>červená</red>
+		<aqua>blankytne modrá</aqua>
+		<orange>oranžová</orange>
+		<green>zelená</green>
+		<yellow>žltá</yellow>
+		<pink>ružová</pink>
+		<grey>tmavosivá</grey>
+		<lightgrey>svetlosivá</lightgrey>
+		<navy>modrá alt</navy>
+		<violet>fialová</violet>
+		<candy>candy</candy>
+		<redalt>červená alt</redalt>
+		<yellowalt>žltá alt</yellowalt>
+		<greenalt>zelená alt</greenalt>
+		<purplealt>fialová alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Zobrazenie systémov - Typ lôg systémov</systviewlogos>
+		<logosimple>Jednoduché logo (Celé + Región)</logosimple>
+		<glassnekhros>Logo Glass (Celé + Región) (By Nekhros)</glassnekhros>
+		<logobd>Logo v štýle komiksu (Helmic)</logobd>
+		<logoovalcarb>Oválne logo Carbon</logoovalcarb>
+		<hmaxovalsilver>Oválne logo Silver</hmaxovalsilver>
+		<logorectfresh>Obdĺžnikové logo Team Freshone (externý balík)</logorectfresh>
+		<hmaxrectrefl>Obdĺžnikové logo s odleskom Team Freshone (externý balík)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Zobrazenie systémov - Miznutie zoznamu systémov</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Zobrazenie systémov - Výber fanartov systému</systviewfanart>
+		<fanartfreshone>Iba fanarty vybrané FreshOne</fanartfreshone>
+		<fanartsystcustom>Vlastné fanarty, inak fanart FreshOne</fanartsystcustom>
+		<fanfondsystem>Pozadie systému, inak fanart FreshOne</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Zobrazenie systémov - Animovaná prezentácia systému</systviewvideo>
+		<hyperspinorunified>ADDON: Dynamický HS, inak zjednotený HS</hyperspinorunified>
+		<gameplayp1>Malé náhodné video z hrania s rámčekom (bezel), ak existuje</gameplayp1>
+		<gameplay1>Veľké náhodné video z hrania s rámčekom (bezel), ak existuje</gameplay1>
+		<gameplayp>Malé náhodné video z hrania</gameplayp>
+		<gameplay>Veľké náhodné video z hrania</gameplay>
+		<custom>Vlastné video z priečinka custom</custom>
+		<hyperspinxp>ADDON: Obrázok a hranie v štýle dynamického Hyperspinu</hyperspinxp>
+		<hyperspin>ADDON: Obrázok a hranie v štýle zjednoteného Hyperspinu</hyperspin>
+		<hyperspinorder>ADDON: Dynamický HS, inak video Hyperpie</hyperspinorder>
+		<hyperpie>ADDON: Video Hyperpie, inak video Unified, ak existuje</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Zobrazenie systémov - Zobraziť počet hier systému</systviewtotal>
+		<nbrjeux>jednoduchý počet hier</nbrjeux>
+		<nbrjeux2>názov systému a počet hier</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Zobrazenie navigačnej cesty</menuofficiel>
+		<menutxt>Oficiálne triedenie hardvéru: vodorovný text</menutxt>
+		<menuorb>Oficiálne triedenie hardvéru: vodorovná guľa</menuorb>
+		<menuorbvert>Oficiálne triedenie hardvéru: zvislá guľa</menuorbvert>
+		<menuorbcrcl>Oficiálne triedenie hardvéru: guľa v polkruhu</menuorbcrcl>
+		<menucust>Bobovo vlastné triedenie hardvéru: vodorovný text</menucust>
+		<menucustorb>Bobovo vlastné triedenie hardvéru: vodorovná guľa</menucustorb>
+		<menucustorbvert>Bobovo vlastné triedenie hardvéru: zvislá guľa</menucustorbvert>
+		<menucustorbcrcl>Bobovo vlastné triedenie hardvéru: guľa v polkruhu</menucustorbcrcl>
+		<menutxtzspin>Oficiálne triedenie hardvéru: zvislý text</menutxtzspin>
+		<menutxtzspincust>Bobovo vlastné triedenie hardvéru: zvislý text</menutxtzspincust>
+		<menuteta>Oficiálne triedenie hardvéru: Tetanos</menuteta>
+		<menucustteta>Bobovo vlastné triedenie hardvéru: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Zobrazenie systémov Hyperbat - Animovaní pomocníci</sticksysteme>
+		<systballblue>Stick Modrá</systballblue>
+		<systballcyan>Stick Azúrová</systballcyan>
+		<systballdarkviolet>Stick Tmavofialová</systballdarkviolet>
+		<systballviolet>Stick Fialová</systballviolet>
+		<systballgreen>Stick Zelená</systballgreen>
+		<systballlitegreen>Stick Svetlozelená</systballlitegreen>
+		<systballpink>Stick Ružová</systballpink>
+		<systballred>Stick Červená</systballred>
+		<systballyelgreen>Stick Žltozelená</systballyelgreen>
+		<systballyellow>Stick Žltá</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Zobrazenie systémov Hyperbat - Typ menu</hyperwheel>
+		<spindr>Zakrivené koleso vpravo (Hyperspin)</spindr>
+		<verticaldr>Zvislé koleso vpravo (Hyperspin)</verticaldr>
+		<verticaldreb>Zvislé koleso vpravo (Emubox)</verticaldreb>
+		<spingh>Zakrivené koleso vľavo (Hyperspin)</spingh>
+		<verticalgh>Zvislé koleso vľavo (Hyperspin)</verticalgh>
+		<verticalgheb>Zvislé koleso vľavo (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Predajca boxov Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Predajca boxov Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Predajca boxov Hyperspin Chris (rozpracované)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Zobrazenie hier - Aktuálny systém pri otvorení?</systannounce>
+		<classiquesyst>Zmiznutie s oddialením</classiquesyst>
+		<nomsystem2>Pomalý nástup (prelínanie + zoom)</nomsystem2>
+		<nomsystem3>Rýchly záblesk (oddialenie)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Zobrazenie hier - Pozadie pod každým logom hry?</gwheelbackgr>
+		<sisaccades>Vypnuté</sisaccades>
+		<ovalcarbon>Ovál carbon (generované automaticky)</ovalcarbon>
+		<ovalsilver>Ovál silver (generované automaticky)</ovalsilver>
+		<rectcarbon>Obdĺžnik carbon (generované automaticky)</rectcarbon>
+		<rectcompose>Vlastný obdĺžnik pre každý systém (autogenerované)</rectcompose>
+		<ovalcompose>Vlastný ovál carbon pre každý systém (autogenerované)</ovalcompose>
+		<logounified>Logo jednotnej veľkosti</logounified>
+		<hfsround>Okrúhle Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Zobrazenie hier - Navigácia podľa písmen (hry)?</letternav>
+		<navhoricoinstyle>Vodorovná abeceda</navhoricoinstyle>
+		<navvertcoinstyle>Zvislá abeceda vľavo</navvertcoinstyle>
+		<navvertrcoinstyle>Zvislá abeceda vpravo</navvertrcoinstyle>
+		<navhsletters>Písmeno v štýle systému</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Zobrazenie hier - Zobraziť maximum informácií?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Začiatok pokročilých možností pre zobrazenia Hyperbat ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Médiá potrebné pre zobrazenie hier Hyperbat = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Všeobecná téma hier (ak neexistuje žiadna téma)</defaultgeneric>
+		<videodefaut>Predvolené video všeobecnej témy (bez snímky obrazovky a videa)</videodefaut>
+		<generic43boxback>Štandard s montážou zadnej a prednej strany krabice</generic43boxback>
+		<generic43coinopsstyle>Zbierka arkádových automatov</generic43coinopsstyle>
+		<generic43noanimationfanart>Štandard s animovaným fanartom v pozadí</generic43noanimationfanart>
+		<generic43noanimation>Štandard bez animácie boxartu</generic43noanimation>
+		<generic43>Štandard</generic43>
+		<jukeboxdef>Vzhľad kompaktného disku (nedokončené)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Téma hier: Zdrojový systém</gameviewsource>
+		<mamefolder>Najprv pôvodný priečinok hry, potom priečinok mame</mamefolder>
+		<actualsystem>Najprv priečinok vybraného systému</actualsystem>
+		<genericstyleonly>Používať iba všeobecnú tému hier</genericstyleonly>
+		<groupedsystem>Iba vývojársky test: nepoužívať</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Téma hier: Autor</authordisplayed>
+		<showoff>Zapnuté, vysoká viditeľnosť</showoff>
+		<showoffblackwhite>Zapnuté, maximálna viditeľnosť</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Miznutie zoznamu hier</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Zvuk pri posúvaní</gamewheelsound>
+		<wheelclic>Cvaknutie v štýle Hyperspin</wheelclic>
+		<bulle>Bublina</bulle>
+		<clic>Jednoduché cvaknutie</clic>
+		<clicgrave>Hlboké cvaknutie</clicgrave>
+		<frottement>Trenie</frottement>
+		<poc>Puk</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Vzhľad - Efekt vinetácie</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Vzhľad - Vinetácia zobrazenia systémov</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Vzhľad - Stmaviť pozadie (zobrazenie systémov)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>VZHĽAD - Výber animovanej páčky</syststickon>
+		<stickon>Klasická arkáda</stickon>
+		<syststickcolor>VZHĽAD - Farba guľôčky páčky</syststickcolor>
+		<ballcyan>Azúrová</ballcyan>
+		<ballblue>Modrá</ballblue>
+		<balldarkviolet>Tmavofialová</balldarkviolet>
+		<ballviolet>Fialová</ballviolet>
+		<ballgreen>Zelená</ballgreen>
+		<balllitegreen>Svetlozelená</balllitegreen>
+		<ballpink>Ružová</ballpink>
+		<ballred>Červená</ballred>
+		<ballyelgreen>Žltozelená</ballyelgreen>
+		<ballyellow>Žltá</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Vzhľad press start</pressstart>
+		<doigts>Animovaný prst stláčajúci tlačidlo</doigts>
+		<undoigt>Animovaný prst stláčajúci tlačidlo iba vľavo</undoigt>
+		<undoigtr>Animovaný prst stláčajúci tlačidlo iba vpravo</undoigtr>
+		<pressstarttxt>METADATA - Výber textu</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Hra zadarmo</partiegratuite>
+		<uneuro>1€ za hru</uneuro>
+		<sitessage>Stlač Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Nastavenie metadát</hsmetadata>
+		<full>Úplné a predvolené umiestnenie</full>
+		<lower>Úplné a najnižšie umiestnenie</lower>
+		<metafichedefault>Karta metadát v predvolenom umiestnení</metafichedefault>
+		<metafichebasgauche>Karta metadát dole vľavo</metafichebasgauche>
+		<metafichebasdroite>Karta metadát dole vpravo</metafichebasdroite>
+		<metafichebascentre>Karta metadát dole v strede</metafichebascentre>
+		<metafichehautgauche>Karta metadát hore vľavo</metafichehautgauche>
+		<metafichehautdroite>Karta metadát hore vpravo</metafichehautdroite>
+		<metafichehautcentre>Karta metadát hore v strede</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Zobraziť témy jednotlivých hier?</hyperbatperview>
+		<themejeux>Najprv téma hry, ak existuje</themejeux>
+		<themejeuxno>Vypnúť témy jednotlivých hier</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Vzhľad - Plynulý prechod medzi témami hier</smoothgametheme>
+		<activesmooth>Zapnuté (odporúčané pre Retrobat)</activesmooth>
+		<noactivesmooth>Vypnuté (odporúčané pre Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Ukazovatele systému v štýle Hyperspin</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Prispôsobenie scrapu pre kompatibilné témy ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Krabica hry na zobrazenie</boxorthumb>
+		<boxart>Kalibrované pre 3D krabicu</boxart>
+		<thumb>Kalibrované pre 2D krabicu</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Pokročilá konfigurácia: Zmena zdrojového priečinka médií --------------------------------------------------------</spacerextfolder>
+		<folder>Zdroj - nepoužívať</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Priečinok témy - Predvolené</intheme>
+		<extfolder>Externý priečinok</extfolder>
+		<extfoldergametheme>Zdroj - Téma pre konkrétne hry</extfoldergametheme>
+		<extfoldergamemedia>Zdroj - Médiá hier mimo gamelist.xml</extfoldergamemedia>
+		<extfoldervideosyst>Zdroj - Téma pre konkrétne systémy</extfoldervideosyst>
+		<extfolderbezelsyst>Zdroj - Rámčeky (bezel) systémov</extfolderbezelsyst>
+		<extfoldermanufacturer>Zdroj - Logá vydavateľov hier</extfoldermanufacturer>
+		<extfolderfanart>Zdroj - Fanart systémov</extfolderfanart>
+		<extfolderlogosyst>Zdroj - Logo systému</extfolderlogosyst>
+		<extfoldercouleursinfos>Zdroj - Štýl informácií o hrách</extfoldercouleursinfos>
+		<extfolderthumbox>Zdroj - 2D/3D krabice hier</extfolderthumbox>
+		<extfoldergamefanart>Zdroj - Fanart hier</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Odporúčané médiá pre zobrazenie hier Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ Začiatok pokročilých možností pre zobrazenie FanartStar boxart ↓   -------------------</mediastar>
+		<spacebox>Medzera medzi krabicami hier</spacebox>
+		<spacessssmall>Medzera ----</spacessssmall>
+		<spacesssmall>Medzera ---</spacesssmall>
+		<spacessmall>Medzera --</spacessmall>
+		<spacesmall>Medzera -</spacesmall>
+		<spacenorm>Predvolené</spacenorm>
+		<spacemore>Medzera +</spacemore>
+		<spacemmore>Medzera ++</spacemmore>
+		<spacemmmore>Medzera +++</spacemmmore>
+		<spacemmmmore>Medzera ++++</spacemmmmore>
+		<fanartstarrotated>Otočenie krabíc SNES, N64, NGAGE, Solarus</fanartstarrotated>
+		<starrotate>Áno</starrotate>
+		<nostarrotate>Nie</nostarrotate>
+		<boxstarspeed>Rýchlosť animácie posúvania</boxstarspeed>
+		<speedslow1>Pomaly+</speedslow1>
+		<speedslow2>Pomaly++</speedslow2>
+		<customfanart>Výber použitých fanartov</customfanart>
+		<fanartgamelist>Fanart zo scrapu v gameliste</fanartgamelist>
+		<fanartcustom>Vlastný fanart v _Gamemedia-NazovSystemu-medium_artwork</fanartcustom>
+		<starboxang>Uhol krabíc hier</starboxang>
+		<starthumb>Zobraziť 2D alebo 3D obaly?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Veľkosť náhľadového videa</starvideo>
+		<starvideoang>Naklonené</starvideoang>
+		<starvideodef>Štandard</starvideodef>
+		<starvideobig>Veľké</starvideobig>
+		<longselect>Dlhé stlačenie "select"</longselect>
+		<favuniquement>Iba obľúbené</favuniquement>
+		<tslesjeux>Všetky hry</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Pomer strán obrazovky</screenratio>
+		<ratio1610>16/10 (experimentálne)</ratio1610>
+		<ratio43>4/3 (experimentálne)</ratio43>
+		<cadrevideosyst>Rámček systémových videí</cadrevideosyst>
+		<cadreorigine>Pôvodný (bezel)</cadreorigine>
+		<cadrebordure>Okraj</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Uvítanie a poďakovanie</planche00>
+		<planche01>01 - Ako presunúť moje vlastné témy</planche01>
+		<planche02>02 - Ako prispôsobiť moje témy 1/2</planche02>
+		<planche03>03 - Rámček systémových videí</planche03>
+		<planche04>04 - Ako prispôsobiť moje témy 2/2</planche04>
+		<planche05>05 - Stiahnutie tém</planche05>
+		<planche06>06 - Pridanie systémovej témy</planche06>
+		<planche07>07 - Pridanie hernej témy</planche07>
+		<planche08>08 - Editory tém</planche08>
+		<planche09>09 - 2D alebo 3D krabica a scraping</planche09>
+		<planche10>10 - Omrvinková navigácia a navigácia podľa písmen</planche10>
+		<planche11>11 - Štýl informácií o hrách</planche11>
+		<planche12>12 - Obrazovka 4:3 alebo 16:10</planche12>
+		<planche13>13 - Odkazy na stiahnutie ďalších tém a grafík</planche13>
+	</variables>
+</theme>

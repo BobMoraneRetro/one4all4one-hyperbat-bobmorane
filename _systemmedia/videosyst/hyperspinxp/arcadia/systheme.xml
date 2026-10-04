@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+		<image name="background" extra="true">
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>1</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{random}</path>
+			<pos>0.370520951591 0.568408747849</pos>
+			<size>0.490931568591 0.657725824452</size>
+			<origin>0.5 0.5</origin>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<delay>0.3</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<zIndex>2</zIndex>
+			<shader>
+				<path>./_common/shaders/border_multi_gradient.glsl</path>
+				<cornerRadius>67</cornerRadius>
+				<innerShadowSize/>
+				<innerShadowColor/>
+				<outerShadowSize/>
+				<outerShadowColor/>
+				<gradientMode/>
+				<saturation/>
+				<borderPad>47</borderPad>
+				<borderOffset>0</borderOffset>
+				<borderLayout>0</borderLayout>
+				<borderPos1>0</borderPos1>
+				<borderPos2>0</borderPos2>
+				<borderPos3>0</borderPos3>
+				<borderSize>15</borderSize>
+				<borderColor>ff0000ff</borderColor>
+				<borderColorStart/>
+				<borderColorEnd/>
+				<borderSize2>19</borderSize2>
+				<borderColor2>44ff00ff</borderColor2>
+				<borderColorStart2/>
+				<borderColorEnd2/>
+				<borderSize3>13</borderSize3>
+				<borderColor3>007bffff</borderColor3>
+				<borderColorStart3/>
+				<borderColorEnd3/>
+			</shader>
+			<storyboard>
+				<animation property="offsetY" from="0.5" to="0" begin="0" duration="2035" mode="EaseOut"/>
+				<animation property="rotation" from="360" to="0" begin="0" duration="2054" mode="EaseOut"/>
+			</storyboard>
+		</video>
+		<image name="Arcadia" extra="true">
+			<path>./Arcadia.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.774041937686 0.235258379621</pos>
+			<size>0.801883675196 0.782328219446</size>
+			<zIndex>3</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetY" from="-0.5" to="0" begin="0" duration="2008" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3" extra="true">
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.122656588049 0.729851878615</pos>
+			<size>0.245313176098 0.384740687214</size>
+			<zIndex>4</zIndex>
+			<scaleOrigin>0 0</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetX" from="-0.3" to="0" begin="0" duration="730" mode="EaseIn"/>
+				<animation property="offsetX" from="0" to="-0.075" begin="730" duration="365" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.075" to="0" begin="1095" duration="365" mode="EaseIn"/>
+				<animation property="offsetX" from="0" to="-0.01875" begin="1460" duration="183" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.01875" to="0" begin="1643" duration="182" mode="EaseIn"/>
+				<animation property="offsetX" from="0" to="-0.004688" begin="1825" duration="92" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.004688" to="0" begin="1917" duration="91" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2" extra="true">
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.232595188098 0.187030387148</pos>
+			<size>0.465190376197 0.374060774296</size>
+			<zIndex>5</zIndex>
+			<scaleOrigin>0 0</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetY" from="-0.3" to="0" begin="0" duration="730" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.075" begin="730" duration="365" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.075" to="0" begin="1095" duration="365" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.01875" begin="1460" duration="183" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.01875" to="0" begin="1643" duration="182" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.004688" begin="1825" duration="92" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.004688" to="0" begin="1917" duration="91" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1" extra="true">
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.797875916022 0.704042493536</pos>
+			<size>0.404248167956 0.591915012928</size>
+			<zIndex>6</zIndex>
+			<scaleOrigin>0 0</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="offsetY" from="0.5" to="0" begin="0" duration="2008" mode="EaseOut"/>
+				<animation property="offsetY" from="0" to="-0.02" begin="0" duration="2500" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+				<animation property="offsetX" from="0" to="0.02" begin="0" duration="3200" mode="EaseInOut" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="FanartFlix" extra="true">
+			<visible>false</visible>
+		</image>
+		<text name="systhemeauthor" extra="true">
+			<text>System Theme By : OldGamer</text>
+		</text>
+	</view>
+</theme>

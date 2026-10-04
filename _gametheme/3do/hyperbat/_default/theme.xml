@@ -3,8 +3,7 @@
 	<formatVersion>7</formatVersion>
 	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
 		<image name="BackgrSyst" extra="true">
-			<!-- <visible ifSubset="hsperview:themejeux">!exists("${bobmediapath}/_gametheme/${system.theme}/Hyperbat/" + stem({game:rom}) + "/theme.xml")</visible> -->
-			<visible ifSubset="hsperview:themejeux">${IfnoextGamethemeexist}</visible>
+			<visible>${IfnoextGamethemeexist}</visible>
 			<path>./Background.png</path>
 			<pos>0.5 0.5</pos>
 			<origin>0.5 0.5</origin>
@@ -14,7 +13,7 @@
 			<autoFade>false</autoFade>
 		</image>
 		<image name="logocust" extra="true">
-			<visible ifSubset="hsperview:themejeux">${IfnoextGamethemeexist}</visible>		
+			<visible>${IfnoextGamethemeexist}</visible>
 			<maxSize>0.44 0.20</maxSize>
 			<scaleOrigin>0 -0.3</scaleOrigin>
 			<pos>0.423697916666667 0.111574074074074</pos>
@@ -52,7 +51,7 @@
 			<path>${intlogoclearjppng}</path>
 		</image>
 		<image name="Console" extra="true">
-			<visible ifSubset="hsperview:themejeux">!exists("${bobmediapath}/_gametheme/${system.theme}/Hyperbat/" + stem({game:rom}) + "/theme.xml")</visible>
+			<visible ifSubset="hsperview:themejeux">!exists("${path_game_theme}/${system.theme}/Hyperbat/" + stem({game:rom}) + "/theme.xml")</visible>
 			<visible ifSubset="hsperview:themejeux">${IfnoextGamethemeexist}</visible>
 			<path>./Console.png</path>
 			<origin>0.5 0.5</origin>
@@ -63,9 +62,9 @@
 			<autoFade>false</autoFade>
 		</image>	
 		<image name="ArtworkDef1" extra="true">
-			<visible ifSubset="hsperview:themejeux">!exists("${bobmediapath}/_gametheme/${system.theme}/Hyperbat/" + stem({game:rom}) + "/theme.xml")</visible>
+			<visible ifSubset="hsperview:themejeux">!exists("${path_game_theme}/${system.theme}/Hyperbat/" + stem({game:rom}) + "/theme.xml")</visible>
 			<visible ifSubset="hsperview:themejeux">${IfnoextGamethemeexist}</visible>
-			<visible ifSubset="hsperview:themejeux">!exists("${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>			
+			<visible ifSubset="hsperview:themejeux">!exists("${path_game_theme}/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>			
 			<path>./Artwork1.png</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.127864583333333 0.521296296296296</pos>
@@ -97,7 +96,7 @@
 		</image>
 		<image name="ArtworkDef3" extra="true">
 			<visible>${IfnoextGamethemeexist}</visible>
-			<path>"${bobmediapath}/_gametheme/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
+			<path>"${path_game_theme}/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
 			<origin>0.5 0.5</origin>
 			<pos>0.1328125 0.5</pos>
 			<maxSize>0.3 0.8</maxSize>
@@ -134,56 +133,74 @@
 			<pos>0.43 0.497</pos>
 			<size>0.39 0.535</size>
 			<zIndex>300</zIndex>
-			<storyboard event="open">
-				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
-			</storyboard>
-			<storyboard event="activateNext">
-				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
-			</storyboard>
-			<storyboard event="activatePrev">
-				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
-			</storyboard>
-			<storyboard event="deactivateNext">
-				<animation property="scale" to="0" begin="" autoreverse="false" duration="200" mode="easyIn"/>
-				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
-			</storyboard>
-			<storyboard event="deactivatePrev">
-				<animation property="scale" to="0" begin="" autoreverse="false" duration="200" mode="easyIn"/>
-				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
-			</storyboard>
+			<!-- <storyboard event="open"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="activateNext"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="activatePrev"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="scale" to="0" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="scale" to="0" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+		</image>
+		<image name="fondscreen" extra="true">
+			<visible>${IfnoextGamethemeexist}</visible>
+			<path>./fiber.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.432 0.495</pos>
+			<size>0.365 0.49</size>
+			<zIndex>199</zIndex>
+			<autoFade>false</autoFade>
+		</image>
+		<image name="screenshot3do" extra="true">
+			<visible>${IfnoextGamethemeexist}</visible>
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.428541666666667 0.495</pos>
+			<size>0.36 0.49</size>
+			<zIndex>200</zIndex>
+			<autoFade>false</autoFade>
 		</image>
 		<video name="gameplayprev" extra="true">
 			<visible>${IfnoextGamethemeexist}</visible>
 			<path>{game:video}</path>
 			<origin>0.5 0.5</origin>
-			<pos>0.428541666666667 0.495</pos>
-			<maxSize>0.50 0.49</maxSize>
+			<pos>0.4325 0.495</pos>
+			<size>0.36 0.49</size>
 			<zIndex>201</zIndex>
 			<effect>none</effect>
-			<storyboard event="open">
-				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
-			</storyboard>
-			<storyboard event="activateNext">
-				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
-			</storyboard>
-			<storyboard event="activatePrev">
-				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
-				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/>
-			</storyboard>
-			<storyboard event="deactivateNext">
-				<animation property="scale" to="0" begin="" autoreverse="false" duration="200" mode="easyIn"/>
-				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
-			</storyboard>
-			<storyboard event="deactivatePrev">
-				<animation property="scale" to="0" begin="" autoreverse="false" duration="200" mode="easyIn"/>
-				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
-			</storyboard>
+			<!-- <storyboard event="open"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="activateNext"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="activatePrev"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="EaseIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="scale" to="0" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="scale" to="0" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
 			<delay>1</delay>
 		</video>
 		<image name="MarqueeHS" extra="true">
@@ -221,55 +238,16 @@
 				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
 			</storyboard>
 		</image>
-			<image name="boxartthumb" extra="true">
-			<visible>!exists({game:boxart}) &amp;&amp; ${IfnoextGamethemeexist}</visible>
-			<path>{game:thumbnail}</path>
-			<pos>0.75859375 0.50462962962963</pos>
-			<origin>0.5 0.5</origin>
-			<maxSize>0.225 0.344</maxSize>
-			<zIndex>551</zIndex>
-			<linearSmooth>true</linearSmooth>
-			<storyboard event="open">
-				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
-				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
-				<animation property="offsetX" from="1" to="0" begin="1000" duration="2000" mode="EaseOut"/>
-			</storyboard>
-			<storyboard event="activateNext">
-				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
-				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
-				<animation property="offsetX" from="1" to="0" begin="1000" duration="2000" mode="EaseOut"/>
-			</storyboard>
-			<storyboard event="activatePrev">
-				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
-				<animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/>
-				<animation property="offsetX" from="1" to="0" begin="1000" duration="2000" mode="EaseOut"/>
-			</storyboard>
-			<storyboard event="deactivateNext">
-				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
-				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
-			</storyboard>
-			<storyboard event="deactivatePrev">
-				<animation property="opacity" to="0" duration="150" mode="EaseIn"/>
-				<animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/>
-			</storyboard>
-			<shader>
-				<path>:/shaders/border.glsl</path>
-				<cornerRadius>0.03</cornerRadius>
-				<borderSize>0.012</borderSize>
-				<borderColor>000000</borderColor>
-				<innerShadowSize>0.01</innerShadowSize>
-				<innerShadowColor>00000030</innerShadowColor>
-				<outerShadowSize>0.020</outerShadowSize>
-				<outerShadowColor>00000050</outerShadowColor>
-			</shader>
-		</image>
-		<image name="boxart3D" extra="true">
+			<image name="boitedejeu3do" extra="true">
+			<!-- <visible>!exists({game:boxart}) &amp;&amp; ${IfnoextGamethemeexist}</visible> -->
 			<visible>${IfnoextGamethemeexist}</visible>
-			<path>{game:boxart}</path>
+			<path ifSubset="boxorthumb:thumb">${box2dpath}</path>
+			<path ifSubset="boxorthumb:boxart">${box3dpath}</path>
+			<pos ifSubset="boxorthumb:thumb">0.75859375 0.50462962962963</pos>
+			<pos ifSubset="boxorthumb:boxart">0.773177083333333 0.5</pos>
 			<origin>0.5 0.5</origin>
-			<pos>0.773177083333333 0.5</pos>
-			<!-- <maxSize>0.385 0.405</maxSize> -->
-			<maxSize>0.18 0.50</maxSize>
+			<maxSize ifSubset="boxorthumb:thumb">0.225 0.45</maxSize>
+			<maxSize ifSubset="boxorthumb:boxart">0.45 0.45</maxSize>
 			<zIndex>551</zIndex>
 			<linearSmooth>true</linearSmooth>
 			<storyboard event="open">
@@ -306,6 +284,48 @@
 				<outerShadowColor>00000050</outerShadowColor>
 			</shader>
 		</image>
+		<!-- <image name="boxart3D" extra="true"> -->
+			<!-- <visible>${IfnoextGamethemeexist}</visible> -->
+			<!-- <path>{game:boxart}</path> -->
+			<!-- <origin>0.5 0.5</origin> -->
+			<!-- <pos>0.773177083333333 0.5</pos> -->
+			<!-- <maxSize>0.18 0.50</maxSize> -->
+			<!-- <zIndex>551</zIndex> -->
+			<!-- <linearSmooth>true</linearSmooth> -->
+			<!-- <storyboard event="open"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/> -->
+				<!-- <animation property="offsetX" from="1" to="0" begin="1000" duration="2000" mode="EaseOut"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="activateNext"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/> -->
+				<!-- <animation property="offsetX" from="1" to="0" begin="1000" duration="2000" mode="EaseOut"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="activatePrev"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="1" to="1" begin="1000" duration="500" mode="Linear"/> -->
+				<!-- <animation property="offsetX" from="1" to="0" begin="1000" duration="2000" mode="EaseOut"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="opacity" to="0" duration="150" mode="EaseIn"/> -->
+				<!-- <animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="opacity" to="0" duration="150" mode="EaseIn"/> -->
+				<!-- <animation property="scale" to="3" autoreverse="false" duration="300" mode="easyIn"/> -->
+			<!-- </storyboard> -->
+			<!-- <shader> -->
+				<!-- <path>:/shaders/border.glsl</path> -->
+				<!-- <cornerRadius>0.03</cornerRadius> -->
+				<!-- <borderSize>0.012</borderSize> -->
+				<!-- <borderColor>000000</borderColor> -->
+				<!-- <innerShadowSize>0.01</innerShadowSize> -->
+				<!-- <innerShadowColor>00000030</innerShadowColor> -->
+				<!-- <outerShadowSize>0.020</outerShadowSize> -->
+				<!-- <outerShadowColor>00000050</outerShadowColor> -->
+			<!-- </shader> -->
+		<!-- </image> -->
 		<image name="cartridge" extra="true">
 			<visible>${IfnoextGamethemeexist}</visible>
 			<path>{game:cartridge}</path>
