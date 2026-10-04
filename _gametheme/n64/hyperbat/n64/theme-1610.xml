@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 16:10 generee le 2026-09-29 depuis theme.xml (hauteurs x0.9 autour de l'ancre) -->
+	<include>./theme.xml</include>
+	<customView name="hyperbat">
+		<image name="PreviewScreen" extra="true">
+			<pos>0.497835497835 0.529741863075</pos>
+			<size>0.475228475228 0.570274170274</size>
+		</image>
+		<image name="image_vid" extra="true">
+			<pos>0.495833333333 0.532140852974</pos>
+			<size>0.485416666667 0.591666666666</size>
+		</image>
+		<image name="Bezel" extra="true">
+			<pos>0.494949494949 0.533075196409</pos>
+			<size>0.481962481962 0.595411255411</size>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<pos>0.497835497835 0.529741863075</pos>
+			<maxSize>0.475228475228 0.570274170274</maxSize>
+		</video>
+		<image name="Background" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="md_boxart" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+	</customView>
+</theme>

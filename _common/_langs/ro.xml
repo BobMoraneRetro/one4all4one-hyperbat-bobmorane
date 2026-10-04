@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ro">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Da</yes>
+		<no>Nu</no>
+		<desactive>Dezactivat</desactive>
+		<activate>Activat</activate>
+		<actif>Activat</actif>
+		<active>Activat</active>
+		<deactive>Dezactivat</deactive>
+		<vide>   </vide>
+		<default>Implicit</default>
+		<amoitie>parțial</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Limbi disponibile:</languesdispo>
+		<nodates>Fără dată</nodates>
+		<playcount>partide</playcount>
+		<playcountone>partidă</playcountone>
+		<players>jucător(i)</players>
+		<playerss>jucători</playerss>
+		<player>jucător</player>
+		<nogametime>Niciodată jucat</nogametime>
+		<noplayerdata>Necunoscut</noplayerdata>
+		<noratings>Fără notă</noratings>
+		<lastgamelabel>Ultima partidă:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Jocul următor</jeusuiv>
+		<jeuprec>Jocul anterior</jeuprec>
+		<systsuiv>Sistemul următor</systsuiv>
+		<systprec>Sistemul anterior</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Mesaj de bun venit</lismoi>
+		<tumasbienlu>Bun venit și credite</tumasbienlu>
+		<deporttheme>Cum îmi mut temele personalizate</deporttheme>
+		<customiztheme1>Cum îmi personalizez temele 1/2</customiztheme1>
+		<customiztheme2>Cum îmi personalizez temele 2/2</customiztheme2>
+		<downloadmore>Linkuri pentru a descărca mai multe teme și artwork-uri</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Vizualizare pentru lista de sisteme</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Vizualizare grilă de bază</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart foarte ușor</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Testează-ți media</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>Configurare SCRAP - Structura fanart?</packcustombuild>
+		<packcustombuildsno>Fanart cu sufixul "-fanart" (implicit)</packcustombuildsno>
+		<packretrofreshbat>Fanart cu sufixul "-image"</packretrofreshbat>
+		<scrap3dbox>Configurare scrape - Structura cutiei 3D?</scrap3dbox>
+		<scrapedboxart>Cutie 3D cu "-boxart" în gamelist</scrapedboxart>
+		<scrapedthumbnail>Cutie 3D cu "-thumbnail" în gamelist</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Ajutor - Aspectul pictogramelor de ajutor</iconset>
+		<iconsetposition>Poziția butoanelor</iconsetposition>
+		<colorhelp>Ajutor - Culorile textului de ajutor</colorhelp>
+		<skyblue>bleu</skyblue>
+		<standard>Standard</standard>
+		<purple>violet</purple>
+		<red>roșu</red>
+		<aqua>bleu</aqua>
+		<orange>portocaliu</orange>
+		<green>verde</green>
+		<yellow>galben</yellow>
+		<pink>roz</pink>
+		<grey>gri închis</grey>
+		<lightgrey>gri deschis</lightgrey>
+		<navy>albastru alt</navy>
+		<violet>violet</violet>
+		<candy>candy</candy>
+		<redalt>roșu alt</redalt>
+		<yellowalt>galben alt</yellowalt>
+		<greenalt>verde alt</greenalt>
+		<purplealt>violet alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Vizualizare sisteme - Tipul logo-urilor de sistem</systviewlogos>
+		<logosimple>Logo simplu (Complet + Regiune)</logosimple>
+		<glassnekhros>Logo Glass (Complet + Regiune) (By Nekhros)</glassnekhros>
+		<logobd>Logo stil benzi desenate (Helmic)</logobd>
+		<logoovalcarb>Logo oval Carbon</logoovalcarb>
+		<hmaxovalsilver>Logo oval Silver</hmaxovalsilver>
+		<logorectfresh>Logo dreptunghiular Team Freshone (pachet extern)</logorectfresh>
+		<hmaxrectrefl>Logo dreptunghiular cu reflexie Team Freshone (pachet extern)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Vizualizare sisteme - Dispariția listei de sisteme</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Vizualizare sisteme - Alegerea fanart-urilor sistemului</systviewfanart>
+		<fanartfreshone>Doar fanart-uri selectate de FreshOne</fanartfreshone>
+		<fanartsystcustom>Fanart-uri personalizate, altfel fanart FreshOne</fanartsystcustom>
+		<fanfondsystem>Fundal de sistem, altfel fanart FreshOne</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Vizualizare sisteme - Prezentare animată a sistemului</systviewvideo>
+		<hyperspinorunified>ADDON: HS dinamic, altfel HS unificat</hyperspinorunified>
+		<gameplayp1>Video mic de gameplay aleatoriu cu bezel, dacă există</gameplayp1>
+		<gameplay1>Video mare de gameplay aleatoriu cu bezel, dacă există</gameplay1>
+		<gameplayp>Video mic de gameplay aleatoriu</gameplayp>
+		<gameplay>Video mare de gameplay aleatoriu</gameplay>
+		<custom>Video personal din folderul custom</custom>
+		<hyperspinxp>ADDON: Imagine și gameplay în stil Hyperspin dinamic</hyperspinxp>
+		<hyperspin>ADDON: Imagine și gameplay în stil Hyperspin unificat</hyperspin>
+		<hyperspinorder>ADDON: HS dinamic, altfel video Hyperpie</hyperspinorder>
+		<hyperpie>ADDON: Video Hyperpie, altfel video Unified, dacă există</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Vizualizare sisteme - Afișează numărul de jocuri al sistemului</systviewtotal>
+		<nbrjeux>număr de jocuri simplu</nbrjeux>
+		<nbrjeux2>numele sistemului și numărul de jocuri</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Afișarea căii de navigare</menuofficiel>
+		<menutxt>Sortare hardware oficială: text orizontal</menutxt>
+		<menuorb>Sortare hardware oficială: orb orizontal</menuorb>
+		<menuorbvert>Sortare hardware oficială: orb vertical</menuorbvert>
+		<menuorbcrcl>Sortare hardware oficială: orb semicerc</menuorbcrcl>
+		<menucust>Sortare hardware personalizată de Bob: text orizontal</menucust>
+		<menucustorb>Sortare hardware personalizată de Bob: orb orizontal</menucustorb>
+		<menucustorbvert>Sortare hardware personalizată de Bob: orb vertical</menucustorbvert>
+		<menucustorbcrcl>Sortare hardware personalizată de Bob: orb semicerc</menucustorbcrcl>
+		<menutxtzspin>Sortare hardware oficială: text vertical</menutxtzspin>
+		<menutxtzspincust>Sortare hardware personalizată de Bob: text vertical</menutxtzspincust>
+		<menuteta>Sortare hardware oficială: Tetanos</menuteta>
+		<menucustteta>Sortare hardware personalizată de Bob: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Vizualizare sisteme Hyperbat - Ajutoare animate</sticksysteme>
+		<systballblue>Stick Albastru</systballblue>
+		<systballcyan>Stick Cyan</systballcyan>
+		<systballdarkviolet>Stick Violet închis</systballdarkviolet>
+		<systballviolet>Stick Violet</systballviolet>
+		<systballgreen>Stick Verde</systballgreen>
+		<systballlitegreen>Stick Verde deschis</systballlitegreen>
+		<systballpink>Stick Roz</systballpink>
+		<systballred>Stick Roșu</systballred>
+		<systballyelgreen>Stick Galben-verde</systballyelgreen>
+		<systballyellow>Stick Galben</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Vizualizare sisteme Hyperbat - Tipul meniului</hyperwheel>
+		<spindr>Roată curbă la dreapta (Hyperspin)</spindr>
+		<verticaldr>Roată verticală la dreapta (Hyperspin)</verticaldr>
+		<verticaldreb>Roată verticală la dreapta (Emubox)</verticaldreb>
+		<spingh>Roată curbă la stânga (Hyperspin)</spingh>
+		<verticalgh>Roată verticală la stânga (Hyperspin)</verticalgh>
+		<verticalgheb>Roată verticală la stânga (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Vânzător de box Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Vânzător de box Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Vânzător de box Hyperspin Chris (în lucru)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Vizualizare jocuri - Sistemul curent la deschidere?</systannounce>
+		<classiquesyst>Dispariție cu zoom înapoi</classiquesyst>
+		<nomsystem2>Intrare lentă (estompare + zoom)</nomsystem2>
+		<nomsystem3>Bliț rapid (zoom de ieșire)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Vizualizare jocuri - Fundal pe fiecare logo de joc?</gwheelbackgr>
+		<sisaccades>Dezactivat</sisaccades>
+		<ovalcarbon>Oval carbon (generat automat)</ovalcarbon>
+		<ovalsilver>Oval silver (generat automat)</ovalsilver>
+		<rectcarbon>Dreptunghi carbon (generat automat)</rectcarbon>
+		<rectcompose>Dreptunghi personalizat per sistem (autogenerat)</rectcompose>
+		<ovalcompose>Oval carbon personalizat per sistem (autogenerat)</ovalcompose>
+		<logounified>Logo de dimensiune unificată</logounified>
+		<hfsround>Rotund Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Vizualizare jocuri - Navigare după literă (jocuri)?</letternav>
+		<navhoricoinstyle>Alfabet orizontal</navhoricoinstyle>
+		<navvertcoinstyle>Alfabet vertical la stânga</navvertcoinstyle>
+		<navvertrcoinstyle>Alfabet vertical la dreapta</navvertrcoinstyle>
+		<navhsletters>Literă stilizată per sistem</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Vizualizare jocuri - Afișează informații maxime?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Începutul opțiunilor avansate specifice vizualizărilor Hyperbat ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Media necesare pentru vizualizarea jocurilor Hyperbat = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Temă de jocuri generică (dacă nu există nicio temă)</defaultgeneric>
+		<videodefaut>Videoclip implicit al temei generice (fără captură sau videoclip)</videodefaut>
+		<generic43boxback>Standard cu montaj cutie spate și față</generic43boxback>
+		<generic43coinopsstyle>Colecție de aparate arcade</generic43coinopsstyle>
+		<generic43noanimationfanart>Standard cu fanart animat pe fundal</generic43noanimationfanart>
+		<generic43noanimation>Standard fără animație boxart</generic43noanimation>
+		<generic43>Standard</generic43>
+		<jukeboxdef>Aspect de compact disc (neterminat)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Temă jocuri: Sistemul sursă</gameviewsource>
+		<mamefolder>Întâi folderul de origine al jocului, apoi folderul mame</mamefolder>
+		<actualsystem>Întâi folderul sistemului selectat</actualsystem>
+		<genericstyleonly>Folosește doar tema de jocuri generică</genericstyleonly>
+		<groupedsystem>Doar test de dezvoltare: nu folosiți</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Temă jocuri: Autor</authordisplayed>
+		<showoff>Activat, vizibilitate ridicată</showoff>
+		<showoffblackwhite>Activat, vizibilitate maximă</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Dispariția listei de jocuri</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Sunet la derulare</gamewheelsound>
+		<wheelclic>Clic în stil Hyperspin</wheelclic>
+		<bulle>Bulă</bulle>
+		<clic>Clic simplu</clic>
+		<clicgrave>Clic grav</clicgrave>
+		<frottement>Frecare</frottement>
+		<poc>Poc</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Vizual - Efect de vignetare</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Vizual - Vignetare în vizualizarea sistemelor</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Vizual - Întunecă fundalul (vizualizare sisteme)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>VIZUAL - Alegerea stick-ului animat</syststickon>
+		<stickon>Arcade clasic</stickon>
+		<syststickcolor>VIZUAL - Culoarea bilei stick-ului</syststickcolor>
+		<ballcyan>Cyan</ballcyan>
+		<ballblue>Albastru</ballblue>
+		<balldarkviolet>Violet închis</balldarkviolet>
+		<ballviolet>Violet</ballviolet>
+		<ballgreen>Verde</ballgreen>
+		<balllitegreen>Verde deschis</balllitegreen>
+		<ballpink>Roz</ballpink>
+		<ballred>Roșu</ballred>
+		<ballyelgreen>Galben-verde</ballyelgreen>
+		<ballyellow>Galben</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Aspectul press start</pressstart>
+		<doigts>Deget animat care apasă un buton</doigts>
+		<undoigt>Deget animat care apasă un buton doar în stânga</undoigt>
+		<undoigtr>Deget animat care apasă un buton doar în dreapta</undoigtr>
+		<pressstarttxt>METADATA - Alegerea textului</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Partidă gratuită</partiegratuite>
+		<uneuro>1€ partida</uneuro>
+		<sitessage>Apasă Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Configurarea metadatelor</hsmetadata>
+		<full>Complet și poziție implicită</full>
+		<lower>Complet și poziție cea mai joasă</lower>
+		<metafichedefault>Fișă de metadate în poziția implicită</metafichedefault>
+		<metafichebasgauche>Fișă de metadate jos în stânga</metafichebasgauche>
+		<metafichebasdroite>Fișă de metadate jos în dreapta</metafichebasdroite>
+		<metafichebascentre>Fișă de metadate jos în centru</metafichebascentre>
+		<metafichehautgauche>Fișă de metadate sus în stânga</metafichehautgauche>
+		<metafichehautdroite>Fișă de metadate sus în dreapta</metafichehautdroite>
+		<metafichehautcentre>Fișă de metadate sus în centru</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Afișați temele per joc?</hyperbatperview>
+		<themejeux>Temă per joc cu prioritate, dacă există</themejeux>
+		<themejeuxno>Dezactivează tema per joc</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Vizual - Tranziție lină între temele jocurilor</smoothgametheme>
+		<activesmooth>Activat (recomandat pentru Retrobat)</activesmooth>
+		<noactivesmooth>Dezactivat (recomandat pentru Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Indicatoare de sistem în stil Hyperspin</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Personalizarea scrap-ului pentru teme compatibile ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Cutia jocului de afișat</boxorthumb>
+		<boxart>Calibrat pentru cutie 3D</boxart>
+		<thumb>Calibrat pentru cutie 2D</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Configurare avansată: Modificarea folderului sursă al media --------------------------------------------------------</spacerextfolder>
+		<folder>Sursă - nu folosiți</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Folderul temei - Implicit</intheme>
+		<extfolder>Folder extern</extfolder>
+		<extfoldergametheme>Sursă - Temă specifică jocurilor</extfoldergametheme>
+		<extfoldergamemedia>Sursă - Media jocurilor în afara gamelist.xml</extfoldergamemedia>
+		<extfoldervideosyst>Sursă - Temă specifică sistemelor</extfoldervideosyst>
+		<extfolderbezelsyst>Sursă - Bezel-uri ale sistemelor</extfolderbezelsyst>
+		<extfoldermanufacturer>Sursă - Logo-urile editorilor de jocuri</extfoldermanufacturer>
+		<extfolderfanart>Sursă - Fanart al sistemelor</extfolderfanart>
+		<extfolderlogosyst>Sursă - Logo sistem</extfolderlogosyst>
+		<extfoldercouleursinfos>Sursă - Stilul informațiilor despre jocuri</extfoldercouleursinfos>
+		<extfolderthumbox>Sursă - Cutii 2D/3D ale jocurilor</extfolderthumbox>
+		<extfoldergamefanart>Sursă - Fanart al jocurilor</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Media recomandate pentru vizualizarea jocurilor Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ Începutul opțiunilor avansate specifice vizualizării FanartStar boxart ↓   -------------------</mediastar>
+		<spacebox>Spațiu între cutiile jocurilor</spacebox>
+		<spacessssmall>Spațiu ----</spacessssmall>
+		<spacesssmall>Spațiu ---</spacesssmall>
+		<spacessmall>Spațiu --</spacessmall>
+		<spacesmall>Spațiu -</spacesmall>
+		<spacenorm>Implicit</spacenorm>
+		<spacemore>Spațiu +</spacemore>
+		<spacemmore>Spațiu ++</spacemmore>
+		<spacemmmore>Spațiu +++</spacemmmore>
+		<spacemmmmore>Spațiu ++++</spacemmmmore>
+		<fanartstarrotated>Rotirea cutiilor SNES, N64, NGAGE, Solarus</fanartstarrotated>
+		<starrotate>Da</starrotate>
+		<nostarrotate>Nu</nostarrotate>
+		<boxstarspeed>Viteza animației de derulare</boxstarspeed>
+		<speedslow1>Lent+</speedslow1>
+		<speedslow2>Lent++</speedslow2>
+		<customfanart>Alegerea fanart-urilor de folosit</customfanart>
+		<fanartgamelist>Fanart din scrap în gamelist</fanartgamelist>
+		<fanartcustom>Fanart personalizat în _Gamemedia-NumeSistem-medium_artwork</fanartcustom>
+		<starboxang>Unghiul cutiilor de joc</starboxang>
+		<starthumb>Afișați coperți 2D sau 3D?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Dimensiunea videoclipului de previzualizare</starvideo>
+		<starvideoang>Înclinat</starvideoang>
+		<starvideodef>Standard</starvideodef>
+		<starvideobig>Mare</starvideobig>
+		<longselect>Apăsare lungă pe "select"</longselect>
+		<favuniquement>Doar favorite</favuniquement>
+		<tslesjeux>Toate jocurile</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Raportul ecranului</screenratio>
+		<ratio1610>16/10 (experimental)</ratio1610>
+		<ratio43>4/3 (experimental)</ratio43>
+		<cadrevideosyst>Cadrul videoclipurilor de sistem</cadrevideosyst>
+		<cadreorigine>Original (bezel)</cadreorigine>
+		<cadrebordure>Bordură</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Bun venit și credite</planche00>
+		<planche01>01 - Cum îmi mut temele personalizate</planche01>
+		<planche02>02 - Cum îmi personalizez temele 1/2</planche02>
+		<planche03>03 - Cadrul videoclipurilor de sistem</planche03>
+		<planche04>04 - Cum îmi personalizez temele 2/2</planche04>
+		<planche05>05 - Descărcarea temelor</planche05>
+		<planche06>06 - Adăugarea unei teme de sistem</planche06>
+		<planche07>07 - Adăugarea unei teme de joc</planche07>
+		<planche08>08 - Editoarele de teme</planche08>
+		<planche09>09 - Cutie 2D sau 3D și scraping</planche09>
+		<planche10>10 - Fir de navigare și navigare după literă</planche10>
+		<planche11>11 - Stilul informațiilor despre jocuri</planche11>
+		<planche12>12 - Ecran 4:3 sau 16:10</planche12>
+		<planche13>13 - Linkuri pentru a descărca mai multe teme și artwork-uri</planche13>
+	</variables>
+</theme>

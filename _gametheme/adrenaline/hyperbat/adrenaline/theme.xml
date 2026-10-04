@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8'?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/C074B8B3-8F70-4194-A6A9-6524DAF14EFB.JPEG"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>${extsubsystvideo}</path>
+			<pos>0.487500000000 0.503086419753</pos>
+			<maxSize>0.500000000000 0.500000000000</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>200</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<shader>
+				<path>${path_com_shaders}/border_multi_gradient.glsl</path>
+				<cornerRadius>0.00</cornerRadius>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+				<gradientMode>4</gradientMode>
+				<saturation />
+				<borderSize>0.005</borderSize>
+				<borderColor>000000</borderColor>
+				<borderColorStart />
+				<borderColorEnd />
+				<borderSize2>0.010</borderSize2>
+				<borderColor2>ffffff</borderColor2>
+				<borderColorStart2>000000</borderColorStart2>
+				<borderColorEnd2>ffffff</borderColorEnd2>
+				<borderSize3>0.005</borderSize3>
+				<borderColor3>000000FF</borderColor3>
+				<borderColorStart3 />
+				<borderColorEnd3 />
+			</shader>
+		</video>
+		<image name="PreviewScreen" extra="true">
+			<visible>${ifnosubsystvideo}</visible>
+			<path>${extsubsystimage}</path>
+			<pos>0.487500000000 0.503086419753</pos>
+			<maxSize>0.500000000000 0.500000000000</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>200</zIndex>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<shader>
+				<path>${path_com_shaders}/border_multi_gradient.glsl</path>
+				<cornerRadius>0.00</cornerRadius>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+				<gradientMode>4</gradientMode>
+				<saturation />
+				<borderSize>0.005</borderSize>
+				<borderColor>000000</borderColor>
+				<borderColorStart />
+				<borderColorEnd />
+				<borderSize2>0.010</borderSize2>
+				<borderColor2>ffffff</borderColor2>
+				<borderColorStart2>000000</borderColorStart2>
+				<borderColorEnd2>ffffff</borderColorEnd2>
+				<borderSize3>0.005</borderSize3>
+				<borderColor3>000000FF</borderColor3>
+				<borderColorStart3 />
+				<borderColorEnd3 />
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="Linear" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="Linear" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="24CC6BA8-6391-49F3-ABB2-2F2818A84585" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/24CC6BA8-6391-49F3-ABB2-2F2818A84585.PNG"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.909375000000 0.168518518519</pos>
+			<size>0.183333333333 0.379629629630</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="98FB3A62-5A70-4D31-A155-3F06F91D7DBA" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/98FB3A62-5A70-4D31-A155-3F06F91D7DBA.PNG"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.144508127123 0.324691358025</pos>
+			<size>0.349872634643 0.708641975309</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="AD280F8C-1F8F-458A-93E5-961F3CC66F89" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/AD280F8C-1F8F-458A-93E5-961F3CC66F89.PNG"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.755635683761 0.242592592593</pos>
+			<size>0.298450854701 0.593827160494</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="EA8410F9-888B-4FF5-845E-45364D1A5A2D" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/EA8410F9-888B-4FF5-845E-45364D1A5A2D.PNG"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.484722222222 0.639262246117</pos>
+			<size>0.825000000000 0.736290322581</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<text name="gamethemeauthor" extra="true">
+			<text>Theme by : KevoBatoYT</text>
+		</text>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>250</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>250</zIndex>
+		</image>
+		<control name="24CC6BA8-6391-49F3-ABB2-2F2818A84585, 98FB3A62-5A70-4D31-A155-3F06F91D7DBA, AD280F8C-1F8F-458A-93E5-961F3CC66F89, EA8410F9-888B-4FF5-845E-45364D1A5A2D, PreviewScreen, PreviewVid">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn" />
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear" />
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn" />
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear" />
+			</storyboard>
+		</control>
+	</customView>
+</theme>

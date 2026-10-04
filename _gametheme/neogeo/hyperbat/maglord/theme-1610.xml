@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme defaultView="hyperbat">
+	<formatVersion>7</formatVersion>
+	<!-- Correction 16:10 generee le 2026-09-29 depuis theme.xml (hauteurs x0.9 autour de l'ancre) -->
+	<include>./theme.xml</include>
+	<view name="detailed, gamecarousel">
+		<image name="Artwork3" extra="true">
+			<pos>0.930989583333 0.894444444444</pos>
+			<size>0.0859375 0.136666666667</size>
+		</image>
+		<image name="Videobezel" extra="true">
+			<pos>0.266666666667 0.623148148148</pos>
+			<size>0.401041666667 0.488333333333</size>
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<pos>0.266666666667 0.623148148148</pos>
+			<maxSize>0.46 0.45</maxSize>
+			<minSize>0.45 0.45</minSize>
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="Background" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<text name="gamethemeauthor" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

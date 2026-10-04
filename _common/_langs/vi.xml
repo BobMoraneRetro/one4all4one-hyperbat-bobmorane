@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="vi">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Có</yes>
+		<no>Không</no>
+		<desactive>Tắt</desactive>
+		<activate>Bật</activate>
+		<actif>Bật</actif>
+		<active>Bật</active>
+		<deactive>Tắt</deactive>
+		<vide>   </vide>
+		<default>Mặc định</default>
+		<amoitie>một phần</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Ngôn ngữ có sẵn:</languesdispo>
+		<nodates>Không có ngày</nodates>
+		<playcount>lượt chơi</playcount>
+		<playcountone>lượt chơi</playcountone>
+		<players>người chơi</players>
+		<playerss>người chơi</playerss>
+		<player>người chơi</player>
+		<nogametime>Chưa từng chơi</nogametime>
+		<noplayerdata>Không rõ</noplayerdata>
+		<noratings>Chưa có điểm</noratings>
+		<lastgamelabel>Chơi lần cuối:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Trò chơi tiếp theo</jeusuiv>
+		<jeuprec>Trò chơi trước</jeuprec>
+		<systsuiv>Hệ máy tiếp theo</systsuiv>
+		<systprec>Hệ máy trước</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Lời chào mừng</lismoi>
+		<tumasbienlu>Chào mừng và ghi công</tumasbienlu>
+		<deporttheme>Cách di chuyển các theme tùy chỉnh của tôi</deporttheme>
+		<customiztheme1>Cách tùy chỉnh theme của tôi 1/2</customiztheme1>
+		<customiztheme2>Cách tùy chỉnh theme của tôi 2/2</customiztheme2>
+		<downloadmore>Liên kết tải thêm theme và artwork</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Chế độ xem danh sách hệ máy</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Dạng lưới cơ bản</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart rất nhẹ</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Kiểm tra media của bạn</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>Cấu hình SCRAP - Cấu trúc fanart?</packcustombuild>
+		<packcustombuildsno>Fanart có hậu tố "-fanart" (mặc định)</packcustombuildsno>
+		<packretrofreshbat>Fanart có hậu tố "-image"</packretrofreshbat>
+		<scrap3dbox>Cấu hình scrape - Cấu trúc hộp 3D?</scrap3dbox>
+		<scrapedboxart>Hộp 3D với "-boxart" trong gamelist</scrapedboxart>
+		<scrapedthumbnail>Hộp 3D với "-thumbnail" trong gamelist</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Trợ giúp - Giao diện biểu tượng trợ giúp</iconset>
+		<iconsetposition>Vị trí các nút</iconsetposition>
+		<colorhelp>Trợ giúp - Màu chữ trợ giúp</colorhelp>
+		<skyblue>xanh da trời</skyblue>
+		<standard>Tiêu chuẩn</standard>
+		<purple>tím</purple>
+		<red>đỏ</red>
+		<aqua>xanh da trời</aqua>
+		<orange>cam</orange>
+		<green>xanh lá</green>
+		<yellow>vàng</yellow>
+		<pink>hồng</pink>
+		<grey>xám đậm</grey>
+		<lightgrey>xám nhạt</lightgrey>
+		<navy>xanh dương alt</navy>
+		<violet>tím</violet>
+		<candy>candy</candy>
+		<redalt>đỏ alt</redalt>
+		<yellowalt>vàng alt</yellowalt>
+		<greenalt>xanh lá alt</greenalt>
+		<purplealt>tím alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Xem hệ máy - Kiểu logo hệ máy</systviewlogos>
+		<logosimple>Logo đơn giản (Đầy đủ + Khu vực)</logosimple>
+		<glassnekhros>Logo Glass (Đầy đủ + Khu vực) (By Nekhros)</glassnekhros>
+		<logobd>Logo kiểu truyện tranh (Helmic)</logobd>
+		<logoovalcarb>Logo bầu dục Carbon</logoovalcarb>
+		<hmaxovalsilver>Logo bầu dục Silver</hmaxovalsilver>
+		<logorectfresh>Logo chữ nhật Team Freshone (gói ngoài)</logorectfresh>
+		<hmaxrectrefl>Logo chữ nhật phản chiếu Team Freshone (gói ngoài)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Xem hệ máy - Ẩn dần danh sách hệ máy</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Xem hệ máy - Chọn fanart của hệ máy</systviewfanart>
+		<fanartfreshone>Chỉ fanart do FreshOne chọn</fanartfreshone>
+		<fanartsystcustom>Fanart tùy chỉnh, nếu không thì fanart FreshOne</fanartsystcustom>
+		<fanfondsystem>Nền hệ máy, nếu không thì fanart FreshOne</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Xem hệ máy - Giới thiệu hệ máy động</systviewvideo>
+		<hyperspinorunified>ADDON: HS động, nếu không thì HS hợp nhất</hyperspinorunified>
+		<gameplayp1>Video gameplay ngẫu nhiên nhỏ kèm bezel nếu có</gameplayp1>
+		<gameplay1>Video gameplay ngẫu nhiên lớn kèm bezel nếu có</gameplay1>
+		<gameplayp>Video gameplay ngẫu nhiên nhỏ</gameplayp>
+		<gameplay>Video gameplay ngẫu nhiên lớn</gameplay>
+		<custom>Video cá nhân từ thư mục custom</custom>
+		<hyperspinxp>ADDON: Hình ảnh và gameplay kiểu Hyperspin động</hyperspinxp>
+		<hyperspin>ADDON: Hình ảnh và gameplay kiểu Hyperspin hợp nhất</hyperspin>
+		<hyperspinorder>ADDON: HS động, nếu không thì video Hyperpie</hyperspinorder>
+		<hyperpie>ADDON: Video Hyperpie, nếu không thì video Unified nếu có</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Xem hệ máy - Hiển thị số trò chơi của hệ máy</systviewtotal>
+		<nbrjeux>số trò chơi đơn giản</nbrjeux>
+		<nbrjeux2>tên hệ máy và số trò chơi</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Hiển thị đường dẫn điều hướng</menuofficiel>
+		<menutxt>Sắp xếp phần cứng chính thức: chữ ngang</menutxt>
+		<menuorb>Sắp xếp phần cứng chính thức: quả cầu ngang</menuorb>
+		<menuorbvert>Sắp xếp phần cứng chính thức: quả cầu dọc</menuorbvert>
+		<menuorbcrcl>Sắp xếp phần cứng chính thức: quả cầu bán nguyệt</menuorbcrcl>
+		<menucust>Sắp xếp phần cứng tùy chỉnh của Bob: chữ ngang</menucust>
+		<menucustorb>Sắp xếp phần cứng tùy chỉnh của Bob: quả cầu ngang</menucustorb>
+		<menucustorbvert>Sắp xếp phần cứng tùy chỉnh của Bob: quả cầu dọc</menucustorbvert>
+		<menucustorbcrcl>Sắp xếp phần cứng tùy chỉnh của Bob: quả cầu bán nguyệt</menucustorbcrcl>
+		<menutxtzspin>Sắp xếp phần cứng chính thức: chữ dọc</menutxtzspin>
+		<menutxtzspincust>Sắp xếp phần cứng tùy chỉnh của Bob: chữ dọc</menutxtzspincust>
+		<menuteta>Sắp xếp phần cứng chính thức: Tetanos</menuteta>
+		<menucustteta>Sắp xếp phần cứng tùy chỉnh của Bob: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Xem hệ máy Hyperbat - Trợ giúp động</sticksysteme>
+		<systballblue>Stick Xanh dương</systballblue>
+		<systballcyan>Stick Lục lam</systballcyan>
+		<systballdarkviolet>Stick Tím đậm</systballdarkviolet>
+		<systballviolet>Stick Tím</systballviolet>
+		<systballgreen>Stick Xanh lá</systballgreen>
+		<systballlitegreen>Stick Xanh lá nhạt</systballlitegreen>
+		<systballpink>Stick Hồng</systballpink>
+		<systballred>Stick Đỏ</systballred>
+		<systballyelgreen>Stick Vàng xanh</systballyelgreen>
+		<systballyellow>Stick Vàng</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Xem hệ máy Hyperbat - Kiểu menu</hyperwheel>
+		<spindr>Bánh xe cong bên phải (Hyperspin)</spindr>
+		<verticaldr>Bánh xe dọc bên phải (Hyperspin)</verticaldr>
+		<verticaldreb>Bánh xe dọc bên phải (Emubox)</verticaldreb>
+		<spingh>Bánh xe cong bên trái (Hyperspin)</spingh>
+		<verticalgh>Bánh xe dọc bên trái (Hyperspin)</verticalgh>
+		<verticalgheb>Bánh xe dọc bên trái (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Người bán box Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Người bán box Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Người bán box Hyperspin Chris (đang thực hiện)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Xem trò chơi - Hệ máy hiện tại khi mở?</systannounce>
+		<classiquesyst>Biến mất với thu nhỏ</classiquesyst>
+		<nomsystem2>Vào chậm (mờ dần + zoom)</nomsystem2>
+		<nomsystem3>Chớp nhanh (zoom ra)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Xem trò chơi - Nền trên mỗi logo trò chơi?</gwheelbackgr>
+		<sisaccades>Tắt</sisaccades>
+		<ovalcarbon>Bầu dục carbon (tự động tạo)</ovalcarbon>
+		<ovalsilver>Bầu dục silver (tự động tạo)</ovalsilver>
+		<rectcarbon>Chữ nhật carbon (tự động tạo)</rectcarbon>
+		<rectcompose>Chữ nhật tùy chỉnh theo hệ máy (tự động tạo)</rectcompose>
+		<ovalcompose>Bầu dục carbon tùy chỉnh theo hệ máy (tự động tạo)</ovalcompose>
+		<logounified>Logo kích thước thống nhất</logounified>
+		<hfsround>Tròn Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Xem trò chơi - Điều hướng theo chữ cái (trò chơi)?</letternav>
+		<navhoricoinstyle>Bảng chữ cái ngang</navhoricoinstyle>
+		<navvertcoinstyle>Bảng chữ cái dọc bên trái</navvertcoinstyle>
+		<navvertrcoinstyle>Bảng chữ cái dọc bên phải</navvertrcoinstyle>
+		<navhsletters>Chữ cái cách điệu theo hệ máy</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Xem trò chơi - Hiển thị tối đa thông tin?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Bắt đầu các tùy chọn nâng cao dành cho giao diện Hyperbat ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Media cần có cho giao diện trò chơi Hyperbat = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Theme trò chơi chung (nếu không có theme)</defaultgeneric>
+		<videodefaut>Video mặc định của theme chung (khi không có ảnh chụp hay video)</videodefaut>
+		<generic43boxback>Tiêu chuẩn với ghép mặt trước và mặt sau hộp</generic43boxback>
+		<generic43coinopsstyle>Bộ sưu tập tủ arcade</generic43coinopsstyle>
+		<generic43noanimationfanart>Tiêu chuẩn với nền fanart động</generic43noanimationfanart>
+		<generic43noanimation>Tiêu chuẩn không có hiệu ứng boxart</generic43noanimation>
+		<generic43>Tiêu chuẩn</generic43>
+		<jukeboxdef>Kiểu đĩa CD (chưa hoàn thành)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Theme trò chơi: Hệ máy nguồn</gameviewsource>
+		<mamefolder>Ưu tiên thư mục gốc của trò chơi, sau đó thư mục mame</mamefolder>
+		<actualsystem>Ưu tiên thư mục của hệ máy đang chọn</actualsystem>
+		<genericstyleonly>Chỉ dùng theme trò chơi chung</genericstyleonly>
+		<groupedsystem>Chỉ để thử nghiệm phát triển: không dùng</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Theme trò chơi: Tác giả</authordisplayed>
+		<showoff>Bật, dễ thấy</showoff>
+		<showoffblackwhite>Bật, rất dễ thấy</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Ẩn dần danh sách trò chơi</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Âm thanh khi cuộn</gamewheelsound>
+		<wheelclic>Tiếng click kiểu Hyperspin</wheelclic>
+		<bulle>Bong bóng</bulle>
+		<clic>Click đơn giản</clic>
+		<clicgrave>Click trầm</clicgrave>
+		<frottement>Cọ xát</frottement>
+		<poc>Póc</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Hình ảnh - Hiệu ứng làm tối viền</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Hình ảnh - Làm tối viền khi xem hệ máy</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Hình ảnh - Làm tối nền (xem hệ máy)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>HÌNH ẢNH - Chọn cần điều khiển động</syststickon>
+		<stickon>Arcade cổ điển</stickon>
+		<syststickcolor>HÌNH ẢNH - Màu bóng cần điều khiển</syststickcolor>
+		<ballcyan>Lục lam</ballcyan>
+		<ballblue>Xanh dương</ballblue>
+		<balldarkviolet>Tím đậm</balldarkviolet>
+		<ballviolet>Tím</ballviolet>
+		<ballgreen>Xanh lá</ballgreen>
+		<balllitegreen>Xanh lá nhạt</balllitegreen>
+		<ballpink>Hồng</ballpink>
+		<ballred>Đỏ</ballred>
+		<ballyelgreen>Vàng xanh</ballyelgreen>
+		<ballyellow>Vàng</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Kiểu press start</pressstart>
+		<doigts>Ngón tay động nhấn nút</doigts>
+		<undoigt>Ngón tay động nhấn nút chỉ bên trái</undoigt>
+		<undoigtr>Ngón tay động nhấn nút chỉ bên phải</undoigtr>
+		<pressstarttxt>METADATA - Chọn chữ</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Chơi miễn phí</partiegratuite>
+		<uneuro>1€ một lượt</uneuro>
+		<sitessage>Nhấn Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Cấu hình metadata</hsmetadata>
+		<full>Đầy đủ và vị trí mặc định</full>
+		<lower>Đầy đủ và vị trí thấp nhất</lower>
+		<metafichedefault>Thẻ metadata ở vị trí mặc định</metafichedefault>
+		<metafichebasgauche>Thẻ metadata dưới bên trái</metafichebasgauche>
+		<metafichebasdroite>Thẻ metadata dưới bên phải</metafichebasdroite>
+		<metafichebascentre>Thẻ metadata dưới ở giữa</metafichebascentre>
+		<metafichehautgauche>Thẻ metadata trên bên trái</metafichehautgauche>
+		<metafichehautdroite>Thẻ metadata trên bên phải</metafichehautdroite>
+		<metafichehautcentre>Thẻ metadata trên ở giữa</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Hiển thị theme riêng cho từng trò chơi?</hyperbatperview>
+		<themejeux>Ưu tiên theme riêng của trò chơi nếu có</themejeux>
+		<themejeuxno>Tắt theme riêng cho trò chơi</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Hình ảnh - Chuyển tiếp mượt giữa các theme trò chơi</smoothgametheme>
+		<activesmooth>Bật (khuyên dùng cho Retrobat)</activesmooth>
+		<noactivesmooth>Tắt (khuyên dùng cho Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Con trỏ hệ máy kiểu Hyperspin</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Tùy chỉnh scrap cho theme tương thích ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Hộp trò chơi hiển thị</boxorthumb>
+		<boxart>Căn chỉnh cho hộp 3D</boxart>
+		<thumb>Căn chỉnh cho hộp 2D</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Cấu hình nâng cao: Thay đổi thư mục nguồn media --------------------------------------------------------</spacerextfolder>
+		<folder>Nguồn - không dùng</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Thư mục theme - Mặc định</intheme>
+		<extfolder>Thư mục bên ngoài</extfolder>
+		<extfoldergametheme>Nguồn - Theme riêng cho trò chơi</extfoldergametheme>
+		<extfoldergamemedia>Nguồn - Media trò chơi ngoài gamelist.xml</extfoldergamemedia>
+		<extfoldervideosyst>Nguồn - Theme riêng cho hệ máy</extfoldervideosyst>
+		<extfolderbezelsyst>Nguồn - Bezel của hệ máy</extfolderbezelsyst>
+		<extfoldermanufacturer>Nguồn - Logo nhà phát hành</extfoldermanufacturer>
+		<extfolderfanart>Nguồn - Fanart hệ máy</extfolderfanart>
+		<extfolderlogosyst>Nguồn - Logo hệ máy</extfolderlogosyst>
+		<extfoldercouleursinfos>Nguồn - Kiểu thông tin trò chơi</extfoldercouleursinfos>
+		<extfolderthumbox>Nguồn - Hộp trò chơi 2D/3D</extfolderthumbox>
+		<extfoldergamefanart>Nguồn - Fanart trò chơi</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Media khuyên dùng cho giao diện trò chơi Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ Bắt đầu các tùy chọn nâng cao dành cho giao diện FanartStar boxart ↓   -------------------</mediastar>
+		<spacebox>Khoảng cách giữa các hộp trò chơi</spacebox>
+		<spacessssmall>Khoảng cách ----</spacessssmall>
+		<spacesssmall>Khoảng cách ---</spacesssmall>
+		<spacessmall>Khoảng cách --</spacessmall>
+		<spacesmall>Khoảng cách -</spacesmall>
+		<spacenorm>Mặc định</spacenorm>
+		<spacemore>Khoảng cách +</spacemore>
+		<spacemmore>Khoảng cách ++</spacemmore>
+		<spacemmmore>Khoảng cách +++</spacemmmore>
+		<spacemmmmore>Khoảng cách ++++</spacemmmmore>
+		<fanartstarrotated>Xoay hộp SNES, N64, NGAGE, Solarus</fanartstarrotated>
+		<starrotate>Có</starrotate>
+		<nostarrotate>Không</nostarrotate>
+		<boxstarspeed>Tốc độ hiệu ứng cuộn</boxstarspeed>
+		<speedslow1>Chậm+</speedslow1>
+		<speedslow2>Chậm++</speedslow2>
+		<customfanart>Fanart sẽ sử dụng</customfanart>
+		<fanartgamelist>Fanart scrap trong gamelist</fanartgamelist>
+		<fanartcustom>Fanart tùy chỉnh trong _Gamemedia-TenHeMay-medium_artwork</fanartcustom>
+		<starboxang>Góc của hộp trò chơi</starboxang>
+		<starthumb>Hiển thị bìa 2D hay 3D?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Kích thước video xem trước</starvideo>
+		<starvideoang>Nghiêng</starvideoang>
+		<starvideodef>Tiêu chuẩn</starvideodef>
+		<starvideobig>Lớn</starvideobig>
+		<longselect>Nhấn giữ "select"</longselect>
+		<favuniquement>Chỉ mục yêu thích</favuniquement>
+		<tslesjeux>Tất cả trò chơi</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Tỷ lệ màn hình</screenratio>
+		<ratio1610>16/10 (thử nghiệm)</ratio1610>
+		<ratio43>4/3 (thử nghiệm)</ratio43>
+		<cadrevideosyst>Khung video hệ máy</cadrevideosyst>
+		<cadreorigine>Gốc (bezel)</cadreorigine>
+		<cadrebordure>Viền</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Chào mừng và ghi công</planche00>
+		<planche01>01 - Cách di chuyển các theme tùy chỉnh của tôi</planche01>
+		<planche02>02 - Cách tùy chỉnh theme của tôi 1/2</planche02>
+		<planche03>03 - Khung video hệ máy</planche03>
+		<planche04>04 - Cách tùy chỉnh theme của tôi 2/2</planche04>
+		<planche05>05 - Tải theme</planche05>
+		<planche06>06 - Thêm theme hệ máy</planche06>
+		<planche07>07 - Thêm theme trò chơi</planche07>
+		<planche08>08 - Trình chỉnh sửa theme</planche08>
+		<planche09>09 - Hộp 2D hoặc 3D và scraping</planche09>
+		<planche10>10 - Đường dẫn điều hướng và điều hướng theo chữ cái</planche10>
+		<planche11>11 - Kiểu thông tin trò chơi</planche11>
+		<planche12>12 - Màn hình 4:3 hoặc 16:10</planche12>
+		<planche13>13 - Liên kết tải thêm theme và artwork</planche13>
+	</variables>
+</theme>

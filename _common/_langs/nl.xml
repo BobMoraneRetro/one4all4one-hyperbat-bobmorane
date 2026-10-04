@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="nl">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Ja</yes>
+		<no>Nee</no>
+		<desactive>Uitgeschakeld</desactive>
+		<activate>Ingeschakeld</activate>
+		<actif>Ingeschakeld</actif>
+		<active>Ingeschakeld</active>
+		<deactive>Uitgeschakeld</deactive>
+		<vide>   </vide>
+		<default>Standaard</default>
+		<amoitie>gedeeltelijk</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Beschikbare talen:</languesdispo>
+		<nodates>Geen datum</nodates>
+		<playcount>keer gespeeld</playcount>
+		<playcountone>keer gespeeld</playcountone>
+		<players>speler(s)</players>
+		<playerss>spelers</playerss>
+		<player>speler</player>
+		<nogametime>Nooit gespeeld</nogametime>
+		<noplayerdata>Onbekend</noplayerdata>
+		<noratings>Geen beoordeling</noratings>
+		<lastgamelabel>Laatst gespeeld:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Volgend spel</jeusuiv>
+		<jeuprec>Vorig spel</jeuprec>
+		<systsuiv>Volgend systeem</systsuiv>
+		<systprec>Vorig systeem</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Welkomstbericht</lismoi>
+		<tumasbienlu>Welkom en credits</tumasbienlu>
+		<deporttheme>Hoe verplaats ik mijn eigen thema's</deporttheme>
+		<customiztheme1>Hoe pas ik mijn thema's aan 1/2</customiztheme1>
+		<customiztheme2>Hoe pas ik mijn thema's aan 2/2</customiztheme2>
+		<downloadmore>Links om meer thema's en artworks te downloaden</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Weergave van de systeemlijst</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Eenvoudige rasterweergave</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart zeer licht</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Test je media</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>SCRAP instellen - Fanart-structuur?</packcustombuild>
+		<packcustombuildsno>Fanart met achtervoegsel "-fanart" (standaard)</packcustombuildsno>
+		<packretrofreshbat>Fanart met achtervoegsel "-image"</packretrofreshbat>
+		<scrap3dbox>Scrape instellen - 3D-doosstructuur?</scrap3dbox>
+		<scrapedboxart>3D-doos met "-boxart" in de gamelist</scrapedboxart>
+		<scrapedthumbnail>3D-doos met "-thumbnail" in de gamelist</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Help - Uiterlijk van de helppictogrammen</iconset>
+		<iconsetposition>Positie van de knoppen</iconsetposition>
+		<colorhelp>Help - Kleuren van de helptekst</colorhelp>
+		<skyblue>hemelsblauw</skyblue>
+		<standard>Standaard</standard>
+		<purple>paars</purple>
+		<red>rood</red>
+		<aqua>hemelsblauw</aqua>
+		<orange>oranje</orange>
+		<green>groen</green>
+		<yellow>geel</yellow>
+		<pink>roze</pink>
+		<grey>donkergrijs</grey>
+		<lightgrey>lichtgrijs</lightgrey>
+		<navy>blauw alt</navy>
+		<violet>paars</violet>
+		<candy>candy</candy>
+		<redalt>rood alt</redalt>
+		<yellowalt>geel alt</yellowalt>
+		<greenalt>groen alt</greenalt>
+		<purplealt>paars alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Systeemweergave - Type systeemlogo's</systviewlogos>
+		<logosimple>Eenvoudig logo (Volledig + Regio)</logosimple>
+		<glassnekhros>Glass-logo (Volledig + Regio) (By Nekhros)</glassnekhros>
+		<logobd>Stripverhaal-logo (Helmic)</logobd>
+		<logoovalcarb>Ovaal logo Carbon</logoovalcarb>
+		<hmaxovalsilver>Ovaal logo Silver</hmaxovalsilver>
+		<logorectfresh>Rechthoekig logo Team Freshone (extern pakket)</logorectfresh>
+		<hmaxrectrefl>Rechthoekig logo met reflectie Team Freshone (extern pakket)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Systeemweergave - Vervagen van de systeemlijst</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Systeemweergave - Keuze van de systeemfanarts</systviewfanart>
+		<fanartfreshone>Alleen door FreshOne geselecteerde fanarts</fanartfreshone>
+		<fanartsystcustom>Eigen fanarts, anders FreshOne-fanart</fanartsystcustom>
+		<fanfondsystem>Systeemachtergrond, anders FreshOne-fanart</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Systeemweergave - Geanimeerde systeempresentatie</systviewvideo>
+		<hyperspinorunified>ADDON: Dynamische HS, anders uniforme HS</hyperspinorunified>
+		<gameplayp1>Kleine willekeurige gameplayvideo met bezel indien beschikbaar</gameplayp1>
+		<gameplay1>Grote willekeurige gameplayvideo met bezel indien beschikbaar</gameplay1>
+		<gameplayp>Kleine willekeurige gameplayvideo</gameplayp>
+		<gameplay>Grote willekeurige gameplayvideo</gameplay>
+		<custom>Eigen video uit de custom-map</custom>
+		<hyperspinxp>ADDON: Afbeelding en gameplay in dynamische Hyperspin-stijl</hyperspinxp>
+		<hyperspin>ADDON: Afbeelding en gameplay in uniforme Hyperspin-stijl</hyperspin>
+		<hyperspinorder>ADDON: Dynamische HS, anders Hyperpie-video</hyperspinorder>
+		<hyperpie>ADDON: Hyperpie-video, anders Unified-video indien beschikbaar</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Systeemweergave - Aantal spellen van het systeem tonen</systviewtotal>
+		<nbrjeux>sober aantal spellen</nbrjeux>
+		<nbrjeux2>systeemnaam en aantal spellen</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Weergave van het kruimelpad</menuofficiel>
+		<menutxt>Officiële hardwaresortering: horizontale tekst</menutxt>
+		<menuorb>Officiële hardwaresortering: horizontale bol</menuorb>
+		<menuorbvert>Officiële hardwaresortering: verticale bol</menuorbvert>
+		<menuorbcrcl>Officiële hardwaresortering: halve-cirkelbol</menuorbcrcl>
+		<menucust>Eigen hardwaresortering van Bob: horizontale tekst</menucust>
+		<menucustorb>Eigen hardwaresortering van Bob: horizontale bol</menucustorb>
+		<menucustorbvert>Eigen hardwaresortering van Bob: verticale bol</menucustorbvert>
+		<menucustorbcrcl>Eigen hardwaresortering van Bob: halve-cirkelbol</menucustorbcrcl>
+		<menutxtzspin>Officiële hardwaresortering: verticale tekst</menutxtzspin>
+		<menutxtzspincust>Eigen hardwaresortering van Bob: verticale tekst</menutxtzspincust>
+		<menuteta>Officiële hardwaresortering: Tetanos</menuteta>
+		<menucustteta>Eigen hardwaresortering van Bob: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Hyperbat-systeemweergave - Geanimeerde hulp</sticksysteme>
+		<systballblue>Stick Blauw</systballblue>
+		<systballcyan>Stick Cyaan</systballcyan>
+		<systballdarkviolet>Stick Donkerpaars</systballdarkviolet>
+		<systballviolet>Stick Paars</systballviolet>
+		<systballgreen>Stick Groen</systballgreen>
+		<systballlitegreen>Stick Lichtgroen</systballlitegreen>
+		<systballpink>Stick Roze</systballpink>
+		<systballred>Stick Rood</systballred>
+		<systballyelgreen>Stick Geelgroen</systballyelgreen>
+		<systballyellow>Stick Geel</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Hyperbat-systeemweergave - Menutype</hyperwheel>
+		<spindr>Gebogen wiel rechts (Hyperspin)</spindr>
+		<verticaldr>Verticaal wiel rechts (Hyperspin)</verticaldr>
+		<verticaldreb>Verticaal wiel rechts (Emubox)</verticaldreb>
+		<spingh>Gebogen wiel links (Hyperspin)</spingh>
+		<verticalgh>Verticaal wiel links (Hyperspin)</verticalgh>
+		<verticalgheb>Verticaal wiel links (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Boxverkoper Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Boxverkoper Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Boxverkoper Hyperspin Chris (in ontwikkeling)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Spelweergave - Huidig systeem bij openen?</systannounce>
+		<classiquesyst>Verdwijnen met uitzoomen</classiquesyst>
+		<nomsystem2>Langzame intrede (vervagen + zoom)</nomsystem2>
+		<nomsystem3>Snelle flits (uitzoomen)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Spelweergave - Achtergrond op elk spellogo?</gwheelbackgr>
+		<sisaccades>Uitgeschakeld</sisaccades>
+		<ovalcarbon>Ovaal carbon (automatisch gegenereerd)</ovalcarbon>
+		<ovalsilver>Ovaal silver (automatisch gegenereerd)</ovalsilver>
+		<rectcarbon>Rechthoek carbon (automatisch gegenereerd)</rectcarbon>
+		<rectcompose>Eigen rechthoek per systeem (automatisch gegenereerd)</rectcompose>
+		<ovalcompose>Eigen ovaal carbon per systeem (automatisch gegenereerd)</ovalcompose>
+		<logounified>Logo met uniforme grootte</logounified>
+		<hfsround>Rond Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Spelweergave - Navigatie per letter (spellen)?</letternav>
+		<navhoricoinstyle>Horizontaal alfabet</navhoricoinstyle>
+		<navvertcoinstyle>Verticaal alfabet links</navvertcoinstyle>
+		<navvertrcoinstyle>Verticaal alfabet rechts</navvertrcoinstyle>
+		<navhsletters>Letter gestileerd per systeem</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Spelweergave - Maximale info tonen?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Begin van de geavanceerde opties voor de Hyperbat-weergaven ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Benodigde media voor de Hyperbat-spelweergave = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Generiek spelthema (als er geen thema bestaat)</defaultgeneric>
+		<videodefaut>Standaardvideo van generiek thema (zonder screenshot of video)</videodefaut>
+		<generic43boxback>Standaard met montage van achter- en voorkant doos</generic43boxback>
+		<generic43coinopsstyle>Verzameling arcadekasten</generic43coinopsstyle>
+		<generic43noanimationfanart>Standaard met geanimeerde fanart-achtergrond</generic43noanimationfanart>
+		<generic43noanimation>Standaard zonder boxart-animatie</generic43noanimation>
+		<generic43>Standaard</generic43>
+		<jukeboxdef>Cd-uiterlijk (niet af)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Spelthema: Bronsysteem</gameviewsource>
+		<mamefolder>Eerst oorspronkelijke map van het spel, dan mame-map</mamefolder>
+		<actualsystem>Eerst map van het geselecteerde systeem</actualsystem>
+		<genericstyleonly>Alleen het generieke spelthema gebruiken</genericstyleonly>
+		<groupedsystem>Alleen ontwikkeltest: niet gebruiken</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Spelthema: Auteur</authordisplayed>
+		<showoff>Ingeschakeld, hoge zichtbaarheid</showoff>
+		<showoffblackwhite>Ingeschakeld, maximale zichtbaarheid</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Vervagen van de spellenlijst</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Geluid bij het scrollen</gamewheelsound>
+		<wheelclic>Klik in Hyperspin-stijl</wheelclic>
+		<bulle>Bel</bulle>
+		<clic>Eenvoudige klik</clic>
+		<clicgrave>Diepe klik</clicgrave>
+		<frottement>Wrijving</frottement>
+		<poc>Plop</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Visueel - Vignetteringseffect</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Visueel - Vignettering systeemweergave</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Visueel - Achtergrond verduisteren (systeemweergave)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>VISUEEL - Keuze van de geanimeerde stick</syststickon>
+		<stickon>Klassieke arcade</stickon>
+		<syststickcolor>VISUEEL - Kleur van de stickbal</syststickcolor>
+		<ballcyan>Cyaan</ballcyan>
+		<ballblue>Blauw</ballblue>
+		<balldarkviolet>Donkerpaars</balldarkviolet>
+		<ballviolet>Paars</ballviolet>
+		<ballgreen>Groen</ballgreen>
+		<balllitegreen>Lichtgroen</balllitegreen>
+		<ballpink>Roze</ballpink>
+		<ballred>Rood</ballred>
+		<ballyelgreen>Geelgroen</ballyelgreen>
+		<ballyellow>Geel</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Uiterlijk van press start</pressstart>
+		<doigts>Geanimeerde vinger die op een knop drukt</doigts>
+		<undoigt>Geanimeerde vinger die op een knop drukt, alleen links</undoigt>
+		<undoigtr>Geanimeerde vinger die op een knop drukt, alleen rechts</undoigtr>
+		<pressstarttxt>METADATA - Keuze van de tekst</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Gratis spel</partiegratuite>
+		<uneuro>1€ per spel</uneuro>
+		<sitessage>Druk op Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Configuratie van de metadata</hsmetadata>
+		<full>Volledig en standaardpositie</full>
+		<lower>Volledig en laagste positie</lower>
+		<metafichedefault>Metadatakaart op standaardpositie</metafichedefault>
+		<metafichebasgauche>Metadatakaart linksonder</metafichebasgauche>
+		<metafichebasdroite>Metadatakaart rechtsonder</metafichebasdroite>
+		<metafichebascentre>Metadatakaart midden onder</metafichebascentre>
+		<metafichehautgauche>Metadatakaart linksboven</metafichehautgauche>
+		<metafichehautdroite>Metadatakaart rechtsboven</metafichehautdroite>
+		<metafichehautcentre>Metadatakaart midden boven</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Thema's per spel tonen?</hyperbatperview>
+		<themejeux>Thema per spel eerst indien beschikbaar</themejeux>
+		<themejeuxno>Thema per spel uitschakelen</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Visueel - Vloeiende overgang tussen spelthema's</smoothgametheme>
+		<activesmooth>Ingeschakeld (aanbevolen voor Retrobat)</activesmooth>
+		<noactivesmooth>Uitgeschakeld (aanbevolen voor Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Systeemaanwijzers in Hyperspin-stijl</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Scrap-aanpassing voor compatibele thema's ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Weer te geven spelbox</boxorthumb>
+		<boxart>Gekalibreerd voor 3D-doos</boxart>
+		<thumb>Gekalibreerd voor 2D-doos</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Geavanceerde configuratie: Bronmap van de media wijzigen --------------------------------------------------------</spacerextfolder>
+		<folder>Bron - niet gebruiken</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Themamap - Standaard</intheme>
+		<extfolder>Externe map</extfolder>
+		<extfoldergametheme>Bron - Spelspecifiek thema</extfoldergametheme>
+		<extfoldergamemedia>Bron - Spelmedia buiten gamelist.xml</extfoldergamemedia>
+		<extfoldervideosyst>Bron - Systeemspecifiek thema</extfoldervideosyst>
+		<extfolderbezelsyst>Bron - Systeembezels</extfolderbezelsyst>
+		<extfoldermanufacturer>Bron - Logo's van spieluitgevers</extfoldermanufacturer>
+		<extfolderfanart>Bron - Systeemfanart</extfolderfanart>
+		<extfolderlogosyst>Bron - Systeemlogo</extfolderlogosyst>
+		<extfoldercouleursinfos>Bron - Stijl van spelinfo</extfoldercouleursinfos>
+		<extfolderthumbox>Bron - 2D/3D-spelboxen</extfolderthumbox>
+		<extfoldergamefanart>Bron - Spelfanart</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Aanbevolen media voor de spelweergave Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ Begin van de geavanceerde opties voor de weergave FanartStar boxart ↓   -------------------</mediastar>
+		<spacebox>Ruimte tussen de spelboxen</spacebox>
+		<spacessssmall>Ruimte ----</spacessssmall>
+		<spacesssmall>Ruimte ---</spacesssmall>
+		<spacessmall>Ruimte --</spacessmall>
+		<spacesmall>Ruimte -</spacesmall>
+		<spacenorm>Standaard</spacenorm>
+		<spacemore>Ruimte +</spacemore>
+		<spacemmore>Ruimte ++</spacemmore>
+		<spacemmmore>Ruimte +++</spacemmmore>
+		<spacemmmmore>Ruimte ++++</spacemmmmore>
+		<fanartstarrotated>Rotatie van de boxen SNES, N64, NGAGE, Solarus</fanartstarrotated>
+		<starrotate>Ja</starrotate>
+		<nostarrotate>Nee</nostarrotate>
+		<boxstarspeed>Snelheid van de scrollanimatie</boxstarspeed>
+		<speedslow1>Langzaam+</speedslow1>
+		<speedslow2>Langzaam++</speedslow2>
+		<customfanart>Te gebruiken fanarts</customfanart>
+		<fanartgamelist>Gescrapete fanart in de gamelist</fanartgamelist>
+		<fanartcustom>Eigen fanart in _Gamemedia-Systeemnaam-medium_artwork</fanartcustom>
+		<starboxang>Hoek van de spelboxen</starboxang>
+		<starthumb>2D- of 3D-hoezen tonen?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Grootte van de voorbeeldvideo</starvideo>
+		<starvideoang>Gekanteld</starvideoang>
+		<starvideodef>Standaard</starvideodef>
+		<starvideobig>Groot</starvideobig>
+		<longselect>Lang drukken op "select"</longselect>
+		<favuniquement>Alleen favorieten</favuniquement>
+		<tslesjeux>Alle spellen</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Schermverhouding</screenratio>
+		<ratio1610>16/10 (experimenteel)</ratio1610>
+		<ratio43>4/3 (experimenteel)</ratio43>
+		<cadrevideosyst>Kader van systeemvideo's</cadrevideosyst>
+		<cadreorigine>Origineel (bezel)</cadreorigine>
+		<cadrebordure>Rand</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Welkom en credits</planche00>
+		<planche01>01 - Hoe verplaats ik mijn eigen thema's</planche01>
+		<planche02>02 - Hoe pas ik mijn thema's aan 1/2</planche02>
+		<planche03>03 - Kader van systeemvideo's</planche03>
+		<planche04>04 - Hoe pas ik mijn thema's aan 2/2</planche04>
+		<planche05>05 - Thema's downloaden</planche05>
+		<planche06>06 - Een systeemthema toevoegen</planche06>
+		<planche07>07 - Een spelthema toevoegen</planche07>
+		<planche08>08 - De thema-editors</planche08>
+		<planche09>09 - 2D- of 3D-doos en scraping</planche09>
+		<planche10>10 - Kruimelpad en letternavigatie</planche10>
+		<planche11>11 - Stijl van spelinfo</planche11>
+		<planche12>12 - 4:3- of 16:10-scherm</planche12>
+		<planche13>13 - Links om meer thema's en artworks te downloaden</planche13>
+	</variables>
+</theme>

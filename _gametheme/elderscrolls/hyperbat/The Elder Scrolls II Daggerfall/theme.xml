@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Calque_1" extra="true">
+			<path>./calque_1.png</path>
+			<origin>0 0</origin>
+			<pos>0.000520833333 -0.013888888889</pos>
+			<size>1.000000000000 1.013888888889</size>
+			<zIndex>210</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Daggerfall" extra="true">
+			<path>./daggerfall.png</path>
+			<origin>0 0</origin>
+			<pos>0.000520833333 -0.013888888889</pos>
+			<size>1.000000000000 1.012962962963</size>
+			<zIndex>220</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="1" begin="0" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="1" begin="0" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="1" begin="0" duration="1000" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>220</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>220</zIndex>
+		</image>
+				<image name="parchemin_0000_Calque-15" extra="true">
+			<path>./parchemin_0000_Calque-15.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.155074377092 0.500000000000</pos>
+			<size>0.273690420850 0.690187493010</size>
+			<zIndex>230</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="parchemin_0001_Calque-14" extra="true">
+			<path>./parchemin_0001_Calque-14.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.648307291667 0.500000000000</pos>
+			<size>0.667968750000 0.704260488111</size>
+			<zIndex>240</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="marqueeHS" extra="true">
+			<path>{game:marquee}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.154757481174 0.262358540257</pos>
+			<size>0.208333333333 0.138888888889</size>
+			<zIndex>250</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="boxart2D" extra="true">
+			<path ifSubset="boxorthumb:thumb">firstfile(${box2dpath},${box3dpath})</path>
+			<path ifSubset="boxorthumb:boxart">firstfile(${box3dpath},${box2dpath})</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.858898393827 0.486448682969</pos>
+			<size>0.104166666667 0.277777777778</size>
+			<zIndex>260</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2003" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2003" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2003" duration="800" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="cartridge2D" extra="true">
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.916666666667 0.601851851852</pos>
+			<size>0.104166666667 0.185185185185</size>
+			<zIndex>270</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{game:video}</path>
+			<pos>0.553125000000 0.500000000000</pos>
+			<size>0.416666666667 0.555555555556</size>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<zIndex>280</zIndex>
+			<shader>
+				<path>./_common/shaders/border_multi_gradient.glsl</path>
+				<cornerRadius>41</cornerRadius>
+				<innerShadowSize/>
+				<innerShadowColor/>
+				<outerShadowSize/>
+				<outerShadowColor/>
+				<gradientMode/>
+				<saturation/>
+				<borderSize>5</borderSize>
+				<borderColor>000000ff</borderColor>
+				<borderColorStart/>
+				<borderColorEnd/>
+				<borderSize2/>
+				<borderColor2/>
+				<borderColorStart2/>
+				<borderColorEnd2/>
+				<borderSize3/>
+				<borderColor3/>
+				<borderColorStart3/>
+				<borderColorEnd3/>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1988" duration="800" mode="Linear"/>
+			</storyboard>
+		</video>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>280</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>280</zIndex>
+		</image>
+		<control name="Calque_1, Daggerfall">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<text name="gamethemeauthor" extra="true">
+			<text>Theme by : Bob Morane</text>
+		</text>
+	</customView>
+</theme>

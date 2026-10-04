@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<!-- ################ Fond du theme ##################### -->
+		<image name="Background" extra="true">
+			<path>./Background.png</path>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>100</zIndex>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" from="1" to="1" duration="200" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="200" duration="300" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" from="1" to="1" duration="200" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="200" duration="300" mode="linear"/>
+			</storyboard>
+		</image>
+		<!-- ################ Artwork1 ##################### -->
+		<image name="Artwork1" extra="true">
+			<path>./Artwork1.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>200</zIndex>
+			<pos>0.5 0.155</pos>
+			<size>0.592708333333333 0.282407407407407</size>
+			<linearSmooth>true</linearSmooth>
+			<!-- # Arrivee en DeZoom  -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="800" mode="Linear"/>
+				<animation property="offsetY" from="-0.5" to="0" begin="500" duration="1000" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.07" begin="1500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="800" mode="Linear"/>
+				<animation property="offsetY" from="-0.5" to="0" begin="500" duration="1000" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.07" begin="1500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="800" mode="Linear"/>
+				<animation property="offsetY" from="-0.5" to="0" begin="500" duration="1000" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.07" begin="1500" duration="2500" autoreverse="true" repeat="forever" mode="easeout"/>
+			</storyboard>
+		</image>
+		<!-- ################ Artwork2 ##################### -->
+		<image name="Artwork2" extra="true">
+			<path>./Art2.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>200</zIndex>
+			<pos>0.1015625 0.707407407407407</pos>
+			<size>0.173958333333333 0.585185185185185</size>
+			<!-- # Arrivee D->G Sweet # -->
+			<storyboard event="open" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="500" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="1500" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="1500" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="1500" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>				
+			</storyboard>
+		</image>
+		<image name="Artwork22" extra="true">
+			<path>./Art2.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>200</zIndex>
+			<pos>0.269791666666667 0.444444444444444</pos>
+			<size>0.173958333333333 0.585185185185185</size>
+			<!-- # Arrivee D->G Sweet # -->
+			<storyboard event="open" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" to="1" begin="1500" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="1800" duration="700" mode="linear"/>
+				<animation property="pos" from="0.1015625 0.707407407407407" to="0.269791666666667 0.444444444444444" begin="1500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="0" to="0" begin="2500" duration="7000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" to="1" begin="1500" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="1800" duration="700" mode="linear"/>
+				<animation property="pos" from="0.1015625 0.707407407407407" to="0.269791666666667 0.444444444444444" begin="1500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="0" to="0" begin="3500" duration="6000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" to="1" begin="1500" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="1800" duration="700" mode="linear"/>
+				<animation property="pos" from="0.1015625 0.707407407407407" to="0.269791666666667 0.444444444444444" begin="1500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="0" to="0" begin="3500" duration="6000" mode="Linear"/>
+			</storyboard>
+		</image>
+		<!-- ################ Artwork3 ##################### -->
+		<image name="Artwork3" extra="true">
+			<path>./Art3.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>230</zIndex>
+			<pos>0.258854166666667 0.42962962962963</pos>
+			<size>0.252083333333333 0.555555555555556</size>
+			<linearSmooth>true</linearSmooth>
+			<!-- # Arrivee D->G Sweet # -->
+			<storyboard event="open" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1800" duration="700" mode="linear"/>
+				<animation property="pos" from="0.034375 0.722222222222222" to="0.258854166666667 0.42962962962963" begin="1500" duration="1000" mode="linear"/>
+				<animation property="opacity" to="0" begin="2500" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1800" duration="700" mode="linear"/>
+				<animation property="pos" from="0.034375 0.722222222222222" to="0.258854166666667 0.42962962962963" begin="1500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="2505" duration="10" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="2510" duration="6990" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1800" duration="700" mode="linear"/>
+				<animation property="pos" from="0.034375 0.722222222222222" to="0.258854166666667 0.42962962962963" begin="1500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="2500" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="2510" duration="6990" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork32" extra="true">
+			<path>./Art3.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>230</zIndex>
+			<pos>0.258854166666667 0.42962962962963</pos>
+			<size>0.252083333333333 0.555555555555556</size>
+			<linearSmooth>true</linearSmooth>
+			<!-- # Arrivee D->G Sweet # -->
+			<storyboard event="open" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2500" duration="10" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="2510" duration="990" mode="easeOut"/>
+				<animation property="pos" from="0.258854166666667 0.42962962962963" to="0.5109375 0.277777777777778" begin="2500" duration="1000" mode="linear"/>				
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2500" duration="10" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="2510" duration="990" mode="easeOut"/>
+				<animation property="pos" from="0.258854166666667 0.42962962962963" to="0.5109375 0.277777777777778" begin="2500" duration="1000" mode="linear"/>				
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2500" duration="10" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="2510" duration="990" mode="easeOut"/>
+				<animation property="pos" from="0.258854166666667 0.42962962962963" to="0.5109375 0.277777777777778" begin="2500" duration="1000" mode="linear"/>				
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+		</image>
+		<!-- ################ Artwork4 ##################### -->
+		<image name="Artwork4" extra="true">
+			<path>./Art4.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>230</zIndex>
+			<pos>0.616666666666667 0.262962962962963</pos>
+			<size>0.41875 0.511111111111111</size>
+			<!-- # Arrivee : D->G # -->
+			<storyboard event="open" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2500" duration="1000" mode="linear"/>
+				<animation property="pos" from="0.334375 0.444444444444444" to="0.616666666666667 0.262962962962963" begin="2500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="3500" duration="100" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2500" duration="1000" mode="linear"/>
+				<animation property="pos" from="0.334375 0.444444444444444" to="0.616666666666667 0.262962962962963" begin="2500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="3500" duration="100" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2500" duration="1000" mode="linear"/>
+				<animation property="pos" from="0.334375 0.444444444444444" to="0.616666666666667 0.262962962962963" begin="2500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="3500" duration="100" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork42" extra="true">
+			<path>./Art4.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>230</zIndex>
+			<pos>0.616666666666667 0.262962962962963</pos>
+			<size>0.41875 0.511111111111111</size>
+			<!-- # Arrivee : D->G # -->
+			<storyboard event="open" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" to="1" begin="3500" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="3500" duration="1000" mode="easeout"/>
+				<animation property="pos" from="0.616666666666667 0.262962962962963" to="0.904166666666667 0.548148148148148" begin="3500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" to="1" begin="3500" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="3500" duration="1000" mode="easeout"/>
+				<animation property="pos" from="0.616666666666667 0.262962962962963" to="0.904166666666667 0.548148148148148" begin="3500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" to="1" begin="3500" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="3500" duration="1000" mode="easeout"/>
+				<animation property="pos" from="0.616666666666667 0.262962962962963" to="0.904166666666667 0.548148148148148" begin="3500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+		</image>
+		<!-- ################ Artwork5 ##################### -->
+		<image name="Artwork5" extra="true">
+			<path>./Art5.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>230</zIndex>
+			<pos>0.842447916666667 0.518518518518518</pos>
+			<size>0.315104166666667 0.607407407407407</size>
+			<!-- # Arrivee : D->G # -->
+			<storyboard event="open" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="3500" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3500" duration="1000" mode="linear"/>
+				<animation property="pos" from="0.56484375 0.230555555555556" to="0.842447916666667 0.518518518518518" begin="3500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="3500" duration="100" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="4500" duration="100" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="3500" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3500" duration="1000" mode="linear"/>
+				<animation property="pos" from="0.56484375 0.230555555555556" to="0.842447916666667 0.518518518518518" begin="3500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="3500" duration="100" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="4500" duration="100" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="3500" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3500" duration="1000" mode="linear"/>
+				<animation property="pos" from="0.56484375 0.230555555555556" to="0.842447916666667 0.518518518518518" begin="3500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="3500" duration="100" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="4500" duration="100" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork52" extra="true">
+			<path>./Art5.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>230</zIndex>
+			<pos>0.842447916666667 0.518518518518518</pos>
+			<size>0.315104166666667 0.607407407407407</size>
+			<!-- # Arrivee : D->G # -->
+			<storyboard event="open" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" to="1" begin="4500" duration="" mode="Linear"/>
+				<animation property="pos" from="0.842447916666667 0.518518518518518" to="1.16588541666667 0.796296296296296" begin="4500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" to="1" begin="4500" duration="" mode="Linear"/>
+				<animation property="pos" from="0.842447916666667 0.518518518518518" to="1.16588541666667 0.796296296296296" begin="4500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev" repeatAt="1">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" to="1" begin="4500" duration="" mode="Linear"/>
+				<animation property="pos" from="0.842447916666667 0.518518518518518" to="1.16588541666667 0.796296296296296" begin="4500" duration="1000" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="8500" duration="1000" mode="Linear"/>
+			</storyboard>
+		</image>
+		<!-- ################ Bezel autour de la video ##################### -->
+		<image name="Videobezel" extra="true">
+			<path>./video.png</path>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<pos>0.5 0.607407407407407</pos>
+			<size>0.43 0.60</size>
+			<zIndex>190</zIndex>
+		</image>
+		<!-- ################ La video ##################### -->
+		<video name="PreviewVid" extra="true">
+			<visible>true</visible>
+			<path>{game:video}</path>
+			<maxSize>0.38 0.68</maxSize>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<delay>0.4</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<pos>0.5 0.607407407407407</pos>
+			<zIndex>180</zIndex>
+		</video>
+		<!-- ################ Animations du bezel video et de la video si identique ##################### -->
+		<!-- # Arriv e : D->G # -->
+		<control name="PreviewVid,Videobezel">
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1000" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1000" duration="800" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1000" duration="800" mode="Linear"/>
+			</storyboard>
+		</control>
+		<!-- ################ Animation de sortie des artworks ##################### -->
+		<control name="Artwork1, Artwork2, Artwork22, Artwork3, Artwork32, Artwork4, Artwork42, Artwork5, Artwork52, PreviewVid,Videobezel">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="md_boxart">
+			<visible>false</visible>
+		</image>
+	        <text name="gamethemeauthor" extra="true">
+           <text>Theme by : Dav</text>
+        </text>
+</customView>
+</theme>

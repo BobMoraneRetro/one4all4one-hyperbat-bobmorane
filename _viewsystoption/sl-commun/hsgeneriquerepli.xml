@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Repli sur la vue systeme generique (_systemmedia/videosyst/hyperspin/<systeme>.xml) -->
+	<!-- pour les modes "hyperspinxp" et "hyperspinorder". Charge par videosyst.xml juste apres ${extspinxml}. -->
+	<!--   hyperspinxp    : vue generique si le systeme n'a pas de vue hyperspinxp/<systeme>/systheme.xml -->
+	<!--   hyperspinorder : vue generique si ni vue hyperspinxp ni video hyperpie/<systeme>.mp4 -->
+	<!-- Les vues generiques ne declarent fond et bezel que pour hyperspin|hyperspinorunified : ils sont redeclares ici -->
+	<!-- (copie du modele commun a 851 des 936 fichiers), et la visibilite de tous les elements est reprise par mode. -->
+	<view name="system">
+		<!-- ################ Assombrissement du fanart (comme blablacksyt de videosyst.xml) ##################### -->
+		<image name="blablacksyt" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinxp">${ifnoextsysthemeexist}</visible>
+			<visible ifSubset="videofondcops1:hyperspinorder">!exists("${path_syst_theme}/hyperspinxp/" + stem({system:theme}) + "/systheme.xml") &amp;&amp; !exists("${path_syst_theme}/hyperpie/" + {system:theme} + ".mp4")</visible>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<path>${path_common}/images/black.png</path>
+			<size>1 1</size>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>1</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" duration="" mode="" begin=""/>
+				<animation property="opacity" from="0" to="0.7" duration="500" mode="easeOut" begin="500"/>
+			</storyboard>
+		</image>
+		<!-- ################ Artworks et logo de la vue generique : visibilite par mode ##################### -->
+		<image name="righttart" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinxp">${ifnoextsysthemeexist}</visible>
+			<visible ifSubset="videofondcops1:hyperspinorder">!exists("${path_syst_theme}/hyperspinxp/" + stem({system:theme}) + "/systheme.xml") &amp;&amp; !exists("${path_syst_theme}/hyperpie/" + {system:theme} + ".mp4")</visible>
+		</image>
+		<image name="leftart" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinxp">${ifnoextsysthemeexist}</visible>
+			<visible ifSubset="videofondcops1:hyperspinorder">!exists("${path_syst_theme}/hyperspinxp/" + stem({system:theme}) + "/systheme.xml") &amp;&amp; !exists("${path_syst_theme}/hyperpie/" + {system:theme} + ".mp4")</visible>
+		</image>
+		<image name="logocustunified" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinxp">${ifnoextsysthemeexist}</visible>
+			<visible ifSubset="videofondcops1:hyperspinorder">!exists("${path_syst_theme}/hyperspinxp/" + stem({system:theme}) + "/systheme.xml") &amp;&amp; !exists("${path_syst_theme}/hyperpie/" + {system:theme} + ".mp4")</visible>
+			<!-- repris de la vue generique (doit rester apres les lignes ci-dessus) -->
+			<visible ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">false</visible>
+		</image>
+		<video name="hsgameplay" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinxp">${ifnoextsysthemeexist}</visible>
+			<visible ifSubset="videofondcops1:hyperspinorder">!exists("${path_syst_theme}/hyperspinxp/" + stem({system:theme}) + "/systheme.xml") &amp;&amp; !exists("${path_syst_theme}/hyperpie/" + {system:theme} + ".mp4")</visible>
+		</video>
+		<!-- ################ Fond et bezel (absents des vues generiques hors hyperspin|hyperspinorunified) ##################### -->
+		<image name="fondecransmall" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinxp">${ifnoextsysthemeexist}</visible>
+			<visible ifSubset="videofondcops1:hyperspinorder">!exists("${path_syst_theme}/hyperspinxp/" + stem({system:theme}) + "/systheme.xml") &amp;&amp; !exists("${path_syst_theme}/hyperpie/" + {system:theme} + ".mp4")</visible>
+			<origin>0.52 0.5</origin>
+			<path>${comcadre169}</path>
+			<size>0.66 0.72</size>
+			<pos>0.5 0.55</pos>
+			<pos ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">0.5 0.45</pos>
+			<pos ifSubset="cops2menu:milieu">0.5 0.5</pos>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>1</zIndex>
+			<storyboard>
+				<animation property="y" from="0.45" duration="350" mode="easeOut"/>
+				<animation property="opacity" from="0" to="1" duration="550" mode="easeIn"/>
+				<animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="bezel" extra="true">
+			<visible ifSubset="videofondcops1:hyperspinxp">${ifnoextsysthemeexist}</visible>
+			<visible ifSubset="videofondcops1:hyperspinorder">!exists("${path_syst_theme}/hyperspinxp/" + stem({system:theme}) + "/systheme.xml") &amp;&amp; !exists("${path_syst_theme}/hyperpie/" + {system:theme} + ".mp4")</visible>
+			<origin>0.5 0.5</origin>
+			<path>${intbezelsyst}</path>
+			<maxSize>0.6 0.52</maxSize>
+			<pos>0.5 0.55</pos>
+			<pos ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|tetanos">0.5 0.45</pos>
+			<pos ifSubset="cops2menu:milieu">0.5 0.5</pos>
+			<linearSmooth>true</linearSmooth>
+			<zIndex>2</zIndex>
+			<storyboard>
+				<animation property="opacity" from="0" to="1" duration="550" mode="easeIn"/>
+				<animation property="scale" from="0" to="1" duration="350" mode="easeOut"/>
+			</storyboard>
+		</image>
+	</view>
+</theme>

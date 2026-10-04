@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<!-- ################ Fond du theme ##################### -->
+		<image name="Background" extra="true">
+			<path>./Background.png</path>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>100</zIndex>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" from="1" to="1" duration="200" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="200" duration="300" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" from="1" to="1" duration="200" mode="linear"/>
+				<animation property="opacity" from="1" to="0" begin="200" duration="300" mode="linear"/>
+			</storyboard>
+		</image>
+				<!-- ################ Artwork1 ##################### -->
+		<image name="Artwork1" extra="true">
+			<path>./aile1.png</path>
+			<linearSmooth>true</linearSmooth>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>230</zIndex>
+			<pos>0.292 0.29537037037037</pos>
+			<size>0.415625 0.722222222222222</size>
+			<rotation>10</rotation>
+			<!-- # Arrivee : D->G # -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="w" from="0.271354166666667" to="0.45" begin="1000" duration="900" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="opacity" from="0" to="1" begin="200" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="-0.1" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="-1" to="0.2" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.1" to="-0.15" begin="2200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.2" to="-0.1" begin="3200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="-0.15" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.1" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.2" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.07" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="w" from="0.271354166666667" to="0.45" begin="1000" duration="900" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="opacity" from="0" to="1" begin="200" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="-0.1" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="-1" to="0.2" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.1" to="-0.15" begin="2200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.2" to="-0.1" begin="3200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="-0.15" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.1" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.2" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.07" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="w" from="0.271354166666667" to="0.45" begin="1000" duration="900" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="opacity" from="0" to="1" begin="200" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="-0.1" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="-1" to="0.2" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.1" to="-0.15" begin="2200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.2" to="-0.1" begin="3200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="-0.15" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.1" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.2" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.07" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+		</image>
+		<image name="Artwork11" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<path>./Perso.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>231</zIndex>
+			<pos>0.320052083333333 0.472222222222222</pos>
+			<size>0.215104166666667 0.505555555555556</size>
+			<!-- # Arrivee : D->G # -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="200" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="-0.1" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="-1" to="0.2" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.1" to="-0.15" begin="2200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.2" to="-0.1" begin="3200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="-0.15" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.1" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.2" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.07" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="200" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="-0.1" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="-1" to="0.2" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.1" to="-0.15" begin="2200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.2" to="-0.1" begin="3200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="-0.15" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.1" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.2" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.07" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="200" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="-0.1" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="-1" to="0.2" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.1" to="-0.15" begin="2200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.2" to="-0.1" begin="3200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="-0.15" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.1" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.2" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.07" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+		</image>
+				<!-- ################ Artwork2 ##################### -->
+		<image name="Artwork2" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<path>./aile2.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>230</zIndex>
+			<pos>0.703125 0.709259259259259</pos>
+			<size>0.438541666666667 0.755555555555556</size>
+			<!-- # Arrivee : D->G # -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="w" from="0.438541666666667" to="0.20" begin="2500" duration="800" autoreverse="true" repeat="forever" mode="easeIn"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0.1" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="1" to="-0.3" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="0.1" to="0.15" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.3" to="0.1" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0.15" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.1" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.1" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="0.05" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.02" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="w" from="0.438541666666667" to="0.20" begin="2500" duration="800" autoreverse="true" repeat="forever" mode="easeIn"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0.1" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="1" to="-0.3" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="0.1" to="0.15" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.3" to="0.1" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0.15" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.1" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.1" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="0.05" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.02" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="w" from="0.438541666666667" to="0.20" begin="2500" duration="800" autoreverse="true" repeat="forever" mode="easeIn"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0.1" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="1" to="-0.3" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="0.1" to="0.15" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.3" to="0.1" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0.15" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.1" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.1" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="0.05" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.02" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+		</image>
+		<image name="Artwork21" extra="true">
+			<path>./perso2.png</path>
+			<linearSmooth>true</linearSmooth>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>230</zIndex>
+			<pos>0.694010416666667 0.752777777777778</pos>
+			<size>0.3046875 0.618518518518518</size>
+			<!-- # Arrivee : D->G # -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0.1" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="1" to="-0.3" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="0.1" to="0.15" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.3" to="0.1" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0.15" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.1" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.1" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="0.05" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.02" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0.1" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="1" to="-0.3" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="0.1" to="0.15" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.3" to="0.1" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0.15" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.1" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.1" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="0.05" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.02" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0.1" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="1" to="-0.3" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="0.1" to="0.15" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.3" to="0.1" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0.15" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.1" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.1" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="0.05" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.02" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+		</image>
+				<!-- ################ Artwork 3 ##################### -->
+		<image name="Artwork3" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<path>./Artwork3.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>230</zIndex>
+			<pos>0.5 0.161574074074074</pos>
+			<size>0.43125 0.323148148148148</size>
+			<!-- # Arrivee : D->G # -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="200" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-0.5" to="0" begin="200" duration="2000" mode="EaseOut"/>				
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="200" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-0.5" to="0" begin="200" duration="2000" mode="EaseOut"/>				
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="200" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-0.5" to="0" begin="200" duration="2000" mode="EaseOut"/>	
+			</storyboard>
+		</image>
+				<!-- ################ Artwork 4 ##################### -->
+		<image name="Artwork4" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<path>./orbe.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>235</zIndex>
+			<pos>0.405989583333333 0.443981481481481</pos>
+			<size>0.0869791666666667 0.15462962962963</size>
+			<!-- # Arrivee : D->G # -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="7200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="9200" duration="3000" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="16200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="18200" duration="3000" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="23200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="linear"/>
+				<animation property="offsetX" from="-1" to="-0.1" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="-1" to="0.2" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.1" to="-0.15" begin="2200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.2" to="-0.1" begin="3200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="-0.15" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.1" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.2" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.07" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="7200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="9200" duration="3000" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="16200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="18200" duration="3000" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="23200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="linear"/>
+				<animation property="offsetX" from="-1" to="-0.1" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="-1" to="0.2" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.1" to="-0.15" begin="2200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.2" to="-0.1" begin="3200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="-0.15" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.1" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.2" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.07" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="7200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="9200" duration="3000" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="16200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="18200" duration="3000" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="23200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="linear"/>
+				<animation property="offsetX" from="-1" to="-0.1" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="-1" to="0.2" begin="200" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="-0.1" to="-0.15" begin="2200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.2" to="-0.1" begin="3200" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="-0.15" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.1" to="0" begin="5700" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.2" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="-0.07" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+		</image>
+		<image name="Artwork41" extra="true">
+			<linearSmooth>true</linearSmooth>
+			<path>./orbe.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>230</zIndex>
+			<pos>0.567447916666667 0.558796296296296</pos>
+			<size>0.0869791666666667 0.15462962962963</size>
+			<!-- # Arrivee : D->G # -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="7200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="9200" duration="3000" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="16200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="18200" duration="3000" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="23200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="linear"/>
+				<animation property="offsetX" from="1" to="0.1" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="1" to="-0.3" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="0.1" to="0.15" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.3" to="0.1" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0.15" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.1" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.1" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="0.05" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.02" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="7200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="9200" duration="3000" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="16200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="18200" duration="3000" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="23200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="linear"/>
+				<animation property="offsetX" from="1" to="0.1" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="1" to="-0.3" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="0.1" to="0.15" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.3" to="0.1" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0.15" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.1" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.1" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="0.05" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.02" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="7200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="9200" duration="3000" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="16200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="18200" duration="3000" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="23200" duration="1000" mode="EaseIn"/>
+				<animation property="opacity" from="1" to="0" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="linear"/>
+				<animation property="offsetX" from="1" to="0.1" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetY" from="1" to="-0.3" begin="500" duration="2000" mode="EaseOut"/>
+				<animation property="offsetX" from="0.1" to="0.15" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetY" from="-0.3" to="0.1" begin="2500" duration="2500" mode="EaseInOut"/>
+				<animation property="offsetX" from="0.15" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetY" from="0.1" to="0" begin="6000" duration="2200" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.1" begin="8400" duration="5000" autoreverse="true" mode="easeIn"/>
+				<animation property="offsetY" from="0" to="0.05" begin="8400" duration="5000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="18400" duration="3000" autoreverse="true" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.2" begin="18400" duration="3000" autoreverse="true" mode="EaseInOut"/>
+				<animation property="offsetX" from="0" to="0.05" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+				<animation property="offsetY" from="0" to="-0.02" begin="24400" duration="3000" autoreverse="true" repeat="forever" mode="easeInOut"/>
+			</storyboard>
+		</image>
+		<image name="Artwork5" extra="true">
+			<path>./Artwork5.png</path>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<origin>0.5 0.5</origin>
+			<zIndex>200</zIndex>
+			<pos>0.90 0.13</pos>
+			<size>0.084375 0.122222222222222</size>
+			<linearSmooth>true</linearSmooth>
+			<!-- # Arrivee : D->G # -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="350" mode="linear"/>
+				<animation property="opacity" begin="3500" from="1" to="0.8" duration="100" autoreverse="true" repeat="5" mode="linear"/>
+				<animation property="opacity" begin="3900" from="1" to="0.8" duration="50" autoreverse="true" repeat="3" mode="linear"/>
+				<animation property="opacity" begin="5200" from="1" to="0.8" duration="70" autoreverse="true" repeat="2" mode="linear"/>
+				<animation property="opacity" begin="5700" from="1" to="0.8" duration="50" autoreverse="true" repeat="4" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="350" mode="linear"/>
+				<animation property="opacity" begin="3500" from="1" to="0.8" duration="100" autoreverse="true" repeat="5" mode="linear"/>
+				<animation property="opacity" begin="3900" from="1" to="0.8" duration="50" autoreverse="true" repeat="3" mode="linear"/>
+				<animation property="opacity" begin="5200" from="1" to="0.8" duration="70" autoreverse="true" repeat="2" mode="linear"/>
+				<animation property="opacity" begin="5700" from="1" to="0.8" duration="50" autoreverse="true" repeat="4" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="3000" duration="350" mode="linear"/>
+				<animation property="opacity" begin="3500" from="1" to="0.8" duration="100" autoreverse="true" repeat="5" mode="linear"/>
+				<animation property="opacity" begin="3900" from="1" to="0.8" duration="50" autoreverse="true" repeat="3" mode="linear"/>
+				<animation property="opacity" begin="5200" from="1" to="0.8" duration="70" autoreverse="true" repeat="2" mode="linear"/>
+				<animation property="opacity" begin="5700" from="1" to="0.8" duration="50" autoreverse="true" repeat="4" mode="linear"/>
+			</storyboard>
+		</image>
+		
+		<!-- ################ Bezel autour de la video ##################### -->
+		<image name="Videobezel" extra="true">
+			<path>./video.png</path>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<pos>0.5 0.55</pos>
+			<size>0.30 0.71</size>
+			<zIndex>190</zIndex>
+		</image>
+		<!-- ################ La video ##################### -->
+		<video name="PreviewVid" extra="true">
+			<visible>true</visible>
+			<path>{game:video}</path>
+			<maxSize>0.46 0.68</maxSize>
+			<minSize>0.45 0.5</minSize>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<delay>0.4</delay>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+			<effect>none</effect>
+			<pos>0.5 0.55</pos>
+			<zIndex>180</zIndex>
+		</video>
+		<!-- ################ Animations du bezel video et de la video si identique ##################### -->
+		<!-- # Arriv e : D->G # -->
+		<control name="PreviewVid,Videobezel">
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="1300" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="800" duration="2400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="1300" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="800" duration="2400" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="1300" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="800" duration="2400" mode="easeOut"/>
+			</storyboard>
+		</control>
+		<!-- ################ Animation de sortie des artworks ##################### -->
+		<control name="Artwork1, Artwork11, Artwork2, Artwork21, Artwork3, Artwork4, Artwork41, Artwork5, PreviewVid,Videobezel">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" from="0" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="md_boxart">
+			<visible>false</visible>
+		</image>
+	        <text name="gamethemeauthor" extra="true">
+           <text>Theme by : Dav</text>
+        </text>
+</customView>
+</theme>

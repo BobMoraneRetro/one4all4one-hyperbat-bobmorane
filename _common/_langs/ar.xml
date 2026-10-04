@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ar">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>نعم</yes>
+		<no>لا</no>
+		<desactive>معطّل</desactive>
+		<activate>مفعّل</activate>
+		<actif>مفعّل</actif>
+		<active>مفعّل</active>
+		<deactive>معطّل</deactive>
+		<vide>   </vide>
+		<default>افتراضي</default>
+		<amoitie>جزئيًا</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>اللغات المتاحة:</languesdispo>
+		<nodates>لا يوجد تاريخ</nodates>
+		<playcount>مرات لعب</playcount>
+		<playcountone>مرة لعب</playcountone>
+		<players>لاعب/لاعبون</players>
+		<playerss>لاعبون</playerss>
+		<player>لاعب</player>
+		<nogametime>لم تُلعب قط</nogametime>
+		<noplayerdata>غير معروف</noplayerdata>
+		<noratings>لا يوجد تقييم</noratings>
+		<lastgamelabel>آخر لعب:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>اللعبة التالية</jeusuiv>
+		<jeuprec>اللعبة السابقة</jeuprec>
+		<systsuiv>النظام التالي</systsuiv>
+		<systprec>النظام السابق</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>رسالة الترحيب</lismoi>
+		<tumasbienlu>الترحيب والشكر</tumasbienlu>
+		<deporttheme>كيف أنقل سماتي المخصصة</deporttheme>
+		<customiztheme1>كيف أخصص سماتي 1/2</customiztheme1>
+		<customiztheme2>كيف أخصص سماتي 2/2</customiztheme2>
+		<downloadmore>روابط لتنزيل المزيد من السمات والأعمال الفنية</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>عرض قائمة الأنظمة</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: عرض شبكي بسيط</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart خفيف جدًا</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - اختبر وسائطك</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>إعداد SCRAP - بنية الفان آرت؟</packcustombuild>
+		<packcustombuildsno>فان آرت باللاحقة "-fanart" (افتراضي)</packcustombuildsno>
+		<packretrofreshbat>فان آرت باللاحقة "-image"</packretrofreshbat>
+		<scrap3dbox>إعداد scrape - بنية العلبة ثلاثية الأبعاد؟</scrap3dbox>
+		<scrapedboxart>علبة 3D مع "-boxart" في gamelist</scrapedboxart>
+		<scrapedthumbnail>علبة 3D مع "-thumbnail" في gamelist</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>مساعدة - مظهر أيقونات المساعدة</iconset>
+		<iconsetposition>موضع الأزرار</iconsetposition>
+		<colorhelp>مساعدة - ألوان نص المساعدة</colorhelp>
+		<skyblue>أزرق سماوي</skyblue>
+		<standard>قياسي</standard>
+		<purple>بنفسجي</purple>
+		<red>أحمر</red>
+		<aqua>أزرق سماوي</aqua>
+		<orange>برتقالي</orange>
+		<green>أخضر</green>
+		<yellow>أصفر</yellow>
+		<pink>وردي</pink>
+		<grey>رمادي داكن</grey>
+		<lightgrey>رمادي فاتح</lightgrey>
+		<navy>أزرق alt</navy>
+		<violet>بنفسجي</violet>
+		<candy>candy</candy>
+		<redalt>أحمر alt</redalt>
+		<yellowalt>أصفر alt</yellowalt>
+		<greenalt>أخضر alt</greenalt>
+		<purplealt>بنفسجي alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>عرض الأنظمة - نوع شعارات الأنظمة</systviewlogos>
+		<logosimple>شعار بسيط (كامل + المنطقة)</logosimple>
+		<glassnekhros>شعار Glass (كامل + المنطقة) (By Nekhros)</glassnekhros>
+		<logobd>شعار بأسلوب القصص المصورة (Helmic)</logobd>
+		<logoovalcarb>شعار بيضاوي Carbon</logoovalcarb>
+		<hmaxovalsilver>شعار بيضاوي Silver</hmaxovalsilver>
+		<logorectfresh>شعار مستطيل Team Freshone (حزمة خارجية)</logorectfresh>
+		<hmaxrectrefl>شعار مستطيل عاكس Team Freshone (حزمة خارجية)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>عرض الأنظمة - تلاشي قائمة الأنظمة</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>عرض الأنظمة - اختيار فان آرت النظام</systviewfanart>
+		<fanartfreshone>فان آرت مختارة من FreshOne فقط</fanartfreshone>
+		<fanartsystcustom>فان آرت مخصصة، وإلا فان آرت FreshOne</fanartsystcustom>
+		<fanfondsystem>خلفية النظام، وإلا فان آرت FreshOne</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>عرض الأنظمة - عرض متحرك للنظام</systviewvideo>
+		<hyperspinorunified>ADDON: HS ديناميكي، وإلا HS موحّد</hyperspinorunified>
+		<gameplayp1>فيديو لعب عشوائي صغير مع إطار (bezel) إن وُجد</gameplayp1>
+		<gameplay1>فيديو لعب عشوائي كبير مع إطار (bezel) إن وُجد</gameplay1>
+		<gameplayp>فيديو لعب عشوائي صغير</gameplayp>
+		<gameplay>فيديو لعب عشوائي كبير</gameplay>
+		<custom>فيديو شخصي من مجلد custom</custom>
+		<hyperspinxp>ADDON: صورة ولعب بأسلوب Hyperspin الديناميكي</hyperspinxp>
+		<hyperspin>ADDON: صورة ولعب بأسلوب Hyperspin الموحّد</hyperspin>
+		<hyperspinorder>ADDON: HS ديناميكي، وإلا فيديو Hyperpie</hyperspinorder>
+		<hyperpie>ADDON: فيديو Hyperpie، وإلا فيديو Unified إن وُجد</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>عرض الأنظمة - إظهار عدد ألعاب النظام</systviewtotal>
+		<nbrjeux>عدد الألعاب البسيط</nbrjeux>
+		<nbrjeux2>اسم النظام وعدد الألعاب</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>عرض مسار التنقل</menuofficiel>
+		<menutxt>الترتيب الرسمي حسب العتاد: نص أفقي</menutxt>
+		<menuorb>الترتيب الرسمي حسب العتاد: كرات أفقية</menuorb>
+		<menuorbvert>الترتيب الرسمي حسب العتاد: كرات عمودية</menuorbvert>
+		<menuorbcrcl>الترتيب الرسمي حسب العتاد: كرات نصف دائرية</menuorbcrcl>
+		<menucust>ترتيب Bob المخصص حسب العتاد: نص أفقي</menucust>
+		<menucustorb>ترتيب Bob المخصص حسب العتاد: كرات أفقية</menucustorb>
+		<menucustorbvert>ترتيب Bob المخصص حسب العتاد: كرات عمودية</menucustorbvert>
+		<menucustorbcrcl>ترتيب Bob المخصص حسب العتاد: كرات نصف دائرية</menucustorbcrcl>
+		<menutxtzspin>الترتيب الرسمي حسب العتاد: نص عمودي</menutxtzspin>
+		<menutxtzspincust>ترتيب Bob المخصص حسب العتاد: نص عمودي</menutxtzspincust>
+		<menuteta>الترتيب الرسمي حسب العتاد: Tetanos</menuteta>
+		<menucustteta>ترتيب Bob المخصص حسب العتاد: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>عرض أنظمة Hyperbat - مساعدات متحركة</sticksysteme>
+		<systballblue>عصا أزرق</systballblue>
+		<systballcyan>عصا سماوي</systballcyan>
+		<systballdarkviolet>عصا بنفسجي داكن</systballdarkviolet>
+		<systballviolet>عصا بنفسجي</systballviolet>
+		<systballgreen>عصا أخضر</systballgreen>
+		<systballlitegreen>عصا أخضر فاتح</systballlitegreen>
+		<systballpink>عصا وردي</systballpink>
+		<systballred>عصا أحمر</systballred>
+		<systballyelgreen>عصا أصفر مخضر</systballyelgreen>
+		<systballyellow>عصا أصفر</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>عرض أنظمة Hyperbat - نوع القائمة</hyperwheel>
+		<spindr>عجلة منحنية على اليمين (Hyperspin)</spindr>
+		<verticaldr>عجلة عمودية على اليمين (Hyperspin)</verticaldr>
+		<verticaldreb>عجلة عمودية على اليمين (Emubox)</verticaldreb>
+		<spingh>عجلة منحنية على اليسار (Hyperspin)</spingh>
+		<verticalgh>عجلة عمودية على اليسار (Hyperspin)</verticalgh>
+		<verticalgheb>عجلة عمودية على اليسار (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: بائع أجهزة box Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: بائع أجهزة box Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: بائع أجهزة box Hyperspin Chris (قيد الإنجاز)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>عرض الألعاب - النظام الحالي عند الفتح؟</systannounce>
+		<classiquesyst>اختفاء مع تصغير</classiquesyst>
+		<nomsystem2>دخول بطيء (تلاشي + تكبير)</nomsystem2>
+		<nomsystem3>وميض سريع (تصغير)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>عرض الألعاب - خلفية لكل شعار لعبة؟</gwheelbackgr>
+		<sisaccades>معطّل</sisaccades>
+		<ovalcarbon>بيضاوي carbon (توليد تلقائي)</ovalcarbon>
+		<ovalsilver>بيضاوي silver (توليد تلقائي)</ovalsilver>
+		<rectcarbon>مستطيل carbon (توليد تلقائي)</rectcarbon>
+		<rectcompose>مستطيل مخصص لكل نظام (توليد تلقائي)</rectcompose>
+		<ovalcompose>بيضاوي carbon مخصص لكل نظام (توليد تلقائي)</ovalcompose>
+		<logounified>شعار بحجم موحّد</logounified>
+		<hfsround>دائري Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>عرض الألعاب - التنقل حسب الحرف (الألعاب)؟</letternav>
+		<navhoricoinstyle>أبجدية أفقية</navhoricoinstyle>
+		<navvertcoinstyle>أبجدية عمودية على اليسار</navvertcoinstyle>
+		<navvertrcoinstyle>أبجدية عمودية على اليمين</navvertrcoinstyle>
+		<navhsletters>حرف منسّق حسب النظام</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>عرض الألعاب - إظهار أقصى المعلومات؟</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ بداية الخيارات المتقدمة الخاصة بعروض Hyperbat ↓   -------------------</spacerHS02>
+		<mediahyper>----------- الوسائط المطلوبة لعرض ألعاب Hyperbat = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>سمة ألعاب عامة (إذا لم توجد سمة)</defaultgeneric>
+		<videodefaut>فيديو افتراضي لسمة الألعاب العامة (بدون لقطة شاشة أو فيديو)</videodefaut>
+		<generic43boxback>قياسي مع تركيب وجهي العلبة الخلفي والأمامي</generic43boxback>
+		<generic43coinopsstyle>مجموعة خزائن أركيد</generic43coinopsstyle>
+		<generic43noanimationfanart>قياسي مع خلفية فان آرت متحركة</generic43noanimationfanart>
+		<generic43noanimation>قياسي بدون تحريك boxart</generic43noanimation>
+		<generic43>قياسي</generic43>
+		<jukeboxdef>مظهر قرص مضغوط (غير مكتمل)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>سمة الألعاب: النظام المصدر</gameviewsource>
+		<mamefolder>مجلد اللعبة الأصلي أولًا ثم مجلد mame</mamefolder>
+		<actualsystem>مجلد النظام المحدد أولًا</actualsystem>
+		<genericstyleonly>استخدام سمة الألعاب العامة فقط</genericstyleonly>
+		<groupedsystem>لاختبار التطوير فقط: لا تستخدمه</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>سمة الألعاب: المؤلف</authordisplayed>
+		<showoff>مفعّل، وضوح عالٍ</showoff>
+		<showoffblackwhite>مفعّل، وضوح فائق</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - تلاشي قائمة الألعاب</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - صوت التمرير</gamewheelsound>
+		<wheelclic>نقرة بأسلوب Hyperspin</wheelclic>
+		<bulle>فقاعة</bulle>
+		<clic>نقرة بسيطة</clic>
+		<clicgrave>نقرة عميقة</clicgrave>
+		<frottement>احتكاك</frottement>
+		<poc>فرقعة</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>المظهر - تأثير التظليل الحوافي</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>المظهر - تظليل حواف عرض الأنظمة</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>المظهر - تعتيم الخلفية (عرض الأنظمة)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>المظهر - اختيار العصا المتحركة</syststickon>
+		<stickon>أركيد كلاسيكي</stickon>
+		<syststickcolor>المظهر - لون كرة العصا</syststickcolor>
+		<ballcyan>سماوي</ballcyan>
+		<ballblue>أزرق</ballblue>
+		<balldarkviolet>بنفسجي داكن</balldarkviolet>
+		<ballviolet>بنفسجي</ballviolet>
+		<ballgreen>أخضر</ballgreen>
+		<balllitegreen>أخضر فاتح</balllitegreen>
+		<ballpink>وردي</ballpink>
+		<ballred>أحمر</ballred>
+		<ballyelgreen>أصفر مخضر</ballyelgreen>
+		<ballyellow>أصفر</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - مظهر press start</pressstart>
+		<doigts>إصبع متحرك يضغط زرًا</doigts>
+		<undoigt>إصبع متحرك يضغط زرًا على اليسار فقط</undoigt>
+		<undoigtr>إصبع متحرك يضغط زرًا على اليمين فقط</undoigtr>
+		<pressstarttxt>METADATA - اختيار النص</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>لعبة مجانية</partiegratuite>
+		<uneuro>1€ للعبة</uneuro>
+		<sitessage>اضغط Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - إعداد البيانات الوصفية</hsmetadata>
+		<full>كامل وفي الموضع الافتراضي</full>
+		<lower>كامل وفي أدنى موضع</lower>
+		<metafichedefault>بطاقة البيانات في الموضع الافتراضي</metafichedefault>
+		<metafichebasgauche>بطاقة البيانات أسفل اليسار</metafichebasgauche>
+		<metafichebasdroite>بطاقة البيانات أسفل اليمين</metafichebasdroite>
+		<metafichebascentre>بطاقة البيانات أسفل الوسط</metafichebascentre>
+		<metafichehautgauche>بطاقة البيانات أعلى اليسار</metafichehautgauche>
+		<metafichehautdroite>بطاقة البيانات أعلى اليمين</metafichehautdroite>
+		<metafichehautcentre>بطاقة البيانات أعلى الوسط</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>إظهار سمات خاصة بكل لعبة؟</hyperbatperview>
+		<themejeux>سمة اللعبة أولًا إن وُجدت</themejeux>
+		<themejeuxno>تعطيل سمة كل لعبة</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>المظهر - انتقال سلس بين سمات الألعاب</smoothgametheme>
+		<activesmooth>مفعّل (موصى به لـ Retrobat)</activesmooth>
+		<noactivesmooth>معطّل (موصى به لـ Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - مؤشرات النظام بأسلوب Hyperspin</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- تخصيص scrap للسمات المتوافقة ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>علبة اللعبة المعروضة</boxorthumb>
+		<boxart>معايَر لعلبة 3D</boxart>
+		<thumb>معايَر لعلبة 2D</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- إعداد متقدم: تغيير مجلد مصدر الوسائط --------------------------------------------------------</spacerextfolder>
+		<folder>المصدر - لا تستخدمه</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>مجلد السمة - افتراضي</intheme>
+		<extfolder>مجلد خارجي</extfolder>
+		<extfoldergametheme>المصدر - سمة خاصة بالألعاب</extfoldergametheme>
+		<extfoldergamemedia>المصدر - وسائط الألعاب خارج gamelist.xml</extfoldergamemedia>
+		<extfoldervideosyst>المصدر - سمة خاصة بالأنظمة</extfoldervideosyst>
+		<extfolderbezelsyst>المصدر - إطارات (bezel) الأنظمة</extfolderbezelsyst>
+		<extfoldermanufacturer>المصدر - شعارات ناشري الألعاب</extfoldermanufacturer>
+		<extfolderfanart>المصدر - فان آرت الأنظمة</extfolderfanart>
+		<extfolderlogosyst>المصدر - شعار النظام</extfolderlogosyst>
+		<extfoldercouleursinfos>المصدر - نمط معلومات الألعاب</extfoldercouleursinfos>
+		<extfolderthumbox>المصدر - علب الألعاب 2D/3D</extfolderthumbox>
+		<extfoldergamefanart>المصدر - فان آرت الألعاب</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- الوسائط الموصى بها لعرض ألعاب Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ بداية الخيارات المتقدمة الخاصة بعرض FanartStar boxart ↓   -------------------</mediastar>
+		<spacebox>المسافة بين علب الألعاب</spacebox>
+		<spacessssmall>مسافة ----</spacessssmall>
+		<spacesssmall>مسافة ---</spacesssmall>
+		<spacessmall>مسافة --</spacessmall>
+		<spacesmall>مسافة -</spacesmall>
+		<spacenorm>افتراضي</spacenorm>
+		<spacemore>مسافة +</spacemore>
+		<spacemmore>مسافة ++</spacemmore>
+		<spacemmmore>مسافة +++</spacemmmore>
+		<spacemmmmore>مسافة ++++</spacemmmmore>
+		<fanartstarrotated>تدوير علب SNES وN64 وNGAGE وSolarus</fanartstarrotated>
+		<starrotate>نعم</starrotate>
+		<nostarrotate>لا</nostarrotate>
+		<boxstarspeed>سرعة حركة التمرير</boxstarspeed>
+		<speedslow1>بطيء+</speedslow1>
+		<speedslow2>بطيء++</speedslow2>
+		<customfanart>الفان آرت المستخدمة</customfanart>
+		<fanartgamelist>فان آرت من scrap في gamelist</fanartgamelist>
+		<fanartcustom>فان آرت مخصصة في _Gamemedia-SystemName-medium_artwork</fanartcustom>
+		<starboxang>زاوية علب الألعاب</starboxang>
+		<starthumb>عرض أغلفة 2D أم 3D؟</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>حجم فيديو المعاينة</starvideo>
+		<starvideoang>مائل</starvideoang>
+		<starvideodef>قياسي</starvideodef>
+		<starvideobig>كبير</starvideobig>
+		<longselect>ضغطة طويلة على "select"</longselect>
+		<favuniquement>المفضلة فقط</favuniquement>
+		<tslesjeux>كل الألعاب</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>نسبة الشاشة</screenratio>
+		<ratio1610>16/10 (تجريبي)</ratio1610>
+		<ratio43>4/3 (تجريبي)</ratio43>
+		<cadrevideosyst>إطار فيديو النظام</cadrevideosyst>
+		<cadreorigine>الأصلي (bezel)</cadreorigine>
+		<cadrebordure>حافة</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - الترحيب والشكر</planche00>
+		<planche01>01 - كيف أنقل سماتي المخصصة</planche01>
+		<planche02>02 - كيف أخصص سماتي 1/2</planche02>
+		<planche03>03 - إطار فيديو النظام</planche03>
+		<planche04>04 - كيف أخصص سماتي 2/2</planche04>
+		<planche05>05 - تنزيل السمات</planche05>
+		<planche06>06 - إضافة سمة نظام</planche06>
+		<planche07>07 - إضافة سمة لعبة</planche07>
+		<planche08>08 - محررات السمات</planche08>
+		<planche09>09 - علبة ثنائية أو ثلاثية الأبعاد والكشط</planche09>
+		<planche10>10 - مسار التنقل والتنقل بالحروف</planche10>
+		<planche11>11 - نمط معلومات الألعاب</planche11>
+		<planche12>12 - شاشة 4:3 أو 16:10</planche12>
+		<planche13>13 - روابط لتنزيل المزيد من السمات والأعمال الفنية</planche13>
+	</variables>
+</theme>

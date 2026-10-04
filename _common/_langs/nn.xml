@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="nn">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Ja</yes>
+		<no>Nei</no>
+		<desactive>Av</desactive>
+		<activate>På</activate>
+		<actif>På</actif>
+		<active>På</active>
+		<deactive>Av</deactive>
+		<vide>   </vide>
+		<default>Standard</default>
+		<amoitie>delvis</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Tilgjengelege språk:</languesdispo>
+		<nodates>Ingen dato</nodates>
+		<playcount>spela</playcount>
+		<playcountone>spela</playcountone>
+		<players>spelar(ar)</players>
+		<playerss>spelarar</playerss>
+		<player>spelar</player>
+		<nogametime>Aldri spela</nogametime>
+		<noplayerdata>Ukjend</noplayerdata>
+		<noratings>Inga vurdering</noratings>
+		<lastgamelabel>Sist spela:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Neste spel</jeusuiv>
+		<jeuprec>Førre spel</jeuprec>
+		<systsuiv>Neste system</systsuiv>
+		<systprec>Førre system</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Velkomstmelding</lismoi>
+		<tumasbienlu>Velkomen og takk</tumasbienlu>
+		<deporttheme>Korleis flytte mine eigne tema</deporttheme>
+		<customiztheme1>Korleis tilpasse mine tema 1/2</customiztheme1>
+		<customiztheme2>Korleis tilpasse mine tema 2/2</customiztheme2>
+		<downloadmore>Lenkjer for å laste ned fleire tema og artworks</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Vising for systemlista</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Enkel rutenettvising</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart svært lett</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Test medium dine</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>Still inn SCRAP - Fanart-struktur?</packcustombuild>
+		<packcustombuildsno>Fanart med suffikset "-fanart" (standard)</packcustombuildsno>
+		<packretrofreshbat>Fanart med suffikset "-image"</packretrofreshbat>
+		<scrap3dbox>Still inn scrape - 3D-boksstruktur?</scrap3dbox>
+		<scrapedboxart>3D-boks med "-boxart" i gamelist</scrapedboxart>
+		<scrapedthumbnail>3D-boks med "-thumbnail" i gamelist</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Hjelp - Utsjånad på hjelpeikona</iconset>
+		<iconsetposition>Plasseringa til knappane</iconsetposition>
+		<colorhelp>Hjelp - Fargar på hjelpeteksten</colorhelp>
+		<skyblue>himmelblå</skyblue>
+		<standard>Standard</standard>
+		<purple>fiolett</purple>
+		<red>raud</red>
+		<aqua>himmelblå</aqua>
+		<orange>oransje</orange>
+		<green>grøn</green>
+		<yellow>gul</yellow>
+		<pink>rosa</pink>
+		<grey>mørkegrå</grey>
+		<lightgrey>lysegrå</lightgrey>
+		<navy>blå alt</navy>
+		<violet>fiolett</violet>
+		<candy>candy</candy>
+		<redalt>raud alt</redalt>
+		<yellowalt>gul alt</yellowalt>
+		<greenalt>grøn alt</greenalt>
+		<purplealt>fiolett alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Systemvising - Type systemlogoar</systviewlogos>
+		<logosimple>Enkel logo (Fullstendig + Region)</logosimple>
+		<glassnekhros>Glass-logo (Fullstendig + Region) (By Nekhros)</glassnekhros>
+		<logobd>Teikneserielogo (Helmic)</logobd>
+		<logoovalcarb>Oval logo Carbon</logoovalcarb>
+		<hmaxovalsilver>Oval logo Silver</hmaxovalsilver>
+		<logorectfresh>Rektangulær logo Team Freshone (eksterne pakke)</logorectfresh>
+		<hmaxrectrefl>Rektangulær logo med refleks Team Freshone (eksterne pakke)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Systemvising - Systemlista vert tona ut</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Systemvising - Val av fanarts for systemet</systviewfanart>
+		<fanartfreshone>Berre fanarts valde av FreshOne</fanartfreshone>
+		<fanartsystcustom>Eigne fanarts, elles FreshOne-fanart</fanartsystcustom>
+		<fanfondsystem>Systembakgrunn, elles FreshOne-fanart</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Systemvising - Animert systempresentasjon</systviewvideo>
+		<hyperspinorunified>ADDON: Dynamisk HS, elles einskapleg HS</hyperspinorunified>
+		<gameplayp1>Liten tilfeldig gameplayvideo med bezel om tilgjengeleg</gameplayp1>
+		<gameplay1>Stor tilfeldig gameplayvideo med bezel om tilgjengeleg</gameplay1>
+		<gameplayp>Liten tilfeldig gameplayvideo</gameplayp>
+		<gameplay>Stor tilfeldig gameplayvideo</gameplay>
+		<custom>Eigen video frå custom-mappa</custom>
+		<hyperspinxp>ADDON: Bilete og gameplay i dynamisk Hyperspin-stil</hyperspinxp>
+		<hyperspin>ADDON: Bilete og gameplay i einskapleg Hyperspin-stil</hyperspin>
+		<hyperspinorder>ADDON: Dynamisk HS, elles Hyperpie-video</hyperspinorder>
+		<hyperpie>ADDON: Hyperpie-video, elles Unified-video om tilgjengeleg</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Systemvising - Vis talet på spel i systemet</systviewtotal>
+		<nbrjeux>enkelt tal på spel</nbrjeux>
+		<nbrjeux2>systemnamn og tal på spel</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Vising av brødsmulesti</menuofficiel>
+		<menutxt>Offisiell maskinvaresortering: horisontal tekst</menutxt>
+		<menuorb>Offisiell maskinvaresortering: horisontal kule</menuorb>
+		<menuorbvert>Offisiell maskinvaresortering: vertikal kule</menuorbvert>
+		<menuorbcrcl>Offisiell maskinvaresortering: halvsirkelkule</menuorbcrcl>
+		<menucust>Bob si eiga maskinvaresortering: horisontal tekst</menucust>
+		<menucustorb>Bob si eiga maskinvaresortering: horisontal kule</menucustorb>
+		<menucustorbvert>Bob si eiga maskinvaresortering: vertikal kule</menucustorbvert>
+		<menucustorbcrcl>Bob si eiga maskinvaresortering: halvsirkelkule</menucustorbcrcl>
+		<menutxtzspin>Offisiell maskinvaresortering: vertikal tekst</menutxtzspin>
+		<menutxtzspincust>Bob si eiga maskinvaresortering: vertikal tekst</menutxtzspincust>
+		<menuteta>Offisiell maskinvaresortering: Tetanos</menuteta>
+		<menucustteta>Bob si eiga maskinvaresortering: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Hyperbat-systemvising - Animert hjelp</sticksysteme>
+		<systballblue>Blå stikke</systballblue>
+		<systballcyan>Cyan stikke</systballcyan>
+		<systballdarkviolet>Mørkfiolett stikke</systballdarkviolet>
+		<systballviolet>Fiolett stikke</systballviolet>
+		<systballgreen>Grøn stikke</systballgreen>
+		<systballlitegreen>Lysegrøn stikke</systballlitegreen>
+		<systballpink>Rosa stikke</systballpink>
+		<systballred>Raud stikke</systballred>
+		<systballyelgreen>Gulgrøn stikke</systballyelgreen>
+		<systballyellow>Gul stikke</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Hyperbat-systemvising - Menytype</hyperwheel>
+		<spindr>Bøygd hjul til høgre (Hyperspin)</spindr>
+		<verticaldr>Vertikalt hjul til høgre (Hyperspin)</verticaldr>
+		<verticaldreb>Vertikalt hjul til høgre (Emubox)</verticaldreb>
+		<spingh>Bøygd hjul til venstre (Hyperspin)</spingh>
+		<verticalgh>Vertikalt hjul til venstre (Hyperspin)</verticalgh>
+		<verticalgheb>Vertikalt hjul til venstre (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Boksseljar Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Boksseljar Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Boksseljar Hyperspin Chris (under arbeid)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Spelvising - Gjeldande system ved opning?</systannounce>
+		<classiquesyst>Uttoning med utzooming</classiquesyst>
+		<nomsystem2>Sakte inngang (toning + zoom)</nomsystem2>
+		<nomsystem3>Raskt blink (utzooming)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Spelvising - Bakgrunn på kvar spellogo?</gwheelbackgr>
+		<sisaccades>Av</sisaccades>
+		<ovalcarbon>Oval carbon (automatisk generert)</ovalcarbon>
+		<ovalsilver>Oval silver (automatisk generert)</ovalsilver>
+		<rectcarbon>Rektangel carbon (automatisk generert)</rectcarbon>
+		<rectcompose>Eige rektangel per system (autogenerert)</rectcompose>
+		<ovalcompose>Eigen oval carbon per system (autogenerert)</ovalcompose>
+		<logounified>Logo i einskapleg storleik</logounified>
+		<hfsround>Rund Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Spelvising - Navigering etter bokstav (spel)?</letternav>
+		<navhoricoinstyle>Horisontalt alfabet</navhoricoinstyle>
+		<navvertcoinstyle>Vertikalt alfabet til venstre</navvertcoinstyle>
+		<navvertrcoinstyle>Vertikalt alfabet til høgre</navvertrcoinstyle>
+		<navhsletters>Bokstav stilisert per system</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Spelvising - Vis maksimal info?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Start på avanserte alternativ for Hyperbat-visingane ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Medium som trengst for Hyperbat-spelvisinga = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Generisk speltema (om det ikkje finst noko tema)</defaultgeneric>
+		<videodefaut>Standardvideo for generisk tema (utan skjermbilete eller video)</videodefaut>
+		<generic43boxback>Standard med montasje av bak- og framsida på boksen</generic43boxback>
+		<generic43coinopsstyle>Samling av arkadeskap</generic43coinopsstyle>
+		<generic43noanimationfanart>Standard med animert fanart-bakgrunn</generic43noanimationfanart>
+		<generic43noanimation>Standard utan boxart-animasjon</generic43noanimation>
+		<generic43>Standard</generic43>
+		<jukeboxdef>CD-utsjånad (ikkje ferdig)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Speltema: Kjeldesystem</gameviewsource>
+		<mamefolder>Den opphavlege mappa til spelet først, deretter mame-mappa</mamefolder>
+		<actualsystem>Mappa til det valde systemet først</actualsystem>
+		<genericstyleonly>Bruk berre det generiske speltemaet</genericstyleonly>
+		<groupedsystem>Berre utviklartest: ikkje bruk</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Speltema: Forfattar</authordisplayed>
+		<showoff>På, høg synlegheit</showoff>
+		<showoffblackwhite>På, maksimal synlegheit</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Spellista vert tona ut</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Lyd ved rulling</gamewheelsound>
+		<wheelclic>Klikk i Hyperspin-stil</wheelclic>
+		<bulle>Boble</bulle>
+		<clic>Enkelt klikk</clic>
+		<clicgrave>Djupt klikk</clicgrave>
+		<frottement>Gnissing</frottement>
+		<poc>Plopp</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Utsjånad - Vignetteffekt</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Utsjånad - Vignett i systemvisinga</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Utsjånad - Gjer bakgrunnen mørkare (systemvising)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>UTSJÅNAD - Val av animert stikke</syststickon>
+		<stickon>Klassisk arkade</stickon>
+		<syststickcolor>UTSJÅNAD - Farge på kula til stikka</syststickcolor>
+		<ballcyan>Cyan</ballcyan>
+		<ballblue>Blå</ballblue>
+		<balldarkviolet>Mørkfiolett</balldarkviolet>
+		<ballviolet>Fiolett</ballviolet>
+		<ballgreen>Grøn</ballgreen>
+		<balllitegreen>Lysegrøn</balllitegreen>
+		<ballpink>Rosa</ballpink>
+		<ballred>Raud</ballred>
+		<ballyelgreen>Gulgrøn</ballyelgreen>
+		<ballyellow>Gul</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Utsjånad for press start</pressstart>
+		<doigts>Animert finger som trykkjer på ein knapp</doigts>
+		<undoigt>Animert finger som trykkjer på ein knapp, berre til venstre</undoigt>
+		<undoigtr>Animert finger som trykkjer på ein knapp, berre til høgre</undoigtr>
+		<pressstarttxt>METADATA - Val av tekst</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Gratis spel</partiegratuite>
+		<uneuro>1€ per spel</uneuro>
+		<sitessage>Trykk Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Konfigurasjon av metadata</hsmetadata>
+		<full>Fullstendig, standardplassering</full>
+		<lower>Fullstendig, lågaste plassering</lower>
+		<metafichedefault>Metadatakort i standardplassering</metafichedefault>
+		<metafichebasgauche>Metadatakort nede til venstre</metafichebasgauche>
+		<metafichebasdroite>Metadatakort nede til høgre</metafichebasdroite>
+		<metafichebascentre>Metadatakort nede i midten</metafichebascentre>
+		<metafichehautgauche>Metadatakort oppe til venstre</metafichehautgauche>
+		<metafichehautdroite>Metadatakort oppe til høgre</metafichehautdroite>
+		<metafichehautcentre>Metadatakort oppe i midten</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Vis tema per spel?</hyperbatperview>
+		<themejeux>Tema per spel først om tilgjengeleg</themejeux>
+		<themejeuxno>Slå av tema per spel</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Utsjånad - Mjuk overgang mellom speltema</smoothgametheme>
+		<activesmooth>På (tilrådd for Retrobat)</activesmooth>
+		<noactivesmooth>Av (tilrådd for Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Systempeikarar i Hyperspin-stil</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Tilpassing av scrap for kompatible tema ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Spelboks som skal visast</boxorthumb>
+		<boxart>Kalibrert for 3D-boks</boxart>
+		<thumb>Kalibrert for 2D-boks</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Avansert konfigurasjon: Endre kjeldemappa for medium --------------------------------------------------------</spacerextfolder>
+		<folder>Kjelde - ikkje bruk</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Temamappe - Standard</intheme>
+		<extfolder>Ekstern mappe</extfolder>
+		<extfoldergametheme>Kjelde - Spelspesifikt tema</extfoldergametheme>
+		<extfoldergamemedia>Kjelde - Spelmedium utanfor gamelist.xml</extfoldergamemedia>
+		<extfoldervideosyst>Kjelde - Systemspesifikt tema</extfoldervideosyst>
+		<extfolderbezelsyst>Kjelde - Bezels for systema</extfolderbezelsyst>
+		<extfoldermanufacturer>Kjelde - Logoane til spelutgjevarane</extfoldermanufacturer>
+		<extfolderfanart>Kjelde - Fanart for systema</extfolderfanart>
+		<extfolderlogosyst>Kjelde - Systemlogo</extfolderlogosyst>
+		<extfoldercouleursinfos>Kjelde - Stil for spelinfo</extfoldercouleursinfos>
+		<extfolderthumbox>Kjelde - 2D/3D-spelboksar</extfolderthumbox>
+		<extfoldergamefanart>Kjelde - Fanart for spela</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Tilrådde medium for spelvisinga Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ Start på avanserte alternativ for visinga FanartStar boxart ↓   -------------------</mediastar>
+		<spacebox>Avstand mellom spelboksane</spacebox>
+		<spacessssmall>Avstand ----</spacessssmall>
+		<spacesssmall>Avstand ---</spacesssmall>
+		<spacessmall>Avstand --</spacessmall>
+		<spacesmall>Avstand -</spacesmall>
+		<spacenorm>Standard</spacenorm>
+		<spacemore>Avstand +</spacemore>
+		<spacemmore>Avstand ++</spacemmore>
+		<spacemmmore>Avstand +++</spacemmmore>
+		<spacemmmmore>Avstand ++++</spacemmmmore>
+		<fanartstarrotated>Rotasjon av boksane SNES, N64, NGAGE, Solarus</fanartstarrotated>
+		<starrotate>Ja</starrotate>
+		<nostarrotate>Nei</nostarrotate>
+		<boxstarspeed>Fart på rulleanimasjonen</boxstarspeed>
+		<speedslow1>Sakte+</speedslow1>
+		<speedslow2>Sakte++</speedslow2>
+		<customfanart>Fanarts som skal brukast</customfanart>
+		<fanartgamelist>Scrapa fanart i gamelist</fanartgamelist>
+		<fanartcustom>Eigen fanart i _Gamemedia-Systemnamn-medium_artwork</fanartcustom>
+		<starboxang>Vinkel på spelboksane</starboxang>
+		<starthumb>Vis 2D- eller 3D-omslag?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Storleik på førehandsvisingsvideoen</starvideo>
+		<starvideoang>Skråstilt</starvideoang>
+		<starvideodef>Standard</starvideodef>
+		<starvideobig>Stor</starvideobig>
+		<longselect>Langt trykk på "select"</longselect>
+		<favuniquement>Berre favorittar</favuniquement>
+		<tslesjeux>Alle spel</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Skjermforhold</screenratio>
+		<ratio1610>16/10 (eksperimentell)</ratio1610>
+		<ratio43>4/3 (eksperimentell)</ratio43>
+		<cadrevideosyst>Ramme for systemvideoar</cadrevideosyst>
+		<cadreorigine>Original (bezel)</cadreorigine>
+		<cadrebordure>Kant</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Velkomen og takk</planche00>
+		<planche01>01 - Korleis flytte mine eigne tema</planche01>
+		<planche02>02 - Korleis tilpasse mine tema 1/2</planche02>
+		<planche03>03 - Ramme for systemvideoar</planche03>
+		<planche04>04 - Korleis tilpasse mine tema 2/2</planche04>
+		<planche05>05 - Laste ned tema</planche05>
+		<planche06>06 - Leggje til eit systemtema</planche06>
+		<planche07>07 - Leggje til eit speltema</planche07>
+		<planche08>08 - Temaredigerarane</planche08>
+		<planche09>09 - 2D- eller 3D-boks og skraping</planche09>
+		<planche10>10 - Brødsmulesti og bokstavnavigering</planche10>
+		<planche11>11 - Stil for spelinfo</planche11>
+		<planche12>12 - 4:3- eller 16:10-skjerm</planche12>
+		<planche13>13 - Lenkjer for å laste ned fleire tema og artworks</planche13>
+	</variables>
+</theme>

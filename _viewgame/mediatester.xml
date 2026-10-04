@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme defaultView="hyperbat">
+	<formatVersion>7</formatVersion>
+	<variables>
+		<!-- Variables utilisees dans ce fichier (definitions reprises de theme.xml) -->
+		<!-- <bobmediapath>${themePath}/../_bobmedia</bobmediapath> -->
+		<extgamescreenjpg>("${path_game_media}/"  + ({game:system:theme}) + "/screenshots/" + stem({game:rom}) + ".jpg")</extgamescreenjpg>
+		<globalgamecabs>"${path_game_media}/" + ({game:system:theme}) + "/cabs/" + stem({game:rom}) + ".png"</globalgamecabs>
+		<intcoinopscollec>firstfile( "${path_game_media}/" + ({game:system:theme}) + "/cabs/" + stem({game:rom}) + ".png",
+					"${path_game_media}/" + ({game:system:theme}) + "/cabs/_"  + ({game:system:theme}) + ".png",
+					"${path_game_media}/_systemcoinops/"  + ({game:system:theme}) + ".png",
+					"${path_game_media}/_defaultgamemedia/cabs/default.png")
+		</intcoinopscollec>
+		<intcoinopsnext>("${themePath}/_viewgame/coinops/coinopsnext/"  + ({game:system:theme}) + ".png")</intcoinopsnext>
+	</variables>
+	<customView name="mediatester" displayName="${mediatester}" inherits="gamecarousel">
+		<control name="screenshot_extra,video_extra,fanart_extra">
+			<visible>false</visible>
+		</control>
+		<!-- <rating name="md_rating"> -->
+		<!-- <visible>false</visible> -->
+		<!-- </rating> -->
+		<video name="md_video">
+			<visible>false</visible>
+		</video>
+		<image name="fanart_extra" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="md_image" extra="true">
+			<visible>false</visible>
+		</image>
+		<gamecarousel name="gamecarousel">
+			<zIndex>501</zIndex>
+			<type>vertical_wheel</type>
+			<pos>0.415 0</pos>
+			<size>0.8 1</size>
+			<logoScale>1.4</logoScale>
+			<logoSize>0.150 0.260</logoSize>
+			<color>00000000</color>
+			<maxLogoCount>8</maxLogoCount>
+			<logoRotation>-4.5</logoRotation>
+			<logoRotationOrigin>6 0.5</logoRotationOrigin>
+			<logoAlignment>center</logoAlignment>
+			<imageSource>marquee</imageSource>
+			<defaultTransition>instant</defaultTransition>
+			<minLogoOpacity>1</minLogoOpacity>
+			<transitionSpeed>350</transitionSpeed>
+			<scrollSound ifSubset="gamewheelsound:bulle">${path_common}/scrollsound/bulle.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clic">${path_common}/scrollsound/clic.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:clicgrave">${path_common}/scrollsound/clicgrave.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:frottement">${path_common}/scrollsound/frottement.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:poc">${path_common}/scrollsound/poc.wav</scrollSound>
+			<scrollSound ifSubset="gamewheelsound:wheelclic">${path_common}/scrollsound/wheelclic.wav</scrollSound>
+			<itemTemplate>
+				<container>
+					<image name="marquee">
+						<visible>!{game:folder} || ({game:folder} &amp;&amp; {game:stem} != {game:system:theme})</visible>
+						<pos>0.5</pos>
+						<origin>0.5</origin>
+						<maxSize>1</maxSize>
+						<path>firstfile({game:marquee},"${path_syst_logo}/folderlogos/" + {game:stem} + ".png")</path>
+						<zIndex>99</zIndex>
+						<opacity>1</opacity>
+						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+					</image>
+					<image name="logosystfolder">
+						<visible>{game:folder} &amp;&amp; {game:stem} == {game:system:theme}</visible>
+						<pos>0.5</pos>
+						<origin>0.5</origin>
+						<maxSize>1</maxSize>
+						<path>firstfile(
+						"${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + "-" + ({game:region}) + ".png",
+						"${path_syst_logo}/clearlogos/"  + ({game:system:theme}) + ".png")</path>
+						<zIndex>99</zIndex>
+						<opacity>1</opacity>
+						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+					</image>
+					<text name="gamename">
+						<visible>
+							( (!{game:folder} || ({game:folder} &amp;&amp; {game:stem} != {game:system:theme})) &amp;&amp; !exists({game:marquee}) &amp;&amp; !exists("${path_syst_logo}/folderlogos/" + {game:stem} + ".png") )
+							||
+							( ({game:folder} &amp;&amp; {game:stem} == {game:system:theme}) &amp;&amp; !exists("${path_syst_logo}/clearlogos/" + {game:system:theme} + "-" + {game:region} + ".png") &amp;&amp; !exists("${path_syst_logo}/clearlogos/" + {game:system:theme} + ".png") )
+						</visible>
+						<text>{game:name}</text>
+						<fontPath>${fontimpact}</fontPath>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<fontSize>0.028</fontSize>
+						<lineSpacing>1</lineSpacing>
+						<size>0.77 0.5</size>
+						<pos>0.115 0.25</pos>
+						<glowColor>00000066</glowColor>
+						<glowSize>2</glowSize>
+						<zIndex>400</zIndex>
+						<multiLine>true</multiLine>
+						<storyboard event="activate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:amoitie">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0.3" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="activate" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+						<storyboard event="deactivate" ifSubset="gamewheelfade:activate">
+							<animation property="zIndex" to="10" begin="500" duration="" mode="Linear"/>
+							<animation property="opacity" from="1" to="0" begin="1000" duration="250" mode="Linear"/>
+						</storyboard>
+					</text>
+				</container>
+			</itemTemplate>
+		</gamecarousel>
+		<image name="gamecarouselLogo">
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<text name="gamecarouselLogoText">
+			<color>FFFFFFFF</color>
+			<glowColor>000000FF</glowColor>
+			<glowSize>3</glowSize>
+			<lineSpacing>1.0</lineSpacing>
+			<fontSize>0.025</fontSize>
+		</text>
+		<text name="gamename" extra="true">
+			<visible ifSubset="hsmetadata:deactivate|metafichedefault|metafichebasgauche|metafichebasdroite|metafichebascentre|metafichehautgauche|metafichehautdroite|metafichehautcentre">false</visible>
+			<visible ifSubset="hsmetadata:full">true</visible>
+			<text>{game:name}</text>
+			<alignment>left</alignment>
+			<multiLine>true</multiLine>
+			<fontPath>${fonttmonmonsori}</fontPath>
+			<color>f0f000</color>
+			<glowColor>0c002e</glowColor>
+			<glowSize>1.5</glowSize>
+			<glowOffset>2</glowOffset>
+			<zIndex>290</zIndex>
+			<fontSize>0.04</fontSize>
+			<size>0.5 0.1</size>
+			<pos>0.425 0.05</pos>
+		</text>
+		<image name="background" extra="true">
+			<path>${path_vgame}/mediatester/Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+			<scaleOrigin>0 -0.3</scaleOrigin>
+		</image>
+		<image name="boxart_placeholder" extra="true">
+			<path ifSubset="scrap3dbox:scrapedthumbnail">{game:thumbnail}</path>
+			<path ifSubset="scrap3dbox:scrapedboxart">{game:boxart}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.551230073640 0.39</pos>
+			<maxSize>0.104166666667 0.11</maxSize>
+			<zIndex>210</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="thumbnail_placeholder" extra="true">
+			<path ifSubset="scrap3dbox:scrapedthumbnail">{game:boxart}</path>
+			<path ifSubset="scrap3dbox:scrapedboxart">{game:thumbnail}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.88 0.243342863068</pos>
+			<maxSize>0.166666666667 0.1</maxSize>
+			<zIndex>220</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_cartridge_placeholder" extra="true">
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.76 0.245269288788</pos>
+			<maxSize>0.104166666667 0.1</maxSize>
+			<zIndex>230</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="boxback" extra="true">
+			<path>{game:boxback}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.469970270074 0.39</pos>
+			<maxSize>0.09 0.1</maxSize>
+			<zIndex>240</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="marquee" extra="true">
+			<path>{game:marquee}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.470596716507 0.241693445549</pos>
+			<maxSize>0.081189747515 0.072168664458</maxSize>
+			<zIndex>250</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="fanart" extra="true">
+			<path ifSubset="custombuilds:standardbuilds">{game:fanart}</path>
+			<path ifSubset="custombuilds:retrofreshbat">{game:image}</path>
+			<!-- <path>{game:fanart}</path> -->
+			<origin>0.5 0.5</origin>
+			<pos>0.575 0.239478723252</pos>
+			<size>0.073511689299 0.073511689299</size>
+			<zIndex>260</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="imagescreenshot" extra="true">
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.67 0.243481459345</pos>
+			<size>0.056074107279 0.074765476372</size>
+			<zIndex>270</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<!-- Media externe contenus dans Bobmedia	 -->
+		<image name="extgame3dboxtester" extra="true">
+			<path>${extgame3dbox}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.75 0.39</pos>
+			<maxSize>0.104166666667 0.11</maxSize>
+			<zIndex>270</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="extgamescreenjpgtester" extra="true">
+			<path>${extgamescreenjpg}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.83 0.39</pos>
+			<maxSize>0.104166666667 0.1</maxSize>
+			<zIndex>270</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<video name="extgamevideotester" extra="true">
+			<path>${extgamevideo}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.91 0.39</pos>
+			<maxSize>0.104166666667 0.1</maxSize>
+			<zIndex>270</zIndex>
+		</video>
+		<image name="systfond" extra="true">
+			<path>firstfile(  "${path_game_media}/" + ({game:system:theme}) + "/cabs/" + stem({game:rom}) + ".png",
+					"${path_game_media}/" + ({game:system:theme}) + "/cabs/_"  + ({game:system:theme}) + ".png",
+					"${path_game_media}/_systemcoinops/"  + ({game:system:theme}) + ".png")</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.66 0.39</pos>
+			<maxSize>0.1 0.1</maxSize>
+			<zIndex>280</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>290</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>290</zIndex>
+		</image>
+		<text name="consolesys" extra="true" zIndex="5000" fontPath="${path_vgame}/mediatester/TmonMonsori.ttf" fontSize="0.012" size="1 1" alignment="left" verticalAlignment="top" pos="0.48 0.575" color="ffd13b" glowColor="000000" glowOffset="0" glowSize="4">
+			<text>
+INFOS ET CHEMINS ISSUS DE LA GAMELIST.XML :
+
+File: {game:rom}
+Tag: {game:tags} - Family: {game:family} - Lang: {game:lang}
+
+Marquee :{game:marquee}
+Fanart : {game:fanart}
+Image : {game:image}
+Cartridge : {game:cartridge}
+Thumbnail : {game:thumbnail}
+Boxback : {game:boxback}
+Boxart : {game:boxart}
+		</text>
+		</text>
+		<text name="bobmediapath" extra="true" zIndex="5000" fontPath="${path_vgame}/mediatester/TmonMonsori.ttf" fontSize="0.012" size="1 1" alignment="left" verticalAlignment="top" pos="0.37 0.86" color="ffd13b" glowColor="000000" glowOffset="0" glowSize="4">
+			<!-- <visible>exist(  "${path_game_media}/" + ({game:system:theme}) + "/cabs/" + stem({game:rom}) + ".png", -->
+			<!-- "${path_game_media}/" + ({game:system:theme}) + "/cabs/_"  + ({game:system:theme}) + ".png", -->
+			<!-- "${path_game_media}/_systemcoinops/"  + ({game:system:theme}) + ".png")</visible> -->
+			<text>
+Mettre tes custom ici / Put Customs Here :
+Custom Systems - ${path_game_media}_systemcoinops/{game:system:theme}.png
+Cabs - ${path_game_media}{game:system:theme}/cabs/{game:stem}.png
+3D Box - ${path_game_media}{game:system:theme}/3dbox/{game:stem}.png
+Screenshots - ${path_game_media}{game:system:theme}/screenshots/{game:stem}.jpg
+Video - ${path_game_media}{game:system:theme}/video/{game:stem}.avi
+</text>
+		</text>
+	</customView>
+</theme>

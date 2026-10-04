@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme defaultView="hyperbat">
+	<!-- <theme> -->
+	<formatVersion>7</formatVersion>
+	<variables>
+		<!-- <bobmediapath ifSubset="folder:bobmedia">${themePath}/../_bobmedia</bobmediapath> -->
+		<!-- <bobmediapath ifSubset="folder:default">${themePath}</bobmediapath> -->
+		<bobmediapath>${themePath}</bobmediapath>
+		<path_game_theme ifSubset="extfoldergametheme:extfolder">${themePath}/../_bobmedia/_gametheme</path_game_theme>
+		<path_game_theme ifSubset="extfoldergametheme:intheme">${themePath}/_gametheme</path_game_theme>
+		<path_syst_theme ifSubset="extfoldervideosyst:extfolder">${themePath}/../_bobmedia/_systemmedia/videosyst</path_syst_theme>
+		<path_syst_theme ifSubset="extfoldervideosyst:intheme">${themePath}/_systemmedia/videosyst</path_syst_theme>
+		<path_game_media ifSubset="extfoldergamemedia:extfolder">${themePath}/../_bobmedia/_gamemedia/</path_game_media>
+		<path_game_media ifSubset="extfoldergamemedia:intheme">${themePath}/_gamemedia/</path_game_media>
+		<path_game_manuf ifSubset="extfoldermanufacturer:extfolder">${themePath}/../_bobmedia/_gamemedia/_manufacturer</path_game_manuf>
+		<path_game_manuf ifSubset="extfoldermanufacturer:intheme">${themePath}/_gamemedia/_manufacturer</path_game_manuf>
+		<path_syst_logo ifSubset="extfolderlogosyst:extfolder">${themePath}/../_bobmedia/_systemmedia/_logosyst</path_syst_logo>
+		<path_syst_logo ifSubset="extfolderlogosyst:intheme">${themePath}/_systemmedia/_logosyst</path_syst_logo>
+		<path_syst_fanart ifSubset="extfolderfanart:extfolder">${themePath}/../_bobmedia/_systemmedia/_fanartsysteme</path_syst_fanart>
+		<path_syst_fanart ifSubset="extfolderfanart:intheme">${themePath}/_systemmedia/_fanartsysteme</path_syst_fanart>
+		<path_syst_bezel ifSubset="extfolderbezelsyst:extfolder">${themePath}/../_bobmedia/_systemmedia/bezelsyst</path_syst_bezel>
+		<path_syst_bezel ifSubset="extfolderbezelsyst:intheme">${themePath}/_systemmedia/bezelsyst</path_syst_bezel>
+		<path_couleurs_infos ifSubset="extfoldercouleursinfos:extfolder">${themePath}/../_bobmedia/_common</path_couleurs_infos>
+		<path_couleurs_infos ifSubset="extfoldercouleursinfos:intheme">${themePath}/_common</path_couleurs_infos>
+		<!-- <path_com_shaders ifSubset="extfoldershaders:extfolder">${themePath}/../_bobmedia/_common/shaders</path_com_shaders> -->
+		<!-- <path_com_shaders ifSubset="extfoldershaders:intheme">${themePath}/_common/shaders</path_com_shaders> -->
+		<path_com_shaders>${themePath}/_common/shaders</path_com_shaders>
+		<!-- ###### Dossiers d'interface du theme : 1 variable par dossier ###### -->
+		<path_common>${themePath}/_common</path_common>
+		<path_sysmedia>${themePath}/_systemmedia</path_sysmedia>
+		<path_vgameopt>${themePath}/_viewgameoption</path_vgameopt>
+		<path_vgame>${themePath}/_viewgame</path_vgame>
+		<path_vsystopt>${themePath}/_viewsystoption</path_vsystopt>
+		<path_vsyst>${themePath}/_viewsyst</path_vsyst>
+	</variables>
+	<variables>
+		<!-- #### System ################################################################################################################################################################# -->
+		<!-- Utilisé par Hyperbat : nouveau dans standalone -->
+		<firstbackgrsyst>firstfile(
+			"${path_game_theme}/" + stem({game:system:theme}) + "/hyperbat/_default/" + {game:system:theme} + "-" + {game:region} + ".png",
+			"${path_game_theme}/" + stem({game:system:theme}) + "/hyperbat/_default/defautback.png")</firstbackgrsyst>
+		<!-- Utilisé par Hyperbat et Fanartstar -->
+		<extmanufacturer>"${path_game_manuf}/" + {game:publisher} + ".png"</extmanufacturer>
+		<!-- Condition si aucun thème pour ce jeu n'existe -->
+		<IfnoextGamethemeexist>!exists("${path_game_theme}/${system.theme}/hyperbat/" + stem({game:rom}) + "/theme.xml")</IfnoextGamethemeexist>
+		<Ifnosystemdefautexist>!exists("${path_game_theme}/${system.theme}/hyperbat/_default/theme.xml")</Ifnosystemdefautexist>
+		<!-- System Chemin pour les logo système clear de base -->
+		<intlogoclearallregion>firstfile(
+                    "${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.png",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+					"${path_syst_logo}/clearlogos/lang-${lang}/" + {system:theme} + "-${lang}.svg",
+					"${path_syst_logo}/clearlogos/region-${region}/" + {system:theme} + "-${region}.svg",
+					"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</intlogoclearallregion>
+		<intlogoclearpng>${path_syst_logo}/clearlogos/${system.theme}.png</intlogoclearpng>
+		<intlogoclearfrpng>${path_syst_logo}/clearlogos/${system.theme}-fr.png</intlogoclearfrpng>
+		<intlogoclearuspng>${path_syst_logo}/clearlogos/${system.theme}-us.png</intlogoclearuspng>
+		<intlogoclearjppng>${path_syst_logo}/clearlogos/${system.theme}-jp.png</intlogoclearjppng>
+		<!-- <intlogoclearpng>"${path_syst_logo}/clearlogos/" + {system:theme} + ".png"</intlogoclearpng> -->
+		<!-- <intlogoclearfrpng>"${path_syst_logo}/clearlogos/" + {system:theme} + "-fr.png"</intlogoclearfrpng> -->
+		<!-- <intlogoclearuspng>"${path_syst_logo}/clearlogos/" + {system:theme} + "-us.png"</intlogoclearuspng> -->
+		<!-- <intlogoclearjppng>"${path_syst_logo}/clearlogos/" + {system:theme} + "-jp.png"</intlogoclearjppng> -->
+		<!-- System Chemin pour les logos systèmes supplémentaires -->
+		<extlogobd>				firstfile(
+								"${path_syst_logo}/comic/lang-${lang}/" + {system:theme} + "-${lang}.png",
+								"${path_syst_logo}/comic/region-${region}/" + {system:theme} + "-${region}.png",
+								"${path_syst_logo}/comic/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</extlogobd>
+		<extlogohcarbon>		firstfile(
+								"${path_syst_logo}/hmaxcarbon/lang-${lang}/" + {system:theme} + "-${lang}.png",
+								"${path_syst_logo}/hmaxcarbon/region-${region}/" + {system:theme} + "-${region}.png",
+								"${path_syst_logo}/hmaxcarbon/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</extlogohcarbon>
+		<exthmaxovalsilver>		firstfile(
+								"${path_syst_logo}/hmaxovalsilver/lang-${lang}/" + {system:theme} + "-${lang}.png",
+								"${path_syst_logo}/hmaxovalsilver/region-${region}/" + {system:theme} + "-${region}.png",
+								"${path_syst_logo}/hmaxovalsilver/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</exthmaxovalsilver>
+		<extlogohrect>			firstfile(
+								"${path_syst_logo}/hmaxrect/lang-${lang}/" + {system:theme} + "-${lang}.png",
+								"${path_syst_logo}/hmaxrect/region-${region}/" + {system:theme} + "-${region}.png",
+								"${path_syst_logo}/hmaxrect/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</extlogohrect>
+		<!-- System Chemin pour les logos systèmes de la team Fresh -->
+		<extlogohrectfresh>		firstfile(
+								"${path_syst_logo}/hmaxrectfresh/lang-${lang}/" + {system:theme} + "-${lang}.png",
+								"${path_syst_logo}/hmaxrectfresh/region-${region}/" + {system:theme} + "-${region}.png",
+								"${path_syst_logo}/hmaxrectfresh/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</extlogohrectfresh>
+		<exthmaxrectrefl>		firstfile(
+								"${path_syst_logo}/hmaxrectrefl/lang-${lang}/" + {system:theme} + "-${lang}.png",
+								"${path_syst_logo}/hmaxrectrefl/region-${region}/" + {system:theme} + "-${region}.png",
+								"${path_syst_logo}/hmaxrectrefl/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</exthmaxrectrefl>
+		<extlogohcarbonfresh>	firstfile(
+								"${path_syst_logo}/hmaxcarbonfresh/lang-${lang}/" + {system:theme} + "-${lang}.png",
+								"${path_syst_logo}/hmaxcarbonfresh/region-${region}/" + {system:theme} + "-${region}.png",
+								"${path_syst_logo}/hmaxcarbonfresh/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</extlogohcarbonfresh>
+		<extglassnekhros>		firstfile(
+								"${path_syst_logo}/nekhglass/lang-${lang}/" + {system:theme} + "-${lang}.png",
+								"${path_syst_logo}/nekhglass/region-${region}/" + {system:theme} + "-${region}.png",
+								"${path_syst_logo}/nekhglass/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".png",
+								"${path_syst_logo}/clearlogos/" + {system:theme} + ".svg")</extglassnekhros>
+		<!-- System Gestion des bezels système : videosyst.xml -->
+		<intbezelsyst>firstfile(
+					"${path_syst_bezel}/region-${region}/" + {system:theme} + "-${region}.png",
+					"${path_syst_bezel}/" + ({system:theme}) + ".png")</intbezelsyst>
+		<!-- System : Vidéos de présentation système : videosyst.xml -->
+		<exthyperpie>${path_syst_theme}/hyperpie/${system.theme}.mp4</exthyperpie>
+		<extunified>${path_syst_theme}/unified/${system.theme}.mkv</extunified>
+		<extbouchetrou>${path_syst_theme}/bouchetrou/${system.theme}.mp4</extbouchetrou>
+		<extvideofresh>${themePath}/../../videothemes/${system.theme}.mp4</extvideofresh>
+		<!-- System : Vidéos de présentation système : videosyst.xml -->
+		<extspinxml>${path_syst_theme}/hyperspin/${system.theme}.xml</extspinxml>
+		<extspinxpxml>${path_syst_theme}/hyperspinxp/${system.theme}/systheme.xml</extspinxpxml>
+		
+		<!-- System : Affichage des fanart système : fanartsyst.xml -->
+		<intfanartfresh>${path_syst_fanart}/fresh/${system.theme}.jpg</intfanartfresh>
+		<intfanartfresh2>("${path_syst_fanart}/fresh/" + {system:theme} + ".jpg")</intfanartfresh2>
+		<intfanartcustom>("${path_syst_fanart}/custom/" + {system:theme} + ".jpg")</intfanartcustom>
+		<intfondsystem>("${themePath}/_viewgame/hyperbat/fondsysteme/" + {system:theme} + ".png")</intfondsystem>
+		
+		<!-- <intfondsystem>"${themePath}/_viewgame/hyperbat/fondsysteme/" + stem({system:theme}) + ".png"</intfondsystem> -->
+		<intspinback>"${themePath}/_viewgame/hyperbat/fondsysteme/" + {game:system:theme} + ".png"</intspinback>
+		<!-- System : Actif si absence de systheme.xml dans le thème hyperbat : videosyst.xml, fanartsyst.xml -->
+		<ifnoextsysthemeexist>!exists("${path_syst_theme}/hyperspinxp/" + stem({system:theme}) + "/systheme.xml")</ifnoextsysthemeexist>
+		<!-- System : personnage en png associé aux systèmes -->
+		<intcharsyst>${themePath}/_systemmedia/charsystem/{game:system:theme}.png</intcharsyst>
+		<!-- System : pointeurs en png associé aux systèmes -->
+		<!-- <pointers4syst>${themePath}/_systemmedia/pointers-r/${system.theme}.png</pointers4syst> -->
+		<pointers4syst>firstfile(
+					"${themePath}/_systemmedia/pointers-r/region-${region}/" + {system:theme} + "-${region}.png",
+					"${themePath}/_systemmedia/pointers-r/" + {system:theme} + ".png")</pointers4syst>
+		<!-- <pointers4games>"${themePath}/_systemmedia/pointers-r/" + {game:system:theme} + ".png"</pointers4games> -->
+		<pointers4games>firstfile("${themePath}/_systemmedia/pointers-r/region-" + {game:region} + "/"  + ({game:system:theme}) + "-" + {game:region} + ".png",
+						"${themePath}/_systemmedia/pointers-r/" + {game:system:theme} + ".png")</pointers4games>
+		<!-- <pointers4games>firstfile("${themePath}/_systemmedia/pointers-r/region-${region}/" + {system:theme} + "-${region}.png", -->
+		<!-- "${themePath}/_systemmedia/pointers-r/" + {system:theme} + ".png")</pointers4games> -->
+		<!-- Syste & Jeux Logo Système en fonction du jeu -->
+		<extgamesyst>"${path_syst_logo}/clearlogos/" + {game:system} ".png"</extgamesyst>
+		<!-- Jeux : gamethème Hyperbat -->
+		<!-- <extgametheme>${path_game_theme}/${system.theme}/hyperbat</extgametheme> -->
+		<extgametheme>${path_game_theme}/${system.theme}/hyperbat</extgametheme>
+		<extgametheme.persyst>"${path_game_theme}/" + {game:system:theme} + "/hyperbat"</extgametheme.persyst>
+		<extGametheme.defaut>${path_game_theme}/${system.theme}/hyperbat/_default/theme.xml</extGametheme.defaut>
+		<extgemetheme.generic>${path_game_theme}/${system.theme}/hyperbat/_default/theme.xml</extgemetheme.generic>
+		<extGametheme.defautarcade>${path_game_theme}/arcade/hyperbat/_default/theme.xml</extGametheme.defautarcade>
+		<!-- Jeux : Condition si fanart ou box 2d -->
+		<!-- <standardsbuildsfanart>exists({game:fanart}) ? {game:fanart} : {game:thumbnail}</standardsbuildsfanart> -->
+		<standardsbuildsfanart>{game:fanart}</standardsbuildsfanart>
+		<freshbuildfanart>exists({game:image}) ? {game:image} : {game:thumbnail}</freshbuildfanart>
+		<!-- Jeux : action si fanart existe : detailed.xml -->
+		<standardsbuildsfanarttestyes>exists({game:fanart})</standardsbuildsfanarttestyes>
+		<standardsbuildsfanarttest>!exists({game:fanart})</standardsbuildsfanarttest>
+		<freshbuildfanarttestyes>exists({game:image})</freshbuildfanarttestyes>
+		<freshbuildfanarttest>!exists({game:image})</freshbuildfanarttest>
+		<!-- Jeux média spécifique -->
+		<extgameartpng>("${themePath}/../../../../roms/${system.theme}/@media/wheel - Art/" + stem({game:rom}) + "-wheel.png")</extgameartpng>
+		<extgamefanartjpg>firstfile("${path_game_media}/" + ({game:system:theme}) + "/cover/" + stem({game:rom}) + ".jpg",
+			"${path_game_media}/"  + ({game:system:theme}) + "/medium_artwork/fanart/" + stem({game:rom}) + ".jpg")</extgamefanartjpg>
+		<extgame3dbox>firstfile("${path_game_media}/" + ({game:system:theme}) + "/3dbox/" + stem({game:rom}) + ".png",
+			"${path_game_media}/"  + ({game:system:theme}) + "/medium_artwork/artwork_3d/" + stem({game:rom}) + ".png")</extgame3dbox>
+		<extgamescreenjpg>"${path_game_media}/" + ({game:system:theme}) + "/screenshots/" + stem({game:rom}) + ".png"</extgamescreenjpg>
+		<extgamevideo>firstfile(
+			"${path_game_media}" + ({game:system:theme}) + "/video/" + stem({game:rom}) + ".avi",
+			"${path_game_media}" + ({game:system:theme}) + "/video/" + stem({game:rom}) + ".mp4",
+			"${path_game_media}" + ({game:system:theme}) + "/medium_artwork/video/" + stem({game:rom}) + ".avi",
+			"${path_game_media}" + ({game:system:theme}) + "/medium_artwork/video/" + stem({game:rom}) + ".mp4")</extgamevideo>
+		<corefrontart>"${path_game_media}/" + ({game:system:theme}) + "/medium_artwork/artwork_front/" + stem({game:rom}) + ".png"</corefrontart>
+		<!-- ###### Bloc sous-systeme : centralise depuis les 940 _gametheme/*/hyperbat/<syst>/theme.xml ###### -->
+		<extsubsystvideo>firstfile(
+			"${path_syst_theme}/hyperpie/" + ({game:system:theme}) + ".mp4",
+			"${path_syst_theme}/subsystem/" + ({game:system:theme}) + ".mp4",
+			"${path_syst_theme}/subsystem/" + ({game:system:theme}) + ".avi",
+			"${path_syst_theme}/subsystem/" + ({game:system:theme}) + ".flv",
+			"${path_syst_theme}/subsystem/" + ({game:system:theme}) + ".mkv")</extsubsystvideo>
+		<ifnosubsystvideo>!exists("${path_syst_theme}/hyperpie/" + ({game:system:theme}) + ".mp4") &amp;&amp;
+			!exists("${path_syst_theme}/subsystem/" + ({game:system:theme}) + ".mp4") &amp;&amp;
+			!exists("${path_syst_theme}/subsystem/" + ({game:system:theme}) + ".avi") &amp;&amp;
+			!exists("${path_syst_theme}/subsystem/" + ({game:system:theme}) + ".flv") &amp;&amp;
+			!exists("${path_syst_theme}/subsystem/" + ({game:system:theme}) + ".mkv")</ifnosubsystvideo>
+		<extsubsystimage>firstfile(
+			"${path_syst_theme}/subsystem/" + ({game:system:theme}) + ".jpg",
+			"${path_syst_theme}/subsystem/" + ({game:system:theme}) + ".png")</extsubsystimage>
+		<!-- ###### Artworks lateraux hyperspin : centralises depuis 770 _gametheme/**/theme.xml ###### -->
+		<extspinleftart>"${path_syst_theme}/hyperspin/leftart/" + {game:system:theme} + ".png"</extspinleftart>
+		<extspinrightart>"${path_syst_theme}/hyperspin/rightart/" + {game:system:theme} + ".png"</extspinrightart>
+		<!-- ###### Cadre 16/9 commun : centralise depuis 1710 fichiers ###### -->
+		<comcadre169>${themePath}/_common/images/169v2.png</comcadre169>
+		<!-- ###### Polices : une variable par police ###### -->
+		<fontcabinbold>${themePath}/_common/fonts/Cabin-Bold.ttf</fontcabinbold>
+		<fontdigitalserial>${themePath}/_common/fonts/Digital-Serial-Bold-folder.ttf</fontdigitalserial>
+		<fontopensans>${themePath}/_viewgame/fanartstar/OpenSans_Condensed-Bold.ttf</fontopensans>
+		<fontimpact>${themePath}/_common/fonts/impact.ttf</fontimpact>
+		<fonttekobold>${themePath}/_viewsyst/hyperbat/teko-bold.ttf</fonttekobold>
+		<fonttmonmonsori>${themePath}/_viewgame/retrower/fonts/TmonMonsori.ttf</fonttmonmonsori>
+		<!-- Couleur de selection du menu système -->
+		<colordea>999999</colordea>
+		<coloract>ffffff</coloract>
+		<!-- Couleurs des infos de jeux (vue hyperbat) : valeurs par défaut, remplacées par hyperbatgameinfocolors.xml -->
+		<infotitre_couleur>f0f000</infotitre_couleur>
+		<infotitre_halo>0c002e</infotitre_halo>
+		<infotitre_halotaille>1.5</infotitre_halotaille>
+		<infotitre_halodecalage>2</infotitre_halodecalage>
+		<infoligne_couleur>ffff00</infoligne_couleur>
+		<infoligne_halo>0c002e</infoligne_halo>
+		<infoligne_halotaille>1.5</infoligne_halotaille>
+		<infoligne_halodecalage>2</infoligne_halodecalage>
+		<infotitre_police>${path_vgame}/hyperbat/AlphaFridgeMagnets.ttf</infotitre_police>
+		<infotitre_taille>0.05</infotitre_taille>
+		<infoligne_police>${path_vgame}/hyperbat/AlphaFridgeMagnets.ttf</infoligne_police>
+		<infoligne_taille>0.02</infoligne_taille>
+		<!-- Suffixe des fichiers de correction par ratio -->
+		<ratiosfx ifSubset="screenratio:r43">43</ratiosfx>
+		<ratiosfx ifSubset="screenratio:r1610">1610</ratiosfx>
+		<ratiosfx ifSubset="screenratio:r169">169</ratiosfx>
+		<!-- Fichier du theme de jeu charge par gameextras (_viewgame/hyperbat.xml) ; vide si aucun.
+		     Sert aussi a la visibilite des generiques (_genericdefault) : une seule liste de chemins.
+		     ATTENTION : lu avant _advancedusers.xml, l'option par defaut (mamefolder) DOIT rester en dernier. -->
+		<gamethemefile ifSubset="gameviewsource:actualsystem">firstfile(
+			"${path_game_theme}/${system.theme}/hyperbat/" + stem({game:rom}) + "/theme-${ratiosfx}.xml",
+			"${path_game_theme}/${system.theme}/hyperbat/" + stem({game:rom}) + "/theme.xml",
+			"${path_game_theme}/" + {system:theme} + "/hyperbat/_default/theme-${ratiosfx}.xml",
+			"${path_game_theme}/" + {system:theme} + "/hyperbat/_default/theme.xml",
+			"${path_game_theme}/" + {game:system:theme} + "/hyperbat/" + stem({game:rom}) + "/theme-${ratiosfx}.xml",
+			"${path_game_theme}/" + {game:system:theme} + "/hyperbat/" + stem({game:rom}) + "/theme.xml",
+			"${path_game_theme}/" + {game:system:theme} + "/hyperbat/_default/theme-${ratiosfx}.xml",
+			"${path_game_theme}/" + {game:system:theme} + "/hyperbat/_default/theme.xml")</gamethemefile>
+		<gamethemefile ifSubset="gameviewsource:genericstyleonly">""</gamethemefile>
+		<gamethemefile ifSubset="gameviewsource:mamefolder">firstfile(
+			"${path_game_theme}/" + {game:system:theme} + "/hyperbat/" + stem({game:rom}) + "/theme-${ratiosfx}.xml",
+			"${path_game_theme}/" + {game:system:theme} + "/hyperbat/" + stem({game:rom}) + "/theme.xml",
+			"${path_game_theme}/mame/hyperbat/" + stem({game:rom}) + "/theme-${ratiosfx}.xml",
+			"${path_game_theme}/mame/hyperbat/" + stem({game:rom}) + "/theme.xml",
+			"${path_game_theme}/" + {game:system:theme} + "/hyperbat/_default/theme-${ratiosfx}.xml",
+			"${path_game_theme}/" + {game:system:theme} + "/hyperbat/_default/theme.xml",
+			"${path_game_theme}/" + {system:theme} + "/hyperbat/_default/theme-${ratiosfx}.xml",
+			"${path_game_theme}/" + {system:theme} + "/hyperbat/_default/theme.xml")</gamethemefile>
+		<!-- Video par defaut des generiques (ni capture ni video) : option videodefaut (_advancedusers.xml).
+		     Lu avant _advancedusers.xml : l'option par defaut (activate) DOIT rester en dernier. -->
+		<videodefautpath ifSubset="videodefaut:desactive"></videodefautpath>
+		<videodefautpath ifSubset="videodefaut:activate">${bobmediapath}/_systemmedia/defaut/scotty.mp4</videodefautpath>
+	</variables>
+	<!-- fichiers de traductions disponibles -->
+	<include>${themePath}/_common/_langs/fr.xml</include>
+	<include>${themePath}/_common/_langs/${lang}.xml</include>
+	<!-- Couleurs des infos de jeux par système -->
+	<include>${path_couleurs_infos}/hyperbatgameinfocolors.xml</include>
+	<!-- Apparence des aides retroBAT -->
+	<include>${themePath}/screen.xml</include>
+	<include>${themePath}/help.xml</include>
+	<!-- Theme du menu principal -->
+	<include>./_common/_menu/menu.xml</include>
+	<!-- #### Partie vue système ############################################################# -->
+	<!-- Liste des vues dediees aux systèmes : systemview -->
+	<subset name="lismoiv2" displayName="${lismoi}">
+		<!-- <include name="tumasbienlu" displayName="${tumasbienlu}">${themePath}/_viewsystoption/sl-commun/splashounet.xml</include> -->
+		<!-- <include name="deporttheme" displayName="${deporttheme}">${themePath}/_viewsystoption/sl-commun/splashounet.xml</include> -->
+		<!-- <include name="customiztheme1" displayName="${customiztheme1}">${themePath}/_viewsystoption/sl-commun/splashounet.xml</include> -->
+		<!-- <include name="customiztheme2" displayName="${customiztheme2}">${themePath}/_viewsystoption/sl-commun/splashounet.xml</include> -->
+		<!-- <include name="downloadmore" displayName="${downloadmore}">${themePath}/_viewsystoption/sl-commun/splashounet.xml</include> -->
+		<include name="planche00" displayName="${planche00}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche01" displayName="${planche01}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche02" displayName="${planche02}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche03" displayName="${planche03}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche04" displayName="${planche04}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche05" displayName="${planche05}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche06" displayName="${planche06}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche07" displayName="${planche07}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche08" displayName="${planche08}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche09" displayName="${planche09}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche10" displayName="${planche10}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche11" displayName="${planche11}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche12" displayName="${planche12}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="planche13" displayName="${planche13}">${themePath}/_viewsystoption/sl-commun/planches.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<subset name="systemview" displayName="${systlist}">
+		<include name="hyperspin" displayName="${systviewHS}">${themePath}/_viewsyst/hyperspin.xml</include>
+	</subset>
+	<!-- ################################################################################# -->
+	<!-- ################ Vue Systeme : options communes toutes vues ##################### -->
+	<!-- ################################################################################# -->
+	<!-- Première déclaration permettant le placement du menu "région" dans le menu principal-->
+	<region region="fr">Region des systèmes</region>
+	<region region="eu">Region des systèmes</region>
+	<region region="us">region us</region>
+	<region region="jp">region jp</region>
+	<!-- Build Custom : suffixe des fanart -->
+	<subset name="custombuilds" displayName="${packcustombuild}">
+		<include name="standardbuilds" displayName="${packcustombuildsno}"/>
+		<include name="retrofreshbat" displayName="${packretrofreshbat}"/>
+	</subset>
+
+	<!-- <subset name="scrap3dbox" displayName="${scrap3dbox}"> -->
+		<!-- <include name="scrapedboxart" displayName="${scrapedboxart}"/> -->
+		<!-- <include name="scrapedthumbnail" displayName="${scrapedthumbnail}"/> -->
+	<!-- </subset> -->
+	<!-- Scrap : ou se trouve la boite 3D (definit box3dpath / box2dpath) -->
+	<subset name="scrap3dbox" displayName="${scrap3dbox}">
+		<include name="scrapedboxart" displayName="${scrapedboxart}">${themePath}/_common/scrap/3dinboxart.xml</include>
+		<include name="scrapedthumbnail" displayName="${scrapedthumbnail}">${themePath}/_common/scrap/3dinthumbnail.xml</include>
+	</subset>
+	<subset name="screenratio" displayName="${screenratio}">
+		<include name="r169" displayName="16/9"/>
+		<include name="r1610" displayName="${ratio1610}"/>
+		<include name="r43" displayName="${ratio43}"/>
+	</subset>
+	<subset name="systspacer001" displayName="  ">
+		<include name=" " displayName=" "/>
+	</subset>
+	<subset name="iconset" displayName="${iconset}">
+		<include name="Position seulement" displayName="${iconsetposition}">${themePath}/_common/help/_iconsets/buttons.xml</include>
+		<include name="Standard">${themePath}/_common/help/_iconsets/default.xml</include>
+		<include name="ARCADE">${themePath}/_common/help/_iconsets/arcade.xml</include>
+		<include name="SNES">${themePath}/_common/help/_iconsets/snes.xml</include>
+		<include name="SNES ALT">${themePath}/_common/help/_iconsets/snesalt.xml</include>
+		<include name="XBox">${themePath}/_common/help/_iconsets/xbox.xml</include>
+		<include name="Xbox One">${themePath}/_common/help/_iconsets/xboxone.xml</include>
+		<include name="Default PSX">${themePath}/_common/help/_iconsets/psx.xml</include>
+		<include name="PSX ALT">${themePath}/_common/help/_iconsets/psx1.xml</include>
+		<include name="Switch">${themePath}/_common/help/_iconsets/switch.xml</include>
+	</subset>
+	<subset name="colorhelp" displayName="${colorhelp}">
+		<include name="default" displayName="${default}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="skyblue" displayName="${skyblue}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="standard" displayName="${standard}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="purple" displayName="${purple}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="red" displayName="${red}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="aqua" displayName="${aqua}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="orange" displayName="${orange}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="green" displayName="${green}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="yellow" displayName="${yellow}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="pink" displayName="${pink}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="grey" displayName="${grey}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="lightgrey" displayName="${lightgrey}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="navy" displayName="${navy}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="violet" displayName="${violet}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="candy" displayName="${candy}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="redalt" displayName="${redalt}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="yellowalt" displayName="${yellowalt}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="greenalt" displayName="${greenalt}">${themePath}/_common/help/helpcolor.xml</include>
+		<include name="purplealt" displayName="${purplealt}">${themePath}/_common/help/helpcolor.xml</include>
+	</subset>
+	<subset name="systspacer002" displayName="  ">
+		<include name=" " displayName=" "/>
+	</subset>
+	<!-- Choix des logo de la wheel systèmes -->
+	<subset name="systemlogocops1" displayName="${systviewlogos}">
+		<!-- <include name="logosimple" displayName="${logosimple}">${themePath}/_viewsystoption/sl-commun/wheellook.xml</include> -->
+		<include name="logosimple" displayName="${logosimple}"/>
+	</subset>
+	<!-- NB: Possible d'ajouter si souhait de l'intégrer aux packs : ifSubset="Packinstall:Packactivate" -->
+	<include>${path_syst_logo}/nekhglass/_glassnekhros.xml</include>
+	<include>${path_syst_logo}/comic/_logocomic.xml</include>
+	<include>${path_syst_logo}/hmaxcarbon/_ovalcarb.xml</include>
+	<include>${path_syst_logo}/hmaxovalsilver/_hmaxovalsilver.xml</include>
+	<include>${path_syst_logo}/hmaxrectfresh/_logorectfresh.xml</include>
+	<include>${path_syst_logo}/hmaxrectrefl/_hmaxrectrefl.xml</include>
+	<subset name="systemwheelfade" displayName="${systemwheelfade}">
+		<include name="activate" displayName="${activate}"/>
+		<include name="amoitie" displayName="${amoitie}"/>
+		<include name="deactivate" displayName="${desactive}"/>
+	</subset>
+	<!-- Choix des fanart à afficher sur la liste système -->
+	<subset name="imagefondcops1" displayName="${systviewfanart}">
+		<include name="fanartfreshone" displayName="${fanartfreshone}">${themePath}/_viewsystoption/sl-commun/fanartsyst.xml</include>
+		<include name="fanartcustom" displayName="${fanartsystcustom}">${themePath}/_viewsystoption/sl-commun/fanartsyst.xml</include>
+		<include name="fanfondsystem" displayName="${fanfondsystem}">${themePath}/_viewsystoption/sl-commun/fanartsyst.xml</include>
+	</subset>
+	<!-- Choix des types de présentation des systèmes -->
+	<subset name="videofondcops1" ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|hyperspin|tetanos" displayName="${systviewvideo}">
+		<include name="hyperspinorunified" displayName="${hyperspinorunified}">${themePath}/_viewsystoption/sl-commun/videosyst.xml</include>
+		<include name="gameplayp1" displayName="${gameplayp1}">${themePath}/_viewsystoption/sl-commun/videosyst.xml</include>
+		<include name="gameplay1" displayName="${gameplay1}">${themePath}/_viewsystoption/sl-commun/videosyst.xml</include>
+		<include name="gameplayp" displayName="${gameplayp}">${themePath}/_viewsystoption/sl-commun/videosyst.xml</include>
+		<include name="gameplay" displayName="${gameplay}">${themePath}/_viewsystoption/sl-commun/videosyst.xml</include>
+		<include name="custom" displayName="${custom}">${themePath}/_viewsystoption/sl-commun/videosyst.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<include>${path_syst_theme}/hyperspinxporunified/_hyperspinorunified.xml</include>
+	<include>${path_syst_theme}/hyperspinxpcinematic/_hyperspinorder.xml</include>
+	<include>${path_syst_theme}/hyperspinxp/_hyperspinxp.xml</include>
+	<include>${path_syst_theme}/unified/_unified.xml</include>
+	<include>${path_syst_theme}/hyperspin/_hyperspin.xml</include>
+	<include>${path_syst_theme}/hyperpie/_hyperpie.xml</include>
+	<!-- Cadre des videos des vues systeme generiques (hyperspin/<systeme>.xml) : bezel d'origine ou bordure shader -->
+	<!-- videobordure.xml est charge par videosyst.xml (ligne apres ${extspinxml}) quand cette option vaut "bordure" -->
+	<subset name="cadrevideosyst" ifSubset="systemview:hyperspin" displayName="${cadrevideosyst}">
+		<include name="origine" displayName="${cadreorigine}"/>
+		<include name="bordure" displayName="${cadrebordure}"/>
+	</subset>
+	<!-- <include>${themePath}/../../videothemes/_videothemes.xml</include> -->
+	<!-- <include>${themePath}/../../videothemes/_gameplayonly.xml</include> -->
+	<!-- Affichage du nombre de jeux -->
+	<subset name="nbrjeuxcops1" ifSubset="systemview:coinopsnext1|coinopsnext2|copscurve|hyperspin|zspin|nesicaxlive" displayName="${systviewtotal}">
+		<include name="nbrjeux" displayName="${nbrjeux}">${themePath}/_viewsystoption/sl-commun/nbrejeux.xml</include>
+		<include name="nbrjeux2" displayName="${nbrjeux2}">${themePath}/_viewsystoption/sl-commun/nbrejeux2.xml</include>
+		<include name="desactive" displayName="${no}">${themePath}/_viewsystoption/sl-commun/nbrejeux.xml</include>
+	</subset>
+	<!-- Gestion du fil arianne  -->
+	<!-- Quand MAJ remplacera le bloc en dessous  -->
+	<!-- <subset name="menuofficiel" displayName="${menuofficiel}"> -->
+	<!-- <include name="Desactive" ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|hyperspin|alekfull|hypermax|zspin" displayName="${desactive}"/> -->
+	<!-- <include name="menutxt" if="{settings.SortSystems} == 'hardware'" ifSubset="systemview:hyperspin|alekfull|hypermax" displayName="${menutxt}">${themePath}/_viewsystoption/sl-commun/menutxt.xml</include> -->
+	<!-- <include name="menuorb" if="{settings.SortSystems} == 'hardware'" ifSubset="systemview:hyperspin|alekfull|hypermax" displayName="${menuorb}">${themePath}/_viewsystoption/sl-commun/menuorbhori.xml</include> -->
+	<!-- <include name="menuorbvert" if="{settings.SortSystems} == 'hardware'" ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2" displayName="${menuorbvert}">${themePath}/_viewsystoption/sl-commun/menuorbvert.xml</include> -->
+	<!-- <include name="menuorbcrcl" if="{settings.SortSystems} == 'hardware'" ifSubset="systemview:coinopsnext2" displayName="${menuorbcrcl}">${themePath}/_viewsystoption/sl-commun/menuorbcrcl.xml</include> -->
+	<!-- <include name="menucust" if="{settings.SortSystems} == 'hardware'" ifSubset="systemview:hyperspin|alekfull|hypermax" displayName="${menucust}">${themePath}/_viewsystoption/sl-commun/menutxt.xml</include> -->
+	<!-- <include name="menucustorb" if="{settings.SortSystems} == 'hardware'" ifSubset="systemview:hyperspin|alekfull|hypermax" displayName="${menucustorb}">${themePath}/_viewsystoption/sl-commun/menuorbhori.xml</include> -->
+	<!-- <include name="menucustorbvert" if="{settings.SortSystems} == 'hardware'" ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2" displayName="${menucustorbvert}">${themePath}/_viewsystoption/sl-commun/menuorbvert.xml</include> -->
+	<!-- <include name="menucustorbcrcl" if="{settings.SortSystems} == 'hardware'" ifSubset="systemview:coinopsnext2" displayName="${menucustorbcrcl}">${themePath}/_viewsystoption/sl-commun/menuorbcrcl.xml</include> -->
+	<!-- <include name="menutxtzspin" if="{settings.SortSystems} == 'hardware'" ifSubset="systemview:zspin" displayName="${menutxtzspin}">${themePath}/_viewsystoption/sl-commun/menutxtzspin.xml</include> -->
+	<!-- <include name="menutxtzspincust" if="{settings.SortSystems} == 'hardware'" ifSubset="systemview:zspin" displayName="${menutxtzspincust}">${themePath}/_viewsystoption/sl-commun/menutxtzspin.xml</include> -->
+	<!-- <include name="menuteta" if="{settings.SortSystems} == 'hardware'" ifSubset="systemview:tetanos" displayName="${menuteta}">${themePath}/_viewsystoption/sl-commun/menutetanos.xml</include> -->
+	<!-- <include name="menucustteta" if="{settings.SortSystems} == 'hardware'" ifSubset="systemview:tetanos" displayName="${menucustteta}">${themePath}/_viewsystoption/sl-commun/menutetanos.xml</include> -->
+	<!-- </subset> -->
+	<!-- fin du bloc  -->
+	<subset name="menuofficiel" displayName="${menuofficiel}">
+		<include name="desactive" ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2|hyperspin|alekfull|hypermax|zspin" displayName="${desactive}"/>
+		<include name="menutxt" ifSubset="systemview:hyperspin|alekfull|hypermax" displayName="${menutxt}">${themePath}/_viewsystoption/sl-commun/menutxt.xml</include>
+		<include name="menuorb" ifSubset="systemview:hyperspin|alekfull|hypermax" displayName="${menuorb}">${themePath}/_viewsystoption/sl-commun/menuorbhori.xml</include>
+		<include name="menuorbvert" ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2" displayName="${menuorbvert}">${themePath}/_viewsystoption/sl-commun/menuorbvert.xml</include>
+		<include name="menuorbcrcl" ifSubset="systemview:coinopsnext2" displayName="${menuorbcrcl}">${themePath}/_viewsystoption/sl-commun/menuorbcrcl.xml</include>
+		<include name="menucust" ifSubset="systemview:hyperspin|alekfull|hypermax" displayName="${menucust}">${themePath}/_viewsystoption/sl-commun/menutxt.xml</include>
+		<include name="menucustorb" ifSubset="systemview:hyperspin|alekfull|hypermax" displayName="${menucustorb}">${themePath}/_viewsystoption/sl-commun/menuorbhori.xml</include>
+		<include name="menucustorbvert" ifSubset="systemview:copscurve|coinopsnext1|coinopsnext2" displayName="${menucustorbvert}">${themePath}/_viewsystoption/sl-commun/menuorbvert.xml</include>
+		<include name="menucustorbcrcl" ifSubset="systemview:coinopsnext2" displayName="${menucustorbcrcl}">${themePath}/_viewsystoption/sl-commun/menuorbcrcl.xml</include>
+		<include name="menutxtzspin" ifSubset="systemview:zspin" displayName="${menutxtzspin}">${themePath}/_viewsystoption/sl-commun/menutxtzspin.xml</include>
+		<include name="menutxtzspincust" ifSubset="systemview:zspin" displayName="${menutxtzspincust}">${themePath}/_viewsystoption/sl-commun/menutxtzspin.xml</include>
+		<include name="menuteta" ifSubset="systemview:tetanos" displayName="${menuteta}">${themePath}/_viewsystoption/sl-commun/menutetanos.xml</include>
+		<include name="menucustteta" ifSubset="systemview:tetanos" displayName="${menucustteta}">${themePath}/_viewsystoption/sl-commun/menutetanos.xml</include>
+	</subset>
+	<subset name="systspacer003" displayName="  ">
+		<include name=" " displayName=" "/>
+	</subset>
+	<!-- ################################################################################################# -->
+	<!-- ######################## VUES Systeme : spécifique Hyperspin #################################### -->
+	<!-- ################################################################################################# -->
+	<!-- Affichage des animations d'aide -->
+	<subset name="sticksysteme" ifSubset="systemview:hyperspin" displayName="${sticksysteme}">
+		<include name="ballblue" displayName="${systballblue}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballcyan" displayName="${systballcyan}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="balldarkviolet" displayName="${systballdarkviolet}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballviolet" displayName="${systballviolet}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballgreen" displayName="${systballgreen}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="balllitegreen" displayName="${systballlitegreen}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballpink" displayName="${systballpink}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballred" displayName="${systballred}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballyelgreen" displayName="${systballyelgreen}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="ballyellow" displayName="${systballyellow}">${themePath}/_viewsystoption/sl-hyperspin/stickblue.xml</include>
+		<include name="desactive" displayName="${desactive}"/>
+	</subset>
+	<!-- Choix d'affichage de la roue système -->
+	<!-- Vignetage de la vue systeme (image overlaydiamonds de _viewsyst/hyperspin.xml) -->
+	<subset name="vignettagesyst" ifSubset="systemview:hyperspin" displayName="${vignettagesyst}">
+		<include name="deactivate" displayName="${desactive}"/>
+		<include name="activate" displayName="${activate}"/>
+	</subset>
+	<!-- Assombrissement du fond de la vue systeme (image bgmask de _viewsyst/hyperspin.xml) -->
+	<subset name="bgmasksyst" ifSubset="systemview:hyperspin" displayName="${bgmasksyst}">
+		<include name="deactivate" displayName="${desactive}"/>
+		<include name="activate" displayName="${activate}"/>
+	</subset>
+	<subset name="hyperwheel" ifSubset="systemview:hyperspin" displayName="${hyperwheel}">
+		<include name="spindr" displayName="${spindr}"/>
+		<include name="verticaldr" displayName="${verticaldr}"/>
+		<include name="verticaldreb" displayName="${verticaldreb}"/>
+		<include name="spingh" displayName="${spingh}"/>
+		<include name="verticalgh" displayName="${verticalgh}"/>
+		<include name="verticalgheb" displayName="${verticalgheb}"/>
+		<include name="verticalghjp" displayName="${verticalghjp}">${themePath}/_viewsystoption/sl-hyperspin/menuverticalghjp.xml</include>
+		<include name="verticalghkk" displayName="${verticalghkk}">${themePath}/_viewsystoption/sl-hyperspin/menukk.xml</include>
+		<!-- <include name="verticalghcs" displayName="${verticalghcs}">${themePath}/_viewsystoption/sl-hyperspin/menucs.xml</include> -->
+		<!-- <include name="Desactive" displayName="Non"/> -->
+	</subset>
+	<!-- ################################################################################# -->
+	<!-- ######################## VUES GAMELISTS ACTIVEES ######################################### -->
+	<!-- ################################################################################# -->
+	<include>${themePath}/deactivateview.xml</include>
+	<!-- ############################################################################################ -->
+	<!-- ######################## Options des vues GAMELISTS ######################################## -->
+	<!-- ############################################################################################ -->
+	<include>${themePath}/_advancedusers.xml</include>
+</theme>

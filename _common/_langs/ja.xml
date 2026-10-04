@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ja">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>はい</yes>
+		<no>いいえ</no>
+		<desactive>無効</desactive>
+		<activate>有効</activate>
+		<actif>有効</actif>
+		<active>有効</active>
+		<deactive>無効</deactive>
+		<vide>   </vide>
+		<default>デフォルト</default>
+		<amoitie>一部</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>利用可能な言語:</languesdispo>
+		<nodates>日付なし</nodates>
+		<playcount>回プレイ</playcount>
+		<playcountone>回プレイ</playcountone>
+		<players>人</players>
+		<playerss>人</playerss>
+		<player>人</player>
+		<nogametime>未プレイ</nogametime>
+		<noplayerdata>不明</noplayerdata>
+		<noratings>評価なし</noratings>
+		<lastgamelabel>最終プレイ:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>次のゲーム</jeusuiv>
+		<jeuprec>前のゲーム</jeuprec>
+		<systsuiv>次のシステム</systsuiv>
+		<systprec>前のシステム</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>ようこそメッセージ</lismoi>
+		<tumasbienlu>ようこそとクレジット</tumasbienlu>
+		<deporttheme>カスタムテーマを移動する方法</deporttheme>
+		<customiztheme1>テーマをカスタマイズする方法 1/2</customiztheme1>
+		<customiztheme2>テーマをカスタマイズする方法 2/2</customiztheme2>
+		<downloadmore>テーマとアートワークを追加ダウンロードするリンク</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>システム一覧の表示</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: 基本グリッド表示</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart 超軽量</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - メディアをテスト</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>SCRAP設定 - ファンアートの構成は?</packcustombuild>
+		<packcustombuildsno>接尾辞 "-fanart" のファンアート(デフォルト)</packcustombuildsno>
+		<packretrofreshbat>接尾辞 "-image" のファンアート</packretrofreshbat>
+		<scrap3dbox>スクレイプ設定 - 3Dボックスの構成は?</scrap3dbox>
+		<scrapedboxart>gamelist内の "-boxart" の3Dボックス</scrapedboxart>
+		<scrapedthumbnail>gamelist内の "-thumbnail" の3Dボックス</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>ヘルプ - ヘルプアイコンの外観</iconset>
+		<iconsetposition>ボタンの位置</iconsetposition>
+		<colorhelp>ヘルプ - ヘルプテキストの色</colorhelp>
+		<skyblue>スカイブルー</skyblue>
+		<standard>標準</standard>
+		<purple>紫</purple>
+		<red>赤</red>
+		<aqua>スカイブルー</aqua>
+		<orange>オレンジ</orange>
+		<green>緑</green>
+		<yellow>黄</yellow>
+		<pink>ピンク</pink>
+		<grey>ダークグレー</grey>
+		<lightgrey>ライトグレー</lightgrey>
+		<navy>青 alt</navy>
+		<violet>紫</violet>
+		<candy>candy</candy>
+		<redalt>赤 alt</redalt>
+		<yellowalt>黄 alt</yellowalt>
+		<greenalt>緑 alt</greenalt>
+		<purplealt>紫 alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>システム表示 - システムロゴの種類</systviewlogos>
+		<logosimple>シンプルロゴ(フル + 地域)</logosimple>
+		<glassnekhros>Glassロゴ(フル + 地域)(By Nekhros)</glassnekhros>
+		<logobd>コミック風ロゴ(Helmic)</logobd>
+		<logoovalcarb>楕円ロゴ Carbon</logoovalcarb>
+		<hmaxovalsilver>楕円ロゴ Silver</hmaxovalsilver>
+		<logorectfresh>長方形ロゴ Team Freshone(外部パック)</logorectfresh>
+		<hmaxrectrefl>反射付き長方形ロゴ Team Freshone(外部パック)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>システム表示 - システム一覧のフェードアウト</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>システム表示 - システムのファンアート選択</systviewfanart>
+		<fanartfreshone>FreshOne選定のファンアートのみ</fanartfreshone>
+		<fanartsystcustom>カスタムファンアート、なければFreshOneのファンアート</fanartsystcustom>
+		<fanfondsystem>システム背景、なければFreshOneのファンアート</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>システム表示 - アニメーション付きシステム紹介</systviewvideo>
+		<hyperspinorunified>ADDON: ダイナミックHS、なければ統一HS</hyperspinorunified>
+		<gameplayp1>ランダムなゲームプレイ動画(小)、ベゼル付き(あれば)</gameplayp1>
+		<gameplay1>ランダムなゲームプレイ動画(大)、ベゼル付き(あれば)</gameplay1>
+		<gameplayp>ランダムなゲームプレイ動画(小)</gameplayp>
+		<gameplay>ランダムなゲームプレイ動画(大)</gameplay>
+		<custom>customフォルダの個人用動画</custom>
+		<hyperspinxp>ADDON: ダイナミックHyperspin風の画像とゲームプレイ</hyperspinxp>
+		<hyperspin>ADDON: 統一Hyperspin風の画像とゲームプレイ</hyperspin>
+		<hyperspinorder>ADDON: ダイナミックHS、なければHyperpie動画</hyperspinorder>
+		<hyperpie>ADDON: Hyperpie動画、なければUnified動画(あれば)</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>システム表示 - システムのゲーム数を表示</systviewtotal>
+		<nbrjeux>シンプルなゲーム数</nbrjeux>
+		<nbrjeux2>システム名とゲーム数</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>パンくずリストの表示</menuofficiel>
+		<menutxt>公式ハードウェア順: 横書きテキスト</menutxt>
+		<menuorb>公式ハードウェア順: 横並びオーブ</menuorb>
+		<menuorbvert>公式ハードウェア順: 縦並びオーブ</menuorbvert>
+		<menuorbcrcl>公式ハードウェア順: 半円オーブ</menuorbcrcl>
+		<menucust>Bobのカスタムハードウェア順: 横書きテキスト</menucust>
+		<menucustorb>Bobのカスタムハードウェア順: 横並びオーブ</menucustorb>
+		<menucustorbvert>Bobのカスタムハードウェア順: 縦並びオーブ</menucustorbvert>
+		<menucustorbcrcl>Bobのカスタムハードウェア順: 半円オーブ</menucustorbcrcl>
+		<menutxtzspin>公式ハードウェア順: 縦書きテキスト</menutxtzspin>
+		<menutxtzspincust>Bobのカスタムハードウェア順: 縦書きテキスト</menutxtzspincust>
+		<menuteta>公式ハードウェア順: Tetanos</menuteta>
+		<menucustteta>Bobのカスタムハードウェア順: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Hyperbatシステム表示 - アニメーションヘルプ</sticksysteme>
+		<systballblue>スティック 青</systballblue>
+		<systballcyan>スティック シアン</systballcyan>
+		<systballdarkviolet>スティック 濃い紫</systballdarkviolet>
+		<systballviolet>スティック 紫</systballviolet>
+		<systballgreen>スティック 緑</systballgreen>
+		<systballlitegreen>スティック 明るい緑</systballlitegreen>
+		<systballpink>スティック ピンク</systballpink>
+		<systballred>スティック 赤</systballred>
+		<systballyelgreen>スティック 黄緑</systballyelgreen>
+		<systballyellow>スティック 黄</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Hyperbatシステム表示 - メニューの種類</hyperwheel>
+		<spindr>右側の曲線ホイール (Hyperspin)</spindr>
+		<verticaldr>右側の縦ホイール (Hyperspin)</verticaldr>
+		<verticaldreb>右側の縦ホイール (Emubox)</verticaldreb>
+		<spingh>左側の曲線ホイール (Hyperspin)</spingh>
+		<verticalgh>左側の縦ホイール (Hyperspin)</verticalgh>
+		<verticalgheb>左側の縦ホイール (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: ボックス販売者 Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: ボックス販売者 Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: ボックス販売者 Hyperspin Chris (作業中)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>ゲーム表示 - 起動時に現在のシステムを表示?</systannounce>
+		<classiquesyst>ズームアウトで消える</classiquesyst>
+		<nomsystem2>ゆっくり登場(フェード + ズーム)</nomsystem2>
+		<nomsystem3>素早いフラッシュ(ズームアウト)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>ゲーム表示 - 各ゲームロゴに背景を付ける?</gwheelbackgr>
+		<sisaccades>無効</sisaccades>
+		<ovalcarbon>楕円 carbon(自動生成)</ovalcarbon>
+		<ovalsilver>楕円 silver(自動生成)</ovalsilver>
+		<rectcarbon>長方形 carbon(自動生成)</rectcarbon>
+		<rectcompose>システムごとのカスタム長方形(自動生成)</rectcompose>
+		<ovalcompose>システムごとのカスタム楕円 carbon(自動生成)</ovalcompose>
+		<logounified>統一サイズのロゴ</logounified>
+		<hfsround>Z-Spin 円形</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>ゲーム表示 - 頭文字ナビゲーション(ゲーム)?</letternav>
+		<navhoricoinstyle>横並びアルファベット</navhoricoinstyle>
+		<navvertcoinstyle>左側に縦並びアルファベット</navvertcoinstyle>
+		<navvertrcoinstyle>右側に縦並びアルファベット</navvertrcoinstyle>
+		<navhsletters>システムごとにスタイル化された文字</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>ゲーム表示 - 最大限の情報を表示?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Hyperbat表示専用の詳細オプションここから ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Hyperbatゲーム表示に必要なメディア = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>汎用ゲームテーマ(テーマがない場合)</defaultgeneric>
+		<videodefaut>汎用テーマのデフォルト動画(スクリーンショットも動画もない場合)</videodefaut>
+		<generic43boxback>標準(ボックス表裏の合成付き)</generic43boxback>
+		<generic43coinopsstyle>アーケード筐体コレクション</generic43coinopsstyle>
+		<generic43noanimationfanart>標準(アニメーションファンアート背景付き)</generic43noanimationfanart>
+		<generic43noanimation>標準(ボックスアートのアニメーションなし)</generic43noanimation>
+		<generic43>標準</generic43>
+		<jukeboxdef>CD風の外観(未完成)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>ゲームテーマ: ソースシステム</gameviewsource>
+		<mamefolder>ゲームの元フォルダ優先、次にmameフォルダ</mamefolder>
+		<actualsystem>選択中のシステムのフォルダ優先</actualsystem>
+		<genericstyleonly>汎用ゲームテーマのみを使用</genericstyleonly>
+		<groupedsystem>開発テスト専用: 使用しないでください</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>ゲームテーマ: 作者</authordisplayed>
+		<showoff>有効、高い視認性</showoff>
+		<showoffblackwhite>有効、最高の視認性</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - ゲーム一覧のフェードアウト</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - スクロール時の音</gamewheelsound>
+		<wheelclic>Hyperspin風クリック</wheelclic>
+		<bulle>泡</bulle>
+		<clic>シンプルなクリック</clic>
+		<clicgrave>低音クリック</clicgrave>
+		<frottement>こすれ音</frottement>
+		<poc>ポン</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>ビジュアル - ビネット効果</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>ビジュアル - システム表示のビネット</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>ビジュアル - 背景を暗くする(システム表示)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>ビジュアル - アニメーションスティックの選択</syststickon>
+		<stickon>クラシックアーケード</stickon>
+		<syststickcolor>ビジュアル - スティックのボールの色</syststickcolor>
+		<ballcyan>シアン</ballcyan>
+		<ballblue>青</ballblue>
+		<balldarkviolet>濃い紫</balldarkviolet>
+		<ballviolet>紫</ballviolet>
+		<ballgreen>緑</ballgreen>
+		<balllitegreen>明るい緑</balllitegreen>
+		<ballpink>ピンク</ballpink>
+		<ballred>赤</ballred>
+		<ballyelgreen>黄緑</ballyelgreen>
+		<ballyellow>黄</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Press startの外観</pressstart>
+		<doigts>ボタンを押すアニメーションの指</doigts>
+		<undoigt>ボタンを押すアニメーションの指(左のみ)</undoigt>
+		<undoigtr>ボタンを押すアニメーションの指(右のみ)</undoigtr>
+		<pressstarttxt>METADATA - テキストの選択</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>無料プレイ</partiegratuite>
+		<uneuro>1プレイ1€</uneuro>
+		<sitessage>Startを押してね</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - メタデータの設定</hsmetadata>
+		<full>すべて表示、デフォルト位置</full>
+		<lower>すべて表示、最下部</lower>
+		<metafichedefault>メタデータカード デフォルト位置</metafichedefault>
+		<metafichebasgauche>メタデータカード 左下</metafichebasgauche>
+		<metafichebasdroite>メタデータカード 右下</metafichebasdroite>
+		<metafichebascentre>メタデータカード 下中央</metafichebascentre>
+		<metafichehautgauche>メタデータカード 左上</metafichehautgauche>
+		<metafichehautdroite>メタデータカード 右上</metafichehautdroite>
+		<metafichehautcentre>メタデータカード 上中央</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>ゲーム別テーマを表示?</hyperbatperview>
+		<themejeux>ゲーム別テーマがあれば優先</themejeux>
+		<themejeuxno>ゲーム別テーマを無効化</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>ビジュアル - ゲームテーマ間のスムーズな切り替え</smoothgametheme>
+		<activesmooth>有効(Retrobat推奨)</activesmooth>
+		<noactivesmooth>無効(Batocera推奨)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Hyperspin風のシステムポインター</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- 対応テーマ向けスクレイプのカスタマイズ ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>表示するゲームボックス</boxorthumb>
+		<boxart>3Dボックス用に調整</boxart>
+		<thumb>2Dボックス用に調整</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- 詳細設定: メディアのソースフォルダの変更 --------------------------------------------------------</spacerextfolder>
+		<folder>ソース - 使用しない</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>テーマフォルダ - デフォルト</intheme>
+		<extfolder>外部フォルダ</extfolder>
+		<extfoldergametheme>ソース - ゲーム別テーマ</extfoldergametheme>
+		<extfoldergamemedia>ソース - gamelist.xml外のゲームメディア</extfoldergamemedia>
+		<extfoldervideosyst>ソース - システム別テーマ</extfoldervideosyst>
+		<extfolderbezelsyst>ソース - システムのベゼル</extfolderbezelsyst>
+		<extfoldermanufacturer>ソース - ゲームパブリッシャーのロゴ</extfoldermanufacturer>
+		<extfolderfanart>ソース - システムのファンアート</extfolderfanart>
+		<extfolderlogosyst>ソース - システムロゴ</extfolderlogosyst>
+		<extfoldercouleursinfos>ソース - ゲーム情報のスタイル</extfoldercouleursinfos>
+		<extfolderthumbox>ソース - ゲームの2D/3Dボックス</extfolderthumbox>
+		<extfoldergamefanart>ソース - ゲームのファンアート</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Fanart Starゲーム表示の推奨メディア = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ FanartStar boxart表示専用の詳細オプションここから ↓   -------------------</mediastar>
+		<spacebox>ゲームボックス間の間隔</spacebox>
+		<spacessssmall>間隔 ----</spacessssmall>
+		<spacesssmall>間隔 ---</spacesssmall>
+		<spacessmall>間隔 --</spacessmall>
+		<spacesmall>間隔 -</spacesmall>
+		<spacenorm>デフォルト</spacenorm>
+		<spacemore>間隔 +</spacemore>
+		<spacemmore>間隔 ++</spacemmore>
+		<spacemmmore>間隔 +++</spacemmmore>
+		<spacemmmmore>間隔 ++++</spacemmmmore>
+		<fanartstarrotated>SNES、N64、NGAGE、Solarusのボックスを回転</fanartstarrotated>
+		<starrotate>はい</starrotate>
+		<nostarrotate>いいえ</nostarrotate>
+		<boxstarspeed>スクロールアニメーションの速度</boxstarspeed>
+		<speedslow1>遅い+</speedslow1>
+		<speedslow2>遅い++</speedslow2>
+		<customfanart>使用するファンアート</customfanart>
+		<fanartgamelist>gamelist内のスクレイプしたファンアート</fanartgamelist>
+		<fanartcustom>_Gamemedia-システム名-medium_artwork 内のカスタムファンアート</fanartcustom>
+		<starboxang>ゲームボックスの角度</starboxang>
+		<starthumb>2Dと3Dのどちらのカバーを表示?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>プレビュー動画のサイズ</starvideo>
+		<starvideoang>傾斜</starvideoang>
+		<starvideodef>標準</starvideodef>
+		<starvideobig>大</starvideobig>
+		<longselect>"select" 長押し</longselect>
+		<favuniquement>お気に入りのみ</favuniquement>
+		<tslesjeux>すべてのゲーム</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>画面比率</screenratio>
+		<ratio1610>16/10 (実験的)</ratio1610>
+		<ratio43>4/3 (実験的)</ratio43>
+		<cadrevideosyst>システム動画のフレーム</cadrevideosyst>
+		<cadreorigine>オリジナル (bezel)</cadreorigine>
+		<cadrebordure>枠線</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - ようこそとクレジット</planche00>
+		<planche01>01 - カスタムテーマを移動する方法</planche01>
+		<planche02>02 - テーマをカスタマイズする方法 1/2</planche02>
+		<planche03>03 - システム動画のフレーム</planche03>
+		<planche04>04 - テーマをカスタマイズする方法 2/2</planche04>
+		<planche05>05 - テーマのダウンロード</planche05>
+		<planche06>06 - システムテーマの追加</planche06>
+		<planche07>07 - ゲームテーマの追加</planche07>
+		<planche08>08 - テーマエディター</planche08>
+		<planche09>09 - 2D・3Dボックスとスクレイピング</planche09>
+		<planche10>10 - パンくずリストと文字ナビゲーション</planche10>
+		<planche11>11 - ゲーム情報のスタイル</planche11>
+		<planche12>12 - 4:3・16:10画面</planche12>
+		<planche13>13 - テーマとアートワークを追加ダウンロードするリンク</planche13>
+	</variables>
+</theme>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-amiga500" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+			<path>./background.png</path>
+			<!-- <path>./01.jpg</path> -->
+			<!-- <color>224488</color> -->
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="Artwork1-amiga500" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.400000000000 0.503703703704</pos>
+			<size>0.800000000000 0.962962962963</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork4-amiga500" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.413020833333 0.081944444444</pos>
+			<size>0.423958333333 0.160185185185</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-7.9" to="0" begin="0" duration="750" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-7.9" to="0" begin="0" duration="750" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-7.9" to="0" begin="0" duration="750" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="screenshot-amiga500" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.426302083333 0.389814814815</pos>
+			<size>0.242187500000 0.324074074074</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+		</image>
+		<video name="gameplayprev-amiga500" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.426302083333 0.389814814815</pos>
+			<maxSize>0.242187500000 0.324074074074</maxSize>
+			<zIndex>240</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="EaseIn"/>
+			</storyboard>
+		</video>
+		<image name="Artwork2-amiga500" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.400000000000 0.500000000000</pos>
+			<size>0.800000000000 0.962962962963</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="cartridge-amiga500" extra="true">
+		<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+		<path>{game:cartridge}</path>
+		<origin>0.5 0.5</origin>
+		<pos>0.906510416667 0.600000000000</pos>
+		<size>0.156770833333 0.290740740741</size>
+		<scale ifSubset="boxback:oui">0.800000000000</scale>
+		<zIndex>290</zIndex>
+		<linearSmooth>true</linearSmooth>
+		<autoFade>false</autoFade>
+		<storyboard event="open">
+		<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+		<animation property="opacity" from="0" to="1" begin="2650" duration="700" mode="Linear"/>
+		<animation property="offsetX" from="0.5" to="0" begin="2650" duration="700" mode="Linear"/>
+		<animation property="offsetX" from="0" to="0.07" duration="500" begin="5000" mode="linear"/>
+		<animation property="offsetX" from="0.07" to="0" duration="500" begin="6500"/>
+		</storyboard>
+		<storyboard event="activateNext">
+		<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+		<animation property="opacity" from="0" to="1" begin="2650" duration="700" mode="Linear"/>
+		<animation property="offsetX" from="0.5" to="0" begin="2650" duration="700" mode="Linear"/>
+		<animation property="offsetX" from="0" to="0.07" duration="500" begin="5000" mode="linear"/>
+		<animation property="offsetX" from="0.07" to="0" duration="500" begin="6500"/>
+		</storyboard>
+		<storyboard event="activatePrev">
+		<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+		<animation property="opacity" from="0" to="1" begin="2650" duration="700" mode="Linear"/>
+		<animation property="offsetX" from="0.5" to="0" begin="2650" duration="700" mode="Linear"/>
+		<animation property="offsetX" from="0" to="0.07" duration="500" begin="5000" mode="linear"/>
+		<animation property="offsetX" from="0.07" to="0" duration="500" begin="6500"/>
+		<!-- <animation property="shader.u_angle" from="170" to="10" duration="1500" begin="5500" mode="easeInOut"/> -->
+		</storyboard>
+		</image>
+		<image name="boxart-amiga500" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+			<path>firstfile({game:fanart},{game:thumbnail},"${path_game_theme}/amiga500/hyperbat/_default/_thumbnaildefault.png")</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.804427083333 0.467592592593</pos>
+			<size>0.244270833333 0.555555555556</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<scale>1.4</scale>
+			<shader>
+				<path>./boite24.glsl</path>
+				<u_mode>0.0</u_mode>
+				<u_thickness>0.2</u_thickness>
+				<u_pitch>-0.25</u_pitch>
+				<u_angle>180</u_angle>
+				<u_shiny>0.5</u_shiny>
+			</shader>
+		</image>
+		<image name="bb-amiga500" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+			<path>firstfile({game:fanart},{game:boxback},"${path_game_theme}/amiga500/hyperbat/_default/_thumbnaildefault.png")</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.804427083333 0.467592592593</pos>
+			<size>0.244270833333 0.555555555556</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<scale>1.4</scale>
+			<shader>
+				<path>./boite24.glsl</path>
+				<u_mode>1.0</u_mode>
+				<u_thickness>0.2</u_thickness>
+				<u_pitch>-0.25</u_pitch>
+				<u_angle>180</u_angle>
+				<u_shiny>0.5</u_shiny>
+			</shader>
+		</image>
+		<image name="spine-amiga500" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+			<path>firstfile({game:fanart},{game:thumbnail},"${path_game_theme}/amiga500/hyperbat/_default/_thumbnaildefault.png")</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.804427083333 0.467592592593</pos>
+			<size>0.244270833333 0.555555555556</size>
+			<zIndex>269</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<scale>1.4</scale>
+			<shader>
+				<path>./boite24.glsl</path>
+				<u_mode>2.0</u_mode>
+				<u_thickness>0.2</u_thickness>
+				<u_pitch>-0.25</u_pitch>
+				<u_angle>180</u_angle>
+				<u_shiny>0.5</u_shiny>
+			</shader>
+		</image>
+		<image name="marquee-amiga500" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+			<path>{game:marquee}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.804427083333 0.467592592593</pos>
+			<maxSize>0.244270833333 0.555555555556</maxSize>
+			<size>0.244270833333 0.555555555556</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<scale>1.4</scale>
+			<shader>
+				<path>./boite24.glsl</path>
+				<u_mode>3.2</u_mode>
+				<u_thickness>0.2</u_thickness>
+				<u_pitch>-0.25</u_pitch> 
+				<u_angle>180</u_angle>
+				<u_logo_scale>0.7</u_logo_scale>
+				<u_shiny>0.5</u_shiny>
+			</shader>   
+		</image>
+		<image name="logo-amiga500" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+			<path>./logo.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.804427083333 0.467592592593</pos>
+			<size>0.244270833333 0.555555555556</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<scale>1.4</scale>
+			<shader>
+				<path>./boite24.glsl</path>
+				<u_mode>3.1</u_mode>
+				<u_thickness>0.2</u_thickness>
+				<u_pitch>-0.25</u_pitch> 
+				<u_angle>180</u_angle>
+				<u_logo_scale>0.6</u_logo_scale>
+				<u_shiny>0.5</u_shiny>
+			</shader>   
+		</image>
+		<image name="pegi-amiga500" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'amiga500'</visible>
+			<path>./pegi.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.804427083333 0.467592592593</pos>
+			<size>0.244270833333 0.555555555556</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<scale>1.4</scale>
+			<shader>
+				<path>./boite24.glsl</path>
+				<u_mode>3.3</u_mode>
+				<u_thickness>0.2</u_thickness>
+				<u_pitch>-0.25</u_pitch> 
+				<u_angle>180</u_angle>
+				<u_logo_scale>1</u_logo_scale>
+				<u_shiny>0.5</u_shiny>
+			</shader>   
+		</image>
+		<control name="spine-amiga500, bb-amiga500, boxart-amiga500, marquee-amiga500, logo-amiga500, pegi-amiga500">
+			<!-- <shader> -->
+			<!-- <path>./boite10.glsl</path> -->
+			<!-- <u_mode>2.0</u_mode> -->
+			<!-- <u_thickness>0.12</u_thickness> -->
+			<!-- <u_pitch>0.25</u_pitch>  -->
+			<!-- <u_angle>0.2</u_angle> -->
+			<!-- </shader>    -->
+			<!-- <storyboard> -->
+			<!-- <animation property="shader.u_angle" from="0" to="0" duration="2000" /> -->
+			<!-- <animation property="shader.u_angle" from="0" to="3.14159" duration="1500" begin="2000" mode="easeInOut" /> -->
+			<!-- <animation property="shader.u_angle" from="3.14159" to="3.14159" duration="2000" begin="3500" /> -->
+			<!-- <animation property="shader.u_angle" from="3.14159" to="6.28318" duration="1500" begin="5500" mode="easeInOut" /> -->
+				<!-- <animation property="shader.u_angle" from="4.708" to="4.708" duration="" begin="" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<storyboard>
+				<!-- <animation property="shader.u_angle" from="0" to="0" duration="2000" /> -->
+				<!-- <animation property="shader.u_angle" from="0" to="3.14159" duration="1500" begin="2000" mode="easeInOut" /> -->
+				<animation property="offset" to="-0.7 0.8" duration="" begin="" mode="linear"/>
+				<animation property="shader.u_angle" from="90" to="90" duration="" begin="" mode="linear"/>
+				<animation property="offsetY" from="0.8" to="0" duration="1000" begin="500" mode="easeInout"/>
+				<animation property="offset" to="0 0" duration="1500" begin="2000" mode="easeOut"/>
+				<animation property="shader.u_angle" from="90" to="10" duration="1000" begin="500" mode="easeInOut"/>
+				<animation property="shader.u_angle" from="10" to="170" duration="1500" begin="2000" mode="easeInOut"/>
+				<animation property="shader.u_angle" from="170" to="170" duration="2000" begin="3500"/>
+				<animation property="shader.u_angle" from="170" to="10" duration="1500" begin="5500" mode="easeInOut"/>
+			</storyboard>
+		</control>
+		<control name="Artwork1-amiga500, Artwork4-amiga500, screenshot-amiga500, gameplayprev-amiga500, Artwork2-amiga500, cartridge-amiga500">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

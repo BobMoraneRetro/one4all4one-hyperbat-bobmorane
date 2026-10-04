@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="id">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Ya</yes>
+		<no>Tidak</no>
+		<desactive>Nonaktif</desactive>
+		<activate>Aktif</activate>
+		<actif>Aktif</actif>
+		<active>Aktif</active>
+		<deactive>Nonaktif</deactive>
+		<vide>   </vide>
+		<default>Bawaan</default>
+		<amoitie>sebagian</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Bahasa yang tersedia:</languesdispo>
+		<nodates>Tanpa tanggal</nodates>
+		<playcount>kali main</playcount>
+		<playcountone>kali main</playcountone>
+		<players>pemain</players>
+		<playerss>pemain</playerss>
+		<player>pemain</player>
+		<nogametime>Belum pernah dimainkan</nogametime>
+		<noplayerdata>Tidak diketahui</noplayerdata>
+		<noratings>Tanpa nilai</noratings>
+		<lastgamelabel>Terakhir dimainkan:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Game berikutnya</jeusuiv>
+		<jeuprec>Game sebelumnya</jeuprec>
+		<systsuiv>Sistem berikutnya</systsuiv>
+		<systprec>Sistem sebelumnya</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Pesan sambutan</lismoi>
+		<tumasbienlu>Sambutan dan kredit</tumasbienlu>
+		<deporttheme>Cara memindahkan tema kustom saya</deporttheme>
+		<customiztheme1>Cara menyesuaikan tema saya 1/2</customiztheme1>
+		<customiztheme2>Cara menyesuaikan tema saya 2/2</customiztheme2>
+		<downloadmore>Tautan untuk mengunduh lebih banyak tema dan artwork</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Tampilan untuk daftar sistem</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Tampilan kisi dasar</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart sangat ringan</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Uji media Anda</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>Atur SCRAP - Struktur fanart?</packcustombuild>
+		<packcustombuildsno>Fanart dengan akhiran "-fanart" (bawaan)</packcustombuildsno>
+		<packretrofreshbat>Fanart dengan akhiran "-image"</packretrofreshbat>
+		<scrap3dbox>Atur scrape - Struktur kotak 3D?</scrap3dbox>
+		<scrapedboxart>Kotak 3D dengan "-boxart" di gamelist</scrapedboxart>
+		<scrapedthumbnail>Kotak 3D dengan "-thumbnail" di gamelist</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Bantuan - Tampilan ikon bantuan</iconset>
+		<iconsetposition>Posisi tombol</iconsetposition>
+		<colorhelp>Bantuan - Warna teks bantuan</colorhelp>
+		<skyblue>biru langit</skyblue>
+		<standard>Standar</standard>
+		<purple>ungu</purple>
+		<red>merah</red>
+		<aqua>biru langit</aqua>
+		<orange>oranye</orange>
+		<green>hijau</green>
+		<yellow>kuning</yellow>
+		<pink>merah muda</pink>
+		<grey>abu-abu tua</grey>
+		<lightgrey>abu-abu muda</lightgrey>
+		<navy>biru alt</navy>
+		<violet>ungu</violet>
+		<candy>candy</candy>
+		<redalt>merah alt</redalt>
+		<yellowalt>kuning alt</yellowalt>
+		<greenalt>hijau alt</greenalt>
+		<purplealt>ungu alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Tampilan sistem - Jenis logo sistem</systviewlogos>
+		<logosimple>Logo sederhana (Lengkap + Wilayah)</logosimple>
+		<glassnekhros>Logo Glass (Lengkap + Wilayah) (By Nekhros)</glassnekhros>
+		<logobd>Logo gaya komik (Helmic)</logobd>
+		<logoovalcarb>Logo oval Carbon</logoovalcarb>
+		<hmaxovalsilver>Logo oval Silver</hmaxovalsilver>
+		<logorectfresh>Logo persegi panjang Team Freshone (paket eksternal)</logorectfresh>
+		<hmaxrectrefl>Logo persegi panjang reflektif Team Freshone (paket eksternal)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Tampilan sistem - Daftar sistem memudar</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Tampilan sistem - Pilihan fanart sistem</systviewfanart>
+		<fanartfreshone>Hanya fanart pilihan FreshOne</fanartfreshone>
+		<fanartsystcustom>Fanart kustom, jika tidak fanart FreshOne</fanartsystcustom>
+		<fanfondsystem>Latar sistem, jika tidak fanart FreshOne</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Tampilan sistem - Presentasi sistem animasi</systviewvideo>
+		<hyperspinorunified>ADDON: HS dinamis, jika tidak HS terpadu</hyperspinorunified>
+		<gameplayp1>Video gameplay acak kecil dengan bezel jika ada</gameplayp1>
+		<gameplay1>Video gameplay acak besar dengan bezel jika ada</gameplay1>
+		<gameplayp>Video gameplay acak kecil</gameplayp>
+		<gameplay>Video gameplay acak besar</gameplay>
+		<custom>Video pribadi dari folder custom</custom>
+		<hyperspinxp>ADDON: Gambar dan gameplay gaya Hyperspin dinamis</hyperspinxp>
+		<hyperspin>ADDON: Gambar dan gameplay gaya Hyperspin terpadu</hyperspin>
+		<hyperspinorder>ADDON: HS dinamis, jika tidak video Hyperpie</hyperspinorder>
+		<hyperpie>ADDON: Video Hyperpie, jika tidak video Unified jika ada</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Tampilan sistem - Tampilkan jumlah game sistem</systviewtotal>
+		<nbrjeux>jumlah game sederhana</nbrjeux>
+		<nbrjeux2>nama sistem dan jumlah game</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Tampilan jalur navigasi</menuofficiel>
+		<menutxt>Urutan perangkat keras resmi: teks horizontal</menutxt>
+		<menuorb>Urutan perangkat keras resmi: bola horizontal</menuorb>
+		<menuorbvert>Urutan perangkat keras resmi: bola vertikal</menuorbvert>
+		<menuorbcrcl>Urutan perangkat keras resmi: bola setengah lingkaran</menuorbcrcl>
+		<menucust>Urutan perangkat keras kustom Bob: teks horizontal</menucust>
+		<menucustorb>Urutan perangkat keras kustom Bob: bola horizontal</menucustorb>
+		<menucustorbvert>Urutan perangkat keras kustom Bob: bola vertikal</menucustorbvert>
+		<menucustorbcrcl>Urutan perangkat keras kustom Bob: bola setengah lingkaran</menucustorbcrcl>
+		<menutxtzspin>Urutan perangkat keras resmi: teks vertikal</menutxtzspin>
+		<menutxtzspincust>Urutan perangkat keras kustom Bob: teks vertikal</menutxtzspincust>
+		<menuteta>Urutan perangkat keras resmi: Tetanos</menuteta>
+		<menucustteta>Urutan perangkat keras kustom Bob: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Tampilan sistem Hyperbat - Bantuan animasi</sticksysteme>
+		<systballblue>Stick Biru</systballblue>
+		<systballcyan>Stick Sian</systballcyan>
+		<systballdarkviolet>Stick Ungu tua</systballdarkviolet>
+		<systballviolet>Stick Ungu</systballviolet>
+		<systballgreen>Stick Hijau</systballgreen>
+		<systballlitegreen>Stick Hijau muda</systballlitegreen>
+		<systballpink>Stick Merah muda</systballpink>
+		<systballred>Stick Merah</systballred>
+		<systballyelgreen>Stick Kuning kehijauan</systballyelgreen>
+		<systballyellow>Stick Kuning</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Tampilan sistem Hyperbat - Jenis menu</hyperwheel>
+		<spindr>Roda melengkung di kanan (Hyperspin)</spindr>
+		<verticaldr>Roda vertikal di kanan (Hyperspin)</verticaldr>
+		<verticaldreb>Roda vertikal di kanan (Emubox)</verticaldreb>
+		<spingh>Roda melengkung di kiri (Hyperspin)</spingh>
+		<verticalgh>Roda vertikal di kiri (Hyperspin)</verticalgh>
+		<verticalgheb>Roda vertikal di kiri (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Penjual box Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Penjual box Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Penjual box Hyperspin Chris (sedang dikerjakan)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Tampilan game - Sistem saat ini ketika dibuka?</systannounce>
+		<classiquesyst>Memudar dengan zoom mundur</classiquesyst>
+		<nomsystem2>Masuk lambat (pudar + zoom)</nomsystem2>
+		<nomsystem3>Kilat cepat (zoom keluar)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Tampilan game - Latar pada setiap logo game?</gwheelbackgr>
+		<sisaccades>Nonaktif</sisaccades>
+		<ovalcarbon>Oval carbon (dibuat otomatis)</ovalcarbon>
+		<ovalsilver>Oval silver (dibuat otomatis)</ovalsilver>
+		<rectcarbon>Persegi panjang carbon (dibuat otomatis)</rectcarbon>
+		<rectcompose>Persegi panjang kustom per sistem (otomatis)</rectcompose>
+		<ovalcompose>Oval carbon kustom per sistem (otomatis)</ovalcompose>
+		<logounified>Logo ukuran seragam</logounified>
+		<hfsround>Bulat Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Tampilan game - Navigasi per huruf (game)?</letternav>
+		<navhoricoinstyle>Alfabet horizontal</navhoricoinstyle>
+		<navvertcoinstyle>Alfabet vertikal di kiri</navvertcoinstyle>
+		<navvertrcoinstyle>Alfabet vertikal di kanan</navvertrcoinstyle>
+		<navhsletters>Huruf bergaya per sistem</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Tampilan game - Tampilkan info maksimum?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Awal opsi lanjutan khusus tampilan Hyperbat ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Media yang dibutuhkan untuk tampilan game Hyperbat = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Tema game generik (jika tidak ada tema)</defaultgeneric>
+		<videodefaut>Video bawaan tema generik (tanpa tangkapan layar atau video)</videodefaut>
+		<generic43boxback>Standar dengan montase kotak belakang dan depan</generic43boxback>
+		<generic43coinopsstyle>Koleksi kabinet arcade</generic43coinopsstyle>
+		<generic43noanimationfanart>Standar dengan latar fanart animasi</generic43noanimationfanart>
+		<generic43noanimation>Standar tanpa animasi boxart</generic43noanimation>
+		<generic43>Standar</generic43>
+		<jukeboxdef>Tampilan cakram padat (belum selesai)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Tema game: Sistem sumber</gameviewsource>
+		<mamefolder>Folder asal game dulu, lalu folder mame</mamefolder>
+		<actualsystem>Folder sistem terpilih dulu</actualsystem>
+		<genericstyleonly>Hanya gunakan tema game generik</genericstyleonly>
+		<groupedsystem>Hanya uji pengembang: jangan digunakan</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Tema game: Pembuat</authordisplayed>
+		<showoff>Aktif, visibilitas tinggi</showoff>
+		<showoffblackwhite>Aktif, visibilitas maksimum</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Daftar game memudar</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Suara saat menggulir</gamewheelsound>
+		<wheelclic>Klik gaya Hyperspin</wheelclic>
+		<bulle>Gelembung</bulle>
+		<clic>Klik sederhana</clic>
+		<clicgrave>Klik dalam</clicgrave>
+		<frottement>Gesekan</frottement>
+		<poc>Pop</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Visual - Efek vinyet</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Visual - Vinyet tampilan sistem</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Visual - Gelapkan latar (tampilan sistem)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>VISUAL - Pilihan stick animasi</syststickon>
+		<stickon>Arcade klasik</stickon>
+		<syststickcolor>VISUAL - Warna bola stick</syststickcolor>
+		<ballcyan>Sian</ballcyan>
+		<ballblue>Biru</ballblue>
+		<balldarkviolet>Ungu tua</balldarkviolet>
+		<ballviolet>Ungu</ballviolet>
+		<ballgreen>Hijau</ballgreen>
+		<balllitegreen>Hijau muda</balllitegreen>
+		<ballpink>Merah muda</ballpink>
+		<ballred>Merah</ballred>
+		<ballyelgreen>Kuning kehijauan</ballyelgreen>
+		<ballyellow>Kuning</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Tampilan press start</pressstart>
+		<doigts>Jari animasi menekan tombol</doigts>
+		<undoigt>Jari animasi menekan tombol hanya di kiri</undoigt>
+		<undoigtr>Jari animasi menekan tombol hanya di kanan</undoigtr>
+		<pressstarttxt>METADATA - Pilihan teks</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Main gratis</partiegratuite>
+		<uneuro>1€ sekali main</uneuro>
+		<sitessage>Tekan Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Konfigurasi metadata</hsmetadata>
+		<full>Lengkap dan posisi bawaan</full>
+		<lower>Lengkap dan posisi paling bawah</lower>
+		<metafichedefault>Kartu metadata di posisi bawaan</metafichedefault>
+		<metafichebasgauche>Kartu metadata kiri bawah</metafichebasgauche>
+		<metafichebasdroite>Kartu metadata kanan bawah</metafichebasdroite>
+		<metafichebascentre>Kartu metadata tengah bawah</metafichebascentre>
+		<metafichehautgauche>Kartu metadata kiri atas</metafichehautgauche>
+		<metafichehautdroite>Kartu metadata kanan atas</metafichehautdroite>
+		<metafichehautcentre>Kartu metadata tengah atas</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Tampilkan tema per game?</hyperbatperview>
+		<themejeux>Tema per game diutamakan jika ada</themejeux>
+		<themejeuxno>Nonaktifkan tema per game</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Visual - Transisi halus antar tema game</smoothgametheme>
+		<activesmooth>Aktif (disarankan untuk Retrobat)</activesmooth>
+		<noactivesmooth>Nonaktif (disarankan untuk Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Penunjuk sistem gaya Hyperspin</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Kustomisasi scrap untuk tema yang kompatibel ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Kotak game yang ditampilkan</boxorthumb>
+		<boxart>Dikalibrasi untuk kotak 3D</boxart>
+		<thumb>Dikalibrasi untuk kotak 2D</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Konfigurasi lanjutan: Mengubah folder sumber media --------------------------------------------------------</spacerextfolder>
+		<folder>Sumber - jangan digunakan</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Folder tema - Bawaan</intheme>
+		<extfolder>Folder eksternal</extfolder>
+		<extfoldergametheme>Sumber - Tema khusus game</extfoldergametheme>
+		<extfoldergamemedia>Sumber - Media game di luar gamelist.xml</extfoldergamemedia>
+		<extfoldervideosyst>Sumber - Tema khusus sistem</extfoldervideosyst>
+		<extfolderbezelsyst>Sumber - Bezel sistem</extfolderbezelsyst>
+		<extfoldermanufacturer>Sumber - Logo penerbit game</extfoldermanufacturer>
+		<extfolderfanart>Sumber - Fanart sistem</extfolderfanart>
+		<extfolderlogosyst>Sumber - Logo sistem</extfolderlogosyst>
+		<extfoldercouleursinfos>Sumber - Gaya info game</extfoldercouleursinfos>
+		<extfolderthumbox>Sumber - Kotak game 2D/3D</extfolderthumbox>
+		<extfoldergamefanart>Sumber - Fanart game</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Media yang disarankan untuk tampilan game Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ Awal opsi lanjutan khusus tampilan FanartStar boxart ↓   -------------------</mediastar>
+		<spacebox>Jarak antar kotak game</spacebox>
+		<spacessssmall>Jarak ----</spacessssmall>
+		<spacesssmall>Jarak ---</spacesssmall>
+		<spacessmall>Jarak --</spacessmall>
+		<spacesmall>Jarak -</spacesmall>
+		<spacenorm>Bawaan</spacenorm>
+		<spacemore>Jarak +</spacemore>
+		<spacemmore>Jarak ++</spacemmore>
+		<spacemmmore>Jarak +++</spacemmmore>
+		<spacemmmmore>Jarak ++++</spacemmmmore>
+		<fanartstarrotated>Rotasi kotak SNES, N64, NGAGE, Solarus</fanartstarrotated>
+		<starrotate>Ya</starrotate>
+		<nostarrotate>Tidak</nostarrotate>
+		<boxstarspeed>Kecepatan animasi gulir</boxstarspeed>
+		<speedslow1>Lambat+</speedslow1>
+		<speedslow2>Lambat++</speedslow2>
+		<customfanart>Fanart yang digunakan</customfanart>
+		<fanartgamelist>Fanart hasil scrap di gamelist</fanartgamelist>
+		<fanartcustom>Fanart kustom di _Gamemedia-NamaSistem-medium_artwork</fanartcustom>
+		<starboxang>Sudut kotak game</starboxang>
+		<starthumb>Tampilkan sampul 2D atau 3D?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Ukuran video pratinjau</starvideo>
+		<starvideoang>Miring</starvideoang>
+		<starvideodef>Standar</starvideodef>
+		<starvideobig>Besar</starvideobig>
+		<longselect>Tekan lama "select"</longselect>
+		<favuniquement>Hanya favorit</favuniquement>
+		<tslesjeux>Semua game</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Rasio layar</screenratio>
+		<ratio1610>16/10 (eksperimental)</ratio1610>
+		<ratio43>4/3 (eksperimental)</ratio43>
+		<cadrevideosyst>Bingkai video sistem</cadrevideosyst>
+		<cadreorigine>Asli (bezel)</cadreorigine>
+		<cadrebordure>Tepi</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Sambutan dan kredit</planche00>
+		<planche01>01 - Cara memindahkan tema kustom saya</planche01>
+		<planche02>02 - Cara menyesuaikan tema saya 1/2</planche02>
+		<planche03>03 - Bingkai video sistem</planche03>
+		<planche04>04 - Cara menyesuaikan tema saya 2/2</planche04>
+		<planche05>05 - Unduh tema</planche05>
+		<planche06>06 - Tambah tema sistem</planche06>
+		<planche07>07 - Tambah tema game</planche07>
+		<planche08>08 - Editor tema</planche08>
+		<planche09>09 - Kotak 2D atau 3D dan scraping</planche09>
+		<planche10>10 - Breadcrumb dan navigasi huruf</planche10>
+		<planche11>11 - Gaya info game</planche11>
+		<planche12>12 - Layar 4:3 atau 16:10</planche12>
+		<planche13>13 - Tautan untuk mengunduh lebih banyak tema dan artwork</planche13>
+	</variables>
+</theme>

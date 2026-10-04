@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-wasm4" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wasm4'</visible>
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="Artwork1-wasm4" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wasm4'</visible>
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.821704019360 0.115408716798</pos>
+			<size>0.092902988215 0.114094650206</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4-wasm4" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wasm4'</visible>
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.701228430135 0.151889263000</pos>
+			<size>0.212221170034 0.246913580247</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>:/shaders/pixelate.glsl</path>
+				<pixelSize>80</pixelSize>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="1000" mode="easeIn"/>
+				<animation property="shader.pixelSize" from="80" to="0" begin="300" duration="1200" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="1000" mode="easeIn"/>
+				<animation property="shader.pixelSize" from="80" to="0" begin="300" duration="1200" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="300" duration="1000" mode="easeIn"/>
+				<animation property="shader.pixelSize" from="80" to="0" begin="300" duration="1200" mode="easeOut"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2-wasm4" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wasm4'</visible>
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.256313131313 0.114786756453</pos>
+			<size>0.414983164983 0.205630377853</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev-wasm4" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wasm4'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.273989898990 0.466142910587</pos>
+			<maxSize>0.462121212121 0.489337822671</maxSize>
+			<zIndex>230</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+			<shader>
+				<path>${path_com_shaders}/border_multi_gradient.glsl</path>
+				<cornerRadius>0.20</cornerRadius>
+				<innerShadowSize>0</innerShadowSize>
+				<innerShadowColor>0</innerShadowColor>
+				<outerShadowSize>0</outerShadowSize>
+				<outerShadowColor>0</outerShadowColor>
+				<gradientMode>0</gradientMode>
+				<saturation/>
+				<borderSize>0.020</borderSize>
+				<borderColor>8080ffff</borderColor>
+				<borderColorStart/>
+				<borderColorEnd/>
+				<borderSize2>0</borderSize2>
+				<borderColor2>0</borderColor2>
+				<borderColorStart2>0</borderColorStart2>
+				<borderColorEnd2>0</borderColorEnd2>
+				<borderSize3>0</borderSize3>
+				<borderColor3>0</borderColor3>
+				<borderColorStart3/>
+				<borderColorEnd3/>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="Linear"/>
+				<animation property="scale" from="0" to="0.4" begin="400" duration="400" mode="EaseIn"/>
+				<animation property="scale" from="0.4" to="0.6" begin="1000" duration="200" mode="EaseIn"/>
+				<animation property="scale" from="0.6" to="0.8" begin="1300" duration="200" mode="EaseIn"/>
+				<animation property="scale" from="0.8" to="1" begin="1600" duration="200" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="Linear"/>
+				<animation property="scale" from="0" to="0.4" begin="400" duration="400" mode="EaseIn"/>
+				<animation property="scale" from="0.4" to="0.6" begin="1000" duration="200" mode="EaseIn"/>
+				<animation property="scale" from="0.6" to="0.8" begin="1300" duration="200" mode="EaseIn"/>
+				<animation property="scale" from="0.8" to="1" begin="1600" duration="200" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="EaseIn"/>
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="Linear"/>
+				<animation property="scale" from="0" to="0.4" begin="400" duration="400" mode="EaseIn"/>
+				<animation property="scale" from="0.4" to="0.6" begin="1000" duration="200" mode="EaseIn"/>
+				<animation property="scale" from="0.6" to="0.8" begin="1300" duration="200" mode="EaseIn"/>
+				<animation property="scale" from="0.8" to="1" begin="1600" duration="200" mode="EaseIn"/>
+			</storyboard>
+		</video>
+		<image name="2048-wasm4" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wasm4'</visible>
+			<path>{game:marquee}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.320223063973 0.697961092406</pos>
+			<maxSize>0.512500000000 0.396296296296</maxSize>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Bubblewrap-wasm4" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wasm4'</visible>
+			<path ifSubset="boxorthumb:thumb">firstfile(${box2dpath},${box3dpath})</path>
+			<path ifSubset="boxorthumb:boxart">firstfile(${box3dpath},${box2dpath})</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.749579124579 0.575570520015</pos>
+			<maxSize>0.292087542088 0.555555555556</maxSize>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<control name="Artwork1-wasm4, Artwork4-wasm4, Artwork2-wasm4, gameplayprev-wasm4, 2048-wasm4, Bubblewrap-wasm4">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<text name="defaultthemeauthor" extra="true">
+			<text>Theme by : Finch</text>
+		</text>
+	</customView>
+</theme>

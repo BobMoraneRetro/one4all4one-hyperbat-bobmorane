@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='utf-8'?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="ps3" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/ps3.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.008333333333 1.007407407407</size>
+			<zIndex>100</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="logo" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/logo.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.147222222222</pos>
+			<size>0.405208333333 0.261111111111</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear" />
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear" />
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear" />
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint" />
+			</storyboard>
+		</image>
+		<image name="console" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/console.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.741093223906 0.463103254770</pos>
+			<size>0.450000000000 0.450000000000</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="650" duration="1200" mode="Linear" />
+				<animation property="offsetX" from="1" to="0" begin="650" duration="1200" mode="Linear" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="650" duration="1200" mode="Linear" />
+				<animation property="offsetX" from="1" to="0" begin="650" duration="1200" mode="Linear" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="650" duration="1200" mode="Linear" />
+				<animation property="offsetX" from="1" to="0" begin="650" duration="1200" mode="Linear" />
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>${extsubsystvideo}</path>
+			<pos>0.500520833333 0.566666666667</pos>
+			<maxSize>0.426041666667 0.568518518519</maxSize>
+			<size>0.426041666667 0.568518518519</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>220</zIndex>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<shader>
+				<path>${path_com_shaders}/border_multi_gradient.glsl</path>
+				<cornerRadius>0.00</cornerRadius>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+				<gradientMode>4</gradientMode>
+				<saturation />
+				<borderSize>0.035</borderSize>
+				<borderColor>ffffffff</borderColor>
+				<borderColorStart />
+				<borderColorEnd />
+				<borderSize2>0.020</borderSize2>
+				<borderColor2>000000ff</borderColor2>
+				<borderColorStart2 />
+				<borderColorEnd2 />
+				<borderSize3>0.015</borderSize3>
+				<borderColor3>072185ff</borderColor3>
+				<borderColorStart3 />
+				<borderColorEnd3 />
+			</shader>
+		</video>
+		<image name="PreviewScreen" extra="true">
+			<visible>${ifnosubsystvideo}</visible>
+			<path>${extsubsystimage}</path>
+			<pos>0.500520833333 0.566666666667</pos>
+			<maxSize>0.426041666667 0.568518518519</maxSize>
+			<size>0.426041666667 0.568518518519</size>
+			<origin>0.5 0.5</origin>
+			<zIndex>220</zIndex>
+			<effect>none</effect>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<shader>
+				<path>${path_com_shaders}/border_multi_gradient.glsl</path>
+				<cornerRadius>0.00</cornerRadius>
+				<innerShadowSize>0.01</innerShadowSize>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize>0.020</outerShadowSize>
+				<outerShadowColor>00000050</outerShadowColor>
+				<gradientMode>4</gradientMode>
+				<saturation />
+				<borderSize>0.035</borderSize>
+				<borderColor>ffffffff</borderColor>
+				<borderColorStart />
+				<borderColorEnd />
+				<borderSize2>0.020</borderSize2>
+				<borderColor2>000000ff</borderColor2>
+				<borderColorStart2 />
+				<borderColorEnd2 />
+				<borderSize3>0.015</borderSize3>
+				<borderColor3>072185ff</borderColor3>
+				<borderColorStart3 />
+				<borderColorEnd3 />
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="Linear" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="Linear" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="controle-original-sony-ps3-removebg-preview" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/controle-original-sony-ps3-removebg-preview.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.789930555556 0.745061728395</pos>
+			<size>0.260416666667 0.462962962963</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="1066" mode="Linear" />
+				<animation property="offsetX" from="7.9" to="0" begin="0" duration="1600" mode="EaseOutQuint" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="1066" mode="Linear" />
+				<animation property="offsetX" from="7.9" to="0" begin="0" duration="1600" mode="EaseOutQuint" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="1066" mode="Linear" />
+				<animation property="offsetX" from="7.9" to="0" begin="0" duration="1600" mode="EaseOutQuint" />
+			</storyboard>
+		</image>
+		<image name="Character" extra="true">
+			<path>"${path_syst_theme}/hyperspinxp/" + {game:system:theme} + "/Character.png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.191135311448 0.518420314254</pos>
+			<size>0.287500000000 0.780555555556</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear" />
+				<animation property="scale" from="20" to="1" begin="1500" duration="800" autoreverse="false" mode="easyOut" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear" />
+				<animation property="scale" from="20" to="1" begin="1500" duration="800" autoreverse="false" mode="easyOut" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear" />
+				<animation property="scale" from="20" to="1" begin="1500" duration="800" autoreverse="false" mode="easyOut" />
+			</storyboard>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="1300" duration="1000" mode="Linear" />
+				<animation property="offsetX" from="1" to="0" begin="1300" duration="2000" mode="EaseOutQuint" />
+				<animation property="scale" to="1.02" begin="3000" duration="700" autoreverse="true" repeat="forever" mode="EaseIn" />
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="1300" duration="1000" mode="Linear" />
+				<animation property="offsetX" from="1" to="0" begin="1300" duration="2000" mode="EaseOutQuint" />
+				<animation property="scale" to="1.02" begin="3000" duration="700" autoreverse="true" repeat="forever" mode="EaseIn" />
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="1300" duration="1000" mode="Linear" />
+				<animation property="offsetX" from="1" to="0" begin="1300" duration="2000" mode="EaseOutQuint" />
+				<animation property="scale" to="1.02" begin="3000" duration="700" autoreverse="true" repeat="forever" mode="EaseIn" />
+			</storyboard>
+		</image>
+		<text name="gamethemeauthor" extra="true">
+			<text>Theme by : Kairos182</text>
+		</text>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>250</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>250</zIndex>
+		</image>
+		<control name="Character, PreviewScreen, PreviewVid, console, controle-original-sony-ps3-removebg-preview, logo">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn" />
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear" />
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn" />
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear" />
+			</storyboard>
+		</control>
+	</customView>
+</theme>

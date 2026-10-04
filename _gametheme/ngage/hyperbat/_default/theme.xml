@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="background" extra="true">
+			<path>./background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+		</image>
+		<image name="Artwork2" extra="true">
+			<path>./artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.477864583333 0.120833333333</pos>
+			<size>0.372395833333 0.169444444444</size>
+			<zIndex>210</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{game:video}</path>
+			<pos>0.346389071305 0.479258467811</pos>
+			<size>0.170415311184 0.346676415608</size>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<zIndex>220</zIndex>
+		</video>
+		<image name="Scanline" extra="true">
+			<path>./scanline.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.345312500000 0.480092592593</pos>
+			<size>0.202083333333 0.358333333333</size>
+			<zIndex>230</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork1" extra="true">
+			<path>./artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.344270833333 0.549537037037</pos>
+			<size>0.639583333333 0.593518518519</size>
+			<zIndex>240</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="boxart2D" extra="true">
+			<path ifSubset="boxorthumb:thumb">firstfile({game:thumbnail},{game:boxart})</path>
+			<path ifSubset="boxorthumb:boxart">firstfile({game:boxart},{game:thumbnail})</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.794791666667 0.512037037037</pos>
+			<maxSize>0.230208333333 0.542592592593</maxSize>
+			<zIndex>250</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="offsetY" from="-0.9" to="-0.9" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-0.9" to="0" begin="487" duration="290" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.225" begin="777" duration="145" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.225" to="0" begin="922" duration="145" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.05625" begin="1067" duration="72" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.05625" to="0" begin="1139" duration="73" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.014062" begin="1212" duration="36" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.014062" to="0" begin="1248" duration="36" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetY" from="-0.9" to="-0.9" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-0.9" to="0" begin="487" duration="290" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.225" begin="777" duration="145" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.225" to="0" begin="922" duration="145" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.05625" begin="1067" duration="72" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.05625" to="0" begin="1139" duration="73" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.014062" begin="1212" duration="36" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.014062" to="0" begin="1248" duration="36" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetY" from="-0.9" to="-0.9" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-0.9" to="0" begin="487" duration="290" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.225" begin="777" duration="145" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.225" to="0" begin="922" duration="145" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.05625" begin="1067" duration="72" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.05625" to="0" begin="1139" duration="73" mode="EaseIn"/>
+				<animation property="offsetY" from="0" to="-0.014062" begin="1212" duration="36" mode="EaseOut"/>
+				<animation property="offsetY" from="-0.014062" to="0" begin="1248" duration="36" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="cartridge2D" extra="true">
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.927864583333 0.682870370370</pos>
+			<maxSize>0.084895833333 0.200925925926</maxSize>
+			<zIndex>260</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="offsetX" from="0.5" to="0.5" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="0.5" to="0" begin="380" duration="789" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.5" to="0.5" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="0.5" to="0" begin="380" duration="789" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.5" to="0.5" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="0.5" to="0" begin="380" duration="789" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>260</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>260</zIndex>
+		</image>
+		<control name="Artwork1, Artwork2, PreviewVid, Scanline, boxart2D, cartridge2D">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="0" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="0" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<text name="defaultthemeauthor" extra="true">
+			<text>Theme by : Akeshi</text>
+		</text>
+	</customView>
+</theme>

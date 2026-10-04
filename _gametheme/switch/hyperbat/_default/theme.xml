@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-switch" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'switch'</visible>
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="Backscreen-switch" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'switch'</visible>
+			<path>./Backscreen.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.340885416667 0.513425925926</pos>
+			<size>0.357812500000 0.358333333333</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="screenshot-switch" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'switch'</visible>
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.341322815534 0.513304566703</pos>
+			<maxSize>0.355987055016 0.355987055016</maxSize>
+			<zIndex>208</zIndex>
+			<autoFade>false</autoFade>
+		</image>
+		<video name="gameplayprev-switch" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'switch'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.341322815534 0.513304566703</pos>
+			<maxSize>0.355987055016 0.355987055016</maxSize>
+			<zIndex>210</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+		</video>
+		<image name="Artwork3-switch" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'switch'</visible>
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.341145833333 0.512037037037</pos>
+			<size>0.621875000000 0.472222222222</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork4-switch" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'switch'</visible>
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.531250000000 0.791666666667</pos>
+			<size>0.241666666667 0.198148148148</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork2-switch" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'switch'</visible>
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.356770833333 0.143055555556</pos>
+			<size>0.475000000000 0.226851851852</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Support-switch" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'switch'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.890625000000 0.747685185185</pos>
+			<size>0.092708333333 0.247222222222</size>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="250" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="250" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="250" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Boxart-switch" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'switch'</visible>
+			<path ifSubset="boxorthumb:thumb">firstfile(${box2dpath},${box3dpath})</path>
+			<path ifSubset="boxorthumb:boxart">firstfile(${box3dpath},${box2dpath})</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.786718750000 0.500000000000</pos>
+			<maxSize>0.207812500000 0.742592592593</maxSize>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="250" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="250" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="250" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<!-- <control name="Boxart-switch, Support-switch"> -->
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+		<!-- </control> -->
+	</customView>
+</theme>

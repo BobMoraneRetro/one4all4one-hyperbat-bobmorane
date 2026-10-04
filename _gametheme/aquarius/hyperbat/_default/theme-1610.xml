@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 16:10 generee le 2026-09-29 depuis theme.xml (hauteurs x0.9 autour de l'ancre) -->
+	<include>./theme.xml</include>
+	<customView name="hyperbat">
+		<image name="screenshot-aquarius" extra="true">
+			<pos>0.276752985904 0.58096749811</pos>
+			<size>0.365 0.5805</size>
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+			<!-- copie du storyboard par defaut, rejoue au changement de jeu -->
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear" />
+				<animation property="offsetY" from="1" to="0" begin="500" duration="500" mode="Linear" />
+				<animation property="rotation" from="0" to="360" begin="500" duration="500" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="fiber-aquarius" extra="true">
+			<pos>0.276752985904 0.58096749811</pos>
+			<size>0.379909033033 0.446859410431</size>
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+			<!-- copie du storyboard par defaut, rejoue au changement de jeu -->
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear" />
+				<animation property="offsetY" from="1" to="0" begin="500" duration="500" mode="Linear" />
+				<animation property="rotation" from="0" to="360" begin="500" duration="500" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Video-aquarius" extra="true">
+			<pos>0.278573200113 0.57971749811</pos>
+			<size>0.396354166667 0.490833333333</size>
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+			<!-- copie du storyboard par defaut, rejoue au changement de jeu -->
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear" />
+				<animation property="offsetY" from="1" to="0" begin="500" duration="500" mode="Linear" />
+				<animation property="rotation" from="0" to="360" begin="500" duration="500" mode="Linear" />
+			</storyboard>
+		</image>
+		<video name="gameplayprev-aquarius" extra="true">
+			<pos>0.27691680839 0.579119425548</pos>
+			<maxSize>0.365625 0.438333333333</maxSize>
+		</video>
+		<image name="Background-aquarius" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="artwork1-aquarius" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2-aquarius" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+			<!-- copie du storyboard par defaut, rejoue au changement de jeu -->
+			<storyboard event="activate">
+				<animation property="offsetX" from="-0.8" begin="0" duration="2000" mode="easeOut" />
+				<animation property="opacity" from="0" to="1" duration="350" mode="linear" />
+			</storyboard>
+		</image>
+	</customView>
+</theme>

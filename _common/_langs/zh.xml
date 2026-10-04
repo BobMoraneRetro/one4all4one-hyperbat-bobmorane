@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="zh">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>是</yes>
+		<no>否</no>
+		<desactive>已禁用</desactive>
+		<activate>已启用</activate>
+		<actif>已启用</actif>
+		<active>已启用</active>
+		<deactive>已禁用</deactive>
+		<vide>   </vide>
+		<default>默认</default>
+		<amoitie>部分</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>可用语言:</languesdispo>
+		<nodates>无日期</nodates>
+		<playcount>次游玩</playcount>
+		<playcountone>次游玩</playcountone>
+		<players>名玩家</players>
+		<playerss>名玩家</playerss>
+		<player>名玩家</player>
+		<nogametime>从未玩过</nogametime>
+		<noplayerdata>未知</noplayerdata>
+		<noratings>无评分</noratings>
+		<lastgamelabel>上次游玩:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>下一个游戏</jeusuiv>
+		<jeuprec>上一个游戏</jeuprec>
+		<systsuiv>下一个系统</systsuiv>
+		<systprec>上一个系统</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>欢迎信息</lismoi>
+		<tumasbienlu>欢迎与致谢</tumasbienlu>
+		<deporttheme>如何迁移我的自定义主题</deporttheme>
+		<customiztheme1>如何自定义我的主题 1/2</customiztheme1>
+		<customiztheme2>如何自定义我的主题 2/2</customiztheme2>
+		<downloadmore>下载更多主题和美术资源的链接</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>系统列表视图</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic:基础网格视图</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart 超轻量</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - 测试你的媒体</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>SCRAP 设置 - 背景图结构?</packcustombuild>
+		<packcustombuildsno>带 "-fanart" 后缀的背景图(默认)</packcustombuildsno>
+		<packretrofreshbat>带 "-image" 后缀的背景图</packretrofreshbat>
+		<scrap3dbox>刮削设置 - 3D 盒子结构?</scrap3dbox>
+		<scrapedboxart>gamelist 中带 "-boxart" 的 3D 盒子</scrapedboxart>
+		<scrapedthumbnail>gamelist 中带 "-thumbnail" 的 3D 盒子</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>帮助 - 帮助图标外观</iconset>
+		<iconsetposition>按钮位置</iconsetposition>
+		<colorhelp>帮助 - 帮助文字颜色</colorhelp>
+		<skyblue>天蓝</skyblue>
+		<standard>标准</standard>
+		<purple>紫色</purple>
+		<red>红色</red>
+		<aqua>天蓝</aqua>
+		<orange>橙色</orange>
+		<green>绿色</green>
+		<yellow>黄色</yellow>
+		<pink>粉色</pink>
+		<grey>深灰</grey>
+		<lightgrey>浅灰</lightgrey>
+		<navy>蓝色 alt</navy>
+		<violet>紫色</violet>
+		<candy>candy</candy>
+		<redalt>红色 alt</redalt>
+		<yellowalt>黄色 alt</yellowalt>
+		<greenalt>绿色 alt</greenalt>
+		<purplealt>紫色 alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>系统视图 - 系统标志类型</systviewlogos>
+		<logosimple>简单标志(完整 + 地区)</logosimple>
+		<glassnekhros>Glass 标志(完整 + 地区)(By Nekhros)</glassnekhros>
+		<logobd>漫画风格标志(Helmic)</logobd>
+		<logoovalcarb>椭圆标志 Carbon</logoovalcarb>
+		<hmaxovalsilver>椭圆标志 Silver</hmaxovalsilver>
+		<logorectfresh>矩形标志 Team Freshone(外部包)</logorectfresh>
+		<hmaxrectrefl>带反光的矩形标志 Team Freshone(外部包)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>系统视图 - 系统列表淡出</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>系统视图 - 系统背景图选择</systviewfanart>
+		<fanartfreshone>仅 FreshOne 精选的背景图</fanartfreshone>
+		<fanartsystcustom>自定义背景图,否则使用 FreshOne 背景图</fanartsystcustom>
+		<fanfondsystem>系统背景,否则使用 FreshOne 背景图</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>系统视图 - 系统动画展示</systviewvideo>
+		<hyperspinorunified>ADDON:动态 HS,否则统一 HS</hyperspinorunified>
+		<gameplayp1>随机游戏视频(小),有边框时附带边框</gameplayp1>
+		<gameplay1>随机游戏视频(大),有边框时附带边框</gameplay1>
+		<gameplayp>随机游戏视频(小)</gameplayp>
+		<gameplay>随机游戏视频(大)</gameplay>
+		<custom>custom 文件夹中的个人视频</custom>
+		<hyperspinxp>ADDON:动态 Hyperspin 风格的图片和游戏画面</hyperspinxp>
+		<hyperspin>ADDON:统一 Hyperspin 风格的图片和游戏画面</hyperspin>
+		<hyperspinorder>ADDON:动态 HS,否则 Hyperpie 视频</hyperspinorder>
+		<hyperpie>ADDON:Hyperpie 视频,否则 Unified 视频(如有)</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>系统视图 - 显示系统的游戏数量</systviewtotal>
+		<nbrjeux>简洁游戏数量</nbrjeux>
+		<nbrjeux2>系统名称和游戏数量</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>导航路径显示</menuofficiel>
+		<menutxt>官方硬件排序: 横向文字</menutxt>
+		<menuorb>官方硬件排序: 横向圆球</menuorb>
+		<menuorbvert>官方硬件排序: 纵向圆球</menuorbvert>
+		<menuorbcrcl>官方硬件排序: 半圆圆球</menuorbcrcl>
+		<menucust>Bob 的自定义硬件排序: 横向文字</menucust>
+		<menucustorb>Bob 的自定义硬件排序: 横向圆球</menucustorb>
+		<menucustorbvert>Bob 的自定义硬件排序: 纵向圆球</menucustorbvert>
+		<menucustorbcrcl>Bob 的自定义硬件排序: 半圆圆球</menucustorbcrcl>
+		<menutxtzspin>官方硬件排序: 纵向文字</menutxtzspin>
+		<menutxtzspincust>Bob 的自定义硬件排序: 纵向文字</menutxtzspincust>
+		<menuteta>官方硬件排序: Tetanos</menuteta>
+		<menucustteta>Bob 的自定义硬件排序: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Hyperbat 系统视图 - 动画提示</sticksysteme>
+		<systballblue>蓝色摇杆</systballblue>
+		<systballcyan>青色摇杆</systballcyan>
+		<systballdarkviolet>深紫色摇杆</systballdarkviolet>
+		<systballviolet>紫色摇杆</systballviolet>
+		<systballgreen>绿色摇杆</systballgreen>
+		<systballlitegreen>浅绿色摇杆</systballlitegreen>
+		<systballpink>粉色摇杆</systballpink>
+		<systballred>红色摇杆</systballred>
+		<systballyelgreen>黄绿色摇杆</systballyelgreen>
+		<systballyellow>黄色摇杆</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Hyperbat 系统视图 - 菜单类型</hyperwheel>
+		<spindr>右侧弧形转盘 (Hyperspin)</spindr>
+		<verticaldr>右侧纵向转盘 (Hyperspin)</verticaldr>
+		<verticaldreb>右侧纵向转盘 (Emubox)</verticaldreb>
+		<spingh>左侧弧形转盘 (Hyperspin)</spingh>
+		<verticalgh>左侧纵向转盘 (Hyperspin)</verticalgh>
+		<verticalgheb>左侧纵向转盘 (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: 盒子卖家 Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: 盒子卖家 Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: 盒子卖家 Hyperspin Chris (制作中)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>游戏视图 - 打开时显示当前系统?</systannounce>
+		<classiquesyst>缩小后消失</classiquesyst>
+		<nomsystem2>缓慢进入(淡入 + 缩放)</nomsystem2>
+		<nomsystem3>快速闪现(向外缩放)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>游戏视图 - 每个游戏标志加背景?</gwheelbackgr>
+		<sisaccades>已禁用</sisaccades>
+		<ovalcarbon>椭圆 carbon(自动生成)</ovalcarbon>
+		<ovalsilver>椭圆 silver(自动生成)</ovalsilver>
+		<rectcarbon>矩形 carbon(自动生成)</rectcarbon>
+		<rectcompose>每个系统的自定义矩形(自动生成)</rectcompose>
+		<ovalcompose>每个系统的自定义椭圆 carbon(自动生成)</ovalcompose>
+		<logounified>统一尺寸的标志</logounified>
+		<hfsround>Z-Spin 圆形</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>游戏视图 - 按字母导航(游戏)?</letternav>
+		<navhoricoinstyle>横向字母表</navhoricoinstyle>
+		<navvertcoinstyle>左侧纵向字母表</navvertcoinstyle>
+		<navvertrcoinstyle>右侧纵向字母表</navvertrcoinstyle>
+		<navhsletters>按系统风格化的字母</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>游戏视图 - 显示最多信息?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Hyperbat 视图专属高级选项开始 ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Hyperbat 游戏视图所需媒体 = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>通用游戏主题(没有主题时)</defaultgeneric>
+		<videodefaut>通用主题默认视频(无截图和视频时)</videodefaut>
+		<generic43boxback>标准(带盒子正反面拼图)</generic43boxback>
+		<generic43coinopsstyle>街机机台合集</generic43coinopsstyle>
+		<generic43noanimationfanart>标准(带动态背景图)</generic43noanimationfanart>
+		<generic43noanimation>标准(无盒子动画)</generic43noanimation>
+		<generic43>标准</generic43>
+		<jukeboxdef>光盘外观(未完成)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>游戏主题:来源系统</gameviewsource>
+		<mamefolder>优先使用游戏原始文件夹,然后 mame 文件夹</mamefolder>
+		<actualsystem>优先使用所选系统的文件夹</actualsystem>
+		<genericstyleonly>仅使用通用游戏主题</genericstyleonly>
+		<groupedsystem>仅供开发测试:请勿使用</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>游戏主题:作者</authordisplayed>
+		<showoff>已启用,高可见度</showoff>
+		<showoffblackwhite>已启用,极高可见度</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - 游戏列表淡出</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - 滚动音效</gamewheelsound>
+		<wheelclic>Hyperspin 风格咔嗒声</wheelclic>
+		<bulle>气泡</bulle>
+		<clic>简单咔嗒声</clic>
+		<clicgrave>低沉咔嗒声</clicgrave>
+		<frottement>摩擦声</frottement>
+		<poc>啵</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>视觉 - 暗角效果</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>视觉 - 系统视图暗角</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>视觉 - 背景变暗(系统视图)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>视觉 - 动画摇杆选择</syststickon>
+		<stickon>经典街机</stickon>
+		<syststickcolor>视觉 - 摇杆球颜色</syststickcolor>
+		<ballcyan>青色</ballcyan>
+		<ballblue>蓝色</ballblue>
+		<balldarkviolet>深紫色</balldarkviolet>
+		<ballviolet>紫色</ballviolet>
+		<ballgreen>绿色</ballgreen>
+		<balllitegreen>浅绿色</balllitegreen>
+		<ballpink>粉色</ballpink>
+		<ballred>红色</ballred>
+		<ballyelgreen>黄绿色</ballyelgreen>
+		<ballyellow>黄色</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Press start 外观</pressstart>
+		<doigts>按下按钮的动画手指</doigts>
+		<undoigt>按下按钮的动画手指(仅左侧)</undoigt>
+		<undoigtr>按下按钮的动画手指(仅右侧)</undoigtr>
+		<pressstarttxt>METADATA - 文字选择</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>免费游戏</partiegratuite>
+		<uneuro>每局 1€</uneuro>
+		<sitessage>请按 Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - 元数据设置</hsmetadata>
+		<full>完整,默认位置</full>
+		<lower>完整,最低位置</lower>
+		<metafichedefault>元数据卡片默认位置</metafichedefault>
+		<metafichebasgauche>元数据卡片左下</metafichebasgauche>
+		<metafichebasdroite>元数据卡片右下</metafichebasdroite>
+		<metafichebascentre>元数据卡片底部居中</metafichebascentre>
+		<metafichehautgauche>元数据卡片左上</metafichehautgauche>
+		<metafichehautdroite>元数据卡片右上</metafichehautdroite>
+		<metafichehautcentre>元数据卡片顶部居中</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>显示单个游戏主题?</hyperbatperview>
+		<themejeux>如有单个游戏主题则优先</themejeux>
+		<themejeuxno>禁用单个游戏主题</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>视觉 - 游戏主题间平滑过渡</smoothgametheme>
+		<activesmooth>已启用(推荐用于 Retrobat)</activesmooth>
+		<noactivesmooth>已禁用(推荐用于 Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Hyperspin 风格系统指针</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- 兼容主题的刮削自定义 ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>要显示的游戏盒子</boxorthumb>
+		<boxart>针对 3D 盒子校准</boxart>
+		<thumb>针对 2D 盒子校准</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- 高级设置:修改媒体来源文件夹 --------------------------------------------------------</spacerextfolder>
+		<folder>来源 - 请勿使用</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>主题文件夹 - 默认</intheme>
+		<extfolder>外部文件夹</extfolder>
+		<extfoldergametheme>来源 - 游戏专属主题</extfoldergametheme>
+		<extfoldergamemedia>来源 - gamelist.xml 之外的游戏媒体</extfoldergamemedia>
+		<extfoldervideosyst>来源 - 系统专属主题</extfoldervideosyst>
+		<extfolderbezelsyst>来源 - 系统边框</extfolderbezelsyst>
+		<extfoldermanufacturer>来源 - 游戏发行商标志</extfoldermanufacturer>
+		<extfolderfanart>来源 - 系统背景图</extfolderfanart>
+		<extfolderlogosyst>来源 - 系统标志</extfolderlogosyst>
+		<extfoldercouleursinfos>来源 - 游戏信息样式</extfoldercouleursinfos>
+		<extfolderthumbox>来源 - 游戏 2D/3D 盒子</extfolderthumbox>
+		<extfoldergamefanart>来源 - 游戏背景图</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Fanart Star 游戏视图推荐媒体 = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ FanartStar boxart 视图专属高级选项开始 ↓   -------------------</mediastar>
+		<spacebox>游戏盒子之间的间距</spacebox>
+		<spacessssmall>间距 ----</spacessssmall>
+		<spacesssmall>间距 ---</spacesssmall>
+		<spacessmall>间距 --</spacessmall>
+		<spacesmall>间距 -</spacesmall>
+		<spacenorm>默认</spacenorm>
+		<spacemore>间距 +</spacemore>
+		<spacemmore>间距 ++</spacemmore>
+		<spacemmmore>间距 +++</spacemmmore>
+		<spacemmmmore>间距 ++++</spacemmmmore>
+		<fanartstarrotated>旋转 SNES、N64、NGAGE、Solarus 盒子</fanartstarrotated>
+		<starrotate>是</starrotate>
+		<nostarrotate>否</nostarrotate>
+		<boxstarspeed>滚动动画速度</boxstarspeed>
+		<speedslow1>慢+</speedslow1>
+		<speedslow2>慢++</speedslow2>
+		<customfanart>要使用的背景图</customfanart>
+		<fanartgamelist>gamelist 中刮削的背景图</fanartgamelist>
+		<fanartcustom>_Gamemedia-系统名-medium_artwork 中的自定义背景图</fanartcustom>
+		<starboxang>游戏盒子角度</starboxang>
+		<starthumb>显示 2D 还是 3D 封面?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>预览视频大小</starvideo>
+		<starvideoang>倾斜</starvideoang>
+		<starvideodef>标准</starvideodef>
+		<starvideobig>大</starvideobig>
+		<longselect>长按 "select"</longselect>
+		<favuniquement>仅收藏</favuniquement>
+		<tslesjeux>所有游戏</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>屏幕比例</screenratio>
+		<ratio1610>16/10 (实验性)</ratio1610>
+		<ratio43>4/3 (实验性)</ratio43>
+		<cadrevideosyst>系统视频边框</cadrevideosyst>
+		<cadreorigine>原始 (bezel)</cadreorigine>
+		<cadrebordure>边框</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - 欢迎与致谢</planche00>
+		<planche01>01 - 如何迁移我的自定义主题</planche01>
+		<planche02>02 - 如何自定义我的主题 1/2</planche02>
+		<planche03>03 - 系统视频边框</planche03>
+		<planche04>04 - 如何自定义我的主题 2/2</planche04>
+		<planche05>05 - 下载主题</planche05>
+		<planche06>06 - 添加系统主题</planche06>
+		<planche07>07 - 添加游戏主题</planche07>
+		<planche08>08 - 主题编辑器</planche08>
+		<planche09>09 - 2D 或 3D 盒子与刮削</planche09>
+		<planche10>10 - 面包屑导航与字母导航</planche10>
+		<planche11>11 - 游戏信息样式</planche11>
+		<planche12>12 - 4:3 或 16:10 屏幕</planche12>
+		<planche13>13 - 下载更多主题和美术资源的链接</planche13>
+	</variables>
+</theme>

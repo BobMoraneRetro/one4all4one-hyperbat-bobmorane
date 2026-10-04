@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-ngp" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ngp'</visible>
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="Backscreen-ngp" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ngp'</visible>
+			<path>./Backscreen.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.301822916667 0.517129629630</pos>
+			<size>0.249479166667 0.412037037037</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="screenshot-ngp" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ngp'</visible>
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.300111245955 0.513754045307</pos>
+			<size>0.285 0.369471413161</size>
+			<zIndex>219</zIndex>
+			<autoFade>false</autoFade>
+		</image>
+		<video name="gameplayprev-ngp" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ngp'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.300111245955 0.513754045307</pos>
+			<size>0.224008899676 0.369471413161</size>
+			<zIndex>220</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+		</video>
+		<image name="Video-ngp" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ngp'</visible>
+			<path>./video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.301822916667 0.568518518519</pos>
+			<size>0.552604166667 0.594444444444</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Led-ngp" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ngp'</visible>
+			<path>./Led.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.133072916667 0.338425925926</pos>
+			<size>0.009895833333 0.017592592593</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="100" mode="Linear"/>
+				<animation property="scale" to="1" begin="800" duration="100" autoreverse="false" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="100" mode="Linear"/>
+				<animation property="scale" to="1" begin="800" duration="100" autoreverse="false" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="100" mode="Linear"/>
+				<animation property="scale" to="1" begin="800" duration="100" autoreverse="false" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1-ngp" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ngp'</visible>
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500260416667 0.127314814815</pos>
+			<size>0.497395833333 0.204629629630</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Support-ngp" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ngp'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.893489583333 0.704629629630</pos>
+			<size>0.173437500000 0.275925925926</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Boxart-ngp" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'ngp'</visible>
+			<path ifSubset="boxorthumb:thumb">firstfile(${box2dpath},${box3dpath})</path>
+			<path ifSubset="boxorthumb:boxart">firstfile(${box3dpath},${box2dpath})</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.751041666667 0.556944444444</pos>
+			<maxSize>0.244791666667 0.571296296296</maxSize>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="1770" duration="400" mode="linear"/>
+				<animation property="offsetY" from="0" to="-0.06" begin="2170" duration="350" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.038" begin="2870" duration="250" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.024" begin="3370" duration="140" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.009" begin="3650" duration="60" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.0025" begin="3770" duration="20" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="0" begin="3810" duration="2500" mode="Linear" autoReverse="true"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="1770" duration="400" mode="linear"/>
+				<animation property="offsetY" from="0" to="-0.06" begin="2170" duration="350" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.038" begin="2870" duration="250" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.024" begin="3370" duration="140" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.009" begin="3650" duration="60" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.0025" begin="3770" duration="20" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="0" begin="3810" duration="2500" mode="Linear" autoReverse="true"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="1770" duration="400" mode="linear"/>
+				<animation property="offsetY" from="0" to="-0.06" begin="2170" duration="350" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.038" begin="2870" duration="250" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.024" begin="3370" duration="140" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.009" begin="3650" duration="60" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.0025" begin="3770" duration="20" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="0" begin="3810" duration="2500" mode="Linear" autoReverse="true"/>
+			</storyboard>
+		</image>
+		<!-- <control name="Backscreen-ngp, Video-ngp, Artwork1-ngp"> -->
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+		<!-- </control> -->
+		<control name="gameplayprev-ngp, Led-ngp, Boxart-ngp, Support-ngp">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<text name="defaultthemeauthor" extra="true">
+			<text>Theme by : Akeshi</text>
+		</text>
+		<text name="defaultthemeauthor" extra="true">
+		<text>Default theme by : Akeshi</text>
+	</text>
+	</customView>
+</theme>

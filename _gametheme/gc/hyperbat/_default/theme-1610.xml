@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 16:10 (hauteurs x0.9) : le CD tourne via shader.contentRotation. -->
+	<!-- Le CD d'origine est masque et remplace par cartridge2D_ratio (shader perspective_corners_texrot.glsl). -->
+	<include>./theme.xml</include>
+	<customView name="hyperbat">
+		<image name="cartridge2D" extra="true">
+			<visible>false</visible>
+		</image>
+		<image name="cartridge2D_ratio" extra="true">
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.166944018405 0.604258007823</pos>
+			<size>0.153125 0.245000000000</size>
+			<zIndex>290</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<shader>
+				<path>./_common/shaders/perspective_corners_texrot.glsl</path>
+				<offsetTL>0.0026886282802147075 0.4711698983354602</offsetTL>
+				<offsetTR>-0.5649606536547811 0.16370272725724083</offsetTR>
+				<offsetBL>0.5203056819183025 -0.2967284620585566</offsetBL>
+				<offsetBR>-0.0705025295735193 -0.6049540741640647</offsetBR>
+				<contentRotation>0</contentRotation>
+			</shader>
+			<storyboard event="open">
+				<animation property="offsetX" from="0.9" to="0.9" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="0.9" to="0" begin="514" duration="1254" mode="EaseOut"/>
+				<animation property="shader.contentRotation" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="shader.contentRotation" from="0" to="1440" begin="1724" duration="2400" mode="EaseInCubic"/>
+				<animation property="shader.contentRotation" from="0" to="720" begin="4124" duration="400" mode="Linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="offsetX" from="0.9" to="0.9" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="0.9" to="0" begin="514" duration="1254" mode="EaseOut"/>
+				<animation property="shader.contentRotation" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="shader.contentRotation" from="0" to="1440" begin="1724" duration="2400" mode="EaseInCubic"/>
+				<animation property="shader.contentRotation" from="0" to="720" begin="4124" duration="400" mode="Linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="offsetX" from="0.9" to="0.9" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="0.9" to="0" begin="514" duration="1254" mode="EaseOut"/>
+				<animation property="shader.contentRotation" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="shader.contentRotation" from="0" to="1440" begin="1724" duration="2400" mode="EaseInCubic"/>
+				<animation property="shader.contentRotation" from="0" to="720" begin="4124" duration="400" mode="Linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="0" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="0" duration="150" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="axe" extra="true">
+			<pos>0.162912260826 0.586926008458</pos>
+			<size>0.019270833333 0.022500000000</size>
+		</image>
+		<image name="background" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="screenshotHS" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="GcClosed" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Pad" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="md_boxart" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<text name="defaultthemeauthor" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</text>
+	</customView>
+</theme>

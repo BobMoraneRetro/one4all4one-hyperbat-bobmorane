@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Map-elderscroll_0011_NoiretBlanc" extra="true">
+			<path>./Map-elderscroll_0011_NoiretBlanc.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>210</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Map-elderscroll_0004_Morrowind" extra="true">
+			<path>./Map-elderscroll_0004_Morrowind.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.775000000000 0.239351851852</pos>
+			<size>0.245833333333 0.436111111111</size>
+			<zIndex>220</zIndex>
+			<scaleOrigin>-0.3 -0.3</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="100" duration="150" mode="Linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="1" to="0" begin="100" duration="150" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Map-elderscroll_0004_MorrowindGlow" extra="true">
+			<path>./Map-elderscroll_0004_Morrowind.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.775000000000 0.239351851852</pos>
+			<size>0.245833333333 0.436111111111</size>
+			<zIndex>219</zIndex>
+			<shader>
+				<path>./_common/shaders/glowlogo.glsl</path>
+				<glowSize>1.4</glowSize>
+				<glowColor>0.749 0.624 0.110 42.0</glowColor>
+				<glowSolid>0</glowSolid>
+				<glowSoft>1</glowSoft>
+				<glowOpacity>1</glowOpacity>
+			</shader>
+			<storyboard event="open">
+				<animation property="opacity" from="0.35" to="1" begin="0" duration="1200" mode="Linear" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0.35" to="1" begin="0" duration="1200" mode="Linear" autoreverse="true" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0.35" to="1" begin="0" duration="1200" mode="Linear" autoreverse="true" repeat="forever"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>220</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>220</zIndex>
+		</image>
+		<control name="Map-elderscroll_0011_NoiretBlanc">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<text name="gamethemeauthor" extra="true">
+			<text>Theme by : Bob Morane</text>
+		</text>
+	</customView>
+</theme>

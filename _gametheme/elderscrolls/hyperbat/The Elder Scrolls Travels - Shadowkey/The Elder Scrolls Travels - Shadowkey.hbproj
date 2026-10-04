@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "project": {
+    "name": "The Elder Scrolls Travels - Shadowkey",
+    "author": "Bob Morane",
+    "description": "",
+    "themeType": "game",
+    "width": 1920,
+    "height": 1080,
+    "filePath": null,
+    "modified": true,
+    "globalLightAngle": 30
+  },
+  "layers": [
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 960,
+      "y": 540,
+      "width": 1920,
+      "height": 1080,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "pivotPreset": "center",
+      "zIndex": 0,
+      "originalWidth": 1920,
+      "originalHeight": 1080,
+      "storyboards": [],
+      "exitSymmetric": true,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": false,
+      "glowColor": "4a90d9",
+      "glowIntensity": 20,
+      "glowSize": 1,
+      "glowSolid": false,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "src": "asset://local?path=A%3A%2F%40media%2F--%20COLLECTION%20--%20Elder%20scroll%2FMap-elderscroll_0011_NoiretBlanc.png",
+      "name": "Map-elderscroll_0011_NoiretBlanc",
+      "fileName": "Map-elderscroll_0011_NoiretBlanc.png",
+      "originalPath": "A:\\@media\\-- COLLECTION -- Elder scroll\\Map-elderscroll_0011_NoiretBlanc.png",
+      "id": "layer_1781647961631_1"
+    },
+    {
+      "type": "image",
+      "visible": true,
+      "locked": false,
+      "x": 518.5,
+      "y": 200.5,
+      "width": 481,
+      "height": 383,
+      "rotation": 0,
+      "opacity": 1,
+      "scaleX": 1,
+      "scaleY": 1,
+      "originX": 0.5,
+      "originY": 0.5,
+      "rotationOriginX": 0.5,
+      "rotationOriginY": 0.5,
+      "pivotPreset": "center",
+      "zIndex": 1,
+      "originalWidth": 279,
+      "originalHeight": 181,
+      "storyboards": [
+        {
+          "event": "open",
+          "name": "Opacity",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0",
+              "to": "1",
+              "begin": "0",
+              "duration": "513",
+              "mode": "Linear"
+            }
+          ]
+        },
+        {
+          "event": "deactivateNext",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "0",
+              "begin": "100",
+              "duration": "150",
+              "mode": "Linear"
+            }
+          ]
+        },
+        {
+          "event": "deactivatePrev",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "1",
+              "to": "0",
+              "begin": "100",
+              "duration": "150",
+              "mode": "Linear"
+            }
+          ]
+        }
+      ],
+      "exitSymmetric": false,
+      "pixelSize": 1,
+      "filterBrightness": 0,
+      "filterContrast": 0,
+      "filterSaturate": 0,
+      "filterGrayscale": false,
+      "filterBlur": 0,
+      "filterSepia": false,
+      "tilingEnabled": false,
+      "tilingX": 0,
+      "tilingY": 0,
+      "tilingScaleX": 1,
+      "tilingScaleY": 1,
+      "tilingAngle": 0,
+      "strokeEnabled": false,
+      "strokeColor1": "ecf0f1",
+      "strokeSize1": 4,
+      "strokeColor2": "3498db",
+      "strokeSize2": 0,
+      "strokeColor3": "e74c3c",
+      "strokeSize3": 0,
+      "cornerRadius": 0,
+      "glowEnabled": true,
+      "glowColor": "c01c8f",
+      "glowIntensity": 38,
+      "glowSize": 2.65,
+      "glowSolid": false,
+      "glowSoft": true,
+      "keepAspectRatio": true,
+      "inControlGroup": false,
+      "src": "asset://local?path=C%3A%2FUsers%2FBob%2FAppData%2FRoaming%2Fhyperbat%2FimageCache%2F14937fa3a4dfdec1c2bf00cef3280a2a.png",
+      "name": "Map-elderscroll_0001_Shadowkey",
+      "fileName": "Map-elderscroll_0001_Shadowkey.png",
+      "originalPath": "A:\\@media\\-- COLLECTION -- Elder scroll\\Map-elderscroll_0001_Shadowkey.png",
+      "id": "layer_1781648113908_3",
+      "bakePadding": 101,
+      "originalSrc": "asset://local?path=A%3A%2F%40media%2F--%20COLLECTION%20--%20Elder%20scroll%2FMap-elderscroll_0001_Shadowkey.png",
+      "glowStoryboards": [
+        {
+          "event": "open",
+          "animations": [
+            {
+              "property": "opacity",
+              "from": "0.35",
+              "to": "1",
+              "begin": "0",
+              "duration": "1200",
+              "mode": "Linear",
+              "autoreverse": true,
+              "repeat": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

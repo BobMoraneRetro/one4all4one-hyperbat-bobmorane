@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="presetstarbox" displayName="${presetstarbox}" inherits="gamecarousel">
+		<gamecarousel name="gamecarousel">
+			<zIndex>10</zIndex>
+			<type>horizontal</type>
+			<pos>-0.1 0.1</pos>
+			<pos ifHelpPrompts="true">-0.1 0.08</pos>
+			<size>1.45 1</size>
+			<logoScale>1.5</logoScale>
+			<logoSize>0.350 0.350</logoSize>
+			<color>00000000</color>
+			<logoAlignment>bottom</logoAlignment>
+			<minLogoOpacity>1</minLogoOpacity>
+			<transitionSpeed ifSubset="boxstarspeed:starslow2">2000</transitionSpeed>
+			<transitionSpeed ifSubset="boxstarspeed:starslow1">1500</transitionSpeed>
+			<transitionSpeed ifSubset="boxstarspeed:stardefault">750</transitionSpeed>
+			<logoPos>0.15 0.5</logoPos>
+			<imageSource>thumbnail</imageSource>
+			<defaultTransition>instant</defaultTransition>
+			<itemTemplate>
+				<container>
+				<image name="thumbnailstd">
+						<visible>false</visible>
+						<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch'|| {system.theme} == 'solarus' || {system.theme} == 'ngage'">true</visible>
+						<pos>0.5 0.6</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.475 1</maxSize>
+						<path>{game:thumbnail}</path>
+						<path ifSubset="starthumb:starbox3d">firstfile(${core3dart},{game:boxart})</path>
+						<path ifSubset="starthumb:starbox2d">firstfile(${corefrontart},{game:thumbnail})</path>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<shader>
+							<path>:/shaders/border.glsl</path>
+							<cornerRadius>0.03</cornerRadius>
+							<borderSize>0</borderSize>
+							<borderColor>00000080</borderColor>
+							<innerShadowSize>0.02</innerShadowSize>
+							<innerShadowColor>00000070</innerShadowColor>
+							<outerShadowSize>0.02</outerShadowSize>
+							<outerShadowColor>00000080</outerShadowColor>
+						</shader>
+					</image>
+					<image name="thumbnail">
+						<visible if="{system.theme} == 'snes' || {system.theme} == 'n64' || {system.theme} == 'gameandwatch' || {system.theme} == 'solarus' || {system.theme} == 'ngage'">false</visible>
+						<pos>0.5 0.6</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.39 1</maxSize>
+						<path>{game:thumbnail}</path>
+						<path ifSubset="starthumb:starbox3d">firstfile(${core3dart},{game:boxart})</path>
+						<path ifSubset="starthumb:starbox2d">firstfile(${corefrontart},{game:thumbnail})</path>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<shader>
+							<path>:/shaders/border.glsl</path>
+							<cornerRadius>0.03</cornerRadius>
+							<borderSize>0</borderSize>
+							<borderColor>00000080</borderColor>
+							<innerShadowSize>0.02</innerShadowSize>
+							<innerShadowColor>00000070</innerShadowColor>
+							<outerShadowSize>0.02</outerShadowSize>
+							<outerShadowColor>00000080</outerShadowColor>
+						</shader>
+					</image>
+					<image name="nothumb">
+						<visible ifSubset="starthumb:starbox3d">!exists({game:boxart}) &amp;&amp; !exists(${core3dart})</visible>
+						<visible ifSubset="starthumb:starbox2d">!exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<pos>0.5 0.6</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<minSize>0.38 0.96</minSize>
+						<minSize if="{system.theme} == 'dreamcast' 
+						|| {system.theme} == '3do' 
+						|| {system.theme} == 'amigacdtv' 
+						|| {system.theme} == 'amigacd32' 
+						|| {system.theme} == 'gx4000' 
+						|| {system.theme} == 'cdi' 
+						|| {system.theme} == 'neogeocd' 
+						|| {system.theme} == 'pce-cd' 
+						|| {system.theme} == 'pcfx' 
+						|| {system.theme} == 'psx' 
+						|| {system.theme} == 'saturn' 
+						|| {system.theme} == 'segacd'">0.38 0.69</minSize>
+						<path>${intfanartfresh}</path>
+						<saturation>0.7</saturation>
+						<shader>
+							<path>:/shaders/border.glsl</path>
+							<cornerRadius>0.03</cornerRadius>
+							<borderSize>0</borderSize>
+							<borderColor>00000080</borderColor>
+							<innerShadowSize>0.02</innerShadowSize>
+							<innerShadowColor>00000070</innerShadowColor>
+							<outerShadowSize>0.02</outerShadowSize>
+							<outerShadowColor>00000080</outerShadowColor>
+						</shader>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</image>
+					<image name="nothumbmarq">
+						<visible ifSubset="starthumb:starbox3d">!exists({game:boxart}) &amp;&amp; !exists(${core3dart})</visible>
+						<visible ifSubset="starthumb:starbox2d">!exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<pos>0.5 0.55</pos>
+						<origin>0.5</origin>
+						<rotation>0</rotation>
+						<maxSize>0.33 1</maxSize>
+						<path>{game:marquee}</path>
+						<shader>
+							<path>:/shaders/border.glsl</path>
+							<cornerRadius>0.03</cornerRadius>
+							<borderSize>0</borderSize>
+							<borderColor>00000080</borderColor>
+							<innerShadowSize>0.02</innerShadowSize>
+							<innerShadowColor>00000070</innerShadowColor>
+							<outerShadowSize>0.02</outerShadowSize>
+							<outerShadowColor>00000080</outerShadowColor>
+						</shader>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</image>
+					<text name="gamename" if="{system.theme} != 'switch'">
+						<visible ifSubset="starthumb:starbox3d">!exists({game:marquee}) &amp;&amp; !exists({game:boxart}) &amp;&amp; !exists(${core3dart})</visible>
+						<visible ifSubset="starthumb:starbox2d">!exists({game:marquee}) &amp;&amp; !exists({game:thumbnail}) &amp;&amp; !exists(${corefrontart})</visible>
+						<origin>0.5</origin>
+						<text>{game:name}</text>
+						<fontPath>${fontimpact}</fontPath>
+						<color>FFFFFF</color>
+						<alignment>center</alignment>
+						<fontSize>0.025</fontSize>
+						<lineSpacing>1</lineSpacing>
+						<size>0.3 2</size>
+						<pos>0.5 0.8</pos>
+						<glowColor>00000066</glowColor>
+						<glowSize>2</glowSize>
+						<zIndex>400</zIndex>
+						<storyboard ifSubset="starboxang:deactive" event="activate">
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:deactive" event="deactivate">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="open">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="activate">
+							<animation property="rotation" to="-3" begin="" duration="350" mode="Linear"/>
+							<animation property="y" to="0.65" begin="250" duration="350" mode="easeIn"/>
+						</storyboard>
+						<storyboard ifSubset="starboxang:active" event="deactivate">
+							<animation property="rotation" to="0" begin="" duration="150" mode="Linear"/>
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+						<storyboard event="scroll">
+							<animation property="y" to="0.6" begin="" duration="" mode="Linear"/>
+						</storyboard>
+					</text>
+				</container>
+			</itemTemplate>
+		</gamecarousel>
+	</customView>
+</theme>

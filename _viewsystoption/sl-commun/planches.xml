@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Planches explicatives (subset lismoiv2 de theme.xml ; renommer pour refaire apparaitre les planches apres une mise a jour). Langue fr : planches/fr/ ; toutes les autres : planches/en/. -->
+	<!-- La 1re ligne <path> pose la version anglaise ; la 2e la remplace par planches/${lang}/ si ce fichier existe
+	     (fichier absent : ES garde la valeur précédente). -->
+	<view name="system">
+		<image name="splashounet" extra="true">
+			<path ifSubset="lismoiv2:planche00">${path_vsystopt}/sl-commun/planches/en/00.png</path>
+			<path ifSubset="lismoiv2:planche00">${path_vsystopt}/sl-commun/planches/${lang}/00.png</path>
+			<path ifSubset="lismoiv2:planche01">${path_vsystopt}/sl-commun/planches/en/01.png</path>
+			<path ifSubset="lismoiv2:planche01">${path_vsystopt}/sl-commun/planches/${lang}/01.png</path>
+			<path ifSubset="lismoiv2:planche02">${path_vsystopt}/sl-commun/planches/en/02.png</path>
+			<path ifSubset="lismoiv2:planche02">${path_vsystopt}/sl-commun/planches/${lang}/02.png</path>
+			<path ifSubset="lismoiv2:planche03">${path_vsystopt}/sl-commun/planches/en/03.png</path>
+			<path ifSubset="lismoiv2:planche03">${path_vsystopt}/sl-commun/planches/${lang}/03.png</path>
+			<path ifSubset="lismoiv2:planche04">${path_vsystopt}/sl-commun/planches/en/04.png</path>
+			<path ifSubset="lismoiv2:planche04">${path_vsystopt}/sl-commun/planches/${lang}/04.png</path>
+			<path ifSubset="lismoiv2:planche05">${path_vsystopt}/sl-commun/planches/en/05.png</path>
+			<path ifSubset="lismoiv2:planche05">${path_vsystopt}/sl-commun/planches/${lang}/05.png</path>
+			<path ifSubset="lismoiv2:planche06">${path_vsystopt}/sl-commun/planches/en/06.png</path>
+			<path ifSubset="lismoiv2:planche06">${path_vsystopt}/sl-commun/planches/${lang}/06.png</path>
+			<path ifSubset="lismoiv2:planche07">${path_vsystopt}/sl-commun/planches/en/07.png</path>
+			<path ifSubset="lismoiv2:planche07">${path_vsystopt}/sl-commun/planches/${lang}/07.png</path>
+			<path ifSubset="lismoiv2:planche08">${path_vsystopt}/sl-commun/planches/en/08.png</path>
+			<path ifSubset="lismoiv2:planche08">${path_vsystopt}/sl-commun/planches/${lang}/08.png</path>
+			<path ifSubset="lismoiv2:planche09">${path_vsystopt}/sl-commun/planches/en/09.png</path>
+			<path ifSubset="lismoiv2:planche09">${path_vsystopt}/sl-commun/planches/${lang}/09.png</path>
+			<path ifSubset="lismoiv2:planche10">${path_vsystopt}/sl-commun/planches/en/10.png</path>
+			<path ifSubset="lismoiv2:planche10">${path_vsystopt}/sl-commun/planches/${lang}/10.png</path>
+			<path ifSubset="lismoiv2:planche11">${path_vsystopt}/sl-commun/planches/en/11.png</path>
+			<path ifSubset="lismoiv2:planche11">${path_vsystopt}/sl-commun/planches/${lang}/11.png</path>
+			<path ifSubset="lismoiv2:planche12">${path_vsystopt}/sl-commun/planches/en/12.png</path>
+			<path ifSubset="lismoiv2:planche12">${path_vsystopt}/sl-commun/planches/${lang}/12.png</path>
+			<path ifSubset="lismoiv2:planche13">${path_vsystopt}/sl-commun/planches/en/13.png</path>
+			<path ifSubset="lismoiv2:planche13">${path_vsystopt}/sl-commun/planches/${lang}/13.png</path>
+			<size>1 1</size>
+			<pos>0.5 0.5</pos>
+			<origin>0.5 0.5</origin>
+			<zIndex>999</zIndex>
+		</image>
+	</view>
+</theme>

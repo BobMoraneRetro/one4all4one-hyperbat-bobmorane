@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-dreamcast" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'dreamcast'</visible>
+			<path>./background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="art4-dreamcast" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'dreamcast'</visible>
+			<path>./art4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.220925902281 0.164718029231</pos>
+			<size>0.135416666667 0.309259259259</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="0.3" to="0" begin="2000" duration="1500" mode="Linear"/>
+				<animation property="offsetX" from="0" to="0.05" begin="3700" duration="4000" autoreverse="true" repeat="forever" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="0.3" to="0" begin="2000" duration="1500" mode="Linear"/>
+				<animation property="offsetX" from="0" to="0.05" begin="3700" duration="4000" autoreverse="true" repeat="forever" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2000" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="0.3" to="0" begin="2000" duration="1500" mode="Linear"/>
+				<animation property="offsetX" from="0" to="0.05" begin="3700" duration="4000" autoreverse="true" repeat="forever" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="pngegg-dreamcast" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'dreamcast'</visible>
+			<path>./pngegg.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.344915801271 0.719682152360</pos>
+			<size>0.585416666667 0.553703703704</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev-dreamcast" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'dreamcast'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.308608646153 0.421705034111</pos>
+			<maxSize>0.338020833333 0.450925925926</maxSize>
+			<zIndex>220</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="1000" mode="Linear"/>
+				<animation property="w" from="0" to="0.338020833333" begin="800" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="1000" mode="Linear"/>
+				<animation property="w" from="0" to="0.338020833333" begin="800" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="1000" mode="Linear"/>
+				<animation property="w" from="0" to="0.338020833333" begin="800" duration="1000" mode="EaseOut"/>
+			</storyboard>
+		</video>
+		<image name="video-dreamcast" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'dreamcast'</visible>
+			<path>./video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.309900641086 0.422752522238</pos>
+			<size>0.357291666667 0.475000000000</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="1000" mode="Linear"/>
+				<animation property="w" from="0" to="0.357291666667" begin="800" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="1000" mode="Linear"/>
+				<animation property="w" from="0" to="0.357291666667" begin="800" duration="1000" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="1000" mode="Linear"/>
+				<animation property="w" from="0" to="0.357291666667" begin="800" duration="1000" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="art3-dreamcast" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'dreamcast'</visible>
+			<path>./art3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.719777745857 0.132196764091</pos>
+			<size>0.470312500000 0.187962962963</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear"/>
+				<animation property="scale" from="0" to="1.1" begin="1500" duration="500" autoreverse="false" mode="EaseIn"/>
+				<animation property="scale" from="1.1" to="0.95" begin="2000" duration="300" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="0.95" to="1.02" begin="2300" duration="200" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="1.02" to="1" begin="2500" duration="100" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="1" to="0.95" begin="2700" duration="1000" autoreverse="true" repeat="forever" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear"/>
+				<animation property="scale" from="0" to="1.1" begin="1500" duration="500" autoreverse="false" mode="EaseIn"/>
+				<animation property="scale" from="1.1" to="0.95" begin="2000" duration="300" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="0.95" to="1.02" begin="2300" duration="200" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="1.02" to="1" begin="2500" duration="100" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="1" to="0.95" begin="2700" duration="1000" autoreverse="true" repeat="forever" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear"/>
+				<animation property="scale" from="0" to="1.1" begin="1500" duration="500" autoreverse="false" mode="EaseIn"/>
+				<animation property="scale" from="1.1" to="0.95" begin="2000" duration="300" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="0.95" to="1.02" begin="2300" duration="200" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="1.02" to="1" begin="2500" duration="100" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="1" to="0.95" begin="2700" duration="1000" autoreverse="true" repeat="forever" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="Cart-dreamcast" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'dreamcast'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.786633895131 0.570748527724</pos>
+			<size>0.187500000000 0.332407407407</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3100" duration="10" mode="linear"/>
+				<animation property="offsetX" from="0" to="0.07" begin="3000" duration="800" mode="linear"/>
+				<animation property="rotation" from="0" to="360" begin="3800" duration="5000" mode="easeIn"/>
+				<animation property="rotation" from="0" to="360" begin="8800" duration="3200" repeat="forever" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3100" duration="10" mode="linear"/>
+				<animation property="offsetX" from="0" to="0.07" begin="3000" duration="800" mode="linear"/>
+				<animation property="rotation" from="0" to="360" begin="3800" duration="5000" mode="easeIn"/>
+				<animation property="rotation" from="0" to="360" begin="8800" duration="3200" repeat="forever" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="3100" duration="10" mode="linear"/>
+				<animation property="offsetX" from="0" to="0.07" begin="3000" duration="800" mode="linear"/>
+				<animation property="rotation" from="0" to="360" begin="3800" duration="5000" mode="easeIn"/>
+				<animation property="rotation" from="0" to="360" begin="8800" duration="3200" repeat="forever" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Box-dreamcast" extra="true">
+			<visible>!exists({game:boxart}) &amp;&amp; ${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'dreamcast'</visible>
+			<path>{game:thumbnail}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.745006419532 0.562685216711</pos>
+			<maxSize>0.242708333333 0.546296296296</maxSize>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<control name="art4-dreamcast, pngegg-dreamcast, gameplayprev-dreamcast, video-dreamcast, art3-dreamcast, Box-dreamcast">
+			<storyboard event="deactivateNext">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<control name="Cart-dreamcast">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

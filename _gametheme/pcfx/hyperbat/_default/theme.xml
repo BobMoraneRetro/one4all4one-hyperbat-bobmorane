@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="background" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'pcfx'</visible>
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.499432527522 0.501008839960</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+		</image>
+		<image name="rect_vid_640_480" extra="true">
+			<path>./rect_vid_640_480.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.384838598901 0.525925925926</pos>
+			<size>0.333333333333 0.444444444444</size>
+			<zIndex>210</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="screenshotHS" extra="true">
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.386640038647 0.529308900596</pos>
+			<size>0.325520833333 0.434027777778</size>
+			<zIndex>220</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<path>{game:video}</path>
+			<pos>0.383989709832 0.525605619239</pos>
+			<size>0.325350887149 0.433801182865</size>
+			<origin>0.5 0.5</origin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<delay>0.4</delay>
+			<effect>none</effect>
+			<zIndex>230</zIndex>
+		</video>
+		<image name="Videobezel" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'pcfx'</visible>
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.383895131086 0.525101199259</pos>
+			<size>0.358075133356 0.481216660992</size>
+			<zIndex>240</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork3-pcfx" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'pcfx'</visible>
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.310974917716 0.127783739035</pos>
+			<size>0.600385881285 0.217231559585</size>
+			<zIndex>250</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth> -->
+		</image>
+		<image name="Artwork1-pcfx" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'pcfx'</visible>
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.080117274661 0.523148148148</pos>
+			<size>0.262193038710 0.600481043798</size>
+			<zIndex>260</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork4-pcfx" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'pcfx'</visible>
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.138696162092 0.764805356941</pos>
+			<size>0.234621923548 0.302944551634</size>
+			<zIndex>270</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="cartidge-pcfx" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'pcfx'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.878980464760 0.540787399589</pos>
+			<maxSize>0.236948133016 0.421241125361</maxSize>
+			<zIndex>280</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="1500" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="1" to="1" begin="0" duration="1500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1500" duration="1500" mode="Linear"/>
+				<animation property="rotation" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="rotation" from="0" to="0" begin="0" duration="3200" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="3200" duration="1500" mode="Linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="1500" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="1" to="1" begin="0" duration="1500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1500" duration="1500" mode="Linear"/>
+				<animation property="rotation" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="rotation" from="0" to="0" begin="0" duration="3200" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="3200" duration="1500" mode="Linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="1500" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetX" from="1" to="1" begin="0" duration="1500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="1500" duration="1500" mode="Linear"/>
+				<animation property="rotation" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="rotation" from="0" to="0" begin="0" duration="3200" mode="Linear"/>
+				<animation property="rotation" from="0" to="360" begin="3200" duration="1500" mode="Linear" repeat="forever"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="marquee-pcfx" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'pcfx'</visible>
+			<path>{game:marquee}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.834877050836 0.119043115298</pos>
+			<maxSize>0.288545327586 0.151325994023</maxSize>
+			<zIndex>290</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="650" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="-1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="-1" begin="0" duration="650" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="650" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="-1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="-1" begin="0" duration="650" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="650" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="-1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="-1" begin="0" duration="650" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+		</image>
+		<image name="boxart-pcfx" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'pcfx'</visible>
+			<path ifSubset="boxorthumb:thumb">firstfile(${box2dpath},${box3dpath})</path>
+			<path ifSubset="boxorthumb:boxart">firstfile(${box3dpath},${box2dpath})</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.732987884462 0.539642662036</pos>
+			<maxSize>0.334808761775 0.582355980701</maxSize>
+			<zIndex>300</zIndex>
+			<scaleOrigin>0.5 0.5</scaleOrigin>
+			<rotationOrigin>0.5 0.5</rotationOrigin>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="650" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="1" to="1" begin="0" duration="650" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="650" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="1" to="1" begin="0" duration="650" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="0" begin="0" duration="650" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="1" to="1" begin="" duration="" mode="Linear"/>
+				<animation property="offsetY" from="1" to="1" begin="0" duration="650" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<visible>false</visible>
+			<zIndex>300</zIndex>
+		</image>
+		<image name="md_boxart" extra="true">
+			<visible>false</visible>
+			<zIndex>300</zIndex>
+		</image>
+		<text name="defaultthemeauthor" extra="true">
+			<text>Default theme by : Akeshi</text>
+		</text>
+		<!-- <control name="Artwork1-pcfx, Artwork4-pcfx, PreviewVid, Videobezel, rect_vid_640_480"> -->
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+		<!-- </control> -->
+	</customView>
+</theme>

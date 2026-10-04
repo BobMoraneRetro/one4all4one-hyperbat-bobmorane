@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-sgb" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sgb'</visible>
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="screenshot-sgb" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sgb'</visible>
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.381416868932 0.274901114707</pos>
+			<size>0.357291666667 0.481481481481</size>
+			<zIndex>209</zIndex>
+			<autoFade>false</autoFade>
+		</image>
+		<video name="gameplayprev-sgb" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sgb'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.381416868932 0.274901114707</pos>
+			<size>0.357291666667 0.481481481481</size>
+			<zIndex>210</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+		</video>
+		<image name="Video-sgb" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sgb'</visible>
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.383072916667 0.284259259259</pos>
+			<size>0.399479166667 0.555555555556</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork2-sgb" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sgb'</visible>
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.391406250000 0.525925925926</pos>
+			<size>0.096354166667 0.109259259259</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Support-sgb" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sgb'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.391406250000 0.561111111111</pos>
+			<size>0.090104166667 0.177777777778</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Artwork1-sgb" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sgb'</visible>
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.107016080097 0.525925925926</pos>
+			<size>0.213020833333 0.846296296296</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="SuperGameboy-sgb" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sgb'</visible>
+			<path>./SuperGameboy.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.390104166667 0.632407407407</pos>
+			<size>0.180208333333 0.320370370370</size>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Snes-sgb" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sgb'</visible>
+			<path>./Snes.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.454166666667 0.811574074074</pos>
+			<size>0.541666666667 0.376851851852</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Logo-sgb" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sgb'</visible>
+			<path>./Logo.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.782812500000 0.147685185185</pos>
+			<size>0.359375000000 0.215740740741</size>
+			<zIndex>280</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Boxart-sgb" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sgb'</visible>
+			<path ifSubset="boxorthumb:thumb">firstfile(${box2dpath},${box3dpath})</path>
+			<path ifSubset="boxorthumb:boxart">firstfile(${box3dpath},${box2dpath})</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.817187500000 0.571759259259</pos>
+			<maxSize>0.206250000000 0.480555555556</maxSize>
+			<zIndex>290</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="1770" duration="400" mode="linear"/>
+				<animation property="offsetY" from="0" to="-0.06" begin="2170" duration="350" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.038" begin="2870" duration="250" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.024" begin="3370" duration="140" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.009" begin="3650" duration="60" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.0025" begin="3770" duration="20" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="0" begin="3810" duration="2500" mode="Linear" autoReverse="true"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="1770" duration="400" mode="linear"/>
+				<animation property="offsetY" from="0" to="-0.06" begin="2170" duration="350" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.038" begin="2870" duration="250" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.024" begin="3370" duration="140" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.009" begin="3650" duration="60" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.0025" begin="3770" duration="20" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="0" begin="3810" duration="2500" mode="Linear" autoReverse="true"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="1770" duration="400" mode="linear"/>
+				<animation property="offsetY" from="0" to="-0.06" begin="2170" duration="350" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.038" begin="2870" duration="250" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.024" begin="3370" duration="140" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.009" begin="3650" duration="60" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="-0.0025" begin="3770" duration="20" mode="EaseOutCubic" autoReverse="true"/>
+				<animation property="offsetY" from="0" to="0" begin="3810" duration="2500" mode="Linear" autoReverse="true"/>
+			</storyboard>
+		</image>
+		<!-- <control name="Artwork2-sgb, SuperGameboy-sgb, Snes-sgb, Logo-sgb"> -->
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<!-- <animation property="opacity" to="0" begin="100" duration="150" mode="linear"/> -->
+			<!-- </storyboard> -->
+		<!-- </control> -->
+		<control name="gameplayprev-sgb, Video-sgb, Support-sgb, Artwork1-sgb, Boxart-sgb">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<text name="defaultthemeauthor" extra="true">
+			<text>Theme by : Akeshi</text>
+		</text>
+	</customView>
+</theme>

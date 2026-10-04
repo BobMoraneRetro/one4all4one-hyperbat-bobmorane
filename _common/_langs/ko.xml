@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="ko">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>예</yes>
+		<no>아니요</no>
+		<desactive>사용 안 함</desactive>
+		<activate>사용</activate>
+		<actif>사용</actif>
+		<active>사용</active>
+		<deactive>사용 안 함</deactive>
+		<vide>   </vide>
+		<default>기본값</default>
+		<amoitie>부분적으로</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>사용 가능한 언어:</languesdispo>
+		<nodates>날짜 없음</nodates>
+		<playcount>회 플레이</playcount>
+		<playcountone>회 플레이</playcountone>
+		<players>명</players>
+		<playerss>명</playerss>
+		<player>명</player>
+		<nogametime>플레이한 적 없음</nogametime>
+		<noplayerdata>알 수 없음</noplayerdata>
+		<noratings>평점 없음</noratings>
+		<lastgamelabel>마지막 플레이:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>다음 게임</jeusuiv>
+		<jeuprec>이전 게임</jeuprec>
+		<systsuiv>다음 시스템</systsuiv>
+		<systprec>이전 시스템</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>환영 메시지</lismoi>
+		<tumasbienlu>환영 및 크레딧</tumasbienlu>
+		<deporttheme>사용자 테마를 옮기는 방법</deporttheme>
+		<customiztheme1>테마를 사용자 지정하는 방법 1/2</customiztheme1>
+		<customiztheme2>테마를 사용자 지정하는 방법 2/2</customiztheme2>
+		<downloadmore>더 많은 테마와 아트워크 다운로드 링크</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>시스템 목록 보기</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: 기본 그리드 보기</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart 매우 가벼움</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - 미디어 테스트</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>SCRAP 설정 - 팬아트 구조?</packcustombuild>
+		<packcustombuildsno>접미사 "-fanart" 팬아트 (기본값)</packcustombuildsno>
+		<packretrofreshbat>접미사 "-image" 팬아트</packretrofreshbat>
+		<scrap3dbox>스크랩 설정 - 3D 박스 구조?</scrap3dbox>
+		<scrapedboxart>gamelist의 "-boxart" 3D 박스</scrapedboxart>
+		<scrapedthumbnail>gamelist의 "-thumbnail" 3D 박스</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>도움말 - 도움말 아이콘 모양</iconset>
+		<iconsetposition>버튼 위치</iconsetposition>
+		<colorhelp>도움말 - 도움말 텍스트 색상</colorhelp>
+		<skyblue>하늘색</skyblue>
+		<standard>표준</standard>
+		<purple>보라</purple>
+		<red>빨강</red>
+		<aqua>하늘색</aqua>
+		<orange>주황</orange>
+		<green>초록</green>
+		<yellow>노랑</yellow>
+		<pink>분홍</pink>
+		<grey>진회색</grey>
+		<lightgrey>연회색</lightgrey>
+		<navy>파랑 alt</navy>
+		<violet>보라</violet>
+		<candy>candy</candy>
+		<redalt>빨강 alt</redalt>
+		<yellowalt>노랑 alt</yellowalt>
+		<greenalt>초록 alt</greenalt>
+		<purplealt>보라 alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>시스템 보기 - 시스템 로고 종류</systviewlogos>
+		<logosimple>단순 로고 (전체 + 지역)</logosimple>
+		<glassnekhros>Glass 로고 (전체 + 지역) (By Nekhros)</glassnekhros>
+		<logobd>만화 스타일 로고 (Helmic)</logobd>
+		<logoovalcarb>타원 로고 Carbon</logoovalcarb>
+		<hmaxovalsilver>타원 로고 Silver</hmaxovalsilver>
+		<logorectfresh>사각형 로고 Team Freshone (외부 팩)</logorectfresh>
+		<hmaxrectrefl>반사 사각형 로고 Team Freshone (외부 팩)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>시스템 보기 - 시스템 목록 사라짐</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>시스템 보기 - 시스템 팬아트 선택</systviewfanart>
+		<fanartfreshone>FreshOne이 선택한 팬아트만</fanartfreshone>
+		<fanartsystcustom>사용자 팬아트, 없으면 FreshOne 팬아트</fanartsystcustom>
+		<fanfondsystem>시스템 배경, 없으면 FreshOne 팬아트</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>시스템 보기 - 애니메이션 시스템 소개</systviewvideo>
+		<hyperspinorunified>ADDON: 다이내믹 HS, 없으면 통합 HS</hyperspinorunified>
+		<gameplayp1>무작위 게임플레이 영상(작게), 베젤 포함(있을 경우)</gameplayp1>
+		<gameplay1>무작위 게임플레이 영상(크게), 베젤 포함(있을 경우)</gameplay1>
+		<gameplayp>무작위 게임플레이 영상(작게)</gameplayp>
+		<gameplay>무작위 게임플레이 영상(크게)</gameplay>
+		<custom>custom 폴더의 개인 영상</custom>
+		<hyperspinxp>ADDON: 다이내믹 Hyperspin 스타일 이미지와 게임플레이</hyperspinxp>
+		<hyperspin>ADDON: 통합 Hyperspin 스타일 이미지와 게임플레이</hyperspin>
+		<hyperspinorder>ADDON: 다이내믹 HS, 없으면 Hyperpie 영상</hyperspinorder>
+		<hyperpie>ADDON: Hyperpie 영상, 없으면 Unified 영상(있을 경우)</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>시스템 보기 - 시스템의 게임 수 표시</systviewtotal>
+		<nbrjeux>간단한 게임 수</nbrjeux>
+		<nbrjeux2>시스템 이름과 게임 수</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>탐색 경로 표시</menuofficiel>
+		<menutxt>공식 하드웨어 정렬: 가로 텍스트</menutxt>
+		<menuorb>공식 하드웨어 정렬: 가로 오브</menuorb>
+		<menuorbvert>공식 하드웨어 정렬: 세로 오브</menuorbvert>
+		<menuorbcrcl>공식 하드웨어 정렬: 반원 오브</menuorbcrcl>
+		<menucust>Bob의 사용자 하드웨어 정렬: 가로 텍스트</menucust>
+		<menucustorb>Bob의 사용자 하드웨어 정렬: 가로 오브</menucustorb>
+		<menucustorbvert>Bob의 사용자 하드웨어 정렬: 세로 오브</menucustorbvert>
+		<menucustorbcrcl>Bob의 사용자 하드웨어 정렬: 반원 오브</menucustorbcrcl>
+		<menutxtzspin>공식 하드웨어 정렬: 세로 텍스트</menutxtzspin>
+		<menutxtzspincust>Bob의 사용자 하드웨어 정렬: 세로 텍스트</menutxtzspincust>
+		<menuteta>공식 하드웨어 정렬: Tetanos</menuteta>
+		<menucustteta>Bob의 사용자 하드웨어 정렬: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Hyperbat 시스템 보기 - 애니메이션 도움말</sticksysteme>
+		<systballblue>파랑 스틱</systballblue>
+		<systballcyan>청록 스틱</systballcyan>
+		<systballdarkviolet>진보라 스틱</systballdarkviolet>
+		<systballviolet>보라 스틱</systballviolet>
+		<systballgreen>초록 스틱</systballgreen>
+		<systballlitegreen>연두 스틱</systballlitegreen>
+		<systballpink>분홍 스틱</systballpink>
+		<systballred>빨강 스틱</systballred>
+		<systballyelgreen>황록 스틱</systballyelgreen>
+		<systballyellow>노랑 스틱</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Hyperbat 시스템 보기 - 메뉴 종류</hyperwheel>
+		<spindr>오른쪽 곡선 휠 (Hyperspin)</spindr>
+		<verticaldr>오른쪽 세로 휠 (Hyperspin)</verticaldr>
+		<verticaldreb>오른쪽 세로 휠 (Emubox)</verticaldreb>
+		<spingh>왼쪽 곡선 휠 (Hyperspin)</spingh>
+		<verticalgh>왼쪽 세로 휠 (Hyperspin)</verticalgh>
+		<verticalgheb>왼쪽 세로 휠 (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: 박스 판매자 Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: 박스 판매자 Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: 박스 판매자 Hyperspin Chris (작업 중)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>게임 보기 - 열 때 현재 시스템 표시?</systannounce>
+		<classiquesyst>줌 아웃하며 사라짐</classiquesyst>
+		<nomsystem2>느린 등장 (페이드 + 줌)</nomsystem2>
+		<nomsystem3>빠른 플래시 (줌 아웃)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>게임 보기 - 각 게임 로고에 배경?</gwheelbackgr>
+		<sisaccades>사용 안 함</sisaccades>
+		<ovalcarbon>타원 carbon (자동 생성)</ovalcarbon>
+		<ovalsilver>타원 silver (자동 생성)</ovalsilver>
+		<rectcarbon>사각형 carbon (자동 생성)</rectcarbon>
+		<rectcompose>시스템별 사용자 사각형 (자동 생성)</rectcompose>
+		<ovalcompose>시스템별 사용자 타원 carbon (자동 생성)</ovalcompose>
+		<logounified>통일된 크기의 로고</logounified>
+		<hfsround>Z-Spin 원형</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>게임 보기 - 글자별 탐색 (게임)?</letternav>
+		<navhoricoinstyle>가로 알파벳</navhoricoinstyle>
+		<navvertcoinstyle>왼쪽 세로 알파벳</navvertcoinstyle>
+		<navvertrcoinstyle>오른쪽 세로 알파벳</navvertrcoinstyle>
+		<navhsletters>시스템별 스타일 글자</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>게임 보기 - 최대 정보 표시?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Hyperbat 보기 전용 고급 옵션 시작 ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Hyperbat 게임 보기에 필요한 미디어 = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>일반 게임 테마 (테마가 없을 때)</defaultgeneric>
+		<videodefaut>일반 테마 기본 동영상 (스크린샷과 동영상이 없을 때)</videodefaut>
+		<generic43boxback>표준 (박스 앞뒷면 합성)</generic43boxback>
+		<generic43coinopsstyle>아케이드 캐비닛 컬렉션</generic43coinopsstyle>
+		<generic43noanimationfanart>표준 (애니메이션 팬아트 배경)</generic43noanimationfanart>
+		<generic43noanimation>표준 (박스아트 애니메이션 없음)</generic43noanimation>
+		<generic43>표준</generic43>
+		<jukeboxdef>CD 모양 (미완성)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>게임 테마: 원본 시스템</gameviewsource>
+		<mamefolder>게임 원본 폴더 우선, 그다음 mame 폴더</mamefolder>
+		<actualsystem>선택한 시스템 폴더 우선</actualsystem>
+		<genericstyleonly>일반 게임 테마만 사용</genericstyleonly>
+		<groupedsystem>개발 테스트 전용: 사용하지 마세요</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>게임 테마: 제작자</authordisplayed>
+		<showoff>사용, 높은 가시성</showoff>
+		<showoffblackwhite>사용, 최고 가시성</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - 게임 목록 사라짐</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - 스크롤 소리</gamewheelsound>
+		<wheelclic>Hyperspin 스타일 클릭</wheelclic>
+		<bulle>거품</bulle>
+		<clic>단순 클릭</clic>
+		<clicgrave>낮은 클릭</clicgrave>
+		<frottement>마찰음</frottement>
+		<poc>퐁</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>시각 효과 - 비네트 효과</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>시각 효과 - 시스템 보기 비네트</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>시각 효과 - 배경 어둡게 (시스템 보기)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>시각 효과 - 애니메이션 스틱 선택</syststickon>
+		<stickon>클래식 아케이드</stickon>
+		<syststickcolor>시각 효과 - 스틱 볼 색상</syststickcolor>
+		<ballcyan>청록</ballcyan>
+		<ballblue>파랑</ballblue>
+		<balldarkviolet>진보라</balldarkviolet>
+		<ballviolet>보라</ballviolet>
+		<ballgreen>초록</ballgreen>
+		<balllitegreen>연두</balllitegreen>
+		<ballpink>분홍</ballpink>
+		<ballred>빨강</ballred>
+		<ballyelgreen>황록</ballyelgreen>
+		<ballyellow>노랑</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Press start 모양</pressstart>
+		<doigts>버튼을 누르는 애니메이션 손가락</doigts>
+		<undoigt>버튼을 누르는 애니메이션 손가락 (왼쪽만)</undoigt>
+		<undoigtr>버튼을 누르는 애니메이션 손가락 (오른쪽만)</undoigtr>
+		<pressstarttxt>METADATA - 텍스트 선택</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>무료 플레이</partiegratuite>
+		<uneuro>1판 1€</uneuro>
+		<sitessage>Start를 누르세요</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - 메타데이터 설정</hsmetadata>
+		<full>전체, 기본 위치</full>
+		<lower>전체, 가장 낮은 위치</lower>
+		<metafichedefault>메타데이터 카드 기본 위치</metafichedefault>
+		<metafichebasgauche>메타데이터 카드 왼쪽 아래</metafichebasgauche>
+		<metafichebasdroite>메타데이터 카드 오른쪽 아래</metafichebasdroite>
+		<metafichebascentre>메타데이터 카드 아래 가운데</metafichebascentre>
+		<metafichehautgauche>메타데이터 카드 왼쪽 위</metafichehautgauche>
+		<metafichehautdroite>메타데이터 카드 오른쪽 위</metafichehautdroite>
+		<metafichehautcentre>메타데이터 카드 위 가운데</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>게임별 테마 표시?</hyperbatperview>
+		<themejeux>게임별 테마 우선 (있을 경우)</themejeux>
+		<themejeuxno>게임별 테마 사용 안 함</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>시각 효과 - 게임 테마 간 부드러운 전환</smoothgametheme>
+		<activesmooth>사용 (Retrobat 권장)</activesmooth>
+		<noactivesmooth>사용 안 함 (Batocera 권장)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Hyperspin 스타일 시스템 포인터</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- 호환 테마용 스크랩 사용자 지정 ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>표시할 게임 박스</boxorthumb>
+		<boxart>3D 박스에 맞춤</boxart>
+		<thumb>2D 박스에 맞춤</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- 고급 설정: 미디어 원본 폴더 변경 --------------------------------------------------------</spacerextfolder>
+		<folder>소스 - 사용하지 마세요</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>테마 폴더 - 기본값</intheme>
+		<extfolder>외부 폴더</extfolder>
+		<extfoldergametheme>소스 - 게임별 테마</extfoldergametheme>
+		<extfoldergamemedia>소스 - gamelist.xml 외부의 게임 미디어</extfoldergamemedia>
+		<extfoldervideosyst>소스 - 시스템별 테마</extfoldervideosyst>
+		<extfolderbezelsyst>소스 - 시스템 베젤</extfolderbezelsyst>
+		<extfoldermanufacturer>소스 - 게임 퍼블리셔 로고</extfoldermanufacturer>
+		<extfolderfanart>소스 - 시스템 팬아트</extfolderfanart>
+		<extfolderlogosyst>소스 - 시스템 로고</extfolderlogosyst>
+		<extfoldercouleursinfos>소스 - 게임 정보 스타일</extfoldercouleursinfos>
+		<extfolderthumbox>소스 - 게임 2D/3D 박스</extfolderthumbox>
+		<extfoldergamefanart>소스 - 게임 팬아트</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Fanart Star 게임 보기 권장 미디어 = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ FanartStar boxart 보기 전용 고급 옵션 시작 ↓   -------------------</mediastar>
+		<spacebox>게임 박스 사이 간격</spacebox>
+		<spacessssmall>간격 ----</spacessssmall>
+		<spacesssmall>간격 ---</spacesssmall>
+		<spacessmall>간격 --</spacessmall>
+		<spacesmall>간격 -</spacesmall>
+		<spacenorm>기본값</spacenorm>
+		<spacemore>간격 +</spacemore>
+		<spacemmore>간격 ++</spacemmore>
+		<spacemmmore>간격 +++</spacemmmore>
+		<spacemmmmore>간격 ++++</spacemmmmore>
+		<fanartstarrotated>SNES, N64, NGAGE, Solarus 박스 회전</fanartstarrotated>
+		<starrotate>예</starrotate>
+		<nostarrotate>아니요</nostarrotate>
+		<boxstarspeed>스크롤 애니메이션 속도</boxstarspeed>
+		<speedslow1>느리게+</speedslow1>
+		<speedslow2>느리게++</speedslow2>
+		<customfanart>사용할 팬아트</customfanart>
+		<fanartgamelist>gamelist의 스크랩 팬아트</fanartgamelist>
+		<fanartcustom>_Gamemedia-시스템이름-medium_artwork 의 사용자 팬아트</fanartcustom>
+		<starboxang>게임 박스 각도</starboxang>
+		<starthumb>2D 또는 3D 표지 표시?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>미리보기 영상 크기</starvideo>
+		<starvideoang>기울임</starvideoang>
+		<starvideodef>표준</starvideodef>
+		<starvideobig>크게</starvideobig>
+		<longselect>"select" 길게 누르기</longselect>
+		<favuniquement>즐겨찾기만</favuniquement>
+		<tslesjeux>모든 게임</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>화면 비율</screenratio>
+		<ratio1610>16/10 (실험적)</ratio1610>
+		<ratio43>4/3 (실험적)</ratio43>
+		<cadrevideosyst>시스템 영상 프레임</cadrevideosyst>
+		<cadreorigine>원본 (bezel)</cadreorigine>
+		<cadrebordure>테두리</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - 환영 및 크레딧</planche00>
+		<planche01>01 - 사용자 테마를 옮기는 방법</planche01>
+		<planche02>02 - 테마를 사용자 지정하는 방법 1/2</planche02>
+		<planche03>03 - 시스템 영상 프레임</planche03>
+		<planche04>04 - 테마를 사용자 지정하는 방법 2/2</planche04>
+		<planche05>05 - 테마 다운로드</planche05>
+		<planche06>06 - 시스템 테마 추가</planche06>
+		<planche07>07 - 게임 테마 추가</planche07>
+		<planche08>08 - 테마 편집기</planche08>
+		<planche09>09 - 2D 또는 3D 박스와 스크래핑</planche09>
+		<planche10>10 - 탐색 경로와 글자 탐색</planche10>
+		<planche11>11 - 게임 정보 스타일</planche11>
+		<planche12>12 - 4:3 또는 16:10 화면</planche12>
+		<planche13>13 - 더 많은 테마와 아트워크 다운로드 링크</planche13>
+	</variables>
+</theme>

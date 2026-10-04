@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-sega32x" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sega32x'</visible>
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<video name="gameplayprev-sega32x" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sega32x'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.431184504218 0.539098853706</pos>
+			<maxSize>0.437899595203 0.583866126937</maxSize>
+			<zIndex>200</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+			<shader>
+				<path>${path_com_shaders}/border_multi_gradient.glsl</path>
+				<cornerRadius>0.00</cornerRadius>
+				<innerShadowSize/>
+				<innerShadowColor>00000030</innerShadowColor>
+				<outerShadowSize/>
+				<outerShadowColor>00000050</outerShadowColor>
+				<gradientMode>4</gradientMode>
+				<saturation/>
+				<borderSize>0.017</borderSize>
+				<borderColor>eb0214ff</borderColor>
+				<borderColorStart/>
+				<borderColorEnd/>
+				<borderSize2>0.015</borderSize2>
+				<borderColor2>ffffffff</borderColor2>
+				<borderColorStart2/>
+				<borderColorEnd2/>
+				<borderSize3/>
+				<borderColor3>000000FF</borderColor3>
+				<borderColorStart3/>
+				<borderColorEnd3/>
+			</shader>
+		</video>
+		<image name="Video-sega32x" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sega32x'</visible>
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.244737623053 0.225475731094</pos>
+			<size>0.446347337810 0.402527144100</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork2-sega32x" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sega32x'</visible>
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.175638135230 0.862828661143</pos>
+			<size>0.489739554990 0.529173129548</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Box-sega32x" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist}</visible>
+			<path ifSubset="boxorthumb:thumb">firstfile(${box2dpath},${box3dpath})</path>
+			<path ifSubset="boxorthumb:boxart">firstfile(${box3dpath},${box2dpath})</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.825602418906 0.615775104352</pos>
+			<maxSize>0.231388698895 0.602034073570</maxSize>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="marquee-sega32x" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sega32x'</visible>
+			<path>{game:marquee}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.819573018004 0.158892293724</pos>
+			<maxSize>0.272672309984 0.192688432389</maxSize>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="650" duration="1500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Cart-sega32x" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sega32x'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.158946912950 0.630269538918</pos>
+			<size>0.142893825899 0.167238699942</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="650" duration="750" mode="Linear"/>
+				<animation property="rotation" from="0" to="13" begin="0" duration="0" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="650" duration="750" mode="Linear"/>
+				<animation property="rotation" from="0" to="13" begin="0" duration="0" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" begin="650" duration="750" mode="Linear"/>
+				<animation property="rotation" from="0" to="13" begin="0" duration="0" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork4-sega32x" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'sega32x'</visible>
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.136868006285 0.720281833371</pos>
+			<size>0.172573422503 0.169425316952</size>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<control name="Artwork2-sega32x, Box-sega32x, marquee-sega32x, Artwork4-sega32x">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<control name="Cart-sega32x">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<text name="defaultthemeauthor" extra="true">
+			<text>Default theme by : Roni</text>
+		</text>
+	</customView>
+</theme>

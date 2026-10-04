@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="fr">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Oui</yes>
+		<no>Non</no>
+		<desactive>Désactivé</desactive>
+		<activate>Activé</activate>
+		<actif>Activé</actif>
+		<active>Activé</active>
+		<deactive>Désactivé</deactive>
+		<vide>   </vide>
+		<default>Par défaut</default>
+		<amoitie>partiellement</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Langues disponibles :</languesdispo>
+		<nodates>Pas de date</nodates>
+		<playcount>parties</playcount>
+		<playcountone>partie</playcountone>
+		<players>joueur(s)</players>
+		<playerss>joueurs</playerss>
+		<player>joueur</player>
+		<nogametime>Jamais joué</nogametime>
+		<noplayerdata>Inconnu</noplayerdata>
+		<noratings>Pas de note</noratings>
+		<lastgamelabel>Dernière partie :</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Jeu Suivant</jeusuiv>
+		<jeuprec>Jeu Précédent</jeuprec>
+		<systsuiv>Système Suivant</systsuiv>
+		<systprec>Système Précédent</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Message d'accueil</lismoi>
+		<tumasbienlu>Accueil et Crédits</tumasbienlu>
+		<deporttheme>Comment déporter mes thèmes customs</deporttheme>
+		<customiztheme1>Comment customiser mes thèmes 1/2</customiztheme1>
+		<customiztheme2>Comment customiser mes thèmes 2/2</customiztheme2>
+		<downloadmore>Liens pour télécharger + de thèmes et d'artworks</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Vue pour la liste des systèmes</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic : Vue grille basique</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart très light</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Test tes médias</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>Configure SCRAP - Structure fanart ?</packcustombuild>
+		<packcustombuildsno>Fanart avec suffixe "-fanart" (par défaut)</packcustombuildsno>
+		<packretrofreshbat>Fanart avec suffixe "-image"</packretrofreshbat>
+		<scrap3dbox>Configure SCRAP - Où est scrappée la boîte 3D ?</scrap3dbox>
+		<scrapedboxart>Dans "-boxart" (2D dans "-thumbnail")</scrapedboxart>
+		<scrapedthumbnail>Dans "-thumbnail" (2D dans "-boxart")</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Aide - Apparence des icônes d'aides</iconset>
+		<iconsetposition>Position des boutons</iconsetposition>
+		<colorhelp>Aide - Couleurs du texte de l'aide</colorhelp>
+		<skyblue>bleu ciel</skyblue>
+		<standard>Standard</standard>
+		<purple>violet</purple>
+		<red>rouge</red>
+		<aqua>bleu ciel</aqua>
+		<orange>orange</orange>
+		<green>vert</green>
+		<yellow>jaune</yellow>
+		<pink>rose</pink>
+		<grey>gris foncé</grey>
+		<lightgrey>gris clair</lightgrey>
+		<navy>bleu alt</navy>
+		<violet>violet</violet>
+		<candy>candy</candy>
+		<redalt>rouge alt</redalt>
+		<yellowalt>jaune alt</yellowalt>
+		<greenalt>vert alt</greenalt>
+		<purplealt>violet alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Vue système - Choix du type de logos système</systviewlogos>
+		<logosimple>Logo simple (Complet + Région)</logosimple>
+		<glassnekhros>Logo Glass (Complet + Région) (By Nekhros)</glassnekhros>
+		<logobd>Logo type BD (Helmic)</logobd>
+		<logoovalcarb>Logo oval Carbon</logoovalcarb>
+		<hmaxovalsilver>Logo oval Silver</hmaxovalsilver>
+		<logorectfresh>Logo rectangle Team Freshone (Pack externe)</logorectfresh>
+		<hmaxrectrefl>Logo rectangle avec reflet Team Freshone (Pack externe)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Vue système - Disparition de la liste des systèmes</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Vue système - Choix des fanarts du système</systviewfanart>
+		<fanartfreshone>Fanarts selectionnés par FreshOne uniquement</fanartfreshone>
+		<fanartsystcustom>Fanarts custom, sinon fanart FreshOne</fanartsystcustom>
+		<fanfondsystem>Fond système sinon fanart FreshOne</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Vue système - Présentation animée du système</systviewvideo>
+		<hyperspinorunified>ADDON : HS Dynamique sinon HS unifié</hyperspinorunified>
+		<gameplayp1>Petite vidéo de gameplay aléatoire avec bezel si dispo</gameplayp1>
+		<gameplay1>Grande vidéo de gameplay aléatoire avec bezel si dispo</gameplay1>
+		<gameplayp>Petite vidéo de gameplay aléatoire</gameplayp>
+		<gameplay>Grande vidéo de gameplay aléatoire</gameplay>
+		<custom>Vidéo personnelle du dossier custom</custom>
+		<hyperspinxp>ADDON : Image et gameplay façon Hyperspin Dynamique</hyperspinxp>
+		<hyperspin>ADDON : Image et gameplay façon Hyperspin unifié</hyperspin>
+		<hyperspinorder>ADDON : HS Dynamique sinon vidéo hyperpie</hyperspinorder>
+		<hyperpie>ADDON : Vidéo Hyperpie sinon vidéo Unified si dispo</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Vue système - Afficher le nombre de jeux du système</systviewtotal>
+		<nbrjeux>nombre de jeux sobre</nbrjeux>
+		<nbrjeux2>nom systeme et nombre de jeux</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Affichage du fil d'Ariane</menuofficiel>
+		<menutxt>Tri matériel officiel : texte horizontal</menutxt>
+		<menuorb>Tri matériel officiel : orb horizontal</menuorb>
+		<menuorbvert>Tri matériel officiel : orb vertical</menuorbvert>
+		<menuorbcrcl>Tri matériel officiel : orb demi-cercle</menuorbcrcl>
+		<menucust>Tri matériel custom de Bob : texte horizontal</menucust>
+		<menucustorb>Tri matériel custom de Bob : orb horizontal</menucustorb>
+		<menucustorbvert>Tri matériel custom de Bob : orb vertical</menucustorbvert>
+		<menucustorbcrcl>Tri matériel custom de Bob : orb demi-cercle</menucustorbcrcl>
+		<menutxtzspin>Tri matériel officiel : texte vertical</menutxtzspin>
+		<menutxtzspincust>Tri matériel custom de Bob : texte vertical</menutxtzspincust>
+		<menuteta>Tri matériel officiel : Tetanos</menuteta>
+		<menucustteta>Tri matériel custom de Bob : Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Vue système hyperbat - Aides animés</sticksysteme>
+		<systballblue>Stick Bleue</systballblue>
+		<systballcyan>Stick Cyan</systballcyan>
+		<systballdarkviolet>Stick Violet foncé</systballdarkviolet>
+		<systballviolet>Stick Violet</systballviolet>
+		<systballgreen>Stick Vert</systballgreen>
+		<systballlitegreen>Stick Vert clair</systballlitegreen>
+		<systballpink>Stick Rose</systballpink>
+		<systballred>Stick Rouge</systballred>
+		<systballyelgreen>Stick Jaune vert</systballyelgreen>
+		<systballyellow>Stick Jaune</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Vue système hyperbat - choix du type de menu</hyperwheel>
+		<spindr>Roue courbe à droite (Hyperspin)</spindr>
+		<verticaldr>Roue vertical à droite (Hyperspin)</verticaldr>
+		<verticaldreb>Roue vertical à droite (Emubox)</verticaldreb>
+		<spingh>Roue courbe à gauche (Hyperspin)</spingh>
+		<verticalgh>Roue vertical à gauche (hyperspin)</verticalgh>
+		<verticalgheb>Roue vertical à gauche (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01 : Vendeur box Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02 : Vendeur box Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03 : Vendeur box Hyperspin Chris (en travaux)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Vue Jeux - Système en cours à l'ouverture ?</systannounce>
+		<classiquesyst>Disparition en zoom arriere</classiquesyst>
+		<nomsystem2>Entrée lente (fade + zoom)</nomsystem2>
+		<nomsystem3>Flash rapide (zoom sortie)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Vue Jeux - Fond sur chaque logo de jeux ?</gwheelbackgr>
+		<sisaccades>Désactivé</sisaccades>
+		<ovalcarbon>Oval carbon (génération automatique)</ovalcarbon>
+		<ovalsilver>Oval silver (génération automatique)</ovalsilver>
+		<rectcarbon>Rectangle carbon (génération automatique)</rectcarbon>
+		<rectcompose>Rectangle personnalisé par système (auto-généré)</rectcompose>
+		<ovalcompose>Oval carbon personnalisé par système (auto-généré)</ovalcompose>
+		<logounified>Logo de taille unifiée</logounified>
+		<hfsround>Rond Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Vue Jeux - Navigation par lettre (jeux) ?</letternav>
+		<navhoricoinstyle>Affichage alphabet horizontal</navhoricoinstyle>
+		<navvertcoinstyle>Affichage alphabet vertical à gauche</navvertcoinstyle>
+		<navvertrcoinstyle>Affichage alphabet vertical à droite</navvertrcoinstyle>
+		<navhsletters>Lettre stylisée par système</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Vue Jeux - Afficher information max ?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Début des options avancées spécifiques aux vues Hyperbat ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Medias à avoir pour vue jeux Hyperbat = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Thème jeux générique (si aucun thème n'existe)</defaultgeneric>
+		<videodefaut>Vidéo par défaut du thème générique (sans capture ni vidéo)</videodefaut>
+		<generic43boxback>Standard avec montage boite arrière et avant</generic43boxback>
+		<generic43coinopsstyle>Collection de bornes d'arcade</generic43coinopsstyle>
+		<generic43noanimationfanart>Standard avec fanart animé en fond</generic43noanimationfanart>
+		<generic43noanimation>Standard sans animation boxart</generic43noanimation>
+		<generic43>Standard</generic43>
+		<jukeboxdef>Aspect Disque compact (Non terminé)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Thème Jeux : Système source</gameviewsource>
+		<mamefolder>Dossier d'origine du jeu prioritaire puis dossier mame</mamefolder>
+		<actualsystem>Dossier du système sélectionné prioritaire</actualsystem>
+		<genericstyleonly>N'utiliser que les vues génériques</genericstyleonly>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Thème Jeux : Auteur</authordisplayed>
+		<showoff>Activé, forte visibilité</showoff>
+		<showoffblackwhite>Activé, ultra visibilité</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Disparition de la liste des jeux</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Choix du son lors du défilement</gamewheelsound>
+		<wheelclic>Clic façon Hyperspin</wheelclic>
+		<bulle>Bulle</bulle>
+		<clic>Clic simple</clic>
+		<clicgrave>Clic Grave</clicgrave>
+		<frottement>Frottement</frottement>
+		<poc>Poc</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Visuel - Effet de vignettage</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Visuel - Vignettage vue systeme</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Visuel - Assombrir le fond (vue systeme)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>VISUEL - Choix du stick animé</syststickon>
+		<stickon>Arcade classique</stickon>
+		<syststickcolor>VISUEL - Couleur de la boule du stick</syststickcolor>
+		<ballcyan>Cyan</ballcyan>
+		<ballblue>Bleue</ballblue>
+		<balldarkviolet>Violet foncé</balldarkviolet>
+		<ballviolet>Violet</ballviolet>
+		<ballgreen>Vert</ballgreen>
+		<balllitegreen>Vert clair</balllitegreen>
+		<ballpink>Rose</ballpink>
+		<ballred>Rouge</ballred>
+		<ballyelgreen>Jaune vert</ballyelgreen>
+		<ballyellow>Jaune</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Aspect du press start</pressstart>
+		<doigts>Doigt animé qui appuie sur un bouton</doigts>
+		<undoigt>Doigt animé qui appuie sur un bouton uniquement à gauche</undoigt>
+		<undoigtr>Doigt animé qui appuie sur un bouton uniquement à droite</undoigtr>
+		<pressstarttxt>METADATA - Choix du texte</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Partie gratuite</partiegratuite>
+		<uneuro>1€ la partie</uneuro>
+		<sitessage>Appuie sur Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA -Configuration des Metadata</hsmetadata>
+		<full>Complet et position par défaut</full>
+		<lower>Complet et position au plus bas</lower>
+		<metafichedefault>Metafiche position par défaut</metafichedefault>
+		<metafichebasgauche>Metafiche en bas à gauche</metafichebasgauche>
+		<metafichebasdroite>Metafiche en bas à droite</metafichebasdroite>
+		<metafichebascentre>Metafiche en bas au centre</metafichebascentre>
+		<metafichehautgauche>Metafiche en haut à gauche</metafichehautgauche>
+		<metafichehautdroite>Metafiche en haut à droite</metafichehautdroite>
+		<metafichehautcentre>Metafiche en haut au centre</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Afficher les thèmes par jeux ?</hyperbatperview>
+		<themejeux>Thème par jeu en priorité si dispo</themejeux>
+		<themejeuxno>Désactiver thème par jeu</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Visuel - Transition douce entre les thèmes de jeux</smoothgametheme>
+		<activesmooth>Activé (recommandé pour Retrobat)</activesmooth>
+		<noactivesmooth>Désactivé (recommandé pour Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Pointeurs système façon Hyperspin</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Customisation des Scrap pour thème compatible ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Boîte de jeu à afficher</boxorthumb>
+		<boxart>Boîte 3D</boxart>
+		<thumb>Boîte 2D</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Configuration avancée : Modification du dossier source des médias --------------------------------------------------------</spacerextfolder>
+		<folder>Source - ne pas utiliser</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Dossier du thème - Par défaut</intheme>
+		<extfolder>Dossier extérieur</extfolder>
+		<extfoldergametheme>Source - Thème spécifique des jeux</extfoldergametheme>
+		<extfoldergamemedia>Source - Média des jeux hors gamelist.xml</extfoldergamemedia>
+		<extfoldervideosyst>Source - Thème spécifique des systèmes</extfoldervideosyst>
+		<extfolderbezelsyst>Source - Bezel des systèmes</extfolderbezelsyst>
+		<extfoldermanufacturer>Source - Logo des éditeurs de jeux</extfoldermanufacturer>
+		<extfolderfanart>Source - Fanart des systèmes</extfolderfanart>
+		<extfolderlogosyst>Source - Logo système</extfolderlogosyst>
+		<extfoldercouleursinfos>Source - Style des infos de jeux</extfoldercouleursinfos>
+		<extfolderthumbox>Source - Boite 2D/3D jeux</extfolderthumbox>
+		<extfoldergamefanart>Source - Fanart des jeux</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Medias recommandés pour la vue jeux Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ Début des options avancées spécifiques à la vue FanartStar boxart ↓   -------------------</mediastar>
+		<spacebox>Espace entre les boites de jeux</spacebox>
+		<spacessssmall>Espace ----</spacessssmall>
+		<spacesssmall>Espace ---</spacesssmall>
+		<spacessmall>Espace --</spacessmall>
+		<spacesmall>Espace -</spacesmall>
+		<spacenorm>Par défaut</spacenorm>
+		<spacemore>Espace +</spacemore>
+		<spacemmore>Espace ++</spacemmore>
+		<spacemmmore>Espace +++</spacemmmore>
+		<spacemmmmore>Espace ++++</spacemmmmore>
+		<fanartstarrotated>Rotation des boites SNES,N64,NGAGE,Solarus</fanartstarrotated>
+		<starrotate>Oui</starrotate>
+		<nostarrotate>Non</nostarrotate>
+		<boxstarspeed>Vitesse de l'animation de défilement</boxstarspeed>
+		<speedslow1>Lent+</speedslow1>
+		<speedslow2>Lent++</speedslow2>
+		<customfanart>Choix des Fanarts à utiliser</customfanart>
+		<fanartgamelist>Fanart du scrap dans la Gamelist</fanartgamelist>
+		<fanartcustom>Fanart custom dans _Gamemedia-NomSystem-medium_artwork</fanartcustom>
+		<starboxang>Angle sur les boite de jeu</starboxang>
+		<starthumb>Affichage des jaquettes 2D ou 3D ?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Taille de la vidéo preview</starvideo>
+		<starvideoang>Incliné</starvideoang>
+		<starvideodef>Standard</starvideodef>
+		<starvideobig>Grande</starvideobig>
+		<longselect>Appuie long sur "select"</longselect>
+		<favuniquement>Favoris uniquement</favuniquement>
+		<tslesjeux>Tous les jeux</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Ratio de l'écran</screenratio>
+		<ratio1610>16/10 (expérimental)</ratio1610>
+		<ratio43>4/3 (expérimental)</ratio43>
+		<cadrevideosyst>Cadre des vidéos système</cadrevideosyst>
+		<cadreorigine>D'origine (bezel)</cadreorigine>
+		<cadrebordure>Bordure</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Accueil et Crédits</planche00>
+		<planche01>01 - Comment sécuriser mes thèmes customs</planche01>
+		<planche02>02 - Comment customiser mes thèmes système</planche02>
+		<planche03>03 - Cadre des vidéos système</planche03>
+		<planche04>04 - Comment customiser mes thèmes de jeux</planche04>
+		<planche05>05 - Télécharger des thèmes</planche05>
+		<planche06>06 - Ajouter un thème système</planche06>
+		<planche07>07 - Ajouter un thème de jeu</planche07>
+		<planche08>08 - Les éditeurs de thèmes</planche08>
+		<planche09>09 - Boîte 2D ou 3D et scrap</planche09>
+		<planche10>10 - Fil d'Ariane et navigation par lettre</planche10>
+		<planche11>11 - Style des infos de jeux</planche11>
+		<planche12>12 - Écran 4:3 ou 16:10</planche12>
+		<planche13>13 - Liens pour télécharger + de thèmes et d'artworks</planche13>
+	</variables>
+</theme>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="cy">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Ie</yes>
+		<no>Na</no>
+		<desactive>Wedi'i analluogi</desactive>
+		<activate>Wedi'i alluogi</activate>
+		<actif>Wedi'i alluogi</actif>
+		<active>Wedi'i alluogi</active>
+		<deactive>Wedi'i analluogi</deactive>
+		<vide>   </vide>
+		<default>Rhagosodedig</default>
+		<amoitie>yn rhannol</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Ieithoedd ar gael:</languesdispo>
+		<nodates>Dim dyddiad</nodates>
+		<playcount>chwarae</playcount>
+		<playcountone>chwarae</playcountone>
+		<players>chwaraewr/wyr</players>
+		<playerss>chwaraewyr</playerss>
+		<player>chwaraewr</player>
+		<nogametime>Heb ei chwarae erioed</nogametime>
+		<noplayerdata>Anhysbys</noplayerdata>
+		<noratings>Dim sgôr</noratings>
+		<lastgamelabel>Chwaraewyd ddiwethaf:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Gêm nesaf</jeusuiv>
+		<jeuprec>Gêm flaenorol</jeuprec>
+		<systsuiv>System nesaf</systsuiv>
+		<systprec>System flaenorol</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Neges groeso</lismoi>
+		<tumasbienlu>Croeso a chydnabyddiaethau</tumasbienlu>
+		<deporttheme>Sut i symud fy themâu personol</deporttheme>
+		<customiztheme1>Sut i addasu fy themâu 1/2</customiztheme1>
+		<customiztheme2>Sut i addasu fy themâu 2/2</customiztheme2>
+		<downloadmore>Dolenni i lawrlwytho mwy o themâu ac artworks</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Golwg ar gyfer y rhestr systemau</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Golwg grid sylfaenol</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart ysgafn iawn</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Profwch eich cyfryngau</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>Gosod SCRAP - Strwythur fanart?</packcustombuild>
+		<packcustombuildsno>Fanart gyda'r ôl-ddodiad "-fanart" (rhagosodedig)</packcustombuildsno>
+		<packretrofreshbat>Fanart gyda'r ôl-ddodiad "-image"</packretrofreshbat>
+		<scrap3dbox>Gosod scrape - Strwythur bocs 3D?</scrap3dbox>
+		<scrapedboxart>Bocs 3D gyda "-boxart" yn y gamelist</scrapedboxart>
+		<scrapedthumbnail>Bocs 3D gyda "-thumbnail" yn y gamelist</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Cymorth - Golwg eiconau cymorth</iconset>
+		<iconsetposition>Safle'r botymau</iconsetposition>
+		<colorhelp>Cymorth - Lliwiau testun cymorth</colorhelp>
+		<skyblue>glas yr awyr</skyblue>
+		<standard>Safonol</standard>
+		<purple>fioled</purple>
+		<red>coch</red>
+		<aqua>glas yr awyr</aqua>
+		<orange>oren</orange>
+		<green>gwyrdd</green>
+		<yellow>melyn</yellow>
+		<pink>pinc</pink>
+		<grey>llwyd tywyll</grey>
+		<lightgrey>llwyd golau</lightgrey>
+		<navy>glas alt</navy>
+		<violet>fioled</violet>
+		<candy>candy</candy>
+		<redalt>coch alt</redalt>
+		<yellowalt>melyn alt</yellowalt>
+		<greenalt>gwyrdd alt</greenalt>
+		<purplealt>fioled alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Golwg systemau - Math o logos system</systviewlogos>
+		<logosimple>Logo syml (Llawn + Rhanbarth)</logosimple>
+		<glassnekhros>Logo Glass (Llawn + Rhanbarth) (By Nekhros)</glassnekhros>
+		<logobd>Logo arddull comic (Helmic)</logobd>
+		<logoovalcarb>Logo hirgrwn Carbon</logoovalcarb>
+		<hmaxovalsilver>Logo hirgrwn Silver</hmaxovalsilver>
+		<logorectfresh>Logo petryal Team Freshone (pecyn allanol)</logorectfresh>
+		<hmaxrectrefl>Logo petryal adlewyrchol Team Freshone (pecyn allanol)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Golwg systemau - Pylu'r rhestr systemau</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Golwg systemau - Dewis fanarts y system</systviewfanart>
+		<fanartfreshone>Fanarts a ddewiswyd gan FreshOne yn unig</fanartfreshone>
+		<fanartsystcustom>Fanarts personol, fel arall fanart FreshOne</fanartsystcustom>
+		<fanfondsystem>Cefndir y system, fel arall fanart FreshOne</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Golwg systemau - Cyflwyniad animeiddiedig o'r system</systviewvideo>
+		<hyperspinorunified>ADDON: HS deinamig, fel arall HS unedig</hyperspinorunified>
+		<gameplayp1>Fideo gameplay ar hap bach gyda bezel os ar gael</gameplayp1>
+		<gameplay1>Fideo gameplay ar hap mawr gyda bezel os ar gael</gameplay1>
+		<gameplayp>Fideo gameplay ar hap bach</gameplayp>
+		<gameplay>Fideo gameplay ar hap mawr</gameplay>
+		<custom>Fideo personol o'r ffolder custom</custom>
+		<hyperspinxp>ADDON: Delwedd a gameplay yn arddull Hyperspin deinamig</hyperspinxp>
+		<hyperspin>ADDON: Delwedd a gameplay yn arddull Hyperspin unedig</hyperspin>
+		<hyperspinorder>ADDON: HS deinamig, fel arall fideo Hyperpie</hyperspinorder>
+		<hyperpie>ADDON: Fideo Hyperpie, fel arall fideo Unified os ar gael</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Golwg systemau - Dangos nifer gemau'r system</systviewtotal>
+		<nbrjeux>nifer gemau plaen</nbrjeux>
+		<nbrjeux2>enw'r system a nifer y gemau</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Dangos llwybr briwsion bara</menuofficiel>
+		<menutxt>Trefn caledwedd swyddogol: testun llorweddol</menutxt>
+		<menuorb>Trefn caledwedd swyddogol: pelen lorweddol</menuorb>
+		<menuorbvert>Trefn caledwedd swyddogol: pelen fertigol</menuorbvert>
+		<menuorbcrcl>Trefn caledwedd swyddogol: pelen hanner cylch</menuorbcrcl>
+		<menucust>Trefn caledwedd bersonol Bob: testun llorweddol</menucust>
+		<menucustorb>Trefn caledwedd bersonol Bob: pelen lorweddol</menucustorb>
+		<menucustorbvert>Trefn caledwedd bersonol Bob: pelen fertigol</menucustorbvert>
+		<menucustorbcrcl>Trefn caledwedd bersonol Bob: pelen hanner cylch</menucustorbcrcl>
+		<menutxtzspin>Trefn caledwedd swyddogol: testun fertigol</menutxtzspin>
+		<menutxtzspincust>Trefn caledwedd bersonol Bob: testun fertigol</menutxtzspincust>
+		<menuteta>Trefn caledwedd swyddogol: Tetanos</menuteta>
+		<menucustteta>Trefn caledwedd bersonol Bob: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Golwg systemau Hyperbat - Cymorth animeiddiedig</sticksysteme>
+		<systballblue>Stick Glas</systballblue>
+		<systballcyan>Stick Gwyrddlas</systballcyan>
+		<systballdarkviolet>Stick Fioled tywyll</systballdarkviolet>
+		<systballviolet>Stick Fioled</systballviolet>
+		<systballgreen>Stick Gwyrdd</systballgreen>
+		<systballlitegreen>Stick Gwyrdd golau</systballlitegreen>
+		<systballpink>Stick Pinc</systballpink>
+		<systballred>Stick Coch</systballred>
+		<systballyelgreen>Stick Melyn-wyrdd</systballyelgreen>
+		<systballyellow>Stick Melyn</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Golwg systemau Hyperbat - Math o ddewislen</hyperwheel>
+		<spindr>Olwyn grom ar y dde (Hyperspin)</spindr>
+		<verticaldr>Olwyn fertigol ar y dde (Hyperspin)</verticaldr>
+		<verticaldreb>Olwyn fertigol ar y dde (Emubox)</verticaldreb>
+		<spingh>Olwyn grom ar y chwith (Hyperspin)</spingh>
+		<verticalgh>Olwyn fertigol ar y chwith (Hyperspin)</verticalgh>
+		<verticalgheb>Olwyn fertigol ar y chwith (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Gwerthwr box Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Gwerthwr box Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Gwerthwr box Hyperspin Chris (gwaith ar y gweill)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Golwg gemau - System gyfredol wrth agor?</systannounce>
+		<classiquesyst>Pylu gyda chwyddo allan</classiquesyst>
+		<nomsystem2>Mynediad araf (pylu + chwyddo)</nomsystem2>
+		<nomsystem3>Fflach gyflym (chwyddo allan)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Golwg gemau - Cefndir ar bob logo gêm?</gwheelbackgr>
+		<sisaccades>Wedi'i analluogi</sisaccades>
+		<ovalcarbon>Hirgrwn carbon (wedi'i gynhyrchu'n awtomatig)</ovalcarbon>
+		<ovalsilver>Hirgrwn silver (wedi'i gynhyrchu'n awtomatig)</ovalsilver>
+		<rectcarbon>Petryal carbon (wedi'i gynhyrchu'n awtomatig)</rectcarbon>
+		<rectcompose>Petryal personol fesul system (awto-gynhyrchwyd)</rectcompose>
+		<ovalcompose>Hirgrwn carbon personol fesul system (awto-gynhyrchwyd)</ovalcompose>
+		<logounified>Logo maint unedig</logounified>
+		<hfsround>Crwn Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Golwg gemau - Llywio yn ôl llythyren (gemau)?</letternav>
+		<navhoricoinstyle>Wyddor lorweddol</navhoricoinstyle>
+		<navvertcoinstyle>Wyddor fertigol ar y chwith</navvertcoinstyle>
+		<navvertrcoinstyle>Wyddor fertigol ar y dde</navvertrcoinstyle>
+		<navhsletters>Llythyren wedi'i steilio fesul system</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Golwg gemau - Dangos y wybodaeth fwyaf?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Dechrau'r opsiynau uwch penodol i olygon Hyperbat ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Cyfryngau sydd eu hangen ar gyfer golwg gemau Hyperbat = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Thema gemau generig (os nad oes thema)</defaultgeneric>
+		<videodefaut>Fideo diofyn y thema generig (heb sgrinlun na fideo)</videodefaut>
+		<generic43boxback>Safonol gyda chyfosodiad blaen a chefn y bocs</generic43boxback>
+		<generic43coinopsstyle>Casgliad o gabinetau arcêd</generic43coinopsstyle>
+		<generic43noanimationfanart>Safonol gyda chefndir fanart animeiddiedig</generic43noanimationfanart>
+		<generic43noanimation>Safonol heb animeiddiad boxart</generic43noanimation>
+		<generic43>Safonol</generic43>
+		<jukeboxdef>Golwg cryno-ddisg (heb ei orffen)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Thema gemau: System ffynhonnell</gameviewsource>
+		<mamefolder>Ffolder wreiddiol y gêm yn gyntaf, yna ffolder mame</mamefolder>
+		<actualsystem>Ffolder y system a ddewiswyd yn gyntaf</actualsystem>
+		<genericstyleonly>Defnyddio'r thema gemau generig yn unig</genericstyleonly>
+		<groupedsystem>Prawf datblygu yn unig: peidiwch â defnyddio</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Thema gemau: Awdur</authordisplayed>
+		<showoff>Wedi'i alluogi, gwelededd uchel</showoff>
+		<showoffblackwhite>Wedi'i alluogi, gwelededd eithaf</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Pylu'r rhestr gemau</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Sain wrth sgrolio</gamewheelsound>
+		<wheelclic>Clic arddull Hyperspin</wheelclic>
+		<bulle>Swigen</bulle>
+		<clic>Clic syml</clic>
+		<clicgrave>Clic dwfn</clicgrave>
+		<frottement>Rhwbio</frottement>
+		<poc>Pop</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Gweledol - Effaith fignét</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Gweledol - Fignét golwg systemau</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Gweledol - Tywyllu'r cefndir (golwg systemau)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>GWELEDOL - Dewis y ffon animeiddiedig</syststickon>
+		<stickon>Arcêd clasurol</stickon>
+		<syststickcolor>GWELEDOL - Lliw pêl y ffon</syststickcolor>
+		<ballcyan>Gwyrddlas</ballcyan>
+		<ballblue>Glas</ballblue>
+		<balldarkviolet>Fioled tywyll</balldarkviolet>
+		<ballviolet>Fioled</ballviolet>
+		<ballgreen>Gwyrdd</ballgreen>
+		<balllitegreen>Gwyrdd golau</balllitegreen>
+		<ballpink>Pinc</ballpink>
+		<ballred>Coch</ballred>
+		<ballyelgreen>Melyn-wyrdd</ballyelgreen>
+		<ballyellow>Melyn</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Golwg press start</pressstart>
+		<doigts>Bys animeiddiedig yn pwyso botwm</doigts>
+		<undoigt>Bys animeiddiedig yn pwyso botwm ar y chwith yn unig</undoigt>
+		<undoigtr>Bys animeiddiedig yn pwyso botwm ar y dde yn unig</undoigtr>
+		<pressstarttxt>METADATA - Dewis y testun</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Gêm am ddim</partiegratuite>
+		<uneuro>1€ y gêm</uneuro>
+		<sitessage>Pwyswch Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Ffurfweddu'r metadata</hsmetadata>
+		<full>Llawn a safle rhagosodedig</full>
+		<lower>Llawn a'r safle isaf</lower>
+		<metafichedefault>Cerdyn metadata yn y safle rhagosodedig</metafichedefault>
+		<metafichebasgauche>Cerdyn metadata gwaelod chwith</metafichebasgauche>
+		<metafichebasdroite>Cerdyn metadata gwaelod dde</metafichebasdroite>
+		<metafichebascentre>Cerdyn metadata gwaelod canol</metafichebascentre>
+		<metafichehautgauche>Cerdyn metadata brig chwith</metafichehautgauche>
+		<metafichehautdroite>Cerdyn metadata brig dde</metafichehautdroite>
+		<metafichehautcentre>Cerdyn metadata brig canol</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Dangos themâu fesul gêm?</hyperbatperview>
+		<themejeux>Thema fesul gêm yn gyntaf os ar gael</themejeux>
+		<themejeuxno>Analluogi thema fesul gêm</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Gweledol - Trawsnewid llyfn rhwng themâu gemau</smoothgametheme>
+		<activesmooth>Wedi'i alluogi (argymhellir ar gyfer Retrobat)</activesmooth>
+		<noactivesmooth>Wedi'i analluogi (argymhellir ar gyfer Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Pwyntyddion system arddull Hyperspin</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Addasu'r scrap ar gyfer themâu cydnaws ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Bocs gêm i'w ddangos</boxorthumb>
+		<boxart>Wedi'i raddnodi ar gyfer bocs 3D</boxart>
+		<thumb>Wedi'i raddnodi ar gyfer bocs 2D</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Ffurfweddiad uwch: Newid ffolder ffynhonnell y cyfryngau --------------------------------------------------------</spacerextfolder>
+		<folder>Ffynhonnell - peidiwch â defnyddio</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Ffolder y thema - Rhagosodedig</intheme>
+		<extfolder>Ffolder allanol</extfolder>
+		<extfoldergametheme>Ffynhonnell - Thema benodol i gemau</extfoldergametheme>
+		<extfoldergamemedia>Ffynhonnell - Cyfryngau gemau y tu allan i gamelist.xml</extfoldergamemedia>
+		<extfoldervideosyst>Ffynhonnell - Thema benodol i systemau</extfoldervideosyst>
+		<extfolderbezelsyst>Ffynhonnell - Bezels y systemau</extfolderbezelsyst>
+		<extfoldermanufacturer>Ffynhonnell - Logos cyhoeddwyr gemau</extfoldermanufacturer>
+		<extfolderfanart>Ffynhonnell - Fanart y systemau</extfolderfanart>
+		<extfolderlogosyst>Ffynhonnell - Logo'r system</extfolderlogosyst>
+		<extfoldercouleursinfos>Ffynhonnell - Arddull gwybodaeth gemau</extfoldercouleursinfos>
+		<extfolderthumbox>Ffynhonnell - Bocsys gemau 2D/3D</extfolderthumbox>
+		<extfoldergamefanart>Ffynhonnell - Fanart y gemau</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Cyfryngau a argymhellir ar gyfer golwg gemau Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ Dechrau'r opsiynau uwch penodol i olwg FanartStar boxart ↓   -------------------</mediastar>
+		<spacebox>Bwlch rhwng bocsys gemau</spacebox>
+		<spacessssmall>Bwlch ----</spacessssmall>
+		<spacesssmall>Bwlch ---</spacesssmall>
+		<spacessmall>Bwlch --</spacessmall>
+		<spacesmall>Bwlch -</spacesmall>
+		<spacenorm>Rhagosodedig</spacenorm>
+		<spacemore>Bwlch +</spacemore>
+		<spacemmore>Bwlch ++</spacemmore>
+		<spacemmmore>Bwlch +++</spacemmmore>
+		<spacemmmmore>Bwlch ++++</spacemmmmore>
+		<fanartstarrotated>Cylchdroi bocsys SNES, N64, NGAGE, Solarus</fanartstarrotated>
+		<starrotate>Ie</starrotate>
+		<nostarrotate>Na</nostarrotate>
+		<boxstarspeed>Cyflymder yr animeiddiad sgrolio</boxstarspeed>
+		<speedslow1>Araf+</speedslow1>
+		<speedslow2>Araf++</speedslow2>
+		<customfanart>Fanarts i'w defnyddio</customfanart>
+		<fanartgamelist>Fanart o'r scrap yn y gamelist</fanartgamelist>
+		<fanartcustom>Fanart personol yn _Gamemedia-EnwSystem-medium_artwork</fanartcustom>
+		<starboxang>Ongl y bocsys gemau</starboxang>
+		<starthumb>Dangos cloriau 2D neu 3D?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Maint y fideo rhagolwg</starvideo>
+		<starvideoang>Ar ogwydd</starvideoang>
+		<starvideodef>Safonol</starvideodef>
+		<starvideobig>Mawr</starvideobig>
+		<longselect>Pwyso'n hir ar "select"</longselect>
+		<favuniquement>Ffefrynnau yn unig</favuniquement>
+		<tslesjeux>Pob gêm</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Cymhareb y sgrin</screenratio>
+		<ratio1610>16/10 (arbrofol)</ratio1610>
+		<ratio43>4/3 (arbrofol)</ratio43>
+		<cadrevideosyst>Ffrâm fideos y system</cadrevideosyst>
+		<cadreorigine>Gwreiddiol (bezel)</cadreorigine>
+		<cadrebordure>Ymyl</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Croeso a chydnabyddiaethau</planche00>
+		<planche01>01 - Sut i symud fy themâu personol</planche01>
+		<planche02>02 - Sut i addasu fy themâu 1/2</planche02>
+		<planche03>03 - Ffrâm fideos y system</planche03>
+		<planche04>04 - Sut i addasu fy themâu 2/2</planche04>
+		<planche05>05 - Lawrlwytho themâu</planche05>
+		<planche06>06 - Ychwanegu thema system</planche06>
+		<planche07>07 - Ychwanegu thema gêm</planche07>
+		<planche08>08 - Golygyddion themâu</planche08>
+		<planche09>09 - Bocs 2D neu 3D a sgrapio</planche09>
+		<planche10>10 - Briwsion bara a llywio fesul llythyren</planche10>
+		<planche11>11 - Arddull gwybodaeth gemau</planche11>
+		<planche12>12 - Sgrin 4:3 neu 16:10</planche12>
+		<planche13>13 - Dolenni i lawrlwytho mwy o themâu ac artworks</planche13>
+	</variables>
+</theme>

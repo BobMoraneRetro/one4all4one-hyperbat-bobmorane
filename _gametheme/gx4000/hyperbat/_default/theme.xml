@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-gx4000" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="Artwork2-gx4000" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.080208333333 0.573148148148</pos>
+			<size>0.365625000000 0.853703703704</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="Background_1-gx4000" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path>./fond ecran.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.488802083333 0.251388888889</pos>
+			<size>0.326562500000 0.436111111111</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="screenshot-gx4000" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.486718750000 0.253240740741</pos>
+			<size>0.309895833333 0.413888888889</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+		</image>
+		<video name="gameplayprev-gx4000" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.488473167045 0.248425296044</pos>
+			<maxSize>0.304610733182 0.406147644243</maxSize>
+			<zIndex>220</zIndex>
+			<effect>none</effect>
+			<delay>1</delay>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="500" mode="EaseIn"/>
+			</storyboard>
+		</video>
+		<image name="Glass-gx4000" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path>./Glass.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.488802083333 0.248148148148</pos>
+			<size>0.304687500000 0.407407407407</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="" to="0.5" begin="0" duration="0" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="" to="0.5" begin="0" duration="0" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="" to="0.5" begin="0" duration="0" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="ecran-gx4000" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path>./ecran.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.504947916667 0.292129629630</pos>
+			<size>0.419270833333 0.625000000000</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Console copie-gx4000" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path>./Console copie.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.427604166667 0.500000000000</pos>
+			<size>0.531250000000 1.040740740741</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Cartridge-gx4000" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.415625000000 0.632407407407</pos>
+			<size>0.129166666667 0.237037037037</size>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="linear"/>
+				<animation property="offsetY" from="-1" begin="" duration="800" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="linear"/>
+				<animation property="offsetY" from="-1" begin="" duration="800" mode="easeOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear"/>
+				<animation property="opacity" from="0" to="1" begin="400" duration="500" mode="linear"/>
+				<animation property="offsetY" from="-1" begin="" duration="800" mode="easeOut"/>
+			</storyboard>
+			<!-- <storyboard event="deactivateNext"> -->
+				<!-- <animation property="opacity" to="0" duration="150" mode="linear"/> -->
+				<!-- <animation property="scale" to="3" duration="300" autoreverse="false" mode=""/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="deactivatePrev"> -->
+				<!-- <animation property="opacity" to="0" duration="150" mode="linear"/> -->
+				<!-- <animation property="scale" to="3" duration="300" autoreverse="false" mode=""/> -->
+			<!-- </storyboard> -->
+		</image>
+		<image name="on2-gx4000" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path>./on2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.427343750000 0.658796296296</pos>
+			<size>0.316145833333 0.108333333333</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="200" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="200" mode="EaseIn"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="200" mode="EaseIn"/>
+			</storyboard>
+		</image>
+		<image name="console2-gx4000" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path>./console2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.417187500000 0.713888888889</pos>
+			<size>0.167708333333 0.153703703704</size>
+			<zIndex>280</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		
+		<image name="boxart-gx4000" ifSubset="boxorthumb:thumb" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path ifSubset="scrap3dbox:scrapedthumbnail">{game:boxart}</path>
+			<path ifSubset="scrap3dbox:scrapedboxart">{game:thumbnail}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.827083333333 0.522685185185</pos>
+			<maxSize>0.198958333333 0.628703703704</maxSize>
+			<zIndex>290</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		
+		<image name="boxart-gx4000" ifSubset="boxorthumb:boxart" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'gx4000'</visible>
+			<path ifSubset="scrap3dbox:scrapedthumbnail">{game:thumbnail}</path>
+			<path ifSubset="scrap3dbox:scrapedboxart">{game:boxart}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.827083333333 0.522685185185</pos>
+			<maxSize>0.198958333333 0.628703703704</maxSize>
+			<zIndex>290</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+
+
+		<control name="Cartridge-gx4000,on2-gx4000, gameplayprev-gx4000,">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

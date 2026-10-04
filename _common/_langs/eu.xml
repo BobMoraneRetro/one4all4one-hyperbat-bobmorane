@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="eu">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>Bai</yes>
+		<no>Ez</no>
+		<desactive>Desgaitua</desactive>
+		<activate>Gaitua</activate>
+		<actif>Gaitua</actif>
+		<active>Gaitua</active>
+		<deactive>Desgaitua</deactive>
+		<vide>   </vide>
+		<default>Lehenetsia</default>
+		<amoitie>partzialki</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>Hizkuntza erabilgarriak:</languesdispo>
+		<nodates>Datarik ez</nodates>
+		<playcount>partida</playcount>
+		<playcountone>partida</playcountone>
+		<players>jokalari</players>
+		<playerss>jokalari</playerss>
+		<player>jokalari</player>
+		<nogametime>Inoiz jokatu gabea</nogametime>
+		<noplayerdata>Ezezaguna</noplayerdata>
+		<noratings>Baloraziorik ez</noratings>
+		<lastgamelabel>Azken partida:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>Hurrengo jokoa</jeusuiv>
+		<jeuprec>Aurreko jokoa</jeuprec>
+		<systsuiv>Hurrengo sistema</systsuiv>
+		<systprec>Aurreko sistema</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>Ongietorri mezua</lismoi>
+		<tumasbienlu>Ongietorria eta kredituak</tumasbienlu>
+		<deporttheme>Nire gai pertsonalizatuak nola lekualdatu</deporttheme>
+		<customiztheme1>Nire gaiak nola pertsonalizatu 1/2</customiztheme1>
+		<customiztheme2>Nire gaiak nola pertsonalizatu 2/2</customiztheme2>
+		<downloadmore>Gai eta artwork gehiago deskargatzeko estekak</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>Sistemen zerrendaren ikuspegia</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: Sareta ikuspegi oinarrizkoa</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart oso arina</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - Probatu zure multimedia</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>SCRAP konfiguratu - Fanart egitura?</packcustombuild>
+		<packcustombuildsno>Fanart "-fanart" atzizkiarekin (lehenetsia)</packcustombuildsno>
+		<packretrofreshbat>Fanart "-image" atzizkiarekin</packretrofreshbat>
+		<scrap3dbox>Scrape konfiguratu - 3D kutxaren egitura?</scrap3dbox>
+		<scrapedboxart>3D kutxa "-boxart"-ekin gamelist-ean</scrapedboxart>
+		<scrapedthumbnail>3D kutxa "-thumbnail"-ekin gamelist-ean</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>Laguntza - Laguntza ikonoen itxura</iconset>
+		<iconsetposition>Botoien kokapena</iconsetposition>
+		<colorhelp>Laguntza - Laguntza testuaren koloreak</colorhelp>
+		<skyblue>zeru urdina</skyblue>
+		<standard>Estandarra</standard>
+		<purple>bioleta</purple>
+		<red>gorria</red>
+		<aqua>zeru urdina</aqua>
+		<orange>laranja</orange>
+		<green>berdea</green>
+		<yellow>horia</yellow>
+		<pink>arrosa</pink>
+		<grey>gris iluna</grey>
+		<lightgrey>gris argia</lightgrey>
+		<navy>urdina alt</navy>
+		<violet>bioleta</violet>
+		<candy>candy</candy>
+		<redalt>gorria alt</redalt>
+		<yellowalt>horia alt</yellowalt>
+		<greenalt>berdea alt</greenalt>
+		<purplealt>bioleta alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>Sistema ikuspegia - Sistema logo mota</systviewlogos>
+		<logosimple>Logo sinplea (Osoa + Eskualdea)</logosimple>
+		<glassnekhros>Glass logoa (Osoa + Eskualdea) (By Nekhros)</glassnekhros>
+		<logobd>Komiki estiloko logoa (Helmic)</logobd>
+		<logoovalcarb>Logo obalatua Carbon</logoovalcarb>
+		<hmaxovalsilver>Logo obalatua Silver</hmaxovalsilver>
+		<logorectfresh>Logo laukizuzena Team Freshone (kanpoko paketea)</logorectfresh>
+		<hmaxrectrefl>Logo laukizuzena islarekin Team Freshone (kanpoko paketea)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>Sistema ikuspegia - Sistemen zerrendaren desagerpena</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>Sistema ikuspegia - Sistemaren fanarten aukeraketa</systviewfanart>
+		<fanartfreshone>FreshOne-k hautatutako fanartak soilik</fanartfreshone>
+		<fanartsystcustom>Fanart pertsonalizatuak, bestela FreshOne fanarta</fanartsystcustom>
+		<fanfondsystem>Sistemaren atzeko planoa, bestela FreshOne fanarta</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>Sistema ikuspegia - Sistemaren aurkezpen animatua</systviewvideo>
+		<hyperspinorunified>ADDON: HS dinamikoa, bestela HS bateratua</hyperspinorunified>
+		<gameplayp1>Ausazko gameplay bideo txikia bezel-arekin, badago</gameplayp1>
+		<gameplay1>Ausazko gameplay bideo handia bezel-arekin, badago</gameplay1>
+		<gameplayp>Ausazko gameplay bideo txikia</gameplayp>
+		<gameplay>Ausazko gameplay bideo handia</gameplay>
+		<custom>Custom karpetako bideo pertsonala</custom>
+		<hyperspinxp>ADDON: Irudia eta gameplay Hyperspin dinamiko estiloan</hyperspinxp>
+		<hyperspin>ADDON: Irudia eta gameplay Hyperspin bateratu estiloan</hyperspin>
+		<hyperspinorder>ADDON: HS dinamikoa, bestela Hyperpie bideoa</hyperspinorder>
+		<hyperpie>ADDON: Hyperpie bideoa, bestela Unified bideoa, badago</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>Sistema ikuspegia - Erakutsi sistemaren joko kopurua</systviewtotal>
+		<nbrjeux>joko kopuru soila</nbrjeux>
+		<nbrjeux2>sistemaren izena eta joko kopurua</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>Nabigazio bidearen bistaratzea</menuofficiel>
+		<menutxt>Hardware ordena ofiziala: testu horizontala</menutxt>
+		<menuorb>Hardware ordena ofiziala: orbe horizontala</menuorb>
+		<menuorbvert>Hardware ordena ofiziala: orbe bertikala</menuorbvert>
+		<menuorbcrcl>Hardware ordena ofiziala: orbe erdizirkularra</menuorbcrcl>
+		<menucust>Bob-en hardware ordena pertsonalizatua: testu horizontala</menucust>
+		<menucustorb>Bob-en hardware ordena pertsonalizatua: orbe horizontala</menucustorb>
+		<menucustorbvert>Bob-en hardware ordena pertsonalizatua: orbe bertikala</menucustorbvert>
+		<menucustorbcrcl>Bob-en hardware ordena pertsonalizatua: orbe erdizirkularra</menucustorbcrcl>
+		<menutxtzspin>Hardware ordena ofiziala: testu bertikala</menutxtzspin>
+		<menutxtzspincust>Bob-en hardware ordena pertsonalizatua: testu bertikala</menutxtzspincust>
+		<menuteta>Hardware ordena ofiziala: Tetanos</menuteta>
+		<menucustteta>Bob-en hardware ordena pertsonalizatua: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>Hyperbat sistema ikuspegia - Laguntza animatuak</sticksysteme>
+		<systballblue>Stick Urdina</systballblue>
+		<systballcyan>Stick Ziana</systballcyan>
+		<systballdarkviolet>Stick Bioleta iluna</systballdarkviolet>
+		<systballviolet>Stick Bioleta</systballviolet>
+		<systballgreen>Stick Berdea</systballgreen>
+		<systballlitegreen>Stick Berde argia</systballlitegreen>
+		<systballpink>Stick Arrosa</systballpink>
+		<systballred>Stick Gorria</systballred>
+		<systballyelgreen>Stick Hori berdexka</systballyelgreen>
+		<systballyellow>Stick Horia</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>Hyperbat sistema ikuspegia - Menu mota</hyperwheel>
+		<spindr>Gurpil kurbatua eskuinean (Hyperspin)</spindr>
+		<verticaldr>Gurpil bertikala eskuinean (Hyperspin)</verticaldr>
+		<verticaldreb>Gurpil bertikala eskuinean (Emubox)</verticaldreb>
+		<spingh>Gurpil kurbatua ezkerrean (Hyperspin)</spingh>
+		<verticalgh>Gurpil bertikala ezkerrean (Hyperspin)</verticalgh>
+		<verticalgheb>Gurpil bertikala ezkerrean (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: Box saltzailea Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: Box saltzailea Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: Box saltzailea Hyperspin Chris (lanean)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>Joko ikuspegia - Uneko sistema irekitzean?</systannounce>
+		<classiquesyst>Desagerpena atzerako zoomarekin</classiquesyst>
+		<nomsystem2>Sarrera motela (iraungitzea + zoom)</nomsystem2>
+		<nomsystem3>Distira azkarra (irteerako zoom)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>Joko ikuspegia - Atzeko planoa joko logo bakoitzean?</gwheelbackgr>
+		<sisaccades>Desgaitua</sisaccades>
+		<ovalcarbon>Obalo carbon (automatikoki sortua)</ovalcarbon>
+		<ovalsilver>Obalo silver (automatikoki sortua)</ovalsilver>
+		<rectcarbon>Laukizuzen carbon (automatikoki sortua)</rectcarbon>
+		<rectcompose>Laukizuzen pertsonalizatua sistemako (autosortua)</rectcompose>
+		<ovalcompose>Obalo carbon pertsonalizatua sistemako (autosortua)</ovalcompose>
+		<logounified>Tamaina bateratuko logoa</logounified>
+		<hfsround>Biribila Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>Joko ikuspegia - Letraz nabigatu (jokoak)?</letternav>
+		<navhoricoinstyle>Alfabeto horizontala</navhoricoinstyle>
+		<navvertcoinstyle>Alfabeto bertikala ezkerrean</navvertcoinstyle>
+		<navvertrcoinstyle>Alfabeto bertikala eskuinean</navvertrcoinstyle>
+		<navhsletters>Sistemaren arabera estilizatutako letra</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>Joko ikuspegia - Informazio maximoa erakutsi?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ Hyperbat ikuspegien aukera aurreratuen hasiera ↓   -------------------</spacerHS02>
+		<mediahyper>----------- Hyperbat joko ikuspegirako behar diren multimediak = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>Joko gai generikoa (gairik ez badago)</defaultgeneric>
+		<videodefaut>Gai generikoaren bideo lehenetsia (pantaila-argazkirik eta bideorik gabe)</videodefaut>
+		<generic43boxback>Estandarra kutxaren aurreko eta atzeko muntaketarekin</generic43boxback>
+		<generic43coinopsstyle>Arcade makinen bilduma</generic43coinopsstyle>
+		<generic43noanimationfanart>Estandarra fanart animatuarekin atzean</generic43noanimationfanart>
+		<generic43noanimation>Estandarra boxart animaziorik gabe</generic43noanimation>
+		<generic43>Estandarra</generic43>
+		<jukeboxdef>Disko konpaktuaren itxura (amaitu gabea)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>Joko gaia: Jatorrizko sistema</gameviewsource>
+		<mamefolder>Lehenik jokoaren jatorrizko karpeta, gero mame karpeta</mamefolder>
+		<actualsystem>Lehenik hautatutako sistemaren karpeta</actualsystem>
+		<genericstyleonly>Joko gai generikoa soilik erabili</genericstyleonly>
+		<groupedsystem>Garapen probak soilik: ez erabili</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>Joko gaia: Egilea</authordisplayed>
+		<showoff>Gaitua, ikusgarritasun handia</showoff>
+		<showoffblackwhite>Gaitua, ikusgarritasun maximoa</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - Jokoen zerrendaren desagerpena</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - Korritzeko soinua</gamewheelsound>
+		<wheelclic>Hyperspin estiloko klika</wheelclic>
+		<bulle>Burbuila</bulle>
+		<clic>Klik sinplea</clic>
+		<clicgrave>Klik sakona</clicgrave>
+		<frottement>Igurtzia</frottement>
+		<poc>Poc</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>Bisuala - Bineta efektua</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>Bisuala - Sistema ikuspegiko bineta</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>Bisuala - Atzeko planoa ilundu (sistema ikuspegia)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>BISUALA - Stick animatuaren aukeraketa</syststickon>
+		<stickon>Arcade klasikoa</stickon>
+		<syststickcolor>BISUALA - Stick-aren bolaren kolorea</syststickcolor>
+		<ballcyan>Ziana</ballcyan>
+		<ballblue>Urdina</ballblue>
+		<balldarkviolet>Bioleta iluna</balldarkviolet>
+		<ballviolet>Bioleta</ballviolet>
+		<ballgreen>Berdea</ballgreen>
+		<balllitegreen>Berde argia</balllitegreen>
+		<ballpink>Arrosa</ballpink>
+		<ballred>Gorria</ballred>
+		<ballyelgreen>Hori berdexka</ballyelgreen>
+		<ballyellow>Horia</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - Press start-en itxura</pressstart>
+		<doigts>Botoi bat sakatzen duen hatz animatua</doigts>
+		<undoigt>Botoi bat sakatzen duen hatz animatua, ezkerrean soilik</undoigt>
+		<undoigtr>Botoi bat sakatzen duen hatz animatua, eskuinean soilik</undoigtr>
+		<pressstarttxt>METADATA - Testuaren aukeraketa</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>Doako partida</partiegratuite>
+		<uneuro>1€ partida</uneuro>
+		<sitessage>Sakatu Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - Metadatuen konfigurazioa</hsmetadata>
+		<full>Osoa eta kokapen lehenetsia</full>
+		<lower>Osoa eta kokapen baxuena</lower>
+		<metafichedefault>Metadatu fitxa kokapen lehenetsian</metafichedefault>
+		<metafichebasgauche>Metadatu fitxa behean ezkerrean</metafichebasgauche>
+		<metafichebasdroite>Metadatu fitxa behean eskuinean</metafichebasdroite>
+		<metafichebascentre>Metadatu fitxa behean erdian</metafichebascentre>
+		<metafichehautgauche>Metadatu fitxa goian ezkerrean</metafichehautgauche>
+		<metafichehautdroite>Metadatu fitxa goian eskuinean</metafichehautdroite>
+		<metafichehautcentre>Metadatu fitxa goian erdian</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>Jokoko gaiak erakutsi?</hyperbatperview>
+		<themejeux>Jokoko gaia lehenik, badago</themejeux>
+		<themejeuxno>Desgaitu jokoko gaia</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>Bisuala - Joko gaien arteko trantsizio leuna</smoothgametheme>
+		<activesmooth>Gaitua (Retrobat-erako gomendatua)</activesmooth>
+		<noactivesmooth>Desgaitua (Batocera-rako gomendatua)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - Hyperspin estiloko sistema erakusleak</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- Scrap-aren pertsonalizazioa gai bateragarrietarako ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>Erakutsi beharreko joko kutxa</boxorthumb>
+		<boxart>3D kutxarako kalibratua</boxart>
+		<thumb>2D kutxarako kalibratua</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- Konfigurazio aurreratua: Multimedien jatorrizko karpeta aldatu --------------------------------------------------------</spacerextfolder>
+		<folder>Iturria - ez erabili</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>Gaiaren karpeta - Lehenetsia</intheme>
+		<extfolder>Kanpoko karpeta</extfolder>
+		<extfoldergametheme>Iturria - Jokoen gai espezifikoa</extfoldergametheme>
+		<extfoldergamemedia>Iturria - gamelist.xml-etik kanpoko joko multimediak</extfoldergamemedia>
+		<extfoldervideosyst>Iturria - Sistemen gai espezifikoa</extfoldervideosyst>
+		<extfolderbezelsyst>Iturria - Sistemen bezelak</extfolderbezelsyst>
+		<extfoldermanufacturer>Iturria - Joko argitaratzaileen logoak</extfoldermanufacturer>
+		<extfolderfanart>Iturria - Sistemen fanarta</extfolderfanart>
+		<extfolderlogosyst>Iturria - Sistemaren logoa</extfolderlogosyst>
+		<extfoldercouleursinfos>Iturria - Jokoen informazioaren estiloa</extfoldercouleursinfos>
+		<extfolderthumbox>Iturria - Jokoen 2D/3D kutxak</extfolderthumbox>
+		<extfoldergamefanart>Iturria - Jokoen fanarta</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- Fanart Star joko ikuspegirako gomendatutako multimediak = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ FanartStar boxart ikuspegiaren aukera aurreratuen hasiera ↓   -------------------</mediastar>
+		<spacebox>Joko kutxen arteko tartea</spacebox>
+		<spacessssmall>Tartea ----</spacessssmall>
+		<spacesssmall>Tartea ---</spacesssmall>
+		<spacessmall>Tartea --</spacessmall>
+		<spacesmall>Tartea -</spacesmall>
+		<spacenorm>Lehenetsia</spacenorm>
+		<spacemore>Tartea +</spacemore>
+		<spacemmore>Tartea ++</spacemmore>
+		<spacemmmore>Tartea +++</spacemmmore>
+		<spacemmmmore>Tartea ++++</spacemmmmore>
+		<fanartstarrotated>SNES, N64, NGAGE, Solarus kutxen biraketa</fanartstarrotated>
+		<starrotate>Bai</starrotate>
+		<nostarrotate>Ez</nostarrotate>
+		<boxstarspeed>Korritze animazioaren abiadura</boxstarspeed>
+		<speedslow1>Motela+</speedslow1>
+		<speedslow2>Motela++</speedslow2>
+		<customfanart>Erabili beharreko fanartak</customfanart>
+		<fanartgamelist>Scrap-eko fanarta gamelist-ean</fanartgamelist>
+		<fanartcustom>Fanart pertsonalizatua _Gamemedia-SistemaIzena-medium_artwork karpetan</fanartcustom>
+		<starboxang>Joko kutxen angelua</starboxang>
+		<starthumb>2D edo 3D azalak erakutsi?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>Aurrebista bideoaren tamaina</starvideo>
+		<starvideoang>Inklinatua</starvideoang>
+		<starvideodef>Estandarra</starvideodef>
+		<starvideobig>Handia</starvideobig>
+		<longselect>Sakatze luzea "select"-en</longselect>
+		<favuniquement>Gogokoak soilik</favuniquement>
+		<tslesjeux>Joko guztiak</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>Pantailaren proportzioa</screenratio>
+		<ratio1610>16/10 (esperimentala)</ratio1610>
+		<ratio43>4/3 (esperimentala)</ratio43>
+		<cadrevideosyst>Sistemaren bideoen markoa</cadrevideosyst>
+		<cadreorigine>Jatorrizkoa (bezel)</cadreorigine>
+		<cadrebordure>Ertza</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - Ongietorria eta kredituak</planche00>
+		<planche01>01 - Nire gai pertsonalizatuak nola lekualdatu</planche01>
+		<planche02>02 - Nire gaiak nola pertsonalizatu 1/2</planche02>
+		<planche03>03 - Sistemaren bideoen markoa</planche03>
+		<planche04>04 - Nire gaiak nola pertsonalizatu 2/2</planche04>
+		<planche05>05 - Gaiak deskargatu</planche05>
+		<planche06>06 - Sistema-gai bat gehitu</planche06>
+		<planche07>07 - Joko-gai bat gehitu</planche07>
+		<planche08>08 - Gai-editoreak</planche08>
+		<planche09>09 - 2D edo 3D kutxa eta scraping-a</planche09>
+		<planche10>10 - Nabigazio-bidea eta letrakako nabigazioa</planche10>
+		<planche11>11 - Jokoen informazioaren estiloa</planche11>
+		<planche12>12 - 4:3 edo 16:10 pantaila</planche12>
+		<planche13>13 - Gai eta artwork gehiago deskargatzeko estekak</planche13>
+	</variables>
+</theme>

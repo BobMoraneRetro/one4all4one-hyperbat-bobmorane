@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-n64" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="Backscreen-n64" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.443489583333 0.357870370370</pos>
+			<size>0.395312500000 0.530555555556</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+		</image>
+		<video name="gameplayprev-n64" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.448776294498 0.361942646530</pos>
+			<maxSize>0.387843851133 0.517125134844</maxSize>
+			<zIndex>210</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+		</video>
+		<image name="Video-n64" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.448697916667 0.363425925926</pos>
+			<size>0.405729166667 0.541666666667</size>
+			<zIndex>220</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork5-n64" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./Artwork5.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.827864583333 0.174950557353</pos>
+			<size>0.158854166667 0.262037037037</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork4-n64" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.456770833333 0.857407407407</pos>
+			<size>0.476041666667 0.498148148148</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Cartdridge-n64" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.457552083333 0.601388888889</pos>
+			<size>0.160937500000 0.184259259259</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetY" from="-1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3-n64" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.456770833333 0.889351851852</pos>
+			<size>0.476041666667 0.562037037037</size>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="red light-n64" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./red light.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.456250000000 0.807870370370</pos>
+			<size>0.023958333333 0.013888888889</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2400" duration="25" mode="Linear"/>
+				<animation property="scale" from="" to="1" begin="2400" duration="25" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2400" duration="25" mode="Linear"/>
+				<animation property="scale" from="" to="1" begin="2400" duration="25" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="2400" duration="25" mode="Linear"/>
+				<animation property="scale" from="" to="1" begin="2400" duration="25" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2-n64" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.140625000000 0.782870370370</pos>
+			<size>0.250000000000 0.362037037037</size>
+			<zIndex>280</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork1-n64" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.143750000000 0.280555555556</pos>
+			<size>0.253125000000 0.538888888889</size>
+			<zIndex>290</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="700" duration="800" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="700" duration="1500" mode="EaseOut"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="1500" duration="3000" autoreverse="true" repeat="forever" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="700" duration="800" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="700" duration="1500" mode="EaseOut"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="1500" duration="3000" autoreverse="true" repeat="forever" mode="EaseOut"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="700" duration="800" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="700" duration="1500" mode="EaseOut"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="1500" duration="3000" autoreverse="true" repeat="forever" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="boxe-n64" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'n64'</visible>
+			<path ifSubset="boxorthumb:thumb">firstfile(${box2dpath},${box3dpath})</path>
+			<path ifSubset="boxorthumb:boxart">firstfile(${box3dpath},${box2dpath})</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.826347593042 0.520945702985</pos>
+			<maxSize>0.316145833333 0.296296296296</maxSize>
+			<zIndex>300</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+		</image>
+		<control name="Backscreen-n64, gameplayprev-n64, Video-n64, Artwork5-n64, Artwork4-n64, Artwork3-n64, Artwork2-n64">
+			<storyboard event="deactivateNext">
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<control name="boxe-n64, Cartdridge-n64, red light-n64, Artwork1-n64">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+	</customView>
+</theme>

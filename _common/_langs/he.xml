@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<variables lang="he">
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- VALEURS COMMUNES (utilisées partout dans le thème) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<yes>כן</yes>
+		<no>לא</no>
+		<desactive>כבוי</desactive>
+		<activate>מופעל</activate>
+		<actif>מופעל</actif>
+		<active>מופעל</active>
+		<deactive>כבוי</deactive>
+		<vide>   </vide>
+		<default>ברירת מחדל</default>
+		<amoitie>חלקית</amoitie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- AFFICHAGE INTERFACE (métadonnées, navigation) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<languesdispo>שפות זמינות:</languesdispo>
+		<nodates>אין תאריך</nodates>
+		<playcount>משחקים</playcount>
+		<playcountone>משחק</playcountone>
+		<players>שחקן/ים</players>
+		<playerss>שחקנים</playerss>
+		<player>שחקן</player>
+		<nogametime>לא שוחק מעולם</nogametime>
+		<noplayerdata>לא ידוע</noplayerdata>
+		<noratings>אין דירוג</noratings>
+		<lastgamelabel>שוחק לאחרונה:</lastgamelabel>
+		<!-- Textes de navigation affichés dans la vue jeux -->
+		<jeusuiv>המשחק הבא</jeusuiv>
+		<jeuprec>המשחק הקודם</jeuprec>
+		<systsuiv>המערכת הבאה</systsuiv>
+		<systprec>המערכת הקודמת</systprec>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [1] ACCUEIL  (theme.xml > lismoi) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<lismoi>הודעת פתיחה</lismoi>
+		<tumasbienlu>ברוכים הבאים ותודות</tumasbienlu>
+		<deporttheme>איך להעביר את ערכות הנושא המותאמות שלי</deporttheme>
+		<customiztheme1>איך להתאים אישית את ערכות הנושא שלי 1/2</customiztheme1>
+		<customiztheme2>איך להתאים אישית את ערכות הנושא שלי 2/2</customiztheme2>
+		<downloadmore>קישורים להורדת עוד ערכות נושא ו-artworks</downloadmore>
+				
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [2] CHOIX DE LA VUE SYSTÈME  (theme.xml > systemview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systlist>תצוגת רשימת המערכות</systlist>
+		<systviewHS>HyperBAT - hyperspin experience</systviewHS>
+		<viewbasicgrid>Basic: תצוגת רשת בסיסית</viewbasicgrid>
+		<!-- <viewchoicecoinops>RFE coinops</viewchoicecoinops> -->
+		<viewchoice.hyperbat>HS - Hyperbat</viewchoice.hyperbat>
+		<presetstarbox>ES - FanartStar Boxart קל מאוד</presetstarbox>
+		<retrower>ES - Retro Tower</retrower>
+		<mediatester>ES - בדוק את המדיה שלך</mediatester>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [3] CONFIGURATION DU SCRAP  (theme.xml > custombuilds, scrap3dbox) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<packcustombuild>הגדרת SCRAP - מבנה הפאנארט?</packcustombuild>
+		<packcustombuildsno>פאנארט עם הסיומת "-fanart" (ברירת מחדל)</packcustombuildsno>
+		<packretrofreshbat>פאנארט עם הסיומת "-image"</packretrofreshbat>
+		<scrap3dbox>הגדרת scrape - מבנה קופסת 3D?</scrap3dbox>
+		<scrapedboxart>קופסת 3D עם "-boxart" ב-gamelist</scrapedboxart>
+		<scrapedthumbnail>קופסת 3D עם "-thumbnail" ב-gamelist</scrapedthumbnail>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [4] AIDE - ICÔNES ET COULEURS  (theme.xml > iconset, colorhelp) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<iconset>עזרה - מראה סמלי העזרה</iconset>
+		<iconsetposition>מיקום הכפתורים</iconsetposition>
+		<colorhelp>עזרה - צבעי טקסט העזרה</colorhelp>
+		<skyblue>תכלת</skyblue>
+		<standard>רגיל</standard>
+		<purple>סגול</purple>
+		<red>אדום</red>
+		<aqua>תכלת</aqua>
+		<orange>כתום</orange>
+		<green>ירוק</green>
+		<yellow>צהוב</yellow>
+		<pink>ורוד</pink>
+		<grey>אפור כהה</grey>
+		<lightgrey>אפור בהיר</lightgrey>
+		<navy>כחול alt</navy>
+		<violet>סגול</violet>
+		<candy>candy</candy>
+		<redalt>אדום alt</redalt>
+		<yellowalt>צהוב alt</yellowalt>
+		<greenalt>ירוק alt</greenalt>
+		<purplealt>סגול alt</purplealt>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [5] VUE SYSTÈME - LOGOS  (theme.xml > systemlogocops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewlogos>תצוגת מערכות - סוג לוגו המערכות</systviewlogos>
+		<logosimple>לוגו פשוט (מלא + אזור)</logosimple>
+		<glassnekhros>לוגו Glass (מלא + אזור) (By Nekhros)</glassnekhros>
+		<logobd>לוגו בסגנון קומיקס (Helmic)</logobd>
+		<logoovalcarb>לוגו אליפטי Carbon</logoovalcarb>
+		<hmaxovalsilver>לוגו אליפטי Silver</hmaxovalsilver>
+		<logorectfresh>לוגו מלבני Team Freshone (חבילה חיצונית)</logorectfresh>
+		<hmaxrectrefl>לוגו מלבני עם השתקפות Team Freshone (חבילה חיצונית)</hmaxrectrefl>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [6] VUE SYSTÈME - FONDU DE LA LISTE  (theme.xml > systemwheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systemwheelfade>תצוגת מערכות - דהיית רשימת המערכות</systemwheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [7] VUE SYSTÈME - FANART  (theme.xml > imagefondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewfanart>תצוגת מערכות - בחירת פאנארט המערכת</systviewfanart>
+		<fanartfreshone>רק פאנארט שנבחר על ידי FreshOne</fanartfreshone>
+		<fanartsystcustom>פאנארט מותאם, אחרת פאנארט FreshOne</fanartsystcustom>
+		<fanfondsystem>רקע המערכת, אחרת פאנארט FreshOne</fanfondsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [8] VUE SYSTÈME - VIDÉO DE PRÉSENTATION  (theme.xml > videofondcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewvideo>תצוגת מערכות - הצגה מונפשת של המערכת</systviewvideo>
+		<hyperspinorunified>ADDON: HS דינמי, אחרת HS מאוחד</hyperspinorunified>
+		<gameplayp1>סרטון משחק אקראי קטן עם מסגרת (bezel) אם קיימת</gameplayp1>
+		<gameplay1>סרטון משחק אקראי גדול עם מסגרת (bezel) אם קיימת</gameplay1>
+		<gameplayp>סרטון משחק אקראי קטן</gameplayp>
+		<gameplay>סרטון משחק אקראי גדול</gameplay>
+		<custom>סרטון אישי מתיקיית custom</custom>
+		<hyperspinxp>ADDON: תמונה ומשחק בסגנון Hyperspin דינמי</hyperspinxp>
+		<hyperspin>ADDON: תמונה ומשחק בסגנון Hyperspin מאוחד</hyperspin>
+		<hyperspinorder>ADDON: HS דינמי, אחרת סרטון Hyperpie</hyperspinorder>
+		<hyperpie>ADDON: סרטון Hyperpie, אחרת סרטון Unified אם קיים</hyperpie>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [9] VUE SYSTÈME - NOMBRE DE JEUX  (theme.xml > nbrjeuxcops1) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systviewtotal>תצוגת מערכות - הצגת מספר המשחקים במערכת</systviewtotal>
+		<nbrjeux>מספר משחקים פשוט</nbrjeux>
+		<nbrjeux2>שם המערכת ומספר המשחקים</nbrjeux2>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [10] VUE SYSTÈME - FIL D'ARIANE  (theme.xml > menuofficiel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<menuofficiel>הצגת פירורי לחם</menuofficiel>
+		<menutxt>מיון חומרה רשמי: טקסט אופקי</menutxt>
+		<menuorb>מיון חומרה רשמי: כדורים אופקיים</menuorb>
+		<menuorbvert>מיון חומרה רשמי: כדורים אנכיים</menuorbvert>
+		<menuorbcrcl>מיון חומרה רשמי: כדורים בחצי עיגול</menuorbcrcl>
+		<menucust>מיון חומרה מותאם של Bob: טקסט אופקי</menucust>
+		<menucustorb>מיון חומרה מותאם של Bob: כדורים אופקיים</menucustorb>
+		<menucustorbvert>מיון חומרה מותאם של Bob: כדורים אנכיים</menucustorbvert>
+		<menucustorbcrcl>מיון חומרה מותאם של Bob: כדורים בחצי עיגול</menucustorbcrcl>
+		<menutxtzspin>מיון חומרה רשמי: טקסט אנכי</menutxtzspin>
+		<menutxtzspincust>מיון חומרה מותאם של Bob: טקסט אנכי</menutxtzspincust>
+		<menuteta>מיון חומרה רשמי: Tetanos</menuteta>
+		<menucustteta>מיון חומרה מותאם של Bob: Tetanos</menucustteta>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [11] VUE SYSTÈME HYPERBAT - COULEUR DU STICK  (theme.xml > sticksysteme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<sticksysteme>תצוגת מערכות Hyperbat - עזרה מונפשת</sticksysteme>
+		<systballblue>ג'ויסטיק כחול</systballblue>
+		<systballcyan>ג'ויסטיק ציאן</systballcyan>
+		<systballdarkviolet>ג'ויסטיק סגול כהה</systballdarkviolet>
+		<systballviolet>ג'ויסטיק סגול</systballviolet>
+		<systballgreen>ג'ויסטיק ירוק</systballgreen>
+		<systballlitegreen>ג'ויסטיק ירוק בהיר</systballlitegreen>
+		<systballpink>ג'ויסטיק ורוד</systballpink>
+		<systballred>ג'ויסטיק אדום</systballred>
+		<systballyelgreen>ג'ויסטיק צהוב-ירוק</systballyelgreen>
+		<systballyellow>ג'ויסטיק צהוב</systballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [12] VUE SYSTÈME HYPERBAT - TYPE DE ROUE  (theme.xml > hyperwheel) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperwheel>תצוגת מערכות Hyperbat - סוג תפריט</hyperwheel>
+		<spindr>גלגל מעוקל מימין (Hyperspin)</spindr>
+		<verticaldr>גלגל אנכי מימין (Hyperspin)</verticaldr>
+		<verticaldreb>גלגל אנכי מימין (Emubox)</verticaldreb>
+		<spingh>גלגל מעוקל משמאל (Hyperspin)</spingh>
+		<verticalgh>גלגל אנכי משמאל (Hyperspin)</verticalgh>
+		<verticalgheb>גלגל אנכי משמאל (Emubox)</verticalgheb>
+		<verticalghjp>Preset 01: מוכר box Mbox Jipé</verticalghjp>
+		<verticalghkk>Preset 02: מוכר box Retrofist Kriss</verticalghkk>
+		<verticalghcs>Preset 03: מוכר box Hyperspin Chris (בעבודה)</verticalghcs>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [13] VUE JEUX HYPERBAT - ANNONCE SYSTÈME  (_advancedusers.xml > systannonce) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<systannounce>תצוגת משחקים - המערכת הנוכחית בפתיחה?</systannounce>
+		<classiquesyst>היעלמות עם התרחקות</classiquesyst>
+		<nomsystem2>כניסה איטית (דהייה + זום)</nomsystem2>
+		<nomsystem3>הבזק מהיר (זום החוצה)</nomsystem3>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [14] VUE JEUX HYPERBAT - FOND DE LA ROUE  (_advancedusers.xml > gwheelbackgr) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gwheelbackgr>תצוגת משחקים - רקע לכל לוגו משחק?</gwheelbackgr>
+		<sisaccades>כבוי</sisaccades>
+		<ovalcarbon>אליפסה carbon (נוצר אוטומטית)</ovalcarbon>
+		<ovalsilver>אליפסה silver (נוצר אוטומטית)</ovalsilver>
+		<rectcarbon>מלבן carbon (נוצר אוטומטית)</rectcarbon>
+		<rectcompose>מלבן מותאם לכל מערכת (נוצר אוטומטית)</rectcompose>
+		<ovalcompose>אליפסה carbon מותאמת לכל מערכת (נוצר אוטומטית)</ovalcompose>
+		<logounified>לוגו בגודל אחיד</logounified>
+		<hfsround>עגול Z-Spin</hfsround>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [15] VUE JEUX HYPERBAT - NAVIGATION PAR LETTRE  (_advancedusers.xml > letternav) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<letternav>תצוגת משחקים - ניווט לפי אות (משחקים)?</letternav>
+		<navhoricoinstyle>אלפבית אופקי</navhoricoinstyle>
+		<navvertcoinstyle>אלפבית אנכי משמאל</navvertcoinstyle>
+		<navvertrcoinstyle>אלפבית אנכי מימין</navvertrcoinstyle>
+		<navhsletters>אות מעוצבת לפי מערכת</navhsletters>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [16] VUE JEUX HYPERBAT - CONSOLE INFO MAX  (_advancedusers.xml > infosmax) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<infosmax>תצוגת משחקים - להציג מידע מרבי?</infosmax>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [17] SÉPARATEURS DE MENU HYPERBAT  (_advancedusers.xml > spacerHS02, spacermediahs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerHS02>----------------------    ↓ תחילת האפשרויות המתקדמות לתצוגות Hyperbat ↓   -------------------</spacerHS02>
+		<mediahyper>----------- מדיה נדרשת לתצוגת המשחקים Hyperbat = Video,Screenshot,Marquee,Add-ons ---------------</mediahyper>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [18] VUE JEUX HYPERBAT - THÈME GÉNÉRIQUE  (_advancedusers.xml > defaultgeneric) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<defaultgeneric>ערכת נושא כללית למשחקים (אם אין ערכת נושא)</defaultgeneric>
+		<videodefaut>סרטון ברירת מחדל של ערכת הנושא הכללית (ללא צילום מסך או סרטון)</videodefaut>
+		<generic43boxback>רגיל עם הרכבת גב וחזית הקופסה</generic43boxback>
+		<generic43coinopsstyle>אוסף מכונות ארקייד</generic43coinopsstyle>
+		<generic43noanimationfanart>רגיל עם רקע פאנארט מונפש</generic43noanimationfanart>
+		<generic43noanimation>רגיל ללא הנפשת boxart</generic43noanimation>
+		<generic43>רגיל</generic43>
+		<jukeboxdef>מראה תקליטור (לא גמור)</jukeboxdef>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [19] VUE JEUX HYPERBAT - SYSTÈME SOURCE  (_advancedusers.xml > gameviewsource) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gameviewsource>ערכת נושא משחקים: מערכת מקור</gameviewsource>
+		<mamefolder>תיקיית המקור של המשחק קודם, אחר כך תיקיית mame</mamefolder>
+		<actualsystem>תיקיית המערכת הנבחרת קודם</actualsystem>
+		<genericstyleonly>להשתמש רק בערכת הנושא הכללית למשחקים</genericstyleonly>
+		<groupedsystem>לבדיקות פיתוח בלבד: לא להשתמש</groupedsystem>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [20] VUE JEUX HYPERBAT - AFFICHAGE AUTEUR  (_advancedusers.xml > authordisplayed) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<authordisplayed>ערכת נושא משחקים: יוצר</authordisplayed>
+		<showoff>מופעל, נראות גבוהה</showoff>
+		<showoffblackwhite>מופעל, נראות מרבית</showoffblackwhite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [21] VUE JEUX HYPERBAT - FONDU LISTE JEUX  (_advancedusers.xml > gamewheelfade) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelfade>Wheel - דהיית רשימת המשחקים</gamewheelfade>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [22] VUE JEUX HYPERBAT - SON DU DÉFILEMENT  (_advancedusers.xml > gamewheelsound) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<gamewheelsound>Wheel - צליל גלילה</gamewheelsound>
+		<wheelclic>קליק בסגנון Hyperspin</wheelclic>
+		<bulle>בועה</bulle>
+		<clic>קליק פשוט</clic>
+		<clicgrave>קליק עמוק</clicgrave>
+		<frottement>שפשוף</frottement>
+		<poc>פופ</poc>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [23] VUE JEUX HYPERBAT - VIGNETTAGE  (_advancedusers.xml > vignettagehs) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<vignettagehs>חזותי - אפקט הצללת שוליים</vignettagehs>
+		<!-- VUE SYSTEME HYPERSPIN - VIGNETTAGE  (theme.xml > vignettagesyst) -->
+		<vignettagesyst>חזותי - הצללת שוליים בתצוגת מערכות</vignettagesyst>
+		<!-- VUE SYSTEME HYPERSPIN - ASSOMBRISSEMENT DU FOND  (theme.xml > bgmasksyst) -->
+		<bgmasksyst>חזותי - החשכת הרקע (תצוגת מערכות)</bgmasksyst>
+
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [24] VUE JEUX HYPERBAT - STICK ANIMÉ  (_advancedusers.xml > syststickon, syststickcolor) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<syststickon>חזותי - בחירת ג'ויסטיק מונפש</syststickon>
+		<stickon>ארקייד קלאסי</stickon>
+		<syststickcolor>חזותי - צבע כדור הג'ויסטיק</syststickcolor>
+		<ballcyan>ציאן</ballcyan>
+		<ballblue>כחול</ballblue>
+		<balldarkviolet>סגול כהה</balldarkviolet>
+		<ballviolet>סגול</ballviolet>
+		<ballgreen>ירוק</ballgreen>
+		<balllitegreen>ירוק בהיר</balllitegreen>
+		<ballpink>ורוד</ballpink>
+		<ballred>אדום</ballred>
+		<ballyelgreen>צהוב-ירוק</ballyelgreen>
+		<ballyellow>צהוב</ballyellow>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [25] VUE JEUX HYPERBAT - PRESS START  (_advancedusers.xml > pressstart, pressstarttxt) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pressstart>METADATA - מראה press start</pressstart>
+		<doigts>אצבע מונפשת הלוחצת על כפתור</doigts>
+		<undoigt>אצבע מונפשת הלוחצת על כפתור משמאל בלבד</undoigt>
+		<undoigtr>אצבע מונפשת הלוחצת על כפתור מימין בלבד</undoigtr>
+		<pressstarttxt>METADATA - בחירת טקסט</pressstarttxt>
+		<presstxt>Press start</presstxt>
+		<freeplay>Free Play</freeplay>
+		<partiegratuite>משחק חינם</partiegratuite>
+		<uneuro>1€ למשחק</uneuro>
+		<sitessage>לחץ Start</sitessage>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [26] VUE JEUX HYPERBAT - MÉTADONNÉES  (_advancedusers.xml > hsmetadata) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hsmetadata>METADATA - הגדרת מטא-נתונים</hsmetadata>
+		<full>מלא ובמיקום ברירת מחדל</full>
+		<lower>מלא ובמיקום הנמוך ביותר</lower>
+		<metafichedefault>כרטיס מטא-נתונים במיקום ברירת מחדל</metafichedefault>
+		<metafichebasgauche>כרטיס מטא-נתונים למטה משמאל</metafichebasgauche>
+		<metafichebasdroite>כרטיס מטא-נתונים למטה מימין</metafichebasdroite>
+		<metafichebascentre>כרטיס מטא-נתונים למטה במרכז</metafichebascentre>
+		<metafichehautgauche>כרטיס מטא-נתונים למעלה משמאל</metafichehautgauche>
+		<metafichehautdroite>כרטיס מטא-נתונים למעלה מימין</metafichehautdroite>
+		<metafichehautcentre>כרטיס מטא-נתונים למעלה במרכז</metafichehautcentre>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [27] VUE JEUX HYPERBAT - THÈME PAR JEU  (_advancedusers.xml > hsperview) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<hyperbatperview>להציג ערכות נושא לכל משחק?</hyperbatperview>
+		<themejeux>ערכת נושא של המשחק קודם, אם קיימת</themejeux>
+		<themejeuxno>השבתת ערכת נושא לכל משחק</themejeuxno>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [28] VUE JEUX HYPERBAT - TRANSITION DOUCE  (_advancedusers.xml > smoothgametheme) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<smoothgametheme>חזותי - מעבר חלק בין ערכות נושא של משחקים</smoothgametheme>
+		<activesmooth>מופעל (מומלץ ל-Retrobat)</activesmooth>
+		<noactivesmooth>כבוי (מומלץ ל-Batocera)</noactivesmooth>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [29] VUE JEUX HYPERBAT - POINTEURS  (_advancedusers.xml > pointeuradroite) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<pointeuradroite>Wheel - מצביעי מערכת בסגנון Hyperspin</pointeuradroite>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [30] SÉPARATEUR SCRAP  (_advancedusers.xml > spacerscrap) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerscrap>------------------------------------- התאמת scrap לערכות נושא תואמות ---------------- </spacerscrap>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [31] VUE JEUX HYPERBAT - BOITE DE JEU  (_advancedusers.xml > boxorthumb) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<boxorthumb>קופסת המשחק להצגה</boxorthumb>
+		<boxart>מכויל לקופסת 3D</boxart>
+		<thumb>מכויל לקופסת 2D</thumb>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [32] DOSSIERS SOURCES DES MÉDIAS  (_advancedusers.xml > extfolder*) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerextfolder>------------------- הגדרה מתקדמת: שינוי תיקיית המקור של המדיה --------------------------------------------------------</spacerextfolder>
+		<folder>מקור - לא להשתמש</folder>
+		<bobmedia>Bobmedia</bobmedia>
+		<intheme>תיקיית ערכת הנושא - ברירת מחדל</intheme>
+		<extfolder>תיקייה חיצונית</extfolder>
+		<extfoldergametheme>מקור - ערכת נושא ייעודית למשחקים</extfoldergametheme>
+		<extfoldergamemedia>מקור - מדיית משחקים מחוץ ל-gamelist.xml</extfoldergamemedia>
+		<extfoldervideosyst>מקור - ערכת נושא ייעודית למערכות</extfoldervideosyst>
+		<extfolderbezelsyst>מקור - מסגרות (bezel) של המערכות</extfolderbezelsyst>
+		<extfoldermanufacturer>מקור - לוגו של מפיצי משחקים</extfoldermanufacturer>
+		<extfolderfanart>מקור - פאנארט של המערכות</extfolderfanart>
+		<extfolderlogosyst>מקור - לוגו המערכת</extfolderlogosyst>
+		<extfoldercouleursinfos>מקור - סגנון מידע המשחקים</extfoldercouleursinfos>
+		<extfolderthumbox>מקור - קופסאות משחקים 2D/3D</extfolderthumbox>
+		<extfoldergamefanart>מקור - פאנארט של המשחקים</extfoldergamefanart>
+
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [33] VUE JEUX - FANART STAR  (_advancedusers.xml > spacerstar ... starvideo) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<spacerstar>--------- מדיה מומלצת לתצוגת המשחקים Fanart Star = Fanart,Video,Marquee,Thumbnail,boxart ---------------</spacerstar>
+		<mediastar>-----------------------------    ↓ תחילת האפשרויות המתקדמות לתצוגת FanartStar boxart ↓   -------------------</mediastar>
+		<spacebox>מרווח בין קופסאות המשחקים</spacebox>
+		<spacessssmall>מרווח ----</spacessssmall>
+		<spacesssmall>מרווח ---</spacesssmall>
+		<spacessmall>מרווח --</spacessmall>
+		<spacesmall>מרווח -</spacesmall>
+		<spacenorm>ברירת מחדל</spacenorm>
+		<spacemore>מרווח +</spacemore>
+		<spacemmore>מרווח ++</spacemmore>
+		<spacemmmore>מרווח +++</spacemmmore>
+		<spacemmmmore>מרווח ++++</spacemmmmore>
+		<fanartstarrotated>סיבוב קופסאות SNES, N64, NGAGE, Solarus</fanartstarrotated>
+		<starrotate>כן</starrotate>
+		<nostarrotate>לא</nostarrotate>
+		<boxstarspeed>מהירות הנפשת הגלילה</boxstarspeed>
+		<speedslow1>איטי+</speedslow1>
+		<speedslow2>איטי++</speedslow2>
+		<customfanart>פאנארט לשימוש</customfanart>
+		<fanartgamelist>פאנארט מה-scrap ב-gamelist</fanartgamelist>
+		<fanartcustom>פאנארט מותאם ב-_Gamemedia-SystemName-medium_artwork</fanartcustom>
+		<starboxang>זווית קופסאות המשחקים</starboxang>
+		<starthumb>להציג עטיפות 2D או 3D?</starthumb>
+		<starbox2d>Thumbnail</starbox2d>
+		<starbox3d>Boxart</starbox3d>
+		<starvideo>גודל סרטון התצוגה המקדימה</starvideo>
+		<starvideoang>מוטה</starvideoang>
+		<starvideodef>רגיל</starvideodef>
+		<starvideobig>גדול</starvideobig>
+		<longselect>לחיצה ארוכה על "select"</longselect>
+		<favuniquement>מועדפים בלבד</favuniquement>
+		<tslesjeux>כל המשחקים</tslesjeux>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [34] RATIO D'ÉCRAN ET CADRE DES VIDÉOS SYSTÈME  (theme.xml > screenratio, cadrevideosyst) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<screenratio>יחס מסך</screenratio>
+		<ratio1610>16/10 (ניסיוני)</ratio1610>
+		<ratio43>4/3 (ניסיוני)</ratio43>
+		<cadrevideosyst>מסגרת סרטוני המערכת</cadrevideosyst>
+		<cadreorigine>מקורי (bezel)</cadreorigine>
+		<cadrebordure>מסגרת</cadrebordure>
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<!-- [35] PLANCHES EXPLICATIVES  (theme.xml > lismoi, images _viewsystoption/sl-commun/planches) -->
+		<!-- ═══════════════════════════════════════════════════════ -->
+		<planche00>00 - ברוכים הבאים ותודות</planche00>
+		<planche01>01 - איך להעביר את ערכות הנושא המותאמות שלי</planche01>
+		<planche02>02 - איך להתאים אישית את ערכות הנושא שלי 1/2</planche02>
+		<planche03>03 - מסגרת סרטוני המערכת</planche03>
+		<planche04>04 - איך להתאים אישית את ערכות הנושא שלי 2/2</planche04>
+		<planche05>05 - הורדת ערכות נושא</planche05>
+		<planche06>06 - הוספת ערכת נושא למערכת</planche06>
+		<planche07>07 - הוספת ערכת נושא למשחק</planche07>
+		<planche08>08 - עורכי ערכות הנושא</planche08>
+		<planche09>09 - קופסה דו-ממדית או תלת-ממדית וגירוד</planche09>
+		<planche10>10 - פירורי לחם וניווט לפי אות</planche10>
+		<planche11>11 - סגנון מידע המשחקים</planche11>
+		<planche12>12 - מסך 4:3 או 16:10</planche12>
+		<planche13>13 - קישורים להורדת עוד ערכות נושא ו-artworks</planche13>
+	</variables>
+</theme>

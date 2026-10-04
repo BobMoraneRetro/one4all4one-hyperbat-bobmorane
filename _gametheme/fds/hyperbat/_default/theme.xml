@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-nes" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'fds'</visible>
+			<path>./Background2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="Artwork-nes" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'fds'</visible>
+			<path>./Artwork.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.058796296296</pos>
+			<size>0.410416666667 0.180555555556</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="scale" to="1" begin="650" duration="500" autoreverse="false" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="screnshoot-nes" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'fds'</visible>
+			<path>{game:image}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500781250000 0.393518518519</pos>
+			<size>0.394270833333 0.516666666667</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.394270833333" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+			<!-- <storyboard event="activateNext"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/> -->
+				<!-- <animation property="w" from="0" to="0.394270833333" begin="800" duration="700" mode="EaseOut"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="activatePrev"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/> -->
+				<!-- <animation property="w" from="0" to="0.394270833333" begin="800" duration="700" mode="EaseOut"/> -->
+			<!-- </storyboard> -->
+		</image>
+		<video name="gameplayprev-nes" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'fds'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.498250743400 0.392691309673</pos>
+			<maxSize>0.384375000000 0.512037037037</maxSize>
+			<zIndex>220</zIndex>
+			<effect>none</effect>
+			<delay>1.5</delay>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="500" mode="Linear"/>
+				<!-- <animation property="w" from="0" to="0.384375000000" begin="800" duration="700" mode="EaseOut"/> -->
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<!-- <animation property="w" from="0" to="0.384375000000" begin="800" duration="700" mode="EaseOut"/> -->
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<!-- <animation property="w" from="0" to="0.384375000000" begin="800" duration="700" mode="EaseOut"/> -->
+			</storyboard>
+		</video>
+		<image name="bezel-nes" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'fds'</visible>
+			<path>./bezel.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500260416667 0.411111111111</pos>
+			<size>0.420312500000 0.577777777778</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="700" mode="Linear"/>
+				<animation property="w" from="0" to="0.420312500000" begin="800" duration="700" mode="EaseOut"/>
+			</storyboard>
+		</image>
+		<image name="console3-nes" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'fds'</visible>
+			<path>./console3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.831250000000 0.783333333333</pos>
+			<size>0.325000000000 0.290740740741</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="500" mode="Linear"/>
+				<animation property="scale" to="1" begin="650" duration="500" autoreverse="false" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="manette-nes" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'fds'</visible>
+			<path>./manette.png</path>
+			<origin>0.5 0.5</origin>
+			<!-- <pos>0.295 0.777</pos> -->
+			<pos>0.307 0.74</pos>
+			<maxSize>0.28 0.28</maxSize>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="scaleOrigin" to="0 0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1500" duration="800" mode="Linear"/>
+				<animation property="scale" from="0" to="1.1" begin="1500" duration="500" autoreverse="false" mode="EaseIn"/>
+				<animation property="scale" from="1.1" to="0.95" begin="2000" duration="300" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="0.95" to="1.02" begin="2300" duration="200" autoreverse="false" mode="bump"/>
+				<animation property="scale" from="1.02" to="1" begin="2500" duration="100" autoreverse="false" mode="bump"/>
+			</storyboard>
+		</image>
+		<image name="cart-nes" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; 
+			{game:system:theme} == 'fds' &amp;&amp; 
+			!exists("${path_game_theme}/${system.theme}/hyperbat/_default/Cart/" + stem({game:rom}) + ".png")</visible>
+			<path>./cart.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.794010416667 0.767129629630</pos>
+			<size>0.152604166667 0.045370370370</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="375" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="650" duration="375" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="375" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="650" duration="375" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="650" duration="375" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="650" duration="375" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="cart-nes2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'fds'</visible>
+			<path>"${path_game_theme}/${system.theme}/hyperbat/_default/Cart/" + stem({game:rom}) + ".png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.794010416667 0.767129629630</pos>
+			<size>0.152604166667 0.065370370370</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="375" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1000" duration="375" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="375" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1000" duration="375" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1000" duration="375" mode="Linear"/>
+				<animation property="offsetY" from="1" to="0" begin="1000" duration="375" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="logo2-nes" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; 
+            {game:system:theme} == 'fds' &amp;&amp;
+            !exists("${path_game_theme}/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png")</visible>
+			<path>./logo2.png</path>
+			<origin>0.5 0.5</origin>
+			<!-- <pos>0.587239583333 0.766666666667</pos> -->
+			<!-- <size>0.145312500000 0.285185185185</size> -->
+			<pos>0.56 0.80</pos>
+			<maxSize>0.2 0.3</maxSize>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="logo2-nes2" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'fds'</visible>
+            <path>"${path_game_theme}/${system.theme}/hyperbat/_default/Artwork/" + stem({game:rom}) + ".png"</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.57 0.80</pos>
+			<maxSize>0.2 0.3</maxSize>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="800" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<image name="boxart-nes" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'fds'</visible>
+			<path>exists({game:boxart}) ? {game:boxart} : {game:thumbnail}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.845833333333 0.323611111111</pos>
+			<maxSize>0.156250000000 0.502777777778</maxSize>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="2000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="2000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="2000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="deactivateNext">
+				<animation property="offsetX" from="0" to="0.5" begin="" duration="150" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="offsetX" from="0" to="0.5" begin="" duration="150" mode="easyIn"/>
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="logo1-nes" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'fds'</visible>
+			<path>./logo1.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.166554703365 0.458787431905</pos>
+			<size>0.315625000000 0.575000000000</size>
+			<zIndex>280</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="700" duration="800" mode="Linear"/>
+				<animation property="offsetX" from="-1" to="0" begin="700" duration="1500" mode="EaseOut"/>
+				<animation property="offsetY" from="0" to="-0.1" begin="1500" duration="3000" autoreverse="true" repeat="forever" mode="EaseOut"/>
+			</storyboard>
+			<!-- <storyboard event="activateNext"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="700" duration="800" mode="Linear"/> -->
+				<!-- <animation property="offsetX" from="-1" to="0" begin="700" duration="1500" mode="EaseOut"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.1" begin="1500" duration="3000" autoreverse="true" repeat="forever" mode="EaseOut"/> -->
+			<!-- </storyboard> -->
+			<!-- <storyboard event="activatePrev"> -->
+				<!-- <animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/> -->
+				<!-- <animation property="opacity" from="0" to="1" begin="700" duration="800" mode="Linear"/> -->
+				<!-- <animation property="offsetX" from="-1" to="0" begin="700" duration="1500" mode="EaseOut"/> -->
+				<!-- <animation property="offsetY" from="0" to="-0.1" begin="1500" duration="3000" autoreverse="true" repeat="forever" mode="EaseOut"/> -->
+			<!-- </storyboard> -->
+		</image>
+		<image name="voyant-nes" extra="true">
+			<visible>${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'fds'</visible>
+			<path>./voyant.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.705729166667 0.881481481481</pos>
+			<size>0.006250000000 0.011111111111</size>
+			<zIndex>290</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="1770" duration="500" mode="Linear"/>
+			</storyboard>
+		</image>
+		<control name="Artwork-nes, screnshoot-nes, gameplayprev-nes, bezel-nes, console3-nes, cart-nes, cart-nes2, logo2-nes, logo2-nes2, manette-nes, logo1-nes, voyant-nes">
+			<storyboard event="deactivateNext">
+				<!-- <animation property="scale" to="" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<!-- <animation property="scale" to="" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<animation property="opacity" to="0" begin="" duration="100" mode="linear"/>
+			</storyboard>
+		</control>
+		<control name="logo2-nes, logo2-nes2">
+			<storyboard event="deactivateNext">
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="100" mode="easyIn"/> -->
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="100" mode="easyIn"/> -->
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<text name="gamethemeauthor" extra="true">
+			<text>Theme by : dav&amp;christophe verez</text>
+		</text>
+	</customView>
+</theme>

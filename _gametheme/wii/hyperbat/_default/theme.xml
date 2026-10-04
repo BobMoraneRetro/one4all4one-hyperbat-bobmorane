@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<image name="Background-wii" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wii'</visible>
+			<path>./Background.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.500000000000 0.500000000000</pos>
+			<size>1.000000000000 1.000000000000</size>
+			<zIndex>100</zIndex>
+		</image>
+		<image name="Artwork4-wii" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wii'</visible>
+			<path>./Artwork4.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.487760416667 0.103240740741</pos>
+			<size>0.199479166667 0.169444444444</size>
+			<zIndex>200</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Backscreen-wii" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wii'</visible>
+			<path>./Backscreen.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.489712277508 0.493972491909</pos>
+			<size>0.519270833333 0.493518518519</size>
+			<zIndex>210</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<video name="gameplayprev-wii" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wii'</visible>
+			<path>{game:video}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.488655440939 0.494817511686</pos>
+			<size>0.516145833333 0.489814814815</size>
+			<zIndex>220</zIndex>
+			<effect>none</effect>
+			<delay>0.5</delay>
+		</video>
+		<image name="Video-wii" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wii'</visible>
+			<path>./Video.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.488422835761 0.494839985617</pos>
+			<size>0.534895833333 0.522222222222</size>
+			<zIndex>230</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork3-wii" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wii'</visible>
+			<path>./Artwork3.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.117447916667 0.517129629630</pos>
+			<size>0.096354166667 0.547222222222</size>
+			<zIndex>240</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Support-wii" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wii'</visible>
+			<path>{game:cartridge}</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.104687500000 0.544444444444</pos>
+			<size>0.270833333333 0.481481481481</size>
+			<zIndex>250</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" dbegin="500" uration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" from="0" to="360" begin="3000" duration="3200" repeat="forever" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="500" duration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" from="0" to="360" begin="3000" duration="3200" repeat="forever" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="500" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" begin="500" duration="4000" mode="EaseOutQuint"/>
+				<animation property="rotation" from="0" to="360" begin="3000" duration="3200" repeat="forever" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2-wii" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wii'</visible>
+			<path>./Artwork2.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.095312500000 0.620833333333</pos>
+			<size>0.190625000000 0.758333333333</size>
+			<zIndex>260</zIndex>
+			<linearSmooth>true</linearSmooth>
+		</image>
+		<image name="Artwork1-wii" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wii'</visible>
+			<path>./Artwork1.png</path>
+			<origin>0.5 0.2</origin>
+			<pos>0.541666666667 0.762500000000</pos>
+			<size>0.220833333333 0.482407407407</size>
+			<zIndex>270</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1.9" to="0" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="1000" duration="4000" autoreverse="true" repeat="forever" mode="linear"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1.9" to="0" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="1000" duration="4000" autoreverse="true" repeat="forever" mode="linear"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1.9" to="0" begin="0" duration="1500" mode="linear"/>
+				<animation property="offsetX" from="0" to="-0.1" begin="1000" duration="4000" autoreverse="true" repeat="forever" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Boxart-wii" extra="true">
+			<visible ifSubset="HSperview:Yes">${IfnoextGamethemeexist} &amp;&amp; {game:system:theme} == 'wii'</visible>
+			<path ifSubset="boxorthumb:thumb">firstfile(${box2dpath},${box3dpath})</path>
+			<path ifSubset="boxorthumb:boxart">firstfile(${box3dpath},${box2dpath})</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.880208333333 0.581481481481</pos>
+			<maxSize>0.196875000000 0.707407407407</maxSize>
+			<zIndex>280</zIndex>
+			<linearSmooth>true</linearSmooth>
+			<autoFade>false</autoFade>
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear"/>
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear"/>
+				<animation property="offsetX" from="1" to="0" duration="4000" mode="EaseOutQuint"/>
+			</storyboard>
+		</image>
+		<control name="Artwork4-wii, Backscreen-wii, gameplayprev-wii, Video-wii, Artwork3-wii, Artwork2-wii, Artwork1-wii">
+			<storyboard event="deactivateNext">
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<!-- <animation property="scale" to="3" begin="" autoreverse="false" duration="200" mode="easyIn"/> -->
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<control name="Support-wii, Boxart-wii">
+			<storyboard event="deactivateNext">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+			<storyboard event="deactivatePrev">
+				<animation property="opacity" to="0" begin="100" duration="150" mode="linear"/>
+			</storyboard>
+		</control>
+		<text name="defaultthemeauthor" extra="true">
+			<text>Theme by : akeshi</text>
+		</text>
+	</customView>
+</theme>
