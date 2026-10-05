@@ -19,7 +19,7 @@ Description :
 # What's new in V2 (October 2026)
 
 ### New views
-- **Game views**: FanartStar Boxart (very light), Retro Tower and Media tester (shows which media your scrape really contains), in addition to Hyperbat.
+- **Game views**: FanartStar Boxart (very light version), Retro Tower and Media tester (shows which media your scrape really contains), in addition to Hyperbat.
 - **7 generic game themes** to choose from when a system has no dedicated theme: Standard, Standard without boxart animation, Standard with animated fanart background, Standard with back and front box, Arcade cabinet collection, Compact disc look.
 
 ### Much more content
