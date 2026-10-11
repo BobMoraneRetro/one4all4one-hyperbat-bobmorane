@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<include>./theme.xml</include>
+	<customView name="hyperbat">
+		<image name="Background-atarilynx" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Backscreen-atarilynx" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev-atarilynx" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="Video-atarilynx" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="led-atarilynx" extra="true">
+			<size>0.013194444444 0.018518518519</size>
+		</image>
+		<image name="Artwork1-atarilynx" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<text name="defaultthemeauthor" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</text>
+	</customView>
+</theme>

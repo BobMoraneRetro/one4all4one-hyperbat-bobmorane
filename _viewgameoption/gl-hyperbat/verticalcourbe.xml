@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- <include>${extGametheme.defaut}</include> -->
+	<customView name="hyperbat" displayName="${viewchoice.hyperbat}" inherits="gamecarousel">
+		<gamecarousel name="gamecarousel">
+			<type>vertical_wheel</type>
+			<logoRotation>-4.5</logoRotation>
+			<logoRotationOrigin>6 0.5</logoRotationOrigin>
+			<logoAlignment>center</logoAlignment>
+			<imageSource>marquee</imageSource>
+			<defaultTransition>instant</defaultTransition>
+			<minLogoOpacity>1</minLogoOpacity>
+			<transitionSpeed>350</transitionSpeed>
+		</gamecarousel>
+	</customView>
+</theme>

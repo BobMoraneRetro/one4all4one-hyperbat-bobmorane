@@ -1,30 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
-	<!-- Correction 4:3 generee le 2026-09-29 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
 	<include>./theme.xml</include>
 	<customView name="hyperbat">
-		<image name="-Artwork5" extra="true">
-			<pos>0.529168085348 0.557384077983</pos>
-			<size>0.398933151742 0.413876593651</size>
-		</image>
-		<image name="PreviewScreen" extra="true">
-			<pos>0.53191086899 0.557384077983</pos>
-			<size>0.407823553891 0.407823553891</size>
-		</image>
-		<image name="video" extra="true">
-			<pos>0.529670653161 0.561469052257</pos>
-			<size>0.502083333333 0.534027777778</size>
-		</image>
-		<video name="PreviewVid" extra="true">
-			<pos>0.53191086899 0.557384077983</pos>
-			<maxSize>0.407823553891 0.407823553891</maxSize>
-		</video>
 		<image name="Background" extra="true">
 			<!-- storyboard neutre : garde l'element visible malgre l'include -->
 			<storyboard event="activate">
 				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
 			</storyboard>
+		</image>
+		<image name="-Artwork5" extra="true">
+			<size>0.398933151742 0.413876593651</size>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<maxSize>0.407823553891 0.407823553891</maxSize>
+		</video>
+		<image name="PreviewScreen" extra="true">
+			<maxSize>0.407823553891 0.407823553891</maxSize>
+		</image>
+		<image name="video" extra="true">
+			<pos>0.529670653161 0.561469052257</pos>
+			<size>0.502083333333 0.534027777778</size>
 		</image>
 		<video name="Artwork5" extra="true">
 			<!-- storyboard neutre : garde l'element visible malgre l'include -->

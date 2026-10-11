@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<include>./theme.xml</include>
+	<customView name="hyperbat">
+		<image name="Background-ngpc" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork2-ngpc" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Backscreen-ngpc" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="screenshot-ngpc" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev-ngpc" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="Video-ngpc" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Led-ngpc" extra="true">
+			<size>0.015277777777 0.02037037037</size>
+		</image>
+		<text name="defaultthemeauthor" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</text>
+	</customView>
+</theme>

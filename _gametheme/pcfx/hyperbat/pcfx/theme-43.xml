@@ -1,47 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
-	<!-- Correction 4:3 generee le 2026-09-29 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
 	<include>./theme.xml</include>
 	<customView name="hyperbat">
-		<image name="PreviewScreen" extra="true">
-			<pos>0.547633495146 0.573</pos>
-			<size>0.4106 0.44235</size>
-			<!-- storyboard neutre : garde l'element visible malgre l'include -->
-			<storyboard event="activate">
-				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="fiber" extra="true">
-			<pos>0.547902494331 0.571821428572</pos>
-			<size>0.40306122449 0.430839002267</size>
-			<!-- storyboard neutre : garde l'element visible malgre l'include -->
-			<storyboard event="activate">
-				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
-			</storyboard>
-		</image>
-		<image name="Video" extra="true">
-			<pos>0.5484375 0.572069444444</pos>
-			<size>0.425 0.459027777778</size>
-			<!-- storyboard neutre : garde l'element visible malgre l'include -->
-			<storyboard event="activate">
-				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
-			</storyboard>
-		</image>
-		<video name="PreviewVid" extra="true">
-			<pos>0.547633495146 0.573</pos>
-			<maxSize>0.4106 0.44235</maxSize>
-			<!-- storyboard neutre : garde l'element visible malgre l'include -->
-			<storyboard event="activate">
-				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
-			</storyboard>
-		</video>
 		<image name="Background" extra="true">
 			<!-- storyboard neutre : garde l'element visible malgre l'include -->
 			<storyboard event="activate">
 				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
 			</storyboard>
 		</image>
+		<image name="-Artwork5" extra="true">
+			<pos>0.499375780275 0.586482805584</pos>
+			<size>0.423334468278 0.425982673174</size>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<maxSize>0.41595732607 0.41595732607</maxSize>
+		</video>
+		<image name="PreviewScreen" extra="true">
+			<maxSize>0.41595732607 0.41595732607</maxSize>
+		</image>
+		<image name="Video" extra="true">
+			<pos>0.499659516513 0.585347860628</pos>
+			<size>0.491998638066 0.506942079976</size>
+		</image>
+		<text name="gamethemeauthor" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</text>
 		<image name="md_cartridge" extra="true">
 			<!-- storyboard neutre : garde l'element visible malgre l'include -->
 			<storyboard event="activate">

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<include>./theme.xml</include>
+	<customView name="hyperbat">
+		<image name="background" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="fiber" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Videobezel" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="console" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="console2" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Console_ON" extra="true">
+			<size>0.023611111111 0.030555555556</size>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="md_boxart" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+	</customView>
+</theme>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<include>./theme.xml</include>
+	<customView name="hyperbat">
+		<image name="BackgrSyst" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="logocust" extra="true">
+			<maxSize>0.586666666667 0.2</maxSize>
+			<!-- copie du storyboard par defaut, rejoue au changement de jeu (include) -->
+			<storyboard event="activate">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="000" duration="400" mode="Linear" />
+				<animation property="offsetY" from="-0.3" to="0" begin="000" duration="800" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Console" extra="true">
+			<size>0.694444444444 0.409259259259</size>
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="ArtworkDef1" extra="true">
+			<size>0.49375 0.957407407407</size>
+		</image>
+		<image name="ArtworkDef3" extra="true">
+			<maxSize>0.4 0.8</maxSize>
+		</image>
+		<image name="VideoDefBezel" extra="true">
+			<pos>0.429625 0.496725</pos>
+			<size>0.4485 0.4614375</size>
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="fondscreen" extra="true">
+			<pos>0.431925 0.495</pos>
+			<size>0.41975 0.422625</size>
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="screenshot3do" extra="true">
+			<pos>0.427947916667 0.495</pos>
+			<size>0.414 0.422625</size>
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev" extra="true">
+			<size>0.414 0.422625</size>
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</video>
+		<image name="MarqueeHS" extra="true">
+			<maxSize>0.32 0.27</maxSize>
+		</image>
+		<image name="cartridge" extra="true">
+			<pos>0.74984375 0.5</pos>
+			<size>0.210416666667 0.27962962963</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear" />
+				<animation property="opacity" from="0" to="1" begin="3100" duration="10" mode="linear" />
+				<animation property="offsetX" from="0" to="0.093333333333" begin="3000" duration="800" mode="linear" />
+				<animation property="rotation" from="0" to="360" begin="3800" duration="5000" mode="easeIn" />
+				<animation property="rotation" from="0" to="360" begin="8800" repeat="forever" duration="3200" mode="linear" />
+
+				<animation property="w" from="0.133333333333" to="0.210416666667" begin="3000" duration="270" mode="linear" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear" />
+				<animation property="opacity" from="0" to="1" begin="3100" duration="10" mode="linear" />
+				<animation property="offsetX" from="0" to="0.093333333333" begin="3000" duration="800" mode="linear" />
+				<animation property="rotation" from="0" to="360" begin="3800" duration="5000" mode="easeIn" />
+				<animation property="rotation" from="0" to="360" begin="8800" repeat="forever" duration="3200" mode="linear" />
+
+				<animation property="w" from="0.133333333333" to="0.210416666667" begin="3000" duration="270" mode="linear" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="0" duration="" mode="linear" />
+				<animation property="opacity" from="0" to="1" begin="3100" duration="10" mode="linear" />
+				<animation property="offsetX" from="0" to="0.093333333333" begin="3000" duration="800" mode="linear" />
+				<animation property="rotation" from="0" to="360" begin="3800" duration="5000" mode="easeIn" />
+				<animation property="rotation" from="0" to="360" begin="8800" repeat="forever" duration="3200" mode="linear" />
+
+				<animation property="w" from="0.133333333333" to="0.210416666667" begin="3000" duration="270" mode="linear" />
+			</storyboard>
+		</image>
+	</customView>
+</theme>

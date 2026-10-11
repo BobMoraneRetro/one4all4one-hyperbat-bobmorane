@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme defaultView="hyperbat">
+	<formatVersion>7</formatVersion>
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<include>./theme.xml</include>
+	<view name="detailed, gamecarousel">
+		<image name="Background" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Artwork3" extra="true">
+			<size>0.14375 0.188472222222</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext" repeatAt="1">
+<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+<animation property="opacity" from="0" to="1" begin="1500" duration="300" mode="Linear" />
+<animation property="offsetX" from="-0.92" to="1.495" begin="1500" duration="2000" mode="Linear" />
+<animation property="offsetY" from="0.69" to="-0.1725" begin="1800" duration="700" mode="EaseInOut" />
+<animation property="offsetY" from="-0.1725" to="1.725" begin="2500" duration="1200" mode="EaseInOut" />
+<animation property="scale" from="0.3" to="1.2" begin="1500" duration="2000" mode="Linear" />
+<animation property="rotation" from="0" to="2160" begin="1500" duration="2500" mode="EaseIn" />
+</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev" repeatAt="1">
+<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+<animation property="opacity" from="0" to="1" begin="1500" duration="300" mode="Linear" />
+<animation property="offsetX" from="-0.92" to="1.495" begin="1500" duration="2000" mode="Linear" />
+<animation property="offsetY" from="0.69" to="-0.1725" begin="1800" duration="700" mode="EaseInOut" />
+<animation property="offsetY" from="-0.1725" to="1.725" begin="2500" duration="1200" mode="EaseInOut" />
+<animation property="scale" from="0.3" to="1.2" begin="1500" duration="2000" mode="Linear" />
+<animation property="rotation" from="0" to="2160" begin="1500" duration="2500" mode="EaseIn" />
+</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open" repeatAt="1">
+<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+<animation property="opacity" from="0" to="1" begin="1500" duration="300" mode="Linear" />
+<animation property="offsetX" from="-0.92" to="1.495" begin="1500" duration="2000" mode="Linear" />
+<animation property="offsetY" from="0.69" to="-0.1725" begin="1800" duration="700" mode="EaseInOut" />
+<animation property="offsetY" from="-0.1725" to="1.725" begin="2500" duration="1200" mode="EaseInOut" />
+<animation property="scale" from="0.3" to="1.2" begin="1500" duration="2000" mode="Linear" />
+<animation property="rotation" from="0" to="2160" begin="1500" duration="2500" mode="EaseIn" />
+</storyboard>
+		</image>
+		<image name="md_cartridge" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<text name="gamethemeauthor" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</text>
+	</view>
+</theme>

@@ -1,17 +1,1708 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
-	<!-- Correction 4:3 generee le 2026-09-29 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
 	<include>./theme.xml</include>
 	<customView name="hyperbat">
-		<image name="1" extra="true">
-			<pos>-0.2220703125 0.716015625</pos>
-			<size>1.440104166667 1.919444444444</size>
-		</image>
 		<image name="3_wrally2" extra="true">
 			<!-- storyboard neutre : garde l'element visible malgre l'include -->
 			<storyboard event="activate">
 				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Background_3" extra="true">
+			<pos>0.603850629393 0.4845703125</pos>
+			<size>0.019444444444 0.022222222222</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="0.029589333333" begin="0" duration="1088" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="0.092904" begin="0" duration="1113" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.739117" begin="0" duration="1088" mode="Linear" />
+				<animation property="scale" from="1.739117" to="1.756112" begin="1088" duration="38" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="0" duration="1137" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.000000" begin="1137" duration="1" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="1138" duration="43536" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="0.029589333333" begin="0" duration="1088" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="0.092904" begin="0" duration="1113" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.739117" begin="0" duration="1088" mode="Linear" />
+				<animation property="scale" from="1.739117" to="1.756112" begin="1088" duration="38" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="0" duration="1137" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.000000" begin="1137" duration="1" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="1138" duration="43536" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="0.029589333333" begin="0" duration="1088" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="0.092904" begin="0" duration="1113" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.739117" begin="0" duration="1088" mode="Linear" />
+				<animation property="scale" from="1.739117" to="1.756112" begin="1088" duration="38" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="0" duration="1137" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.000000" begin="1137" duration="1" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="1138" duration="43536" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Background_10" extra="true">
+			<pos>0.631732759689 0.578024216204</pos>
+			<size>0.044921875 0.054305555556</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.00374785" begin="1826" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.00374785" to="-0.03411245" begin="1826" duration="600" mode="Linear" />
+				<animation property="offsetX" from="-0.03411245" to="-0.0353763" begin="2463" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="-0.0028635" begin="1774" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.0028635" to="-0.080466075" begin="1774" duration="675" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.036395" begin="0" duration="1812" mode="Linear" />
+				<animation property="scale" from="1.036395" to="1.400229" begin="1812" duration="626" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="0" duration="1750" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="1750" duration="1" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="1751" duration="722" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.000000" begin="2473" duration="1" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="2474" duration="42200" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.00374785" begin="1826" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.00374785" to="-0.03411245" begin="1826" duration="600" mode="Linear" />
+				<animation property="offsetX" from="-0.03411245" to="-0.0353763" begin="2463" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="-0.0028635" begin="1774" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.0028635" to="-0.080466075" begin="1774" duration="675" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.036395" begin="0" duration="1812" mode="Linear" />
+				<animation property="scale" from="1.036395" to="1.400229" begin="1812" duration="626" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="0" duration="1750" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="1750" duration="1" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="1751" duration="722" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.000000" begin="2473" duration="1" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="2474" duration="42200" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.00374785" begin="1826" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.00374785" to="-0.03411245" begin="1826" duration="600" mode="Linear" />
+				<animation property="offsetX" from="-0.03411245" to="-0.0353763" begin="2463" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="-0.0028635" begin="1774" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.0028635" to="-0.080466075" begin="1774" duration="675" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.036395" begin="0" duration="1812" mode="Linear" />
+				<animation property="scale" from="1.036395" to="1.400229" begin="1812" duration="626" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="0" duration="1750" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="1750" duration="1" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="1751" duration="722" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.000000" begin="2473" duration="1" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="2474" duration="42200" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Background_14" extra="true">
+			<pos>0.636799564071 0.594529103998</pos>
+			<size>0.027083333333 0.035185185185</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="0.005176" begin="2688" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.005176" to="0.010352" begin="2688" duration="50" mode="Linear" />
+				<animation property="offsetX" from="0.010352" to="0.015528" begin="2787" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.015528" to="0.020702666667" begin="2838" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.020702666667" to="0.025878666667" begin="2888" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.025878666667" to="-0.014648" begin="3200" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.014648" to="-0.008692" begin="3237" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.008692" to="0.015137333333" begin="3237" duration="100" mode="Linear" />
+				<animation property="offsetX" from="0.015137333333" to="0.021093333333" begin="3363" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.021093333333" to="0.027050666667" begin="3387" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.027050666667" to="0.033008" begin="3412" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.033008" to="0.038965333333" begin="3438" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.038965333333" to="0.044921333333" begin="3462" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.044921333333" to="-0.172852" begin="4900" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.172852" to="-0.164110666667" begin="4924" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.164110666667" to="-0.155469333333" begin="4924" duration="14" mode="Linear" />
+				<animation property="offsetX" from="-0.155469333333" to="-0.085742666667" begin="4938" duration="99" mode="Linear" />
+				<animation property="offsetX" from="-0.085742666667" to="-0.076953333333" begin="5050" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.076953333333" to="-0.068310666667" begin="5062" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.068310666667" to="-0.059618666667" begin="5074" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.059618666667" to="-0.050830666667" begin="5088" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.050830666667" to="-0.042089333333" begin="5100" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.042089333333" to="-0.033446666667" begin="5112" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.033446666667" to="-0.024706666667" begin="5126" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.024706666667" to="-0.016016" begin="5138" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.016016" to="-0.007324" begin="5150" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.007324" to="0.001465333333" begin="5163" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="-0.003451" begin="2726" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.003451" to="-0.006901" begin="2812" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.006901" to="0.154948" begin="3200" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.154948" to="0.158464" begin="3288" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.158464" to="0.161979" begin="3363" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.161979" to="0.165495" begin="3438" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.165495" to="0.156901" begin="4900" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.156901" to="0.148568" begin="4924" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.148568" to="0.073568" begin="4924" duration="112" mode="Linear" />
+				<animation property="offsetY" from="0.073568" to="0.065234" begin="5050" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.065234" to="0.056836" begin="5062" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.056836" to="0.048437" begin="5074" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.048437" to="0.040104" begin="5088" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.040104" to="0.031836" begin="5100" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.031836" to="0.023503" begin="5112" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.023503" to="0.015169" begin="5126" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.015169" to="0.006901" begin="5138" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.006901" to="-0.001497" begin="5150" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.001497" to="-0.009831" begin="5163" duration="2" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.109323" begin="0" duration="2650" mode="Linear" />
+				<animation property="scale" from="1.109323" to="3.193486" begin="2650" duration="237" mode="Linear" />
+				<animation property="scale" from="3.193486" to="1.542668" begin="2888" duration="312" mode="Linear" />
+				<animation property="scale" from="1.542668" to="1.678509" begin="3200" duration="26" mode="Linear" />
+				<animation property="scale" from="1.678509" to="4.263403" begin="3225" duration="237" mode="Linear" />
+				<animation property="scale" from="4.263403" to="2.026774" begin="3462" duration="1438" mode="Linear" />
+				<animation property="scale" from="2.026774" to="2.561372" begin="4900" duration="24" mode="Linear" />
+				<animation property="scale" from="2.561372" to="12.738806" begin="4924" duration="238" mode="Linear" />
+				<animation property="rotation" from="31.144044" to="30.026976" begin="0" duration="2662" mode="Linear" />
+				<animation property="rotation" from="30.026976" to="28.942156" begin="2662" duration="38" mode="Linear" />
+				<animation property="rotation" from="28.942156" to="28.055533" begin="2700" duration="50" mode="Linear" />
+				<animation property="rotation" from="28.055533" to="27.182696" begin="2750" duration="88" mode="Linear" />
+				<animation property="rotation" from="27.182696" to="30.454601" begin="2838" duration="362" mode="EaseInQuint" />
+				<animation property="rotation" from="30.454601" to="29.506488" begin="3200" duration="51" mode="Linear" />
+				<animation property="rotation" from="29.506488" to="28.580416" begin="3250" duration="62" mode="Linear" />
+				<animation property="rotation" from="28.580416" to="27.736783" begin="3312" duration="112" mode="Linear" />
+				<animation property="rotation" from="27.736783" to="29.109846" begin="3424" duration="1476" mode="Linear" />
+				<animation property="rotation" from="29.109846" to="27.007095" begin="4900" duration="24" mode="Linear" />
+				<animation property="rotation" from="27.007095" to="22.003809" begin="4924" duration="38" mode="Linear" />
+				<animation property="rotation" from="22.003809" to="8.336351" begin="4962" duration="126" mode="Linear" />
+				<animation property="rotation" from="8.336351" to="6.845709" begin="5088" duration="12" mode="Linear" />
+				<animation property="rotation" from="6.845709" to="0.358840" begin="5100" duration="63" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="0" duration="2637" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="2637" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="2650" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="2662" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="2674" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="2688" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="2700" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="2712" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="2726" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="2738" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="2750" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="2763" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="2775" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="2787" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="2800" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="2812" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="2824" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="2838" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="2850" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="2862" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="2876" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="2888" duration="312" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="3200" duration="14" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="3213" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="3225" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="3237" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="3250" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="3262" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="3274" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="3288" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="3300" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="3312" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="3326" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="3338" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="3350" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="3363" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="3375" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="3387" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="3400" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="3412" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="3424" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="3438" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="3450" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="3462" duration="1438" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="4900" duration="12" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="4912" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="4924" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="4938" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="4950" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="4962" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="4976" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="4988" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="5000" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="5013" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="5025" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="5037" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="5050" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="5062" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="5074" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="5088" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="5100" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="5112" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="5126" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="5138" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="5150" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="5163" duration="39511" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="0.005176" begin="2688" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.005176" to="0.010352" begin="2688" duration="50" mode="Linear" />
+				<animation property="offsetX" from="0.010352" to="0.015528" begin="2787" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.015528" to="0.020702666667" begin="2838" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.020702666667" to="0.025878666667" begin="2888" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.025878666667" to="-0.014648" begin="3200" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.014648" to="-0.008692" begin="3237" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.008692" to="0.015137333333" begin="3237" duration="100" mode="Linear" />
+				<animation property="offsetX" from="0.015137333333" to="0.021093333333" begin="3363" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.021093333333" to="0.027050666667" begin="3387" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.027050666667" to="0.033008" begin="3412" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.033008" to="0.038965333333" begin="3438" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.038965333333" to="0.044921333333" begin="3462" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.044921333333" to="-0.172852" begin="4900" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.172852" to="-0.164110666667" begin="4924" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.164110666667" to="-0.155469333333" begin="4924" duration="14" mode="Linear" />
+				<animation property="offsetX" from="-0.155469333333" to="-0.085742666667" begin="4938" duration="99" mode="Linear" />
+				<animation property="offsetX" from="-0.085742666667" to="-0.076953333333" begin="5050" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.076953333333" to="-0.068310666667" begin="5062" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.068310666667" to="-0.059618666667" begin="5074" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.059618666667" to="-0.050830666667" begin="5088" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.050830666667" to="-0.042089333333" begin="5100" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.042089333333" to="-0.033446666667" begin="5112" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.033446666667" to="-0.024706666667" begin="5126" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.024706666667" to="-0.016016" begin="5138" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.016016" to="-0.007324" begin="5150" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.007324" to="0.001465333333" begin="5163" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="-0.003451" begin="2726" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.003451" to="-0.006901" begin="2812" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.006901" to="0.154948" begin="3200" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.154948" to="0.158464" begin="3288" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.158464" to="0.161979" begin="3363" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.161979" to="0.165495" begin="3438" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.165495" to="0.156901" begin="4900" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.156901" to="0.148568" begin="4924" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.148568" to="0.073568" begin="4924" duration="112" mode="Linear" />
+				<animation property="offsetY" from="0.073568" to="0.065234" begin="5050" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.065234" to="0.056836" begin="5062" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.056836" to="0.048437" begin="5074" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.048437" to="0.040104" begin="5088" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.040104" to="0.031836" begin="5100" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.031836" to="0.023503" begin="5112" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.023503" to="0.015169" begin="5126" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.015169" to="0.006901" begin="5138" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.006901" to="-0.001497" begin="5150" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.001497" to="-0.009831" begin="5163" duration="2" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.109323" begin="0" duration="2650" mode="Linear" />
+				<animation property="scale" from="1.109323" to="3.193486" begin="2650" duration="237" mode="Linear" />
+				<animation property="scale" from="3.193486" to="1.542668" begin="2888" duration="312" mode="Linear" />
+				<animation property="scale" from="1.542668" to="1.678509" begin="3200" duration="26" mode="Linear" />
+				<animation property="scale" from="1.678509" to="4.263403" begin="3225" duration="237" mode="Linear" />
+				<animation property="scale" from="4.263403" to="2.026774" begin="3462" duration="1438" mode="Linear" />
+				<animation property="scale" from="2.026774" to="2.561372" begin="4900" duration="24" mode="Linear" />
+				<animation property="scale" from="2.561372" to="12.738806" begin="4924" duration="238" mode="Linear" />
+				<animation property="rotation" from="31.144044" to="30.026976" begin="0" duration="2662" mode="Linear" />
+				<animation property="rotation" from="30.026976" to="28.942156" begin="2662" duration="38" mode="Linear" />
+				<animation property="rotation" from="28.942156" to="28.055533" begin="2700" duration="50" mode="Linear" />
+				<animation property="rotation" from="28.055533" to="27.182696" begin="2750" duration="88" mode="Linear" />
+				<animation property="rotation" from="27.182696" to="30.454601" begin="2838" duration="362" mode="EaseInQuint" />
+				<animation property="rotation" from="30.454601" to="29.506488" begin="3200" duration="51" mode="Linear" />
+				<animation property="rotation" from="29.506488" to="28.580416" begin="3250" duration="62" mode="Linear" />
+				<animation property="rotation" from="28.580416" to="27.736783" begin="3312" duration="112" mode="Linear" />
+				<animation property="rotation" from="27.736783" to="29.109846" begin="3424" duration="1476" mode="Linear" />
+				<animation property="rotation" from="29.109846" to="27.007095" begin="4900" duration="24" mode="Linear" />
+				<animation property="rotation" from="27.007095" to="22.003809" begin="4924" duration="38" mode="Linear" />
+				<animation property="rotation" from="22.003809" to="8.336351" begin="4962" duration="126" mode="Linear" />
+				<animation property="rotation" from="8.336351" to="6.845709" begin="5088" duration="12" mode="Linear" />
+				<animation property="rotation" from="6.845709" to="0.358840" begin="5100" duration="63" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="0" duration="2637" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="2637" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="2650" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="2662" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="2674" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="2688" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="2700" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="2712" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="2726" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="2738" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="2750" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="2763" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="2775" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="2787" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="2800" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="2812" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="2824" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="2838" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="2850" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="2862" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="2876" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="2888" duration="312" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="3200" duration="14" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="3213" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="3225" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="3237" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="3250" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="3262" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="3274" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="3288" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="3300" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="3312" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="3326" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="3338" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="3350" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="3363" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="3375" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="3387" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="3400" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="3412" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="3424" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="3438" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="3450" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="3462" duration="1438" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="4900" duration="12" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="4912" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="4924" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="4938" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="4950" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="4962" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="4976" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="4988" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="5000" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="5013" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="5025" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="5037" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="5050" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="5062" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="5074" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="5088" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="5100" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="5112" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="5126" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="5138" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="5150" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="5163" duration="39511" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="0.005176" begin="2688" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.005176" to="0.010352" begin="2688" duration="50" mode="Linear" />
+				<animation property="offsetX" from="0.010352" to="0.015528" begin="2787" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.015528" to="0.020702666667" begin="2838" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.020702666667" to="0.025878666667" begin="2888" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.025878666667" to="-0.014648" begin="3200" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.014648" to="-0.008692" begin="3237" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.008692" to="0.015137333333" begin="3237" duration="100" mode="Linear" />
+				<animation property="offsetX" from="0.015137333333" to="0.021093333333" begin="3363" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.021093333333" to="0.027050666667" begin="3387" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.027050666667" to="0.033008" begin="3412" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.033008" to="0.038965333333" begin="3438" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.038965333333" to="0.044921333333" begin="3462" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.044921333333" to="-0.172852" begin="4900" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.172852" to="-0.164110666667" begin="4924" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.164110666667" to="-0.155469333333" begin="4924" duration="14" mode="Linear" />
+				<animation property="offsetX" from="-0.155469333333" to="-0.085742666667" begin="4938" duration="99" mode="Linear" />
+				<animation property="offsetX" from="-0.085742666667" to="-0.076953333333" begin="5050" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.076953333333" to="-0.068310666667" begin="5062" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.068310666667" to="-0.059618666667" begin="5074" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.059618666667" to="-0.050830666667" begin="5088" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.050830666667" to="-0.042089333333" begin="5100" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.042089333333" to="-0.033446666667" begin="5112" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.033446666667" to="-0.024706666667" begin="5126" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.024706666667" to="-0.016016" begin="5138" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.016016" to="-0.007324" begin="5150" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.007324" to="0.001465333333" begin="5163" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="-0.003451" begin="2726" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.003451" to="-0.006901" begin="2812" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.006901" to="0.154948" begin="3200" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.154948" to="0.158464" begin="3288" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.158464" to="0.161979" begin="3363" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.161979" to="0.165495" begin="3438" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.165495" to="0.156901" begin="4900" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.156901" to="0.148568" begin="4924" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.148568" to="0.073568" begin="4924" duration="112" mode="Linear" />
+				<animation property="offsetY" from="0.073568" to="0.065234" begin="5050" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.065234" to="0.056836" begin="5062" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.056836" to="0.048437" begin="5074" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.048437" to="0.040104" begin="5088" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.040104" to="0.031836" begin="5100" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.031836" to="0.023503" begin="5112" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.023503" to="0.015169" begin="5126" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.015169" to="0.006901" begin="5138" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.006901" to="-0.001497" begin="5150" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.001497" to="-0.009831" begin="5163" duration="2" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.109323" begin="0" duration="2650" mode="Linear" />
+				<animation property="scale" from="1.109323" to="3.193486" begin="2650" duration="237" mode="Linear" />
+				<animation property="scale" from="3.193486" to="1.542668" begin="2888" duration="312" mode="Linear" />
+				<animation property="scale" from="1.542668" to="1.678509" begin="3200" duration="26" mode="Linear" />
+				<animation property="scale" from="1.678509" to="4.263403" begin="3225" duration="237" mode="Linear" />
+				<animation property="scale" from="4.263403" to="2.026774" begin="3462" duration="1438" mode="Linear" />
+				<animation property="scale" from="2.026774" to="2.561372" begin="4900" duration="24" mode="Linear" />
+				<animation property="scale" from="2.561372" to="12.738806" begin="4924" duration="238" mode="Linear" />
+				<animation property="rotation" from="31.144044" to="30.026976" begin="0" duration="2662" mode="Linear" />
+				<animation property="rotation" from="30.026976" to="28.942156" begin="2662" duration="38" mode="Linear" />
+				<animation property="rotation" from="28.942156" to="28.055533" begin="2700" duration="50" mode="Linear" />
+				<animation property="rotation" from="28.055533" to="27.182696" begin="2750" duration="88" mode="Linear" />
+				<animation property="rotation" from="27.182696" to="30.454601" begin="2838" duration="362" mode="EaseInQuint" />
+				<animation property="rotation" from="30.454601" to="29.506488" begin="3200" duration="51" mode="Linear" />
+				<animation property="rotation" from="29.506488" to="28.580416" begin="3250" duration="62" mode="Linear" />
+				<animation property="rotation" from="28.580416" to="27.736783" begin="3312" duration="112" mode="Linear" />
+				<animation property="rotation" from="27.736783" to="29.109846" begin="3424" duration="1476" mode="Linear" />
+				<animation property="rotation" from="29.109846" to="27.007095" begin="4900" duration="24" mode="Linear" />
+				<animation property="rotation" from="27.007095" to="22.003809" begin="4924" duration="38" mode="Linear" />
+				<animation property="rotation" from="22.003809" to="8.336351" begin="4962" duration="126" mode="Linear" />
+				<animation property="rotation" from="8.336351" to="6.845709" begin="5088" duration="12" mode="Linear" />
+				<animation property="rotation" from="6.845709" to="0.358840" begin="5100" duration="63" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="0" duration="2637" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="2637" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="2650" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="2662" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="2674" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="2688" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="2700" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="2712" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="2726" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="2738" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="2750" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="2763" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="2775" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="2787" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="2800" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="2812" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="2824" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="2838" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="2850" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="2862" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="2876" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="2888" duration="312" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="3200" duration="14" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="3213" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="3225" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="3237" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="3250" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="3262" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="3274" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="3288" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="3300" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="3312" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="3326" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="3338" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="3350" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="3363" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="3375" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="3387" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="3400" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="3412" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="3424" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="3438" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="3450" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="3462" duration="1438" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="4900" duration="12" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="4912" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="4924" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="4938" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="4950" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="4962" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="4976" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="4988" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="5000" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="5013" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="5025" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="5037" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="5050" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="5062" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="5074" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="5088" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="5100" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="5112" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="5126" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="5138" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="5150" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="5163" duration="39511" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Background_14_2" extra="true">
+			<pos>0.741560319279 0.594529103998</pos>
+			<size>0.027083333333 0.035185185185</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.006542666667" begin="2650" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.006542666667" to="-0.065282666667" begin="2650" duration="112" mode="Linear" />
+				<animation property="offsetX" from="-0.065282666667" to="-0.071728" begin="2775" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.071728" to="-0.078272" begin="2787" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.078272" to="-0.084765333333" begin="2800" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.084765333333" to="-0.091308" begin="2812" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.091308" to="-0.097802666667" begin="2824" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.097802666667" to="-0.104345333333" begin="2838" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.104345333333" to="-0.11084" begin="2850" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.11084" to="-0.117382666667" begin="2862" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.117382666667" to="-0.123877333333" begin="2876" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.123877333333" to="-0.13042" begin="2888" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.13042" to="0.048974666667" begin="2913" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.048974666667" to="0.055614666667" begin="2950" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.055614666667" to="0.082324" begin="2950" duration="99" mode="Linear" />
+				<animation property="offsetX" from="0.082324" to="0.088965333333" begin="3075" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.088965333333" to="0.095702666667" begin="3100" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.095702666667" to="0.102294666667" begin="3124" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.102294666667" to="0.108984" begin="3150" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.108984" to="0.115673333333" begin="3176" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.115673333333" to="-0.099609333333" begin="3200" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.099609333333" to="-0.107764" begin="3225" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.107764" to="-0.181201333333" begin="3225" duration="112" mode="Linear" />
+				<animation property="offsetX" from="-0.181201333333" to="-0.189356" begin="3350" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.189356" to="-0.197509333333" begin="3363" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.197509333333" to="-0.205664" begin="3375" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.205664" to="-0.213818666667" begin="3387" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.213818666667" to="-0.221972" begin="3400" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.221972" to="-0.230126666667" begin="3412" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.230126666667" to="-0.238281333333" begin="3424" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.238281333333" to="-0.246436" begin="3438" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.246436" to="-0.254589333333" begin="3450" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.254589333333" to="-0.262744" begin="3462" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.262744" to="-0.435889333333" begin="4900" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.435889333333" to="-0.44414" begin="4924" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.44414" to="-0.518994666667" begin="4924" duration="112" mode="Linear" />
+				<animation property="offsetX" from="-0.518994666667" to="-0.527246666667" begin="5050" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.527246666667" to="-0.535644" begin="5062" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.535644" to="-0.543896" begin="5074" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.543896" to="-0.552197333333" begin="5088" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.552197333333" to="-0.560546666667" begin="5100" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.560546666667" to="-0.568848" begin="5112" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.568848" to="-0.577148" begin="5126" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.577148" to="-0.585449333333" begin="5138" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.585449333333" to="-0.593798666667" begin="5150" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.593798666667" to="-0.602148" begin="5163" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="-0.003451" begin="2726" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.003451" to="-0.006901" begin="2812" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.006901" to="0.069206" begin="2913" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.069206" to="0.065430" begin="2988" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.065430" to="0.062305" begin="2988" duration="50" mode="Linear" />
+				<animation property="offsetY" from="0.062305" to="0.058529" begin="3100" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.058529" to="0.055404" begin="3150" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.055404" to="0.154948" begin="3200" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.154948" to="0.158464" begin="3288" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.158464" to="0.161979" begin="3363" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.161979" to="0.165495" begin="3438" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.165495" to="0.145833" begin="4900" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.145833" to="0.138802" begin="4924" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.138802" to="0.075521" begin="4924" duration="112" mode="Linear" />
+				<animation property="offsetY" from="0.075521" to="0.068490" begin="5050" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.068490" to="0.061393" begin="5062" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.061393" to="0.054362" begin="5074" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.054362" to="0.047331" begin="5088" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.047331" to="0.040299" begin="5100" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.040299" to="0.033203" begin="5112" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.033203" to="0.026237" begin="5126" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.026237" to="0.019141" begin="5138" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.019141" to="0.012109" begin="5150" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.012109" to="0.005143" begin="5163" duration="2" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.109323" begin="0" duration="2650" mode="Linear" />
+				<animation property="scale" from="1.109323" to="3.193486" begin="2650" duration="237" mode="Linear" />
+				<animation property="scale" from="3.193486" to="1.272745" begin="2888" duration="26" mode="Linear" />
+				<animation property="scale" from="1.272745" to="1.340539" begin="2913" duration="24" mode="Linear" />
+				<animation property="scale" from="1.340539" to="2.653097" begin="2937" duration="238" mode="Linear" />
+				<animation property="scale" from="2.653097" to="1.542668" begin="3176" duration="24" mode="Linear" />
+				<animation property="scale" from="1.542668" to="1.678509" begin="3200" duration="26" mode="Linear" />
+				<animation property="scale" from="1.678509" to="4.263403" begin="3225" duration="237" mode="Linear" />
+				<animation property="scale" from="4.263403" to="1.542668" begin="3462" duration="1438" mode="Linear" />
+				<animation property="scale" from="1.542668" to="2.202771" begin="4900" duration="24" mode="Linear" />
+				<animation property="scale" from="2.202771" to="14.758039" begin="4924" duration="238" mode="Linear" />
+				<animation property="rotation" from="31.144044" to="30.026976" begin="0" duration="2662" mode="Linear" />
+				<animation property="rotation" from="30.026976" to="28.942156" begin="2662" duration="38" mode="Linear" />
+				<animation property="rotation" from="28.942156" to="28.055533" begin="2700" duration="50" mode="Linear" />
+				<animation property="rotation" from="28.055533" to="27.182696" begin="2750" duration="88" mode="Linear" />
+				<animation property="rotation" from="27.182696" to="22.001526" begin="2838" duration="75" mode="Linear" />
+				<animation property="rotation" from="22.001526" to="22.807820" begin="2913" duration="24" mode="Linear" />
+				<animation property="rotation" from="22.807820" to="24.197667" begin="2937" duration="26" mode="Linear" />
+				<animation property="rotation" from="24.197667" to="26.325769" begin="2962" duration="50" mode="Linear" />
+				<animation property="rotation" from="26.325769" to="27.158165" begin="3012" duration="26" mode="Linear" />
+				<animation property="rotation" from="27.158165" to="28.198878" begin="3038" duration="38" mode="Linear" />
+				<animation property="rotation" from="28.198878" to="29.052654" begin="3075" duration="38" mode="Linear" />
+				<animation property="rotation" from="29.052654" to="29.977474" begin="3112" duration="50" mode="Linear" />
+				<animation property="rotation" from="29.977474" to="29.068595" begin="3162" duration="112" mode="Linear" />
+				<animation property="rotation" from="29.068595" to="28.223426" begin="3274" duration="75" mode="Linear" />
+				<animation property="rotation" from="28.223426" to="30.454601" begin="3350" duration="1551" mode="Linear" />
+				<animation property="rotation" from="30.454601" to="28.484005" begin="4900" duration="24" mode="Linear" />
+				<animation property="rotation" from="28.484005" to="25.415442" begin="4924" duration="26" mode="Linear" />
+				<animation property="rotation" from="25.415442" to="20.333959" begin="4950" duration="50" mode="Linear" />
+				<animation property="rotation" from="20.333959" to="19.229367" begin="5000" duration="14" mode="Linear" />
+				<animation property="rotation" from="19.229367" to="17.949855" begin="5013" duration="12" mode="Linear" />
+				<animation property="rotation" from="17.949855" to="11.168724" begin="5025" duration="75" mode="Linear" />
+				<animation property="rotation" from="11.168724" to="9.927396" begin="5100" duration="12" mode="Linear" />
+				<animation property="rotation" from="9.927396" to="8.876132" begin="5112" duration="14" mode="Linear" />
+				<animation property="rotation" from="8.876132" to="7.638719" begin="5126" duration="12" mode="Linear" />
+				<animation property="rotation" from="7.638719" to="5.350053" begin="5138" duration="26" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="0" duration="2637" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="2637" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="2650" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="2662" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="2674" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="2688" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="2700" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="2712" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="2726" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="2738" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="2750" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="2763" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="2775" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="2787" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="2800" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="2812" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="2824" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="2838" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="2850" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="2862" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="2876" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="2888" duration="26" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="2913" duration="12" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="2925" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="2937" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="2950" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="2962" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="2974" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="2988" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="3000" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="3012" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="3026" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="3038" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="3050" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="3063" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="3075" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="3087" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="3100" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="3112" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="3124" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="3138" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="3150" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="3162" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="3176" duration="24" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="3200" duration="14" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="3213" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="3225" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="3237" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="3250" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="3262" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="3274" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="3288" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="3300" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="3312" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="3326" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="3338" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="3350" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="3363" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="3375" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="3387" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="3400" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="3412" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="3424" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="3438" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="3450" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="3462" duration="1438" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="4900" duration="12" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="4912" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="4924" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="4938" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="4950" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="4962" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="4976" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="4988" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="5000" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="5013" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="5025" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="5037" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="5050" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="5062" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="5074" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="5088" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="5100" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="5112" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="5126" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="5138" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="5150" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="5163" duration="39511" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.006542666667" begin="2650" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.006542666667" to="-0.065282666667" begin="2650" duration="112" mode="Linear" />
+				<animation property="offsetX" from="-0.065282666667" to="-0.071728" begin="2775" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.071728" to="-0.078272" begin="2787" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.078272" to="-0.084765333333" begin="2800" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.084765333333" to="-0.091308" begin="2812" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.091308" to="-0.097802666667" begin="2824" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.097802666667" to="-0.104345333333" begin="2838" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.104345333333" to="-0.11084" begin="2850" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.11084" to="-0.117382666667" begin="2862" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.117382666667" to="-0.123877333333" begin="2876" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.123877333333" to="-0.13042" begin="2888" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.13042" to="0.048974666667" begin="2913" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.048974666667" to="0.055614666667" begin="2950" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.055614666667" to="0.082324" begin="2950" duration="99" mode="Linear" />
+				<animation property="offsetX" from="0.082324" to="0.088965333333" begin="3075" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.088965333333" to="0.095702666667" begin="3100" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.095702666667" to="0.102294666667" begin="3124" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.102294666667" to="0.108984" begin="3150" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.108984" to="0.115673333333" begin="3176" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.115673333333" to="-0.099609333333" begin="3200" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.099609333333" to="-0.107764" begin="3225" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.107764" to="-0.181201333333" begin="3225" duration="112" mode="Linear" />
+				<animation property="offsetX" from="-0.181201333333" to="-0.189356" begin="3350" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.189356" to="-0.197509333333" begin="3363" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.197509333333" to="-0.205664" begin="3375" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.205664" to="-0.213818666667" begin="3387" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.213818666667" to="-0.221972" begin="3400" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.221972" to="-0.230126666667" begin="3412" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.230126666667" to="-0.238281333333" begin="3424" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.238281333333" to="-0.246436" begin="3438" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.246436" to="-0.254589333333" begin="3450" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.254589333333" to="-0.262744" begin="3462" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.262744" to="-0.435889333333" begin="4900" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.435889333333" to="-0.44414" begin="4924" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.44414" to="-0.518994666667" begin="4924" duration="112" mode="Linear" />
+				<animation property="offsetX" from="-0.518994666667" to="-0.527246666667" begin="5050" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.527246666667" to="-0.535644" begin="5062" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.535644" to="-0.543896" begin="5074" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.543896" to="-0.552197333333" begin="5088" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.552197333333" to="-0.560546666667" begin="5100" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.560546666667" to="-0.568848" begin="5112" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.568848" to="-0.577148" begin="5126" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.577148" to="-0.585449333333" begin="5138" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.585449333333" to="-0.593798666667" begin="5150" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.593798666667" to="-0.602148" begin="5163" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="-0.003451" begin="2726" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.003451" to="-0.006901" begin="2812" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.006901" to="0.069206" begin="2913" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.069206" to="0.065430" begin="2988" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.065430" to="0.062305" begin="2988" duration="50" mode="Linear" />
+				<animation property="offsetY" from="0.062305" to="0.058529" begin="3100" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.058529" to="0.055404" begin="3150" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.055404" to="0.154948" begin="3200" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.154948" to="0.158464" begin="3288" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.158464" to="0.161979" begin="3363" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.161979" to="0.165495" begin="3438" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.165495" to="0.145833" begin="4900" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.145833" to="0.138802" begin="4924" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.138802" to="0.075521" begin="4924" duration="112" mode="Linear" />
+				<animation property="offsetY" from="0.075521" to="0.068490" begin="5050" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.068490" to="0.061393" begin="5062" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.061393" to="0.054362" begin="5074" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.054362" to="0.047331" begin="5088" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.047331" to="0.040299" begin="5100" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.040299" to="0.033203" begin="5112" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.033203" to="0.026237" begin="5126" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.026237" to="0.019141" begin="5138" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.019141" to="0.012109" begin="5150" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.012109" to="0.005143" begin="5163" duration="2" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.109323" begin="0" duration="2650" mode="Linear" />
+				<animation property="scale" from="1.109323" to="3.193486" begin="2650" duration="237" mode="Linear" />
+				<animation property="scale" from="3.193486" to="1.272745" begin="2888" duration="26" mode="Linear" />
+				<animation property="scale" from="1.272745" to="1.340539" begin="2913" duration="24" mode="Linear" />
+				<animation property="scale" from="1.340539" to="2.653097" begin="2937" duration="238" mode="Linear" />
+				<animation property="scale" from="2.653097" to="1.542668" begin="3176" duration="24" mode="Linear" />
+				<animation property="scale" from="1.542668" to="1.678509" begin="3200" duration="26" mode="Linear" />
+				<animation property="scale" from="1.678509" to="4.263403" begin="3225" duration="237" mode="Linear" />
+				<animation property="scale" from="4.263403" to="1.542668" begin="3462" duration="1438" mode="Linear" />
+				<animation property="scale" from="1.542668" to="2.202771" begin="4900" duration="24" mode="Linear" />
+				<animation property="scale" from="2.202771" to="14.758039" begin="4924" duration="238" mode="Linear" />
+				<animation property="rotation" from="31.144044" to="30.026976" begin="0" duration="2662" mode="Linear" />
+				<animation property="rotation" from="30.026976" to="28.942156" begin="2662" duration="38" mode="Linear" />
+				<animation property="rotation" from="28.942156" to="28.055533" begin="2700" duration="50" mode="Linear" />
+				<animation property="rotation" from="28.055533" to="27.182696" begin="2750" duration="88" mode="Linear" />
+				<animation property="rotation" from="27.182696" to="22.001526" begin="2838" duration="75" mode="Linear" />
+				<animation property="rotation" from="22.001526" to="22.807820" begin="2913" duration="24" mode="Linear" />
+				<animation property="rotation" from="22.807820" to="24.197667" begin="2937" duration="26" mode="Linear" />
+				<animation property="rotation" from="24.197667" to="26.325769" begin="2962" duration="50" mode="Linear" />
+				<animation property="rotation" from="26.325769" to="27.158165" begin="3012" duration="26" mode="Linear" />
+				<animation property="rotation" from="27.158165" to="28.198878" begin="3038" duration="38" mode="Linear" />
+				<animation property="rotation" from="28.198878" to="29.052654" begin="3075" duration="38" mode="Linear" />
+				<animation property="rotation" from="29.052654" to="29.977474" begin="3112" duration="50" mode="Linear" />
+				<animation property="rotation" from="29.977474" to="29.068595" begin="3162" duration="112" mode="Linear" />
+				<animation property="rotation" from="29.068595" to="28.223426" begin="3274" duration="75" mode="Linear" />
+				<animation property="rotation" from="28.223426" to="30.454601" begin="3350" duration="1551" mode="Linear" />
+				<animation property="rotation" from="30.454601" to="28.484005" begin="4900" duration="24" mode="Linear" />
+				<animation property="rotation" from="28.484005" to="25.415442" begin="4924" duration="26" mode="Linear" />
+				<animation property="rotation" from="25.415442" to="20.333959" begin="4950" duration="50" mode="Linear" />
+				<animation property="rotation" from="20.333959" to="19.229367" begin="5000" duration="14" mode="Linear" />
+				<animation property="rotation" from="19.229367" to="17.949855" begin="5013" duration="12" mode="Linear" />
+				<animation property="rotation" from="17.949855" to="11.168724" begin="5025" duration="75" mode="Linear" />
+				<animation property="rotation" from="11.168724" to="9.927396" begin="5100" duration="12" mode="Linear" />
+				<animation property="rotation" from="9.927396" to="8.876132" begin="5112" duration="14" mode="Linear" />
+				<animation property="rotation" from="8.876132" to="7.638719" begin="5126" duration="12" mode="Linear" />
+				<animation property="rotation" from="7.638719" to="5.350053" begin="5138" duration="26" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="0" duration="2637" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="2637" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="2650" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="2662" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="2674" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="2688" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="2700" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="2712" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="2726" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="2738" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="2750" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="2763" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="2775" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="2787" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="2800" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="2812" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="2824" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="2838" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="2850" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="2862" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="2876" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="2888" duration="26" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="2913" duration="12" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="2925" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="2937" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="2950" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="2962" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="2974" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="2988" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="3000" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="3012" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="3026" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="3038" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="3050" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="3063" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="3075" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="3087" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="3100" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="3112" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="3124" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="3138" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="3150" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="3162" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="3176" duration="24" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="3200" duration="14" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="3213" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="3225" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="3237" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="3250" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="3262" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="3274" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="3288" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="3300" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="3312" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="3326" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="3338" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="3350" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="3363" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="3375" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="3387" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="3400" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="3412" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="3424" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="3438" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="3450" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="3462" duration="1438" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="4900" duration="12" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="4912" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="4924" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="4938" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="4950" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="4962" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="4976" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="4988" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="5000" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="5013" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="5025" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="5037" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="5050" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="5062" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="5074" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="5088" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="5100" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="5112" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="5126" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="5138" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="5150" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="5163" duration="39511" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.006542666667" begin="2650" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.006542666667" to="-0.065282666667" begin="2650" duration="112" mode="Linear" />
+				<animation property="offsetX" from="-0.065282666667" to="-0.071728" begin="2775" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.071728" to="-0.078272" begin="2787" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.078272" to="-0.084765333333" begin="2800" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.084765333333" to="-0.091308" begin="2812" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.091308" to="-0.097802666667" begin="2824" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.097802666667" to="-0.104345333333" begin="2838" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.104345333333" to="-0.11084" begin="2850" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.11084" to="-0.117382666667" begin="2862" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.117382666667" to="-0.123877333333" begin="2876" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.123877333333" to="-0.13042" begin="2888" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.13042" to="0.048974666667" begin="2913" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.048974666667" to="0.055614666667" begin="2950" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.055614666667" to="0.082324" begin="2950" duration="99" mode="Linear" />
+				<animation property="offsetX" from="0.082324" to="0.088965333333" begin="3075" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.088965333333" to="0.095702666667" begin="3100" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.095702666667" to="0.102294666667" begin="3124" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.102294666667" to="0.108984" begin="3150" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.108984" to="0.115673333333" begin="3176" duration="2" mode="Linear" />
+				<animation property="offsetX" from="0.115673333333" to="-0.099609333333" begin="3200" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.099609333333" to="-0.107764" begin="3225" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.107764" to="-0.181201333333" begin="3225" duration="112" mode="Linear" />
+				<animation property="offsetX" from="-0.181201333333" to="-0.189356" begin="3350" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.189356" to="-0.197509333333" begin="3363" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.197509333333" to="-0.205664" begin="3375" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.205664" to="-0.213818666667" begin="3387" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.213818666667" to="-0.221972" begin="3400" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.221972" to="-0.230126666667" begin="3412" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.230126666667" to="-0.238281333333" begin="3424" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.238281333333" to="-0.246436" begin="3438" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.246436" to="-0.254589333333" begin="3450" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.254589333333" to="-0.262744" begin="3462" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.262744" to="-0.435889333333" begin="4900" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.435889333333" to="-0.44414" begin="4924" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.44414" to="-0.518994666667" begin="4924" duration="112" mode="Linear" />
+				<animation property="offsetX" from="-0.518994666667" to="-0.527246666667" begin="5050" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.527246666667" to="-0.535644" begin="5062" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.535644" to="-0.543896" begin="5074" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.543896" to="-0.552197333333" begin="5088" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.552197333333" to="-0.560546666667" begin="5100" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.560546666667" to="-0.568848" begin="5112" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.568848" to="-0.577148" begin="5126" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.577148" to="-0.585449333333" begin="5138" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.585449333333" to="-0.593798666667" begin="5150" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.593798666667" to="-0.602148" begin="5163" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="-0.003451" begin="2726" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.003451" to="-0.006901" begin="2812" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.006901" to="0.069206" begin="2913" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.069206" to="0.065430" begin="2988" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.065430" to="0.062305" begin="2988" duration="50" mode="Linear" />
+				<animation property="offsetY" from="0.062305" to="0.058529" begin="3100" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.058529" to="0.055404" begin="3150" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.055404" to="0.154948" begin="3200" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.154948" to="0.158464" begin="3288" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.158464" to="0.161979" begin="3363" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.161979" to="0.165495" begin="3438" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.165495" to="0.145833" begin="4900" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.145833" to="0.138802" begin="4924" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.138802" to="0.075521" begin="4924" duration="112" mode="Linear" />
+				<animation property="offsetY" from="0.075521" to="0.068490" begin="5050" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.068490" to="0.061393" begin="5062" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.061393" to="0.054362" begin="5074" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.054362" to="0.047331" begin="5088" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.047331" to="0.040299" begin="5100" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.040299" to="0.033203" begin="5112" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.033203" to="0.026237" begin="5126" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.026237" to="0.019141" begin="5138" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.019141" to="0.012109" begin="5150" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.012109" to="0.005143" begin="5163" duration="2" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.109323" begin="0" duration="2650" mode="Linear" />
+				<animation property="scale" from="1.109323" to="3.193486" begin="2650" duration="237" mode="Linear" />
+				<animation property="scale" from="3.193486" to="1.272745" begin="2888" duration="26" mode="Linear" />
+				<animation property="scale" from="1.272745" to="1.340539" begin="2913" duration="24" mode="Linear" />
+				<animation property="scale" from="1.340539" to="2.653097" begin="2937" duration="238" mode="Linear" />
+				<animation property="scale" from="2.653097" to="1.542668" begin="3176" duration="24" mode="Linear" />
+				<animation property="scale" from="1.542668" to="1.678509" begin="3200" duration="26" mode="Linear" />
+				<animation property="scale" from="1.678509" to="4.263403" begin="3225" duration="237" mode="Linear" />
+				<animation property="scale" from="4.263403" to="1.542668" begin="3462" duration="1438" mode="Linear" />
+				<animation property="scale" from="1.542668" to="2.202771" begin="4900" duration="24" mode="Linear" />
+				<animation property="scale" from="2.202771" to="14.758039" begin="4924" duration="238" mode="Linear" />
+				<animation property="rotation" from="31.144044" to="30.026976" begin="0" duration="2662" mode="Linear" />
+				<animation property="rotation" from="30.026976" to="28.942156" begin="2662" duration="38" mode="Linear" />
+				<animation property="rotation" from="28.942156" to="28.055533" begin="2700" duration="50" mode="Linear" />
+				<animation property="rotation" from="28.055533" to="27.182696" begin="2750" duration="88" mode="Linear" />
+				<animation property="rotation" from="27.182696" to="22.001526" begin="2838" duration="75" mode="Linear" />
+				<animation property="rotation" from="22.001526" to="22.807820" begin="2913" duration="24" mode="Linear" />
+				<animation property="rotation" from="22.807820" to="24.197667" begin="2937" duration="26" mode="Linear" />
+				<animation property="rotation" from="24.197667" to="26.325769" begin="2962" duration="50" mode="Linear" />
+				<animation property="rotation" from="26.325769" to="27.158165" begin="3012" duration="26" mode="Linear" />
+				<animation property="rotation" from="27.158165" to="28.198878" begin="3038" duration="38" mode="Linear" />
+				<animation property="rotation" from="28.198878" to="29.052654" begin="3075" duration="38" mode="Linear" />
+				<animation property="rotation" from="29.052654" to="29.977474" begin="3112" duration="50" mode="Linear" />
+				<animation property="rotation" from="29.977474" to="29.068595" begin="3162" duration="112" mode="Linear" />
+				<animation property="rotation" from="29.068595" to="28.223426" begin="3274" duration="75" mode="Linear" />
+				<animation property="rotation" from="28.223426" to="30.454601" begin="3350" duration="1551" mode="Linear" />
+				<animation property="rotation" from="30.454601" to="28.484005" begin="4900" duration="24" mode="Linear" />
+				<animation property="rotation" from="28.484005" to="25.415442" begin="4924" duration="26" mode="Linear" />
+				<animation property="rotation" from="25.415442" to="20.333959" begin="4950" duration="50" mode="Linear" />
+				<animation property="rotation" from="20.333959" to="19.229367" begin="5000" duration="14" mode="Linear" />
+				<animation property="rotation" from="19.229367" to="17.949855" begin="5013" duration="12" mode="Linear" />
+				<animation property="rotation" from="17.949855" to="11.168724" begin="5025" duration="75" mode="Linear" />
+				<animation property="rotation" from="11.168724" to="9.927396" begin="5100" duration="12" mode="Linear" />
+				<animation property="rotation" from="9.927396" to="8.876132" begin="5112" duration="14" mode="Linear" />
+				<animation property="rotation" from="8.876132" to="7.638719" begin="5126" duration="12" mode="Linear" />
+				<animation property="rotation" from="7.638719" to="5.350053" begin="5138" duration="26" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="0" duration="2637" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="2637" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="2650" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="2662" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="2674" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="2688" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="2700" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="2712" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="2726" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="2738" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="2750" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="2763" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="2775" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="2787" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="2800" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="2812" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="2824" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="2838" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="2850" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="2862" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="2876" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="2888" duration="26" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="2913" duration="12" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="2925" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="2937" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="2950" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="2962" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="2974" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="2988" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="3000" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="3012" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="3026" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="3038" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="3050" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="3063" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="3075" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="3087" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="3100" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="3112" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="3124" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="3138" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="3150" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="3162" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="3176" duration="24" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="3200" duration="14" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="3213" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="3225" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="3237" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="3250" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="3262" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="3274" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="3288" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="3300" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="3312" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="3326" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="3338" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="3350" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="3363" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="3375" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="3387" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="3400" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="3412" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="3424" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="3438" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="3450" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="3462" duration="1438" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="4900" duration="12" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="4912" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="4924" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="4938" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="4950" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="4962" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="4976" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="4988" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="5000" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="5013" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="5025" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="5037" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="5050" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="5062" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="5074" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="5088" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="5100" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="5112" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="5126" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="5138" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="5150" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="5163" duration="39511" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Background_14_3" extra="true">
+			<pos>0.591279621363 0.664190562332</pos>
+			<size>0.027083333333 0.035185185185</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.005614666667" begin="2937" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.005614666667" to="-0.056152" begin="2937" duration="112" mode="Linear" />
+				<animation property="offsetX" from="-0.056152" to="-0.061816" begin="3063" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.061816" to="-0.067432" begin="3075" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.067432" to="-0.072998666667" begin="3087" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.072998666667" to="-0.078662666667" begin="3100" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.078662666667" to="-0.084326666667" begin="3112" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.084326666667" to="-0.089892" begin="3124" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.089892" to="-0.095508" begin="3138" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.095508" to="-0.101122666667" begin="3150" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.101122666667" to="-0.106738666667" begin="3162" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.106738666667" to="-0.112353333333" begin="3176" duration="2" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.109323" begin="0" duration="2937" mode="Linear" />
+				<animation property="scale" from="1.109323" to="3.193486" begin="2937" duration="238" mode="Linear" />
+				<animation property="rotation" from="31.144044" to="30.026976" begin="0" duration="2950" mode="Linear" />
+				<animation property="rotation" from="30.026976" to="28.942156" begin="2950" duration="38" mode="Linear" />
+				<animation property="rotation" from="28.942156" to="28.055533" begin="2988" duration="50" mode="Linear" />
+				<animation property="rotation" from="28.055533" to="27.182696" begin="3038" duration="87" mode="Linear" />
+				<animation property="rotation" from="27.182696" to="26.873113" begin="3124" duration="63" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="0" duration="2925" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="2925" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="2937" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="2950" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="2962" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="2974" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="2988" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="3000" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="3012" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="3026" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="3038" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="3050" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="3063" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="3075" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="3087" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="3100" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="3112" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="3124" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="3138" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="3150" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="3162" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="3176" duration="41498" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.005614666667" begin="2937" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.005614666667" to="-0.056152" begin="2937" duration="112" mode="Linear" />
+				<animation property="offsetX" from="-0.056152" to="-0.061816" begin="3063" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.061816" to="-0.067432" begin="3075" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.067432" to="-0.072998666667" begin="3087" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.072998666667" to="-0.078662666667" begin="3100" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.078662666667" to="-0.084326666667" begin="3112" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.084326666667" to="-0.089892" begin="3124" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.089892" to="-0.095508" begin="3138" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.095508" to="-0.101122666667" begin="3150" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.101122666667" to="-0.106738666667" begin="3162" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.106738666667" to="-0.112353333333" begin="3176" duration="2" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.109323" begin="0" duration="2937" mode="Linear" />
+				<animation property="scale" from="1.109323" to="3.193486" begin="2937" duration="238" mode="Linear" />
+				<animation property="rotation" from="31.144044" to="30.026976" begin="0" duration="2950" mode="Linear" />
+				<animation property="rotation" from="30.026976" to="28.942156" begin="2950" duration="38" mode="Linear" />
+				<animation property="rotation" from="28.942156" to="28.055533" begin="2988" duration="50" mode="Linear" />
+				<animation property="rotation" from="28.055533" to="27.182696" begin="3038" duration="87" mode="Linear" />
+				<animation property="rotation" from="27.182696" to="26.873113" begin="3124" duration="63" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="0" duration="2925" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="2925" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="2937" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="2950" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="2962" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="2974" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="2988" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="3000" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="3012" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="3026" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="3038" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="3050" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="3063" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="3075" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="3087" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="3100" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="3112" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="3124" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="3138" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="3150" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="3162" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="3176" duration="41498" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.005614666667" begin="2937" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.005614666667" to="-0.056152" begin="2937" duration="112" mode="Linear" />
+				<animation property="offsetX" from="-0.056152" to="-0.061816" begin="3063" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.061816" to="-0.067432" begin="3075" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.067432" to="-0.072998666667" begin="3087" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.072998666667" to="-0.078662666667" begin="3100" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.078662666667" to="-0.084326666667" begin="3112" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.084326666667" to="-0.089892" begin="3124" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.089892" to="-0.095508" begin="3138" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.095508" to="-0.101122666667" begin="3150" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.101122666667" to="-0.106738666667" begin="3162" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.106738666667" to="-0.112353333333" begin="3176" duration="2" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.109323" begin="0" duration="2937" mode="Linear" />
+				<animation property="scale" from="1.109323" to="3.193486" begin="2937" duration="238" mode="Linear" />
+				<animation property="rotation" from="31.144044" to="30.026976" begin="0" duration="2950" mode="Linear" />
+				<animation property="rotation" from="30.026976" to="28.942156" begin="2950" duration="38" mode="Linear" />
+				<animation property="rotation" from="28.942156" to="28.055533" begin="2988" duration="50" mode="Linear" />
+				<animation property="rotation" from="28.055533" to="27.182696" begin="3038" duration="87" mode="Linear" />
+				<animation property="rotation" from="27.182696" to="26.873113" begin="3124" duration="63" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="0" duration="2925" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.949219" begin="2925" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.949219" to="0.898438" begin="2937" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.898438" to="0.851562" begin="2950" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.851562" to="0.800781" begin="2962" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.800781" to="0.750000" begin="2974" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.750000" to="0.699219" begin="2988" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.699219" to="0.648438" begin="3000" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.648438" to="0.601562" begin="3012" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.601562" to="0.550781" begin="3026" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.550781" to="0.500000" begin="3038" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.500000" to="0.449219" begin="3050" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.449219" to="0.398438" begin="3063" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.398438" to="0.351562" begin="3075" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.351562" to="0.300781" begin="3087" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.300781" to="0.250000" begin="3100" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.250000" to="0.199219" begin="3112" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.199219" to="0.148438" begin="3124" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.148438" to="0.101562" begin="3138" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.101562" to="0.050781" begin="3150" duration="12" mode="Linear" />
+				<animation property="opacity" from="0.050781" to="0.000000" begin="3162" duration="14" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="3176" duration="41498" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Background_17" extra="true">
+			<pos>0.561574543502 0.851850041057</pos>
+			<size>0.294088541667 0.355381944444</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.005727" begin="4474" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.005727" to="-0.0347024" begin="4474" duration="126" mode="Linear" />
+				<animation property="offsetX" from="-0.0347024" to="-0.05647535" begin="4600" duration="75" mode="Linear" />
+				<animation property="offsetX" from="-0.05647535" to="-0.0692783" begin="4676" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.0692783" to="-0.08376485" begin="4713" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.08376485" to="-0.10044215" begin="4750" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.10044215" to="-0.1197725" begin="4788" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.1197725" to="-0.2068229" begin="4826" duration="136" mode="Linear" />
+				<animation property="offsetX" from="-0.2068229" to="-0.22762755" begin="4962" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.22762755" to="-0.2455687" begin="5000" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.2455687" to="-0.25609695" begin="5037" duration="26" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="-0.005614875" begin="4462" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.005614875" to="-0.0435183" begin="4462" duration="100" mode="Linear" />
+				<animation property="offsetY" from="-0.0435183" to="-0.0777707625" begin="4563" duration="75" mode="Linear" />
+				<animation property="offsetY" from="-0.0777707625" to="-0.104667825" begin="4638" duration="50" mode="Linear" />
+				<animation property="offsetY" from="-0.104667825" to="-0.1447611375" begin="4688" duration="63" mode="Linear" />
+				<animation property="offsetY" from="-0.1447611375" to="-0.173622975" begin="4750" duration="38" mode="Linear" />
+				<animation property="offsetY" from="-0.173622975" to="-0.206977575" begin="4788" duration="38" mode="Linear" />
+				<animation property="offsetY" from="-0.206977575" to="-0.35740965" begin="4826" duration="136" mode="Linear" />
+				<animation property="offsetY" from="-0.35740965" to="-0.3934035" begin="4962" duration="38" mode="Linear" />
+				<animation property="offsetY" from="-0.3934035" to="-0.4243431" begin="5000" duration="38" mode="Linear" />
+				<animation property="offsetY" from="-0.4243431" to="-0.4425927375" begin="5037" duration="26" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.031974" begin="0" duration="4575" mode="Linear" />
+				<animation property="scale" from="1.031974" to="1.063870" begin="4575" duration="100" mode="Linear" />
+				<animation property="scale" from="1.063870" to="1.094793" begin="4676" duration="75" mode="Linear" />
+				<animation property="scale" from="1.094793" to="1.127872" begin="4750" duration="62" mode="Linear" />
+				<animation property="scale" from="1.127872" to="1.160665" begin="4812" duration="51" mode="Linear" />
+				<animation property="scale" from="1.160665" to="1.233969" begin="4863" duration="99" mode="Linear" />
+				<animation property="scale" from="1.233969" to="1.264615" begin="4962" duration="51" mode="Linear" />
+				<animation property="scale" from="1.264615" to="1.289770" begin="5013" duration="3586" mode="Linear" />
+				<animation property="rotation" from="1.037536" to="0.233551" begin="0" duration="5050" mode="EaseInQuint" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="0" duration="4425" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="4425" duration="1" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="4426" duration="4173" mode="Linear" />
+				
+				
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.005727" begin="4474" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.005727" to="-0.0347024" begin="4474" duration="126" mode="Linear" />
+				<animation property="offsetX" from="-0.0347024" to="-0.05647535" begin="4600" duration="75" mode="Linear" />
+				<animation property="offsetX" from="-0.05647535" to="-0.0692783" begin="4676" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.0692783" to="-0.08376485" begin="4713" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.08376485" to="-0.10044215" begin="4750" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.10044215" to="-0.1197725" begin="4788" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.1197725" to="-0.2068229" begin="4826" duration="136" mode="Linear" />
+				<animation property="offsetX" from="-0.2068229" to="-0.22762755" begin="4962" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.22762755" to="-0.2455687" begin="5000" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.2455687" to="-0.25609695" begin="5037" duration="26" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="-0.005614875" begin="4462" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.005614875" to="-0.0435183" begin="4462" duration="100" mode="Linear" />
+				<animation property="offsetY" from="-0.0435183" to="-0.0777707625" begin="4563" duration="75" mode="Linear" />
+				<animation property="offsetY" from="-0.0777707625" to="-0.104667825" begin="4638" duration="50" mode="Linear" />
+				<animation property="offsetY" from="-0.104667825" to="-0.1447611375" begin="4688" duration="63" mode="Linear" />
+				<animation property="offsetY" from="-0.1447611375" to="-0.173622975" begin="4750" duration="38" mode="Linear" />
+				<animation property="offsetY" from="-0.173622975" to="-0.206977575" begin="4788" duration="38" mode="Linear" />
+				<animation property="offsetY" from="-0.206977575" to="-0.35740965" begin="4826" duration="136" mode="Linear" />
+				<animation property="offsetY" from="-0.35740965" to="-0.3934035" begin="4962" duration="38" mode="Linear" />
+				<animation property="offsetY" from="-0.3934035" to="-0.4243431" begin="5000" duration="38" mode="Linear" />
+				<animation property="offsetY" from="-0.4243431" to="-0.4425927375" begin="5037" duration="26" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.031974" begin="0" duration="4575" mode="Linear" />
+				<animation property="scale" from="1.031974" to="1.063870" begin="4575" duration="100" mode="Linear" />
+				<animation property="scale" from="1.063870" to="1.094793" begin="4676" duration="75" mode="Linear" />
+				<animation property="scale" from="1.094793" to="1.127872" begin="4750" duration="62" mode="Linear" />
+				<animation property="scale" from="1.127872" to="1.160665" begin="4812" duration="51" mode="Linear" />
+				<animation property="scale" from="1.160665" to="1.233969" begin="4863" duration="99" mode="Linear" />
+				<animation property="scale" from="1.233969" to="1.264615" begin="4962" duration="51" mode="Linear" />
+				<animation property="scale" from="1.264615" to="1.289770" begin="5013" duration="3586" mode="Linear" />
+				<animation property="rotation" from="1.037536" to="0.233551" begin="0" duration="5050" mode="EaseInQuint" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="0" duration="4425" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="4425" duration="1" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="4426" duration="4173" mode="Linear" />
+				
+				
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.005727" begin="4474" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.005727" to="-0.0347024" begin="4474" duration="126" mode="Linear" />
+				<animation property="offsetX" from="-0.0347024" to="-0.05647535" begin="4600" duration="75" mode="Linear" />
+				<animation property="offsetX" from="-0.05647535" to="-0.0692783" begin="4676" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.0692783" to="-0.08376485" begin="4713" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.08376485" to="-0.10044215" begin="4750" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.10044215" to="-0.1197725" begin="4788" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.1197725" to="-0.2068229" begin="4826" duration="136" mode="Linear" />
+				<animation property="offsetX" from="-0.2068229" to="-0.22762755" begin="4962" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.22762755" to="-0.2455687" begin="5000" duration="38" mode="Linear" />
+				<animation property="offsetX" from="-0.2455687" to="-0.25609695" begin="5037" duration="26" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="-0.005614875" begin="4462" duration="2" mode="Linear" />
+				<animation property="offsetY" from="-0.005614875" to="-0.0435183" begin="4462" duration="100" mode="Linear" />
+				<animation property="offsetY" from="-0.0435183" to="-0.0777707625" begin="4563" duration="75" mode="Linear" />
+				<animation property="offsetY" from="-0.0777707625" to="-0.104667825" begin="4638" duration="50" mode="Linear" />
+				<animation property="offsetY" from="-0.104667825" to="-0.1447611375" begin="4688" duration="63" mode="Linear" />
+				<animation property="offsetY" from="-0.1447611375" to="-0.173622975" begin="4750" duration="38" mode="Linear" />
+				<animation property="offsetY" from="-0.173622975" to="-0.206977575" begin="4788" duration="38" mode="Linear" />
+				<animation property="offsetY" from="-0.206977575" to="-0.35740965" begin="4826" duration="136" mode="Linear" />
+				<animation property="offsetY" from="-0.35740965" to="-0.3934035" begin="4962" duration="38" mode="Linear" />
+				<animation property="offsetY" from="-0.3934035" to="-0.4243431" begin="5000" duration="38" mode="Linear" />
+				<animation property="offsetY" from="-0.4243431" to="-0.4425927375" begin="5037" duration="26" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.031974" begin="0" duration="4575" mode="Linear" />
+				<animation property="scale" from="1.031974" to="1.063870" begin="4575" duration="100" mode="Linear" />
+				<animation property="scale" from="1.063870" to="1.094793" begin="4676" duration="75" mode="Linear" />
+				<animation property="scale" from="1.094793" to="1.127872" begin="4750" duration="62" mode="Linear" />
+				<animation property="scale" from="1.127872" to="1.160665" begin="4812" duration="51" mode="Linear" />
+				<animation property="scale" from="1.160665" to="1.233969" begin="4863" duration="99" mode="Linear" />
+				<animation property="scale" from="1.233969" to="1.264615" begin="4962" duration="51" mode="Linear" />
+				<animation property="scale" from="1.264615" to="1.289770" begin="5013" duration="3586" mode="Linear" />
+				<animation property="rotation" from="1.037536" to="0.233551" begin="0" duration="5050" mode="EaseInQuint" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="0" duration="4425" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="4425" duration="1" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="4426" duration="4173" mode="Linear" />
+				
+				
+			</storyboard>
+		</image>
+		<image name="Background_10_2" extra="true">
+			<pos>0.625671253439 0.546984323611</pos>
+			<size>0.063489583333 0.076666666667</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.003496" begin="2524" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.003496" to="-0.0069483" begin="2524" duration="51" mode="Linear" />
+				<animation property="offsetX" from="-0.0069483" to="-0.0109917" begin="2576" duration="50" mode="Linear" />
+				<animation property="offsetX" from="-0.0109917" to="-0.0194994" begin="2625" duration="87" mode="Linear" />
+				<animation property="offsetX" from="-0.0194994" to="-0.0367241" begin="2712" duration="138" mode="Linear" />
+				<animation property="offsetX" from="-0.0367241" to="-0.0442198" begin="2850" duration="50" mode="Linear" />
+				<animation property="offsetX" from="-0.0442198" to="-0.06085455" begin="2900" duration="126" mode="Linear" />
+				<animation property="offsetX" from="-0.06085455" to="-0.08469175" begin="3026" duration="150" mode="Linear" />
+				<animation property="offsetX" from="-0.08469175" to="-0.18829295" begin="3176" duration="549" mode="Linear" />
+				<animation property="offsetX" from="-0.18829295" to="-0.20391685" begin="3724" duration="100" mode="Linear" />
+				<animation property="offsetX" from="-0.20391685" to="-0.2137298" begin="3825" duration="75" mode="Linear" />
+				<animation property="offsetX" from="-0.2137298" to="-0.22181545" begin="3900" duration="75" mode="Linear" />
+				<animation property="offsetX" from="-0.22181545" to="-0.2260693" begin="3975" duration="50" mode="Linear" />
+				<animation property="offsetX" from="-0.2260693" to="-0.2301541" begin="4024" duration="63" mode="Linear" />
+				<animation property="offsetX" from="-0.2301541" to="-0.23402845" begin="4088" duration="124" mode="EaseOut" />
+				<animation property="offsetY" from="0.000000" to="0.0029195625" begin="2512" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.0029195625" to="0.0063454125" begin="2512" duration="50" mode="Linear" />
+				<animation property="offsetY" from="0.0063454125" to="0.012690825" begin="2562" duration="75" mode="Linear" />
+				<animation property="offsetY" from="0.012690825" to="0.021843675" begin="2637" duration="88" mode="Linear" />
+				<animation property="offsetY" from="0.021843675" to="0.0313329" begin="2726" duration="75" mode="Linear" />
+				<animation property="offsetY" from="0.0313329" to="0.054804975" begin="2800" duration="150" mode="Linear" />
+				<animation property="offsetY" from="0.054804975" to="0.0788937375" begin="2950" duration="124" mode="Linear" />
+				<animation property="offsetY" from="0.0788937375" to="0.1098342" begin="3075" duration="138" mode="Linear" />
+				<animation property="offsetY" from="0.1098342" to="0.21377235" begin="3213" duration="399" mode="Linear" />
+				<animation property="offsetY" from="0.21377235" to="0.2168601" begin="3612" duration="14" mode="Linear" />
+				<animation property="offsetY" from="0.2168601" to="0.22314945" begin="3626" duration="24" mode="Linear" />
+				<animation property="offsetY" from="0.22314945" to="0.249315975" begin="3650" duration="112" mode="Linear" />
+				<animation property="offsetY" from="0.249315975" to="0.2712157125" begin="3762" duration="112" mode="Linear" />
+				<animation property="offsetY" from="0.2712157125" to="0.28295175" begin="3874" duration="75" mode="Linear" />
+				<animation property="offsetY" from="0.28295175" to="0.2920485375" begin="3950" duration="75" mode="Linear" />
+				<animation property="offsetY" from="0.2920485375" to="0.29558565" begin="4024" duration="38" mode="Linear" />
+				<animation property="offsetY" from="0.29558565" to="0.2984500125" begin="4062" duration="38" mode="Linear" />
+				<animation property="offsetY" from="0.2984500125" to="0.301145325" begin="4100" duration="51" mode="Linear" />
+				<animation property="offsetY" from="0.301145325" to="0.3029419125" begin="4250" duration="2" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.035721" begin="0" duration="2524" mode="Linear" />
+				<animation property="scale" from="1.035721" to="1.070824" begin="2524" duration="51" mode="Linear" />
+				<animation property="scale" from="1.070824" to="1.134735" begin="2576" duration="75" mode="Linear" />
+				<animation property="scale" from="1.134735" to="1.212529" begin="2650" duration="75" mode="Linear" />
+				<animation property="scale" from="1.212529" to="1.356229" begin="2726" duration="112" mode="Linear" />
+				<animation property="scale" from="1.356229" to="1.599140" begin="2838" duration="150" mode="Linear" />
+				<animation property="scale" from="1.599140" to="1.899272" begin="2988" duration="150" mode="Linear" />
+				<animation property="scale" from="1.899272" to="3.344510" begin="3138" duration="586" mode="Linear" />
+				<animation property="scale" from="3.344510" to="3.549816" begin="3724" duration="100" mode="Linear" />
+				<animation property="scale" from="3.549816" to="3.679464" begin="3825" duration="75" mode="Linear" />
+				<animation property="scale" from="3.679464" to="3.752677" begin="3900" duration="50" mode="Linear" />
+				<animation property="scale" from="3.752677" to="3.828363" begin="3950" duration="63" mode="Linear" />
+				<animation property="scale" from="3.828363" to="3.864984" begin="4012" duration="38" mode="Linear" />
+				<animation property="scale" from="3.864984" to="3.903431" begin="4050" duration="50" mode="Linear" />
+				<animation property="scale" from="3.903431" to="3.938759" begin="4100" duration="75" mode="Linear" />
+				<animation property="scale" from="3.938759" to="3.947865" begin="4174" duration="75" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="0" duration="2463" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="2463" duration="1" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="2464" duration="1785" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.000000" begin="4249" duration="1" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="4250" duration="40424" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.003496" begin="2524" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.003496" to="-0.0069483" begin="2524" duration="51" mode="Linear" />
+				<animation property="offsetX" from="-0.0069483" to="-0.0109917" begin="2576" duration="50" mode="Linear" />
+				<animation property="offsetX" from="-0.0109917" to="-0.0194994" begin="2625" duration="87" mode="Linear" />
+				<animation property="offsetX" from="-0.0194994" to="-0.0367241" begin="2712" duration="138" mode="Linear" />
+				<animation property="offsetX" from="-0.0367241" to="-0.0442198" begin="2850" duration="50" mode="Linear" />
+				<animation property="offsetX" from="-0.0442198" to="-0.06085455" begin="2900" duration="126" mode="Linear" />
+				<animation property="offsetX" from="-0.06085455" to="-0.08469175" begin="3026" duration="150" mode="Linear" />
+				<animation property="offsetX" from="-0.08469175" to="-0.18829295" begin="3176" duration="549" mode="Linear" />
+				<animation property="offsetX" from="-0.18829295" to="-0.20391685" begin="3724" duration="100" mode="Linear" />
+				<animation property="offsetX" from="-0.20391685" to="-0.2137298" begin="3825" duration="75" mode="Linear" />
+				<animation property="offsetX" from="-0.2137298" to="-0.22181545" begin="3900" duration="75" mode="Linear" />
+				<animation property="offsetX" from="-0.22181545" to="-0.2260693" begin="3975" duration="50" mode="Linear" />
+				<animation property="offsetX" from="-0.2260693" to="-0.2301541" begin="4024" duration="63" mode="Linear" />
+				<animation property="offsetX" from="-0.2301541" to="-0.23402845" begin="4088" duration="124" mode="EaseOut" />
+				<animation property="offsetY" from="0.000000" to="0.0029195625" begin="2512" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.0029195625" to="0.0063454125" begin="2512" duration="50" mode="Linear" />
+				<animation property="offsetY" from="0.0063454125" to="0.012690825" begin="2562" duration="75" mode="Linear" />
+				<animation property="offsetY" from="0.012690825" to="0.021843675" begin="2637" duration="88" mode="Linear" />
+				<animation property="offsetY" from="0.021843675" to="0.0313329" begin="2726" duration="75" mode="Linear" />
+				<animation property="offsetY" from="0.0313329" to="0.054804975" begin="2800" duration="150" mode="Linear" />
+				<animation property="offsetY" from="0.054804975" to="0.0788937375" begin="2950" duration="124" mode="Linear" />
+				<animation property="offsetY" from="0.0788937375" to="0.1098342" begin="3075" duration="138" mode="Linear" />
+				<animation property="offsetY" from="0.1098342" to="0.21377235" begin="3213" duration="399" mode="Linear" />
+				<animation property="offsetY" from="0.21377235" to="0.2168601" begin="3612" duration="14" mode="Linear" />
+				<animation property="offsetY" from="0.2168601" to="0.22314945" begin="3626" duration="24" mode="Linear" />
+				<animation property="offsetY" from="0.22314945" to="0.249315975" begin="3650" duration="112" mode="Linear" />
+				<animation property="offsetY" from="0.249315975" to="0.2712157125" begin="3762" duration="112" mode="Linear" />
+				<animation property="offsetY" from="0.2712157125" to="0.28295175" begin="3874" duration="75" mode="Linear" />
+				<animation property="offsetY" from="0.28295175" to="0.2920485375" begin="3950" duration="75" mode="Linear" />
+				<animation property="offsetY" from="0.2920485375" to="0.29558565" begin="4024" duration="38" mode="Linear" />
+				<animation property="offsetY" from="0.29558565" to="0.2984500125" begin="4062" duration="38" mode="Linear" />
+				<animation property="offsetY" from="0.2984500125" to="0.301145325" begin="4100" duration="51" mode="Linear" />
+				<animation property="offsetY" from="0.301145325" to="0.3029419125" begin="4250" duration="2" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.035721" begin="0" duration="2524" mode="Linear" />
+				<animation property="scale" from="1.035721" to="1.070824" begin="2524" duration="51" mode="Linear" />
+				<animation property="scale" from="1.070824" to="1.134735" begin="2576" duration="75" mode="Linear" />
+				<animation property="scale" from="1.134735" to="1.212529" begin="2650" duration="75" mode="Linear" />
+				<animation property="scale" from="1.212529" to="1.356229" begin="2726" duration="112" mode="Linear" />
+				<animation property="scale" from="1.356229" to="1.599140" begin="2838" duration="150" mode="Linear" />
+				<animation property="scale" from="1.599140" to="1.899272" begin="2988" duration="150" mode="Linear" />
+				<animation property="scale" from="1.899272" to="3.344510" begin="3138" duration="586" mode="Linear" />
+				<animation property="scale" from="3.344510" to="3.549816" begin="3724" duration="100" mode="Linear" />
+				<animation property="scale" from="3.549816" to="3.679464" begin="3825" duration="75" mode="Linear" />
+				<animation property="scale" from="3.679464" to="3.752677" begin="3900" duration="50" mode="Linear" />
+				<animation property="scale" from="3.752677" to="3.828363" begin="3950" duration="63" mode="Linear" />
+				<animation property="scale" from="3.828363" to="3.864984" begin="4012" duration="38" mode="Linear" />
+				<animation property="scale" from="3.864984" to="3.903431" begin="4050" duration="50" mode="Linear" />
+				<animation property="scale" from="3.903431" to="3.938759" begin="4100" duration="75" mode="Linear" />
+				<animation property="scale" from="3.938759" to="3.947865" begin="4174" duration="75" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="0" duration="2463" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="2463" duration="1" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="2464" duration="1785" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.000000" begin="4249" duration="1" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="4250" duration="40424" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.003496" begin="2524" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.003496" to="-0.0069483" begin="2524" duration="51" mode="Linear" />
+				<animation property="offsetX" from="-0.0069483" to="-0.0109917" begin="2576" duration="50" mode="Linear" />
+				<animation property="offsetX" from="-0.0109917" to="-0.0194994" begin="2625" duration="87" mode="Linear" />
+				<animation property="offsetX" from="-0.0194994" to="-0.0367241" begin="2712" duration="138" mode="Linear" />
+				<animation property="offsetX" from="-0.0367241" to="-0.0442198" begin="2850" duration="50" mode="Linear" />
+				<animation property="offsetX" from="-0.0442198" to="-0.06085455" begin="2900" duration="126" mode="Linear" />
+				<animation property="offsetX" from="-0.06085455" to="-0.08469175" begin="3026" duration="150" mode="Linear" />
+				<animation property="offsetX" from="-0.08469175" to="-0.18829295" begin="3176" duration="549" mode="Linear" />
+				<animation property="offsetX" from="-0.18829295" to="-0.20391685" begin="3724" duration="100" mode="Linear" />
+				<animation property="offsetX" from="-0.20391685" to="-0.2137298" begin="3825" duration="75" mode="Linear" />
+				<animation property="offsetX" from="-0.2137298" to="-0.22181545" begin="3900" duration="75" mode="Linear" />
+				<animation property="offsetX" from="-0.22181545" to="-0.2260693" begin="3975" duration="50" mode="Linear" />
+				<animation property="offsetX" from="-0.2260693" to="-0.2301541" begin="4024" duration="63" mode="Linear" />
+				<animation property="offsetX" from="-0.2301541" to="-0.23402845" begin="4088" duration="124" mode="EaseOut" />
+				<animation property="offsetY" from="0.000000" to="0.0029195625" begin="2512" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.0029195625" to="0.0063454125" begin="2512" duration="50" mode="Linear" />
+				<animation property="offsetY" from="0.0063454125" to="0.012690825" begin="2562" duration="75" mode="Linear" />
+				<animation property="offsetY" from="0.012690825" to="0.021843675" begin="2637" duration="88" mode="Linear" />
+				<animation property="offsetY" from="0.021843675" to="0.0313329" begin="2726" duration="75" mode="Linear" />
+				<animation property="offsetY" from="0.0313329" to="0.054804975" begin="2800" duration="150" mode="Linear" />
+				<animation property="offsetY" from="0.054804975" to="0.0788937375" begin="2950" duration="124" mode="Linear" />
+				<animation property="offsetY" from="0.0788937375" to="0.1098342" begin="3075" duration="138" mode="Linear" />
+				<animation property="offsetY" from="0.1098342" to="0.21377235" begin="3213" duration="399" mode="Linear" />
+				<animation property="offsetY" from="0.21377235" to="0.2168601" begin="3612" duration="14" mode="Linear" />
+				<animation property="offsetY" from="0.2168601" to="0.22314945" begin="3626" duration="24" mode="Linear" />
+				<animation property="offsetY" from="0.22314945" to="0.249315975" begin="3650" duration="112" mode="Linear" />
+				<animation property="offsetY" from="0.249315975" to="0.2712157125" begin="3762" duration="112" mode="Linear" />
+				<animation property="offsetY" from="0.2712157125" to="0.28295175" begin="3874" duration="75" mode="Linear" />
+				<animation property="offsetY" from="0.28295175" to="0.2920485375" begin="3950" duration="75" mode="Linear" />
+				<animation property="offsetY" from="0.2920485375" to="0.29558565" begin="4024" duration="38" mode="Linear" />
+				<animation property="offsetY" from="0.29558565" to="0.2984500125" begin="4062" duration="38" mode="Linear" />
+				<animation property="offsetY" from="0.2984500125" to="0.301145325" begin="4100" duration="51" mode="Linear" />
+				<animation property="offsetY" from="0.301145325" to="0.3029419125" begin="4250" duration="2" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.035721" begin="0" duration="2524" mode="Linear" />
+				<animation property="scale" from="1.035721" to="1.070824" begin="2524" duration="51" mode="Linear" />
+				<animation property="scale" from="1.070824" to="1.134735" begin="2576" duration="75" mode="Linear" />
+				<animation property="scale" from="1.134735" to="1.212529" begin="2650" duration="75" mode="Linear" />
+				<animation property="scale" from="1.212529" to="1.356229" begin="2726" duration="112" mode="Linear" />
+				<animation property="scale" from="1.356229" to="1.599140" begin="2838" duration="150" mode="Linear" />
+				<animation property="scale" from="1.599140" to="1.899272" begin="2988" duration="150" mode="Linear" />
+				<animation property="scale" from="1.899272" to="3.344510" begin="3138" duration="586" mode="Linear" />
+				<animation property="scale" from="3.344510" to="3.549816" begin="3724" duration="100" mode="Linear" />
+				<animation property="scale" from="3.549816" to="3.679464" begin="3825" duration="75" mode="Linear" />
+				<animation property="scale" from="3.679464" to="3.752677" begin="3900" duration="50" mode="Linear" />
+				<animation property="scale" from="3.752677" to="3.828363" begin="3950" duration="63" mode="Linear" />
+				<animation property="scale" from="3.828363" to="3.864984" begin="4012" duration="38" mode="Linear" />
+				<animation property="scale" from="3.864984" to="3.903431" begin="4050" duration="50" mode="Linear" />
+				<animation property="scale" from="3.903431" to="3.938759" begin="4100" duration="75" mode="Linear" />
+				<animation property="scale" from="3.938759" to="3.947865" begin="4174" duration="75" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="0" duration="2463" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="2463" duration="1" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="2464" duration="1785" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.000000" begin="4249" duration="1" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="4250" duration="40424" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="Background_19" extra="true">
+			<pos>0.506323781001 0.771272372298</pos>
+			<size>0.240972222223 0.024074074074</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.010498666667" begin="4838" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.010498666667" to="-0.199072" begin="4838" duration="225" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="0.005664" begin="4838" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.005664" to="0.107617" begin="4838" duration="225" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.089507" begin="0" duration="4838" mode="Linear" />
+				<animation property="scale" from="1.089507" to="2.700389" begin="4838" duration="225" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="0" duration="4826" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="4826" duration="1" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="4827" duration="3773" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.000000" begin="8600" duration="1" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="8601" duration="36073" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.010498666667" begin="4838" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.010498666667" to="-0.199072" begin="4838" duration="225" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="0.005664" begin="4838" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.005664" to="0.107617" begin="4838" duration="225" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.089507" begin="0" duration="4838" mode="Linear" />
+				<animation property="scale" from="1.089507" to="2.700389" begin="4838" duration="225" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="0" duration="4826" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="4826" duration="1" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="4827" duration="3773" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.000000" begin="8600" duration="1" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="8601" duration="36073" mode="Linear" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="scaleOrigin" from="0 0" to="0 0" begin="0" duration="44674" mode="Linear" />
+				<animation property="offsetX" from="0.000000" to="-0.010498666667" begin="4838" duration="2" mode="Linear" />
+				<animation property="offsetX" from="-0.010498666667" to="-0.199072" begin="4838" duration="225" mode="Linear" />
+				<animation property="offsetY" from="0.000000" to="0.005664" begin="4838" duration="2" mode="Linear" />
+				<animation property="offsetY" from="0.005664" to="0.107617" begin="4838" duration="225" mode="Linear" />
+				<animation property="scale" from="1.000000" to="1.089507" begin="0" duration="4838" mode="Linear" />
+				<animation property="scale" from="1.089507" to="2.700389" begin="4838" duration="225" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="0" duration="4826" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="1.000000" begin="4826" duration="1" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="1.000000" begin="4827" duration="3773" mode="Linear" />
+				<animation property="opacity" from="1.000000" to="0.000000" begin="8600" duration="1" mode="Linear" />
+				<animation property="opacity" from="0.000000" to="0.000000" begin="8601" duration="36073" mode="Linear" />
+			</storyboard>
+		</image>
+		<image name="1" extra="true">
+			<size>1.440104166667 1.919444444444</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="rotation" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="rotation" from="0" to="360" begin="2251" duration="35500" mode="Linear" repeat="forever" />
+				<animation property="offsetY" from="1.5" to="1.5" begin="" duration="" mode="Linear" />
+				<animation property="offsetY" from="1.5" to="0" begin="0" duration="6200" mode="EaseOut" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="rotation" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="rotation" from="0" to="360" begin="2251" duration="35500" mode="Linear" repeat="forever" />
+				<animation property="offsetY" from="1.5" to="1.5" begin="" duration="" mode="Linear" />
+				<animation property="offsetY" from="1.5" to="0" begin="0" duration="6200" mode="EaseOut" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="rotation" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="rotation" from="0" to="360" begin="2251" duration="35500" mode="Linear" repeat="forever" />
+				<animation property="offsetY" from="1.5" to="1.5" begin="" duration="" mode="Linear" />
+				<animation property="offsetY" from="1.5" to="0" begin="0" duration="6200" mode="EaseOut" />
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<maxSize>0.332291666667 0.331944444445</maxSize>
+		</video>
+		<image name="Videobezel" extra="true">
+			<pos>0.719544760046 0.394820587341</pos>
+			<size>0.540910479909 0.518077658664</size>
+		</image>
+		<image name="Artwork2" extra="true">
+			<size>0.269791666667 0.305555555555</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="offsetY" from="0.45" to="0.45" begin="" duration="" mode="Linear" />
+				<animation property="offsetY" from="0.45" to="0" begin="5000" duration="2228" mode="EaseOut" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="offsetY" from="0.45" to="0.45" begin="" duration="" mode="Linear" />
+				<animation property="offsetY" from="0.45" to="0" begin="5000" duration="2228" mode="EaseOut" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="offsetY" from="0.45" to="0.45" begin="" duration="" mode="Linear" />
+				<animation property="offsetY" from="0.45" to="0" begin="5000" duration="2228" mode="EaseOut" />
+			</storyboard>
+		</image>
+		<image name="Artwork3" extra="true">
+			<size>0.578645833333 0.188194444445</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="scale" from="0 1" to="0 1" begin="" duration="" mode="Linear" />
+				<animation property="scale" from="0 1" to="1 1" begin="4200" duration="2000" mode="EaseOut" />
+				<animation property="offsetY" from="0.45" to="0.45" begin="" duration="" mode="Linear" />
+				<animation property="offsetY" from="0.45" to="0" begin="4200" duration="2000" mode="EaseOut" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="scale" from="0 1" to="0 1" begin="" duration="" mode="Linear" />
+				<animation property="scale" from="0 1" to="1 1" begin="4200" duration="2000" mode="EaseOut" />
+				<animation property="offsetY" from="0.45" to="0.45" begin="" duration="" mode="Linear" />
+				<animation property="offsetY" from="0.45" to="0" begin="4200" duration="2000" mode="EaseOut" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="scale" from="0 1" to="0 1" begin="" duration="" mode="Linear" />
+				<animation property="scale" from="0 1" to="1 1" begin="4200" duration="2000" mode="EaseOut" />
+				<animation property="offsetY" from="0.45" to="0.45" begin="" duration="" mode="Linear" />
+				<animation property="offsetY" from="0.45" to="0" begin="4200" duration="2000" mode="EaseOut" />
+			</storyboard>
+		</image>
+		<image name="Artwork4" extra="true">
+			<size>0.172595112095 0.156037207032</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="shader.pixelSize" from="80" to="80" begin="" duration="" mode="Linear" />
+				<animation property="shader.pixelSize" from="80" to="1" begin="5000" duration="3000" mode="easeout" />
+				<animation property="offsetX" from="-0.4" to="-0.4" begin="" duration="" mode="Linear" />
+				<animation property="offsetX" from="-0.4" to="0" begin="5000" duration="2000" mode="EaseOut" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="shader.pixelSize" from="80" to="80" begin="" duration="" mode="Linear" />
+				<animation property="shader.pixelSize" from="80" to="1" begin="5000" duration="3000" mode="easeout" />
+				<animation property="offsetX" from="-0.4" to="-0.4" begin="" duration="" mode="Linear" />
+				<animation property="offsetX" from="-0.4" to="0" begin="5000" duration="2000" mode="EaseOut" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="shader.pixelSize" from="80" to="80" begin="" duration="" mode="Linear" />
+				<animation property="shader.pixelSize" from="80" to="1" begin="5000" duration="3000" mode="easeout" />
+				<animation property="offsetX" from="-0.4" to="-0.4" begin="" duration="" mode="Linear" />
+				<animation property="offsetX" from="-0.4" to="0" begin="5000" duration="2000" mode="EaseOut" />
 			</storyboard>
 		</image>
 		<image name="md_cartridge" extra="true">

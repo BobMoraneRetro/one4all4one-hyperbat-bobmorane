@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis systheme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<view name="system">
+		<image name="led1_Sys" extra="true">
+			<size>0.010416666667 0.014814814815</size>
+		</image>
+		<image name="led2_Sys" extra="true">
+			<size>0.011111111111 0.014814814815</size>
+			<!-- storyboard "" corrige -->
+			<storyboard>
+				
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="1000" mode="Linear" />
+				<animation property="offsetX" from="1.333333333333" to="0" duration="4000" mode="EaseOutQuint" />
+			</storyboard>
+		</image>
+	</view>
+</theme>

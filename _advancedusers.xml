@@ -55,15 +55,15 @@
 		<include name="jukeboxdef" displayName="${jukeboxdef}">${path_game_theme}/_genericdefault/_jukebox/theme.xml</include>
 	</subset>
 	<include ifSubset="defaultgeneric:generic43coinopsstyle,screenratio:r43|r1610">${path_game_theme}/_genericdefault/_defaultcoinopsstyle/theme-${ratiosfx}.xml</include>
-	<subset name="videodefaut" displayName="${videodefaut}" appliesTo="hyperbat">
-		<include name="activate" displayName="${activate}"/>
-		<include name="desactive" displayName="${desactive}"/>
-	</subset>
 	<subset name="gameviewsource" displayName="${gameviewsource}" appliesTo="hyperbat">
 		<include name="mamefolder" displayName="${mamefolder}"/>
 		<!-- <include name="originsystem" displayName="${originsystem}"/> -->
 		<include name="actualsystem" displayName="${actualsystem}"/>
 		<include name="genericstyleonly" displayName="${genericstyleonly}"/>
+	</subset>
+	<subset name="videodefaut" displayName="${videodefaut}" appliesTo="hyperbat">
+		<include name="activate" displayName="${activate}"/>
+		<include name="desactive" displayName="${desactive}"/>
 	</subset>
 	<subset name="boxorthumb" displayName="${boxorthumb}" appliesTo="hyperbat">
 		<include name="boxart" displayName="${boxart}"/>
@@ -79,16 +79,15 @@
 		<include name="showoffblackwhite" displayName="${showoffblackwhite}"/>
 		<include name="deactivate" displayName="${desactive}"/>
 	</subset>
+	<subset name="gamewheelformat" displayName="${gamewheelformat}" appliesTo="hyperbat">
+		<include name="verticalcourbe" displayName="${verticalcourbe}">${path_vgameopt}/gl-hyperbat/verticalcourbe.xml</include>
+		<include name="verticaldroit" displayName="${verticaldroit}">${path_vgameopt}/gl-hyperbat/verticaldroit.xml</include>
+	</subset>
 	<subset name="gamewheelfade" displayName="${gamewheelfade}" appliesTo="hyperbat">
 		<include name="activate" displayName="${activate}"/>
 		<include name="amoitie" displayName="${amoitie}"/>
 		<include name="deactivate" displayName="${desactive}"/>
 	</subset>
-	<!-- <subset name="gamewheeltype" displayName="${gamewheeltype}" appliesTo="hyperbat"> -->
-	<!-- <include name="wrightwheel" displayName="${wrightwheel}">${themePath}/_viewgameoption/gl-hyperbat/wrightwheel.xml</include> -->
-	<!-- <include name="whorizontalbox" displayName="${whorizontalbox}">${themePath}/_viewgameoption/gl-hyperbat/whorizontalbox.xml</include> -->
-	<!-- <include name="deactivate" displayName="${desactive}"/> -->
-	<!-- </subset> -->
 	<subset name="gamewheelsound" displayName="${gamewheelsound}" appliesTo="hyperbat">
 		<include name="wheelclic" displayName="${wheelclic}"/>
 		<include name="bulle" displayName="${bulle}"/>

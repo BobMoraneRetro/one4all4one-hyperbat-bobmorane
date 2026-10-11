@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<include>./theme.xml</include>
+	<customView name="hyperbat">
+		<image name="Background-dreamcast" extra="true">
+			<!-- storyboard neutre : garde l'element visible malgre l'include -->
+			<storyboard event="activate">
+				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<video name="gameplayprev-dreamcast" extra="true">
+			<maxSize>0.338020833333 0.338194444444</maxSize>
+		</video>
+		<image name="video-dreamcast" extra="true">
+			<pos>0.309900641086 0.422490650206</pos>
+			<size>0.357291666667 0.35625</size>
+		</image>
+	</customView>
+</theme>

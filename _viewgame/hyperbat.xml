@@ -22,7 +22,7 @@
 		</image>
 		<gamecarousel name="gamecarousel">
 			<zIndex>501</zIndex>
-			<type>vertical_wheel</type>
+			<!-- <type>vertical_wheel</type> -->
 			<!-- <type if="{system.theme} == 'zelda' ||  -->
 			<!-- {system.theme} == 'assasin' ||  -->
 			<!-- {system.theme} == 'gta'">horizontal_wheel</type> -->
@@ -32,13 +32,28 @@
 			<logoSize>0.150 0.260</logoSize>
 			<color>00000000</color>
 			<maxLogoCount>8</maxLogoCount>
-			<logoRotation>-4.5</logoRotation>
-			<logoRotationOrigin>6 0.5</logoRotationOrigin>
-			<logoAlignment>center</logoAlignment>
-			<imageSource>marquee</imageSource>
+			<!-- Pour horizontal -->
+			<!-- <logoRotation>-4.5</logoRotation> -->
+			<!-- <logoRotationOrigin>6 0.5</logoRotationOrigin> -->
+			<!-- <logoAlignment>center</logoAlignment> -->
+			<!-- <imageSource>marquee</imageSource> -->
+			<!-- <defaultTransition>instant</defaultTransition> -->
+			<!-- <minLogoOpacity>1</minLogoOpacity> -->
+			<!-- <transitionSpeed>350</transitionSpeed> -->
+			<!-- Pour vertical -->
+			<!-- <type>vertical</type> -->
+			<!-- <pos>0.450 0</pos> -->
+			<!-- <logoScale>1</logoScale> -->
+			<!-- <logoRotation>-4</logoRotation> -->
+			<!-- <logoRotationOrigin>6 0</logoRotationOrigin> -->
+			<!-- <logoSize>0.18 0.20</logoSize> -->
+			<!-- <logoAlignment>center</logoAlignment> -->
+			<!-- <minLogoOpacity>0.4</minLogoOpacity> -->
+			<!-- <transitionSpeed>450</transitionSpeed> -->
+			<systemInfoDelay>700</systemInfoDelay>
+			<systemInfoCountOnly>false</systemInfoCountOnly>
 			<defaultTransition>instant</defaultTransition>
-			<minLogoOpacity>1</minLogoOpacity>
-			<transitionSpeed>350</transitionSpeed>
+			<zIndex>500</zIndex>
 			<scrollSound ifSubset="gamewheelsound:bulle">${path_common}/scrollsound/bulle.wav</scrollSound>
 			<scrollSound ifSubset="gamewheelsound:clic">${path_common}/scrollsound/clic.wav</scrollSound>
 			<scrollSound ifSubset="gamewheelsound:clicgrave">${path_common}/scrollsound/clicgrave.wav</scrollSound>

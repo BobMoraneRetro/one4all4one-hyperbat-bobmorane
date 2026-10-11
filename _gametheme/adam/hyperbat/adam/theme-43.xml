@@ -1,29 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
 	<formatVersion>7</formatVersion>
-	<!-- Correction 4:3 generee le 2026-09-29 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis theme.xml (hauteurs x0.75 autour de l'ancre) -->
 	<include>./theme.xml</include>
 	<customView name="hyperbat">
-		<image name="Image_vid" extra="true">
-			<pos>0.5 0.602815570673</pos>
-			<size>0.405208333333 0.409722222222</size>
-		</image>
-		<image name="PreviewScreen" extra="true">
-			<pos>0.500566893424 0.60015117158</pos>
-			<size>0.396825396825 0.396825396826</size>
-		</image>
-		<image name="video" extra="true">
-			<pos>0.500260416667 0.600385015117</pos>
-			<size>0.41 0.432638888889</size>
-		</image>
-		<video name="PreviewVid" extra="true">
-			<pos>0.500566893424 0.60015117158</pos>
-			<maxSize>0.396825396825 0.396825396826</maxSize>
-		</video>
 		<image name="Background" extra="true">
 			<!-- storyboard neutre : garde l'element visible malgre l'include -->
 			<storyboard event="activate">
 				<animation property="opacity" from="1" to="1" duration="1" mode="linear"/>
+			</storyboard>
+		</image>
+		<image name="Image_vid" extra="true">
+			<pos>0.5 0.602815570673</pos>
+			<size>0.405208333333 0.409722222222</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear" />
+				<animation property="offsetY" from="5.925" to="0" begin="0" duration="750" mode="EaseOutQuint" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear" />
+				<animation property="offsetY" from="5.925" to="0" begin="0" duration="750" mode="EaseOutQuint" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear" />
+				<animation property="offsetY" from="5.925" to="0" begin="0" duration="750" mode="EaseOutQuint" />
+			</storyboard>
+		</image>
+		<video name="PreviewVid" extra="true">
+			<maxSize>0.396825396825 0.396825396826</maxSize>
+		</video>
+		<image name="PreviewScreen" extra="true">
+			<maxSize>0.396825396825 0.396825396826</maxSize>
+		</image>
+		<image name="video" extra="true">
+			<pos>0.500260416667 0.600385015117</pos>
+			<size>0.41 0.432638888889</size>
+			<!-- storyboard "activateNext" corrige -->
+			<storyboard event="activateNext">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear" />
+				<animation property="offsetY" from="5.925" to="0" begin="0" duration="750" mode="EaseOutQuint" />
+			</storyboard>
+			<!-- storyboard "activatePrev" corrige -->
+			<storyboard event="activatePrev">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear" />
+				<animation property="offsetY" from="5.925" to="0" begin="0" duration="750" mode="EaseOutQuint" />
+			</storyboard>
+			<!-- storyboard "open" corrige -->
+			<storyboard event="open">
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear" />
+				<animation property="offsetY" from="5.925" to="0" begin="0" duration="750" mode="EaseOutQuint" />
 			</storyboard>
 		</image>
 		<text name="gamethemeauthor" extra="true">

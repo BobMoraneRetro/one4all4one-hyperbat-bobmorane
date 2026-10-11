@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis systheme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<view name="system">
+		<image name="Particle" extra="true">
+			<size>0.101310483871 0.135080645161</size>
+			<!-- storyboard "" corrige -->
+			<storyboard>
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="250" duration="500" mode="Linear" />
+				<animation property="offsetX" from="1.9" to="0" begin="0" duration="1500" mode="linear" />
+				<animation property="offsetX" from="0" to="-0.1" begin="1000" duration="4000" mode="easein" autoreverse="true" repeat="forever" />
+				<animation property="offsetY" from="0" to="-0.075" begin="1500" duration="2500" mode="easeout" autoreverse="true" repeat="forever" />
+			</storyboard>
+		</image>
+	</view>
+</theme>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<!-- Correction 4:3 generee par Ratio themes le 2026-10-09 depuis systheme.xml (hauteurs x0.75 autour de l'ancre) -->
+	<view name="system">
+		<image name="-Artwork5_Sys" extra="true">
+			<pos>0.690330268982 0.625953669025</pos>
+			<size>0.455680399501 0.47365036129</size>
+			<!-- storyboard "" corrige -->
+			<storyboard>
+				
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear" />
+				<animation property="offsetY" from="0.75" to="0" begin="1200" duration="500" mode="Linear" />
+				<animation property="rotation" from="0" to="360" begin="1200" duration="500" mode="Linear" />
+			</storyboard>
+		</image>
+		<video name="PreviewVid_Sys" extra="true">
+			<maxSize>0.443196004994 0.443196004994</maxSize>
+		</video>
+		<image name="Video_Sys" extra="true">
+			<pos>0.69089774146 0.62935850389</pos>
+			<size>0.491998638066 0.528884349109</size>
+			<!-- storyboard "" corrige -->
+			<storyboard>
+				
+				<animation property="opacity" from="0" to="0" begin="" duration="" mode="Linear" />
+				<animation property="opacity" from="0" to="1" begin="1200" duration="500" mode="Linear" />
+				<animation property="offsetY" from="0.75" to="0" begin="1200" duration="500" mode="Linear" />
+				<animation property="rotation" from="0" to="360" begin="1200" duration="500" mode="Linear" />
+			</storyboard>
+		</image>
+	</view>
+</theme>
